@@ -393,17 +393,13 @@ def main() -> int:
             if not 700 <= body_wc <= 1200:
                 err(f"{rel}: state page body has {body_wc} words (want 700-1200)")
         # State content rules (see tools/pages_states.py): ACT restricted names never appear anywhere, no ACT question
-        # is called mandatory, and the unverified WA test format is never stated.
+        # is called mandatory.
         raw_low = raw.lower()
         for name in ("pre-learner", "prelearner", "road rules knowledge test", "safe plates"):
             if name in raw_low:
                 err(f"{rel}: contains the restricted ACT name '{name}'")
         if rel == "act-learners-test-practice.html" and "mandatory" in raw_low:
             err(f"{rel}: describes a question as mandatory")
-        if rel == "wa-learners-test-practice.html":
-            for claim in ("24 of 30", "24 correct", "pass mark of 24", "computerised theory test"):
-                if claim in raw_low:
-                    err(f"{rel}: states the unverified WA test format ('{claim}')")
         for bad in ("lorem", "ipsum", "todo", "tbd", "placeholder"):
             if re.search(rf"\b{bad}\b", low):
                 err(f"{rel}: contains '{bad}'")

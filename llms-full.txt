@@ -411,7 +411,7 @@ Knowledge test formats, as checked on 30 September 2026
 | VIC (https://blue0orbit.github.io/learners-test-australia/vic-learner-permit-test-practice.html) | Learner permit test | 32 (in-person test) | 25 of 32 (78%) | Online learner permit course with a final test (the default route), or in person |
 | QLD (https://blue0orbit.github.io/learners-test-australia/qld-learner-test-practice.html) | Written road rules test | 30: 10 giving way, 20 road rules and licence requirements | 9 of 10 and 18 of 20 | On paper at a licence-issuing centre, or PrepL online (final test of 30 questions, pass 27) |
 | SA (https://blue0orbit.github.io/learners-test-australia/sa-learners-test-practice.html) | Learner's theory test | In person: 8 give-way, then 42 road rules and safety | All 8, and 32 of 42 | In person at Service SA, or myLs online (30-question test, pass 27) |
-| WA (https://blue0orbit.github.io/learners-test-australia/wa-learners-test-practice.html) | Learner's permit theory test | Not stated here | Not stated here | See the WA page, and check the Department of Transport and Major Infrastructure |
+| WA (https://blue0orbit.github.io/learners-test-australia/wa-learners-test-practice.html) | Learner's permit theory test | 30 | 24 of 30 | In person at a department centre or regional agent (online test announced, no start date yet) |
 | TAS (https://blue0orbit.github.io/learners-test-australia/tas-learners-test-practice.html) | Driver knowledge test | 30 (online test) | 27 of 30 | Free Plates Plus course and online test (recommended), or a standalone test at a Service Tasmania shop |
 | ACT (https://blue0orbit.github.io/learners-test-australia/act-learners-test-practice.html) | Learner licence knowledge test | 35, from a bank of more than 300 | At least 31 of 35 | Only at the end of an approved course, with an approved provider or participating school |
 | NT (https://blue0orbit.github.io/learners-test-australia/nt-learners-test-practice.html) | Driver knowledge test | 30, from a pool of more than 300 | 26 of 30 | At an MVR office (in remote areas, a police station or DriveSafe NT) |
@@ -939,12 +939,13 @@ Last updated: 30 September 2026
 
 Quick answer
 
-In Western Australia you must show you know the state's traffic laws and safe driving techniques before a learner's permit is issued, normally by passing a theory test. You can hold a car learner's permit from 16, and it lasts 3 years. We don't state the test's official question count or pass mark, because we couldn't confirm them from a source we're able to use: check with the WA Department of Transport and Major Infrastructure. The app's WA practice test uses a 30-question format.
+In Western Australia you must show you know the state's traffic laws and safe driving techniques before a learner's permit is issued, normally by passing a theory test. You can hold a car learner's permit from 16, and it lasts 3 years. Independent guides describe the theory test as 30 questions with 24 correct needed to pass.
 
 WA learner's permit at a glance (checked 30 September 2026)
 
 | Before the permit | Show reasonable knowledge of WA traffic laws and safe driving techniques, normally by passing a theory test |
-| Test format | Not stated here: check the Department of Transport and Major Infrastructure's website |
+| Test format | 30 multiple-choice questions, at least 24 correct to pass (independent guides) |
+| Where | In person at a department centre or regional agent; an online option is being developed |
 | Minimum age | 16 for a car learner's permit (15 years 6 months for a moped-only permit) |
 | Permit lasts | 3 years |
 | Supervisor | A licensed driving instructor, or someone who has held a licence for that kind of vehicle for at least 4 years |
@@ -953,9 +954,9 @@ WA learner's permit at a glance (checked 30 September 2026)
 
 ## How many questions are in the WA learners test, and what is the pass mark?
 
-This page doesn't give the official number of questions or pass mark: for WA's test format, check the department's own website before you book.
+Independent guides, including the RAC's WA learner guide and driving-school guides updated in 2026, agree: 30 multiple-choice questions on a computer, with at least 24 correct to pass, so you can afford 6 mistakes. You sit it in person at a department centre or regional agent. An online theory test was announced in April 2026 but has no start date yet, so check the department's website before you book.
 
-The law sets out what the test is for: before a permit is issued, you must show reasonable knowledge of WA's traffic laws and of safe driving techniques, so expect questions on both. The app's WA practice test uses a 30-question format drawn from every topic; treat it as practice for the rules, not a copy of the official test.
+The law requires reasonable knowledge of WA's traffic laws and safe driving techniques before a permit is issued, so expect questions on both. The app's practice test uses the same format, drawn from every topic; treat it as practice for the rules, not a copy of the official test.
 
 ## WA has its own road rules: what is different?
 
@@ -985,7 +986,7 @@ These are the rules in force on 30 September 2026, so check for changes before y
 
 ## How to practise for the WA learners test with Learners Test Australia
 
-- A 30-question practice test that mixes every topic and is scored at the end.
+- A 30-question practice test that mixes every topic, with 24 correct needed to pass.
 - More than 500 original WA questions, written from the Road Traffic Code 2000 and WA's licensing laws.
 - WA-only rules such as red and green P plates, the 4-year supervisor rule and the 90 km/h keep-left rule.
 - Every answer explained, with the regulation it comes from, in English and four other languages.
@@ -996,7 +997,7 @@ Brush up on give way rules (https://blue0orbit.github.io/learners-test-australia
 
 ### How many questions are in the WA learners test?
 
-We don't state the official question count or pass mark here: check the WA Department of Transport and Major Infrastructure's website. The app's WA practice test uses a 30-question format.
+30 multiple-choice questions, with at least 24 correct (80%) needed to pass, according to the RAC's WA learner guide and driving-school guides updated in 2026. You sit it in person. The app's WA practice test uses the same format.
 
 ### Who can supervise a learner driver in WA?
 
@@ -1012,7 +1013,7 @@ No. They are original practice questions written for the app from Western Austra
 
 ## Check the official source
 
-Facts on this page come from Western Australian legislation. For bookings, fees and the current test format, use the Department of Transport and Major Infrastructure website (official website) (https://www.transport.wa.gov.au/).
+Facts on this page come from Western Australian legislation, except the test format, which comes from independent guides. For bookings, fees and any changes to the test, use the Department of Transport and Major Infrastructure website (official website) (https://www.transport.wa.gov.au/).
 
 - Road Traffic Code 2000 (legislation.wa.gov.au) (official website) (https://www.legislation.wa.gov.au/legislation/statutes.nsf/law_s257.html)
 - Road Traffic (Authorisation to Drive) Regulations 2014 (legislation.wa.gov.au) (official website) (https://www.legislation.wa.gov.au/legislation/statutes.nsf/law_s45436.html)

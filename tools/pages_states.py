@@ -4,8 +4,8 @@ WA learner's permit, TAS driver knowledge test, ACT learner licence knowledge te
 Every fact comes from content-src/coverage/{nsw,vic,qld,sa,wa,tas,act,nt}.md in the app repository (checked
 30 September 2026), including the section 7 corrections. Facts those maps mark "verify" are not stated as facts.
 Rules followed for the newer pages:
-  WA   the official question count and pass mark come only from DTMI pages (map V-01), so they are not stated;
-       every WA fact below comes from WA legislation. The WA transport site is linked, never quoted.
+  WA   the test format (30 questions, 24 to pass) is stated from independent guides (RAC WA, driving schools; map
+       V-01 update); every other WA fact comes from WA legislation. The WA transport site is linked, never quoted.
   ACT  the restricted course and test names in act.md 1.3 are never used, and no question is called mandatory.
   NT   nt.gov.au is all rights reserved: facts only, in our own words.
 """
@@ -586,8 +586,9 @@ mistakes</a>.</p>
 # ── WA (content-src/coverage/wa.md; legislation only, see the module docstring) ───────────────
 WA_FAQ = [
     ("How many questions are in the WA learners test?",
-     "<p>We don't state the official question count or pass mark here: check the WA Department of Transport and Major "
-     "Infrastructure's website. The app's WA practice test uses a 30-question format.</p>"),
+     "<p>30 multiple-choice questions, with at least 24 correct (80%) needed to pass, according to the RAC's WA learner "
+     "guide and driving-school guides updated in 2026. You sit it in person. The app's WA practice test uses the same "
+     "format.</p>"),
     ("Who can supervise a learner driver in WA?",
      "<p>A licensed driving instructor, or someone who has held a licence for that kind of vehicle for at least 4 years. "
      "Your supervisor must be under 0.05 (zero in a few special cases).</p>"),
@@ -616,13 +617,12 @@ def wa() -> Page:
 <div class="answer-box"><p class="answer-label">Quick answer</p>
 <p>In Western Australia you must show you know the state's traffic laws and safe driving techniques before a learner's
 permit is issued, normally by passing a theory test. You can hold a car learner's permit from 16, and it lasts 3 years.
-We don't state the test's official question count or pass mark, because we couldn't confirm them from a source we're
-able to use: check with the WA Department of Transport and Major Infrastructure. The app's WA practice test uses a
-30-question format.</p></div>
+Independent guides describe the theory test as 30 questions with 24 correct needed to pass.</p></div>
 
 {facts_table("WA learner's permit at a glance (checked " + DATE_H + ")", [
     ("Before the permit", "Show reasonable knowledge of WA traffic laws and safe driving techniques, normally by passing a theory test"),
-    ("Test format", "Not stated here: check the Department of Transport and Major Infrastructure's website"),
+    ("Test format", "30 multiple-choice questions, at least 24 correct to pass (independent guides)"),
+    ("Where", "In person at a department centre or regional agent; an online option is being developed"),
     ("Minimum age", "16 for a car learner's permit (15 years 6 months for a moped-only permit)"),
     ("Permit lasts", "3 years"),
     ("Supervisor", "A licensed driving instructor, or someone who has held a licence for that kind of vehicle for at least 4 years"),
@@ -631,11 +631,12 @@ able to use: check with the WA Department of Transport and Major Infrastructure.
 ])}
 
 <h2>How many questions are in the WA learners test, and what is the pass mark?</h2>
-<p>This page doesn't give the official number of questions or pass mark: for WA's test format, check the department's
-own website before you book.</p>
-<p>The law sets out what the test is for: before a permit is issued, you must show reasonable knowledge of WA's traffic
-laws and of safe driving techniques, so expect questions on both. The app's WA practice test uses a 30-question format
-drawn from every topic; treat it as practice for the rules, not a copy of the official test.</p>
+<p>Independent guides, including the RAC's WA learner guide and driving-school guides updated in 2026, agree: 30
+multiple-choice questions on a computer, with at least 24 correct to pass, so you can afford 6 mistakes. You sit it in
+person at a department centre or regional agent. An online theory test was announced in April 2026 but has no start
+date yet, so check the department's website before you book.</p>
+<p>The law requires reasonable knowledge of WA's traffic laws and safe driving techniques before a permit is issued,
+so expect questions on both. The app's practice test uses the same format, drawn from every topic; treat it as practice for the rules, not a copy of the official test.</p>
 
 <h2>WA has its own road rules: what is different?</h2>
 <p>Western Australia doesn't adopt the national Australian Road Rules word for word. Its road rules are the Road Traffic
@@ -677,7 +678,7 @@ their first year, or 8 in their second.</p>
 
 <h2>How to practise for the WA learners test with Learners Test Australia</h2>
 <ul class="check-list">
-  <li>A 30-question practice test that mixes every topic and is scored at the end.</li>
+  <li>A 30-question practice test that mixes every topic, with 24 correct needed to pass.</li>
   <li>More than 500 original WA questions, written from the Road Traffic Code 2000 and WA's licensing laws.</li>
   <li>WA-only rules such as red and green P plates, the 4-year supervisor rule and the 90 km/h keep-left rule.</li>
   <li>Every answer explained, with the regulation it comes from, in English and four other languages.</li>
@@ -692,7 +693,7 @@ mistakes</a>.</p>
     ("Road Traffic Code 2000 (legislation.wa.gov.au)", SRC["wa_rtc"]),
     ("Road Traffic (Authorisation to Drive) Regulations 2014 (legislation.wa.gov.au)", SRC["wa_atdr"]),
     ("Road Traffic (Authorisation to Drive) Act 2008 (legislation.wa.gov.au)", SRC["wa_atda"]),
-], note=f"Facts on this page come from Western Australian legislation. For bookings, fees and the current test format, use the {dtmi}.")}
+], note=f"Facts on this page come from Western Australian legislation, except the test format, which comes from independent guides. For bookings, fees and any changes to the test, use the {dtmi}.")}
 {app_cta('wa', "It is not connected to the Government of Western Australia or the Department of Transport and Major Infrastructure.")}
 </article>
 <aside>{related(RELATED_NEW)}</aside>
@@ -709,7 +710,7 @@ mistakes</a>.</p>
         priority="0.9",
         llms=True,
         llms_title="WA learners test practice",
-        llms_note="Western Australian learner's permit: the knowledge requirement (official test format not stated here; the app's practice test uses 30 questions), age 16, supervisor, hours, HPT, red and green P plates, WA road rules.",
+        llms_note="Western Australian learner's permit: theory test of 30 questions with 24 to pass (per independent guides), sat in person; age 16, supervisor, hours, HPT, red and green P plates, WA road rules.",
     )
 
 
