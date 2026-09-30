@@ -1,0 +1,1604 @@
+# Learners Test Australia: full text
+
+> Learners Test Australia (Google Play title “Learners Test Australia: DKT”) is an independent Android study app by BlueOrbit for learner drivers in New South Wales, Victoria and Queensland, Australia. It has original practice questions and mock tests in each state's learner knowledge test format, with every answer explained and linked to the handbook page or road rule it comes from. Free to practise, with an optional one-time A$5.99 Premium purchase. Not affiliated with any government agency. The app is not on Google Play yet (coming soon).
+
+Source: https://blue0orbit.github.io/learners-test-australia/ · Content current as of 30 September 2026. Each section below is one page of the website.
+
+
+---
+
+URL: https://blue0orbit.github.io/learners-test-australia/
+
+Learner driver app for NSW, VIC and QLD
+
+# Practise for your learners test in your state's real format
+
+Learners Test Australia is an Android app by BlueOrbit for learner drivers in New South Wales, Victoria and Queensland. Choose your state and practise its knowledge test the way it is really set: original questions checked against the official handbook, every answer explained, and mock tests that show exactly where the pass line is.
+
+Free to practise. One free mock test a day. Optional one-time Premium for A$5.99.
+
+Illustration of a practice question from the NSW pack: the answer is explained, with the handbook page and road rule it comes from.
+
+Pick your state
+
+## Your state's learner test, in its real format
+
+Road rules and knowledge tests differ between states. The app sets up practice and mock tests for the state where you'll sit your test, and you can add or switch states later.
+
+NSW
+
+### NSW Driver Knowledge Test (DKT)
+
+- Questions: 45, in two sections
+- Pass marks: General knowledge: 12 of 15. Road safety: 29 of 30.
+- In the app: The mock test ends where the real test would, once passing is no longer possible.
+
+NSW DKT practice test (https://blue0orbit.github.io/learners-test-australia/nsw-dkt-practice-test.html)
+
+VIC
+
+### Victorian learner permit test
+
+- Questions: 32 multiple choice
+- Pass mark: 25 of 32 (78%)
+- In the app: Victoria-only topics such as hook turns and trams are included.
+
+VIC learner permit test practice (https://blue0orbit.github.io/learners-test-australia/vic-learner-permit-test-practice.html)
+
+QLD
+
+### Queensland written test and PrepL
+
+- Written road rules test: 30 questions in two sections. Giving way: 9 of 10. Road rules: 18 of 20.
+- PrepL final test: 30 questions. Pass mark: 27 of 30.
+- In the app: Mock tests for both routes.
+
+QLD learner test practice (https://blue0orbit.github.io/learners-test-australia/qld-learner-test-practice.html)
+
+### Coming later
+
+- WA
+- SA
+- TAS
+- ACT
+- NT
+
+Western Australia and South Australia are next, then Tasmania, the ACT and the Northern Territory. We add a state only when its questions have been written and checked, so we don't have dates yet.
+
+What the app does
+
+## Everything you need to prepare, in one learner driver app
+
+Practice questions for the DKT, the learner permit test and the Queensland road rules test, built around how people actually learn: little and often, with every mistake turned into a review.
+
+### Your state's test, in its real format
+
+Mock tests use the same number of questions, sections and pass marks as your state's knowledge test, as published on its official website.
+
+### Every answer explained
+
+Each question tells you why the answer is right and shows the handbook page or road rule it comes from.
+
+### A plan for every day
+
+A quick check, reviews due, mistakes to fix and new questions, paced to your test date. Spaced repetition brings questions back just before you'd forget them.
+
+### Progress and pass chance
+
+See how much you've covered, your weakest topic and an estimated pass chance based on your recent answers. It is an estimate, not a guarantee.
+
+### Hazard perception practice
+
+Still traffic scenes where you tap the hazard, plus a guide to your state's hazard perception test.
+
+### Five languages
+
+Menus, questions and explanations in English, 中文, العربية, Tiếng Việt and Español. Arabic reads right to left.
+
+### Dark mode and large text
+
+Follows your phone's theme, with a switch in Settings. Screens have TalkBack labels and support large font sizes.
+
+### Practise offline
+
+Questions are built into the app, so you can practise without a connection once you've signed in. Progress syncs when you're back online.
+
+Take the full feature tour (https://blue0orbit.github.io/learners-test-australia/features.html)
+
+How it works
+
+## From your first question to test day
+
+-
+
+### Choose your state and test date
+
+The app shows your test's format and paces a daily plan to your date. No date yet? That's fine too.
+
+-
+
+### Practise a little every day
+
+Start with a 12-question quick check, then work through reviews, mistakes and new questions.
+
+-
+
+### Sit mock tests
+
+Same number of questions and pass marks as the real test, with results shown section by section.
+
+-
+
+### Watch your pass chance
+
+An estimate from your recent answers shows when you're getting close. Then check the official website and book.
+
+Illustration of the Today screen with sample data: a countdown, an estimated pass chance and a short daily plan.
+
+Pricing, plainly
+
+## Free to practise. Premium is optional and paid once.
+
+Every practice question is free for everyone. Free learners get one mock test a day, and another each time they choose to watch a short ad. Premium is a one-time purchase of A$5.99 through Google Play: no subscription, and it covers every state.
+
+What is free and what Premium adds
+
+| Feature | Free | Premium |
+| Every practice question, with explanations | Yes | Yes |
+| Daily plan, reviews and progress | Yes | Yes |
+| Estimated pass chance | Yes | Yes |
+| Mock tests | 1 a day, plus another for each short ad you choose to watch | Unlimited |
+| Ads | Banner ads on results and guide pages | No ads |
+| Section forecasts, weak spots and review planner | No | Yes |
+| Hazard perception practice | Sample scenes | All scenes |
+| Price | Free | A$5.99 once. No subscription. |
+
+Refunds follow Google Play's refund policy and your rights under the Australian Consumer Law. See the FAQ (https://blue0orbit.github.io/learners-test-australia/faq.html) for more.
+
+How the questions are made
+
+## Original questions, checked against official sources
+
+For each state we first map every fact the official material tests, using the current handbook, the official test pages and the road rules legislation. Then every question is written in our own words to test one of those facts, with the handbook page or road rule it comes from and the date it was last checked.
+
+- No official questions, answer options, handbook text or images are reproduced.
+- Road signs and diagrams are redrawn as original illustrations.
+- Where an older official source differs from the current rule, the question follows the current rule.
+
+Read how we make and check the content (https://blue0orbit.github.io/learners-test-australia/about.html).
+
+### Independent, and upfront about it
+
+Learners Test Australia is an independent study app. It is not affiliated with, or endorsed by, Transport for NSW, Service NSW, VicRoads, Transport Victoria, Queensland TMR or any government agency. Always check your state's official handbook and website before your test.
+
+Guides
+
+## Learner test guides
+
+Plain-English guides to each state's test, written from official sources as checked on 30 September 2026.
+
+### How the NSW Driver Knowledge Test works (https://blue0orbit.github.io/learners-test-australia/blog/nsw-driver-knowledge-test-explained.html)
+
+Sections, pass marks, the online option and what comes after your Ls.
+
+### The Victorian learner permit test explained (https://blue0orbit.github.io/learners-test-australia/blog/victorian-learner-permit-test-explained.html)
+
+Online course or in person, the 32-question format and Victoria-only rules.
+
+### QLD written road rules test vs PrepL (https://blue0orbit.github.io/learners-test-australia/blog/qld-written-road-rules-test-vs-prepl.html)
+
+Two ways to your Queensland learner licence, compared side by side.
+
+### Give way rules every learner must know (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html)
+
+The national rules, and where NSW, VIC and QLD differ.
+
+### How to use mock tests and mistakes (https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html)
+
+Know your mistake budget and turn every wrong answer into a review.
+
+### Hazard perception test in NSW, VIC and QLD (https://blue0orbit.github.io/learners-test-australia/blog/hazard-perception-test-nsw-vic-qld.html)
+
+What it is, when you sit it and how to build the skill.
+
+---
+
+URL: https://blue0orbit.github.io/learners-test-australia/features.html
+
+Feature tour
+
+# Learner driver app features
+
+A closer look at Learners Test Australia: state-specific mock tests, explained answers, a daily plan, progress tracking, hazard perception practice and more.
+
+Last updated: 30 September 2026
+
+## Pick your state, practise its test
+
+When you first open the app you choose where you'll take your test. The app then shows that test's "fingerprint": how many questions it has, the pass mark for each section, whether there is a time limit and whether it ends early. Every summary shows its official source and the date we checked it.
+
+- NSW: Driver Knowledge Test, 45 questions in two sections (general knowledge and road safety).
+- VIC: learner permit test, 32 questions.
+- QLD: written road rules test, 30 questions in two sections (giving way and road rules), and the PrepL final test, 30 questions.
+
+Progress is saved separately for each state, so switching states never mixes up your results. Compare the tests by state (https://blue0orbit.github.io/learners-test-australia/states.html).
+
+Illustration of the state picker: each state shows its test format, the source and the date it was checked.
+
+## Every answer explained, with its source
+
+After each answer you see whether you were right, a short explanation, why the rule matters, and the source: the handbook page or road rule number. If you want to read more, you know exactly where to look.
+
+Questions come in the forms real tests use: single answers, road signs and diagrams. A quick "How sure were you?" tap (knew it, unsure or guessed) helps the app decide when to show a question again, and you can save or flag any question to come back to.
+
+Each state's launch pack has more than 400 original questions, and hundreds of original sign and diagram illustrations are shared across states.
+
+Illustration of a practice question from the NSW pack: the answer is explained, with the handbook page and road rule it comes from.
+
+## A daily plan paced to your test date
+
+Today's plan puts the right things in front of you:
+
+- Quick check: 12 questions to find your starting point.
+- Reviews due: questions to revisit just before you'd forget them (spaced repetition).
+- Fix your mistakes: the questions you got wrong.
+- Learn new questions: ones you haven't seen yet.
+- Mock test: the full test, same format as the real one.
+
+Other ways to practise: mixed practice (20 questions, new ones first), mistakes, saved questions, weak spots and practice by topic. Optional study reminders and a countdown help you keep going, and a study streak counts real study only.
+
+Illustration of the Today screen with sample data: a countdown, an estimated pass chance and a short daily plan.
+
+## Mock tests that show the pass line
+
+Mock tests have the same sections and number of questions as the real test, and each section is scored against its own pass mark. In the NSW mock, the test ends where the real DKT would, once passing is no longer possible, and you can choose to keep practising the rest.
+
+Results show your score in each section against its pass line, how long you took and which questions to review, with one tap to practise your mistakes. How to get the most out of mock tests (https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html).
+
+Free learners get one mock test a day, plus another each time they choose to watch a short ad. Premium makes mock tests unlimited.
+
+Illustration of mock test results with sample data: each section shows your score against its pass line.
+
+## Progress and an honest pass-chance estimate
+
+The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. After enough answers, the Today screen shows an estimated pass chance.
+
+With Premium you also get a forecast for each section (your expected score and the chance of passing that section), your weak spots and a planner for upcoming reviews.
+
+The pass chance is an estimate from your recent answers, not a guarantee. The official test is set by your state's licensing authority.
+
+### Section forecast (Premium)
+
+Illustration with sample data
+
+General knowledge: expected 13 of 15
+
+Road safety: expected 28 of 30
+
+Here the road safety forecast sits just under its pass line, so that's where to focus.
+
+## Hazard perception practice
+
+Hazard perception is about spotting risks early. The app has illustrated traffic scenes, drawn from above, where you tap the hazard you should be ready for and then read why. A few sample scenes are free, and Premium unlocks the full set.
+
+Each state also has a guide to its hazard perception test and where it fits on the way to your P plates. The scenes are still images for practice; they are not a copy of any official test. Read our hazard perception guide (https://blue0orbit.github.io/learners-test-australia/blog/hazard-perception-test-nsw-vic-qld.html).
+
+Illustration of a hazard perception scene: a person waiting between parked cars could step into the road.
+
+## Also included
+
+### Licence guide
+
+Each step from learner to full licence in your state, with links to the official pages.
+
+### Reminders and countdown
+
+A daily nudge and a countdown to your test, if you turn them on.
+
+### Streak and badges
+
+A study streak and a few badges for real study. No points to grind.
+
+### Five languages
+
+English, 中文, العربية, Tiếng Việt and Español, including the questions and explanations. Arabic reads right to left.
+
+### Accessible by design
+
+Readable fonts, large-text support, dark mode, TalkBack labels and a spoken timer.
+
+### Offline practice, synced progress
+
+Practise without a connection after signing in. Your progress is saved to your account and follows you to a new phone.
+
+### Your privacy choices
+
+A short privacy card at the start and switches in Settings. Privacy policy (https://blue0orbit.github.io/learners-test-australia/privacy-policy.html).
+
+### Sources you can see
+
+Settings lists the question pack version, the handbook edition it was checked against, and every source.
+
+### Phones and tablets
+
+Runs on Android 8.0 or later, with a layout that adapts to larger screens.
+
+## Free and Premium
+
+What is free and what Premium adds
+
+| Feature | Free | Premium |
+| Every practice question, with explanations | Yes | Yes |
+| Daily plan, reviews and progress | Yes | Yes |
+| Estimated pass chance | Yes | Yes |
+| Mock tests | 1 a day, plus another for each short ad you choose to watch | Unlimited |
+| Ads | Banner ads on results and guide pages | No ads |
+| Section forecasts, weak spots and review planner | No | Yes |
+| Hazard perception practice | Sample scenes | All scenes |
+| Price | Free | A$5.99 once. No subscription. |
+
+Questions about paying, restoring a purchase or refunds? See the FAQ (https://blue0orbit.github.io/learners-test-australia/faq.html).
+
+---
+
+URL: https://blue0orbit.github.io/learners-test-australia/states.html
+
+States and territories
+
+# Learner driver knowledge tests by state
+
+Each Australian state and territory runs its own learner knowledge test. Here is how the NSW, VIC and QLD tests compare, and which states are coming next.
+
+Last updated: 30 September 2026
+
+In short
+
+The NSW Driver Knowledge Test has 45 questions in two sections, the Victorian learner permit test has 32 questions and the Queensland written road rules test has 30 questions in two sections (Queensland's online PrepL final test is also 30 questions). Learners Test Australia practises all of these. Western Australia, South Australia, Tasmania, the ACT and the Northern Territory are coming later.
+
+## How do the NSW, VIC and QLD learner tests compare?
+
+Knowledge test formats, as checked on 30 September 2026
+
+| State | Test | Questions | Pass mark | Online option |
+| NSW | Driver Knowledge Test (DKT) | 45: 15 general knowledge, 30 road safety | 12 of 15 and 29 of 30 | DKT online course and final test, from 15 years 11 months |
+| VIC | Learner permit test | 32 (in-person test) | 25 of 32 (78%) | Online learner permit course with a final test (the default route) |
+| QLD | Written road rules test | 30: 10 giving way, 20 road rules and licence requirements | 9 of 10 and 18 of 20 | PrepL online course, final test of 30 questions, pass 27 |
+
+Sources: the NSW Government, VicRoads and Queensland Government test pages linked on each state's page. Some details, such as the size of the NSW and Victorian online final tests, are not published.
+
+## Choose your state
+
+NSW
+
+### NSW Driver Knowledge Test (DKT)
+
+- Questions: 45, in two sections
+- Pass marks: General knowledge: 12 of 15. Road safety: 29 of 30.
+- In the app: The mock test ends where the real test would, once passing is no longer possible.
+
+NSW DKT practice test (https://blue0orbit.github.io/learners-test-australia/nsw-dkt-practice-test.html)
+
+VIC
+
+### Victorian learner permit test
+
+- Questions: 32 multiple choice
+- Pass mark: 25 of 32 (78%)
+- In the app: Victoria-only topics such as hook turns and trams are included.
+
+VIC learner permit test practice (https://blue0orbit.github.io/learners-test-australia/vic-learner-permit-test-practice.html)
+
+QLD
+
+### Queensland written test and PrepL
+
+- Written road rules test: 30 questions in two sections. Giving way: 9 of 10. Road rules: 18 of 20.
+- PrepL final test: 30 questions. Pass mark: 27 of 30.
+- In the app: Mock tests for both routes.
+
+QLD learner test practice (https://blue0orbit.github.io/learners-test-australia/qld-learner-test-practice.html)
+
+## Which states are coming next?
+
+- WA
+- SA
+- TAS
+- ACT
+- NT
+
+Western Australia and South Australia are next, then Tasmania, the ACT and the Northern Territory. We add a state only when its questions have been written and checked, so we don't have dates yet. Until then, learners in those states can find their test information on their state or territory government's official website.
+
+## What is the same in every state?
+
+Much of what the tests check comes from the national Australian Road Rules, which each state adopts in its own law: giving way at intersections and roundabouts, traffic lights, speed limit signs and most road markings. The details that differ are usually licensing rules (supervised hours, plate rules, passenger limits, alcohol and phone rules for new drivers) and a few local road rules, such as Victoria's hook turns. Our guide to give way rules (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html) covers the shared rules and the main differences.
+
+---
+
+URL: https://blue0orbit.github.io/learners-test-australia/nsw-dkt-practice-test.html
+
+NSW New South Wales
+
+# NSW DKT practice test: the Driver Knowledge Test explained
+
+What's in the NSW Driver Knowledge Test, the pass marks for each section, the online option, and how to practise for it.
+
+Last updated: 30 September 2026
+
+Quick answer
+
+The NSW Driver Knowledge Test (DKT) is the multiple-choice test you pass to get a learner licence in New South Wales. The format published by the NSW Government is 45 questions in two sections: 15 general knowledge questions, where you need 12 correct, and 30 road safety questions, where you need 29 correct. There is no time limit, and the test ends as soon as passing is no longer possible.
+
+NSW DKT at a glance (checked 30 September 2026)
+
+| Test | Driver Knowledge Test (DKT), car (class C) |
+| Questions | 45 multiple choice |
+| Sections and pass marks | General knowledge: 12 of 15. Road safety: 29 of 30. |
+| Ends early | After a 4th wrong answer in general knowledge or a 2nd in road safety |
+| Time limit | None published |
+| Ways to sit it | In person from 16, or the DKT online course and final test from 15 years 11 months |
+| Based on | Road User Handbook, edition 02/2026 |
+
+## How many questions are in the NSW DKT, and what is the pass mark?
+
+The in-person DKT is a computer test with questions drawn at random from a question bank. It has two parts, and you must pass both. In the 15-question general knowledge part you can afford 3 mistakes. In the 30-question road safety part you can afford only 1. That makes road safety the part to take most seriously: two slips and the test is over, however well the rest went.
+
+The NSW Government sets out this 45-question structure on its knowledge test pages (it is spelled out on the rider knowledge test page), and the car DKT is reported to use the same structure. Check the official DKT page when you book.
+
+## Can you do the DKT online?
+
+Yes. Since 2024 NSW has offered the DKT online: a course of about 4 to 6 hours with a final test at the end, open from 15 years and 11 months. The NSW Government does not publish the number of questions or the pass mark for the online final test. Both versions are built on the Road User Handbook, so the same study covers either route.
+
+## How old do you need to be?
+
+- DKT online: from 15 years and 11 months.
+- DKT in person, and the learner licence itself: from 16.
+- Driving test for your P1 licence: from 17.
+
+## What topics are in the NSW DKT?
+
+The DKT covers the Road User Handbook: licences, safe driving (speed, alcohol, drugs, seatbelts, phones and fatigue), sharing the road with pedestrians, cyclists and heavy vehicles, stopping, giving way and turning, overtaking and merging, lanes and markings, parking, hazards, vehicle safety and penalties. In the NSW Government's published 2018 question list, the topics with the most questions were pedestrians, intersections and giving way, traffic signs, safe following and stopping distances, and traffic lights.
+
+A few NSW rules that learners often get wrong:
+
+- Learner, P1 and P2 drivers must have a zero blood alcohol concentration.
+- Learner, P1 and P2 drivers may not use a phone at all while driving, not even hands-free or when stopped at lights.
+- Learner and P1 drivers may not go faster than 90 km/h, and P2 drivers 100 km/h, even where signs allow more.
+- L plates go on the outside of the car, front and back (or on a roof sign), with the whole letter visible.
+- Learners may not drive in Sydney's Moore Park, Centennial Park or Parramatta Park.
+- In good conditions, keep at least a 3-second gap to the vehicle ahead.
+
+## What happens after you pass the DKT?
+
+You get a learner licence, valid for 5 years (if it expires, you must pass the DKT again). If you are under 25, you need to hold it for at least 12 months and log at least 120 hours of supervised driving, 20 of them at night, before the driving test. The Safer Drivers Course earns 20 bonus hours, and each hour-long lesson with a licensed instructor can be logged as 3 hours. Your supervisor must hold a full Australian licence and sit beside you.
+
+Next comes the Hazard Perception Test: if you are under 25, you can sit it only after at least 10 months on your Ls, and a pass stays valid for 15 months for the driving test. Our hazard perception guide (https://blue0orbit.github.io/learners-test-australia/blog/hazard-perception-test-nsw-vic-qld.html) explains what it tests.
+
+## How to practise for the NSW DKT with Learners Test Australia
+
+- Mock DKTs in the 15 + 30 format, ending where the real test would once passing is no longer possible.
+- More than 400 original NSW questions, checked against the Road User Handbook (edition 02/2026).
+- Every answer explained, with the handbook page and road rule it comes from.
+- A daily plan of reviews and mistakes, so road safety questions become second nature before test day.
+
+For a deeper walk-through, read how the NSW Driver Knowledge Test works (https://blue0orbit.github.io/learners-test-australia/blog/nsw-driver-knowledge-test-explained.html) and the give way rules every learner must know (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html).
+
+## NSW DKT questions people ask
+
+### How many questions are in the NSW DKT?
+
+The format published by the NSW Government is 45 multiple-choice questions: 15 general knowledge questions, where you need 12 correct, and 30 road safety questions, where you need 29 correct.
+
+### How many questions can you get wrong in the DKT?
+
+Up to 3 in the general knowledge section and 1 in the road safety section. A 4th wrong answer in general knowledge, or a 2nd in road safety, ends the test.
+
+### Is there a time limit for the DKT?
+
+No time limit is published for the in-person DKT.
+
+### Can I do the DKT online in NSW?
+
+Yes. The DKT online is a course of about 4 to 6 hours with a final test, and you can start it from 15 years and 11 months. The number of questions and pass mark of its final test are not published.
+
+### Are the questions in Learners Test Australia the real DKT questions?
+
+No. They are original practice questions written for the app and checked against the Road User Handbook (edition 02/2026). The app is independent and not connected to the NSW Government.
+
+## Check the official source
+
+- Driver Knowledge Test (nsw.gov.au) (official website) (https://www.nsw.gov.au/driving-boating-and-transport/driving-nsw/driver-and-rider-licences/driver-licences/driver-licence-tests/driver-knowledge-test)
+- Road User Handbook (nsw.gov.au) (official website) (https://www.nsw.gov.au/driving-boating-and-transport/roads-safety-and-rules/safety-updates-for-nsw-road-users/road-user-handbook)
+- Learner driver licence (nsw.gov.au) (official website) (https://www.nsw.gov.au/driving-boating-and-transport/driving-nsw/driver-and-rider-licences/driver-licences/learner-driver-licence)
+- Hazard Perception Test (nsw.gov.au) (official website) (https://www.nsw.gov.au/driving-boating-and-transport/driving-nsw/driver-and-rider-licences/driver-licences/driver-licence-tests/hazard-perception-test)
+
+Rules and test formats change. We checked these pages on 30 September 2026; the official website is always the final word.
+
+## Related guides
+
+- How the NSW Driver Knowledge Test works (https://blue0orbit.github.io/learners-test-australia/blog/nsw-driver-knowledge-test-explained.html)
+- Give way rules every learner must know (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html)
+- How to use mock tests and mistakes (https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html)
+- Hazard perception test in NSW, VIC and QLD (https://blue0orbit.github.io/learners-test-australia/blog/hazard-perception-test-nsw-vic-qld.html)
+- Learner tests by state (https://blue0orbit.github.io/learners-test-australia/states.html)
+- FAQ (https://blue0orbit.github.io/learners-test-australia/faq.html)
+
+---
+
+URL: https://blue0orbit.github.io/learners-test-australia/vic-learner-permit-test-practice.html
+
+VIC Victoria
+
+# VIC learner permit test practice: how the LPT works
+
+The Victorian learner permit test explained: the online course, the 32-question in-person test, what it covers and how to prepare.
+
+Last updated: 30 September 2026
+
+Quick answer
+
+To get a learner permit in Victoria you pass the learner permit test (LPT), which checks your knowledge of road law and road safety from the Road to Solo Driving handbook, plus an eyesight check. Most people now take it online as part of the learner permit course. The in-person test, for people who need another language or an interpreter or who have no internet, has 32 multiple-choice questions and you need 25 correct (78%).
+
+Victorian learner permit test at a glance (checked 30 September 2026)
+
+| Test | Learner permit test (LPT), car |
+| Default route | Online learner permit course with a final test: about 4–6 hours, English only, first attempt free, 12 months to finish |
+| In person | 32 multiple-choice questions, three options each; pass mark 25 of 32 (78%); allow about 45 minutes; appointment fee |
+| Who sits it in person | People who need another language or an interpreter, or who have no computer or internet |
+| Minimum age | 16 for the permit; the online course can start at 15 years 11 months |
+| Based on | Road to Solo Driving handbook (April 2023 edition) |
+| Permit lasts | 10 years (ends earlier when you move to a probationary licence) |
+
+## How many questions are in the Victorian learner permit test?
+
+The in-person test has 32 multiple-choice questions, each with three options, and you need at least 25 right. That figure comes from VicRoads' practice test page, which says its practice test has the same size and pass mark as the real one. VicRoads doesn't publish the size or pass mark of the online course's final test, so the app's mock follows the in-person format.
+
+## Online course or in person: which applies to you?
+
+The online learner permit course is now the standard route. It takes about 4 to 6 hours, is in English only, and you have 12 months to finish it; the first attempt at the final test is free.
+
+Sitting the test in person at a VicRoads Customer Service Centre is for people who need another language or an interpreter, or who have no computer or internet access, and an appointment fee applies. VicRoads offers the in-person test in 13 languages: Arabic, Chinese (Mandarin), Vietnamese, Turkish, Persian, Cambodian, Sinhalese, Somali, Albanian, Macedonian, Russian, Serbian and Spanish. If yours isn't listed, a free interpreter can be booked, including Auslan. Allow about 45 minutes: the eyesight test and permit application happen at the same visit.
+
+## What does the learner permit test cover?
+
+The test draws on the whole Road to Solo Driving handbook: the licensing section and its four chapters on the challenges of driving, learning to drive, managing risk, and rules and responsibilities. In the VicRoads practice test, the topics that come up most are giving way, learning to drive and hazard perception, parking, speed limits and pedestrians (from our review of the practice test on 30 September 2026). The handbook itself warns that the practice test doesn't cover everything.
+
+Victoria has some rules you won't find in other states' tests:
+
+- Hook turns: at intersections with a hook turn sign, mainly in central Melbourne, you turn right from the far-left lane and wait near the far side until the lights for the road you're entering turn green.
+- Trams: when a tram stops at a stop with no safety zone, stop at the back of the tram without going past it, and don't pass while the doors are open. Once the doors close and nobody is on the road, you may pass at no more than 10 km/h.
+- Phones for L and P drivers: a phone may only be used in a commercially made mounting for navigation or audio set up before the trip, without touching it. No calls at all, not even hands-free.
+
+Other learner rules to know: you must have a zero blood alcohol concentration; L plates go on the front and rear, visible from 20 metres; learners must not tow; and your supervisor sits in the front passenger seat, holds a full licence, must be under 0.05 and must not drink at all while supervising.
+
+## What happens after you get your learner permit?
+
+Your permit lasts 10 years. If you'll be under 21 at your licence test, you need at least 120 hours of supervised driving, 20 or more after dark, recorded in the myLearners app or the Learner Log Book. From 21 no log book is required. You must hold the permit for at least 12 months if under 21, 6 months if 21 to under 25, and 3 months if 25 or older. The Hazard Perception Test comes before the drive test and can be taken from 17 years 11 months, and the probationary licence is available from 18.
+
+## How to practise for the VIC learner permit test with Learners Test Australia
+
+- 32-question mock tests scored against the 25-question pass line.
+- More than 400 original Victorian questions, checked against Road to Solo Driving and current Transport Victoria and VicRoads pages.
+- Victoria-only topics such as hook turns, trams and L and P device rules.
+- Every answer explained, with the handbook page or road rule it comes from.
+
+Read our deeper guide, the Victorian learner permit test explained (https://blue0orbit.github.io/learners-test-australia/blog/victorian-learner-permit-test-explained.html), and brush up on give way rules (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html), the biggest topic in the practice test.
+
+## VIC learner permit test questions people ask
+
+### How many questions are in the VIC learner permit test?
+
+The in-person learner permit test has 32 multiple-choice questions with three options each, and you need 25 correct (78%), according to VicRoads' practice test page. The size and pass mark of the online final test are not published.
+
+### Can I do the Victorian learner permit test online?
+
+Yes, and it is now the default. The online learner permit course takes about 4 to 6 hours and ends with a final test. It is in English only, the first attempt is free, and you have 12 months to finish.
+
+### Which languages is the in-person test offered in?
+
+VicRoads lists 13: Arabic, Chinese (Mandarin), Vietnamese, Turkish, Persian, Cambodian, Sinhalese, Somali, Albanian, Macedonian, Russian, Serbian and Spanish. If your language isn't offered, you can book a free interpreter, including Auslan.
+
+### How old do you need to be for a learner permit in Victoria?
+
+16. You can start the online course at 15 years and 11 months, but the permit is only issued from 16.
+
+### Is the VicRoads practice test the same as the real test?
+
+It has the same size and pass mark as the in-person test, but it is a revision aid. The Road to Solo Driving handbook says the practice test doesn't cover everything, so study the whole handbook.
+
+## Check the official source
+
+- Learner permit test (VicRoads) (official website) (https://www.vicroads.vic.gov.au/ls-and-ps/getting-your-ls/learner-permit-test)
+- Prepare for your learner permit (Transport Victoria) (official website) (https://transport.vic.gov.au/road-and-active-transport/registration-and-licensing/licences/learner-permit/prepare-for-your-learner-permit)
+- Driver handbooks and logbooks, including Road to Solo Driving (Transport Victoria) (official website) (https://transport.vic.gov.au/road-and-active-transport/registration-and-licensing/licences/driver-history-handbooks-and-logbooks/driver-handbooks-and-logbooks)
+- Learner and probationary driver road rules (Transport Victoria) (official website) (https://transport.vic.gov.au/road-and-active-transport/road-rules-and-safety/learner-and-probationary-driver-road-rules)
+
+Rules and test formats change. We checked these pages on 30 September 2026; the official website is always the final word.
+
+## Related guides
+
+- The Victorian learner permit test explained (https://blue0orbit.github.io/learners-test-australia/blog/victorian-learner-permit-test-explained.html)
+- Give way rules every learner must know (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html)
+- Hazard perception test in NSW, VIC and QLD (https://blue0orbit.github.io/learners-test-australia/blog/hazard-perception-test-nsw-vic-qld.html)
+- How to use mock tests and mistakes (https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html)
+- Learner tests by state (https://blue0orbit.github.io/learners-test-australia/states.html)
+- FAQ (https://blue0orbit.github.io/learners-test-australia/faq.html)
+
+---
+
+URL: https://blue0orbit.github.io/learners-test-australia/qld-learner-test-practice.html
+
+QLD Queensland
+
+# QLD learner test practice: written road rules test and PrepL
+
+Queensland's two routes to a learner licence, the questions and pass marks for each, what they cover and how to prepare.
+
+Last updated: 30 September 2026
+
+Quick answer
+
+In Queensland you can qualify for a car learner licence in one of two ways: the written road rules test, sat on paper at a licence-issuing centre, or PrepL, an online course with a final test. The written test has 30 multiple-choice questions in two separately scored sections: giving way (10 questions, need 9) and road rules and licence requirements (20 questions, need 18). The PrepL final test has 30 questions and you need 27 (90%).
+
+Queensland learner tests at a glance (checked 30 September 2026)
+
+| Written road rules test | 30 multiple-choice questions on paper. Giving way: 9 of 10. Road rules and licence requirements: 18 of 20. Failing either section fails the test. |
+| Where | TMR customer service centre, participating QGAP office, or licence-issuing police station in rural and remote areas |
+| Written test age and attempts | From 16. A fee for every attempt, one attempt a day; after a fail, wait until the next working day |
+| PrepL | Online course of about 4–6 hours, then a final test of 30 questions; pass 27 of 30 (90%) |
+| PrepL age and fee | Enrol from 15 years 11 months. One fee ($29.70 as at 1 July 2026) for 12 months' access; retry after 24 hours at no extra cost |
+| A pass lasts | 5 years (either route) |
+| Based on | Your keys to driving in Queensland (No. 19, November 2022), plus current rules |
+
+## How many questions are in the QLD written road rules test?
+
+Thirty, in two sections that are scored separately. The giving-way section has 10 questions and you can afford only one mistake. The road rules and licence requirements section has 20 questions and you can afford two. A strong score in one section can't make up for a weak one in the other. No formal time limit is published; the handbook suggests allowing at least 30 minutes.
+
+## What is PrepL, and how is it different?
+
+PrepL is Queensland's online learning and assessment course. It takes about 4 to 6 hours on a phone, tablet or computer and has three sections: Your driving attitude, Signs and rules, and Sharing the road. Assessment pieces are built in, and the final test has 30 questions with a pass mark of 27. You can enrol from 15 years and 11 months, so your learner licence can be issued on your 16th birthday. PrepL isn't compulsory yet: until it is, you can choose either route. Letting someone else do your PrepL can see your enrolment cancelled, a penalty of more than $6,900 for them, and a 6-month wait before you can enrol again. Our guide compares the written test and PrepL side by side (https://blue0orbit.github.io/learners-test-australia/blog/qld-written-road-rules-test-vs-prepl.html).
+
+## What does the Queensland learner test cover?
+
+The written test's second section is officially about road rules and driver licence requirements, so licensing rules (learner conditions, the logbook, P1 and P2 rules, demerit points and alcohol limits) are core content, not background. The rest covers signs, speed limits, traffic lights and road markings, alcohol and drugs, phones, seatbelts and child restraints, parking, and sharing the road. The handbook says learners are tested in detail on giving way: unsigned crossroads and T-intersections, STOP and GIVE WAY signs, turning, roundabouts, merging, U-turns, driveways, buses and emergency vehicles.
+
+The current handbook dates from 2022, so it doesn't include Queensland's 2026 e-scooter and e-bike law changes. The app follows the current rules.
+
+A few Queensland rules to know as a learner:
+
+- Your blood alcohol limit is zero, whatever your age.
+- Your supervisor must hold an open licence for that class, have held one for at least a year, and sit beside you.
+- L plates go on the front and rear of the car, readable from 20 metres.
+- No driver may hold a phone or rest it on their body while driving, even when stopped in traffic or when the phone is switched off.
+- Four or more demerit points within 12 months suspends a learner licence for 3 months. Driving without a proper supervisor alone carries 4 points.
+
+## What happens after you pass?
+
+Your learner licence lasts 3 years. If you are under 25, you need 100 hours of supervised driving, including at least 10 at night, recorded in a logbook; each hour with an accredited driver trainer counts as 3 logbook hours, for up to 10 hours of lessons. Every car learner, whatever their age, must pass the hazard perception test before the practical test, and can sit it after holding the learner licence for 6 months. The practical test comes after at least a year on your learner licence. Under 25s then move to a P1 licence (from 17); if you are 25 or older, you go straight to P2.
+
+## How to practise for the QLD learner test with Learners Test Australia
+
+- Mock tests for both routes: the written test with its separate giving-way and road rules pass lines, and the PrepL final test.
+- More than 500 original Queensland questions, with giving-way scenarios drawn as diagrams.
+- Checked against the Queensland handbook, the Road Rules Regulation in force from 31 August 2026 and current Queensland Government pages.
+- Every answer explained, with the handbook page or rule it comes from.
+
+Giving way is worth a whole section, so read the give way rules every learner must know (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html) and learn to use your mistake budget (https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html).
+
+## QLD learner test questions people ask
+
+### How many questions are in the Queensland learner test?
+
+Both routes have 30 questions. The written road rules test has 10 giving-way questions (you need 9) and 20 road rules and licence requirement questions (you need 18). The PrepL final test has 30 questions and you need 27.
+
+### How many questions can you get wrong?
+
+In the written test, 1 in the giving-way section and 2 in the road rules section; failing either section fails the test. In the PrepL final test, 3 in total.
+
+### Is PrepL compulsory in Queensland?
+
+Not yet. The Queensland Government says PrepL will replace the written test, but until it is made mandatory you can choose either route.
+
+### How much does PrepL cost?
+
+One fee, the same as the written test fee ($29.70 as at 1 July 2026), gives 12 months' access. If you fail the final test you can try again after 24 hours at no extra cost.
+
+### Can I do the written road rules test online?
+
+No. The written test is sat on paper at a licence-issuing centre. The online route is PrepL.
+
+## Check the official source
+
+- Driver tests, written and online (qld.gov.au) (official website) (https://www.qld.gov.au/transport/licensing/getting/tests)
+- PrepL online learning and assessment (qld.gov.au) (official website) (https://www.qld.gov.au/transport/licensing/getting/learner/prepl/prepl/prepl-online-learning-and-assessment)
+- Getting a learner licence (qld.gov.au) (official website) (https://www.qld.gov.au/transport/licensing/getting/learner/getting-a-learner-licence)
+- Rules for learner driving (qld.gov.au) (official website) (https://www.qld.gov.au/transport/licensing/getting/rules)
+- Learner logbook (qld.gov.au) (official website) (https://www.qld.gov.au/transport/licensing/getting/learner-logbook)
+- Your keys to driving in Queensland (Queensland Government publications) (official website) (https://www.publications.qld.gov.au/dataset/your-keys-to-driving-in-queensland)
+
+Rules and test formats change. We checked these pages on 30 September 2026; the official website is always the final word.
+
+## Related guides
+
+- QLD written road rules test vs PrepL (https://blue0orbit.github.io/learners-test-australia/blog/qld-written-road-rules-test-vs-prepl.html)
+- Give way rules every learner must know (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html)
+- How to use mock tests and mistakes (https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html)
+- Hazard perception test in NSW, VIC and QLD (https://blue0orbit.github.io/learners-test-australia/blog/hazard-perception-test-nsw-vic-qld.html)
+- Learner tests by state (https://blue0orbit.github.io/learners-test-australia/states.html)
+- FAQ (https://blue0orbit.github.io/learners-test-australia/faq.html)
+
+---
+
+URL: https://blue0orbit.github.io/learners-test-australia/faq.html
+
+Frequently asked questions
+
+# Learner test app FAQ
+
+Straight answers about Learners Test Australia: what it is and isn't, states, price, accounts, languages, offline use and how the questions are written.
+
+Last updated: 30 September 2026
+
+Can't find your answer? Email blue0orbit@gmail.com or see the contact page (https://blue0orbit.github.io/learners-test-australia/contact.html).
+
+## About the app
+
+### What is Learners Test Australia?
+
+Learners Test Australia (on Google Play as “Learners Test Australia: DKT”) is an Android study app by BlueOrbit for people preparing for an Australian learner driver knowledge test. You choose your state, then practise with original questions, explained answers and mock tests in that state's test format.
+
+### Is Learners Test Australia an official government app?
+
+No. Learners Test Australia is an independent study app. It is not affiliated with, or endorsed by, Transport for NSW, Service NSW, VicRoads, Transport Victoria, Queensland TMR or any government agency. The official test is run by your state or territory's licensing authority, so always check its current handbook and website.
+
+### Are these the real test questions?
+
+No. Every question is written for the app in our own words. The questions test the same facts the official material covers, but no official questions, answer options, handbook text or images are reproduced.
+
+### Which states and territories does the app cover?
+
+New South Wales, Victoria and Queensland are available now. Western Australia and South Australia are next, then Tasmania, the ACT and the Northern Territory. We add a state only when its questions have been written and checked, so we don't have dates yet.
+
+### Which tests can I practise?
+
+The NSW Driver Knowledge Test (45 questions: 15 general knowledge, pass 12, and 30 road safety, pass 29), the Victorian learner permit test (32 questions, pass 25), and the Queensland written road rules test (10 giving way, pass 9, and 20 road rules, pass 18) and PrepL final test (30 questions, pass 27). There is also hazard perception practice with still traffic scenes.
+
+## Price and Premium
+
+### Is the app free?
+
+Yes. It is free to download and every practice question is free. Free learners get one mock test a day, plus another each time they choose to watch a short ad. The free version shows banner ads on results and guide pages.
+
+### What does Premium include, and how much is it?
+
+Premium is a one-time purchase of A$5.99. It removes ads and adds unlimited mock tests, section forecasts, weak spots and a review planner, and the full set of hazard perception scenes. It covers every state. Every practice question stays free for everyone.
+
+### Is Premium a subscription?
+
+No. Premium is a lifetime purchase: there are no subscriptions or renewals. It belongs to the Google account that bought it, so it stays available if you sign in again on the same Google account.
+
+### I bought Premium but it isn't showing. What should I do?
+
+Open Settings → Premium → Restore purchase. If that doesn't fix it, email blue0orbit@gmail.com.
+
+### Can I get a refund?
+
+Purchases are processed by Google Play, so refunds follow Google Play's refund policy and your rights under the Australian Consumer Law. Deleting your account does not refund a purchase, except where the law requires it.
+
+## Account and privacy
+
+### Do I need an account, and why?
+
+Yes. You sign in when you start, with Google, Facebook or an email address. Your answers and progress for each state are saved to your account, so they follow you to a new phone. Tips and offers by email are optional, and you can unsubscribe any time.
+
+### How do I delete my account and data?
+
+In the app, open Settings → Delete account. This removes your account and saved progress. You can also email blue0orbit@gmail.com from your account's email address with the subject “Delete my account”. Full steps are on the account deletion page (https://blue0orbit.github.io/learners-test-australia/account-deletion.html).
+
+### What data does the app collect?
+
+Your name and email address when you sign in, your study data (answers, sessions, saved questions and chosen state), anonymous usage statistics and crash reports only if you allow them, and, in the free version, your device's advertising ID for ads. We never sell your personal information. Details are in the privacy policy (https://blue0orbit.github.io/learners-test-australia/privacy-policy.html).
+
+### Why are there ads, and can I control ad personalisation?
+
+Ads keep practice free. Where the law requires it (for example in the EEA and UK), Google asks for your consent first, and you can change it in Settings → Ad privacy choices. You can also reset or delete your advertising ID in your phone's settings. Premium removes ads. See the cookie policy (https://blue0orbit.github.io/learners-test-australia/cookies.html).
+
+## Using the app
+
+### Which languages does the app support?
+
+English, 中文, العربية, Tiếng Việt and Español. Menus, questions and explanations are translated, and Arabic reads right to left. You can change the language in Settings. Language options for the official tests themselves differ by state, so check your state's website.
+
+### Does the app work offline?
+
+Mostly. Questions are built into the app, so after you've signed in you can practise without a connection, and your progress syncs when you're back online. You need a connection to sign in, to watch an ad for an extra mock test and to buy or restore Premium.
+
+### Which phones does it run on? Is there an iPhone version?
+
+The app runs on Android phones and tablets with Android 8.0 or later. It is Android only for now.
+
+### When will the app be on Google Play?
+
+Soon. It isn't listed yet, so there is no store link on this site. When it goes live, the “Coming soon to Google Play” button will become a link to the listing.
+
+### How does the pass-chance estimate work?
+
+After you've answered enough questions, the app estimates your chance of passing from your recent answers. It is an estimate, not a guarantee. Premium adds a forecast for each section of the test.
+
+### Does the app include hazard perception practice?
+
+Yes. There are illustrated traffic scenes where you tap the hazard, plus a guide to your state's hazard perception test. A few sample scenes are free and Premium unlocks the full set. The scenes are for practice and are not a copy of any official test. See our hazard perception guide (https://blue0orbit.github.io/learners-test-australia/blog/hazard-perception-test-nsw-vic-qld.html).
+
+## Questions and accuracy
+
+### How are the questions written?
+
+For each state we build a coverage map of every fact the official material tests, from the current handbook, the official test pages, the official practice tests (used only to see which facts are tested) and the road rules legislation. Each question is then written in original wording to test one of those facts, with a rule reference (handbook page or road rule) and a review date. Questions are never copied or paraphrased from official question banks. More about our content (https://blue0orbit.github.io/learners-test-australia/about.html).
+
+### How accurate are the questions?
+
+The launch questions were checked against the official sources current on 30 September 2026: the NSW Road User Handbook (edition 02/2026), Victoria's Road to Solo Driving handbook (checked against current Transport Victoria and VicRoads pages) and Your keys to driving in Queensland (checked against current Queensland Government pages and legislation). Rules change, so always check your state's official website before your test.
+
+### I think a question is wrong. How do I report it?
+
+Email blue0orbit@gmail.com with your state, the question (or its first few words), what you think is wrong and, if you can, a link to the official source. The contact page (https://blue0orbit.github.io/learners-test-australia/contact.html) lists what helps us fix it fastest. We aim to reply within 5 business days.
+
+### How old do I need to be to use the app?
+
+Under our Terms of Service you must be at least 16 to use the app and create an account, and if you are under 18 a parent or legal guardian must consent to your use of the app.
+
+---
+
+URL: https://blue0orbit.github.io/learners-test-australia/blog/nsw-driver-knowledge-test-explained.html
+
+NSW
+
+# How the NSW Driver Knowledge Test works
+
+By BlueOrbit (https://blue0orbit.github.io/learners-test-australia/about.html) · Published 30 September 2026 · Last updated: 30 September 2026 · 6 min read
+
+Summary
+
+The NSW Driver Knowledge Test (DKT) is the multiple-choice test you pass to get a learner licence in New South Wales. It is built on the Road User Handbook, and the format the NSW Government publishes is 45 questions in two parts: general knowledge (15 questions, 12 to pass) and road safety (30 questions, 29 to pass). This guide covers the format, the online option, what to study and what comes next, as checked on 30 September 2026.
+
+## Where does the DKT fit in the NSW licence journey?
+
+New South Wales uses a graduated licensing scheme. You start on a learner licence, move to a P1 licence (red P plates), then a P2 licence (green P plates), and finally a full licence. The whole journey takes at least four years if you are under 25, or three years if you are 25 or older.
+
+Three tests mark the way. The Driver Knowledge Test gets you your Ls. The Hazard Perception Test comes during your learner period. The practical driving test gets you your P1 licence. The DKT is the only one you can do before you have driven at all, which is why it is all about knowing the rules rather than handling the car.
+
+## What is the format of the DKT?
+
+The format the NSW Government publishes for its knowledge tests is 45 multiple-choice questions split into two parts, each with its own pass mark:
+
+- General knowledge: 15 questions, and you need at least 12 right.
+- Road safety: 30 questions, and you need at least 29 right.
+
+The in-person test runs on a computer, with questions drawn at random from a question bank, and no time limit is published. It also stops early: a 4th wrong answer in general knowledge, or a 2nd wrong answer in road safety, ends the test, because at that point you can no longer pass.
+
+It helps to think of this as a mistake budget. You can drop 3 questions in general knowledge, but only 1 in road safety. Road safety is twice as long and almost unforgiving, so it deserves most of your revision time.
+
+This 45-question structure is spelled out on the NSW Government's rider knowledge test page, and the car DKT is reported to follow it. Confirm the details on the official DKT page when you book.
+
+## In person or online: which DKT should you choose?
+
+You have two routes. The in-person DKT is open from age 16. The DKT online, introduced in 2024, is a course of about 4 to 6 hours with a final test at the end, and you can start it from 15 years and 11 months. The NSW Government doesn't publish how many questions the online final test has or what its pass mark is.
+
+Both routes are built on the same book, the Road User Handbook, so your preparation is the same either way. The online course suits people who like to learn in stages; the in-person test suits people who are ready now and want the familiar 45-question format.
+
+## What should you study for the DKT?
+
+Everything comes back to the Road User Handbook. The edition current on 30 September 2026 is 02/2026, published in February 2026, with 208 printed pages. It runs from licences, through safe driving behaviour (speed, alcohol, drugs, seatbelts, phones and fatigue) and sharing the road, to stopping, giving way and turning, overtaking and merging, lanes and markings, parking, hazards, vehicle safety and penalties.
+
+The NSW Government has also published an official DKT question list, dated 2018. It holds 358 questions: 79 general knowledge, 225 road safety, 51 traffic signs and 3 about test integrity. The busiest topics in it are pedestrians, intersections and giving way, traffic signs, safe following and stopping distances, and traffic lights, which is a useful guide to where the marks are.
+
+Be careful with anything older than the current handbook, though. A few items in the 2018 list no longer match today's rules. For example, red-light cameras in NSW now also detect speeding at any light colour, and the agency you deal with is Transport for NSW rather than the old RTA. When sources disagree, learn the current handbook's version.
+
+## Which NSW rules do learners most often get wrong?
+
+These rules come up again and again, and each has a common wrong belief attached:
+
+- STOP signs mean a full stop, every time. Stop behind the line, as close to it as you can, even when no one is coming. A rolling stop is not a stop.
+- Yellow means stop if you safely can. Only keep going if you are so close that braking suddenly could cause a crash. Never speed up to beat the red.
+- T-intersections: if you are on the road that ends, you give way to every vehicle on the road that continues, whether it is turning or not.
+- U-turns at traffic lights are not allowed in NSW unless a “U-turn permitted” sign is shown.
+- “Left turn on red permitted after stopping” means exactly that: stop at the red first, then turn when it is safe, giving way to traffic from the right and pedestrians.
+- Following distance: keep at least 3 seconds behind the vehicle ahead in good conditions, and 4 or more in the wet, on gravel or at night.
+- Only time lowers your blood alcohol. Coffee, water, food, a shower or exercise don't. For learner, P1 and P2 drivers the limit is zero anyway.
+- No phones for L and P drivers. Not for calls (even hands-free), music, maps or texts, and not while stopped at lights or in a queue.
+- Speed: the default limit is 50 km/h in a built-up area and 100 km/h elsewhere. Learner and P1 drivers may not exceed 90 km/h, and P2 drivers 100 km/h, whatever the signs say. In a shared zone the limit is 10 km/h and you give way to any pedestrian.
+
+## What happens after you pass the DKT?
+
+Passing gets you a learner licence, which lasts 5 years. If it runs out, you have to pass the DKT again.
+
+If you are under 25, you must hold your Ls for at least 12 months and log at least 120 hours of supervised driving, including 20 hours at night, before the driving test. The Safer Drivers Course adds 20 bonus hours, and each one-hour lesson with a licensed instructor can be logged as 3 hours.
+
+Your supervisor must hold a full Australian licence and sit beside you, and their blood alcohol must be under 0.05 with no drugs present. Your L plates go on the outside of the car, front and back (or on a roof sign), with the whole letter showing. Learners are not allowed to drive in Moore Park, Centennial Park or Parramatta Park in Sydney, and may not tow at all.
+
+If you are under 25, you can sit the Hazard Perception Test after at least 10 months on your Ls, and a pass stays valid for 15 months for the driving test, which you can take from 17. If you don't pass the driving test, you can re-book and try again after 7 days.
+
+## How should you prepare for the DKT?
+
+A simple plan works well. Read the handbook one chapter at a time, and after each chapter answer practice questions on it. Once you have covered everything, start sitting full mock tests in the 15 + 30 format and keep a close eye on the road safety part, where one mistake is all you can afford. Every wrong answer is a signal: read the explanation, look up the handbook page and come back to the question a few days later.
+
+In Learners Test Australia, NSW mock tests follow this format and end where the real test would. Our guide to using mock tests and mistakes (https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html) explains the method, and the NSW DKT practice test page (https://blue0orbit.github.io/learners-test-australia/nsw-dkt-practice-test.html) has the key facts at a glance.
+
+## Check the official source
+
+- Driver Knowledge Test (nsw.gov.au) (official website) (https://www.nsw.gov.au/driving-boating-and-transport/driving-nsw/driver-and-rider-licences/driver-licences/driver-licence-tests/driver-knowledge-test)
+- Road User Handbook (nsw.gov.au) (official website) (https://www.nsw.gov.au/driving-boating-and-transport/roads-safety-and-rules/safety-updates-for-nsw-road-users/road-user-handbook)
+- Learner driver licence (nsw.gov.au) (official website) (https://www.nsw.gov.au/driving-boating-and-transport/driving-nsw/driver-and-rider-licences/driver-licences/learner-driver-licence)
+- Driving test (nsw.gov.au) (official website) (https://www.nsw.gov.au/driving-boating-and-transport/driving-nsw/driver-and-rider-licences/driver-licences/driver-licence-tests/driving-test)
+
+Rules and test formats change. We checked these pages on 30 September 2026; the official website is always the final word.
+
+## Related
+
+- NSW DKT practice test (https://blue0orbit.github.io/learners-test-australia/nsw-dkt-practice-test.html)
+- Give way rules every learner must know (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html)
+- How to use mock tests and mistakes (https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html)
+- Hazard perception test in NSW, VIC and QLD (https://blue0orbit.github.io/learners-test-australia/blog/hazard-perception-test-nsw-vic-qld.html)
+- FAQ (https://blue0orbit.github.io/learners-test-australia/faq.html)
+
+---
+
+URL: https://blue0orbit.github.io/learners-test-australia/blog/victorian-learner-permit-test-explained.html
+
+Victoria
+
+# The Victorian learner permit test explained
+
+By BlueOrbit (https://blue0orbit.github.io/learners-test-australia/about.html) · Published 30 September 2026 · Last updated: 30 September 2026 · 6 min read
+
+Summary
+
+Victoria's learner permit test (LPT) is how you qualify for a car learner permit. Most people now take it online as part of the learner permit course. The in-person test at VicRoads, for people who need another language or an interpreter or have no internet, has 32 multiple-choice questions and a pass mark of 25 (78%). Both cover the whole Road to Solo Driving handbook. Facts as checked on 30 September 2026.
+
+## Who needs to sit the learner permit test?
+
+Anyone getting their first car learner permit in Victoria. The permit is issued from age 16, and you can start the online course at 15 years and 11 months. You also need a Victorian home address, evidence of identity, to be medically fit to drive, not be disqualified or under a Fines Victoria licence suspension, and to pay the fee.
+
+The learner permit test has two parts: an eyesight check, and a multiple-choice test of road law and road safety drawn from the Road to Solo Driving handbook.
+
+## What is the online learner permit course like?
+
+For most people the test now happens online. The learner permit course takes about 4 to 6 hours and finishes with a final test. It is in English only, the first attempt is free, and you have 12 months to complete it. VicRoads doesn't publish how many questions the online final test has or what its pass mark is.
+
+## What happens at an in-person test?
+
+You sit the test at a VicRoads Customer Service Centre only if you need another language or an interpreter, or if you have no computer or internet access. An appointment fee applies, and you should allow about 45 minutes, because the eyesight test and your permit application happen at the same visit.
+
+The in-person test has 32 multiple-choice questions with three options each, and you need 25 correct, which is 78%. That comes from the VicRoads practice test page, which says its practice test matches the real one in size and pass mark. It is offered in 13 languages: Arabic, Chinese (Mandarin), Vietnamese, Turkish, Persian, Cambodian, Sinhalese, Somali, Albanian, Macedonian, Russian, Serbian and Spanish. If your language isn't offered, you can book a free interpreter, including Auslan.
+
+Bring original identity documents: photocopies are refused, even certified ones. You need one Category A document (such as a passport or an Australian birth certificate), one Category B document (such as a Medicare card, a bank card or a utility bill less than a year old) and proof of your Victorian address. If your eyesight is poor, bring an eyesight certificate from an optometrist or ophthalmologist; if you have a condition that may affect your driving, bring a doctor's report.
+
+Once you pass, you pay, have your photo taken and get a paper receipt that lets you start driving straight away. The card arrives by post in about a week, and a digital permit is accepted too.
+
+## What does the learner permit test cover?
+
+The whole Road to Solo Driving handbook (April 2023 edition): the licensing section and all four chapters, on the challenges of driving, learning to drive, managing risk, and rules and responsibilities. The VicRoads practice test is a revision aid, and the handbook points out that it doesn't cover everything.
+
+That said, the practice test does show where the emphasis is. When we reviewed it on 30 September 2026, the biggest groups of questions were giving way, learning to drive (including hazard perception), parking, speed limits and pedestrians.
+
+Don't skip the chapters that sound like background. The handbook's early chapters explain why the rules exist, and they are testable. For example, the handbook says new drivers are about three times as likely as experienced drivers to be in a casualty crash, that crash risk jumps to its highest point when you first drive solo on P1, and that new solo drivers with about 120 hours of supervised practice have roughly 30% lower crash risk than those with about 50 hours. It also explains hazard perception: spotting and predicting risks and responding in time, which is different from fast reflexes.
+
+## Which Victorian rules are different from other states?
+
+- Hook turns. At traffic-light intersections with a hook turn sign, found mainly in central Melbourne and inner suburbs, you turn right from the far-left lane. Signal right, move forward keeping as far left as you can until you are close to the far side of the road you're turning into, wait there until the lights for that road turn green, check nothing is moving in the lane to your right, then turn.
+- Trams. When a tram stops at a stop without a safety zone, stop at the back of the tram without going past it, and don't pass while the doors are open. When the doors close and nobody is on the road, you may pass at no more than 10 km/h.
+- Phones for L and P drivers. A phone in a commercially made mounting may only be used for navigation or audio set up before you start, and you mustn't touch it, even at red lights. No calls at all, not even hands-free, and no voice commands. An unmounted phone mustn't be touched or have anything running on it, and it can't sit on your lap (a pocket or pouch is fine).
+
+## What are the learner permit conditions?
+
+- Carry your permit (card, paper receipt or official digital permit) every time you drive.
+- Show L plates on the front and rear of the car, clearly visible from 20 metres.
+- Always have a supervisor beside you in the front passenger seat, holding a current full licence (not a probationary one) for that type of vehicle.
+- Your blood alcohol must be zero. Your supervisor must be under 0.05 and must not drink at all while supervising.
+- Don't tow a trailer, caravan or any other vehicle, and remember a car permit covers cars only.
+
+Driving without a supervisor is an impoundment offence in Victoria: the car can be impounded, whoever owns it.
+
+## How do you get from L plates to P plates?
+
+Your permit lasts 10 years. If you'll be under 21 at your licence test, you need at least 120 hours of supervised driving, 20 or more of them after dark, logged in the myLearners app or the Learner Log Book. From 21 a log book isn't required. You must hold your permit continuously for at least 12 months if you are under 21, 6 months if you are 21 to under 25, or 3 months if you are 25 or older.
+
+Before the drive test you pass the Hazard Perception Test, which you can sit from 17 years 11 months. The probationary licence is available from 18. If you're under 21 when licensed, you spend at least a year on P1 and then at least three years on P2; if you're 21 or older, you go straight to P2 for at least three years.
+
+Ready to practise? The VIC learner permit test practice page (https://blue0orbit.github.io/learners-test-australia/vic-learner-permit-test-practice.html) sums up the format, and our give way guide (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html) covers the biggest topic in the practice test.
+
+## Check the official source
+
+- Learner permit test (VicRoads) (official website) (https://www.vicroads.vic.gov.au/ls-and-ps/getting-your-ls/learner-permit-test)
+- Prepare for your learner permit (Transport Victoria) (official website) (https://transport.vic.gov.au/road-and-active-transport/registration-and-licensing/licences/learner-permit/prepare-for-your-learner-permit)
+- Driver handbooks and logbooks (Transport Victoria) (official website) (https://transport.vic.gov.au/road-and-active-transport/registration-and-licensing/licences/driver-history-handbooks-and-logbooks/driver-handbooks-and-logbooks)
+- Learner and probationary driver road rules (Transport Victoria) (official website) (https://transport.vic.gov.au/road-and-active-transport/road-rules-and-safety/learner-and-probationary-driver-road-rules)
+- Victoria's graduated licensing system (Transport Victoria) (official website) (https://transport.vic.gov.au/road-and-active-transport/road-rules-and-safety/victorias-graduated-licensing-system)
+
+Rules and test formats change. We checked these pages on 30 September 2026; the official website is always the final word.
+
+## Related
+
+- VIC learner permit test practice (https://blue0orbit.github.io/learners-test-australia/vic-learner-permit-test-practice.html)
+- Give way rules every learner must know (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html)
+- Hazard perception test in NSW, VIC and QLD (https://blue0orbit.github.io/learners-test-australia/blog/hazard-perception-test-nsw-vic-qld.html)
+- How to use mock tests and mistakes (https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html)
+- FAQ (https://blue0orbit.github.io/learners-test-australia/faq.html)
+
+---
+
+URL: https://blue0orbit.github.io/learners-test-australia/blog/qld-written-road-rules-test-vs-prepl.html
+
+Queensland
+
+# QLD written road rules test vs PrepL: which should you do?
+
+By BlueOrbit (https://blue0orbit.github.io/learners-test-australia/about.html) · Published 30 September 2026 · Last updated: 30 September 2026 · 5 min read
+
+Summary
+
+Queensland offers two routes to a car learner licence. The written road rules test is 30 questions on paper in two separately scored sections: giving way (need 9 of 10) and road rules and licence requirements (need 18 of 20). PrepL is an online course of about 4 to 6 hours with a 30-question final test (need 27). PrepL isn't compulsory yet, so you can choose. Facts as checked on 30 September 2026.
+
+## What are the two routes to a Queensland learner licence?
+
+Before a car learner licence can be issued in Queensland you must pass one of two knowledge assessments (and be medically fit to drive). They cover the same rules but work very differently.
+
+Written road rules test and PrepL compared (checked 30 September 2026)
+
+| | Written road rules test | PrepL |
+| Format | 30 multiple-choice questions on paper | Online course of about 4–6 hours, then a 30-question final test |
+| Pass mark | Giving way 9 of 10 and road rules 18 of 20, scored separately | 27 of 30 (90%) |
+| Where | A licence-issuing centre | Phone, tablet or computer |
+| Earliest age | 16 | Enrol from 15 years 11 months |
+| Cost and retries | A fee for every attempt; one attempt a day; after a fail, wait until the next working day | One fee ($29.70 as at 1 July 2026) for 12 months' access; retry after 24 hours at no extra cost |
+| A pass lasts | 5 years | 5 years |
+
+## How does the written road rules test work?
+
+You sit the written test on paper at a TMR customer service centre, a participating QGAP office or, in rural and remote areas, a licence-issuing police station. You must be at least 16.
+
+It has 30 multiple-choice questions in two sections, scored separately. Section one is giving way: 10 questions, and you need 9. Section two is road rules and driver licence requirements: 20 questions, and you need 18. Fail either section and you fail the test, however well you did in the other.
+
+No formal time limit is published, but the handbook suggests allowing at least 30 minutes. You pay a fee for every attempt and can sit only once a day; after a fail you wait until the next working day. The questions are based on the handbook Your keys to driving in Queensland. When you pass, you receive a driver licence receipt that lets you start supervised driving until your card arrives in the mail.
+
+## How does PrepL work?
+
+PrepL is Queensland's online learning and assessment course. It takes about 4 to 6 hours and has three sections: Your driving attitude, Signs and rules, and Sharing the road with others. Assessment pieces are built into the course and unlock as you progress, and at the end there is a final test of 30 multiple-choice questions. You need 27 correct.
+
+You can enrol from 15 years and 11 months, so your learner licence can be issued on your 16th birthday. One fee, the same as the written test fee ($29.70 as at 1 July 2026), gives you 12 months' access, and if you fail the final test you can try again after 24 hours at no extra cost. You still need to show evidence of identity, which you can do at any time during your enrolment.
+
+PrepL must be your own work. If someone else does it for you, your enrolment can be cancelled, they risk a penalty of more than $6,900, and you can't enrol again for 6 months.
+
+## Is PrepL replacing the written test?
+
+Eventually. The Queensland Government says PrepL will replace the written test, but it isn't compulsory yet. Until it is, you can choose either route. Once it becomes mandatory, people without internet access may be exempt and sit the written test instead.
+
+## Which route should you choose?
+
+Both lead to the same learner licence and both passes last 5 years, so it comes down to what suits you:
+
+- Timing: PrepL lets you enrol before you turn 16 and have everything ready for your birthday. The written test can't be sat until you are 16.
+- Retries: a failed PrepL final test can be retried after 24 hours at no extra cost within your 12 months. Each written test attempt costs a fee, and you can only sit once a day.
+- How you learn: PrepL is interactive and self-paced. The written test suits people who have already studied the handbook and want a single sitting.
+- Pass marks: the written test lets you drop 1 giving-way question and 2 road rules questions; PrepL lets you drop 3 questions in total.
+- Access: PrepL needs a phone, tablet or computer and an internet connection.
+
+## What do both routes test?
+
+Giving way matters on both routes. It is a whole section of the written test, and the handbook says learners are tested on it in detail: unsigned crossroads and T-intersections, STOP and GIVE WAY signs, turning across traffic, roundabouts, merging, U-turns, driveways, buses and emergency vehicles.
+
+Licence requirements are core content too, not background. Know these learner rules:
+
+- Your learner licence lasts 3 years, and you must carry it (card, Digital Licence app or receipt) whenever you drive.
+- Your alcohol limit is zero, and your supervisor must not drink alcohol while you are driving under their supervision.
+- Your supervisor must hold an open licence for that class, have held one for at least a year, and sit beside you.
+- L plates go on the front and rear, readable from 20 metres.
+- If you are under 25, you need 100 hours of supervised driving, including 10 at night, in a logbook. Each hour with an accredited driver trainer counts as 3 hours, for up to 10 hours of lessons.
+- Four or more demerit points in 12 months means a 3-month suspension for a learner.
+- You can sit the hazard perception test after 6 months on your learner licence, and the practical test after a year.
+
+The current handbook is edition No. 19 from November 2022, so it predates some recent changes, including Queensland's 2026 e-scooter and e-bike rules and fines that are indexed each July. The official pages and the current Road Rules Regulation have the latest versions.
+
+## How can you practise for either route?
+
+Learners Test Australia has mock tests for both: the written test, with separate pass lines for giving way and road rules, and the PrepL final test. Giving-way questions are drawn as diagrams, and every answer shows the handbook page or rule it comes from. See the QLD learner test practice page (https://blue0orbit.github.io/learners-test-australia/qld-learner-test-practice.html) for the key facts, and our give way guide (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html) for the section that trips most people up.
+
+## Check the official source
+
+- Driver tests, written and online (qld.gov.au) (official website) (https://www.qld.gov.au/transport/licensing/getting/tests)
+- PrepL online learning and assessment (qld.gov.au) (official website) (https://www.qld.gov.au/transport/licensing/getting/learner/prepl/prepl/prepl-online-learning-and-assessment)
+- Getting a learner licence (qld.gov.au) (official website) (https://www.qld.gov.au/transport/licensing/getting/learner/getting-a-learner-licence)
+- Rules for learner driving (qld.gov.au) (official website) (https://www.qld.gov.au/transport/licensing/getting/rules)
+- Your keys to driving in Queensland (Queensland Government publications) (official website) (https://www.publications.qld.gov.au/dataset/your-keys-to-driving-in-queensland)
+
+Rules and test formats change. We checked these pages on 30 September 2026; the official website is always the final word.
+
+## Related
+
+- QLD learner test practice (https://blue0orbit.github.io/learners-test-australia/qld-learner-test-practice.html)
+- Give way rules every learner must know (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html)
+- How to use mock tests and mistakes (https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html)
+- Hazard perception test in NSW, VIC and QLD (https://blue0orbit.github.io/learners-test-australia/blog/hazard-perception-test-nsw-vic-qld.html)
+- FAQ (https://blue0orbit.github.io/learners-test-australia/faq.html)
+
+---
+
+URL: https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html
+
+Road rules
+
+# Give way rules every learner driver must know
+
+By BlueOrbit (https://blue0orbit.github.io/learners-test-australia/about.html) · Published 30 September 2026 · Last updated: 30 September 2026 · 6 min read
+
+Summary
+
+Giving way means slowing down and, if needed, stopping to avoid a collision, then staying stopped until it is safe. The core rules are national, so they are the same in NSW, VIC and QLD: stop fully at STOP signs, give way to the right at intersections with no signs or lights, the road that ends gives way at a T-intersection, right-turners give way to oncoming traffic, and you give way to every vehicle already in a roundabout. A few details differ by state. As checked on 30 September 2026.
+
+## What does “give way” actually mean?
+
+To give way is to slow down and, if needed, stop so that you don't collide with another road user. If you have already stopped, you stay stopped until it is safe to go. Giving way doesn't always mean stopping, but it always means being ready to.
+
+Give-way rules apply to bicycles, e-scooter riders and horse riders just as they do to cars and trucks.
+
+## What do STOP and GIVE WAY signs require?
+
+At a STOP sign or stop line, come to a complete stop behind the line, every time, even when nothing is coming. Then give way as you would at a give way sign. At a GIVE WAY sign or line, slow down and be ready to stop; if the way is clear you don't have to stop.
+
+At either sign, give way to every vehicle already in, entering or approaching the intersection, and to pedestrians. There are three exceptions: a vehicle doing a U-turn, a vehicle turning left from a slip lane, and an oncoming vehicle that is turning right and also faces a stop or give way sign or line.
+
+The painted lines carry the same meaning as the signs, so if a sign has been knocked down, a continuous line still means stop and a broken line still means give way.
+
+A STOP sign isn't “stronger” than a GIVE WAY sign. When two drivers face each other at signs, both give way to other traffic first, and then the normal rules decide between them: the driver turning right gives way to the one going straight or turning left.
+
+## Who goes first where there are no signs or lights?
+
+At a crossroads with no signs, lines or lights, give way to vehicles coming from your right. This “give way to the right” rule only applies at these unsigned intersections; T-intersections, roundabouts and signed intersections have their own rules.
+
+- Turning right: you also give way to oncoming vehicles going straight or turning left, and to pedestrians crossing the road you're entering.
+- Turning left: give way to vehicles approaching from your right, and to pedestrians crossing the road you turn into.
+- Two drivers turning right from opposite directions can turn at the same time, passing in front of each other.
+- A vehicle doing a U-turn gives way to everyone else, including you.
+
+## How do T-intersections work?
+
+A T-intersection is where one road ends at another. If you are on the road that ends, you give way to all vehicles on the road that continues, from both directions, whether they are turning or not. If you are on the continuing road and turning right into the road that ends, you give way to oncoming vehicles going straight or turning left.
+
+Watch for continuing roads that bend around a corner, often shown by a continuity line. Traffic following the bend has priority, so drivers leaving the bend to go into the other road, or coming out of it, give way.
+
+## What about traffic lights?
+
+- Turning right on a plain green: give way to oncoming traffic and wait for a safe gap. If the lights change while you are in the intersection, finish your turn when it is safe.
+- Green arrow: oncoming traffic faces red, but still watch for pedestrians.
+- Flashing yellow: you may go, applying the normal give-way rules.
+- Lights off: if a stop sign is fitted to the signal post (NSW's version has three black dots), treat the intersection as a stop sign. Otherwise use the normal rules for intersections without signs.
+- Blocked road ahead: don't enter the intersection, even on green, unless there is room for your car on the other side.
+
+## Who do you give way to at a roundabout?
+
+Every vehicle already in the roundabout, whether it is on your right, straight ahead or on your left. A common wrong belief is that you only give way to the right. Keep watching riders already in the roundabout, who are harder to see, and remember a vehicle beside or ahead of you may be about to exit across your path.
+
+## When must you give way to pedestrians, and when merging?
+
+When you turn at an intersection, give way to pedestrians crossing the road you are turning into, even when you have a green light and they are crossing on the walk signal. When entering or leaving a driveway or car park, give way to pedestrians and riders on the footpath and to vehicles on the road.
+
+When your marked lane ends, or you change lanes, give way to vehicles already in the lane you're moving into. Where two lines of traffic merge with no lane lines at all, the vehicle in front goes first (the “zip” merge).
+
+## What about emergency vehicles and police?
+
+If an emergency vehicle is approaching with its siren or flashing red or blue lights, get out of its way as soon as it is safe, usually by slowing and moving left, even if you have a green light. Police or authorised people directing traffic override lights and signs, so always follow their directions.
+
+## Where do NSW, VIC and QLD differ?
+
+The rules above come from the national Australian Road Rules, so they apply in all three states. A few local details differ:
+
+- Hook turns (VIC): at intersections with a hook turn sign, mainly in central Melbourne, you turn right from the far-left lane.
+- Trams: in Victoria you give way to trams entering or approaching a roundabout, and Queensland has the same rule for the Gold Coast light rail. In NSW, when light rail is at an intersection, wait until the intersection is clear and never move into its path.
+- Giving way to buses: all three have “give way to buses” rules for buses pulling out from a stop and signalling. Victoria applies it in built-up areas; Queensland on roads with a limit of 70 km/h or less, for drivers in the left lane.
+- U-turns at traffic lights: in NSW you may only U-turn at lights where a “U-turn permitted” sign is shown. Transport Victoria's guidance says Victoria allows U-turns unless a sign or line prohibits them. Check your own state's rule before relying on it.
+
+## How much do give-way questions count in the test?
+
+A lot. In Queensland's written test, giving way is a whole 10-question section and you need 9 right. In Victoria it was the biggest single group in the VicRoads practice test when we reviewed it on 30 September 2026. In NSW, intersections and giving way is one of the largest topics in the published question list. Practise with diagrams until each situation feels obvious; our mock test guide (https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html) explains how to turn mistakes into reviews.
+
+## Check the official source
+
+- Road User Handbook (nsw.gov.au) (official website) (https://www.nsw.gov.au/driving-boating-and-transport/roads-safety-and-rules/safety-updates-for-nsw-road-users/road-user-handbook)
+- Driver handbooks, including Road to Solo Driving (Transport Victoria) (official website) (https://transport.vic.gov.au/road-and-active-transport/registration-and-licensing/licences/driver-history-handbooks-and-logbooks/driver-handbooks-and-logbooks)
+- Giving way (qld.gov.au) (official website) (https://www.qld.gov.au/transport/safety/rules/road/give-way)
+- Roundabouts (qld.gov.au) (official website) (https://www.qld.gov.au/transport/safety/rules/road/roundabouts)
+
+Rules and test formats change. We checked these pages on 30 September 2026; the official website is always the final word.
+
+## Related
+
+- QLD learner test practice (https://blue0orbit.github.io/learners-test-australia/qld-learner-test-practice.html)
+- VIC learner permit test practice (https://blue0orbit.github.io/learners-test-australia/vic-learner-permit-test-practice.html)
+- NSW DKT practice test (https://blue0orbit.github.io/learners-test-australia/nsw-dkt-practice-test.html)
+- How to use mock tests and mistakes (https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html)
+
+---
+
+URL: https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html
+
+Study tips
+
+# How to use mock tests and mistakes to prepare for your learner test
+
+By BlueOrbit (https://blue0orbit.github.io/learners-test-australia/about.html) · Published 30 September 2026 · Last updated: 30 September 2026 · 4 min read
+
+Summary
+
+Mock tests work best when you sit them like the real test and then study your mistakes. Know your mistake budget: 1 in the NSW DKT road safety section, 3 in NSW general knowledge, 7 in the Victorian in-person test, 1 in Queensland's giving-way section, 2 in its road rules section and 3 in the PrepL final test. Then read each explanation, look up the rule and come back to the question a few days later.
+
+## What is a mistake budget?
+
+Every learner knowledge test has a pass mark, and the gap between the number of questions and the pass mark is your mistake budget: how many you can get wrong and still pass. Where a test has sections, each section has its own budget, and you can't borrow from one to cover another.
+
+Mistake budgets by test (formats as published, checked 30 September 2026)
+
+| Test | Section | Questions | Pass mark | Mistakes allowed |
+| NSW DKT | General knowledge | 15 | 12 | 3 |
+| Road safety | 30 | 29 | 1 |
+| VIC Learner permit test (in person) | All questions | 32 | 25 | 7 |
+| QLD Written road rules test | Giving way | 10 | 9 | 1 |
+| Road rules and licence requirements | 20 | 18 | 2 |
+| QLD PrepL final test | All questions | 30 | 27 | 3 |
+
+Look at where the budget is tight. One mistake in NSW road safety or Queensland giving way is all you get. That is where a mock test tells you the most.
+
+## When should you start doing mock tests?
+
+Not on day one. A mock test measures what you know; it isn't the best way to learn it. Start by reading your state's handbook a chapter at a time and answering practice questions on each topic. In the app, a 12-question quick check finds your starting point, and the daily plan mixes reviews, mistakes and new questions.
+
+Once you've worked through every topic at least once, start sitting full mock tests. From then on, alternate: mock test, fix the mistakes, practise, and mock test again.
+
+## How do you sit a mock test like the real thing?
+
+- Find a quiet spot and set aside enough time to finish in one go.
+- No notes, no handbook and no looking things up. The point is to find the gaps.
+- Answer every question, and flag the ones you're unsure of to review afterwards.
+- Read the whole question and every option before choosing. Many wrong options are tempting because they are almost right.
+
+In the NSW mock, the test ends where the real DKT would, as soon as passing is no longer possible, and you can choose to keep practising the remaining questions. That early stop is a useful jolt: it shows exactly how little room there is in the road safety section.
+
+## What should you do with your mistakes?
+
+Your mistakes are the most valuable part of a mock test. For each one:
+
+- Read the explanation and the rule it comes from. In the app every answer shows the handbook page or road rule.
+- Work out why you got it wrong. Did you not know the rule, misread the question, or mix it up with a similar rule?
+- Look it up. Reading the handbook page puts the rule in context and often clears up neighbouring rules too.
+- Come back to it later. Answering it again a few days later, rather than straight away, is what makes it stick.
+
+Don't ignore your lucky guesses either. A correct answer you guessed is a mistake waiting to happen. The app asks “How sure were you?” after each answer (knew it, unsure or guessed) and uses your reply to decide when to show the question again.
+
+## How should you read your results?
+
+Look at each section against its own pass line, not just your total. A score of 40 out of 45 in the NSW DKT sounds comfortable, but if 2 of those 5 mistakes were in road safety, it is a fail. In the app, results show every section against its pass line, and the Today screen shows your weakest topic.
+
+Over time, the pass-chance estimate combines your recent answers into a single number. Treat it as a guide, not a guarantee: it is based on practice questions, and the official test is set by your state. Premium adds a forecast for each section, which helps when one section is holding you back.
+
+## How many mock tests should you do?
+
+There is no magic number. A better target is consistency: pass several mock tests in a row with a little room to spare in every section, especially the tight ones. If you pass one and fail the next, keep going.
+
+Aim to understand the rules rather than memorise answers. Our questions are original, not the official ones, so recognising a question won't help you in the real test; knowing the rule will. In the free version you get one mock test a day, plus another each time you choose to watch a short ad. Premium makes them unlimited.
+
+## Which traps catch people out?
+
+- Other states' numbers. Learning from a mix of sources can teach you the wrong figures. Supervised hours are a classic: NSW asks under-25s for 120 hours including 20 at night; Victoria asks for 120 hours, 20 or more after dark, if you'll be under 21 at your licence test; Queensland asks under-25s for 100 hours including 10 at night.
+- Old rules. Rules change. Check that what you're learning matches the current handbook and your state's website.
+- Rushing the easy ones. Most mistakes on questions you know come from reading too fast.
+
+Ready to start? See the practice pages for NSW (https://blue0orbit.github.io/learners-test-australia/nsw-dkt-practice-test.html), VIC (https://blue0orbit.github.io/learners-test-australia/vic-learner-permit-test-practice.html) and QLD (https://blue0orbit.github.io/learners-test-australia/qld-learner-test-practice.html).
+
+## Check the official source
+
+- NSW Driver Knowledge Test (nsw.gov.au) (official website) (https://www.nsw.gov.au/driving-boating-and-transport/driving-nsw/driver-and-rider-licences/driver-licences/driver-licence-tests/driver-knowledge-test)
+- Victorian learner permit test (VicRoads) (official website) (https://www.vicroads.vic.gov.au/ls-and-ps/getting-your-ls/learner-permit-test)
+- Queensland driver tests (qld.gov.au) (official website) (https://www.qld.gov.au/transport/licensing/getting/tests)
+- Queensland PrepL (qld.gov.au) (official website) (https://www.qld.gov.au/transport/licensing/getting/learner/prepl/prepl/prepl-online-learning-and-assessment)
+
+Rules and test formats change. We checked these pages on 30 September 2026; the official website is always the final word.
+
+## Related
+
+- NSW DKT practice test (https://blue0orbit.github.io/learners-test-australia/nsw-dkt-practice-test.html)
+- VIC learner permit test practice (https://blue0orbit.github.io/learners-test-australia/vic-learner-permit-test-practice.html)
+- QLD learner test practice (https://blue0orbit.github.io/learners-test-australia/qld-learner-test-practice.html)
+- App features (https://blue0orbit.github.io/learners-test-australia/features.html)
+
+---
+
+URL: https://blue0orbit.github.io/learners-test-australia/blog/hazard-perception-test-nsw-vic-qld.html
+
+Hazard perception
+
+# Hazard perception test: what it is in NSW, VIC and QLD
+
+By BlueOrbit (https://blue0orbit.github.io/learners-test-australia/about.html) · Published 30 September 2026 · Last updated: 30 September 2026 · 4 min read
+
+Summary
+
+Hazard perception is the skill of spotting possible dangers early, judging how risky they are and responding in time. In NSW, Victoria and Queensland you sit a hazard perception test (HPT) during your learner period, after the knowledge test and before the practical driving test. When you can sit it and how long a pass lasts differ by state. Facts as checked on 30 September 2026.
+
+## What is hazard perception?
+
+Hazard perception is the skill of spotting possible dangers on the road, judging how risky they are, predicting what might happen, and responding in time. Victoria's Road to Solo Driving handbook stresses that it is not the same as quick reactions: young drivers often react fast but are slower to anticipate. It grows only with plenty of varied driving experience, and the aim is that most situations on the road don't take you by surprise.
+
+Hazards are anything that could lead to a crash: vehicles ahead, behind, beside you or in side streets, a truck double-parked, trains, pedestrians, bicycle riders, weather, potholes, heavy traffic, tight curves and crests you can't see over.
+
+## Where does the hazard perception test fit in each state?
+
+In all three states the hazard perception test (HPT) comes during your learner period, after the knowledge test and before the practical driving test.
+
+Hazard perception test by state (checked 30 September 2026)
+
+| State | When you can sit it | How long a pass lasts |
+| NSW | If you are under 25, after at least 10 months on your Ls | 15 months, for the driving test |
+| VIC | From 17 years 11 months, with a current Victorian learner permit | Pass the drive test within 12 months, or sit the HPT again |
+| QLD | After holding your learner licence for at least 6 months; required for every car learner, whatever their age | You pass it once |
+
+## What should you know about the HPT in NSW?
+
+In NSW the Hazard Perception Test is the second of three tests: the DKT gets you your Ls, the HPT comes during your learner period, and the driving test gets you your P1 licence. If you are under 25, you can only sit it after at least 10 months on your learner licence, and your pass stays valid for 15 months for the driving test. The NSW Government's HPT page explains the current format and how to book.
+
+## What should you know about the HPT in Victoria?
+
+In Victoria you must pass the Hazard Perception Test before the drive test. You can sit it from 17 years 11 months if you hold a current Victorian learner permit. VicRoads describes it as 25 short video clips, taking up to 45 minutes, in which you choose whether to slow down, stop or keep going. After you pass, you have 12 months to pass the drive test; otherwise you sit the HPT again.
+
+## What should you know about the HPT in Queensland?
+
+Since 1 July 2021 every car learner in Queensland, of any age, must pass the hazard perception test before the practical test. You can sit it after holding your learner licence for at least 6 months, and your logbook doesn't need to be finished first. It is done online only, not at service centres, using computer-generated 3D video clips of situations that crash data shows are hard for new drivers, and you only need to pass it once. The fee was $42.70 as at 1 July 2026. If you turn up to the practical test without an HPT pass, the test is cancelled and the fee isn't refunded.
+
+## How do you build hazard perception skill?
+
+Mostly by driving, with a supervisor, in as many different conditions as you can. The Victorian handbook's advice applies everywhere:
+
+- Scan the whole scene. Keep looking far ahead, to both sides and in your mirrors, rather than staring at the car in front.
+- Know your blind spots. Every car has areas no mirror shows, however well the mirrors are set. Head-check with a quick glance over your shoulder before changing lanes, merging, pulling out, reversing or overtaking.
+- Practise in variety: at night, in the wet, in busy and quiet traffic, on roads with different speed limits, and on sealed and gravel surfaces.
+- Drive little and often. Frequent short drives of 10 minutes to an hour are worth more than a few long ones, especially early on.
+
+The supervised hours each state asks for exist partly for this reason: NSW asks under-25s for 120 hours, Victoria asks for 120 hours if you'll be under 21 at your licence test, and Queensland asks under-25s for 100 hours.
+
+## Can an app help with hazard perception?
+
+An app can't replace time behind the wheel, but it can help you practise the thinking. Learners Test Australia has illustrated traffic scenes, drawn from above, where you tap the hazard you should be ready for and then read why it matters: a person waiting between parked cars, a ball on the road with a child nearby, a parked car signalling to pull out, or a kangaroo beside a country road at dusk. A few sample scenes are free, and Premium unlocks the full set. Each state also has a guide to its HPT.
+
+The scenes are still images for practice. They are not a copy of any official test, which uses video clips. For the knowledge test side, see our mock test guide (https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html) and the feature tour (https://blue0orbit.github.io/learners-test-australia/features.html).
+
+## Check the official source
+
+- Hazard Perception Test (nsw.gov.au) (official website) (https://www.nsw.gov.au/driving-boating-and-transport/driving-nsw/driver-and-rider-licences/driver-licences/driver-licence-tests/hazard-perception-test)
+- Hazard perception test (VicRoads) (official website) (https://www.vicroads.vic.gov.au/ls-and-ps/getting-your-ps/hazard-perception-test)
+- Driver tests, written and online (qld.gov.au) (official website) (https://www.qld.gov.au/transport/licensing/getting/tests)
+- Driver licence progression (qld.gov.au) (official website) (https://www.qld.gov.au/transport/licensing/driver-licensing/applying/driver-licence-progression)
+
+Rules and test formats change. We checked these pages on 30 September 2026; the official website is always the final word.
+
+## Related
+
+- App features (https://blue0orbit.github.io/learners-test-australia/features.html)
+- NSW DKT practice test (https://blue0orbit.github.io/learners-test-australia/nsw-dkt-practice-test.html)
+- VIC learner permit test practice (https://blue0orbit.github.io/learners-test-australia/vic-learner-permit-test-practice.html)
+- QLD learner test practice (https://blue0orbit.github.io/learners-test-australia/qld-learner-test-practice.html)
+
+---
+
+URL: https://blue0orbit.github.io/learners-test-australia/about.html
+
+About
+
+# About Learners Test Australia and how we make our questions
+
+Who makes the app, why it exists, and the process behind every question.
+
+Last updated: 30 September 2026
+
+## Who makes Learners Test Australia?
+
+Learners Test Australia is made by BlueOrbit, an independent app developer. BlueOrbit is not a driving school or a government agency, and the app has no connection with any licensing authority. You can reach us at blue0orbit@gmail.com.
+
+## Why a state-by-state learner test app?
+
+Each state runs its own knowledge test with its own format, pass marks and licensing rules. A question bank that mixes them up teaches the wrong numbers: the supervised hours, plate rules and alcohol limits for new drivers are not the same everywhere. So the app has one profile per state, and each profile follows that state's handbook, test format and rules.
+
+## How are the questions made and checked?
+
+-
+
+### A coverage map for each state
+
+We list every fact the official material tests, using the current handbook, the official test pages, the official practice tests (only to see which facts get tested) and the road rules legislation. Each fact records its source and the date it was checked.
+
+-
+
+### Original questions
+
+Every question is written in our own words to test one fact from the map, with wrong options based on common misunderstandings. No official question, answer option, handbook sentence or image is reproduced, and we don't paraphrase official question banks.
+
+-
+
+### A source and a review date on every question
+
+Each question carries the handbook page or road rule it comes from and the date it was last verified. The launch packs were checked on 30 September 2026.
+
+-
+
+### The current rule wins
+
+Where an older official source differs from the current rule, the question follows the current rule. Facts we couldn't confirm from a current official source are flagged for manual checking rather than turned into questions.
+
+-
+
+### Original artwork
+
+Road signs, markings and diagrams are redrawn from written descriptions, not traced from official artwork.
+
+## Which official sources are the questions checked against?
+
+| State | Handbook and edition | Also checked against |
+| NSW | Road User Handbook, edition 02/2026 | NSW Road Rules 2014 and NSW Government licence and test pages |
+| VIC | Road to Solo Driving, April 2023 edition | Road Safety Road Rules 2017 and current Transport Victoria and VicRoads pages |
+| QLD | Your keys to driving in Queensland, No. 19 (November 2022) | The Queensland Road Rules Regulation in force from 31 August 2026 and current Queensland Government pages |
+
+Where a handbook is older than the current rules (for example, Queensland's 2022 handbook predates the 2026 e-scooter and e-bike changes), the current official pages and legislation decide the answer.
+
+## Attribution
+
+Queensland road rules content is based on content from the Queensland Legislation website at 30 September 2026 (CC BY 4.0). Queensland Government web pages are © The State of Queensland (Department of Transport and Main Roads), CC BY 4.0. Transport Victoria web pages are licensed under CC BY 4.0, except images and branding. We restate facts in our own words, reproduce no text, logos or images, and none of these sources endorses the app or this website.
+
+## Independence
+
+Learners Test Australia is an independent study app. It is not affiliated with, or endorsed by, Transport for NSW, Service NSW, VicRoads, Transport Victoria, Queensland TMR or any government agency.
+
+## About this website
+
+This site uses no cookies, analytics or trackers and loads nothing from third parties. See the privacy policy (https://blue0orbit.github.io/learners-test-australia/privacy-policy.html#website).
+
+## At a glance
+
+- App: Learners Test Australia: DKT
+- Developer: BlueOrbit
+- Platform: Android 8.0 or later
+- States: NSW, VIC, QLD
+- Languages: 5
+- Price: free, optional A$5.99 Premium
+- Contact: blue0orbit@gmail.com
+
+---
+
+URL: https://blue0orbit.github.io/learners-test-australia/privacy-policy.html
+
+# Privacy Policy
+
+How the Learners Test Australia app handles your information, and a note on this website.
+
+Last updated: 30 September 2026
+
+App: Learners Test Australia: DKT (Android) · Developer: BlueOrbit · Contact: blue0orbit@gmail.com
+
+This is the same privacy policy shown in the app (Settings → Privacy policy).
+
+## Overview
+
+Learners Test Australia is an independent study app that helps you prepare for an Australian learner driver knowledge test. It is not affiliated with any government, transport or licensing agency.
+
+This policy explains what the app collects, why, and the choices you have. Questions: blue0orbit@gmail.com.
+
+## Information we collect
+
+Account: when you sign in with Google, Facebook or email, we receive your name and email address.
+
+Study data: your answers, completed practice sessions and mock tests, saved questions and the state you study for. This is stored on your device and in your account so it follows you to a new phone. Your test date and reminder settings stay on your device.
+
+If you allow “Help improve the app”: anonymous usage statistics and crash reports (device model, Android version, app version, screens used).
+
+Ads: the free version shows ads. Ad providers may use your device’s advertising ID. Where the law requires it (for example in the EEA and UK), Google asks for your consent first, and you can change it in Settings.
+
+## How we use your data
+
+We use your data to:
+
+- Create your account and keep your progress in sync
+- Build your daily plan, reviews and pass-chance estimate
+- Send study reminders and announcements, if you turn them on
+- Send tips and offers by email, only if you opt in (unsubscribe any time)
+- Show ads in the free version
+- Fix crashes and improve the app, if you allow it
+
+We never sell your personal information.
+
+## Third-party services
+
+The app uses these services, each with its own privacy policy:
+
+- Google Firebase — sign-in, cloud storage of progress, analytics, crash reports, push messages and remote settings
+- Google AdMob — banner ads (free version)
+- Unity Ads — optional rewarded video ads (free version)
+- Google User Messaging Platform — ad consent where required
+- Google Play Billing — the Premium purchase (we never see your payment details)
+- Facebook Login — optional sign-in
+
+## Data protection & retention
+
+Your data is shared only with the providers above, and only as needed to run the app. Data is sent over encrypted connections, and your cloud data can only be read by your own account.
+
+We keep your data while your account exists. Delete your account in Settings and your cloud progress and profile are deleted straight away; copies in the providers’ backups are removed within 30 days. You can also email us to ask for deletion.
+
+## Your rights
+
+Australia: we handle personal information under the Australian Privacy Principles (Privacy Act 1988). You can ask to access or correct your information, or complain, by emailing us. If you are not satisfied with our response you can contact the Office of the Australian Information Commissioner (oaic.gov.au (https://www.oaic.gov.au/)).
+
+EEA and UK: you have rights to access, correct, delete, restrict and port your data and to object to processing. We rely on your consent for analytics, marketing email and personalised ads, and on our contract with you to run your account.
+
+Children: the app is for people preparing for a learner licence, usually 15 and over. It is not directed at children under 13, and we do not knowingly collect their data.
+
+Changes: if we change this policy in an important way, we will tell you in the app first.
+
+## Contact
+
+Privacy questions, data requests or complaints:
+
+Email: blue0orbit@gmail.com
+
+We aim to reply within 5 business days.
+
+## This website
+
+This section is about the website you are reading now (blue0orbit.github.io/learners-test-australia), not the app.
+
+- No cookies. The website sets no cookies and stores nothing in your browser (no local storage or similar).
+- No analytics or trackers. There are no analytics, advertising, tracking pixels or social media widgets.
+- Nothing loaded from third parties. Fonts, images, styles and the one small script (it opens and closes the menu on small screens) are all served from this website itself.
+- Hosting. The site is hosted on GitHub Pages. GitHub says it logs the IP address of visitors to GitHub Pages sites for security purposes (see About GitHub Pages (https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)). We don't use those logs, and the site has no analytics of its own.
+- Email. If you email us, we use your message and email address to reply to you.
+
+See also the cookie policy (https://blue0orbit.github.io/learners-test-australia/cookies.html) and how to delete your account (https://blue0orbit.github.io/learners-test-australia/account-deletion.html).
+
+---
+
+URL: https://blue0orbit.github.io/learners-test-australia/account-deletion.html
+
+# Delete your Learners Test Australia account and data
+
+Last updated: 30 September 2026
+
+App: Learners Test Australia: DKT (Android, package com.blueorbit.learnerstestau)
+Developer: BlueOrbit
+Contact: blue0orbit@gmail.com
+
+You can delete your Learners Test Australia account and the data linked to it at any time, either in the app or by email. Uninstalling the app does not delete your account.
+
+## Option 1: delete your account in the app
+
+- Open Learners Test Australia and sign in to the account you want to delete.
+- Tap the Settings (gear) icon at the top of the Today, Practice, Tests or Progress tab.
+- Scroll to Account and tap Delete account (“Removes your account and all saved progress”).
+- Read the message and tap Delete to confirm. This can't be undone.
+- If you haven't signed in recently, the app deletes your progress first and then asks you to sign in again. Sign in and repeat this step to finish deleting the account itself.
+
+When it's done, the app shows “Your account has been deleted.”
+
+## Option 2: ask us by email
+
+If you can't use the app (for example, you no longer have the phone), email blue0orbit@gmail.com from the email address of your account, with the subject “Delete my account”. We may reply to that address to confirm the request before deleting. We aim to reply within 5 business days.
+
+You can also email us if you want particular data deleted without deleting your whole account.
+
+## What is deleted
+
+- Your account (your sign-in).
+- Your profile: your name and email address.
+- Your progress in every state: answers, completed practice sessions and mock tests, and saved questions.
+- Your email preferences.
+
+Your cloud progress and profile are deleted straight away. Copies in our service providers’ backups are removed within 30 days.
+
+## What is kept
+
+- Premium purchases. A Premium purchase belongs to the Google account that bought it, and purchase records are kept by Google Play under its own policies, not by us. We never see or store your payment details. If you later sign in again with the same Google account, Premium is still available. Deleting your account does not refund a purchase, except where required by law.
+- Settings stored only on your phone. Your test date and reminder settings stay on your device. They are removed when you uninstall the app or clear its storage in Android settings.
+
+More detail is in the privacy policy (https://blue0orbit.github.io/learners-test-australia/privacy-policy.html#data-protection-and-retention).

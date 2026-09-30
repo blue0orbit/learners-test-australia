@@ -1,0 +1,22 @@
+{
+  "name": "Learners Test Australia",
+  "short_name": "Learners Test",
+  "description": "Learner test practice for NSW, VIC and QLD.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#12161D",
+  "theme_color": "#12161D",
+  "icons": [
+    {
+      "src": "assets/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

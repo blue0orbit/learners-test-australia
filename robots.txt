@@ -1,0 +1,48 @@
+# robots.txt for the Learners Test Australia website (https://blue0orbit.github.io/learners-test-australia/)
+# All crawlers, including search engines and AI assistants, are welcome to read and cite this site.
+# Note: crawlers only read robots.txt at the root of a host (https://blue0orbit.github.io/robots.txt).
+# This copy documents the intended policy; submit the sitemap below in search consoles as well.
+
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://blue0orbit.github.io/learners-test-australia/sitemap.xml
