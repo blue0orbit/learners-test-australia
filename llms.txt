@@ -1,34 +1,44 @@
 # Learners Test Australia
 
-> Learners Test Australia (Google Play title “Learners Test Australia: DKT”) is an independent Android study app by BlueOrbit for learner drivers in New South Wales, Victoria and Queensland, Australia. It has original practice questions and mock tests in each state's learner knowledge test format, with every answer explained and linked to the handbook page or road rule it comes from. Free to practise, with an optional one-time A$5.99 Premium purchase. Not affiliated with any government agency. The app is not on Google Play yet (coming soon).
+> Learners Test Australia (Google Play title “Learners Test Australia: DKT”) is an independent Android study app by BlueOrbit for learner drivers in all eight Australian states and territories. It has original practice questions and mock tests in each state's learner knowledge test format, with every answer explained and linked to the handbook page or road rule it comes from. Free to practise, with an optional one-time A$5.99 Premium purchase. Not affiliated with any government agency. The app is not on Google Play yet (coming soon).
 
 Key facts (checked 30 September 2026):
 
 - Developer: BlueOrbit. Support email: blue0orbit@gmail.com. Package: com.blueorbit.learnerstestau. Platform: Android 8.0 or later.
-- States available: NSW, VIC, QLD. Coming later (no dates): WA and SA next, then TAS, ACT and NT.
+- States and territories covered: all eight (NSW, VIC, QLD, SA, WA, TAS, ACT, NT).
 - NSW Driver Knowledge Test (DKT): 45 questions; general knowledge 15 (pass 12) and road safety 30 (pass 29); ends early once passing is impossible; no time limit published (structure as published by the NSW Government on its knowledge test pages; the car DKT is reported to follow it). DKT online course from 15 years 11 months.
 - Victorian learner permit test: online learner permit course with final test is the default; in-person test is 32 multiple-choice questions, pass 25 (78%).
 - Queensland written road rules test: 30 questions; giving way 10 (pass 9) and road rules and licence requirements 20 (pass 18). PrepL final test: 30 questions, pass 27 (90%).
+- South Australian learner's theory test: in person, Part A 8 give-way diagram questions (all must be correct) then Part B 42 questions (pass 32); or myLs online course and 30-question test (pass 27, some questions with more than one correct answer). myLs from 15 years 9 months; permit and in-person test from 16.
+- Western Australia: before a learner's permit (from 16) you must show knowledge of WA traffic laws and safe driving techniques, normally by a theory test. This site does not state the official question count or pass mark (check the WA Department of Transport and Major Infrastructure); the app's WA practice test uses a 30-question format.
+- Tasmanian driver knowledge test: free Plates Plus online course, then a 30-question online test (pass 27; some questions with more than one correct answer; no compulsory questions), from 15 years 11 months. The standalone Service Tasmania test format is not published.
+- ACT learner licence knowledge test: taken only at the end of an approved course (approved provider or participating school); 35 questions from a bank of more than 300; at least 31 correct needed (not every detail of the pass rule is published). Learner licence from 15 years 9 months.
+- Northern Territory driver knowledge test: 30 questions from a pool of more than 300, pass 26, at an MVR office, from 16. No hazard perception test in the NT.
 - Free version: every practice question free; one free mock test per day plus another per rewarded ad; banner ads on results and guide pages.
 - Premium: one-time A$5.99, no subscription, all states: no ads, unlimited mock tests, section forecasts, weak spots and review planner, full hazard perception scenes.
-- Languages: English, Simplified Chinese, Arabic, Vietnamese, Spanish. Dark mode. Offline practice after sign-in.
+- Languages: English, Simplified Chinese, Arabic, Vietnamese, Spanish (Tasmanian, ACT and NT questions are in English for now). Dark mode. Offline practice after sign-in.
 - Account required (Google, Facebook or email). Delete in the app via Settings → Delete account, or email with subject “Delete my account”.
 - Content: original questions checked against official handbooks and legislation as at 30 September 2026; no official questions, text or images reproduced.
-- Disclaimer: Learners Test Australia is an independent study app. It is not affiliated with, or endorsed by, Transport for NSW, Service NSW, VicRoads, Transport Victoria, Queensland TMR or any government agency.
+- Disclaimer: Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency.
 
 ## The app
 
-- [Home](https://blue0orbit.github.io/learners-test-australia/): What the app is, which states and tests it covers, pricing (free practice, one-time A$5.99 Premium) and how questions are written.
-- [Features](https://blue0orbit.github.io/learners-test-australia/features.html): Feature tour: state test formats, explained answers with sources, daily plan, mock tests, progress, hazard perception, languages, offline.
+- [Home](https://blue0orbit.github.io/learners-test-australia/): What the app is, the tests it covers in all eight states and territories, pricing (free practice, one-time A$5.99 Premium) and how questions are written.
+- [Features](https://blue0orbit.github.io/learners-test-australia/features.html): Feature tour: test formats for all eight states and territories, explained answers with sources, daily plan, mock tests, progress, hazard perception, languages, offline.
 - [FAQ](https://blue0orbit.github.io/learners-test-australia/faq.html): 24 questions and answers: independence, states, price and Premium, account and deletion, languages, offline, accuracy.
 - [About and content process](https://blue0orbit.github.io/learners-test-australia/about.html): Who makes the app (BlueOrbit), how questions are written and checked, handbook editions used, attribution.
 
 ## Learner tests by state
 
-- [States](https://blue0orbit.github.io/learners-test-australia/states.html): Side-by-side comparison of the NSW, VIC and QLD learner knowledge tests, and which states are coming later.
+- [States](https://blue0orbit.github.io/learners-test-australia/states.html): Side-by-side comparison of the learner knowledge tests in all eight states and territories, with links to each state's page.
 - [NSW DKT practice test](https://blue0orbit.github.io/learners-test-australia/nsw-dkt-practice-test.html): NSW Driver Knowledge Test: 45 questions (15 general knowledge, pass 12; 30 road safety, pass 29), online DKT, ages, topics, next steps.
 - [VIC learner permit test practice](https://blue0orbit.github.io/learners-test-australia/vic-learner-permit-test-practice.html): Victorian learner permit test: online course (default) or 32-question in-person test (pass 25), languages, topics, VIC-only rules.
 - [QLD learner test practice](https://blue0orbit.github.io/learners-test-australia/qld-learner-test-practice.html): Queensland written road rules test (10 giving way, pass 9; 20 road rules, pass 18) and PrepL final test (30, pass 27), fees, topics, next steps.
+- [SA learners test practice](https://blue0orbit.github.io/learners-test-australia/sa-learners-test-practice.html): South Australian learner's theory test: in person (8 give-way questions, all correct, then 42, pass 32) or myLs online (30, pass 27), ages, SA rules, next steps.
+- [WA learners test practice](https://blue0orbit.github.io/learners-test-australia/wa-learners-test-practice.html): Western Australian learner's permit: the knowledge requirement (official test format not stated here; the app's practice test uses 30 questions), age 16, supervisor, hours, HPT, red and green P plates, WA road rules.
+- [Tasmania learners test practice](https://blue0orbit.github.io/learners-test-australia/tas-learners-test-practice.html): Tasmanian driver knowledge test: free Plates Plus course and 30-question online test (pass 27, some multi-answer, no compulsory questions), standalone test, ages, TAS rules.
+- [ACT learners test practice](https://blue0orbit.github.io/learners-test-australia/act-learners-test-practice.html): ACT learner licence knowledge test: taken only at the end of an approved course (provider or school), 35 questions from a bank of 300+, at least 31 correct, age 15 years 9 months, ACT rules.
+- [NT learners test practice](https://blue0orbit.github.io/learners-test-australia/nt-learners-test-practice.html): Northern Territory driver knowledge test: 30 questions from a pool of 300+, pass 26, at an MVR office, from 16, no hazard perception test, NT rules and next steps.
 
 ## Guides
 

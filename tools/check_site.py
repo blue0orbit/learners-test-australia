@@ -8,7 +8,8 @@ Checks
   json-ld    every block parses; expected types per page; no ratings or reviews
   files      sitemap lists every indexable page (with lastmod); robots.txt, llms.txt, llms-full.txt, .nojekyll,
              site.webmanifest exist and are sensible
-  content    word counts for posts (800-1500) and state pages (700-1200); honesty and placeholder scans
+  content    word counts for posts (800-1500) and state pages (700-1200); honesty and placeholder scans; ACT naming
+             and WA format rules
   contrast   WCAG AA contrast for the colour pairs used in the stylesheet
 Exit code 1 if any error is found.
 """
@@ -26,6 +27,13 @@ ROOT = Path(__file__).resolve().parent.parent
 BASE = "https://blue0orbit.github.io/learners-test-australia/"
 BASE_PATH = "/learners-test-australia/"
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
+STATE_PAGES = (
+    "nsw-dkt-practice-test.html", "vic-learner-permit-test-practice.html", "qld-learner-test-practice.html",
+    "sa-learners-test-practice.html", "wa-learners-test-practice.html", "tas-learners-test-practice.html",
+    "act-learners-test-practice.html", "nt-learners-test-practice.html",
+)
+DISCLAIMER_TEXT = ("It is not affiliated with, endorsed by or connected to any Australian state or territory government, "
+                   "licensing authority or other government agency.")
 
 errors: list[str] = []
 warnings: list[str] = []
@@ -378,12 +386,24 @@ def main() -> int:
             for needle in ("Check the official source", "BlueOrbit", "30 September 2026"):
                 if needle not in raw:
                     err(f"{rel}: missing '{needle}'")
-        if rel in ("nsw-dkt-practice-test.html", "vic-learner-permit-test-practice.html", "qld-learner-test-practice.html"):
+        if rel in STATE_PAGES:
             m = re.search(r'<article class="prose">(.*?)<section class="callout light-cta"', raw, re.S)
             body_wc = len(re.sub(r"<[^>]+>", " ", m.group(1)).split()) if m else 0
             counts[rel] = body_wc
             if not 700 <= body_wc <= 1200:
                 err(f"{rel}: state page body has {body_wc} words (want 700-1200)")
+        # State content rules (see tools/pages_states.py): ACT restricted names never appear anywhere, no ACT question
+        # is called mandatory, and the unverified WA test format is never stated.
+        raw_low = raw.lower()
+        for name in ("pre-learner", "prelearner", "road rules knowledge test", "safe plates"):
+            if name in raw_low:
+                err(f"{rel}: contains the restricted ACT name '{name}'")
+        if rel == "act-learners-test-practice.html" and "mandatory" in raw_low:
+            err(f"{rel}: describes a question as mandatory")
+        if rel == "wa-learners-test-practice.html":
+            for claim in ("24 of 30", "24 correct", "pass mark of 24", "computerised theory test"):
+                if claim in raw_low:
+                    err(f"{rel}: states the unverified WA test format ('{claim}')")
         for bad in ("lorem", "ipsum", "todo", "tbd", "placeholder"):
             if re.search(rf"\b{bad}\b", low):
                 err(f"{rel}: contains '{bad}'")
@@ -395,7 +415,7 @@ def main() -> int:
                 err(f"{rel}: possible invented claim matching {claim}")
         if rel != "404.html" and "Last updated" not in raw and rel not in ("index.html",):
             warn(f"{rel}: no 'Last updated' line")
-        if "It is not affiliated with, or endorsed by, Transport for NSW, Service NSW, VicRoads, Transport Victoria, Queensland TMR or any government agency." not in raw:
+        if DISCLAIMER_TEXT not in raw:
             err(f"{rel}: footer disclaimer missing")
         for need in ("privacy-policy.html", "cookies.html", "terms.html", "account-deletion.html", "faq.html", "contact.html"):
             if need not in raw.split('<footer', 1)[-1]:

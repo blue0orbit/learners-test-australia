@@ -1,7 +1,7 @@
 {
   "name": "Learners Test Australia",
   "short_name": "Learners Test",
-  "description": "Learner test practice for NSW, VIC and QLD.",
+  "description": "Learner test practice for every Australian state and territory.",
   "start_url": "./",
   "scope": "./",
   "display": "browser",

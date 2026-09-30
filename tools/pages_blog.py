@@ -595,7 +595,10 @@ a day, plus another each time you choose to watch a short ad. Premium makes them
   <li><strong>Rushing the easy ones.</strong> Most mistakes on questions you know come from reading too fast.</li>
 </ul>
 <p>Ready to start? See the practice pages for <a href="@/nsw-dkt-practice-test.html">NSW</a>,
-<a href="@/vic-learner-permit-test-practice.html">VIC</a> and <a href="@/qld-learner-test-practice.html">QLD</a>.</p>"""),
+<a href="@/vic-learner-permit-test-practice.html">VIC</a>, <a href="@/qld-learner-test-practice.html">QLD</a>,
+<a href="@/sa-learners-test-practice.html">SA</a>, <a href="@/wa-learners-test-practice.html">WA</a>,
+<a href="@/tas-learners-test-practice.html">TAS</a>, <a href="@/act-learners-test-practice.html">ACT</a> and
+<a href="@/nt-learners-test-practice.html">NT</a>.</p>"""),
     ]
     return post(
         slug="how-to-use-mock-tests-and-mistakes",
@@ -742,7 +745,9 @@ def blog_index(posts: list[Page]) -> Page:
     ) + f"""
 <div class="content"><div class="container">
 <p class="note">Every fact in these guides was checked against official sources on {DATE_H}, and each guide links to
-them. Rules change, so the official website is always the final word.</p>
+them. Rules change, so the official website is always the final word. For South Australia, Western Australia,
+Tasmania, the ACT and the Northern Territory, see each state's page under
+<a href="@/states.html">learner tests by state</a>.</p>
 <div class="post-list">{''.join(cards)}</div>
 </div></div>"""
     ld = {

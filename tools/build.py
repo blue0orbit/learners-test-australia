@@ -34,6 +34,11 @@ def all_pages() -> list[Page]:
         pages_states.nsw(),
         pages_states.vic(),
         pages_states.qld(),
+        pages_states.sa(),
+        pages_states.wa(),
+        pages_states.tas(),
+        pages_states.act(),
+        pages_states.nt(),
         pages_core.faq(),
         pages_blog.blog_index(posts),
         *posts,
@@ -174,7 +179,7 @@ def sitemap_xml(pages: list[Page]) -> str:
 
 SUMMARY = (
     f"{SITE_NAME} (Google Play title “{APP_NAME}”) is an independent Android study app by {DEVELOPER} for learner "
-    "drivers in New South Wales, Victoria and Queensland, Australia. It has original practice questions and mock tests "
+    "drivers in all eight Australian states and territories. It has original practice questions and mock tests "
     "in each state's learner knowledge test format, with every answer explained and linked to the handbook page or road "
     f"rule it comes from. Free to practise, with an optional one-time {PRICE} Premium purchase. Not affiliated with any "
     "government agency. The app is not on Google Play yet (coming soon)."
@@ -182,13 +187,18 @@ SUMMARY = (
 
 KEY_FACTS = [
     f"Developer: {DEVELOPER}. Support email: {EMAIL}. Package: com.blueorbit.learnerstestau. Platform: Android 8.0 or later.",
-    "States available: NSW, VIC, QLD. Coming later (no dates): WA and SA next, then TAS, ACT and NT.",
+    "States and territories covered: all eight (NSW, VIC, QLD, SA, WA, TAS, ACT, NT).",
     "NSW Driver Knowledge Test (DKT): 45 questions; general knowledge 15 (pass 12) and road safety 30 (pass 29); ends early once passing is impossible; no time limit published (structure as published by the NSW Government on its knowledge test pages; the car DKT is reported to follow it). DKT online course from 15 years 11 months.",
     "Victorian learner permit test: online learner permit course with final test is the default; in-person test is 32 multiple-choice questions, pass 25 (78%).",
     "Queensland written road rules test: 30 questions; giving way 10 (pass 9) and road rules and licence requirements 20 (pass 18). PrepL final test: 30 questions, pass 27 (90%).",
+    "South Australian learner's theory test: in person, Part A 8 give-way diagram questions (all must be correct) then Part B 42 questions (pass 32); or myLs online course and 30-question test (pass 27, some questions with more than one correct answer). myLs from 15 years 9 months; permit and in-person test from 16.",
+    "Western Australia: before a learner's permit (from 16) you must show knowledge of WA traffic laws and safe driving techniques, normally by a theory test. This site does not state the official question count or pass mark (check the WA Department of Transport and Major Infrastructure); the app's WA practice test uses a 30-question format.",
+    "Tasmanian driver knowledge test: free Plates Plus online course, then a 30-question online test (pass 27; some questions with more than one correct answer; no compulsory questions), from 15 years 11 months. The standalone Service Tasmania test format is not published.",
+    "ACT learner licence knowledge test: taken only at the end of an approved course (approved provider or participating school); 35 questions from a bank of more than 300; at least 31 correct needed (not every detail of the pass rule is published). Learner licence from 15 years 9 months.",
+    "Northern Territory driver knowledge test: 30 questions from a pool of more than 300, pass 26, at an MVR office, from 16. No hazard perception test in the NT.",
     "Free version: every practice question free; one free mock test per day plus another per rewarded ad; banner ads on results and guide pages.",
     f"Premium: one-time {PRICE}, no subscription, all states: no ads, unlimited mock tests, section forecasts, weak spots and review planner, full hazard perception scenes.",
-    "Languages: English, Simplified Chinese, Arabic, Vietnamese, Spanish. Dark mode. Offline practice after sign-in.",
+    "Languages: English, Simplified Chinese, Arabic, Vietnamese, Spanish (Tasmanian, ACT and NT questions are in English for now). Dark mode. Offline practice after sign-in.",
     "Account required (Google, Facebook or email). Delete in the app via Settings → Delete account, or email with subject “Delete my account”.",
     "Content: original questions checked against official handbooks and legislation as at 30 September 2026; no official questions, text or images reproduced.",
     f"Disclaimer: {DISCLAIMER}",
@@ -206,7 +216,9 @@ def llms_txt(pages: list[Page]) -> str:
     groups = [
         ("The app", ["index.html", "features.html", "faq.html", "about.html"]),
         ("Learner tests by state", ["states.html", "nsw-dkt-practice-test.html", "vic-learner-permit-test-practice.html",
-                                    "qld-learner-test-practice.html"]),
+                                    "qld-learner-test-practice.html", "sa-learners-test-practice.html",
+                                    "wa-learners-test-practice.html", "tas-learners-test-practice.html",
+                                    "act-learners-test-practice.html", "nt-learners-test-practice.html"]),
         ("Guides", ["blog/index.html"] + [p.path for p in pages if p.path.startswith("blog/") and p.path != "blog/index.html"]),
         ("Policies and support", ["privacy-policy.html", "cookies.html", "terms.html", "account-deletion.html", "contact.html"]),
     ]
@@ -236,7 +248,7 @@ def manifest() -> str:
     return json.dumps({
         "name": SITE_NAME,
         "short_name": "Learners Test",
-        "description": "Learner test practice for NSW, VIC and QLD.",
+        "description": "Learner test practice for every Australian state and territory.",
         "start_url": "./",
         "scope": "./",
         "display": "browser",
@@ -259,10 +271,15 @@ def favicon_svg() -> str:
 KEYWORDS = {
     "index.html": ("learners test", ["learner test practice", "learner driver app Australia", "DKT practice test", "learners permit test", "road rules test Australia", "L plates"]),
     "features.html": ("learner driver app features", ["mock test", "explained answers", "road signs quiz", "hazard perception practice", "learner test app in Chinese, Arabic, Vietnamese, Spanish"]),
-    "states.html": ("learner test by state", ["road rules test Australia", "NSW DKT", "VIC learner permit test", "QLD written road rules test", "learners permit test"]),
+    "states.html": ("learner test by state", ["road rules test Australia", "NSW DKT", "VIC learner permit test", "QLD written road rules test", "SA learners test", "WA learners test", "TAS learners test", "ACT learners test", "NT learners test", "learners permit test"]),
     "nsw-dkt-practice-test.html": ("NSW DKT practice test", ["driver knowledge test NSW", "DKT online", "NSW learner licence", "DKT pass mark", "how many questions DKT"]),
     "vic-learner-permit-test-practice.html": ("VIC learner permit test practice", ["Victorian learner test practice", "learner permit test (LPT)", "Road to Solo Driving", "VicRoads learner permit test languages"]),
     "qld-learner-test-practice.html": ("QLD learner test practice", ["QLD written road rules test", "PrepL practice test", "PrepL final test", "Queensland learner licence"]),
+    "sa-learners-test-practice.html": ("SA learners test practice", ["SA learner's theory test", "myLs practice test", "myLs test pass mark", "Service SA theory test", "SA learner's permit"]),
+    "wa-learners-test-practice.html": ("WA learners test practice", ["WA learner's permit", "WA theory test", "WA supervised driving hours", "red and green P plates WA"]),
+    "tas-learners-test-practice.html": ("Tasmania learners test practice", ["Plates Plus test", "Tasmanian driver knowledge test", "DKT Tasmania", "TAS learner licence"]),
+    "act-learners-test-practice.html": ("ACT learners test practice", ["ACT learner licence knowledge test", "ACT knowledge test practice", "Canberra learners test", "ACT learner licence"]),
+    "nt-learners-test-practice.html": ("NT learners test practice", ["NT driver knowledge test", "NT theory test", "NT learner licence", "MVR knowledge test"]),
     "faq.html": ("learner test app FAQ", ["is the learner test app official", "delete learner app account", "learner test app offline", "learner test app languages"]),
     "blog/index.html": ("learner driver guides", ["learner test tips", "road rules guides", "L plates guide"]),
     "blog/nsw-driver-knowledge-test-explained.html": ("NSW Driver Knowledge Test", ["DKT format", "DKT online", "Road User Handbook", "NSW learner licence rules"]),

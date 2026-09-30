@@ -71,7 +71,7 @@ def og_image() -> Image.Image:
     x0 = 390
     d.text((x0, 150), "Learners Test", font=font("overpass.ttf", 88, 800), fill=PAPER)
     d.text((x0, 245), "Australia", font=font("overpass.ttf", 88, 800), fill=AMBER)
-    d.text((x0, 362), "Learner test practice for NSW, VIC and QLD", font=font("atkinson_hyperlegible_next.ttf", 36, 500), fill=PAPER)
+    d.text((x0, 364), "Learner test practice for every state and territory", font=font("atkinson_hyperlegible_next.ttf", 32, 500), fill=PAPER)
     d.text((x0, 414), "Real test formats · Every answer explained · Android app",
            font=font("atkinson_hyperlegible_next.ttf", 28, 400), fill=MUTED)
     d.text((88, 488), "Independent study app. Not affiliated with any government agency.",

@@ -1,6 +1,6 @@
 # Learners Test Australia: full text
 
-> Learners Test Australia (Google Play title “Learners Test Australia: DKT”) is an independent Android study app by BlueOrbit for learner drivers in New South Wales, Victoria and Queensland, Australia. It has original practice questions and mock tests in each state's learner knowledge test format, with every answer explained and linked to the handbook page or road rule it comes from. Free to practise, with an optional one-time A$5.99 Premium purchase. Not affiliated with any government agency. The app is not on Google Play yet (coming soon).
+> Learners Test Australia (Google Play title “Learners Test Australia: DKT”) is an independent Android study app by BlueOrbit for learner drivers in all eight Australian states and territories. It has original practice questions and mock tests in each state's learner knowledge test format, with every answer explained and linked to the handbook page or road rule it comes from. Free to practise, with an optional one-time A$5.99 Premium purchase. Not affiliated with any government agency. The app is not on Google Play yet (coming soon).
 
 Source: https://blue0orbit.github.io/learners-test-australia/ · Content current as of 30 September 2026. Each section below is one page of the website.
 
@@ -9,11 +9,11 @@ Source: https://blue0orbit.github.io/learners-test-australia/ · Content current
 
 URL: https://blue0orbit.github.io/learners-test-australia/
 
-Learner driver app for NSW, VIC and QLD
+Learner driver app for every state and territory
 
 # Practise for your learners test in your state's real format
 
-Learners Test Australia is an Android app by BlueOrbit for learner drivers in New South Wales, Victoria and Queensland. Choose your state and practise its knowledge test the way it is really set: original questions checked against the official handbook, every answer explained, and mock tests that show exactly where the pass line is.
+Learners Test Australia is an Android app by BlueOrbit for learner drivers in all eight Australian states and territories. Choose your state and practise its knowledge test the way it is really set: original questions checked against official sources, every answer explained, and mock tests that show exactly where the pass line is.
 
 Free to practise. One free mock test a day. Optional one-time Premium for A$5.99.
 
@@ -23,7 +23,7 @@ Pick your state
 
 ## Your state's learner test, in its real format
 
-Road rules and knowledge tests differ between states. The app sets up practice and mock tests for the state where you'll sit your test, and you can add or switch states later.
+Road rules and knowledge tests differ between states. The app covers all eight states and territories: it sets up practice and mock tests for the one where you'll sit your test, and you can add or switch states later.
 
 NSW
 
@@ -55,21 +55,63 @@ QLD
 
 QLD learner test practice (https://blue0orbit.github.io/learners-test-australia/qld-learner-test-practice.html)
 
-### Coming later
+SA
 
-- WA
-- SA
-- TAS
-- ACT
-- NT
+### SA learner's theory test and myLs
 
-Western Australia and South Australia are next, then Tasmania, the ACT and the Northern Territory. We add a state only when its questions have been written and checked, so we don't have dates yet.
+- In person: 8 give-way questions, all must be right, then 42. Pass mark: 32 of 42.
+- myLs test: 30 questions. Pass mark: 27 of 30.
+- In the app: Mock tests for both routes, with select-all-that-apply questions.
+
+SA learners test practice (https://blue0orbit.github.io/learners-test-australia/sa-learners-test-practice.html)
+
+WA
+
+### WA learner's permit theory test
+
+- Before your permit: Show you know WA's traffic laws and safe driving, normally by a theory test.
+- Official format: Check the WA transport department's website.
+- In the app: A 30-question practice test written from WA legislation.
+
+WA learners test practice (https://blue0orbit.github.io/learners-test-australia/wa-learners-test-practice.html)
+
+TAS
+
+### Tasmanian driver knowledge test
+
+- Online test: 30 questions, after the free Plates Plus course.
+- Pass mark: 27 of 30. Some questions have more than one correct answer.
+- In the app: 30-question mocks with select-all-that-apply questions.
+
+Tasmania learners test practice (https://blue0orbit.github.io/learners-test-australia/tas-learners-test-practice.html)
+
+ACT
+
+### ACT learner licence knowledge test
+
+- Questions: 35, from a bank of more than 300
+- Pass mark: At least 31 of 35
+- In the app: 35-question practice tests. The real test is taken only through an approved course.
+
+ACT learners test practice (https://blue0orbit.github.io/learners-test-australia/act-learners-test-practice.html)
+
+NT
+
+### NT driver knowledge test
+
+- Questions: 30, from a pool of more than 300
+- Pass mark: 26 of 30
+- In the app: 30-question mocks scored against the 26-question pass line.
+
+NT learners test practice (https://blue0orbit.github.io/learners-test-australia/nt-learners-test-practice.html)
+
+Compare the learner tests by state (https://blue0orbit.github.io/learners-test-australia/states.html)
 
 What the app does
 
 ## Everything you need to prepare, in one learner driver app
 
-Practice questions for the DKT, the learner permit test and the Queensland road rules test, built around how people actually learn: little and often, with every mistake turned into a review.
+Practice questions for every state's learner test, from the NSW DKT to the NT driver knowledge test, built around how people actually learn: little and often, with every mistake turned into a review.
 
 ### Your state's test, in its real format
 
@@ -93,7 +135,7 @@ Still traffic scenes where you tap the hazard, plus a guide to your state's haza
 
 ### Five languages
 
-Menus, questions and explanations in English, 中文, العربية, Tiếng Việt and Español. Arabic reads right to left.
+Menus, questions and explanations in English, 中文, العربية, Tiếng Việt and Español. Arabic reads right to left. Tasmanian, ACT and NT questions are in English for now.
 
 ### Dark mode and large text
 
@@ -159,7 +201,7 @@ How the questions are made
 
 ## Original questions, checked against official sources
 
-For each state we first map every fact the official material tests, using the current handbook, the official test pages and the road rules legislation. Then every question is written in our own words to test one of those facts, with the handbook page or road rule it comes from and the date it was last checked.
+For each state we first map every fact the official material tests, using the current handbook where we may, the official test pages and the road rules legislation. Then every question is written in our own words to test one of those facts, with the handbook page or road rule it comes from and the date it was last checked.
 
 - No official questions, answer options, handbook text or images are reproduced.
 - Road signs and diagrams are redrawn as original illustrations.
@@ -169,13 +211,13 @@ Read how we make and check the content (https://blue0orbit.github.io/learners-te
 
 ### Independent, and upfront about it
 
-Learners Test Australia is an independent study app. It is not affiliated with, or endorsed by, Transport for NSW, Service NSW, VicRoads, Transport Victoria, Queensland TMR or any government agency. Always check your state's official handbook and website before your test.
+Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. Always check your state's official handbook and website before your test.
 
 Guides
 
 ## Learner test guides
 
-Plain-English guides to each state's test, written from official sources as checked on 30 September 2026.
+Plain-English guides to learner tests and road rules, written from official sources as checked on 30 September 2026. Every state and territory also has its own page: learner tests by state (https://blue0orbit.github.io/learners-test-australia/states.html).
 
 ### How the NSW Driver Knowledge Test works (https://blue0orbit.github.io/learners-test-australia/blog/nsw-driver-knowledge-test-explained.html)
 
@@ -220,6 +262,11 @@ When you first open the app you choose where you'll take your test. The app then
 - NSW: Driver Knowledge Test, 45 questions in two sections (general knowledge and road safety).
 - VIC: learner permit test, 32 questions.
 - QLD: written road rules test, 30 questions in two sections (giving way and road rules), and the PrepL final test, 30 questions.
+- SA: learner's theory test in person, 8 give-way questions and then 42, and the myLs test, 30 questions.
+- WA: a 30-question learner's permit practice test.
+- TAS: the online driver knowledge test, 30 questions, some with more than one correct answer.
+- ACT: a 35-question learner licence knowledge test.
+- NT: driver knowledge test, 30 questions.
 
 Progress is saved separately for each state, so switching states never mixes up your results. Compare the tests by state (https://blue0orbit.github.io/learners-test-australia/states.html).
 
@@ -229,9 +276,9 @@ Illustration of the state picker: each state shows its test format, the source a
 
 After each answer you see whether you were right, a short explanation, why the rule matters, and the source: the handbook page or road rule number. If you want to read more, you know exactly where to look.
 
-Questions come in the forms real tests use: single answers, road signs and diagrams. A quick "How sure were you?" tap (knew it, unsure or guessed) helps the app decide when to show a question again, and you can save or flag any question to come back to.
+Questions come in the forms real tests use: single answers, road signs and diagrams, plus select-all-that-apply questions for the South Australian myLs and Tasmanian online tests. A quick "How sure were you?" tap (knew it, unsure or guessed) helps the app decide when to show a question again, and you can save or flag any question to come back to.
 
-Each state's launch pack has more than 400 original questions, and hundreds of original sign and diagram illustrations are shared across states.
+Each state's question pack has more than 380 original questions, and hundreds of original sign and diagram illustrations are shared across states.
 
 Illustration of a practice question from the NSW pack: the answer is explained, with the handbook page and road rule it comes from.
 
@@ -281,7 +328,7 @@ Here the road safety forecast sits just under its pass line, so that's where to 
 
 Hazard perception is about spotting risks early. The app has illustrated traffic scenes, drawn from above, where you tap the hazard you should be ready for and then read why. A few sample scenes are free, and Premium unlocks the full set.
 
-Each state also has a guide to its hazard perception test and where it fits on the way to your P plates. The scenes are still images for practice; they are not a copy of any official test. Read our hazard perception guide (https://blue0orbit.github.io/learners-test-australia/blog/hazard-perception-test-nsw-vic-qld.html).
+Each state's licence guide also explains where its hazard perception test fits on the way to your P plates (the Northern Territory has no separate test: hazards are assessed in the practical driving test). The scenes are still images for practice; they are not a copy of any official test. Read our hazard perception guide (https://blue0orbit.github.io/learners-test-australia/blog/hazard-perception-test-nsw-vic-qld.html).
 
 Illustration of a hazard perception scene: a person waiting between parked cars could step into the road.
 
@@ -301,7 +348,7 @@ A study streak and a few badges for real study. No points to grind.
 
 ### Five languages
 
-English, 中文, العربية, Tiếng Việt and Español, including the questions and explanations. Arabic reads right to left.
+English, 中文, العربية, Tiếng Việt and Español, including the questions and explanations (Tasmanian, ACT and NT questions are in English for now). Arabic reads right to left.
 
 ### Accessible by design
 
@@ -347,24 +394,29 @@ States and territories
 
 # Learner driver knowledge tests by state
 
-Each Australian state and territory runs its own learner knowledge test. Here is how the NSW, VIC and QLD tests compare, and which states are coming next.
+Each Australian state and territory runs its own learner knowledge test. Here is how all eight compare, and where to find the details for yours.
 
 Last updated: 30 September 2026
 
 In short
 
-The NSW Driver Knowledge Test has 45 questions in two sections, the Victorian learner permit test has 32 questions and the Queensland written road rules test has 30 questions in two sections (Queensland's online PrepL final test is also 30 questions). Learners Test Australia practises all of these. Western Australia, South Australia, Tasmania, the ACT and the Northern Territory are coming later.
+Every state and territory sets its own learner knowledge test. Formats range from 30 questions (Queensland, the Tasmanian online test, the Northern Territory and South Australia's myLs) through 32 in Victoria's in-person test and 35 in the ACT to 45 in the NSW DKT and 50 in South Australia's in-person test, and several states also offer an online course route. Learners Test Australia has practice for all eight: New South Wales, Victoria, Queensland, South Australia, Western Australia, Tasmania, the Australian Capital Territory and the Northern Territory.
 
-## How do the NSW, VIC and QLD learner tests compare?
+## How do the learner tests compare across Australia?
 
 Knowledge test formats, as checked on 30 September 2026
 
-| State | Test | Questions | Pass mark | Online option |
-| NSW | Driver Knowledge Test (DKT) | 45: 15 general knowledge, 30 road safety | 12 of 15 and 29 of 30 | DKT online course and final test, from 15 years 11 months |
-| VIC | Learner permit test | 32 (in-person test) | 25 of 32 (78%) | Online learner permit course with a final test (the default route) |
-| QLD | Written road rules test | 30: 10 giving way, 20 road rules and licence requirements | 9 of 10 and 18 of 20 | PrepL online course, final test of 30 questions, pass 27 |
+| State | Test | Questions | Pass mark | How you take it |
+| NSW (https://blue0orbit.github.io/learners-test-australia/nsw-dkt-practice-test.html) | Driver Knowledge Test (DKT) | 45: 15 general knowledge, 30 road safety | 12 of 15 and 29 of 30 | In person, or the DKT online course and final test from 15 years 11 months |
+| VIC (https://blue0orbit.github.io/learners-test-australia/vic-learner-permit-test-practice.html) | Learner permit test | 32 (in-person test) | 25 of 32 (78%) | Online learner permit course with a final test (the default route), or in person |
+| QLD (https://blue0orbit.github.io/learners-test-australia/qld-learner-test-practice.html) | Written road rules test | 30: 10 giving way, 20 road rules and licence requirements | 9 of 10 and 18 of 20 | On paper at a licence-issuing centre, or PrepL online (final test of 30 questions, pass 27) |
+| SA (https://blue0orbit.github.io/learners-test-australia/sa-learners-test-practice.html) | Learner's theory test | In person: 8 give-way, then 42 road rules and safety | All 8, and 32 of 42 | In person at Service SA, or myLs online (30-question test, pass 27) |
+| WA (https://blue0orbit.github.io/learners-test-australia/wa-learners-test-practice.html) | Learner's permit theory test | Not stated here | Not stated here | See the WA page, and check the Department of Transport and Major Infrastructure |
+| TAS (https://blue0orbit.github.io/learners-test-australia/tas-learners-test-practice.html) | Driver knowledge test | 30 (online test) | 27 of 30 | Free Plates Plus course and online test (recommended), or a standalone test at a Service Tasmania shop |
+| ACT (https://blue0orbit.github.io/learners-test-australia/act-learners-test-practice.html) | Learner licence knowledge test | 35, from a bank of more than 300 | At least 31 of 35 | Only at the end of an approved course, with an approved provider or participating school |
+| NT (https://blue0orbit.github.io/learners-test-australia/nt-learners-test-practice.html) | Driver knowledge test | 30, from a pool of more than 300 | 26 of 30 | At an MVR office (in remote areas, a police station or DriveSafe NT) |
 
-Sources: the NSW Government, VicRoads and Queensland Government test pages linked on each state's page. Some details, such as the size of the NSW and Victorian online final tests, are not published.
+Sources: the official test pages and legislation linked on each state's page. Some details are not published, such as the size of the NSW and Victorian online final tests, the Tasmanian standalone test format and every detail of the ACT pass rule. For Western Australia we state only what we could confirm from WA legislation.
 
 ## Choose your state
 
@@ -398,19 +450,63 @@ QLD
 
 QLD learner test practice (https://blue0orbit.github.io/learners-test-australia/qld-learner-test-practice.html)
 
-## Which states are coming next?
+SA
 
-- WA
-- SA
-- TAS
-- ACT
-- NT
+### SA learner's theory test and myLs
 
-Western Australia and South Australia are next, then Tasmania, the ACT and the Northern Territory. We add a state only when its questions have been written and checked, so we don't have dates yet. Until then, learners in those states can find their test information on their state or territory government's official website.
+- In person: 8 give-way questions, all must be right, then 42. Pass mark: 32 of 42.
+- myLs test: 30 questions. Pass mark: 27 of 30.
+- In the app: Mock tests for both routes, with select-all-that-apply questions.
+
+SA learners test practice (https://blue0orbit.github.io/learners-test-australia/sa-learners-test-practice.html)
+
+WA
+
+### WA learner's permit theory test
+
+- Before your permit: Show you know WA's traffic laws and safe driving, normally by a theory test.
+- Official format: Check the WA transport department's website.
+- In the app: A 30-question practice test written from WA legislation.
+
+WA learners test practice (https://blue0orbit.github.io/learners-test-australia/wa-learners-test-practice.html)
+
+TAS
+
+### Tasmanian driver knowledge test
+
+- Online test: 30 questions, after the free Plates Plus course.
+- Pass mark: 27 of 30. Some questions have more than one correct answer.
+- In the app: 30-question mocks with select-all-that-apply questions.
+
+Tasmania learners test practice (https://blue0orbit.github.io/learners-test-australia/tas-learners-test-practice.html)
+
+ACT
+
+### ACT learner licence knowledge test
+
+- Questions: 35, from a bank of more than 300
+- Pass mark: At least 31 of 35
+- In the app: 35-question practice tests. The real test is taken only through an approved course.
+
+ACT learners test practice (https://blue0orbit.github.io/learners-test-australia/act-learners-test-practice.html)
+
+NT
+
+### NT driver knowledge test
+
+- Questions: 30, from a pool of more than 300
+- Pass mark: 26 of 30
+- In the app: 30-question mocks scored against the 26-question pass line.
+
+NT learners test practice (https://blue0orbit.github.io/learners-test-australia/nt-learners-test-practice.html)
+
+## Which states have an online route?
+
+New South Wales, Victoria, Queensland, South Australia and Tasmania all offer an online course that ends with a test: the DKT online in NSW, the learner permit course in Victoria, PrepL in Queensland, myLs in South Australia and Plates Plus in Tasmania. In the ACT the test comes at the end of an approved course run by a provider or school. In the Northern Territory you sit the test at an MVR office. Each state page explains the options and ages.
 
 ## What is the same in every state?
 
-Much of what the tests check comes from the national Australian Road Rules, which each state adopts in its own law: giving way at intersections and roundabouts, traffic lights, speed limit signs and most road markings. The details that differ are usually licensing rules (supervised hours, plate rules, passenger limits, alcohol and phone rules for new drivers) and a few local road rules, such as Victoria's hook turns. Our guide to give way rules (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html) covers the shared rules and the main differences.
+Much of what the tests check comes from the national Australian Road Rules, which most states and territories adopt in their own law (Western Australia has its own Road Traffic Code, which follows them closely): giving way at intersections and roundabouts, traffic lights, speed limit signs and most road markings. The details that differ are usually licensing rules (supervised hours, plate rules, passenger limits, alcohol and phone rules for new drivers) and a few local road rules, such as Victoria's hook turns or the Northern Territory's 130 km/h roads. Our guide to give way rules (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html) covers the shared rules.
 
 ---
 
@@ -728,6 +824,534 @@ Rules and test formats change. We checked these pages on 30 September 2026; the 
 
 ---
 
+URL: https://blue0orbit.github.io/learners-test-australia/sa-learners-test-practice.html
+
+SA South Australia
+
+# SA learners test practice: the learner's theory test and myLs
+
+South Australia's two routes to a learner's permit, the questions and pass marks for each, the rules you are tested on and how to prepare.
+
+Last updated: 30 September 2026
+
+Quick answer
+
+To get a learner's permit in South Australia you pass the learner's theory test, in one of two ways. myLs is an online course that finishes with a 30-question test where you need 27 correct, and some questions have more than one right answer. The in-person test at a Service SA centre has two parts: 8 give-way diagram questions that must all be answered correctly, then 42 multiple-choice questions on road rules and safety, where you need 32.
+
+SA learner's theory test at a glance (checked 30 September 2026)
+
+| Test | Learner's theory test, car: online through myLs, or in person at Service SA |
+| In person | Part A: 8 give-way diagram questions, all must be correct. Part B: 42 multiple-choice questions, pass 32 of 42. On paper or a computer. |
+| myLs | Online course of about 4 hours, then a 30-question test in one sitting; pass 27 of 30. Some questions have more than one correct answer. |
+| Minimum age | myLs from 15 years 9 months; the in-person test and the permit from 16 |
+| Based on | The Driver's Handbook (MR200), February 2026 edition |
+| Permit lasts | 2 years |
+
+## How many questions are in the SA learner's theory test, and what is the pass mark?
+
+The in-person test has two parts, taken in order. Part A shows 8 diagrams and asks who must give way in each. One give-way mistake means you can't go on to Part B, so the attempt is a fail. Part B has 42 multiple-choice questions on road rules and road safety, and you need 32, so you can afford up to 10 mistakes there.
+
+The myLs test is a single block of 30 questions with a pass mark of 27, done in one sitting without help. Some questions have more than one correct answer: a hint tells you when, and you only score if you select every correct option.
+
+## myLs or the in-person test: which route suits you?
+
+myLs is the route South Australia recommends, but it isn't compulsory. You first set up your identity, photo and a mySAGOV account at a Service SA centre. The course starts with Your driving attitude, then Signs and rules and Sharing the road in either order, and finishing all three unlocks the test. One fee covers 12 months' access with unlimited test attempts.
+
+The in-person test is for people aged 16 or older. You book it, pay the fee each time you sit, and take it at one of the Service SA centres that run theory tests, so check which ones before you book. No list of test languages is published, so ask Service SA if you need help with English. Failing in person doesn't stop you switching to myLs.
+
+## How old do you need to be?
+
+- myLs: enrol from 15 years and 9 months.
+- In-person test, and the learner's permit itself: from 16.
+- P1 provisional licence: from 17.
+
+## What does the SA learner's theory test cover?
+
+The Driver's Handbook says the test is based directly on its road rules and road safety sections, including the licensing chapters: learner and P conditions, supervising drivers, the log book and demerit points are core material. Giving way matters most, since it has a whole part of the in-person test. South Australian rules that catch learners out:
+
+- 25 km/h school zones: the limit applies whenever a child is in the zone. Near selected schools there are also 40 km/h limits on school days, from 8 to 9:30 am and 2 to 4 pm.
+- More 25 km/h rules: pass a stopped school bus, a stopped emergency vehicle with flashing red or blue lights (unless it is across a median strip) or a stopped breakdown vehicle with flashing amber lights on your side of the road at no more than 25 km/h.
+- 100 km/h cap: learners and P drivers must not exceed 100 km/h, even on roads signed 110.
+- Phones: learners and P1 drivers may not use a phone at all while driving, not even hands-free, except to pay or show a code while stationary in a place such as a drive-through.
+
+## What happens after you pass?
+
+Your permit lasts 2 years. A qualified supervising driver must sit next to you: someone who has held a full licence for that class of vehicle for the past 2 years, hasn't been disqualified in that time, isn't on a good behaviour condition and is under 0.05. Your own limit is zero, L plates go on the front and rear, and 4 demerit points, speeding by 10 km/h or more, or any other permit breach brings a 6-month disqualification.
+
+Before P1 you need 75 hours of supervised driving, 15 of them at night, whatever your age, and at least 12 months on your permit (6 months if you are 25 or older). You also pass the Hazard Perception Test and either a Vehicle On Road Test or competency-based training and assessment. P1 drivers show red P plates; P2 drivers show none. Under 25, P1 also brings a midnight-to-5 am ban and a limit of one passenger aged 16 to 20 (family excluded), unless a qualified supervising driver sits beside you or an exemption applies.
+
+## How to practise for the SA learners test with Learners Test Australia
+
+- Mock tests for both routes: the in-person format, where Part B only starts once all 8 give-way answers are right, and the 30-question myLs test.
+- More than 550 original South Australian questions, checked against The Driver's Handbook and SA legislation.
+- Dozens of select-all-that-apply questions in the myLs style.
+- Every answer explained, with its handbook page or rule, in English and four other languages.
+
+Giving way decides Part A, so read the give way rules every learner must know (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html) and learn how to use mock tests and your mistakes (https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html).
+
+## SA learners test questions people ask
+
+### How many questions are in the SA learners test?
+
+It depends on the route. The in-person learner's theory test at Service SA has 50: 8 give-way diagram questions in Part A, which must all be right, and 42 road rules and safety questions in Part B, where you need 32. The myLs test has 30 questions and you need 27.
+
+### How many questions can you get wrong?
+
+In the in-person test, none in Part A and up to 10 in Part B. In the myLs test, up to 3.
+
+### Is myLs compulsory in South Australia?
+
+No. myLs is the recommended route, but the in-person test is still available, and failing the in-person test doesn't stop you enrolling in myLs.
+
+### Are the questions in Learners Test Australia the real SA test questions?
+
+No. They are original practice questions written for the app and checked against The Driver's Handbook (February 2026) and South Australian legislation. The app is independent and not connected to the Government of South Australia.
+
+## Check the official source
+
+- Complete the myLs course online (sa.gov.au) (official website) (https://www.sa.gov.au/topics/driving-and-transport/licences/learners-permit/apply/myls-course-and-theory-test)
+- Complete your learner's test at Service SA (sa.gov.au) (official website) (https://www.sa.gov.au/topics/driving-and-transport/licences/learners-permit/apply/study-and-theory-test-offline)
+- Licence conditions (sa.gov.au) (official website) (https://www.sa.gov.au/topics/driving-and-transport/licences/licence-details/licence-conditions)
+- The Driver's Handbook (mylicence.sa.gov.au) (official website) (https://www.mylicence.sa.gov.au/road-rules/the-drivers-handbook)
+- Learner's stage (mylicence.sa.gov.au) (official website) (https://www.mylicence.sa.gov.au/my-car-licence/learners-stage)
+
+Rules and test formats change. We checked these pages on 30 September 2026; the official website is always the final word.
+
+## Related guides
+
+- Learner tests by state (https://blue0orbit.github.io/learners-test-australia/states.html)
+- Give way rules every learner must know (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html)
+- How to use mock tests and mistakes (https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html)
+- App features (https://blue0orbit.github.io/learners-test-australia/features.html)
+- FAQ (https://blue0orbit.github.io/learners-test-australia/faq.html)
+
+---
+
+URL: https://blue0orbit.github.io/learners-test-australia/wa-learners-test-practice.html
+
+WA Western Australia
+
+# WA learners test practice: your learner's permit theory test
+
+What Western Australian law says you need for a learner's permit, the rules the test checks, what comes next and how to practise.
+
+Last updated: 30 September 2026
+
+Quick answer
+
+In Western Australia you must show you know the state's traffic laws and safe driving techniques before a learner's permit is issued, normally by passing a theory test. You can hold a car learner's permit from 16, and it lasts 3 years. We don't state the test's official question count or pass mark, because we couldn't confirm them from a source we're able to use: check with the WA Department of Transport and Major Infrastructure. The app's WA practice test uses a 30-question format.
+
+WA learner's permit at a glance (checked 30 September 2026)
+
+| Before the permit | Show reasonable knowledge of WA traffic laws and safe driving techniques, normally by passing a theory test |
+| Test format | Not stated here: check the Department of Transport and Major Infrastructure's website |
+| Minimum age | 16 for a car learner's permit (15 years 6 months for a moped-only permit) |
+| Permit lasts | 3 years |
+| Supervisor | A licensed driving instructor, or someone who has held a licence for that kind of vehicle for at least 4 years |
+| On your permit | No faster than 100 km/h, L plates front and rear, zero alcohol |
+| Based on | WA legislation, including the Road Traffic Code 2000 |
+
+## How many questions are in the WA learners test, and what is the pass mark?
+
+This page doesn't give the official number of questions or pass mark: for WA's test format, check the department's own website before you book.
+
+The law sets out what the test is for: before a permit is issued, you must show reasonable knowledge of WA's traffic laws and of safe driving techniques, so expect questions on both. The app's WA practice test uses a 30-question format drawn from every topic; treat it as practice for the rules, not a copy of the official test.
+
+## WA has its own road rules: what is different?
+
+Western Australia doesn't adopt the national Australian Road Rules word for word. Its road rules are the Road Traffic Code 2000, which follows the national rules closely but has its own numbering and some local differences:
+
+- 110 km/h default: outside built-up areas, the limit where no sign applies is 110 km/h (50 km/h in built-up areas).
+- Keep left at 90 km/h: on multi-lane roads with a limit of 90 km/h or more, stay out of the right lane except to overtake, turn right or U-turn, or for a few other set reasons.
+- 40 km/h past incidents: pass a stationary emergency, breakdown, tow or Main Roads incident response vehicle with flashing lights at no more than 40 km/h.
+- No hook turns for cars: only bicycle and e-rideable riders may hook turn.
+
+## Who can supervise a WA learner, and what are the learner rules?
+
+A learner's permit only lets you drive to learn, with a licensed driving instructor or someone who has held a licence for that kind of vehicle for at least 4 years. The law treats the person beside you as your supervisor. They must be under 0.05 (zero in a few special cases) and free of illicit drugs, and police can test them.
+
+- Never drive faster than 100 km/h, even where the limit is 110 km/h.
+- Show L plates at the front and rear: a black L on yellow, at least 150 mm square. You and your supervisor are both responsible for them.
+- Your alcohol limit is zero until you have held a licence for 2 years.
+- On 30 September 2026, WA had no learner-only rules on passengers, night driving or phones.
+
+## What happens after you get your learner's permit?
+
+Under 25, log at least 50 hours of supervised driving, including 5 at night (sunset to sunrise), in an approved log book signed by your supervisor; from 25 there is no minimum. The hazard perception test comes next: under 25, once you are 16 years and 6 months old and have held your permit for 6 months; from 25, after 6 months on your permit. Under-25s can take the practical driving assessment from 17, after the hours and the hazard test; from 25, 6 months after the permit was granted.
+
+Red P plates (a white P on red) come first, for 6 months: no driving between midnight and 5 am except in limited cases such as work or study travel, and only one passenger unless one of them has held a full licence for at least 4 years, the others are immediate family, or you carry them for work. Green P plates (a white P on green) follow until you have held a licence for 2 years and are at least 19. Novice drivers are disqualified for 3 months at 4 demerit points in their first year, or 8 in their second.
+
+These are the rules in force on 30 September 2026, so check for changes before you book.
+
+## How to practise for the WA learners test with Learners Test Australia
+
+- A 30-question practice test that mixes every topic and is scored at the end.
+- More than 500 original WA questions, written from the Road Traffic Code 2000 and WA's licensing laws.
+- WA-only rules such as red and green P plates, the 4-year supervisor rule and the 90 km/h keep-left rule.
+- Every answer explained, with the regulation it comes from, in English and four other languages.
+
+Brush up on give way rules (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html), which WA's code mostly shares with the national rules, and read how to use mock tests and mistakes (https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html).
+
+## WA learners test questions people ask
+
+### How many questions are in the WA learners test?
+
+We don't state the official question count or pass mark here: check the WA Department of Transport and Major Infrastructure's website. The app's WA practice test uses a 30-question format.
+
+### Who can supervise a learner driver in WA?
+
+A licensed driving instructor, or someone who has held a licence for that kind of vehicle for at least 4 years. Your supervisor must be under 0.05 (zero in a few special cases).
+
+### How many supervised hours do WA learners need?
+
+If you are under 25, at least 50 hours, including at least 5 at night, recorded in an approved log book before the practical driving assessment. Learners aged 25 or older have no minimum hours, but still need the hazard perception test.
+
+### Are the questions in Learners Test Australia the official WA test questions?
+
+No. They are original practice questions written for the app from Western Australian legislation. The app is independent and not connected to the Government of Western Australia.
+
+## Check the official source
+
+Facts on this page come from Western Australian legislation. For bookings, fees and the current test format, use the Department of Transport and Major Infrastructure website (official website) (https://www.transport.wa.gov.au/).
+
+- Road Traffic Code 2000 (legislation.wa.gov.au) (official website) (https://www.legislation.wa.gov.au/legislation/statutes.nsf/law_s257.html)
+- Road Traffic (Authorisation to Drive) Regulations 2014 (legislation.wa.gov.au) (official website) (https://www.legislation.wa.gov.au/legislation/statutes.nsf/law_s45436.html)
+- Road Traffic (Authorisation to Drive) Act 2008 (legislation.wa.gov.au) (official website) (https://www.legislation.wa.gov.au/legislation/statutes.nsf/law_a146691.html)
+
+Rules and test formats change. We checked these pages on 30 September 2026; the official website is always the final word.
+
+## Related guides
+
+- Learner tests by state (https://blue0orbit.github.io/learners-test-australia/states.html)
+- Give way rules every learner must know (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html)
+- How to use mock tests and mistakes (https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html)
+- App features (https://blue0orbit.github.io/learners-test-australia/features.html)
+- FAQ (https://blue0orbit.github.io/learners-test-australia/faq.html)
+
+---
+
+URL: https://blue0orbit.github.io/learners-test-australia/tas-learners-test-practice.html
+
+TAS Tasmania
+
+# Tasmania learners test practice: Plates Plus and the driver knowledge test
+
+Tasmania's two ways to a learner licence, the online test's questions and pass mark, what it covers and how to prepare.
+
+Last updated: 30 September 2026
+
+Quick answer
+
+In Tasmania you get a car learner licence by passing the driver knowledge test (DKT). Most learners take the free Plates Plus online course first and then a 30-question online test, where you need 27 correct. Some questions have more than one correct answer, and there are no compulsory questions. You can also sit a standalone test at a Service Tasmania shop without doing the course, but its format isn't published.
+
+Tasmanian driver knowledge test at a glance (checked 30 September 2026)
+
+| Test | Driver knowledge test (DKT), car |
+| Online route | Free Plates Plus course of about 4 to 6 hours, then a 30-question online test; pass 27 of 30 |
+| Question style | Multiple choice; some questions have more than one correct answer, and each question says whether it does. No compulsory questions. |
+| Time | About 30 to 40 minutes, in one sitting |
+| Retries online | One attempt every 12 hours, within 12 months of first enrolling |
+| Standalone test | At any Service Tasmania shop, no course needed, free; format not published |
+| Minimum age | 15 years 11 months for the course and test; 16 for the learner licence |
+| After passing | Apply at a Service Tasmania shop within 12 months: identity documents, eyesight test, medical declaration and the licence fee |
+
+## How many questions are in the Tasmanian driver knowledge test?
+
+The online test has 30 multiple-choice questions and the pass mark is 27, so you can get no more than 3 wrong. There are no compulsory questions, but some questions have more than one correct answer. Each question tells you whether it does, and you must select every correct option to get the mark. The test takes about 30 to 40 minutes in one sitting, and leaving part-way through loses your progress.
+
+The standalone test at a Service Tasmania shop is a separate version of the test, but its number of questions and pass mark are not published. Tasmania's official information says people who skip the course are much less likely to pass. After a fail at a shop you can resit the next business day, or switch to the online course.
+
+## What is Plates Plus, and how does it work?
+
+Plates Plus is Tasmania's official online course for new drivers and the recommended way to your learner licence. You enrol from 15 years and 11 months with a client ID, set up online through myServiceTas or at a Service Tasmania shop. The course takes about 4 to 6 hours in three sections; you can't skip content, and finishing all three unlocks the test. The course and test are free, you have 12 months from first enrolling to pass, and after a failed attempt you wait 12 hours. Once you pass, apply for your learner licence at a Service Tasmania shop within 12 months.
+
+## How old do you need to be?
+
+- Plates Plus course and driver knowledge test: from 15 years and 11 months.
+- Learner licence: from 16.
+- P1 provisional licence: from 17.
+
+## What does the Tasmanian DKT cover?
+
+The course and test cover the road rules and the reasons for them, safe driving attitudes and behaviour (with a focus on speeding, seatbelts, fatigue, distraction, and drink and drug driving) and licensing rules. Tasmanian rules that often catch learners out:
+
+- Speed caps: learners must not exceed 90 km/h and P1 drivers 100 km/h, whatever the sign says.
+- Gravel roads: outside built-up areas, the default limit on unsealed roads is 80 km/h.
+- 40 km/h zones: no faster than 40 km/h past a stopped or slow police, emergency or roadside assistance vehicle with flashing lights (unless it is across a median strip), or within 50 m of a school bus showing its warning sign and light.
+- Turning at traffic lights: no faster than 20 km/h.
+- Double broken centre lines: in Tasmania you must not cross them to overtake.
+- Phones: learners and P1 drivers may not use a phone at all while driving, not even hands-free.
+
+## What happens after you get your learner licence?
+
+Your learner licence lasts 5 years. You may drive only with a supervising driver next to you: someone who has held a full licence for the past 12 months without a break. Show L plates at the front and rear, keep your alcohol at zero and don't tow anything. Four or more demerit points within 12 months brings a 3-month suspension.
+
+You must hold your learner licence for at least 12 months in a row before P1, whatever your age, and log at least 80 hours of driving, 15 of them at night. The Hazard Perception Test can be sat from 3 months before the earliest test date printed on your licence: it has 25 video clips, you need 13 right, it's free and you can retry straight away. Pass it before you book the P1 driving assessment.
+
+On P1 you show red P plates for at least 12 months and may carry no more than one passenger aged 16 to 21, unless an exemption applies (for example for family). Some P1 offences, such as speeding by 10 km/h or more, restart your P1 year. P2 brings green P plates, for 2 years if you are under 23, so the earliest age for a full licence is 20.
+
+## How to practise for the Tasmanian learners test with Learners Test Australia
+
+- 30-question mock tests scored against the 27-question pass line.
+- Select-all-that-apply questions, like the ones in the online test.
+- More than 450 original Tasmanian questions, written from the Road Rules 2019 and Tasmania's licensing laws.
+- Every answer explained, with the rule or regulation it comes from.
+
+For the shared national rules, read the give way rules every learner must know (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html), and plan your practice with our mock test guide (https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html).
+
+## Tasmania learners test questions people ask
+
+### How many questions are in the Tasmanian learners test?
+
+The online driver knowledge test, taken after the Plates Plus course, has 30 questions and you need 27 correct. The format of the standalone test at Service Tasmania shops is not published.
+
+### Are there compulsory questions in the Tasmanian online test?
+
+No. No single question has to be answered correctly to pass. Some questions do have more than one correct answer, and you only score if you choose every correct option.
+
+### Does the Plates Plus course cost anything?
+
+No. The course and the driver knowledge test are free, online or at a Service Tasmania shop. You pay the learner licence fee after you pass.
+
+### Is Learners Test Australia the official Plates Plus app?
+
+No. It is an independent practice app with original questions written from Tasmanian legislation. It is not connected to the Tasmanian Government, Plates Plus or Service Tasmania.
+
+## Check the official source
+
+- Getting your learner licence (Plates Plus) (official website) (https://www.platesplus.tas.gov.au/getting_your_learner_licence)
+- Course frequently asked questions (Plates Plus) (official website) (https://www.platesplus.tas.gov.au/frequently_asked_questions/course_frequently_asked_questions)
+- Complete a learner driver licence knowledge test (Service Tasmania) (official website) (https://www.service.tas.gov.au/services/transport/driver-and-rider-licences/complete-a-learner-driver-licence-knowledge-test/)
+- Hazard perception test questions (Plates Plus) (official website) (https://www.platesplus.tas.gov.au/frequently_asked_questions/hpt_frequently_asked_questions)
+- Driver Licensing and Vehicle Registration Regulations 2021 (legislation.tas.gov.au) (official website) (https://www.legislation.tas.gov.au/view/html/inforce/current/sr-2021-026)
+
+Rules and test formats change. We checked these pages on 30 September 2026; the official website is always the final word.
+
+## Related guides
+
+- Learner tests by state (https://blue0orbit.github.io/learners-test-australia/states.html)
+- Give way rules every learner must know (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html)
+- How to use mock tests and mistakes (https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html)
+- App features (https://blue0orbit.github.io/learners-test-australia/features.html)
+- FAQ (https://blue0orbit.github.io/learners-test-australia/faq.html)
+
+---
+
+URL: https://blue0orbit.github.io/learners-test-australia/act-learners-test-practice.html
+
+ACT Australian Capital Territory
+
+# ACT learners test practice: the ACT learner licence knowledge test
+
+How the ACT's learner licence knowledge test works, who runs it, what it covers and how to prepare for it.
+
+Last updated: 30 September 2026
+
+Quick answer
+
+In the ACT there is one way to a car learner licence: an approved course, run by an approved provider or, for its own students, a participating school, which ends with a supervised knowledge test. The test has 35 multiple-choice questions drawn at random from a bank of more than 300, and you need at least 31 correct. You can apply for your learner licence from 15 years and 9 months, and a pass can be used for 2 years.
+
+ACT learner licence knowledge test at a glance (checked 30 September 2026)
+
+| Test | ACT learner licence knowledge test, car |
+| How you take it | Only at the end of an approved course with an approved provider or participating school, supervised by the provider |
+| Before the test | Finish the course modules and pass a course quiz with at least 50% |
+| Questions | 35 multiple choice, drawn at random from a bank of more than 300 |
+| Pass mark | At least 31 of 35 (not every detail of the pass rule is published) |
+| Cost | Set by the provider, and must cover two attempts at each test; some providers and schools charge nothing |
+| Minimum age | 15 years 9 months for the learner licence |
+| A pass lasts | 2 years, for applying for your learner licence |
+
+## How many questions are in the ACT learners test, and what is the pass mark?
+
+The test is computerised: 35 multiple-choice questions drawn at random from a bank of more than 300. You need at least 31 correct, so you can't pass with more than 4 wrong. That is the minimum rather than the whole rule: the ACT doesn't publish every detail of how the test is marked, so treat every topic as one you need to know. The course fee covers two attempts at each test, and the provider can charge for more.
+
+## How does the ACT course work?
+
+There is no test at Access Canberra offices. You enrol in an approved course with an approved provider, or with your school if it runs the course for its students (some offer it free in Year 10). You finish the course modules and a course quiz, where you need at least 50%, then sit the knowledge test, supervised by the provider. An accredited interpreter can interpret but can't help you answer. No list of test languages is published.
+
+When you pass, you get a completion certificate. Within 2 years, take it with your identity and residency documents to an Access Canberra Service Centre, pass an eye test and pay the fee. You'll receive a logbook and L plates.
+
+## How old do you need to be?
+
+- Car learner licence: from 15 years and 9 months. Ask your provider or school when you can start the course.
+- Driving assessment and provisional licence: from 17.
+
+## What does the ACT knowledge test cover?
+
+The knowledge test is about road rules, including the ACT's licensing rules. Rules that set the ACT apart:
+
+- No learner speed or passenger limits: ACT learners follow the normal speed limits, may carry passengers and have no high-powered car ban, as long as the supervisor sits next to them.
+- L plates: at the front and rear, or on the roof.
+- Supervisors at zero: your supervisor needs a full Australian car licence (no minimum number of years), must have no alcohol at all and must not drink while supervising.
+- Phones: learners and all P drivers, P2 included, may not make calls at all, not even hands-free or by voice command.
+- 40 km/h past emergency vehicles: pass a stopped or slow police or emergency vehicle with flashing red or blue lights at no more than 40 km/h, unless it is across a median strip.
+- Light rail: Canberra's light rail vehicles count as trams under the road rules.
+
+## What happens after you get your learner licence?
+
+Your learner licence lasts 5 years. Hold it for at least 12 months, or 6 months if you were 25 or older when it was issued or last renewed. Under-25s need 100 hours of driving, including 10 at night, in the logbook; from 25 it is 50, including 5 at night. After 3 months, approved courses count towards the total: the Safer Driver Course for 20 hours (under-25s), the Vulnerable Road User Program for 10 and Learner Driver First Aid for 5.
+
+After more than 3 months on your learner licence you can sit the online Hazard Perception Test. Then, from 17, you take a one-off driving assessment or competency-based training and assessment with an accredited instructor.
+
+The provisional licence lasts 3 years: under 25 at issue, 12 months on P1 (red P plates), then P2 (green P plates); from 25, P2 throughout. Between 11 pm and 5 am a P1 driver may carry no more than one passenger aged 16 to 22 who isn't family, unless travelling for work or study. Four demerit points within 3 years, on L or P plates, brings a 3-month suspension.
+
+## How to practise for the ACT learners test with Learners Test Australia
+
+- 35-question practice tests scored against a 31-question pass line.
+- More than 440 original ACT questions, written from ACT legislation.
+- ACT-only rules such as roof-mounted plates, zero alcohol for supervisors and the late-night P1 passenger rule.
+- Every answer explained, with the section it comes from.
+
+The app is for practice only: the real test can only be taken through an approved course provider or a participating school. For the shared national rules, read the give way rules every learner must know (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html).
+
+## ACT learners test questions people ask
+
+### How many questions are in the ACT learners test?
+
+The ACT learner licence knowledge test has 35 multiple-choice questions, drawn at random from a bank of more than 300. You need at least 31 correct. Not every detail of the pass rule is published, so aim to get every question right.
+
+### Where do you sit the ACT learners test?
+
+At the end of an approved course, run by an approved provider or, for its own students, a participating school. Access Canberra doesn't run the test.
+
+### How many supervised hours do ACT learners need?
+
+If you were under 25 when your learner licence was issued or last renewed, 100 hours including 10 at night. From 25, it is 50 hours including 5 at night. After 3 months on your licence, some approved courses count for part of the hours.
+
+### Is Learners Test Australia an approved ACT course?
+
+No. It is an independent practice app with original questions written from ACT legislation. It is not the ACT course, doesn't replace it and is not connected to the ACT Government, Access Canberra or any approved course provider.
+
+## Check the official source
+
+- Get your learner driver licence (Access Canberra) (official website) (https://www.accesscanberra.act.gov.au/driving-transport-and-parking/licences/get-your-learner-driver-licence)
+- Get your provisional driver licence (Access Canberra) (official website) (https://www.accesscanberra.act.gov.au/driving-transport-and-parking/licences/get-your-provisional-driver-licence)
+- Road Transport (Driver Licensing) Regulation 2000 (ACT Legislation Register) (official website) (https://www.legislation.act.gov.au/sl/2000-14/)
+- Road Transport (Road Rules) Regulation 2017 (ACT Legislation Register) (official website) (https://www.legislation.act.gov.au/sl/2017-43/)
+
+Rules and test formats change. We checked these pages on 30 September 2026; the official website is always the final word.
+
+## Related guides
+
+- Learner tests by state (https://blue0orbit.github.io/learners-test-australia/states.html)
+- Give way rules every learner must know (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html)
+- How to use mock tests and mistakes (https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html)
+- App features (https://blue0orbit.github.io/learners-test-australia/features.html)
+- FAQ (https://blue0orbit.github.io/learners-test-australia/faq.html)
+
+---
+
+URL: https://blue0orbit.github.io/learners-test-australia/nt-learners-test-practice.html
+
+NT Northern Territory
+
+# NT learners test practice: the driver knowledge test
+
+The Northern Territory's driver knowledge test for a learner licence: questions, pass mark, where to sit it, the rules it checks and how to prepare.
+
+Last updated: 30 September 2026
+
+Quick answer
+
+To get a car learner licence in the Northern Territory you pass the driver knowledge test, often called the theory test, at a Motor Vehicle Registry (MVR) office. It has 30 multiple-choice questions on NT road rules, drawn at random from a pool of more than 300, and you need at least 26 correct. You must be at least 16, and a pass stays valid for 12 months.
+
+NT driver knowledge test at a glance (checked 30 September 2026)
+
+| Test | Driver knowledge test (theory test) for a car (class C) learner licence |
+| Questions | 30 multiple choice, drawn at random from a pool of more than 300 |
+| Pass mark | At least 26 of 30 |
+| Where | An MVR office during its theory test hours; in remote areas, a local police station or the DriveSafe NT remote program |
+| Minimum age | 16 |
+| A pass lasts | 12 months |
+| Not published | Sections, time limit, paper or computer, and retry rules |
+| Learner licence lasts | 2 years |
+| Hazard perception test | None in the NT: your response to hazards is assessed in the practical test |
+
+## How many questions are in the NT driver knowledge test?
+
+Thirty, all multiple choice and all about NT road rules, picked at random from a pool of more than 300. You need 26 correct, so 4 wrong answers is the most you can afford. There is one overall pass mark: the NT doesn't mention separate sections, and it doesn't publish whether any question must be answered correctly, whether there is a time limit, or whether the test is on paper or a computer. Retry rules aren't published either, so ask MVR if you need to resit.
+
+## Where do you sit the NT learners test?
+
+At an MVR office, during its theory test hours, which end before the office closes. Bring evidence of your identity and NT residency, plus a completed learner licence application. In remote areas you can sit the test at your local police station or through the DriveSafe NT remote program. No list of test languages is published, so contact MVR if you need help with English.
+
+## How old do you need to be?
+
+- Driver knowledge test and learner licence: from 16.
+- Provisional licence: you must hold your learner licence for 6 months in a row first, so the earliest is 16 years and 6 months.
+
+## What does the NT test cover?
+
+By law you must understand the road traffic laws before you get a learner licence, so the test is about NT road law: the national road rules as the Territory applies them, plus its own licensing, speed, alcohol and phone rules. NT rules that often surprise learners from other states:
+
+- Higher default limits: 60 km/h in built-up areas unless a sign says otherwise, 110 km/h outside them, and 130 km/h on roads signed for it. Every NT road has a speed limit.
+- Learner and P caps: learners must not exceed 80 km/h and P drivers 100 km/h, whatever the sign says.
+- Front seats: when a learner drives, only the supervisor may sit in the front.
+- Supervisors: a supervisor must be over 18 and hold a full licence for that type of vehicle. They count as the driver for alcohol and drug laws and can be held responsible for the learner's offences.
+- Phones: learners and P drivers may not use a phone at all while driving, not even hands-free, unless the car is stopped out of the line of traffic.
+- Road trains: road trains up to 53.5 m long use NT roads, so leave plenty of room when following or overtaking one.
+
+## What happens after you pass?
+
+After the test you pass an eye test at an MVR office (or bring a recent eye report from a doctor or optometrist) and pay the learner licence fee. The licence lasts 2 years. Show L plates at the front and rear, keep your alcohol at zero and stay at or under 80 km/h. Five or more demerit points within 12 months brings a suspension.
+
+After at least 6 months in a row on your learner licence you can take the practical driving test, an on-road drive of about 40 minutes with an authorised driving examiner. There is no separate hazard perception test in the NT: the examiner assesses how you respond to hazards, along with observation, speed, road position, decisions and control of the car. If you pass in an automatic, your licence can be limited to automatics.
+
+The NT has one provisional stage, with red P plates for the whole period: 2 years if you are under 25 when it starts, or 12 months if you are 25 or older. P drivers keep to 100 km/h, zero alcohol and no phone use at all. If you are under 25, zero alcohol continues for a while after your P plates come off. Keep a clean record on your P plates for at least 12 months and you may qualify for a free 10-year licence.
+
+## How to practise for the NT learners test with Learners Test Australia
+
+- 30-question mock tests scored against the 26-question pass line.
+- More than 380 original NT questions, written from NT legislation, including the Traffic Regulations 1999 and the Motor Vehicles Act 1949.
+- NT-only rules such as the 80 km/h learner cap, the front-seat rule, 130 km/h roads and the single red P stage.
+- Every answer explained, with the rule it comes from.
+
+Read the give way rules every learner must know (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html) for the national rules the NT shares, and how to use mock tests and mistakes (https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html) to plan your practice.
+
+## NT learners test questions people ask
+
+### How many questions are in the NT learners test?
+
+The NT driver knowledge test has 30 multiple-choice questions, drawn at random from a pool of more than 300. You need at least 26 correct, so you can get up to 4 wrong.
+
+### Is there a hazard perception test in the NT?
+
+No. The NT has no separate hazard perception test. How you respond to hazards is assessed during the practical driving test instead.
+
+### How long do you need to hold an NT learner licence?
+
+At least 6 months in a row before you can be granted a provisional licence. If your learner licence lapses or is suspended, the 6 months start again.
+
+### What is the speed limit for learner and P drivers in the NT?
+
+80 km/h for learners and 100 km/h for provisional drivers, even on roads signed 110 or 130 km/h.
+
+### Are the questions in Learners Test Australia the real NT test questions?
+
+No. They are original practice questions written for the app from Northern Territory legislation. The app is independent and not connected to the Northern Territory Government or the Motor Vehicle Registry.
+
+## Check the official source
+
+This page restates Northern Territory legislation in plain English. It is not an official version of that legislation.
+
+- Get your driver licence (nt.gov.au) (official website) (https://nt.gov.au/driving/licence/getting-an-nt-licence/get-your-driver-licence)
+- Practical driving test with an authorised driving examiner (nt.gov.au) (official website) (https://nt.gov.au/driving/licence/getting-an-nt-licence/get-your-driver-licence/take-a-practical-driving-test-with-an-authorised-driving-examiner)
+- Motor Vehicles Act 1949 (legislation.nt.gov.au) (official website) (https://legislation.nt.gov.au/Legislation/MOTOR-VEHICLES-ACT-1949)
+- Traffic Regulations 1999 (legislation.nt.gov.au) (official website) (https://legislation.nt.gov.au/Legislation/TRAFFIC-REGULATIONS-1999)
+
+Rules and test formats change. We checked these pages on 30 September 2026; the official website is always the final word.
+
+## Related guides
+
+- Learner tests by state (https://blue0orbit.github.io/learners-test-australia/states.html)
+- Give way rules every learner must know (https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html)
+- How to use mock tests and mistakes (https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html)
+- App features (https://blue0orbit.github.io/learners-test-australia/features.html)
+- FAQ (https://blue0orbit.github.io/learners-test-australia/faq.html)
+
+---
+
 URL: https://blue0orbit.github.io/learners-test-australia/faq.html
 
 Frequently asked questions
@@ -748,7 +1372,7 @@ Learners Test Australia (on Google Play as “Learners Test Australia: DKT”) i
 
 ### Is Learners Test Australia an official government app?
 
-No. Learners Test Australia is an independent study app. It is not affiliated with, or endorsed by, Transport for NSW, Service NSW, VicRoads, Transport Victoria, Queensland TMR or any government agency. The official test is run by your state or territory's licensing authority, so always check its current handbook and website.
+No. Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. The official test is run by your state or territory's licensing authority, so always check its current handbook and website.
 
 ### Are these the real test questions?
 
@@ -756,11 +1380,11 @@ No. Every question is written for the app in our own words. The questions test t
 
 ### Which states and territories does the app cover?
 
-New South Wales, Victoria and Queensland are available now. Western Australia and South Australia are next, then Tasmania, the ACT and the Northern Territory. We add a state only when its questions have been written and checked, so we don't have dates yet.
+All eight: New South Wales, Victoria, Queensland, South Australia, Western Australia, Tasmania, the Australian Capital Territory and the Northern Territory. Each has its own question pack, mock tests and licence guide, and you can switch states at any time. Compare the tests by state (https://blue0orbit.github.io/learners-test-australia/states.html).
 
 ### Which tests can I practise?
 
-The NSW Driver Knowledge Test (45 questions: 15 general knowledge, pass 12, and 30 road safety, pass 29), the Victorian learner permit test (32 questions, pass 25), and the Queensland written road rules test (10 giving way, pass 9, and 20 road rules, pass 18) and PrepL final test (30 questions, pass 27). There is also hazard perception practice with still traffic scenes.
+The NSW Driver Knowledge Test (45 questions: 15 general knowledge, pass 12, and 30 road safety, pass 29), the Victorian learner permit test (32 questions, pass 25), the Queensland written road rules test (10 giving way, pass 9, and 20 road rules, pass 18) and PrepL final test (30 questions, pass 27), the South Australian learner's theory test (8 give-way questions, all must be right, then 42, pass 32) and myLs test (30 questions, pass 27), a 30-question Western Australian practice test, the Tasmanian online driver knowledge test (30 questions, pass 27), a 35-question ACT practice test (pass line 31) and the Northern Territory driver knowledge test (30 questions, pass 26). There is also hazard perception practice with still traffic scenes.
 
 ## Price and Premium
 
@@ -806,7 +1430,7 @@ Ads keep practice free. Where the law requires it (for example in the EEA and UK
 
 ### Which languages does the app support?
 
-English, 中文, العربية, Tiếng Việt and Español. Menus, questions and explanations are translated, and Arabic reads right to left. You can change the language in Settings. Language options for the official tests themselves differ by state, so check your state's website.
+English, 中文, العربية, Tiếng Việt and Español. Menus, questions and explanations are translated, and Arabic reads right to left. Questions for Tasmania, the ACT and the Northern Territory are in English for now. You can change the language in Settings. Language options for the official tests themselves differ by state, so check your state's website.
 
 ### Does the app work offline?
 
@@ -826,17 +1450,17 @@ After you've answered enough questions, the app estimates your chance of passing
 
 ### Does the app include hazard perception practice?
 
-Yes. There are illustrated traffic scenes where you tap the hazard, plus a guide to your state's hazard perception test. A few sample scenes are free and Premium unlocks the full set. The scenes are for practice and are not a copy of any official test. See our hazard perception guide (https://blue0orbit.github.io/learners-test-australia/blog/hazard-perception-test-nsw-vic-qld.html).
+Yes. There are illustrated traffic scenes where you tap the hazard, plus a guide to your state's hazard perception test (the Northern Territory has none; hazards are assessed in its practical driving test). A few sample scenes are free and Premium unlocks the full set. The scenes are for practice and are not a copy of any official test. See our hazard perception guide (https://blue0orbit.github.io/learners-test-australia/blog/hazard-perception-test-nsw-vic-qld.html).
 
 ## Questions and accuracy
 
 ### How are the questions written?
 
-For each state we build a coverage map of every fact the official material tests, from the current handbook, the official test pages, the official practice tests (used only to see which facts are tested) and the road rules legislation. Each question is then written in original wording to test one of those facts, with a rule reference (handbook page or road rule) and a review date. Questions are never copied or paraphrased from official question banks. More about our content (https://blue0orbit.github.io/learners-test-australia/about.html).
+For each state we build a coverage map of every fact the official material tests, from the current handbook, the official test pages, the official practice tests (used only to see which facts are tested) and the road rules legislation; for Western Australia, Tasmania, the ACT and the Northern Territory, from legislation instead of a handbook. Each question is then written in original wording to test one of those facts, with a rule reference (handbook page or road rule) and a review date. Questions are never copied or paraphrased from official question banks. More about our content (https://blue0orbit.github.io/learners-test-australia/about.html).
 
 ### How accurate are the questions?
 
-The launch questions were checked against the official sources current on 30 September 2026: the NSW Road User Handbook (edition 02/2026), Victoria's Road to Solo Driving handbook (checked against current Transport Victoria and VicRoads pages) and Your keys to driving in Queensland (checked against current Queensland Government pages and legislation). Rules change, so always check your state's official website before your test.
+The questions were checked against the official sources current on 30 September 2026: the NSW Road User Handbook (edition 02/2026), Victoria's Road to Solo Driving handbook (checked against current Transport Victoria and VicRoads pages), Your keys to driving in Queensland (checked against current Queensland Government pages and legislation) and South Australia's Driver's Handbook (February 2026). Western Australian, Tasmanian, ACT and Northern Territory questions are written from each one's road rules and licensing legislation. Rules change, so always check your state's official website before your test. Our sources, state by state (https://blue0orbit.github.io/learners-test-australia/about.html).
 
 ### I think a question is wrong. How do I report it?
 
@@ -1290,7 +1914,7 @@ Aim to understand the rules rather than memorise answers. Our questions are orig
 - Old rules. Rules change. Check that what you're learning matches the current handbook and your state's website.
 - Rushing the easy ones. Most mistakes on questions you know come from reading too fast.
 
-Ready to start? See the practice pages for NSW (https://blue0orbit.github.io/learners-test-australia/nsw-dkt-practice-test.html), VIC (https://blue0orbit.github.io/learners-test-australia/vic-learner-permit-test-practice.html) and QLD (https://blue0orbit.github.io/learners-test-australia/qld-learner-test-practice.html).
+Ready to start? See the practice pages for NSW (https://blue0orbit.github.io/learners-test-australia/nsw-dkt-practice-test.html), VIC (https://blue0orbit.github.io/learners-test-australia/vic-learner-permit-test-practice.html), QLD (https://blue0orbit.github.io/learners-test-australia/qld-learner-test-practice.html), SA (https://blue0orbit.github.io/learners-test-australia/sa-learners-test-practice.html), WA (https://blue0orbit.github.io/learners-test-australia/wa-learners-test-practice.html), TAS (https://blue0orbit.github.io/learners-test-australia/tas-learners-test-practice.html), ACT (https://blue0orbit.github.io/learners-test-australia/act-learners-test-practice.html) and NT (https://blue0orbit.github.io/learners-test-australia/nt-learners-test-practice.html).
 
 ## Check the official source
 
@@ -1410,7 +2034,7 @@ Each state runs its own knowledge test with its own format, pass marks and licen
 
 ### A coverage map for each state
 
-We list every fact the official material tests, using the current handbook, the official test pages, the official practice tests (only to see which facts get tested) and the road rules legislation. Each fact records its source and the date it was checked.
+We list every fact the official material tests, using the current handbook, the official test pages, the official practice tests (only to see which facts get tested) and the road rules legislation. For Western Australia, Tasmania, the ACT and the Northern Territory we work from legislation instead of a handbook. Each fact records its source and the date it was checked.
 
 -
 
@@ -1438,20 +2062,29 @@ Road signs, markings and diagrams are redrawn from written descriptions, not tra
 
 ## Which official sources are the questions checked against?
 
-| State | Handbook and edition | Also checked against |
+| State | Main source | Also checked against |
 | NSW | Road User Handbook, edition 02/2026 | NSW Road Rules 2014 and NSW Government licence and test pages |
 | VIC | Road to Solo Driving, April 2023 edition | Road Safety Road Rules 2017 and current Transport Victoria and VicRoads pages |
 | QLD | Your keys to driving in Queensland, No. 19 (November 2022) | The Queensland Road Rules Regulation in force from 31 August 2026 and current Queensland Government pages |
+| SA | The Driver's Handbook (MR200), February 2026 edition | South Australian road traffic and motor vehicle legislation, and sa.gov.au and mylicence pages |
+| WA | WA legislation: Road Traffic Code 2000 (in force from 14 May 2026) and the licensing regulations | Nothing else: every WA fact comes from legislation |
+| TAS | Tasmanian legislation: Road Rules 2019 (in force from 11 December 2025) and the licensing regulations | Plates Plus and Service Tasmania pages, for the test format, ages and fees only |
+| ACT | ACT legislation: Road Transport (Road Rules) Regulation 2017 (republication 17) and the licensing laws | Access Canberra pages, for the test format, ages and fees only |
+| NT | NT legislation: Traffic Regulations 1999 (in force at 28 May 2026) and the Motor Vehicles Act 1949 | nt.gov.au pages, for the test format, ages and fees only |
 
-Where a handbook is older than the current rules (for example, Queensland's 2022 handbook predates the 2026 e-scooter and e-bike changes), the current official pages and legislation decide the answer.
+Where a handbook is older than the current rules (for example, Queensland's 2022 handbook predates the 2026 e-scooter and e-bike changes), the current official pages and legislation decide the answer. For Western Australia, Tasmania, the ACT and the Northern Territory we use no handbook at all: the questions are written from legislation.
 
 ## Attribution
 
-Queensland road rules content is based on content from the Queensland Legislation website at 30 September 2026 (CC BY 4.0). Queensland Government web pages are © The State of Queensland (Department of Transport and Main Roads), CC BY 4.0. Transport Victoria web pages are licensed under CC BY 4.0, except images and branding. We restate facts in our own words, reproduce no text, logos or images, and none of these sources endorses the app or this website.
+Queensland road rules content is based on content from the Queensland Legislation website at 30 September 2026 (CC BY 4.0). Queensland Government web pages are © The State of Queensland (Department of Transport and Main Roads), CC BY 4.0. Transport Victoria web pages are licensed under CC BY 4.0, except images and branding.
+
+South Australian content draws on The Driver's Handbook (MR200, February 2026), Department of Infrastructure and Transport, Government of South Australia, sourced on 30 September 2026 from mylicence.sa.gov.au, © Government of South Australia, CC BY 3.0 AU, and on South Australian legislation, based on content from the South Australian Legislation website at 30 September 2026 (CC BY 4.0). Western Australian content is based on content from the Western Australian Legislation website at 30 September 2026, © State of Western Australia, CC BY 4.0. Tasmanian content is based on material from the Tasmanian Legislation website at 30 September 2026, © State of Tasmania, CC BY 4.0. ACT facts are restated from ACT legislation on the ACT Legislation Register, sourced on 30 September 2026, © Australian Capital Territory. Northern Territory facts are restated from Northern Territory legislation published at legislation.nt.gov.au, sourced on 30 September 2026; this is not an official version of that legislation.
+
+We restate facts in our own words, reproduce no text, logos or images, and none of these sources endorses the app or this website. For the law in force, always go to the official legislation website for your state or territory.
 
 ## Independence
 
-Learners Test Australia is an independent study app. It is not affiliated with, or endorsed by, Transport for NSW, Service NSW, VicRoads, Transport Victoria, Queensland TMR or any government agency.
+Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency.
 
 ## About this website
 
@@ -1462,7 +2095,7 @@ This site uses no cookies, analytics or trackers and loads nothing from third pa
 - App: Learners Test Australia: DKT
 - Developer: BlueOrbit
 - Platform: Android 8.0 or later
-- States: NSW, VIC, QLD
+- States: all 8 states and territories
 - Languages: 5
 - Price: free, optional A$5.99 Premium
 - Contact: blue0orbit@gmail.com

@@ -80,7 +80,7 @@ def mock_fingerprint() -> str:
     return f"""<figure class="mock-figure">
 <div class="phone" aria-hidden="true"><div class="screen">
   <div class="scr-q">Where will you take your test?</div>
-  <div class="scr-row" style="flex-wrap:wrap;justify-content:flex-start">{chip('NSW')} <span class="scr-muted">VIC</span> <span class="scr-muted">QLD</span> <span class="scr-muted">WA · Soon</span> <span class="scr-muted">SA · Soon</span></div>
+  <div class="scr-row" style="flex-wrap:wrap;justify-content:flex-start">{chip('NSW')} <span class="scr-muted">VIC</span> <span class="scr-muted">QLD</span> <span class="scr-muted">SA</span> <span class="scr-muted">WA</span> <span class="scr-muted">TAS</span> <span class="scr-muted">ACT</span> <span class="scr-muted">NT</span></div>
   <div class="scr-card"><div class="scr-label">DRIVER KNOWLEDGE TEST</div>
   <ul class="scr-plan">
     <li><span class="scr-dot"></span>45 questions</li>
@@ -115,7 +115,7 @@ def mock_hazard() -> str:
 # ── Shared blocks ─────────────────────────────────────────────────────────────────────────────
 def state_cards(heading_level: str = "h3") -> str:
     h = heading_level
-    return f"""<div class="grid grid-3">
+    return f"""<div class="grid grid-4">
 <article class="card state-card">
   <div class="state-top">{chip('NSW')}<{h}>NSW Driver Knowledge Test (DKT)</{h}></div>
   <dl>
@@ -143,15 +143,56 @@ def state_cards(heading_level: str = "h3") -> str:
   </dl>
   <a class="card-link" href="@/qld-learner-test-practice.html">QLD learner test practice {icon('arrow')}</a>
 </article>
+<article class="card state-card">
+  <div class="state-top">{chip('SA')}<{h}>SA learner's theory test and myLs</{h}></div>
+  <dl>
+    <dt>In person</dt><dd>8 give-way questions, all must be right, then 42. Pass mark: 32 of 42.</dd>
+    <dt>myLs test</dt><dd>30 questions. Pass mark: 27 of 30.</dd>
+    <dt>In the app</dt><dd>Mock tests for both routes, with select-all-that-apply questions.</dd>
+  </dl>
+  <a class="card-link" href="@/sa-learners-test-practice.html">SA learners test practice {icon('arrow')}</a>
+</article>
+<article class="card state-card">
+  <div class="state-top">{chip('WA')}<{h}>WA learner's permit theory test</{h}></div>
+  <dl>
+    <dt>Before your permit</dt><dd>Show you know WA's traffic laws and safe driving, normally by a theory test.</dd>
+    <dt>Official format</dt><dd>Check the WA transport department's website.</dd>
+    <dt>In the app</dt><dd>A 30-question practice test written from WA legislation.</dd>
+  </dl>
+  <a class="card-link" href="@/wa-learners-test-practice.html">WA learners test practice {icon('arrow')}</a>
+</article>
+<article class="card state-card">
+  <div class="state-top">{chip('TAS')}<{h}>Tasmanian driver knowledge test</{h}></div>
+  <dl>
+    <dt>Online test</dt><dd>30 questions, after the free Plates Plus course.</dd>
+    <dt>Pass mark</dt><dd>27 of 30. Some questions have more than one correct answer.</dd>
+    <dt>In the app</dt><dd>30-question mocks with select-all-that-apply questions.</dd>
+  </dl>
+  <a class="card-link" href="@/tas-learners-test-practice.html">Tasmania learners test practice {icon('arrow')}</a>
+</article>
+<article class="card state-card">
+  <div class="state-top">{chip('ACT')}<{h}>ACT learner licence knowledge test</{h}></div>
+  <dl>
+    <dt>Questions</dt><dd>35, from a bank of more than 300</dd>
+    <dt>Pass mark</dt><dd>At least 31 of 35</dd>
+    <dt>In the app</dt><dd>35-question practice tests. The real test is taken only through an approved course.</dd>
+  </dl>
+  <a class="card-link" href="@/act-learners-test-practice.html">ACT learners test practice {icon('arrow')}</a>
+</article>
+<article class="card state-card">
+  <div class="state-top">{chip('NT')}<{h}>NT driver knowledge test</{h}></div>
+  <dl>
+    <dt>Questions</dt><dd>30, from a pool of more than 300</dd>
+    <dt>Pass mark</dt><dd>26 of 30</dd>
+    <dt>In the app</dt><dd>30-question mocks scored against the 26-question pass line.</dd>
+  </dl>
+  <a class="card-link" href="@/nt-learners-test-practice.html">NT learners test practice {icon('arrow')}</a>
+</article>
 </div>"""
 
 
-COMING_LATER = """<ul class="soon-list" aria-label="Coming later">
-<li><span class="soon-chip">WA</span></li><li><span class="soon-chip">SA</span></li><li><span class="soon-chip">TAS</span></li><li><span class="soon-chip">ACT</span></li><li><span class="soon-chip">NT</span></li>
-</ul>"""
-
-COMING_LATER_TEXT = ("Western Australia and South Australia are next, then Tasmania, the ACT and the Northern Territory. "
-                     "We add a state only when its questions have been written and checked, so we don't have dates yet.")
+ALL_STATES_TEXT = ("New South Wales, Victoria, Queensland, South Australia, Western Australia, Tasmania, the Australian "
+                   "Capital Territory and the Northern Territory")
 
 
 def price_table() -> str:
@@ -182,7 +223,8 @@ FEATURES_GRID = [
     ("eye", "Hazard perception practice",
      "Still traffic scenes where you tap the hazard, plus a guide to your state's hazard perception test."),
     ("globe", "Five languages",
-     f"Menus, questions and explanations in {LANGS}. Arabic reads right to left."),
+     f"Menus, questions and explanations in {LANGS}. Arabic reads right to left. Tasmanian, ACT and NT questions are "
+     "in English for now."),
     ("moon", "Dark mode and large text",
      "Follows your phone's theme, with a switch in Settings. Screens have TalkBack labels and support large font sizes."),
     ("offline", "Practise offline",
@@ -207,11 +249,11 @@ def home() -> Page:
     body = f"""<section class="hero on-dark" aria-labelledby="hero-title">
 <div class="container hero-grid">
   <div>
-    <p class="eyebrow">Learner driver app for NSW, VIC and QLD</p>
+    <p class="eyebrow">Learner driver app for every state and territory</p>
     <h1 id="hero-title">Practise for your <span class="hl">learners test</span> in your state's real format</h1>
-    <p class="lead">{SITE_NAME} is an Android app by {DEVELOPER} for learner drivers in New South Wales, Victoria and
-    Queensland. Choose your state and practise its knowledge test the way it is really set: original questions checked
-    against the official handbook, every answer explained, and mock tests that show exactly where the pass line is.</p>
+    <p class="lead">{SITE_NAME} is an Android app by {DEVELOPER} for learner drivers in all eight Australian states and
+    territories. Choose your state and practise its knowledge test the way it is really set: original questions checked
+    against official sources, every answer explained, and mock tests that show exactly where the pass line is.</p>
     {coming_soon(beside='<a class="btn btn-ghost" href="@/features.html">See the features</a>')}
     <p class="fine">Free to practise. One free mock test a day. Optional one-time Premium for {PRICE}.</p>
   </div>
@@ -224,15 +266,11 @@ def home() -> Page:
   <div class="section-head">
     <p class="eyebrow">Pick your state</p>
     <h2 id="states-title">Your state's learner test, in its real format</h2>
-    <p>Road rules and knowledge tests differ between states. The app sets up practice and mock tests for the state
-    where you'll sit your test, and you can add or switch states later.</p>
+    <p>Road rules and knowledge tests differ between states. The app covers all eight states and territories: it sets
+    up practice and mock tests for the one where you'll sit your test, and you can add or switch states later.</p>
   </div>
   {state_cards()}
-  <div style="margin-top:2rem">
-    <h3>Coming later</h3>
-    {COMING_LATER}
-    <p class="meta">{COMING_LATER_TEXT}</p>
-  </div>
+  <p style="margin-top:1.5rem"><a class="card-link" href="@/states.html">Compare the learner tests by state {icon('arrow')}</a></p>
 </div>
 </section>
 
@@ -241,8 +279,8 @@ def home() -> Page:
   <div class="section-head">
     <p class="eyebrow">What the app does</p>
     <h2 id="what-title">Everything you need to prepare, in one learner driver app</h2>
-    <p>Practice questions for the DKT, the learner permit test and the Queensland road rules test, built around how
-    people actually learn: little and often, with every mistake turned into a review.</p>
+    <p>Practice questions for every state's learner test, from the NSW DKT to the NT driver knowledge test, built around
+    how people actually learn: little and often, with every mistake turned into a review.</p>
   </div>
   {features_grid()}
   <p style="margin-top:1.5rem"><a class="card-link" href="@/features.html">Take the full feature tour {icon('arrow')}</a></p>
@@ -285,9 +323,9 @@ def home() -> Page:
   <div class="prose">
     <p class="eyebrow">How the questions are made</p>
     <h2 id="content-title">Original questions, checked against official sources</h2>
-    <p>For each state we first map every fact the official material tests, using the current handbook, the official
-    test pages and the road rules legislation. Then every question is written in our own words to test one of those
-    facts, with the handbook page or road rule it comes from and the date it was last checked.</p>
+    <p>For each state we first map every fact the official material tests, using the current handbook where we may,
+    the official test pages and the road rules legislation. Then every question is written in our own words to test one
+    of those facts, with the handbook page or road rule it comes from and the date it was last checked.</p>
     <ul class="check-list">
       <li>No official questions, answer options, handbook text or images are reproduced.</li>
       <li>Road signs and diagrams are redrawn as original illustrations.</li>
@@ -304,7 +342,8 @@ def home() -> Page:
   <div class="section-head">
     <p class="eyebrow">Guides</p>
     <h2 id="guides-title">Learner test guides</h2>
-    <p>Plain-English guides to each state's test, written from official sources as checked on {DATE_H}.</p>
+    <p>Plain-English guides to learner tests and road rules, written from official sources as checked on {DATE_H}.
+    Every state and territory also has its own page: <a href="@/states.html">learner tests by state</a>.</p>
   </div>
   <div class="grid grid-3">
     <article class="card post-card"><h3><a href="@/blog/nsw-driver-knowledge-test-explained.html">How the NSW Driver Knowledge Test works</a></h3><p>Sections, pass marks, the online option and what comes after your Ls.</p></article>
@@ -328,8 +367,8 @@ def home() -> Page:
     return Page(
         path="index.html",
         title="Learners Test Australia: DKT & Learner Permit Practice",
-        description=("Learners test practice app for NSW, VIC and QLD: original questions in each state's real test format, "
-                     "explained answers, mock tests and hazard perception."),
+        description=("Learners test practice app for every Australian state and territory: original questions in each "
+                     "state's real test format, explained answers and mock tests."),
         body=body,
         nav=None,
         crumbs=[],
@@ -337,14 +376,14 @@ def home() -> Page:
             organization(),
             {"@type": "WebSite", "@id": SITE_ID, "name": SITE_NAME, "url": BASE, "inLanguage": "en-AU",
              "publisher": {"@id": ORG_ID},
-             "description": "Website of Learners Test Australia, an independent learner driver study app for NSW, VIC and QLD."},
+             "description": "Website of Learners Test Australia, an independent learner driver study app for all eight Australian states and territories."},
             mobile_application(),
         ],
         priority="1.0",
         changefreq="weekly",
         llms=True,
         llms_title="Home",
-        llms_note="What the app is, which states and tests it covers, pricing (free practice, one-time A$5.99 Premium) and how questions are written.",
+        llms_note="What the app is, the tests it covers in all eight states and territories, pricing (free practice, one-time A$5.99 Premium) and how questions are written.",
     )
 
 
@@ -371,6 +410,11 @@ def features() -> Page:
       <li><strong>NSW:</strong> Driver Knowledge Test, 45 questions in two sections (general knowledge and road safety).</li>
       <li><strong>VIC:</strong> learner permit test, 32 questions.</li>
       <li><strong>QLD:</strong> written road rules test, 30 questions in two sections (giving way and road rules), and the PrepL final test, 30 questions.</li>
+      <li><strong>SA:</strong> learner's theory test in person, 8 give-way questions and then 42, and the myLs test, 30 questions.</li>
+      <li><strong>WA:</strong> a 30-question learner's permit practice test.</li>
+      <li><strong>TAS:</strong> the online driver knowledge test, 30 questions, some with more than one correct answer.</li>
+      <li><strong>ACT:</strong> a 35-question learner licence knowledge test.</li>
+      <li><strong>NT:</strong> driver knowledge test, 30 questions.</li>
     </ul>
     <p>Progress is saved separately for each state, so switching states never mixes up your results.
     <a href="@/states.html">Compare the tests by state</a>.</p>
@@ -385,10 +429,11 @@ def features() -> Page:
     <h2 id="f2">Every answer explained, with its source</h2>
     <p>After each answer you see whether you were right, a short explanation, why the rule matters, and the source:
     the handbook page or road rule number. If you want to read more, you know exactly where to look.</p>
-    <p>Questions come in the forms real tests use: single answers, road signs and diagrams. A quick
+    <p>Questions come in the forms real tests use: single answers, road signs and diagrams, plus
+    select-all-that-apply questions for the South Australian myLs and Tasmanian online tests. A quick
     "How sure were you?" tap (knew it, unsure or guessed) helps the app decide when to show a question again, and you
     can save or flag any question to come back to.</p>
-    <p>Each state's launch pack has more than 400 original questions, and hundreds of original sign and diagram
+    <p>Each state's question pack has more than 380 original questions, and hundreds of original sign and diagram
     illustrations are shared across states.</p>
   </div>
   {mock_question()}
@@ -463,7 +508,8 @@ def features() -> Page:
     <p>Hazard perception is about spotting risks early. The app has illustrated traffic scenes, drawn from above,
     where you tap the hazard you should be ready for and then read why. A few sample scenes are free, and Premium
     unlocks the full set.</p>
-    <p>Each state also has a guide to its hazard perception test and where it fits on the way to your P plates.
+    <p>Each state's licence guide also explains where its hazard perception test fits on the way to your P plates
+    (the Northern Territory has no separate test: hazards are assessed in the practical driving test).
     The scenes are still images for practice; they are not a copy of any official test.
     <a href="@/blog/hazard-perception-test-nsw-vic-qld.html">Read our hazard perception guide</a>.</p>
   </div>
@@ -477,7 +523,7 @@ def features() -> Page:
     <div class="card"><span class="icon-tile">{icon('route')}</span><h3>Licence guide</h3><p>Each step from learner to full licence in your state, with links to the official pages.</p></div>
     <div class="card"><span class="icon-tile">{icon('bell')}</span><h3>Reminders and countdown</h3><p>A daily nudge and a countdown to your test, if you turn them on.</p></div>
     <div class="card"><span class="icon-tile">{icon('star')}</span><h3>Streak and badges</h3><p>A study streak and a few badges for real study. No points to grind.</p></div>
-    <div class="card"><span class="icon-tile">{icon('globe')}</span><h3>Five languages</h3><p>{LANGS}, including the questions and explanations. Arabic reads right to left.</p></div>
+    <div class="card"><span class="icon-tile">{icon('globe')}</span><h3>Five languages</h3><p>{LANGS}, including the questions and explanations (Tasmanian, ACT and NT questions are in English for now). Arabic reads right to left.</p></div>
     <div class="card"><span class="icon-tile">{icon('text')}</span><h3>Accessible by design</h3><p>Readable fonts, large-text support, dark mode, TalkBack labels and a spoken timer.</p></div>
     <div class="card"><span class="icon-tile">{icon('offline')}</span><h3>Offline practice, synced progress</h3><p>Practise without a connection after signing in. Your progress is saved to your account and follows you to a new phone.</p></div>
     <div class="card"><span class="icon-tile">{icon('shield')}</span><h3>Your privacy choices</h3><p>A short privacy card at the start and switches in Settings. <a href="@/privacy-policy.html">Privacy policy</a>.</p></div>
@@ -502,15 +548,15 @@ def features() -> Page:
     return Page(
         path="features.html",
         title="Learner Driver App Features | Learners Test Australia",
-        description=("Tour the Learners Test Australia app: state mock tests, explained answers with sources, a daily plan, "
-                     "pass-chance estimate, hazard scenes and 5 languages."),
+        description=("Tour the Learners Test Australia app: mock tests for all 8 states, explained answers with sources, a "
+                     "daily plan, pass-chance estimate and hazard scenes."),
         body=body,
         nav="features",
         crumbs=crumbs,
         priority="0.9",
         llms=True,
         llms_title="Features",
-        llms_note="Feature tour: state test formats, explained answers with sources, daily plan, mock tests, progress, hazard perception, languages, offline.",
+        llms_note="Feature tour: test formats for all eight states and territories, explained answers with sources, daily plan, mock tests, progress, hazard perception, languages, offline.",
     )
 
 
@@ -519,58 +565,66 @@ def states() -> Page:
     crumbs = [("Home", ""), ("States", "states.html")]
     body = page_head(
         "Learner driver knowledge tests by state",
-        "Each Australian state and territory runs its own learner knowledge test. Here is how the NSW, VIC and QLD "
-        "tests compare, and which states are coming next.",
+        "Each Australian state and territory runs its own learner knowledge test. Here is how all eight compare, and "
+        "where to find the details for yours.",
         crumbs,
         eyebrow="States and territories",
     ) + f"""
 <div class="content"><div class="container">
 <div class="answer-box"><p class="answer-label">In short</p>
-<p>The NSW Driver Knowledge Test has 45 questions in two sections, the Victorian learner permit test has 32 questions
-and the Queensland written road rules test has 30 questions in two sections (Queensland's online PrepL final test is
-also 30 questions). {SITE_NAME} practises all of these. Western Australia, South Australia, Tasmania, the ACT and the
-Northern Territory are coming later.</p></div>
+<p>Every state and territory sets its own learner knowledge test. Formats range from 30 questions (Queensland, the
+Tasmanian online test, the Northern Territory and South Australia's myLs) through 32 in Victoria's in-person test and
+35 in the ACT to 45 in the NSW DKT and 50 in South Australia's in-person test, and several states also offer an online
+course route. {SITE_NAME} has practice for
+all eight: {ALL_STATES_TEXT}.</p></div>
 
-<h2>How do the NSW, VIC and QLD learner tests compare?</h2>
+<h2>How do the learner tests compare across Australia?</h2>
 <div class="table-wrap"><table>
 <caption>Knowledge test formats, as checked on {DATE_H}</caption>
-<thead><tr><th scope="col">State</th><th scope="col">Test</th><th scope="col">Questions</th><th scope="col">Pass mark</th><th scope="col">Online option</th></tr></thead>
+<thead><tr><th scope="col">State</th><th scope="col">Test</th><th scope="col">Questions</th><th scope="col">Pass mark</th><th scope="col">How you take it</th></tr></thead>
 <tbody>
-<tr><th scope="row">NSW</th><td>Driver Knowledge Test (DKT)</td><td>45: 15 general knowledge, 30 road safety</td><td>12 of 15 and 29 of 30</td><td>DKT online course and final test, from 15 years 11 months</td></tr>
-<tr><th scope="row">VIC</th><td>Learner permit test</td><td>32 (in-person test)</td><td>25 of 32 (78%)</td><td>Online learner permit course with a final test (the default route)</td></tr>
-<tr><th scope="row">QLD</th><td>Written road rules test</td><td>30: 10 giving way, 20 road rules and licence requirements</td><td>9 of 10 and 18 of 20</td><td>PrepL online course, final test of 30 questions, pass 27</td></tr>
+<tr><th scope="row"><a href="@/nsw-dkt-practice-test.html">NSW</a></th><td>Driver Knowledge Test (DKT)</td><td>45: 15 general knowledge, 30 road safety</td><td>12 of 15 and 29 of 30</td><td>In person, or the DKT online course and final test from 15 years 11 months</td></tr>
+<tr><th scope="row"><a href="@/vic-learner-permit-test-practice.html">VIC</a></th><td>Learner permit test</td><td>32 (in-person test)</td><td>25 of 32 (78%)</td><td>Online learner permit course with a final test (the default route), or in person</td></tr>
+<tr><th scope="row"><a href="@/qld-learner-test-practice.html">QLD</a></th><td>Written road rules test</td><td>30: 10 giving way, 20 road rules and licence requirements</td><td>9 of 10 and 18 of 20</td><td>On paper at a licence-issuing centre, or PrepL online (final test of 30 questions, pass 27)</td></tr>
+<tr><th scope="row"><a href="@/sa-learners-test-practice.html">SA</a></th><td>Learner's theory test</td><td>In person: 8 give-way, then 42 road rules and safety</td><td>All 8, and 32 of 42</td><td>In person at Service SA, or myLs online (30-question test, pass 27)</td></tr>
+<tr><th scope="row"><a href="@/wa-learners-test-practice.html">WA</a></th><td>Learner's permit theory test</td><td>Not stated here</td><td>Not stated here</td><td>See the WA page, and check the Department of Transport and Major Infrastructure</td></tr>
+<tr><th scope="row"><a href="@/tas-learners-test-practice.html">TAS</a></th><td>Driver knowledge test</td><td>30 (online test)</td><td>27 of 30</td><td>Free Plates Plus course and online test (recommended), or a standalone test at a Service Tasmania shop</td></tr>
+<tr><th scope="row"><a href="@/act-learners-test-practice.html">ACT</a></th><td>Learner licence knowledge test</td><td>35, from a bank of more than 300</td><td>At least 31 of 35</td><td>Only at the end of an approved course, with an approved provider or participating school</td></tr>
+<tr><th scope="row"><a href="@/nt-learners-test-practice.html">NT</a></th><td>Driver knowledge test</td><td>30, from a pool of more than 300</td><td>26 of 30</td><td>At an MVR office (in remote areas, a police station or DriveSafe NT)</td></tr>
 </tbody></table></div>
-<p class="meta">Sources: the NSW Government, VicRoads and Queensland Government test pages linked on each state's page.
-Some details, such as the size of the NSW and Victorian online final tests, are not published.</p>
+<p class="meta">Sources: the official test pages and legislation linked on each state's page. Some details are not
+published, such as the size of the NSW and Victorian online final tests, the Tasmanian standalone test format and every
+detail of the ACT pass rule. For Western Australia we state only what we could confirm from WA legislation.</p>
 
 <h2>Choose your state</h2>
 {state_cards('h3')}
 
-<h2 style="margin-top:2.5rem">Which states are coming next?</h2>
-{COMING_LATER}
-<p>{COMING_LATER_TEXT} Until then, learners in those states can find their test information on their state or
-territory government's official website.</p>
+<h2 style="margin-top:2.5rem">Which states have an online route?</h2>
+<p>New South Wales, Victoria, Queensland, South Australia and Tasmania all offer an online course that ends with a
+test: the DKT online in NSW, the learner permit course in Victoria, PrepL in Queensland, myLs in South Australia and
+Plates Plus in Tasmania. In the ACT the test comes at the end of an approved course run by a provider or school. In the
+Northern Territory you sit the test at an MVR office. Each state page explains the options and ages.</p>
 
 <h2>What is the same in every state?</h2>
-<p>Much of what the tests check comes from the national Australian Road Rules, which each state adopts in its own
-law: giving way at intersections and roundabouts, traffic lights, speed limit signs and most road markings. The
-details that differ are usually licensing rules (supervised hours, plate rules, passenger limits, alcohol and phone
-rules for new drivers) and a few local road rules, such as Victoria's hook turns. Our guide to
-<a href="@/blog/give-way-rules-for-learner-drivers.html">give way rules</a> covers the shared rules and the main
-differences.</p>
+<p>Much of what the tests check comes from the national Australian Road Rules, which most states and territories adopt
+in their own law (Western Australia has its own Road Traffic Code, which follows them closely): giving way at
+intersections and roundabouts, traffic lights, speed limit signs and most road markings. The details that differ are
+usually licensing rules (supervised hours, plate rules, passenger limits, alcohol and phone rules for new drivers) and
+a few local road rules, such as Victoria's hook turns or the Northern Territory's 130 km/h roads. Our guide to
+<a href="@/blog/give-way-rules-for-learner-drivers.html">give way rules</a> covers the shared rules.</p>
 </div></div>"""
     return Page(
         path="states.html",
         title="Learner Tests by State | Learners Test Australia",
-        description=("Compare learner knowledge tests by state: the NSW DKT (45 questions), the VIC learner permit test (32) "
-                     "and the QLD road rules test and PrepL (30 each)."),
+        description=("Compare learner knowledge tests in all 8 states and territories: NSW DKT, VIC permit test, QLD, SA, "
+                     "WA, TAS, ACT and NT formats, pass marks and routes."),
         body=body,
         nav="states",
         crumbs=crumbs,
         priority="0.9",
         llms=True,
         llms_title="States",
-        llms_note="Side-by-side comparison of the NSW, VIC and QLD learner knowledge tests, and which states are coming later.",
+        llms_note="Side-by-side comparison of the learner knowledge tests in all eight states and territories, with links to each state's page.",
     )
 
 
@@ -588,12 +642,16 @@ FAQ_GROUPS = [
          "<p>No. Every question is written for the app in our own words. The questions test the same facts the official "
          "material covers, but no official questions, answer options, handbook text or images are reproduced.</p>"),
         ("Which states and territories does the app cover?",
-         f"<p>New South Wales, Victoria and Queensland are available now. {COMING_LATER_TEXT}</p>"),
+         f"<p>All eight: {ALL_STATES_TEXT}. Each has its own question pack, mock tests and licence guide, and you can "
+         'switch states at any time. <a href="@/states.html">Compare the tests by state</a>.</p>'),
         ("Which tests can I practise?",
          "<p>The NSW Driver Knowledge Test (45 questions: 15 general knowledge, pass 12, and 30 road safety, pass 29), the "
-         "Victorian learner permit test (32 questions, pass 25), and the Queensland written road rules test (10 giving way, "
-         "pass 9, and 20 road rules, pass 18) and PrepL final test (30 questions, pass 27). There is also hazard perception "
-         "practice with still traffic scenes.</p>"),
+         "Victorian learner permit test (32 questions, pass 25), the Queensland written road rules test (10 giving way, "
+         "pass 9, and 20 road rules, pass 18) and PrepL final test (30 questions, pass 27), the South Australian "
+         "learner's theory test (8 give-way questions, all must be right, then 42, pass 32) and myLs test (30 questions, "
+         "pass 27), a 30-question Western Australian practice test, the Tasmanian online driver knowledge test (30 "
+         "questions, pass 27), a 35-question ACT practice test (pass line 31) and the Northern Territory driver knowledge "
+         "test (30 questions, pass 26). There is also hazard perception practice with still traffic scenes.</p>"),
     ]),
     ("Price and Premium", [
         ("Is the app free?",
@@ -633,9 +691,9 @@ FAQ_GROUPS = [
     ]),
     ("Using the app", [
         ("Which languages does the app support?",
-         f"<p>{LANGS}. Menus, questions and explanations are translated, and Arabic reads right to left. You can change "
-         "the language in Settings. Language options for the official tests themselves differ by state, so check your "
-         "state's website.</p>"),
+         f"<p>{LANGS}. Menus, questions and explanations are translated, and Arabic reads right to left. Questions for "
+         "Tasmania, the ACT and the Northern Territory are in English for now. You can change the language in Settings. "
+         "Language options for the official tests themselves differ by state, so check your state's website.</p>"),
         ("Does the app work offline?",
          "<p>Mostly. Questions are built into the app, so after you've signed in you can practise without a connection, and "
          "your progress syncs when you're back online. You need a connection to sign in, to watch an ad for an extra mock "
@@ -650,7 +708,8 @@ FAQ_GROUPS = [
          "is an estimate, not a guarantee. Premium adds a forecast for each section of the test.</p>"),
         ("Does the app include hazard perception practice?",
          "<p>Yes. There are illustrated traffic scenes where you tap the hazard, plus a guide to your state's hazard "
-         "perception test. A few sample scenes are free and Premium unlocks the full set. The scenes are for practice and "
+         "perception test (the Northern Territory has none; hazards are assessed in its practical driving test). A few "
+         "sample scenes are free and Premium unlocks the full set. The scenes are for practice and "
          'are not a copy of any official test. See our <a href="@/blog/hazard-perception-test-nsw-vic-qld.html">hazard '
          "perception guide</a>.</p>"),
     ]),
@@ -658,14 +717,18 @@ FAQ_GROUPS = [
         ("How are the questions written?",
          "<p>For each state we build a coverage map of every fact the official material tests, from the current handbook, "
          "the official test pages, the official practice tests (used only to see which facts are tested) and the road rules "
-         "legislation. Each question is then written in original wording to test one of those facts, with a rule reference "
+         "legislation; for Western Australia, Tasmania, the ACT and the Northern Territory, from legislation instead of a "
+         "handbook. Each question is then written in original wording to test one of those facts, with a rule reference "
          "(handbook page or road rule) and a review date. Questions are never copied or paraphrased from official question "
          'banks. <a href="@/about.html">More about our content</a>.</p>'),
         ("How accurate are the questions?",
-         f"<p>The launch questions were checked against the official sources current on {DATE_H}: the NSW Road User "
+         f"<p>The questions were checked against the official sources current on {DATE_H}: the NSW Road User "
          "Handbook (edition 02/2026), Victoria's Road to Solo Driving handbook (checked against current Transport Victoria "
-         "and VicRoads pages) and Your keys to driving in Queensland (checked against current Queensland Government pages "
-         "and legislation). Rules change, so always check your state's official website before your test.</p>"),
+         "and VicRoads pages), Your keys to driving in Queensland (checked against current Queensland Government pages "
+         "and legislation) and South Australia's Driver's Handbook (February 2026). Western Australian, Tasmanian, ACT "
+         "and Northern Territory questions are written from each one's road rules and licensing legislation. Rules change, "
+         'so always check your state\'s official website before your test. <a href="@/about.html">Our sources, state by '
+         "state</a>.</p>"),
         ("I think a question is wrong. How do I report it?",
          f'<p>Email <a href="mailto:{EMAIL}">{EMAIL}</a> with your state, the question (or its first few words), what you '
          'think is wrong and, if you can, a link to the official source. The <a href="@/contact.html">contact page</a> lists '
@@ -737,7 +800,8 @@ and rules.</p>
 <ol class="steps">
   <li><h3>A coverage map for each state</h3><p>We list every fact the official material tests, using the current
   handbook, the official test pages, the official practice tests (only to see which facts get tested) and the road
-  rules legislation. Each fact records its source and the date it was checked.</p></li>
+  rules legislation. For Western Australia, Tasmania, the ACT and the Northern Territory we work from legislation
+  instead of a handbook. Each fact records its source and the date it was checked.</p></li>
   <li><h3>Original questions</h3><p>Every question is written in our own words to test one fact from the map, with
   wrong options based on common misunderstandings. No official question, answer option, handbook sentence or image is
   reproduced, and we don't paraphrase official question banks.</p></li>
@@ -752,20 +816,36 @@ and rules.</p>
 
 <h2>Which official sources are the questions checked against?</h2>
 <div class="table-wrap"><table>
-<thead><tr><th scope="col">State</th><th scope="col">Handbook and edition</th><th scope="col">Also checked against</th></tr></thead>
+<thead><tr><th scope="col">State</th><th scope="col">Main source</th><th scope="col">Also checked against</th></tr></thead>
 <tbody>
 <tr><th scope="row">NSW</th><td>Road User Handbook, edition 02/2026</td><td>NSW Road Rules 2014 and NSW Government licence and test pages</td></tr>
 <tr><th scope="row">VIC</th><td>Road to Solo Driving, April 2023 edition</td><td>Road Safety Road Rules 2017 and current Transport Victoria and VicRoads pages</td></tr>
 <tr><th scope="row">QLD</th><td>Your keys to driving in Queensland, No. 19 (November 2022)</td><td>The Queensland Road Rules Regulation in force from 31 August 2026 and current Queensland Government pages</td></tr>
+<tr><th scope="row">SA</th><td>The Driver's Handbook (MR200), February 2026 edition</td><td>South Australian road traffic and motor vehicle legislation, and sa.gov.au and mylicence pages</td></tr>
+<tr><th scope="row">WA</th><td>WA legislation: Road Traffic Code 2000 (in force from 14 May 2026) and the licensing regulations</td><td>Nothing else: every WA fact comes from legislation</td></tr>
+<tr><th scope="row">TAS</th><td>Tasmanian legislation: Road Rules 2019 (in force from 11 December 2025) and the licensing regulations</td><td>Plates Plus and Service Tasmania pages, for the test format, ages and fees only</td></tr>
+<tr><th scope="row">ACT</th><td>ACT legislation: Road Transport (Road Rules) Regulation 2017 (republication 17) and the licensing laws</td><td>Access Canberra pages, for the test format, ages and fees only</td></tr>
+<tr><th scope="row">NT</th><td>NT legislation: Traffic Regulations 1999 (in force at 28 May 2026) and the Motor Vehicles Act 1949</td><td>nt.gov.au pages, for the test format, ages and fees only</td></tr>
 </tbody></table></div>
 <p>Where a handbook is older than the current rules (for example, Queensland's 2022 handbook predates the 2026 e-scooter
-and e-bike changes), the current official pages and legislation decide the answer.</p>
+and e-bike changes), the current official pages and legislation decide the answer. For Western Australia, Tasmania, the
+ACT and the Northern Territory we use no handbook at all: the questions are written from legislation.</p>
 
 <h2>Attribution</h2>
 <p>Queensland road rules content is based on content from the Queensland Legislation website at {DATE_H}
 (CC BY 4.0). Queensland Government web pages are © The State of Queensland (Department of Transport and Main Roads),
-CC BY 4.0. Transport Victoria web pages are licensed under CC BY 4.0, except images and branding. We restate facts in
-our own words, reproduce no text, logos or images, and none of these sources endorses the app or this website.</p>
+CC BY 4.0. Transport Victoria web pages are licensed under CC BY 4.0, except images and branding.</p>
+<p>South Australian content draws on The Driver's Handbook (MR200, February 2026), Department of Infrastructure and
+Transport, Government of South Australia, sourced on {DATE_H} from mylicence.sa.gov.au, © Government of South
+Australia, CC BY 3.0 AU, and on South Australian legislation, based on content from the South Australian Legislation
+website at {DATE_H} (CC BY 4.0). Western Australian content is based on content from the Western Australian Legislation
+website at {DATE_H}, © State of Western Australia, CC BY 4.0. Tasmanian content is based on material from the Tasmanian
+Legislation website at {DATE_H}, © State of Tasmania, CC BY 4.0. ACT facts are restated from ACT legislation on the ACT
+Legislation Register, sourced on {DATE_H}, © Australian Capital Territory. Northern Territory facts are restated from
+Northern Territory legislation published at legislation.nt.gov.au, sourced on {DATE_H}; this is not an official version
+of that legislation.</p>
+<p>We restate facts in our own words, reproduce no text, logos or images, and none of these sources endorses the app or
+this website. For the law in force, always go to the official legislation website for your state or territory.</p>
 
 <h2>Independence</h2>
 <p>{DISCLAIMER}</p>
@@ -782,7 +862,7 @@ our own words, reproduce no text, logos or images, and none of these sources end
     <li><strong>App:</strong> {APP_NAME}</li>
     <li><strong>Developer:</strong> {DEVELOPER}</li>
     <li><strong>Platform:</strong> Android 8.0 or later</li>
-    <li><strong>States:</strong> NSW, VIC, QLD</li>
+    <li><strong>States:</strong> all 8 states and territories</li>
     <li><strong>Languages:</strong> 5</li>
     <li><strong>Price:</strong> free, optional {PRICE} Premium</li>
     <li><strong>Contact:</strong> <a href="mailto:{EMAIL}">{EMAIL}</a></li>
@@ -851,6 +931,11 @@ privacy complaint, email us; the <a href="@/privacy-policy.html">privacy policy<
   <li>NSW: {ext(SRC['nsw_dkt'], 'Driver Knowledge Test on nsw.gov.au')}</li>
   <li>Victoria: {ext(SRC['vic_lpt'], 'Learner permit test on VicRoads')}</li>
   <li>Queensland: {ext(SRC['qld_tests'], 'Driver tests on qld.gov.au')}</li>
+  <li>South Australia: {ext(SRC['sa_theory_test'], "Learner's test at Service SA on sa.gov.au")}</li>
+  <li>Western Australia: {ext(SRC['wa_dtmi'], 'Department of Transport and Major Infrastructure')}</li>
+  <li>Tasmania: {ext(SRC['tas_st_test'], 'Learner knowledge test on Service Tasmania')}</li>
+  <li>ACT: {ext(SRC['act_learner'], 'Learner driver licence on Access Canberra')}</li>
+  <li>Northern Territory: {ext(SRC['nt_licence'], 'Driver licence on nt.gov.au')}</li>
 </ul>
 </div>
 <aside><div class="card aside-card">
@@ -890,7 +975,10 @@ def not_found() -> Page:
   <li><a href="@/">Home</a></li>
   <li><a href="@/features.html">Features</a></li>
   <li><a href="@/states.html">Learner tests by state</a>: <a href="@/nsw-dkt-practice-test.html">NSW</a>,
-  <a href="@/vic-learner-permit-test-practice.html">VIC</a>, <a href="@/qld-learner-test-practice.html">QLD</a></li>
+  <a href="@/vic-learner-permit-test-practice.html">VIC</a>, <a href="@/qld-learner-test-practice.html">QLD</a>,
+  <a href="@/sa-learners-test-practice.html">SA</a>, <a href="@/wa-learners-test-practice.html">WA</a>,
+  <a href="@/tas-learners-test-practice.html">TAS</a>, <a href="@/act-learners-test-practice.html">ACT</a>,
+  <a href="@/nt-learners-test-practice.html">NT</a></li>
   <li><a href="@/blog/">Guides</a></li>
   <li><a href="@/faq.html">FAQ</a></li>
   <li><a href="@/contact.html">Contact</a></li>
@@ -899,8 +987,8 @@ def not_found() -> Page:
     return Page(
         path="404.html",
         title="Page Not Found | Learners Test Australia",
-        description=("The page you were looking for isn't here. Find learner test practice for NSW, VIC and QLD, our "
-                     "guides, the FAQ and contact details from the links on this page."),
+        description=("The page you were looking for isn't here. Find learner test practice for every state and territory, "
+                     "our guides, the FAQ and contact details from the links here."),
         body=body,
         noindex=True,
     )

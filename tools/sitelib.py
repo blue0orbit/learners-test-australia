@@ -23,9 +23,20 @@ DATE = "2026-09-30"
 DATE_H = "30 September 2026"
 PRICE = "A$5.99"
 DISCLAIMER = (
-    "Learners Test Australia is an independent study app. It is not affiliated with, or endorsed by, "
-    "Transport for NSW, Service NSW, VicRoads, Transport Victoria, Queensland TMR or any government agency."
+    "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to "
+    "any Australian state or territory government, licensing authority or other government agency."
 )
+# The eight states and territories, in the order the site lists them: (code, name, page).
+STATES = [
+    ("NSW", "New South Wales", "nsw-dkt-practice-test.html"),
+    ("VIC", "Victoria", "vic-learner-permit-test-practice.html"),
+    ("QLD", "Queensland", "qld-learner-test-practice.html"),
+    ("SA", "South Australia", "sa-learners-test-practice.html"),
+    ("WA", "Western Australia", "wa-learners-test-practice.html"),
+    ("TAS", "Tasmania", "tas-learners-test-practice.html"),
+    ("ACT", "Australian Capital Territory", "act-learners-test-practice.html"),
+    ("NT", "Northern Territory", "nt-learners-test-practice.html"),
+]
 
 # Official sources (all verbatim from the app's packs, the Play listing or the coverage maps).
 SRC = {
@@ -50,6 +61,29 @@ SRC = {
     "qld_handbook": "https://www.publications.qld.gov.au/dataset/your-keys-to-driving-in-queensland",
     "qld_give_way": "https://www.qld.gov.au/transport/safety/rules/road/give-way",
     "qld_roundabouts": "https://www.qld.gov.au/transport/safety/rules/road/roundabouts",
+    # SA, WA, TAS, ACT and NT: URLs as recorded in the app's coverage maps and packs (content-src/coverage/*.md).
+    "sa_myls": "https://www.sa.gov.au/topics/driving-and-transport/licences/learners-permit/apply/myls-course-and-theory-test",
+    "sa_theory_test": "https://www.sa.gov.au/topics/driving-and-transport/licences/learners-permit/apply/study-and-theory-test-offline",
+    "sa_conditions": "https://www.sa.gov.au/topics/driving-and-transport/licences/licence-details/licence-conditions",
+    "sa_handbook": "https://www.mylicence.sa.gov.au/road-rules/the-drivers-handbook",
+    "sa_learners_stage": "https://www.mylicence.sa.gov.au/my-car-licence/learners-stage",
+    "wa_rtc": "https://www.legislation.wa.gov.au/legislation/statutes.nsf/law_s257.html",
+    "wa_atdr": "https://www.legislation.wa.gov.au/legislation/statutes.nsf/law_s45436.html",
+    "wa_atda": "https://www.legislation.wa.gov.au/legislation/statutes.nsf/law_a146691.html",
+    "wa_dtmi": "https://www.transport.wa.gov.au/",
+    "tas_pp_learner": "https://www.platesplus.tas.gov.au/getting_your_learner_licence",
+    "tas_pp_faq": "https://www.platesplus.tas.gov.au/frequently_asked_questions/course_frequently_asked_questions",
+    "tas_pp_hpt": "https://www.platesplus.tas.gov.au/frequently_asked_questions/hpt_frequently_asked_questions",
+    "tas_st_test": "https://www.service.tas.gov.au/services/transport/driver-and-rider-licences/complete-a-learner-driver-licence-knowledge-test/",
+    "tas_dlvr": "https://www.legislation.tas.gov.au/view/html/inforce/current/sr-2021-026",
+    "act_learner": "https://www.accesscanberra.act.gov.au/driving-transport-and-parking/licences/get-your-learner-driver-licence",
+    "act_prov": "https://www.accesscanberra.act.gov.au/driving-transport-and-parking/licences/get-your-provisional-driver-licence",
+    "act_dlr": "https://www.legislation.act.gov.au/sl/2000-14/",
+    "act_rrr": "https://www.legislation.act.gov.au/sl/2017-43/",
+    "nt_licence": "https://nt.gov.au/driving/licence/getting-an-nt-licence/get-your-driver-licence",
+    "nt_practical": "https://nt.gov.au/driving/licence/getting-an-nt-licence/get-your-driver-licence/take-a-practical-driving-test-with-an-authorised-driving-examiner",
+    "nt_mva": "https://legislation.nt.gov.au/Legislation/MOTOR-VEHICLES-ACT-1949",
+    "nt_tr": "https://legislation.nt.gov.au/Legislation/TRAFFIC-REGULATIONS-1999",
     "gh_pages_data": "https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages",
 }
 
@@ -104,8 +138,8 @@ def mobile_application() -> dict:
         "name": APP_NAME,
         "alternateName": SITE_NAME,
         "description": (
-            "Learners Test Australia is an Android study app by BlueOrbit for learner drivers in New South Wales, "
-            "Victoria and Queensland. It has practice questions and mock tests in each state's knowledge test format, "
+            "Learners Test Australia is an Android study app by BlueOrbit for learner drivers in all eight Australian "
+            "states and territories. It has practice questions and mock tests in each state's knowledge test format, "
             "with every answer explained and linked to the handbook page or road rule it comes from."
         ),
         "operatingSystem": "Android",
@@ -119,6 +153,11 @@ def mobile_application() -> dict:
             "NSW Driver Knowledge Test practice (45 questions in two sections)",
             "Victorian learner permit test practice (32 questions)",
             "Queensland written road rules test (30 questions in two sections) and PrepL final test (30 questions) practice",
+            "South Australian learner's theory test (8 give-way questions, then 42) and myLs test (30 questions) practice",
+            "Western Australian learner's permit practice test (30 questions)",
+            "Tasmanian driver knowledge test practice (30 questions, some with more than one correct answer)",
+            "ACT learner licence knowledge test practice (35 questions)",
+            "Northern Territory driver knowledge test practice (30 questions)",
             "Explained answers with handbook page or road rule references",
             "Daily study plan with spaced reviews",
             "Progress tracking and an estimated pass chance",
@@ -346,27 +385,38 @@ def header_html(page: Page) -> str:
     )
 
 
+FOOTER_STATE_LINKS = [
+    ("NSW DKT practice", "nsw-dkt-practice-test.html"),
+    ("VIC learner permit test", "vic-learner-permit-test-practice.html"),
+    ("QLD learner test", "qld-learner-test-practice.html"),
+    ("SA learners test", "sa-learners-test-practice.html"),
+    ("WA learners test", "wa-learners-test-practice.html"),
+    ("TAS learners test", "tas-learners-test-practice.html"),
+    ("ACT learners test", "act-learners-test-practice.html"),
+    ("NT learners test", "nt-learners-test-practice.html"),
+]
+
+
 def footer_html() -> str:
+    state_lis = "\n".join(f'      <li><a href="@/{p}">{t}</a></li>' for t, p in FOOTER_STATE_LINKS)
     return f"""<footer class="site-footer on-dark">
 <div class="container footer-grid">
   <div class="footer-brand">
     <a class="brand" href="@/">{plate_svg(34)}<span class="brand-text">Learners Test <span class="brand-accent">Australia</span></span></a>
-    <p>Learner test practice for NSW, VIC and QLD. An Android app by {DEVELOPER}.</p>
+    <p>Learner test practice for every Australian state and territory. An Android app by {DEVELOPER}.</p>
     <p><a href="mailto:{EMAIL}">{EMAIL}</a></p>
   </div>
-  <nav class="footer-col" aria-label="The app">
-    <h2 class="footer-h">The app</h2>
+  <nav class="footer-col" aria-label="States and territories">
+    <h2 class="footer-h">States and territories</h2>
     <ul>
-      <li><a href="@/features.html">Features</a></li>
-      <li><a href="@/states.html">States</a></li>
-      <li><a href="@/nsw-dkt-practice-test.html">NSW DKT practice</a></li>
-      <li><a href="@/vic-learner-permit-test-practice.html">VIC learner permit test</a></li>
-      <li><a href="@/qld-learner-test-practice.html">QLD learner test</a></li>
+{state_lis}
     </ul>
   </nav>
-  <nav class="footer-col" aria-label="Learn">
-    <h2 class="footer-h">Learn</h2>
+  <nav class="footer-col" aria-label="The app and guides">
+    <h2 class="footer-h">The app and guides</h2>
     <ul>
+      <li><a href="@/features.html">Features</a></li>
+      <li><a href="@/states.html">Learner tests by state</a></li>
       <li><a href="@/blog/">Guides</a></li>
       <li><a href="@/blog/give-way-rules-for-learner-drivers.html">Give way rules</a></li>
       <li><a href="@/blog/hazard-perception-test-nsw-vic-qld.html">Hazard perception</a></li>
@@ -438,7 +488,7 @@ def render(page: Page) -> str:
 <meta property="og:image" content="{og_img}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Learners Test Australia logo, a yellow learner plate with a black L, and the words: learner test practice for NSW, VIC and QLD">
+<meta property="og:image:alt" content="Learners Test Australia logo, a yellow learner plate with a black L, and the words: learner test practice for every state and territory">
 {article_meta}<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{esc(p.title)}">
 <meta name="twitter:description" content="{esc(p.description)}">
