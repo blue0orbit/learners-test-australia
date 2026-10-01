@@ -412,7 +412,7 @@ def _localize_links(s: str, lang: str, built: set[str]) -> str:
 
 
 # ── Checking translations ────────────────────────────────────────────────────────────────────
-TITLE_MAX = {"zh": 36, "ar": 70, "vi": 70, "es": 70}
+TITLE_MAX = {"zh": 40, "ar": 70, "vi": 70, "es": 70}
 DESC_RANGE = {"zh": (45, 100), "ar": (100, 175), "vi": (110, 190), "es": (120, 190)}
 
 

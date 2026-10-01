@@ -80,7 +80,7 @@ States and territories (keep the code next to the name when the English has the 
 The `title` and `description` segments are what people see in Google. Write them the way a native speaker in Australia
 would search: put the main phrase in your language first, keep the English test name or code where the English title has
 one (people search both, for example "NSW DKT 练习"), and keep "| Learners Test Australia" at the end of titles if
-there is room. Length limits (characters): zh title up to 36, description 45-100; ar title up to 70, description
+there is room. Length limits (characters): zh title up to 40, description 45-100; ar title up to 70, description
 100-175; vi title up to 70, description 110-190; es title up to 70, description 120-190. Each title must be different.
 
 Search phrases people use (use where they fit naturally, don't stuff):

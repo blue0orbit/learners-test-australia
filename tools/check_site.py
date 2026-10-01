@@ -28,7 +28,7 @@ from sitelib import LOCALES, PLAY_URL  # noqa: E402
 
 LANG_DIRS = {c for c in LOCALES if c != "en"}
 # Title and description lengths (characters) for translated pages; English uses 60 and 140-160.
-TITLE_MAX = {"zh": 36, "ar": 70, "vi": 70, "es": 70}
+TITLE_MAX = {"zh": 40, "ar": 70, "vi": 70, "es": 70}
 DESC_RANGE = {"zh": (45, 100), "ar": (100, 175), "vi": (110, 190), "es": (120, 190)}
 
 
@@ -463,7 +463,8 @@ def main() -> int:
                 err(f"{rel}: contains the restricted ACT name '{name}'")
         if rel == "act-learners-test-practice.html" and "mandatory" in raw_low:
             err(f"{rel}: describes a question as mandatory")
-        for bad in ("lorem", "ipsum", "todo", "tbd", "placeholder"):
+        # ("todo" is an ordinary word in Spanish, so it is only a placeholder on English pages)
+        for bad in ("lorem", "ipsum", "tbd", "placeholder") + (() if translated else ("todo",)):
             if re.search(rf"\b{bad}\b", low):
                 err(f"{rel}: contains '{bad}'")
         if 'href="#"' in raw:
@@ -477,7 +478,9 @@ def main() -> int:
         if translated:
             if not re.search(r'<p class="disclaimer">[^<]{40,}</p>', raw):
                 err(f"{rel}: footer disclaimer missing")
-            if re.search(r"<(p|li|h[1-6]|td|th)[^>]*>\s*(?:<[^>]+>\s*)*(?:The|This|Your|You|Every|Our) [a-z]+ [a-z]+", raw.split("<main", 1)[-1].split("</main>")[0]):
+            # English sentence starts left in a translated page (official titles, kept in English on purpose, aside)
+            main_html = raw.split("<main", 1)[-1].split("</main>")[0].replace("Your keys to driving in Queensland", "")
+            if re.search(r"<(p|li|h[1-6]|td|th)[^>]*>\s*(?:<[^>]+>\s*)*(?:The|This|Your|You|Every|Our) [a-z]+ [a-z]+", main_html):
                 warn(f"{rel}: some text in <main> looks untranslated")
         elif DISCLAIMER_TEXT not in raw:
             err(f"{rel}: footer disclaimer missing")

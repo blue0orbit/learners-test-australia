@@ -20,7 +20,7 @@ import pages_core  # noqa: E402
 import pages_legal  # noqa: E402
 import pages_states  # noqa: E402
 from sitelib import (  # noqa: E402
-    ADMOB_PUBLISHER, APP_NAME, BASE, DATE, INDEXNOW_KEY, DATE_H, DEVELOPER, DISCLAIMER, EMAIL, PLATE_SVG, PRICE, SITE_NAME, Page, render,
+    ADMOB_PUBLISHER, APP_NAME, BASE, DATE, INDEXNOW_KEY, LOCALES, DATE_H, DEVELOPER, DISCLAIMER, EMAIL, PLATE_SVG, PRICE, SITE_NAME, Page, render,
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -205,7 +205,7 @@ KEY_FACTS = [
 ]
 
 
-def llms_txt(pages: list[Page]) -> str:
+def llms_txt(pages: list[Page], localized: list[Page] | None = None) -> str:
     by_path = {p.path: p for p in pages}
 
     def item(path: str) -> str:
@@ -214,7 +214,7 @@ def llms_txt(pages: list[Page]) -> str:
         return f"- [{name}]({p.canonical}): {p.llms_note or p.description}"
 
     groups = [
-        ("The app", ["index.html", "features.html", "faq.html", "about.html"]),
+        ("The app", ["index.html", "features.html", "faq.html", "about.html", "download.html"]),
         ("Learner tests by state", ["states.html", "nsw-dkt-practice-test.html", "vic-learner-permit-test-practice.html",
                                     "qld-learner-test-practice.html", "sa-learners-test-practice.html",
                                     "wa-learners-test-practice.html", "tas-learners-test-practice.html",
@@ -227,6 +227,17 @@ def llms_txt(pages: list[Page]) -> str:
     for title, paths in groups:
         out += ["", f"## {title}", ""]
         out += [item(pth) for pth in paths]
+    by_lang: dict[str, list[Page]] = {}
+    for lp in localized or []:
+        by_lang.setdefault(lp.path.split("/", 1)[0], []).append(lp)
+    if by_lang:
+        out += ["", "## Other languages", "",
+                "The home, features, states, state, FAQ, about, contact and download pages are also available in these "
+                "languages, for readers in Australia (guides and policies are in English):", ""]
+        for code, lps in by_lang.items():
+            loc = LOCALES[code]
+            out.append(f"- {loc['name']} ({loc['hreflang']}): " + ", ".join(
+                f"[{lp.title.split('｜')[0].split(' | ')[0]}]({lp.canonical})" for lp in lps))
     out += ["", "## Optional", "",
             f"- [Full text of the main pages]({BASE}llms-full.txt): plain-text copy of the home, features, states, state, "
             "FAQ, guide, privacy and account deletion pages, for quoting accurate facts.",
@@ -371,7 +382,7 @@ def main() -> None:
               + (f" ({sum(todo.values())} segments missing)" if todo else ""))
     (ROOT / "sitemap.xml").write_text(sitemap_xml(pages + [lp for lp, _ in localized]), encoding="utf-8", newline="\n")
     (ROOT / "robots.txt").write_text(robots_txt(), encoding="utf-8", newline="\n")
-    (ROOT / "llms.txt").write_text(llms_txt(pages), encoding="utf-8", newline="\n")
+    (ROOT / "llms.txt").write_text(llms_txt(pages, [lp for lp, _ in localized]), encoding="utf-8", newline="\n")
     (ROOT / "llms-full.txt").write_text(llms_full_txt(pages), encoding="utf-8", newline="\n")
     (ROOT / "site.webmanifest").write_text(manifest(), encoding="utf-8", newline="\n")
     (ROOT / ".nojekyll").write_text("", encoding="utf-8")
