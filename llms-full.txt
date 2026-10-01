@@ -135,7 +135,7 @@ Real-time 3D driving clips from the driver's seat: tap when it is safe to turn, 
 
 ### Five languages
 
-Menus, questions and explanations in English, 中文, العربية, Tiếng Việt and Español. Arabic reads right to left. Tasmanian, ACT and NT questions are in English for now.
+Menus, questions and explanations in English, 中文, العربية, Tiếng Việt and Español, for every state and territory. Arabic reads right to left.
 
 ### Dark mode and large text
 
@@ -348,7 +348,7 @@ A study streak and a few badges for real study. No points to grind.
 
 ### Five languages
 
-English, 中文, العربية, Tiếng Việt and Español, including the questions and explanations (Tasmanian, ACT and NT questions are in English for now). Arabic reads right to left.
+English, 中文, العربية, Tiếng Việt and Español, including the questions and explanations for every state and territory. Arabic reads right to left.
 
 ### Accessible by design
 
@@ -1431,7 +1431,7 @@ Ads keep practice free. Where the law requires it (for example in the EEA and UK
 
 ### Which languages does the app support?
 
-English, 中文, العربية, Tiếng Việt and Español. Menus, questions and explanations are translated, and Arabic reads right to left. Questions for Tasmania, the ACT and the Northern Territory are in English for now. You can change the language in Settings. Language options for the official tests themselves differ by state, so check your state's website.
+English, 中文, العربية, Tiếng Việt and Español. Menus, questions and explanations are translated for every state and territory, and Arabic reads right to left. You can change the language in Settings. Language options for the official tests themselves differ by state, so check your state's website.
 
 ### Does the app work offline?
 
@@ -2258,6 +2258,10 @@ South Australian content draws on The Driver's Handbook (MR200, February 2026), 
 
 We restate facts in our own words, reproduce no text, logos or images, and none of these sources endorses the app or this website. For the law in force, always go to the official legislation website for your state or territory.
 
+## Our other app: DTT Ireland
+
+BlueOrbit also makes DTT Ireland (https://dttireland.com/), a practice app for the Irish driver theory test, for car and motorcycle learners, in nine languages. It is on Google Play (https://play.google.com/store/apps/details?id=com.app.dttireland). It follows the same approach: practice in the real test's format, with every answer explained.
+
 ## Independence
 
 Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency.
@@ -2362,7 +2366,7 @@ This section is about the website you are reading now (learnertest.com), not the
 - No analytics or trackers. There are no analytics, advertising, tracking pixels or social media widgets.
 - Nothing loaded from third parties. Fonts, images, styles and the one small script (it opens and closes the menu on small screens) are all served from this website itself.
 - Hosting. The site is hosted on GitHub Pages. GitHub says it logs the IP address of visitors to GitHub Pages sites for security purposes (see About GitHub Pages (https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)). We don't use those logs, and the site has no analytics of its own.
-- Email. If you email us, we use your message and email address to reply to you.
+- Email. If you email us, we use your message and email address to reply to you. If you ask to try the app early, we also use your email address to invite you to the test on Google Play, and remove it from the test list when you ask or when testing ends.
 
 See also the cookie policy (https://learnertest.com/cookies.html) and how to delete your account (https://learnertest.com/account-deletion.html).
 

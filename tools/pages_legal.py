@@ -86,7 +86,7 @@ def privacy() -> Page:
   <li><strong>No analytics or trackers.</strong> There are no analytics, advertising, tracking pixels or social media widgets.</li>
   <li><strong>Nothing loaded from third parties.</strong> Fonts, images, styles and the one small script (it opens and closes the menu on small screens) are all served from this website itself.</li>
   <li><strong>Hosting.</strong> The site is hosted on GitHub Pages. GitHub says it logs the IP address of visitors to GitHub Pages sites for security purposes (see <a href="{SRC['gh_pages_data']}" rel="noopener">About GitHub Pages</a>). We don't use those logs, and the site has no analytics of its own.</li>
-  <li><strong>Email.</strong> If you email us, we use your message and email address to reply to you.</li>
+  <li><strong>Email.</strong> If you email us, we use your message and email address to reply to you. If you ask to try the app early, we also use your email address to invite you to the test on Google Play, and remove it from the test list when you ask or when testing ends.</li>
 </ul>
 <p>See also the <a href="@/cookies.html">cookie policy</a> and how to <a href="@/account-deletion.html">delete your account</a>.</p>
 </div></div>"""

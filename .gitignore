@@ -1,2 +1,5 @@
 __pycache__/
 *.pyc
+
+# translator work files (merged into tools/i18n/LANG.json)
+tools/i18n/parts/

@@ -23,6 +23,11 @@ BASE_PATH = "/"
 ADMOB_PUBLISHER = "pub-1798960414758701"
 # IndexNow key (public by design): the key file at the site root proves we own the URLs we submit
 INDEXNOW_KEY = "02adf338491ab11d8179dbdec8da3278"
+# Google Play listing. None until the app is public: then store buttons show "Coming soon" with no link.
+PLAY_URL: str | None = None
+# Our other app (same developer), linked from the footer, about and download pages
+DTT_URL = "https://dttireland.com/"
+DTT_PLAY = "https://play.google.com/store/apps/details?id=com.app.dttireland"
 DATE = "2026-09-30"
 DATE_H = "30 September 2026"
 PRICE = "A$5.99"
@@ -91,6 +96,16 @@ SRC = {
     "gh_pages_data": "https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages",
 }
 
+# Website languages: the app's five. The key is the URL folder (English lives at the root). Every translated page is
+# marked for readers in Australia (hreflang language-AU), and English is the x-default.
+LOCALES = {
+    "en": {"hreflang": "en-AU", "dir": "ltr", "og": "en_AU", "name": "English", "label": "Language"},
+    "zh": {"hreflang": "zh-Hans-AU", "dir": "ltr", "og": "zh_CN", "name": "中文", "label": "语言"},
+    "ar": {"hreflang": "ar-AU", "dir": "rtl", "og": "ar_AR", "name": "العربية", "label": "اللغة"},
+    "vi": {"hreflang": "vi-AU", "dir": "ltr", "og": "vi_VN", "name": "Tiếng Việt", "label": "Ngôn ngữ"},
+    "es": {"hreflang": "es-AU", "dir": "ltr", "og": "es_LA", "name": "Español", "label": "Idioma"},
+}
+
 NAV = [
     ("features", "Features", "features.html"),
     ("states", "States", "states.html"),
@@ -98,6 +113,7 @@ NAV = [
     ("faq", "FAQ", "faq.html"),
     ("about", "About", "about.html"),
     ("contact", "Contact", "contact.html"),
+    ("download", "Download", "download.html"),
 ]
 
 ORG_ID = BASE + "#organization"
@@ -165,10 +181,11 @@ def mobile_application() -> dict:
             "Explained answers with handbook page or road rule references",
             "Daily study plan with spaced reviews",
             "Progress tracking and an estimated pass chance",
-            "Hazard perception practice with still traffic scenes",
+            "Hazard perception practice: 72 real-time 3D driving clips and still traffic scenes",
             "English, Simplified Chinese, Arabic, Vietnamese and Spanish",
             "Dark mode",
         ],
+        **({"downloadUrl": PLAY_URL, "installUrl": PLAY_URL} if PLAY_URL else {}),
         "offers": [
             {
                 "@type": "Offer",
@@ -185,6 +202,22 @@ def mobile_application() -> dict:
                 "description": "One-time purchase, no subscription: no ads, unlimited mock tests, section forecasts and weak spots, and hazard perception practice, for every state.",
             },
         ],
+    }
+
+
+def dtt_application() -> dict:
+    """Our other app, by the same developer (see the about page)."""
+    return {
+        "@type": "MobileApplication",
+        "@id": DTT_URL + "#app",
+        "name": "DTT Ireland",
+        "description": "Practice app for the Irish driver theory test, for car and motorcycle learners, by BlueOrbit.",
+        "operatingSystem": "Android",
+        "applicationCategory": "EducationalApplication",
+        "url": DTT_URL,
+        "installUrl": DTT_PLAY,
+        "author": {"@id": ORG_ID},
+        "publisher": {"@id": ORG_ID},
     }
 
 
@@ -272,6 +305,14 @@ def coming_soon(extra_cls: str = "", beside: str = "") -> str:
     `beside` is optional HTML (e.g. a secondary button) shown next to it."""
     _soon_count[0] += 1
     nid = f"soon-note-{_soon_count[0]}"
+    if PLAY_URL:
+        return (
+            f'<div class="store-soon {extra_cls}"><div class="btn-row">'
+            f'<a class="btn btn-primary" href="{esc(PLAY_URL)}" rel="noopener" aria-describedby="{nid}">'
+            f'{icon("phone")}<span>Get it on Google Play</span></a>{beside}</div>'
+            f'<p id="{nid}" class="store-soon-note">Free Android app, for Android 8.0 or later.</p>'
+            f"</div>"
+        )
     return (
         f'<div class="store-soon {extra_cls}"><div class="btn-row">'
         f'<button type="button" class="btn btn-soon" disabled aria-describedby="{nid}">'
@@ -385,8 +426,9 @@ def header_html(page: Page) -> str:
         items.append(f'<li><a href="@/{path}"{cur}>{label}</a></li>')
     return (
         '<header class="site-header on-dark"><div class="container header-inner">'
-        f'<a class="brand" href="@/">{plate_svg(34)}<span class="brand-text">Learners Test '
+        f'<a class="brand" href="@/" translate="no">{plate_svg(34)}<span class="brand-text">Learners Test '
         '<span class="brand-accent">Australia</span></span></a>'
+        "<!--LANG-SWITCH-->"
         '<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">'
         '<span class="nav-toggle-bars" aria-hidden="true"></span><span class="nav-toggle-label">Menu</span></button>'
         f'<nav id="site-nav" class="site-nav" aria-label="Main"><ul>{"".join(items)}</ul></nav>'
@@ -411,9 +453,10 @@ def footer_html() -> str:
     return f"""<footer class="site-footer on-dark">
 <div class="container footer-grid">
   <div class="footer-brand">
-    <a class="brand" href="@/">{plate_svg(34)}<span class="brand-text">Learners Test <span class="brand-accent">Australia</span></span></a>
+    <a class="brand" href="@/" translate="no">{plate_svg(34)}<span class="brand-text">Learners Test <span class="brand-accent">Australia</span></span></a>
     <p>Learner test practice for every Australian state and territory. An Android app by {DEVELOPER}.</p>
     <p><a href="mailto:{EMAIL}">{EMAIL}</a></p>
+    <p class="footer-sister">Also by {DEVELOPER}: <a href="{DTT_URL}">DTT Ireland</a>, driver theory test practice for Ireland.</p>
   </div>
   <nav class="footer-col" aria-label="States and territories">
     <h2 class="footer-h">States and territories</h2>
@@ -430,6 +473,7 @@ def footer_html() -> str:
       <li><a href="@/blog/give-way-rules-for-learner-drivers.html">Give way rules</a></li>
       <li><a href="@/blog/hazard-perception-test-nsw-vic-qld.html">Hazard perception</a></li>
       <li><a href="@/about.html">About</a></li>
+      <li><a href="@/download.html">Download the app</a></li>
     </ul>
   </nav>
   <nav class="footer-col" aria-label="Legal and support">
@@ -445,6 +489,7 @@ def footer_html() -> str:
   </nav>
 </div>
 <div class="container"><div class="footer-legal">
+  <!--LANG-LIST-->
   <p class="disclaimer">{DISCLAIMER}</p>
   <p>&copy; 2026 {DEVELOPER}. Fonts: <a href="@/assets/fonts/OFL-Overpass.txt">Overpass</a> and
   <a href="@/assets/fonts/OFL-AtkinsonHyperlegibleNext.txt">Atkinson Hyperlegible Next</a>, used under the SIL Open Font License 1.1.</p>
@@ -452,18 +497,62 @@ def footer_html() -> str:
 </footer>"""
 
 
-def render(page: Page) -> str:
+def page_html(page: Page) -> str:
+    """Everything inside <body>: skip link, header, main and footer (with the language menu slots still empty)."""
+    return ('<a class="skip-link" href="#main">Skip to main content</a>\n' + header_html(page)
+            + '\n<main id="main" tabindex="-1">\n' + page.body + "\n</main>\n" + footer_html())
+
+
+def lang_menus(lang: str, links: dict[str, str]) -> tuple[str, str]:
+    """The header language menu and the footer language list. `links` maps each language to the site-relative path
+    of this page in that language, or of that language's home page when the page isn't translated."""
+    if len(links) < 2:
+        return "", ""
+    cur = LOCALES[lang]
+    items = []
+    for code, loc in LOCALES.items():
+        if code not in links:
+            continue
+        mark = ' aria-current="true"' if code == lang else ""
+        items.append(f'<li><a href="@/{links[code]}" hreflang="{loc["hreflang"]}" lang="{loc["hreflang"]}"{mark}>'
+                     f'{loc["name"]}</a></li>')
+    lis = "".join(items)
+    switch = (f'<details class="lang-switch"><summary><span class="visually-hidden">{cur["label"]}: </span>'
+              f'{icon("globe")}<span>{cur["name"]}</span></summary><ul>{lis}</ul></details>')
+    footer = f'<nav class="footer-langs" aria-label="{cur["label"]}"><ul>{lis}</ul></nav>'
+    return switch, footer
+
+
+def render(page: Page, *, lang: str = "en", body_html: str | None = None, title: str | None = None,
+           description: str | None = None, image_alt: str | None = None, ld_nodes: list[dict] | None = None,
+           alternates: dict[str, str] | None = None, menu_links: dict[str, str] | None = None) -> str:
+    """Render a page. English by default; tools/i18n.py passes the translated body and head texts for other languages.
+    `alternates` maps language -> site-relative path of the same page in that language (hreflang); `menu_links` feeds
+    the language menu (see lang_menus)."""
     p = page
+    loc = LOCALES[lang]
+    title = p.title if title is None else title
+    description = p.description if description is None else description
+    image_alt = p.image_alt if image_alt is None else image_alt
     robots = "noindex,follow" if p.noindex else "index,follow,max-image-preview:large"
     og_img = BASE + p.image_path
-    ld_nodes = list(p.jsonld)
-    if p.crumbs and len(p.crumbs) > 1:
-        ld_nodes.append(breadcrumb_ld(p.crumbs))
+    if ld_nodes is None:
+        ld_nodes = list(p.jsonld)
+        if p.crumbs and len(p.crumbs) > 1:
+            ld_nodes.append(breadcrumb_ld(p.crumbs))
     ld_html = ""
     if ld_nodes:
         graph = {"@context": "https://schema.org", "@graph": ld_nodes}
         ld_html = '<script type="application/ld+json">' + json.dumps(graph, ensure_ascii=False, indent=1) + "</script>\n"
     canonical = "" if p.noindex else f'<link rel="canonical" href="{esc(p.canonical)}">\n'
+    hreflang = ""
+    og_alt = ""
+    if alternates and len(alternates) > 1 and not p.noindex:
+        for code, path in alternates.items():
+            hreflang += f'<link rel="alternate" hreflang="{LOCALES[code]["hreflang"]}" href="{esc(BASE + path)}">\n'
+            if code != lang:
+                og_alt += f'<meta property="og:locale:alternate" content="{LOCALES[code]["og"]}">\n'
+        hreflang += f'<link rel="alternate" hreflang="x-default" href="{esc(BASE + alternates["en"])}">\n'
     article_meta = ""
     if p.article:
         article_meta = (
@@ -471,15 +560,16 @@ def render(page: Page) -> str:
             f'<meta property="article:modified_time" content="{p.article["modified"]}">\n'
             f'<meta property="article:author" content="{DEVELOPER}">\n'
         )
+    dir_attr = ' dir="rtl"' if loc["dir"] == "rtl" else ""
     head = f"""<!doctype html>
-<html lang="en-AU">
+<html lang="{loc['hreflang']}"{dir_attr}>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{esc(p.title)}</title>
-<meta name="description" content="{esc(p.description)}">
+<title>{esc(title)}</title>
+<meta name="description" content="{esc(description)}">
 <meta name="robots" content="{robots}">
-{canonical}<meta name="theme-color" content="#12161D">
+{canonical}{hreflang}<meta name="theme-color" content="#12161D">
 <meta name="color-scheme" content="light dark">
 <meta name="author" content="{DEVELOPER}">
 <link rel="preload" href="@/assets/fonts/overpass.ttf" as="font" type="font/ttf" crossorigin>
@@ -490,26 +580,28 @@ def render(page: Page) -> str:
 <link rel="manifest" href="@/site.webmanifest">
 <meta property="og:type" content="{p.og_type}">
 <meta property="og:site_name" content="{SITE_NAME}">
-<meta property="og:locale" content="en_AU">
-<meta property="og:title" content="{esc(p.title)}">
-<meta property="og:description" content="{esc(p.description)}">
+<meta property="og:locale" content="{loc['og']}">
+{og_alt}<meta property="og:title" content="{esc(title)}">
+<meta property="og:description" content="{esc(description)}">
 <meta property="og:url" content="{esc(p.canonical)}">
 <meta property="og:image" content="{og_img}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="{esc(p.image_alt)}">
+<meta property="og:image:alt" content="{esc(image_alt)}">
 {article_meta}<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{esc(p.title)}">
-<meta name="twitter:description" content="{esc(p.description)}">
+<meta name="twitter:title" content="{esc(title)}">
+<meta name="twitter:description" content="{esc(description)}">
 <meta name="twitter:image" content="{og_img}">
-<meta name="twitter:image:alt" content="{esc(p.image_alt)}">
+<meta name="twitter:image:alt" content="{esc(image_alt)}">
 <script>document.documentElement.classList.add('js')</script>
 <script src="@/assets/js/site.js" defer></script>
 {ld_html}</head>
 <body>
-<a class="skip-link" href="#main">Skip to main content</a>
 """
-    out = head + header_html(p) + '\n<main id="main" tabindex="-1">\n' + p.body + "\n</main>\n" + footer_html() + "\n</body>\n</html>\n"
+    body = page_html(p) if body_html is None else body_html
+    switch, footer_langs = lang_menus(lang, menu_links or {})
+    body = body.replace("<!--LANG-SWITCH-->", switch).replace("<!--LANG-LIST-->", footer_langs)
+    out = head + body + "\n</body>\n</html>\n"
     return relink(out, p)
 
 

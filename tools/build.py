@@ -14,6 +14,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+import i18n  # noqa: E402
 import pages_blog  # noqa: E402
 import pages_core  # noqa: E402
 import pages_legal  # noqa: E402
@@ -44,6 +45,7 @@ def all_pages() -> list[Page]:
         *posts,
         pages_core.about(),
         pages_core.contact(),
+        pages_core.download(),
         pages_legal.privacy(),
         pages_legal.cookies(),
         pages_legal.terms(),
@@ -195,8 +197,8 @@ KEY_FACTS = [
     "ACT learner licence knowledge test: taken only at the end of an approved course (approved provider or participating school); 35 questions from a bank of more than 300; at least 31 correct needed (not every detail of the pass rule is published). Learner licence from 15 years 9 months.",
     "Northern Territory driver knowledge test: 30 questions from a pool of more than 300, pass 26, at an MVR office, from 16. No hazard perception test in the NT.",
     "Free version: every practice question free; one free mock test per day plus another per rewarded ad; banner ads on results and guide pages.",
-    f"Premium: one-time {PRICE}, no subscription, all states: no ads, unlimited mock tests, section forecasts, weak spots and review planner, full hazard perception scenes.",
-    "Languages: English, Simplified Chinese, Arabic, Vietnamese, Spanish (Tasmanian, ACT and NT questions are in English for now). Dark mode. Offline practice after sign-in.",
+    f"Premium: one-time {PRICE}, no subscription, all states: no ads, unlimited mock tests, section forecasts, weak spots and review planner, all 72 hazard perception clips and every scene.",
+    "Languages: English, Simplified Chinese, Arabic, Vietnamese, Spanish, for the questions and explanations of all eight states and territories. Dark mode. Offline practice after sign-in.",
     "Account required (Google, Facebook or email). Delete in the app via Settings → Delete account, or email with subject “Delete my account”.",
     "Content: original questions checked against official handbooks and legislation as at 30 September 2026; no official questions, text or images reproduced.",
     f"Disclaimer: {DISCLAIMER}",
@@ -344,11 +346,30 @@ def seo_md(pages: list[Page]) -> str:
 
 def main() -> None:
     pages = all_pages()
+    plan = i18n.Plan(pages)  # which pages exist in which language (tools/i18n.py)
     for p in pages:
         dest = ROOT / p.path
         dest.parent.mkdir(parents=True, exist_ok=True)
-        dest.write_text(render(p), encoding="utf-8", newline="\n")
-    (ROOT / "sitemap.xml").write_text(sitemap_xml(pages), encoding="utf-8", newline="\n")
+        alternates = plan.alternates(p.path) if p.path in i18n.PAGES else None
+        dest.write_text(render(p, alternates=alternates, menu_links=plan.menu_links(p.path)), encoding="utf-8",
+                        newline="\n")
+    # Translated pages: the language folders are rewritten from scratch, so a page whose translation fell behind the
+    # English disappears instead of going stale.
+    for lang in i18n.LANGS:
+        folder = ROOT / lang
+        if folder.exists():
+            for old in folder.glob("*.html"):
+                old.unlink()
+    localized = plan.localized()
+    for lp, doc in localized:
+        dest = ROOT / lp.path
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_text(doc, encoding="utf-8", newline="\n")
+    for lang in i18n.LANGS:
+        todo = plan.missing[lang]
+        print(f"  {lang}: {len(plan.built[lang])}/{len(i18n.PAGES)} pages translated"
+              + (f" ({sum(todo.values())} segments missing)" if todo else ""))
+    (ROOT / "sitemap.xml").write_text(sitemap_xml(pages + [lp for lp, _ in localized]), encoding="utf-8", newline="\n")
     (ROOT / "robots.txt").write_text(robots_txt(), encoding="utf-8", newline="\n")
     (ROOT / "llms.txt").write_text(llms_txt(pages), encoding="utf-8", newline="\n")
     (ROOT / "llms-full.txt").write_text(llms_full_txt(pages), encoding="utf-8", newline="\n")
@@ -359,7 +380,7 @@ def main() -> None:
     (ROOT / "app-ads.txt").write_text(f"google.com, {ADMOB_PUBLISHER}, DIRECT, f08c47fec0942fa0\n", encoding="utf-8", newline="\n")
     (ROOT / "assets" / "img" / "favicon.svg").write_text(favicon_svg(), encoding="utf-8", newline="\n")
     (ROOT / "SEO.md").write_text(seo_md(pages), encoding="utf-8", newline="\n")
-    print(f"Built {len(pages)} pages into {ROOT}")
+    print(f"Built {len(pages)} English and {len(localized)} translated pages into {ROOT}")
 
 
 if __name__ == "__main__":

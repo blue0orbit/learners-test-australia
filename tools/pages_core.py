@@ -1,8 +1,8 @@
 """Home, features, states hub, FAQ, about, contact and 404 pages."""
 from sitelib import (
-    APP_NAME, DATE, DATE_H, DEVELOPER, DISCLAIMER, EMAIL, PRICE, SITE_ID, SITE_NAME, SRC, BASE, ORG_ID,
-    Page, chip, coming_soon, ext, faq_block, faq_ld, icon, mobile_application, organization, page_head,
-    plate_svg, updated_line,
+    APP_NAME, DATE, DATE_H, DEVELOPER, DISCLAIMER, DTT_PLAY, DTT_URL, EMAIL, PLAY_URL, PRICE, SITE_ID, SITE_NAME, SRC,
+    BASE, ORG_ID, Page, chip, coming_soon, dtt_application, ext, faq_block, faq_ld, icon, mobile_application,
+    organization, page_head, plate_svg, updated_line,
 )
 
 LANGS = ('English, <span class="nw" lang="zh-Hans">中文</span>, <span class="nw" lang="ar" dir="rtl">العربية</span>, '
@@ -223,8 +223,7 @@ FEATURES_GRID = [
     ("eye", "Hazard perception clips",
      "Real-time 3D driving clips from the driver's seat: tap when it is safe to turn, move off, overtake or change lanes. Plus still scenes and a guide to your state's test."),
     ("globe", "Five languages",
-     f"Menus, questions and explanations in {LANGS}. Arabic reads right to left. Tasmanian, ACT and NT questions are "
-     "in English for now."),
+     f"Menus, questions and explanations in {LANGS}, for every state and territory. Arabic reads right to left."),
     ("moon", "Dark mode and large text",
      "Follows your phone's theme, with a switch in Settings. Screens have TalkBack labels and support large font sizes."),
     ("offline", "Practise offline",
@@ -360,7 +359,7 @@ def home() -> Page:
 <div class="container"><div class="prose">
   <h2 id="get-title">Get the app</h2>
   <p>{APP_NAME} is an Android app. It isn't on Google Play yet. When it is, this button will link straight to the
-  listing. Until then, the <a href="@/blog/">guides</a> and <a href="@/faq.html">FAQ</a> are here to help.</p>
+  listing. The <a href="@/download.html">download page</a> has the details, and how to try the app early.</p>
   {coming_soon('light')}
 </div></div>
 </section>"""
@@ -527,7 +526,7 @@ def features() -> Page:
     <div class="card"><span class="icon-tile">{icon('route')}</span><h3>Licence guide</h3><p>Each step from learner to full licence in your state, with links to the official pages.</p></div>
     <div class="card"><span class="icon-tile">{icon('bell')}</span><h3>Reminders and countdown</h3><p>A daily nudge and a countdown to your test, if you turn them on.</p></div>
     <div class="card"><span class="icon-tile">{icon('star')}</span><h3>Streak and badges</h3><p>A study streak and a few badges for real study. No points to grind.</p></div>
-    <div class="card"><span class="icon-tile">{icon('globe')}</span><h3>Five languages</h3><p>{LANGS}, including the questions and explanations (Tasmanian, ACT and NT questions are in English for now). Arabic reads right to left.</p></div>
+    <div class="card"><span class="icon-tile">{icon('globe')}</span><h3>Five languages</h3><p>{LANGS}, including the questions and explanations for every state and territory. Arabic reads right to left.</p></div>
     <div class="card"><span class="icon-tile">{icon('text')}</span><h3>Accessible by design</h3><p>Readable fonts, large-text support, dark mode, TalkBack labels and a spoken timer.</p></div>
     <div class="card"><span class="icon-tile">{icon('offline')}</span><h3>Offline practice, synced progress</h3><p>Practise without a connection after signing in. Your progress is saved to your account and follows you to a new phone.</p></div>
     <div class="card"><span class="icon-tile">{icon('shield')}</span><h3>Your privacy choices</h3><p>A short privacy card at the start and switches in Settings. <a href="@/privacy-policy.html">Privacy policy</a>.</p></div>
@@ -695,8 +694,8 @@ FAQ_GROUPS = [
     ]),
     ("Using the app", [
         ("Which languages does the app support?",
-         f"<p>{LANGS}. Menus, questions and explanations are translated, and Arabic reads right to left. Questions for "
-         "Tasmania, the ACT and the Northern Territory are in English for now. You can change the language in Settings. "
+         f"<p>{LANGS}. Menus, questions and explanations are translated for every state and territory, and Arabic reads "
+         "right to left. You can change the language in Settings. "
          "Language options for the official tests themselves differ by state, so check your state's website.</p>"),
         ("Does the app work offline?",
          "<p>Mostly. Questions are built into the app, so after you've signed in you can practise without a connection, and "
@@ -852,6 +851,11 @@ of that legislation.</p>
 <p>We restate facts in our own words, reproduce no text, logos or images, and none of these sources endorses the app or
 this website. For the law in force, always go to the official legislation website for your state or territory.</p>
 
+<h2>Our other app: DTT Ireland</h2>
+<p>{DEVELOPER} also makes <a href="{DTT_URL}">DTT Ireland</a>, a practice app for the Irish driver theory test, for car
+and motorcycle learners, in nine languages. It is on <a href="{DTT_PLAY}" rel="noopener">Google Play</a>. It follows
+the same approach: practice in the real test's format, with every answer explained.</p>
+
 <h2>Independence</h2>
 <p>{DISCLAIMER}</p>
 
@@ -883,7 +887,8 @@ this website. For the law in force, always go to the official legislation websit
         nav="about",
         crumbs=crumbs,
         jsonld=[{"@type": "AboutPage", "name": "About Learners Test Australia", "url": BASE + "about.html",
-                 "about": {"@id": ORG_ID}, "publisher": organization(full=False)}],
+                 "about": {"@id": ORG_ID}, "publisher": organization(full=False)},
+                dtt_application()],
         priority="0.6",
         llms=True,
         llms_title="About and content process",
@@ -966,6 +971,92 @@ privacy complaint, email us; the <a href="@/privacy-policy.html">privacy policy<
                  "about": organization()}],
         priority="0.5",
         llms_note="Support email, what to include when reporting a question error, Premium and privacy help.",
+    )
+
+
+# ── Download ──────────────────────────────────────────────────────────────────────────────────
+def download() -> Page:
+    crumbs = [("Home", ""), ("Download", "download.html")]
+    if PLAY_URL:
+        status = ("<p>Learners Test Australia is free on Google Play. Tap the button to open the listing, then tap "
+                  "Install.</p>")
+    else:
+        status = ("<p>The app isn't on Google Play yet. When it is, the button below will open the listing, and this page "
+                  "will say so. You can try it before then: see <a href=\"#early\">try the app early</a>.</p>")
+    body = page_head(
+        "Download the Learners Test Australia app",
+        "The learner test practice app for all eight Australian states and territories, for Android phones and tablets.",
+        crumbs,
+        eyebrow="Download",
+    ) + f"""
+<div class="content"><div class="container two-col">
+<div class="prose">
+<h2>Get it on Android</h2>
+{status}
+{coming_soon('light')}
+
+<h2>What you need</h2>
+<ul>
+  <li><strong>An Android phone or tablet</strong> with Android 8.0 or later. There is no iPhone version yet.</li>
+  <li><strong>An account</strong>: sign in with Google or with an email address and password. Your progress is saved
+  to it, so it follows you to a new phone.</li>
+  <li><strong>A connection to sign in</strong>. After that, the questions are built into the app and you can practise
+  offline.</li>
+</ul>
+
+<h2>What you get for free</h2>
+<ul class="check-list">
+  <li>Every practice question for your state, with every answer explained.</li>
+  <li>Your state's test format: the same number of questions, sections and pass marks.</li>
+  <li>One free mock test a day, and another for each short ad you choose to watch.</li>
+  <li>A daily study plan, progress tracking and an estimated pass chance.</li>
+  <li>All eight states and territories, in English, Chinese, Arabic, Vietnamese and Spanish.</li>
+</ul>
+<p>Premium is optional: a one-time {PRICE} purchase through Google Play, with no subscription. It removes ads and adds
+unlimited mock tests, forecasts for each section of the test, your weak spots and all 72 hazard perception clips. See
+the <a href="@/features.html">features</a>.</p>
+
+<h2 id="early">Try the app early</h2>
+<p>Before the app goes public on Google Play, we are inviting a small group of learners and parents to test it. If you
+have an Android phone and would like to help, email us at <a href="mailto:{EMAIL}?subject=Early%20tester">{EMAIL}</a>
+with the subject “Early tester”. Send it from, or include, the Google account email you use on Google Play: Google Play
+only lets you install a test app on an account we have invited. We use your email address only to invite you to the
+test and to reply to you.</p>
+
+<h2>More apps from {DEVELOPER}</h2>
+<div class="card">
+  <h3><a href="{DTT_URL}">DTT Ireland: driver theory test practice</a></h3>
+  <p>Our app for learner drivers in Ireland: practice for the Irish driver theory test, for car and motorcycle, in nine
+  languages. Free on <a href="{DTT_PLAY}" rel="noopener">Google Play</a>.</p>
+</div>
+</div>
+<aside><div class="card aside-card">
+  <img src="@/assets/img/icon-512.png" width="96" height="96" loading="lazy" decoding="async"
+    alt="Learners Test Australia app icon: a yellow learner plate with a black L and a green tick">
+  <h2>At a glance</h2>
+  <ul>
+    <li><strong>App:</strong> {APP_NAME}</li>
+    <li><strong>Developer:</strong> {DEVELOPER}</li>
+    <li><strong>Platform:</strong> Android 8.0 or later</li>
+    <li><strong>States:</strong> all 8 states and territories</li>
+    <li><strong>Languages:</strong> English, 中文, العربية, Tiếng Việt, Español</li>
+    <li><strong>Price:</strong> free, optional {PRICE} Premium</li>
+  </ul>
+</div></aside>
+</div></div>"""
+    return Page(
+        path="download.html",
+        title="Download the App | Learners Test Australia",
+        description=("Download Learners Test Australia for Android: free learner test practice for every state and "
+                     "territory, what you need to install it, and how to try it early."),
+        body=body,
+        nav="download",
+        crumbs=crumbs,
+        jsonld=[{"@type": "WebPage", "name": "Download Learners Test Australia", "url": BASE + "download.html",
+                 "about": {"@id": BASE + "#app"}, "publisher": organization(full=False)},
+                mobile_application()],
+        priority="0.8",
+        llms_note="Download page: Android 8.0 or later, account needed, what is free, Premium, how to join the early test.",
     )
 
 
