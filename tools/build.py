@@ -19,7 +19,7 @@ import pages_core  # noqa: E402
 import pages_legal  # noqa: E402
 import pages_states  # noqa: E402
 from sitelib import (  # noqa: E402
-    ADMOB_PUBLISHER, APP_NAME, BASE, DATE, DATE_H, DEVELOPER, DISCLAIMER, EMAIL, PLATE_SVG, PRICE, SITE_NAME, Page, render,
+    ADMOB_PUBLISHER, APP_NAME, BASE, DATE, INDEXNOW_KEY, DATE_H, DEVELOPER, DISCLAIMER, EMAIL, PLATE_SVG, PRICE, SITE_NAME, Page, render,
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -335,6 +335,8 @@ def seo_md(pages: list[Page]) -> str:
         "- GitHub Pages serves this site at the custom domain learnertest.com (the `CNAME` file); the old address "
         "blue0orbit.github.io/learners-test-australia/ redirects here. The domain is registered at internet.bs and its DNS runs on Cloudflare (free plan, records set to DNS only).",
         "- `robots.txt`, `sitemap.xml` and `app-ads.txt` (AdMob) sit at the domain root, where crawlers look for them.",
+        "- After publishing changes, run `python tools/indexnow.py` to tell Bing, Yandex, Seznam, Naver and Yep "
+        "(IndexNow) which pages changed; the key file is at the site root.",
         "- `404.html` uses root-relative links because GitHub Pages serves it at any missing path.",
     ]
     return "\n".join(out) + "\n"
@@ -353,6 +355,7 @@ def main() -> None:
     (ROOT / "site.webmanifest").write_text(manifest(), encoding="utf-8", newline="\n")
     (ROOT / ".nojekyll").write_text("", encoding="utf-8")
     (ROOT / "CNAME").write_text(BASE.split("//")[1].rstrip("/") + "\n", encoding="utf-8", newline="\n")
+    (ROOT / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY + "\n", encoding="utf-8", newline="\n")
     (ROOT / "app-ads.txt").write_text(f"google.com, {ADMOB_PUBLISHER}, DIRECT, f08c47fec0942fa0\n", encoding="utf-8", newline="\n")
     (ROOT / "assets" / "img" / "favicon.svg").write_text(favicon_svg(), encoding="utf-8", newline="\n")
     (ROOT / "SEO.md").write_text(seo_md(pages), encoding="utf-8", newline="\n")

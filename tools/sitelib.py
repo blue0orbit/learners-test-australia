@@ -21,6 +21,8 @@ BASE = "https://learnertest.com/"
 BASE_PATH = "/"
 # AdMob publisher id, published in app-ads.txt (it is public by design)
 ADMOB_PUBLISHER = "pub-1798960414758701"
+# IndexNow key (public by design): the key file at the site root proves we own the URLs we submit
+INDEXNOW_KEY = "02adf338491ab11d8179dbdec8da3278"
 DATE = "2026-09-30"
 DATE_H = "30 September 2026"
 PRICE = "A$5.99"

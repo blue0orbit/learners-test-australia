@@ -48,4 +48,5 @@ Language keywords (the app supports them; the site is English): learner test app
 
 - GitHub Pages serves this site at the custom domain learnertest.com (the `CNAME` file); the old address blue0orbit.github.io/learners-test-australia/ redirects here. The domain is registered at internet.bs and its DNS runs on Cloudflare (free plan, records set to DNS only).
 - `robots.txt`, `sitemap.xml` and `app-ads.txt` (AdMob) sit at the domain root, where crawlers look for them.
+- After publishing changes, run `python tools/indexnow.py` to tell Bing, Yandex, Seznam, Naver and Yep (IndexNow) which pages changed; the key file is at the site root.
 - `404.html` uses root-relative links because GitHub Pages serves it at any missing path.
