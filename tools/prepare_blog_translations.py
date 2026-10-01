@@ -24,8 +24,7 @@ def inventory():
         if translatable(key): strings[key]=None
         return value
     for page in all_pages():
-        if page.language!='en' or not page.path.startswith('blog/'): continue
-        page.alternates={}
+        if not page.path.startswith('blog/'): continue
         transform(render(page),collect)
     return list(strings)
 

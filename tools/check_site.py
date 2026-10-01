@@ -2,7 +2,7 @@
 
 Checks
   links      every relative href/src resolves to a file (and #fragments to an id); no third-party resources
-  pages      one <title>, meta description, lang="en", exactly one <h1>, canonical, OG + Twitter tags, robots,
+  pages      one <title>, meta description, lang="en-AU", exactly one <h1>, canonical, OG + Twitter tags, robots,
              viewport, theme-color; unique titles (<= 60 chars) and descriptions (140-160 chars)
   structure  well-formed tags, unique ids, heading levels never skip downwards, <img> alt/width/height
   json-ld    every block parses; expected types per page; no ratings or reviews
@@ -23,9 +23,22 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from sitelib import LOCALES, PLAY_URL  # noqa: E402
+
+LANG_DIRS = {c for c in LOCALES if c != "en"}
+# Title and description lengths (characters) for translated pages; English uses 60 and 140-160.
+TITLE_MAX = {"zh": 40, "ar": 70, "vi": 70, "es": 70}
+DESC_RANGE = {"zh": (45, 100), "ar": (100, 175), "vi": (110, 190), "es": (120, 190)}
+
+
+def lang_of(rel: str) -> str:
+    first = rel.split("/", 1)[0]
+    return first if first in LANG_DIRS and "/" in rel else "en"
+
 ROOT = Path(__file__).resolve().parent.parent
-BASE = "https://blue0orbit.github.io/learners-test-australia/"
-BASE_PATH = "/learners-test-australia/"
+BASE = "https://learnertest.com/"
+BASE_PATH = "/"
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
 STATE_PAGES = (
     "nsw-dkt-practice-test.html", "vic-learner-permit-test-practice.html", "qld-learner-test-practice.html",
@@ -56,6 +69,8 @@ class PageParser(HTMLParser):
         self.meta: dict[str, list[str]] = {}
         self.link_rel: dict[str, list[str]] = {}
         self.html_lang: str | None = None
+        self.html_dir: str | None = None
+        self.alternates: dict[str, str] = {}
         self.headings: list[tuple[int, str]] = []
         self.jsonld: list[str] = []
         self.imgs: list[dict] = []
@@ -73,6 +88,7 @@ class PageParser(HTMLParser):
             self.stack.append(tag)
         if tag == "html":
             self.html_lang = a.get("lang")
+            self.html_dir = a.get("dir")
         if "id" in a:
             self.ids.append(a["id"])
         for attr in ("href", "src"):
@@ -84,6 +100,8 @@ class PageParser(HTMLParser):
                 self.meta.setdefault(key, []).append(a.get("content", ""))
         if tag == "link" and "rel" in a:
             self.link_rel.setdefault(a["rel"], []).append(a.get("href", ""))
+            if a["rel"] == "alternate" and "hreflang" in a:
+                self.alternates[a["hreflang"]] = a.get("href", "")
         if tag == "img":
             self.imgs.append(a)
         if tag == "title" or tag in {"h1", "h2", "h3", "h4", "h5", "h6"}:
@@ -203,8 +221,13 @@ def main() -> int:
             frag = urlparse(url).fragment
             if frag and target.suffix == ".html" and target in parsed and frag not in parsed[target].ids:
                 err(f"{rel}: missing anchor {url}")
-        if "play.google.com" in f.read_text(encoding="utf-8"):
-            err(f"{rel}: contains a Google Play link (the app is not listed yet)")
+        # Our app is not listed yet, so no link to its listing (sitelib.PLAY_URL turns the buttons into links later).
+        # Links to the developer's other app (DTT Ireland) are fine.
+        play_ids = set(re.findall(r"play\.google\.com/store/apps/details\?id=([\w.]+)", f.read_text(encoding="utf-8")))
+        if "com.blueorbit.learnerstestau" in play_ids and not PLAY_URL:
+            err(f"{rel}: links to the app's Google Play listing, but the app is not listed yet")
+        if play_ids - {"com.app.dttireland", "com.blueorbit.learnerstestau"}:
+            err(f"{rel}: links to an unexpected Google Play listing {sorted(play_ids)}")
 
     # ── per-page meta ──
     titles: dict[str, str] = {}
@@ -215,22 +238,43 @@ def main() -> int:
         if len(p.titles) != 1:
             err(f"{rel}: expected one <title>, found {len(p.titles)}")
         t = p.titles[0] if p.titles else ""
-        if len(t) > 60 and p.html_lang == "en":
-            err(f"{rel}: title is {len(t)} chars (> 60): {t}")
+        lang = lang_of(rel)
+        tmax = 60 if lang == "en" else TITLE_MAX[lang]
+        if len(t) > tmax:
+            err(f"{rel}: title is {len(t)} chars (> {tmax}): {t}")
         if t in titles:
             err(f"{rel}: duplicate title with {titles[t]}")
         titles[t] = rel
         d = (p.meta.get("description") or [""])[0]
         if not d:
             err(f"{rel}: missing meta description")
-        elif not 140 <= len(d) <= 160 and p.html_lang == "en":
-            err(f"{rel}: description is {len(d)} chars (want 140-160)")
+        else:
+            lo, hi = (140, 160) if lang == "en" else DESC_RANGE[lang]
+            if not lo <= len(d) <= hi:
+                err(f"{rel}: description is {len(d)} chars (want {lo}-{hi})")
         if d in descs:
             err(f"{rel}: duplicate description with {descs[d]}")
         descs[d] = rel
-        expected_lang = rel.split('/')[1] if rel.startswith(('blog/zh-Hans/', 'blog/ar/', 'blog/vi/', 'blog/es/')) else 'en'
-        if p.html_lang != expected_lang:
-            err(f"{rel}: html lang is {p.html_lang!r}, expected {expected_lang!r}")
+        want_lang = LOCALES[lang]["hreflang"]
+        if p.html_lang != want_lang:
+            err(f"{rel}: html lang is {p.html_lang!r}, expected {want_lang!r}")
+        if (p.html_dir == "rtl") != (LOCALES[lang]["dir"] == "rtl"):
+            err(f"{rel}: html dir is {p.html_dir!r}")
+        # hreflang: every version lists itself and all the others, plus x-default (the English page)
+        if p.alternates:
+            canon_here = (p.link_rel.get("canonical") or [""])[0]
+            if p.alternates.get(want_lang) != canon_here:
+                err(f"{rel}: hreflang {want_lang} does not point at this page's canonical")
+            if p.alternates.get("x-default") != p.alternates.get("en-AU"):
+                err(f"{rel}: x-default should be the English page")
+            for hl, href in p.alternates.items():
+                target = url_to_file(href) if href.startswith(BASE) else None
+                if target is None or not target.exists():
+                    err(f"{rel}: hreflang {hl} points at a missing page {href}")
+                elif target.resolve() in parsed and parsed[target.resolve()].alternates != p.alternates:
+                    err(f"{rel}: hreflang set differs from the one on {target.relative_to(ROOT).as_posix()}")
+        elif lang != "en":
+            err(f"{rel}: translated page without hreflang alternates")
         h1s = [h for h in p.headings if h[0] == 1]
         if len(h1s) != 1:
             err(f"{rel}: expected exactly one <h1>, found {len(h1s)}")
@@ -250,7 +294,8 @@ def main() -> int:
                     err(f"{rel}: canonical {canon[0]} does not point at this file")
                 if (p.meta.get("og:url") or [""])[0] != canon[0]:
                     err(f"{rel}: og:url differs from canonical")
-            if rel != "index.html" and 'class="breadcrumbs"' not in f.read_text(encoding="utf-8"):
+            is_home = rel == "index.html" or (lang != "en" and rel == f"{lang}/index.html")
+            if not is_home and 'class="breadcrumbs"' not in f.read_text(encoding="utf-8"):
                 err(f"{rel}: missing visible breadcrumbs")
         # structure
         for s in p.structure_errors[:5]:
@@ -292,13 +337,21 @@ def main() -> int:
         for t in types:
             type_count[t] = type_count.get(t, 0) + 1
         expect: set[str] = set()
-        if rel == "index.html":
+        if lang_of(rel) != "en":
+            base_rel = rel.split("/", 1)[1]
+            if base_rel == "index.html":
+                expect = {"WebPage", "MobileApplication"}
+            elif base_rel == "faq.html" or base_rel.endswith(("-practice-test.html", "-test-practice.html")):
+                expect = {"WebPage", "FAQPage", "BreadcrumbList"}
+            else:
+                expect = {"WebPage", "BreadcrumbList"}
+        elif rel == "index.html":
             expect = {"Organization", "WebSite", "MobileApplication"}
         elif rel == "faq.html" or rel.endswith("-practice-test.html") or rel.endswith("-test-practice.html"):
             expect = {"FAQPage", "BreadcrumbList"}
-        elif rel.startswith("blog/") and not rel.endswith("/index.html"):
+        elif rel.startswith("blog/") and rel != "blog/index.html":
             expect = {"BlogPosting", "BreadcrumbList"}
-        elif rel.startswith("blog/") and rel.endswith("/index.html"):
+        elif rel == "blog/index.html":
             expect = {"Blog", "BreadcrumbList"}
         elif rel != "404.html":
             expect = {"BreadcrumbList"}
@@ -377,7 +430,10 @@ def main() -> int:
         counts[rel] = wc
         raw = f.read_text(encoding="utf-8")
         low = text.lower()
-        if rel.startswith("blog/") and rel != "blog/index.html" and p.html_lang == 'en':
+        translated = lang_of(rel) != "en"
+        if translated:
+            counts[rel] = len(text)  # characters: words don't split the same way in every language
+        if rel.startswith("blog/") and rel != "blog/index.html":
             # article body only: between the answer box and the source box
             m = re.search(r'<article class="prose">(.*?)<aside class="source-box"', raw, re.S)
             body_wc = len(re.sub(r"<[^>]+>", " ", m.group(1)).split()) if m else 0
@@ -393,7 +449,7 @@ def main() -> int:
                 err(f"{rel}: missing dated publication byline")
             if product_guide and "first-party product guide" not in raw:
                 err(f"{rel}: product guide must disclose first-party authorship")
-        if rel in STATE_PAGES:
+        if rel in STATE_PAGES and not translated:
             m = re.search(r'<article class="prose">(.*?)<section class="callout light-cta"', raw, re.S)
             body_wc = len(re.sub(r"<[^>]+>", " ", m.group(1)).split()) if m else 0
             counts[rel] = body_wc
@@ -407,7 +463,8 @@ def main() -> int:
                 err(f"{rel}: contains the restricted ACT name '{name}'")
         if rel == "act-learners-test-practice.html" and "mandatory" in raw_low:
             err(f"{rel}: describes a question as mandatory")
-        for bad in (("lorem", "ipsum", "todo", "tbd", "placeholder") if p.html_lang == 'en' else ("lorem", "ipsum")):
+        # ("todo" is an ordinary word in Spanish, so it is only a placeholder on English pages)
+        for bad in ("lorem", "ipsum", "tbd", "placeholder") + (() if translated else ("todo",)):
             if re.search(rf"\b{bad}\b", low):
                 err(f"{rel}: contains '{bad}'")
         if 'href="#"' in raw:
@@ -416,14 +473,21 @@ def main() -> int:
                       r"\brated\b"):
             if re.search(claim, low):
                 err(f"{rel}: possible invented claim matching {claim}")
-        if p.html_lang == 'en' and rel != "404.html" and "Last updated" not in raw and rel not in ("index.html",):
+        if not translated and rel != "404.html" and "Last updated" not in raw and rel not in ("index.html",):
             warn(f"{rel}: no 'Last updated' line")
-        if p.html_lang == 'en' and DISCLAIMER_TEXT not in raw:
+        if translated:
+            if not re.search(r'<p class="disclaimer">[^<]{40,}</p>', raw):
+                err(f"{rel}: footer disclaimer missing")
+            # English sentence starts left in a translated page (official titles, kept in English on purpose, aside)
+            main_html = raw.split("<main", 1)[-1].split("</main>")[0].replace("Your keys to driving in Queensland", "")
+            if re.search(r"<(p|li|h[1-6]|td|th)[^>]*>\s*(?:<[^>]+>\s*)*(?:The|This|Your|You|Every|Our) [a-z]+ [a-z]+", main_html):
+                warn(f"{rel}: some text in <main> looks untranslated")
+        elif DISCLAIMER_TEXT not in raw:
             err(f"{rel}: footer disclaimer missing")
         for need in ("privacy-policy.html", "cookies.html", "terms.html", "account-deletion.html", "faq.html", "contact.html"):
             if need not in raw.split('<footer', 1)[-1]:
                 err(f"{rel}: footer lacks link to {need}")
-        if "&copy; 2026 BlueOrbit" not in raw:
+        if "2026 BlueOrbit" not in raw:
             err(f"{rel}: footer copyright missing")
 
     # ── contrast (pairs used in site.css) ──
@@ -454,7 +518,7 @@ def main() -> int:
     print(f"Relative links/resources resolved: {n_rel}; external links (not fetched): {n_ext} ({len(ext_urls)} unique)")
     print(f"Sitemap URLs: {len(sitemap_urls)}")
     print("JSON-LD types: " + ", ".join(f"{k}×{v}" for k, v in sorted(type_count.items())))
-    print("Word counts (posts/state pages: article body; others: main text):")
+    print("Word counts (posts/state pages: article body; others: main text; translated pages: characters):")
     for rel, wc in sorted(counts.items()):
         print(f"  {wc:5d}  {rel}")
     print("Contrast: min ratio {:.2f} across {} pairs".format(min(contrast(fg, bg) for _, fg, bg in pairs), len(pairs)))

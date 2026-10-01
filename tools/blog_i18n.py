@@ -7,7 +7,7 @@ from pathlib import Path
 import re
 
 LANGUAGES = {'en': 'English', 'zh-Hans': '简体中文', 'ar': 'العربية', 'vi': 'Tiếng Việt', 'es': 'Español'}
-OG_LOCALES = {'en': 'en_AU', 'zh-Hans': 'zh_CN', 'ar': 'ar_AR', 'vi': 'vi_VN', 'es': 'es_ES'}
+OG_LOCALES = {'en': 'en_AU', 'zh-Hans': 'zh_CN', 'zh': 'zh_CN', 'ar': 'ar_AR', 'vi': 'vi_VN', 'es': 'es_ES'}
 CATALOGS = Path(__file__).parent / 'translations'
 PROTECTED = {'Learners Test Australia', 'Learners Test', 'Australia', 'BlueOrbit', 'Premium', 'Google Play',
              'NSW', 'VIC', 'QLD', 'SA', 'WA', 'TAS', 'ACT', 'NT', 'DKT', 'HPT', 'PrepL', 'myLs', 'L', 'P1', 'P2'}
@@ -46,9 +46,9 @@ class LocaliseHTML(HTMLParser):
             if value.startswith(prefix):
                 tail=value[len(prefix):]
                 path, sep, fragment=tail.partition('#')
-                source=path+'index.html' if path.endswith('/') else path
+                source=path+'index.html' if path.endswith('/') else (path or 'index.html')
                 if source in self.blog_paths:
-                    path='blog/'+self.lang+'/'+path[len('blog/'):]
+                    path=self.lang+'/'+path
                     return prefix+path+(sep+fragment if sep else '')
         return value
 
@@ -66,8 +66,8 @@ class LocaliseHTML(HTMLParser):
         if tag == 'meta' and attrs.get('property') == 'og:locale': attrs['content']=OG_LOCALES[self.lang]
         if tag == 'a' and 'href' in attrs:
             attrs['href']=self.url(attrs['href'])
-            if self.lang != 'en' and attrs['href'].startswith('@/') and not attrs['href'].startswith('@/blog/'+self.lang+'/'):
-                attrs['hreflang']='en'
+            if self.lang != 'en' and attrs['href'].startswith('@/') and not attrs['href'].startswith('@/'+self.lang+'/'):
+                attrs['hreflang']='en-AU'
         self.output.append('<'+tag+''.join(' '+k+('="'+escape(v,quote=True)+'"' if v is not None else '') for k,v in attrs.items())+'>')
 
     def handle_endtag(self,tag):
@@ -80,9 +80,13 @@ class LocaliseHTML(HTMLParser):
         if isinstance(obj,dict): return {k:self.structured(v,k) for k,v in obj.items() if not (k=='wordCount' and self.lang!='en')}
         if isinstance(obj,list): return [self.structured(v,key) for v in obj]
         if isinstance(obj,str):
-            if key == 'inLanguage': return self.lang if self.lang != 'en' else obj
+            if key == 'inLanguage':
+                from sitelib import LOCALES
+                return LOCALES[self.lang]['hreflang'] if self.lang != 'en' else obj
             if key in ('name','headline','description','articleSection','keywords','caption'): return self.translate(obj)
-            if key in ('url','@id','item'): return self.url(obj)
+            if key in ('url','@id','item'):
+                if key=='@id' and obj.endswith(('#organization','#website')): return obj
+                return self.url(obj)
         return obj
 
     def handle_data(self,data):
@@ -113,38 +117,38 @@ def translator(lang):
     return translate
 
 
-def variants(pages):
+def register_blogs(pages,plan):
+    """Share the site's existing language menus and /LANG/blog/ URL convention."""
     blogs=[p for p in pages if p.path.startswith('blog/')]
-    extra=[]
-    for page in blogs:
-        page.alternates={lang:('blog/'+lang+'/'+page.path[5:] if lang!='en' else page.path) for lang in LANGUAGES}
-        for lang in LANGUAGES:
-            if lang=='en': continue
+    for code in plan.built:
+        plan.built[code].update(p.path for p in blogs)
+    return blogs
+
+
+def localized_blogs(blogs,plan):
+    from sitelib import BASE, LOCALES, breadcrumb_ld, page_html, render
+    output=[]
+    for code in plan.built:
+        catalog_lang='zh-Hans' if code=='zh' else code
+        translate=translator(catalog_lang)
+        parser=LocaliseHTML(translate,code,plan.built[code])
+        for page in blogs:
             clone=deepcopy(page)
-            clone.path=page.alternates[lang]
-            clone.language=lang
+            clone.path=code+'/'+page.path
+            clone.title=translate(page.title)
+            clone.description=translate(page.description)
+            clone.image_alt=translate(page.image_alt)
             clone.llms=False
-            clone.llms_title=(page.llms_title or page.title)+' — '+LANGUAGES[lang]
+            clone.llms_title=translate(page.llms_title or page.title)
             clone.llms_note=''
-            extra.append(clone)
-    return pages+extra
-
-
-def finish_html(html,page):
-    from sitelib import BASE, esc
-    if not page.alternates: return html
-    original_paths=[p for p in page.blog_paths]
-    if page.language != 'en': html=transform(html,translator(page.language),page.language,original_paths)
-    alts=[]; buttons=[]
-    for lang,path in page.alternates.items():
-        canonical=BASE+(path[:-10] if path.endswith('index.html') else path)
-        alts.append(f'<link rel="alternate" hreflang="{lang}" href="{canonical}">')
-        current=' aria-current="page"' if lang==page.language else ''
-        buttons.append(f'<a href="@/{path}" lang="{lang}" hreflang="{lang}" dir="auto"{current}>{LANGUAGES[lang]}</a>')
-    english=BASE+page.alternates['en'].replace('index.html','')
-    alts.append(f'<link rel="alternate" hreflang="x-default" href="{english}">')
-    html=html.replace('</head>','\n'.join(alts)+'\n</head>')
-    bar=f'<div class="container language-tools"><nav class="language-switch" aria-label="{LABELS[page.language]}"><span>{LABELS[page.language]}</span>'+''.join(buttons)+'</nav>'
-    if page.language!='en': bar+=f'<p class="translation-note">{esc(NOTICES[page.language])}</p>'
-    bar+='</div>'
-    return html.replace('<main id="main" tabindex="-1">','<main id="main" tabindex="-1">'+bar)
+            body=transform(page_html(page),translate,code,plan.built[code])
+            notice='<div class="container"><p class="translation-note">'+escape(NOTICES[catalog_lang])+'</p></div>'
+            body=body.replace('<main id="main" tabindex="-1">','<main id="main" tabindex="-1">'+notice)
+            nodes=parser.structured(deepcopy(page.jsonld))
+            nodes.append(parser.structured(breadcrumb_ld(page.crumbs)))
+            nodes.append({'@type':'WebPage','@id':clone.canonical+'#webpage','url':clone.canonical,
+                          'name':clone.title,'inLanguage':LOCALES[code]['hreflang']})
+            doc=render(clone,lang=code,body_html=body,ld_nodes=nodes,
+                       alternates=plan.alternates(page.path),menu_links=plan.menu_links(page.path))
+            output.append((clone,doc))
+    return output

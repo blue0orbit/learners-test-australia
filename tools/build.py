@@ -14,12 +14,13 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+import i18n  # noqa: E402
 import pages_blog  # noqa: E402
 import pages_core  # noqa: E402
 import pages_legal  # noqa: E402
 import pages_states  # noqa: E402
 from sitelib import (  # noqa: E402
-    APP_NAME, BASE, DATE, DATE_H, DEVELOPER, DISCLAIMER, EMAIL, PLATE_SVG, PRICE, SITE_NAME, Page, render,
+    ADMOB_PUBLISHER, APP_NAME, BASE, DATE, INDEXNOW_KEY, LOCALES, DATE_H, DEVELOPER, DISCLAIMER, EMAIL, PLATE_SVG, PRICE, SITE_NAME, Page, render,
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -27,7 +28,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 def all_pages() -> list[Page]:
     posts = [f() for f in pages_blog.POSTS]
-    pages = [
+    return [
         pages_core.home(),
         pages_core.features(),
         pages_core.states(),
@@ -44,17 +45,13 @@ def all_pages() -> list[Page]:
         *posts,
         pages_core.about(),
         pages_core.contact(),
+        pages_core.download(),
         pages_legal.privacy(),
         pages_legal.cookies(),
         pages_legal.terms(),
         pages_legal.account_deletion(),
         pages_core.not_found(),
     ]
-    from blog_i18n import variants
-    blog_paths = [p.path for p in pages if p.path.startswith('blog/')]
-    for p in pages:
-        p.blog_paths = blog_paths
-    return variants(pages)
 
 
 # ── HTML → plain text for llms-full.txt ──────────────────────────────────────────────────────
@@ -156,8 +153,6 @@ def robots_txt() -> str:
     lines = [
         f"# robots.txt for the {SITE_NAME} website ({BASE})",
         "# All crawlers, including search engines and AI assistants, are welcome to read and cite this site.",
-        "# Note: crawlers only read robots.txt at the root of a host (https://blue0orbit.github.io/robots.txt).",
-        "# This copy documents the intended policy; submit the sitemap below in search consoles as well.",
         "",
         "User-agent: *",
         "Allow: /",
@@ -202,15 +197,15 @@ KEY_FACTS = [
     "ACT learner licence knowledge test: taken only at the end of an approved course (approved provider or participating school); 35 questions from a bank of more than 300; at least 31 correct needed (not every detail of the pass rule is published). Learner licence from 15 years 9 months.",
     "Northern Territory driver knowledge test: 30 questions from a pool of more than 300, pass 26, at an MVR office, from 16. No hazard perception test in the NT.",
     "Free version: every practice question free; one free mock test per day plus another per rewarded ad; banner ads on results and guide pages.",
-    f"Premium: one-time {PRICE}, no subscription, all states: no ads, unlimited mock tests, section forecasts, weak spots and review planner, full hazard perception scenes.",
-    "Languages: English, Simplified Chinese, Arabic, Vietnamese, Spanish (Tasmanian, ACT and NT questions are in English for now). Dark mode. Offline practice after sign-in.",
+    f"Premium: one-time {PRICE}, no subscription, all states: no ads, unlimited mock tests, section forecasts, weak spots and review planner, all 72 hazard perception clips and every scene.",
+    "Languages: English, Simplified Chinese, Arabic, Vietnamese, Spanish, for the questions and explanations of all eight states and territories. Dark mode. Offline practice after sign-in.",
     "Account required (Google, Facebook or email). Delete in the app via Settings → Delete account, or email with subject “Delete my account”.",
     "Content: original questions checked against official handbooks and legislation as at 30 September 2026; no official questions, text or images reproduced.",
     f"Disclaimer: {DISCLAIMER}",
 ]
 
 
-def llms_txt(pages: list[Page]) -> str:
+def llms_txt(pages: list[Page], localized: list[Page] | None = None) -> str:
     by_path = {p.path: p for p in pages}
 
     def item(path: str) -> str:
@@ -219,7 +214,7 @@ def llms_txt(pages: list[Page]) -> str:
         return f"- [{name}]({p.canonical}): {p.llms_note or p.description}"
 
     groups = [
-        ("The app", ["index.html", "features.html", "faq.html", "about.html"]),
+        ("The app", ["index.html", "features.html", "faq.html", "about.html", "download.html"]),
         ("Learner tests by state", ["states.html", "nsw-dkt-practice-test.html", "vic-learner-permit-test-practice.html",
                                     "qld-learner-test-practice.html", "sa-learners-test-practice.html",
                                     "wa-learners-test-practice.html", "tas-learners-test-practice.html",
@@ -232,6 +227,17 @@ def llms_txt(pages: list[Page]) -> str:
     for title, paths in groups:
         out += ["", f"## {title}", ""]
         out += [item(pth) for pth in paths]
+    by_lang: dict[str, list[Page]] = {}
+    for lp in localized or []:
+        by_lang.setdefault(lp.path.split("/", 1)[0], []).append(lp)
+    if by_lang:
+        out += ["", "## Other languages", "",
+                "The home, features, states, state, FAQ, about, contact and download pages are also available in these "
+                "languages, for readers in Australia (guides and policies are in English):", ""]
+        for code, lps in by_lang.items():
+            loc = LOCALES[code]
+            out.append(f"- {loc['name']} ({loc['hreflang']}): " + ", ".join(
+                f"[{lp.title.split('｜')[0].split(' | ')[0]}]({lp.canonical})" for lp in lps))
     out += ["", "## Optional", "",
             f"- [Full text of the main pages]({BASE}llms-full.txt): plain-text copy of the home, features, states, state, "
             "FAQ, guide, privacy and account deletion pages, for quoting accurate facts.",
@@ -329,7 +335,7 @@ def seo_md(pages: list[Page]) -> str:
         "## Technical SEO checklist (verified by `tools/check_site.py`)",
         "",
         "- Unique `<title>` (≤ 60 characters) and meta description (140–160 characters) on every page.",
-        "- Canonical URL (absolute), Open Graph and Twitter card tags, `robots` meta, `lang=\"en\"`, viewport, theme colour.",
+        "- Canonical URL (absolute), Open Graph and Twitter card tags, `robots` meta, `lang=\"en-AU\"`, viewport, theme colour.",
         "- Exactly one H1 per page; breadcrumbs (visible and BreadcrumbList JSON-LD) on inner pages.",
         "- JSON-LD: Organization, WebSite and MobileApplication (home; no ratings or reviews), FAQPage (FAQ and state "
         "pages), BlogPosting (guides), Blog (guide index), BreadcrumbList (inner pages).",
@@ -337,32 +343,57 @@ def seo_md(pages: list[Page]) -> str:
         "and points to the sitemap; llms.txt and llms-full.txt for AI assistants.",
         "- No third-party requests; self-hosted fonts with the heading font preloaded; one stylesheet; one tiny script.",
         "",
-        "## Notes for the project-site setup",
+        "## Hosting notes",
         "",
-        "- GitHub Pages serves this site under `/learners-test-australia/`. Crawlers only read `robots.txt` at the host "
-        "root, so to make the robots policy effective, copy `robots.txt` to the root of a `blue0orbit.github.io` user "
-        "site (or move to a custom domain), and submit `sitemap.xml` in Google Search Console and Bing Webmaster Tools.",
-        "- `404.html` uses root-relative links (`/learners-test-australia/...`) because GitHub Pages serves it at any "
-        "missing path.",
+        "- GitHub Pages serves this site at the custom domain learnertest.com (the `CNAME` file); the old address "
+        "blue0orbit.github.io/learners-test-australia/ redirects here. The domain is registered at internet.bs and its DNS runs on Cloudflare (free plan, records set to DNS only).",
+        "- `robots.txt`, `sitemap.xml` and `app-ads.txt` (AdMob) sit at the domain root, where crawlers look for them.",
+        "- After publishing changes, run `python tools/indexnow.py` to tell Bing, Yandex, Seznam, Naver and Yep "
+        "(IndexNow) which pages changed; the key file is at the site root.",
+        "- `404.html` uses root-relative links because GitHub Pages serves it at any missing path.",
     ]
     return "\n".join(out) + "\n"
 
 
 def main() -> None:
     pages = all_pages()
+    plan = i18n.Plan(pages)  # which pages exist in which language (tools/i18n.py)
+    from blog_i18n import register_blogs, localized_blogs
+    blogs = register_blogs(pages, plan)
     for p in pages:
         dest = ROOT / p.path
         dest.parent.mkdir(parents=True, exist_ok=True)
-        dest.write_text(render(p), encoding="utf-8", newline="\n")
-    (ROOT / "sitemap.xml").write_text(sitemap_xml(pages), encoding="utf-8", newline="\n")
+        alternates = plan.alternates(p.path) if p.path in i18n.PAGES or p.path.startswith('blog/') else None
+        dest.write_text(render(p, alternates=alternates, menu_links=plan.menu_links(p.path)), encoding="utf-8",
+                        newline="\n")
+    # Translated pages: the language folders are rewritten from scratch, so a page whose translation fell behind the
+    # English disappears instead of going stale.
+    for lang in i18n.LANGS:
+        folder = ROOT / lang
+        if folder.exists():
+            for old in folder.glob("*.html"):
+                old.unlink()
+    localized = plan.localized() + localized_blogs(blogs, plan)
+    for lp, doc in localized:
+        dest = ROOT / lp.path
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_text(doc, encoding="utf-8", newline="\n")
+    for lang in i18n.LANGS:
+        todo = plan.missing[lang]
+        print(f"  {lang}: {len(plan.built[lang])}/{len(i18n.PAGES)+len(blogs)} pages translated"
+              + (f" ({sum(todo.values())} segments missing)" if todo else ""))
+    (ROOT / "sitemap.xml").write_text(sitemap_xml(pages + [lp for lp, _ in localized]), encoding="utf-8", newline="\n")
     (ROOT / "robots.txt").write_text(robots_txt(), encoding="utf-8", newline="\n")
-    (ROOT / "llms.txt").write_text(llms_txt(pages), encoding="utf-8", newline="\n")
+    (ROOT / "llms.txt").write_text(llms_txt(pages, [lp for lp, _ in localized]), encoding="utf-8", newline="\n")
     (ROOT / "llms-full.txt").write_text(llms_full_txt(pages), encoding="utf-8", newline="\n")
     (ROOT / "site.webmanifest").write_text(manifest(), encoding="utf-8", newline="\n")
     (ROOT / ".nojekyll").write_text("", encoding="utf-8")
+    (ROOT / "CNAME").write_text(BASE.split("//")[1].rstrip("/") + "\n", encoding="utf-8", newline="\n")
+    (ROOT / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY + "\n", encoding="utf-8", newline="\n")
+    (ROOT / "app-ads.txt").write_text(f"google.com, {ADMOB_PUBLISHER}, DIRECT, f08c47fec0942fa0\n", encoding="utf-8", newline="\n")
     (ROOT / "assets" / "img" / "favicon.svg").write_text(favicon_svg(), encoding="utf-8", newline="\n")
     (ROOT / "SEO.md").write_text(seo_md(pages), encoding="utf-8", newline="\n")
-    print(f"Built {len(pages)} pages into {ROOT}")
+    print(f"Built {len(pages)} English and {len(localized)} translated pages into {ROOT}")
 
 
 if __name__ == "__main__":

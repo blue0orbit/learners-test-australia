@@ -39,6 +39,29 @@ REPLACEMENTS={
 }
 
 def main():
+    from build import all_pages
+    pages={p.path:p for p in all_pages()}
+    descriptions={
+      'ar': {
+        'how-to-use-mock-tests-and-mistakes':'تعلّم كيف تستفيد من الاختبارات التجريبية: افهم حدود الأخطاء في كل قسم، وراجع الإجابات الخاطئة، ثم ضع خطة للتحضير لاختبار القيادة النظري.',
+        'qld-written-road-rules-test-vs-prepl':'قارن اختبار قواعد المرور الكتابي في QLD مع PrepL: الأسئلة، ودرجات النجاح، والعمر، والتكلفة، وإعادة المحاولة، لاختيار المسار المناسب لك.',
+      },
+      'es': {
+        'how-to-use-mock-tests-and-mistakes':'Prepara el examen teórico con simulacros: conoce el margen de error de cada sección, revisa tus fallos y organiza un plan de estudio para aprender las normas.',
+        'index':'Guías para aprender a conducir: exámenes de NSW, Victoria y Queensland, reglas para ceder el paso, consejos de estudio y percepción de peligros.',
+        'qld-written-road-rules-test-vs-prepl':'Compara el examen escrito de normas de tránsito de Queensland con PrepL: preguntas, nota mínima, edad, coste y nuevos intentos para elegir tu ruta.',
+        'victorian-learner-permit-test-explained':'Conoce el examen para el permiso de aprendiz en Victoria: curso en línea, examen presencial, documentos necesarios, contenidos y normas específicas del estado.',
+        'why-choose-learners-test-australia':'Descubre Learners Test Australia: práctica por estado, respuestas explicadas, repasos diarios, estudio sin conexión y Premium opcional con pago único.',
+      },
+      'vi': {
+        'hazard-perception-test-nsw-vic-qld':'Tìm hiểu bài thi nhận biết nguy hiểm HPT tại NSW, VIC và QLD: kỹ năng cần học, thời điểm được dự thi, thời hạn kết quả và cách luyện tập.',
+        'how-to-use-mock-tests-and-mistakes':'Cách ôn thi lý thuyết lái xe bằng bài thi thử: hiểu số lỗi được phép ở mỗi phần, luyện tập như thi thật và biến từng lỗi sai thành nội dung ôn tập.',
+        'index':'Hướng dẫn học lái xe: bài thi tại NSW, Victoria và Queensland, quy tắc nhường đường, cách ôn tập bằng bài thi thử và kỹ năng nhận biết nguy hiểm.',
+        'qld-written-road-rules-test-vs-prepl':'So sánh bài thi viết luật giao thông Queensland với PrepL về số câu hỏi, điểm đỗ, độ tuổi, chi phí và thi lại để chọn hình thức phù hợp.',
+        'victorian-learner-permit-test-explained':'Tìm hiểu bài thi cấp giấy phép học lái xe Victoria: khóa học trực tuyến, bài thi trực tiếp, giấy tờ cần thiết, nội dung và quy tắc riêng của bang.',
+        'why-choose-learners-test-australia':'Khám phá Learners Test Australia: luyện thi theo tiểu bang, giải thích đáp án, ôn tập hằng ngày, học ngoại tuyến và gói Premium trả phí một lần.',
+      },
+    }
     for lang in TRANSLATED:
         path=ROOT/(lang+'.json')
         data=json.loads(path.read_text(encoding='utf-8')); strings=data['strings']
@@ -74,6 +97,12 @@ def main():
         }
         for key,index in titles.items():
             if key in strings: strings[key]=TRANSLATED[lang][index]
+        for slug,desc in descriptions.get(lang,{}).items():
+            strings[pages['blog/'+slug+'.html'].description]=desc
+        if lang=='ar': strings['Mock Test Tips for Learners | Learners Test Australia']='كيف تستفيد من الاختبارات التجريبية وأخطائك في المراجعة؟'
+        if lang=='es':
+            strings['Mock Test Tips for Learners | Learners Test Australia']='Cómo aprender de los exámenes de práctica y de tus errores'
+            strings['Why Choose Our Learner Test App? | Learners Test Australia']='¿Por qué elegir Learners Test Australia?'
         data['editorial_notes']='Topic headings, driving terminology, roundabout wording, error allowances and currency spot-checked; not a professional translation review.'
         path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 
