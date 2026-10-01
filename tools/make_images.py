@@ -27,7 +27,13 @@ SS = 4  # supersampling factor
 
 
 def plate(size: int, background=None) -> Image.Image:
-    """Draw the plate mark on a 64-unit grid (same geometry as assets/img/logo.svg)."""
+    """The app's mark: assets/img/mark.png (made with the app icon by content-src/icon/make_icon.py in the app
+    repository), or the older flat plate drawn on a 64-unit grid when that file is missing."""
+    mark = IMG / "mark.png"
+    if mark.exists():
+        im = Image.new("RGBA", (size, size), background or (0, 0, 0, 0))
+        im.alpha_composite(Image.open(mark).convert("RGBA").resize((size, size), Image.LANCZOS))
+        return im
     s = size * SS / 64
     im = Image.new("RGBA", (size * SS, size * SS), background or (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
@@ -81,11 +87,9 @@ def og_image() -> Image.Image:
 
 def main() -> None:
     IMG.mkdir(parents=True, exist_ok=True)
-    app_icon(512).save(IMG / "icon-512.png", optimize=True)
-    app_icon(192).save(IMG / "icon-192.png", optimize=True)
-    app_icon(180).save(IMG / "apple-touch-icon.png", optimize=True)
+    # The app icon files (icon-512/192, apple-touch-icon, favicon.ico) come from the app repository's
+    # content-src/icon/make_icon.py, so they always match the launcher icon. This script makes the rest.
     plate(512).save(IMG / "logo-plate.png", optimize=True)
-    plate(64).save(ROOT / "favicon.ico", sizes=[(16, 16), (32, 32), (48, 48), (64, 64)])
     og_image().save(IMG / "og-image.png", optimize=True)
     for p in sorted(IMG.glob("*.png")) + [ROOT / "favicon.ico"]:
         print(f"{p.relative_to(ROOT)}  {p.stat().st_size:,} bytes  {Image.open(p).size}")
