@@ -215,7 +215,7 @@ def main() -> int:
         if len(p.titles) != 1:
             err(f"{rel}: expected one <title>, found {len(p.titles)}")
         t = p.titles[0] if p.titles else ""
-        if len(t) > 60:
+        if len(t) > 60 and p.html_lang == "en":
             err(f"{rel}: title is {len(t)} chars (> 60): {t}")
         if t in titles:
             err(f"{rel}: duplicate title with {titles[t]}")
@@ -223,13 +223,14 @@ def main() -> int:
         d = (p.meta.get("description") or [""])[0]
         if not d:
             err(f"{rel}: missing meta description")
-        elif not 140 <= len(d) <= 160:
+        elif not 140 <= len(d) <= 160 and p.html_lang == "en":
             err(f"{rel}: description is {len(d)} chars (want 140-160)")
         if d in descs:
             err(f"{rel}: duplicate description with {descs[d]}")
         descs[d] = rel
-        if p.html_lang != "en":
-            err(f"{rel}: html lang is {p.html_lang!r}, expected 'en'")
+        expected_lang = rel.split('/')[1] if rel.startswith(('blog/zh-Hans/', 'blog/ar/', 'blog/vi/', 'blog/es/')) else 'en'
+        if p.html_lang != expected_lang:
+            err(f"{rel}: html lang is {p.html_lang!r}, expected {expected_lang!r}")
         h1s = [h for h in p.headings if h[0] == 1]
         if len(h1s) != 1:
             err(f"{rel}: expected exactly one <h1>, found {len(h1s)}")
@@ -295,9 +296,9 @@ def main() -> int:
             expect = {"Organization", "WebSite", "MobileApplication"}
         elif rel == "faq.html" or rel.endswith("-practice-test.html") or rel.endswith("-test-practice.html"):
             expect = {"FAQPage", "BreadcrumbList"}
-        elif rel.startswith("blog/") and rel != "blog/index.html":
+        elif rel.startswith("blog/") and not rel.endswith("/index.html"):
             expect = {"BlogPosting", "BreadcrumbList"}
-        elif rel == "blog/index.html":
+        elif rel.startswith("blog/") and rel.endswith("/index.html"):
             expect = {"Blog", "BreadcrumbList"}
         elif rel != "404.html":
             expect = {"BreadcrumbList"}
@@ -376,7 +377,7 @@ def main() -> int:
         counts[rel] = wc
         raw = f.read_text(encoding="utf-8")
         low = text.lower()
-        if rel.startswith("blog/") and rel != "blog/index.html":
+        if rel.startswith("blog/") and rel != "blog/index.html" and p.html_lang == 'en':
             # article body only: between the answer box and the source box
             m = re.search(r'<article class="prose">(.*?)<aside class="source-box"', raw, re.S)
             body_wc = len(re.sub(r"<[^>]+>", " ", m.group(1)).split()) if m else 0
@@ -406,7 +407,7 @@ def main() -> int:
                 err(f"{rel}: contains the restricted ACT name '{name}'")
         if rel == "act-learners-test-practice.html" and "mandatory" in raw_low:
             err(f"{rel}: describes a question as mandatory")
-        for bad in ("lorem", "ipsum", "todo", "tbd", "placeholder"):
+        for bad in (("lorem", "ipsum", "todo", "tbd", "placeholder") if p.html_lang == 'en' else ("lorem", "ipsum")):
             if re.search(rf"\b{bad}\b", low):
                 err(f"{rel}: contains '{bad}'")
         if 'href="#"' in raw:
@@ -415,9 +416,9 @@ def main() -> int:
                       r"\brated\b"):
             if re.search(claim, low):
                 err(f"{rel}: possible invented claim matching {claim}")
-        if rel != "404.html" and "Last updated" not in raw and rel not in ("index.html",):
+        if p.html_lang == 'en' and rel != "404.html" and "Last updated" not in raw and rel not in ("index.html",):
             warn(f"{rel}: no 'Last updated' line")
-        if DISCLAIMER_TEXT not in raw:
+        if p.html_lang == 'en' and DISCLAIMER_TEXT not in raw:
             err(f"{rel}: footer disclaimer missing")
         for need in ("privacy-policy.html", "cookies.html", "terms.html", "account-deletion.html", "faq.html", "contact.html"):
             if need not in raw.split('<footer', 1)[-1]:

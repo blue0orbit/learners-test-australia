@@ -539,3 +539,19 @@ tbody th { font-weight: 700; }
  .choice-demo-top { flex-direction:column; gap:.25rem; }
  .choice-story .toc ol { columns:1; }
 }
+/* Static blog language navigation and Arabic reading direction. */
+.language-tools { padding-top:1rem; padding-bottom:1rem; }
+.language-switch { display:flex; flex-wrap:wrap; align-items:center; gap:.5rem; }
+.language-switch > span { font-weight:700; margin-inline-end:.5rem; }
+.language-switch a { display:inline-block; padding:.45rem .85rem; border:1px solid var(--border); border-radius:999px; background:var(--surface); color:var(--text); text-decoration:none; }
+.language-switch a[aria-current="page"] { background:#FFB52B; color:#12161D; border-color:#FFB52B; font-weight:700; }
+.translation-note { margin:.8rem 0 0; padding:.8rem 1rem; border-inline-start:3px solid var(--amber); color:var(--muted); font-size:.9rem; max-width:90ch; }
+html[lang="ar"] body { font-family:Tahoma,Arial,sans-serif; }
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3 { font-family:Tahoma,Arial,sans-serif; line-height:1.55; }
+html[dir="rtl"] .brand,html[dir="rtl"] .choice-price { direction:ltr; unicode-bidi:isolate; }
+html[dir="rtl"] .choice-explain ol,html[dir="rtl"] .choice-plan ul { padding-right:1.25rem; padding-left:0; }
+html[dir="rtl"] .choice-comparison caption,html[dir="rtl"] th,html[dir="rtl"] td { text-align:right; }
+html[dir="rtl"] .breadcrumbs li + li::before { content:'‹'; margin-left:.5rem; margin-right:0; }
+html[lang="zh-Hans"] .prose { line-height:1.9; }
+html[lang="ar"] .prose,html[lang="zh-Hans"] .prose { max-width:900px; }
+html[lang="ar"] .choice-story .prose,html[lang="zh-Hans"] .choice-story .prose { max-width:none; }

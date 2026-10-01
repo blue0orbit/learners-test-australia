@@ -343,6 +343,9 @@ class Page:
     llms_title: str | None = None
     llms_note: str | None = None  # one-line description for llms.txt
     article: dict | None = None  # published/modified times for og:article
+    language: str = "en"
+    alternates: dict = field(default_factory=dict)
+    blog_paths: list = field(default_factory=list)
 
     @property
     def depth(self) -> int:
@@ -468,7 +471,7 @@ def render(page: Page) -> str:
             f'<meta property="article:author" content="{DEVELOPER}">\n'
         )
     head = f"""<!doctype html>
-<html lang="en">
+<html lang="{p.language}" dir="{'rtl' if p.language == 'ar' else 'ltr'}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -506,6 +509,9 @@ def render(page: Page) -> str:
 <a class="skip-link" href="#main">Skip to main content</a>
 """
     out = head + header_html(p) + '\n<main id="main" tabindex="-1">\n' + p.body + "\n</main>\n" + footer_html() + "\n</body>\n</html>\n"
+    if p.alternates:
+        from blog_i18n import finish_html
+        out = finish_html(out, p)
     return relink(out, p)
 
 

@@ -27,7 +27,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 def all_pages() -> list[Page]:
     posts = [f() for f in pages_blog.POSTS]
-    return [
+    pages = [
         pages_core.home(),
         pages_core.features(),
         pages_core.states(),
@@ -50,6 +50,11 @@ def all_pages() -> list[Page]:
         pages_legal.account_deletion(),
         pages_core.not_found(),
     ]
+    from blog_i18n import variants
+    blog_paths = [p.path for p in pages if p.path.startswith('blog/')]
+    for p in pages:
+        p.blog_paths = blog_paths
+    return variants(pages)
 
 
 # ── HTML → plain text for llms-full.txt ──────────────────────────────────────────────────────
