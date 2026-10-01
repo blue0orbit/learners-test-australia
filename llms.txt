@@ -24,7 +24,7 @@ Key facts (checked 30 September 2026):
 ## The app
 
 - [Home](https://blue0orbit.github.io/learners-test-australia/): What the app is, the tests it covers in all eight states and territories, pricing (free practice, one-time A$5.99 Premium) and how questions are written.
-- [Features](https://blue0orbit.github.io/learners-test-australia/features.html): Feature tour: test formats for all eight states and territories, explained answers with sources, daily plan, mock tests, progress, hazard perception, languages, offline.
+- [Features](https://blue0orbit.github.io/learners-test-australia/features.html): Feature tour: test formats for all eight states and territories, explained answers with sources, daily plan, mock tests, progress, 72 real-time 3D hazard perception clips, languages, offline.
 - [FAQ](https://blue0orbit.github.io/learners-test-australia/faq.html): 24 questions and answers: independence, states, price and Premium, account and deletion, languages, offline, accuracy.
 - [About and content process](https://blue0orbit.github.io/learners-test-australia/about.html): Who makes the app (BlueOrbit), how questions are written and checked, handbook editions used, attribution.
 

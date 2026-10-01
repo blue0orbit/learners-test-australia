@@ -206,7 +206,7 @@ def price_table() -> str:
 <tr><th scope="row">Mock tests</th><td>1 a day, plus another for each short ad you choose to watch</td><td class="yes">Unlimited</td></tr>
 <tr><th scope="row">Ads</th><td>Banner ads on results and guide pages</td><td class="yes">No ads</td></tr>
 <tr><th scope="row">Section forecasts, weak spots and review planner</th><td class="no">No</td><td class="yes">Yes</td></tr>
-<tr><th scope="row">Hazard perception practice</th><td>Sample scenes</td><td class="yes">All scenes</td></tr>
+<tr><th scope="row">Hazard perception practice</th><td>Sample 3D clips and scenes</td><td class="yes">All 72 clips and every scene</td></tr>
 <tr><th scope="row">Price</th><td>Free</td><td>{PRICE} once. No subscription.</td></tr>
 </tbody></table></div>"""
 
@@ -220,8 +220,8 @@ FEATURES_GRID = [
      "A quick check, reviews due, mistakes to fix and new questions, paced to your test date. Spaced repetition brings questions back just before you'd forget them."),
     ("chart", "Progress and pass chance",
      "See how much you've covered, your weakest topic and an estimated pass chance based on your recent answers. It is an estimate, not a guarantee."),
-    ("eye", "Hazard perception practice",
-     "Still traffic scenes where you tap the hazard, plus a guide to your state's hazard perception test."),
+    ("eye", "Hazard perception clips",
+     "Real-time 3D driving clips from the driver's seat: tap when it is safe to turn, move off, overtake or change lanes. Plus still scenes and a guide to your state's test."),
     ("globe", "Five languages",
      f"Menus, questions and explanations in {LANGS}. Arabic reads right to left. Tasmanian, ACT and NT questions are "
      "in English for now."),
@@ -505,12 +505,16 @@ def features() -> Page:
 <div class="two-col" style="align-items:center">
   <div class="prose">
     <h2 id="f6">Hazard perception practice</h2>
-    <p>Hazard perception is about spotting risks early. The app has illustrated traffic scenes, drawn from above,
-    where you tap the hazard you should be ready for and then read why. A few sample scenes are free, and Premium
-    unlocks the full set.</p>
-    <p>Each state's licence guide also explains where its hazard perception test fits on the way to your P plates
-    (the Northern Territory has no separate test: hazards are assessed in the practical driving test).
-    The scenes are still images for practice; they are not a copy of any official test.
+    <p>Hazard perception is about spotting risks early. The app plays 72 short driving clips in real-time 3D, seen
+    from the driver's seat: you are told what you want to do (turn right, move off, overtake, change lanes or slow
+    down) and tap when it becomes safe, in the same style as the hazard perception tests. Clips cover suburban
+    streets, traffic lights, roundabouts, school zones, country roads with kangaroos and road trains, freeways,
+    level crossings and Melbourne trams, by day, at dusk, at night and in the rain. Afterwards a timeline shows when
+    it was safe and when you tapped, with the road rule explained, and you can watch the clip again.</p>
+    <p>There are also illustrated still scenes where you tap the hazard. A few clips and scenes are free, and Premium
+    unlocks them all. Each state's licence guide explains where its hazard perception test fits on the way to your
+    P plates (the Northern Territory has no separate test: hazards are assessed in the practical driving test).
+    The clips and scenes are original practice material, not a copy of any official test.
     <a href="@/blog/hazard-perception-test-nsw-vic-qld.html">Read our hazard perception guide</a>.</p>
   </div>
   {mock_hazard()}
@@ -549,14 +553,14 @@ def features() -> Page:
         path="features.html",
         title="Learner Driver App Features | Learners Test Australia",
         description=("Tour the Learners Test Australia app: mock tests for all 8 states, explained answers with sources, a "
-                     "daily plan, pass-chance estimate and hazard scenes."),
+                     "daily plan, pass-chance estimate and 3D hazard clips."),
         body=body,
         nav="features",
         crumbs=crumbs,
         priority="0.9",
         llms=True,
         llms_title="Features",
-        llms_note="Feature tour: test formats for all eight states and territories, explained answers with sources, daily plan, mock tests, progress, hazard perception, languages, offline.",
+        llms_note="Feature tour: test formats for all eight states and territories, explained answers with sources, daily plan, mock tests, progress, 72 real-time 3D hazard perception clips, languages, offline.",
     )
 
 
@@ -651,7 +655,7 @@ FAQ_GROUPS = [
          "learner's theory test (8 give-way questions, all must be right, then 42, pass 32) and myLs test (30 questions, "
          "pass 27), a 30-question Western Australian practice test, the Tasmanian online driver knowledge test (30 "
          "questions, pass 27), a 35-question ACT practice test (pass line 31) and the Northern Territory driver knowledge "
-         "test (30 questions, pass 26). There is also hazard perception practice with still traffic scenes.</p>"),
+         "test (30 questions, pass 26). There is also hazard perception practice with real-time 3D driving clips and still scenes.</p>"),
     ]),
     ("Price and Premium", [
         ("Is the app free?",
@@ -659,7 +663,7 @@ FAQ_GROUPS = [
          "another each time they choose to watch a short ad. The free version shows banner ads on results and guide pages.</p>"),
         ("What does Premium include, and how much is it?",
          f"<p>Premium is a one-time purchase of {PRICE}. It removes ads and adds unlimited mock tests, section forecasts, "
-         "weak spots and a review planner, and the full set of hazard perception scenes. It covers every state. Every practice "
+         "weak spots and a review planner, and all the hazard perception clips and scenes. It covers every state. Every practice "
          "question stays free for everyone.</p>"),
         ("Is Premium a subscription?",
          "<p>No. Premium is a lifetime purchase: there are no subscriptions or renewals. It belongs to the Google account "
@@ -707,9 +711,10 @@ FAQ_GROUPS = [
          "<p>After you've answered enough questions, the app estimates your chance of passing from your recent answers. It "
          "is an estimate, not a guarantee. Premium adds a forecast for each section of the test.</p>"),
         ("Does the app include hazard perception practice?",
-         "<p>Yes. There are illustrated traffic scenes where you tap the hazard, plus a guide to your state's hazard "
-         "perception test (the Northern Territory has none; hazards are assessed in its practical driving test). A few "
-         "sample scenes are free and Premium unlocks the full set. The scenes are for practice and "
+         "<p>Yes. There are 72 real-time 3D driving clips where you tap when it is safe to act, in the same style as the "
+         "hazard perception tests, plus illustrated still scenes and a guide to your state's hazard perception test (the "
+         "Northern Territory has none; hazards are assessed in its practical driving test). A few clips and scenes are "
+         "free and Premium unlocks them all. They are original practice material and "
          'are not a copy of any official test. See our <a href="@/blog/hazard-perception-test-nsw-vic-qld.html">hazard '
          "perception guide</a>.</p>"),
     ]),

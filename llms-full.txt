@@ -129,9 +129,9 @@ A quick check, reviews due, mistakes to fix and new questions, paced to your tes
 
 See how much you've covered, your weakest topic and an estimated pass chance based on your recent answers. It is an estimate, not a guarantee.
 
-### Hazard perception practice
+### Hazard perception clips
 
-Still traffic scenes where you tap the hazard, plus a guide to your state's hazard perception test.
+Real-time 3D driving clips from the driver's seat: tap when it is safe to turn, move off, overtake or change lanes. Plus still scenes and a guide to your state's test.
 
 ### Five languages
 
@@ -192,7 +192,7 @@ What is free and what Premium adds
 | Mock tests | 1 a day, plus another for each short ad you choose to watch | Unlimited |
 | Ads | Banner ads on results and guide pages | No ads |
 | Section forecasts, weak spots and review planner | No | Yes |
-| Hazard perception practice | Sample scenes | All scenes |
+| Hazard perception practice | Sample 3D clips and scenes | All 72 clips and every scene |
 | Price | Free | A$5.99 once. No subscription. |
 
 Refunds follow Google Play's refund policy and your rights under the Australian Consumer Law. See the FAQ (https://blue0orbit.github.io/learners-test-australia/faq.html) for more.
@@ -326,9 +326,9 @@ Here the road safety forecast sits just under its pass line, so that's where to 
 
 ## Hazard perception practice
 
-Hazard perception is about spotting risks early. The app has illustrated traffic scenes, drawn from above, where you tap the hazard you should be ready for and then read why. A few sample scenes are free, and Premium unlocks the full set.
+Hazard perception is about spotting risks early. The app plays 72 short driving clips in real-time 3D, seen from the driver's seat: you are told what you want to do (turn right, move off, overtake, change lanes or slow down) and tap when it becomes safe, in the same style as the hazard perception tests. Clips cover suburban streets, traffic lights, roundabouts, school zones, country roads with kangaroos and road trains, freeways, level crossings and Melbourne trams, by day, at dusk, at night and in the rain. Afterwards a timeline shows when it was safe and when you tapped, with the road rule explained, and you can watch the clip again.
 
-Each state's licence guide also explains where its hazard perception test fits on the way to your P plates (the Northern Territory has no separate test: hazards are assessed in the practical driving test). The scenes are still images for practice; they are not a copy of any official test. Read our hazard perception guide (https://blue0orbit.github.io/learners-test-australia/blog/hazard-perception-test-nsw-vic-qld.html).
+There are also illustrated still scenes where you tap the hazard. A few clips and scenes are free, and Premium unlocks them all. Each state's licence guide explains where its hazard perception test fits on the way to your P plates (the Northern Territory has no separate test: hazards are assessed in the practical driving test). The clips and scenes are original practice material, not a copy of any official test. Read our hazard perception guide (https://blue0orbit.github.io/learners-test-australia/blog/hazard-perception-test-nsw-vic-qld.html).
 
 Illustration of a hazard perception scene: a person waiting between parked cars could step into the road.
 
@@ -381,7 +381,7 @@ What is free and what Premium adds
 | Mock tests | 1 a day, plus another for each short ad you choose to watch | Unlimited |
 | Ads | Banner ads on results and guide pages | No ads |
 | Section forecasts, weak spots and review planner | No | Yes |
-| Hazard perception practice | Sample scenes | All scenes |
+| Hazard perception practice | Sample 3D clips and scenes | All 72 clips and every scene |
 | Price | Free | A$5.99 once. No subscription. |
 
 Questions about paying, restoring a purchase or refunds? See the FAQ (https://blue0orbit.github.io/learners-test-australia/faq.html).
@@ -1385,7 +1385,7 @@ All eight: New South Wales, Victoria, Queensland, South Australia, Western Austr
 
 ### Which tests can I practise?
 
-The NSW Driver Knowledge Test (45 questions: 15 general knowledge, pass 12, and 30 road safety, pass 29), the Victorian learner permit test (32 questions, pass 25), the Queensland written road rules test (10 giving way, pass 9, and 20 road rules, pass 18) and PrepL final test (30 questions, pass 27), the South Australian learner's theory test (8 give-way questions, all must be right, then 42, pass 32) and myLs test (30 questions, pass 27), a 30-question Western Australian practice test, the Tasmanian online driver knowledge test (30 questions, pass 27), a 35-question ACT practice test (pass line 31) and the Northern Territory driver knowledge test (30 questions, pass 26). There is also hazard perception practice with still traffic scenes.
+The NSW Driver Knowledge Test (45 questions: 15 general knowledge, pass 12, and 30 road safety, pass 29), the Victorian learner permit test (32 questions, pass 25), the Queensland written road rules test (10 giving way, pass 9, and 20 road rules, pass 18) and PrepL final test (30 questions, pass 27), the South Australian learner's theory test (8 give-way questions, all must be right, then 42, pass 32) and myLs test (30 questions, pass 27), a 30-question Western Australian practice test, the Tasmanian online driver knowledge test (30 questions, pass 27), a 35-question ACT practice test (pass line 31) and the Northern Territory driver knowledge test (30 questions, pass 26). There is also hazard perception practice with real-time 3D driving clips and still scenes.
 
 ## Price and Premium
 
@@ -1395,7 +1395,7 @@ Yes. It is free to download and every practice question is free. Free learners g
 
 ### What does Premium include, and how much is it?
 
-Premium is a one-time purchase of A$5.99. It removes ads and adds unlimited mock tests, section forecasts, weak spots and a review planner, and the full set of hazard perception scenes. It covers every state. Every practice question stays free for everyone.
+Premium is a one-time purchase of A$5.99. It removes ads and adds unlimited mock tests, section forecasts, weak spots and a review planner, and all the hazard perception clips and scenes. It covers every state. Every practice question stays free for everyone.
 
 ### Is Premium a subscription?
 
@@ -1451,7 +1451,7 @@ After you've answered enough questions, the app estimates your chance of passing
 
 ### Does the app include hazard perception practice?
 
-Yes. There are illustrated traffic scenes where you tap the hazard, plus a guide to your state's hazard perception test (the Northern Territory has none; hazards are assessed in its practical driving test). A few sample scenes are free and Premium unlocks the full set. The scenes are for practice and are not a copy of any official test. See our hazard perception guide (https://blue0orbit.github.io/learners-test-australia/blog/hazard-perception-test-nsw-vic-qld.html).
+Yes. There are 72 real-time 3D driving clips where you tap when it is safe to act, in the same style as the hazard perception tests, plus illustrated still scenes and a guide to your state's hazard perception test (the Northern Territory has none; hazards are assessed in its practical driving test). A few clips and scenes are free and Premium unlocks them all. They are original practice material and are not a copy of any official test. See our hazard perception guide (https://blue0orbit.github.io/learners-test-australia/blog/hazard-perception-test-nsw-vic-qld.html).
 
 ## Questions and accuracy
 
