@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "nsw-driver-knowledge-test-explained",
+    "alt": "Yellow learner plate and study notebook overlooking Sydney Harbour",
+    "prompt": "Use case: illustration-story. Create one polished editorial blog cover, wide 1200:630 composition, restrained warm cream, charcoal and learner-yellow palette, textured contemporary illustration, clear visual hierarchy, generous breathing room. No logos, watermarks, headings or readable text other than the letter L on a learner plate. Scene: A yellow learner L plate beside an open unlettered study notebook and pencil, with distant Sydney harbour skyline through a window.",
+    "source": "output/blog-image-originals/nsw-driver-knowledge-test-explained.png"
+  },
+  {
+    "slug": "victorian-learner-permit-test-explained",
+    "alt": "Learner plate and handbook with a Melbourne tram in the background",
+    "prompt": "Use case: illustration-story. Create one polished editorial blog cover, wide 1200:630 composition, restrained warm cream, charcoal and learner-yellow palette, textured contemporary illustration, clear visual hierarchy, generous breathing room. No logos, watermarks, headings or readable text other than the letter L on a learner plate. Scene: A yellow learner L plate and open unlettered handbook on a desk, Melbourne tram and city architecture softly visible through a window.",
+    "source": "output/blog-image-originals/victorian-learner-permit-test-explained.png"
+  },
+  {
+    "slug": "qld-written-road-rules-test-vs-prepl",
+    "alt": "Paper study notes and online learning laptop beside a learner plate",
+    "prompt": "Use case: illustration-story. Create one polished editorial blog cover, wide 1200:630 composition, restrained warm cream, charcoal and learner-yellow palette, textured contemporary illustration, clear visual hierarchy, generous breathing room. No logos, watermarks, headings or readable text other than the letter L on a learner plate. Scene: A tidy Queensland study desk with two equal choices: an unlettered paper quiz notebook and a laptop displaying abstract learning blocks, yellow L plate between them, subtropical foliage outdoors.",
+    "source": "output/blog-image-originals/qld-written-road-rules-test-vs-prepl.png"
+  },
+  {
+    "slug": "give-way-rules-for-learner-drivers",
+    "alt": "Give way sign, learner plate and miniature car",
+    "prompt": "Use case: illustration-story. Create one polished editorial blog cover, wide 1200:630 composition, restrained warm cream, charcoal and learner-yellow palette, textured contemporary illustration, clear visual hierarchy, generous breathing room. No logos, watermarks, headings or readable text other than the letter L on a learner plate. Scene: Conceptual still life of a red edged inverted triangular give-way sign silhouette, yellow L plate and miniature stationary car on a clean desk. No intersection diagrams and no implied traffic instruction.",
+    "source": "output/blog-image-originals/give-way-rules-for-learner-drivers.png"
+  },
+  {
+    "slug": "how-to-use-mock-tests-and-mistakes",
+    "alt": "Mock test study notebook, pencil, timer and learner plate",
+    "prompt": "Use case: illustration-story. Create one polished editorial blog cover, wide 1200:630 composition, restrained warm cream, charcoal and learner-yellow palette, textured contemporary illustration, clear visual hierarchy, generous breathing room. No logos, watermarks, headings or readable text other than the letter L on a learner plate. Scene: Overhead study desk with open notebook showing abstract checkmarks and correction marks, pencil, timer and yellow L plate, clear deliberate study atmosphere.",
+    "source": "output/blog-image-originals/how-to-use-mock-tests-and-mistakes.png"
+  },
+  {
+    "slug": "hazard-perception-test-nsw-vic-qld",
+    "alt": "View from a parked car toward a suburban street with a pedestrian and cyclist",
+    "prompt": "Use case: illustration-story. Create one polished editorial blog cover, wide 1200:630 composition, restrained warm cream, charcoal and learner-yellow palette, textured contemporary illustration, clear visual hierarchy, generous breathing room. No logos, watermarks, headings or readable text other than the letter L on a learner plate. Scene: View through a parked right-hand-drive car windscreen toward a quiet Australian suburban street, a pedestrian safely on the pavement and distant cyclist, subtle warm highlights drawing attention to the environment, no dangerous manoeuvres.",
+    "source": "output/blog-image-originals/hazard-perception-test-nsw-vic-qld.png"
+  },
+  {
+    "slug": "why-choose-learners-test-australia",
+    "alt": "Learner plate, phone with illustrative quiz cards, and study checklist on a desk",
+    "prompt": "Use case: illustration-story. Asset: editorial blog cover for 'Why choose Learners Test Australia?'. Wide 1200:630 composition. Warm cream, charcoal and learner-yellow palette, textured contemporary editorial illustration matching a learner-driver study series. A yellow L plate beside a smartphone with abstract unlettered quiz cards, a notebook with simple check marks and pencil on a tidy sunlit Australian study desk. Focus on learning, explanations and organised practice. Phone is a conceptual illustration, not a real product screenshot. No trophies, stars, rankings, competitor logos, badges, readable UI text or watermark. Only readable letter is L on the learner plate.",
+    "source": "output/blog-image-originals/why-choose-learners-test-australia.png"
+  }
+]

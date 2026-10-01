@@ -334,6 +334,8 @@ class Page:
     crumbs: list[tuple[str, str]] = field(default_factory=list)  # [(name, path)], path "" = home
     jsonld: list[dict] = field(default_factory=list)
     og_type: str = "website"
+    image_path: str = "assets/img/og-image.png"
+    image_alt: str = "Learners Test Australia logo and tagline"
     noindex: bool = False
     priority: str = "0.6"
     changefreq: str = "monthly"
@@ -448,8 +450,8 @@ def footer_html() -> str:
 
 def render(page: Page) -> str:
     p = page
-    robots = "noindex,follow" if p.noindex else "index,follow"
-    og_img = BASE + "assets/img/og-image.png"
+    robots = "noindex,follow" if p.noindex else "index,follow,max-image-preview:large"
+    og_img = BASE + p.image_path
     ld_nodes = list(p.jsonld)
     if p.crumbs and len(p.crumbs) > 1:
         ld_nodes.append(breadcrumb_ld(p.crumbs))
@@ -491,12 +493,12 @@ def render(page: Page) -> str:
 <meta property="og:image" content="{og_img}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Learners Test Australia logo, a yellow learner plate with a black L, and the words: learner test practice for every state and territory">
+<meta property="og:image:alt" content="{esc(p.image_alt)}">
 {article_meta}<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{esc(p.title)}">
 <meta name="twitter:description" content="{esc(p.description)}">
 <meta name="twitter:image" content="{og_img}">
-<meta name="twitter:image:alt" content="Learners Test Australia logo and tagline">
+<meta name="twitter:image:alt" content="{esc(p.image_alt)}">
 <script>document.documentElement.classList.add('js')</script>
 <script src="@/assets/js/site.js" defer></script>
 {ld_html}</head>

@@ -21,6 +21,7 @@ Language keywords (the app supports them; the site is English): learner test app
 | `nt-learners-test-practice.html` | NT learners test practice | NT driver knowledge test, NT theory test, NT learner licence, MVR knowledge test | NT Learners Test Practice \| Learners Test Australia |
 | `faq.html` | learner test app FAQ | is the learner test app official, delete learner app account, learner test app offline, learner test app languages | Learner Test App FAQ \| Learners Test Australia |
 | `blog/index.html` | learner driver guides | learner test tips, road rules guides, L plates guide | Learner Driver Guides \| Learners Test Australia |
+| `blog/why-choose-learners-test-australia.html` | learner test app | compare learner test apps, Learners Test Australia, Android learner test practice | Why Choose Our Learner Test App? \| Learners Test Australia |
 | `blog/nsw-driver-knowledge-test-explained.html` | NSW Driver Knowledge Test | DKT format, DKT online, Road User Handbook, NSW learner licence rules | NSW Driver Knowledge Test Guide \| Learners Test Australia |
 | `blog/victorian-learner-permit-test-explained.html` | Victorian learner permit test | VIC LPT, learner permit course online, hook turns, VicRoads test languages | VIC Learner Permit Test Explained \| Learners Test Australia |
 | `blog/qld-written-road-rules-test-vs-prepl.html` | QLD written road rules test vs PrepL | PrepL cost, PrepL final test pass mark, Queensland learner licence | QLD Road Rules Test vs PrepL \| Learners Test Australia |

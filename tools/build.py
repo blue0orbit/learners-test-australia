@@ -170,7 +170,7 @@ def sitemap_xml(pages: list[Page]) -> str:
         if p.noindex:
             continue
         rows.append(
-            f"  <url>\n    <loc>{p.canonical}</loc>\n    <lastmod>{DATE}</lastmod>\n"
+            f"  <url>\n    <loc>{p.canonical}</loc>\n    <lastmod>{p.article['modified'][:10] if p.article else ('2026-10-01' if p.path == 'blog/index.html' else DATE)}</lastmod>\n"
             f"    <changefreq>{p.changefreq}</changefreq>\n    <priority>{p.priority}</priority>\n  </url>"
         )
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -269,6 +269,7 @@ def favicon_svg() -> str:
 
 # ── SEO keyword map (written to SEO.md) ───────────────────────────────────────────────────────
 KEYWORDS = {
+    "blog/why-choose-learners-test-australia.html": ("learner test app", ["compare learner test apps", "Learners Test Australia", "Android learner test practice"]),
     "index.html": ("learners test", ["learner test practice", "learner driver app Australia", "DKT practice test", "learners permit test", "road rules test Australia", "L plates"]),
     "features.html": ("learner driver app features", ["mock test", "explained answers", "road signs quiz", "hazard perception practice", "learner test app in Chinese, Arabic, Vietnamese, Spanish"]),
     "states.html": ("learner test by state", ["road rules test Australia", "NSW DKT", "VIC learner permit test", "QLD written road rules test", "SA learners test", "WA learners test", "TAS learners test", "ACT learners test", "NT learners test", "learners permit test"]),

@@ -3,6 +3,11 @@
 Every road-rule or test fact in these posts comes from content-src/coverage/{nsw,vic,qld}.md in the app
 repository, checked on 30 September 2026. Posts are written in our own words; no official wording is copied.
 """
+import json
+from pathlib import Path
+
+BLOG_IMAGES = {item['slug']: item for item in json.loads((Path(__file__).parent / 'blog-images.json').read_text(encoding='utf-8'))}
+
 from sitelib import (
     BASE, DATE, DATE_H, DEVELOPER, SITE_NAME, SRC, Page, chip, esc, organization, page_head, source_box,
     strip_tags, words,
@@ -11,11 +16,11 @@ from sitelib import (
 BLOG_CRUMB = ("Guides", "blog/")
 
 
-def byline(body_html: str) -> str:
+def byline(body_html: str, date: str = DATE, date_h: str = DATE_H) -> str:
     mins = max(1, round(words(body_html) / 220))
     return (
-        f'<p class="meta">By <a href="@/about.html">{DEVELOPER}</a> · Published <time datetime="{DATE}">{DATE_H}</time> · '
-        f"Last updated: <time datetime=\"{DATE}\">{DATE_H}</time> · {mins} min read</p>"
+        f'<p class="meta">By <a href="@/about.html">{DEVELOPER}</a> · Published <time datetime="{date}">{date_h}</time> · '
+        f"Last updated: <time datetime=\"{date}\">{date_h}</time> · {mins} min read</p>"
     )
 
 
@@ -26,8 +31,11 @@ def toc(items: list[tuple[str, str]]) -> str:
 
 def post(slug: str, title: str, h1: str, description: str, summary: str, sections: list[tuple[str, str, str]],
          sources: list[tuple[str, str]], section_name: str, keywords: list[str], llms_note: str,
-         related: list[tuple[str, str]]) -> Page:
+         related: list[tuple[str, str]], date: str = DATE, date_h: str = DATE_H,
+         source_html: str | None = None, image_caption: str = "Illustration for this guide; not an official test image or road-rule diagram.") -> Page:
     path = f"blog/{slug}.html"
+    image_path = f"assets/img/blog/{slug}.webp"
+    image_alt = BLOG_IMAGES[slug]['alt']
     crumbs = [("Home", ""), BLOG_CRUMB, (h1, path)]
     content = "".join(f'<h2 id="{sid}">{esc(t)}</h2>{html}' for sid, t, html in sections)
     rel = "".join(f'<li><a href="@/{p}">{esc(t)}</a></li>' for t, p in related)
@@ -36,11 +44,12 @@ def post(slug: str, title: str, h1: str, description: str, summary: str, section
         + toc([(sid, t) for sid, t, _ in sections])
         + content
     )
-    body = page_head(h1, None, crumbs, meta_html=byline(article_html), eyebrow=f'<span class="tag">{esc(section_name)}</span>') + f"""
+    body = page_head(h1, None, crumbs, meta_html=byline(article_html, date, date_h), eyebrow=f'<span class="tag">{esc(section_name)}</span>') + f"""
 <div class="content"><div class="container two-col">
 <article class="prose">
+<figure class="blog-cover"><img src="@/{image_path}" width="1200" height="630" alt="{esc(image_alt)}" fetchpriority="high" decoding="async"><figcaption>{esc(image_caption)}</figcaption></figure>
 {article_html}
-{source_box(sources)}
+{source_html if source_html is not None else source_box(sources)}
 </article>
 <aside><div class="card aside-card"><h2>Related</h2><ul>{rel}</ul></div></aside>
 </div></div>"""
@@ -49,11 +58,11 @@ def post(slug: str, title: str, h1: str, description: str, summary: str, section
         "@type": "BlogPosting",
         "headline": h1,
         "description": description,
-        "datePublished": DATE,
-        "dateModified": DATE,
+        "datePublished": date,
+        "dateModified": date,
         "author": {"@type": "Organization", "name": DEVELOPER, "url": BASE + "about.html"},
         "publisher": organization(full=False),
-        "image": {"@type": "ImageObject", "url": BASE + "assets/img/og-image.png", "width": 1200, "height": 630},
+        "image": {"@type": "ImageObject", "url": BASE + image_path, "width": 1200, "height": 630},
         "mainEntityOfPage": {"@type": "WebPage", "@id": BASE + path},
         "url": BASE + path,
         "inLanguage": "en-AU",
@@ -64,8 +73,8 @@ def post(slug: str, title: str, h1: str, description: str, summary: str, section
     }
     return Page(
         path=path, title=title, description=description, body=body, nav="blog", crumbs=crumbs, jsonld=[ld],
-        og_type="article", priority="0.7", llms=True, llms_title=h1, llms_note=llms_note,
-        article={"published": DATE + "T09:00:00+10:00", "modified": DATE + "T09:00:00+10:00"},
+        og_type="article", image_path=image_path, image_alt=image_alt, priority="0.7", llms=True, llms_title=h1, llms_note=llms_note,
+        article={"published": date + "T09:00:00+10:00", "modified": date + "T09:00:00+10:00"},
     )
 
 
@@ -723,7 +732,12 @@ knowledge test side, see our <a href="@/blog/how-to-use-mock-tests-and-mistakes.
     )
 
 
-POSTS = [post_nsw, post_vic, post_qld, post_give_way, post_mocks, post_hpt]
+def post_choose() -> Page:
+    from post_choose import create_post
+    return create_post(post)
+
+
+POSTS = [post_choose, post_nsw, post_vic, post_qld, post_give_way, post_mocks, post_hpt]
 
 
 def blog_index(posts: list[Page]) -> Page:
@@ -732,9 +746,9 @@ def blog_index(posts: list[Page]) -> Page:
     for p in posts:
         h1 = p.llms_title
         cards.append(
-            f'<article class="card post-card"><span class="tag">{esc(p.jsonld[0]["articleSection"])}</span>'
+            f'<article class="card post-card"><img class="post-cover" src="@/{p.image_path}" width="1200" height="630" alt="{esc(p.image_alt)}" loading="lazy" decoding="async"><span class="tag">{esc(p.jsonld[0]["articleSection"])}</span>'
             f'<h2><a href="@/{p.path}">{esc(h1)}</a></h2>'
-            f'<p class="post-meta">By {DEVELOPER} · <time datetime="{DATE}">{DATE_H}</time></p>'
+            f'<p class="post-meta">By {DEVELOPER} · <time datetime="{p.jsonld[0]["datePublished"]}">{p.jsonld[0]["datePublished"]}</time></p>'
             f"<p>{esc(p.description)}</p></article>"
         )
     body = page_head(
@@ -744,8 +758,8 @@ def blog_index(posts: list[Page]) -> Page:
         eyebrow="Guides",
     ) + f"""
 <div class="content"><div class="container">
-<p class="note">Every fact in these guides was checked against official sources on {DATE_H}, and each guide links to
-them. Rules change, so the official website is always the final word. For South Australia, Western Australia,
+<p class="note">Road-rule guides link to official sources; product guides link to our feature and support information.
+See each article for its date and scope. Rules change, so the official website is always the final word. For South Australia, Western Australia,
 Tasmania, the ACT and the Northern Territory, see each state's page under
 <a href="@/states.html">learner tests by state</a>.</p>
 <div class="post-list">{''.join(cards)}</div>
@@ -757,7 +771,7 @@ Tasmania, the ACT and the Northern Territory, see each state's page under
         "url": BASE + "blog/",
         "inLanguage": "en-AU",
         "publisher": organization(full=False),
-        "blogPost": [{"@type": "BlogPosting", "headline": p.llms_title, "url": BASE + p.path, "datePublished": DATE} for p in posts],
+        "blogPost": [{"@type": "BlogPosting", "headline": p.llms_title, "url": BASE + p.path, "datePublished": p.jsonld[0]["datePublished"]} for p in posts],
     }
     return Page(
         path="blog/index.html",

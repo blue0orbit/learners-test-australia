@@ -383,9 +383,15 @@ def main() -> int:
             counts[rel] = body_wc
             if not 800 <= body_wc <= 1500:
                 err(f"{rel}: post body has {body_wc} words (want 800-1500)")
-            for needle in ("Check the official source", "BlueOrbit", "30 September 2026"):
+            product_guide = rel == "blog/why-choose-learners-test-australia.html"
+            source_heading = "About this product guide" if product_guide else "Check the official source"
+            for needle in (source_heading, "BlueOrbit"):
                 if needle not in raw:
                     err(f"{rel}: missing '{needle}'")
+            if not re.search(r'Published <time datetime="\d{4}-\d{2}-\d{2}">', raw):
+                err(f"{rel}: missing dated publication byline")
+            if product_guide and "first-party product guide" not in raw:
+                err(f"{rel}: product guide must disclose first-party authorship")
         if rel in STATE_PAGES:
             m = re.search(r'<article class="prose">(.*?)<section class="callout light-cta"', raw, re.S)
             body_wc = len(re.sub(r"<[^>]+>", " ", m.group(1)).split()) if m else 0
