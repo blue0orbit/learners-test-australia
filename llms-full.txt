@@ -1479,7 +1479,7 @@ Choosing an app
 
 # Why choose Learners Test Australia for your learner test?
 
-By BlueOrbit (https://blue0orbit.github.io/learners-test-australia/about.html) · Published 1 October 2026 · Last updated: 1 October 2026 · 5 min read
+By BlueOrbit (https://blue0orbit.github.io/learners-test-australia/about.html) · Published 1 October 2026 · Last updated: 1 October 2026 · 6 min read
 
 Editorial illustration of app-based study, not a screenshot of the app.
 
@@ -1489,6 +1489,12 @@ Learners Test Australia brings state-specific questions, source-linked explanati
 
 ## What makes our approach worth choosing?
 
+8states & territories
+
+Freeevery practice question
+
+One-timeoptional Premium
+
 A useful learner test app should help you answer three questions: am I studying the right material, why did I get that question wrong, and what should I practise next? We built Learners Test Australia around those decisions. The aim is to make a short study session purposeful, whether you are starting from scratch or revisiting a weak topic.
 
 This is our explanation of the product we make, not an independent ranking of every app on Google Play. Our strongest case is the combination of features below. Use them as a checklist when comparing learner test apps, and choose the one that fits your state, device and way of learning.
@@ -1497,17 +1503,45 @@ Availability: our website currently lists the Android app as coming soon to Goog
 
 ## 1. Start with your state and test pathway
 
+NSWNew South Wales (https://blue0orbit.github.io/learners-test-australia/nsw-dkt-practice-test.html)VICVictoria (https://blue0orbit.github.io/learners-test-australia/vic-learner-permit-test-practice.html)QLDQueensland (https://blue0orbit.github.io/learners-test-australia/qld-learner-test-practice.html)SASouth Australia (https://blue0orbit.github.io/learners-test-australia/sa-learners-test-practice.html)WAWestern Australia (https://blue0orbit.github.io/learners-test-australia/wa-learners-test-practice.html)TASTasmania (https://blue0orbit.github.io/learners-test-australia/tas-learners-test-practice.html)ACTAustralian Capital Territory (https://blue0orbit.github.io/learners-test-australia/act-learners-test-practice.html)NTNorthern Territory (https://blue0orbit.github.io/learners-test-australia/nt-learners-test-practice.html)
+
 The app has profiles for all eight Australian states and territories. You can focus on the questions and licensing guidance relevant to where you are learning, rather than having to sort a mixed collection yourself. For a learner, that means a clearer starting point: select your state, look at its test information, and build your routine there.
 
 Our state guides (https://blue0orbit.github.io/learners-test-australia/states.html) explain the practice options and their scope. Test routes matter too: an online learning course and an in-person knowledge test are different experiences. App practice supplements your preparation; it does not complete a required official course or replace the licensing authority's instructions.
 
 ## 2. Understand the answer and check its source
 
+THE LEARNING EXPERIENCEIllustrative study flow
+
+01 / ANSWER
+
+### You missed a question.
+Now what?
+
+A result starts the review.
+
+Review this answer
+
+02 / UNDERSTAND
+
+### Turn the mistake into a lesson.
+
+- Read the explanationUnderstand the reason behind the answer.
+- Check the sourceFind the handbook page or road rule.
+- Practise it againRevisit the topic in your review.
+
+Conceptual explanation of the study flow, not a screenshot or a measured learning outcome.
+
 Every practice question includes an explanation and the handbook page or road rule it comes from. That gives you something useful to do after a wrong answer: read the reason, check the source and identify the detail you missed. A score alone cannot show whether you understood the rule or simply recognised an answer.
 
 Our questions are original practice material. They are not a copy of an official question bank, and we do not promise that you will see the same wording in your test. Read how we make and check our questions (https://blue0orbit.github.io/learners-test-australia/about.html) to understand the editorial process. If an explanation appears wrong, the support page (https://blue0orbit.github.io/learners-test-australia/contact.html) explains how to report it with the state, question and source.
 
 ## 3. Know what to practise next
+
+- 01Quick checkFind your starting point
+- 02ReviewRevisit questions due
+- 03Fix mistakesWork through explanations
+- 04PractiseTry new questions
 
 The daily plan brings together a quick check, reviews due, mistakes to revisit and new questions. Spaced review returns material to your study routine, so you have a reason to revisit a difficult topic instead of repeatedly starting another random test. It is a practical structure for learners who want a manageable next step.
 
@@ -1527,26 +1561,67 @@ The app supports English, Chinese, Arabic, Vietnamese and Spanish, with right-to
 
 ## 6. Keep core practice free, with optional Premium
 
+BUILD YOUR ROUTINE
+
+### Free practice
+
+A$0
+
+Core learning, included.
+
+- Every question + explanation
+- Daily plan, reviews and progress
+- 1 mock test a day
+- Extra mocks through optional ads
+- Sample hazard practice
+
+Includes ads.
+
+MORE ROOM TO PRACTISE
+
+### Premium
+
+A$5.99 once
+
+Everything in Free, plus:
+
+- Unlimited mock tests
+- No ads
+- Section forecasts + weak spots
+- Review planner
+- Full hazard-practice collection
+
+No subscription.
+
 Every practice question and its explanation is available free, along with the daily plan, reviews and progress. The free plan includes one mock test a day, with another available for each short ad you choose to watch. It also includes sample hazard-perception practice. Free use includes ads; it is not an ad-free plan.
 
 Premium is presented on our website as an optional one-time purchase, with no subscription. It removes ads and adds unlimited mock tests, section forecasts, weak spots, a review planner and the full hazard-practice collection. See the current Free and Premium comparison (https://blue0orbit.github.io/learners-test-australia/features.html#f8) for pricing and inclusions. Choose it for the extra tools and convenience if they suit your routine.
 
-## How to compare learner test apps fairly
+## Free or Premium? See the difference
 
-| What to check | Our approach |
-| Relevant coverage | Eight state and territory profiles; check your specific test route. |
-| Learning from mistakes | Explained answers, source references and review practice. |
-| Study structure | A daily plan, mock tests and progress feedback. |
-| Cost and limits | Free questions; daily free mock allowance; optional one-time Premium. |
-| Practical fit | Android, offline question practice after sign-in, and language coverage with stated exceptions. |
+Compare the two plans feature by feature. Both keep explained question practice at the centre of your preparation.
 
-Ask these same questions of any app you are considering. We have not tested every competing product, so this table describes our offering without assigning features, prices or weaknesses to other developers.
+Learners Test Australia: Free versus Premium
+
+| What you get | Free | Premium |
+| Every question + explanation | Included | Included |
+| Daily plan + reviews | Included | Included |
+| Mock tests | 1/day + optional ad extras | Unlimited |
+| Ads | Included | None |
+| Section forecasts + review planner | Not included | Included |
+| Hazard practice | Samples | Full collection |
+
+Comparing us with another app? Use this checklist.
+
+Check its state coverage, answer explanations, source references, offline limits and total cost. Check what is free before paying. We have not tested every store alternative; this comparison describes our own plans.
 
 ## Is Learners Test Australia right for you?
 
 Our app is a strong fit if you want explained practice for your state, a routine that includes revisiting mistakes, and a choice between free study and a one-time upgrade. It is Android-only at present, requires sign-in, and remains an independent study aid. Your licensing authority provides the official requirements.
 
 Start with the full feature tour (https://blue0orbit.github.io/learners-test-australia/features.html), then choose your state or territory (https://blue0orbit.github.io/learners-test-australia/states.html). You will be able to judge whether the coverage and study approach match what you need before deciding to use the app.
+
+Explore every feature ↗ (https://blue0orbit.github.io/learners-test-australia/features.html)Find your state (https://blue0orbit.github.io/learners-test-australia/states.html)
 
 ## About this product guide
 

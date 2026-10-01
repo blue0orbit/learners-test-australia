@@ -1,14 +1,15 @@
 """Product choice guide. Claims follow the site's feature and FAQ disclosures."""
+from choice_visuals import decorate_sections
 
 
 def create_post(post):
-    return post(
+    page = post(
         slug="why-choose-learners-test-australia",
         title="Why Choose Our Learner Test App? | Learners Test Australia",
         h1="Why choose Learners Test Australia for your learner test?",
         description="Compare what matters in a learner test app: state-specific practice, explained answers, daily reviews, offline study and optional one-time Premium.",
         summary="Learners Test Australia brings state-specific questions, source-linked explanations, daily reviews and mock tests into one Android study app. Choose it if you want to understand your mistakes and follow a clear practice routine, with every practice question available free and optional one-time Premium.",
-        sections=[
+        sections=decorate_sections([
             ("fit", "What makes our approach worth choosing?", """
 <p>A useful learner test app should help you answer three questions: am I studying the right material, why did I get
 that question wrong, and what should I practise next? We built Learners Test Australia around those decisions.
@@ -80,7 +81,7 @@ and remains an independent study aid. Your licensing authority provides the offi
 <p>Start with the <a href="@/features.html">full feature tour</a>, then choose your
 <a href="@/states.html">state or territory</a>. You will be able to judge whether the coverage and study approach
 match what you need before deciding to use the app.</p>"""),
-        ],
+        ]),
         sources=[], section_name="Choosing an app",
         keywords=["learner test app", "compare learner test apps", "Learners Test Australia", "Android learner test practice"],
         llms_note="Why choose the app: state profiles, source-linked explanations, daily reviews, free practice and optional one-time Premium; includes availability and feature limits, not a competitor ranking.",
@@ -92,3 +93,5 @@ match what you need before deciding to use the app.</p>"""),
 <a href="@/faq.html">FAQ</a> and <a href="@/about.html">content methodology</a>. Product information reviewed on
 1 October 2026. This is a first-party product guide, not an independent store comparison.</p></aside>''',
     )
+    page.body = page.body.replace('class="content"><div class="container two-col"', 'class="content choice-story"><div class="container choice-layout"')
+    return page
