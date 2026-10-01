@@ -2,7 +2,7 @@
 
 Checks
   links      every relative href/src resolves to a file (and #fragments to an id); no third-party resources
-  pages      one <title>, meta description, lang="en", exactly one <h1>, canonical, OG + Twitter tags, robots,
+  pages      one <title>, meta description, lang="en-AU", exactly one <h1>, canonical, OG + Twitter tags, robots,
              viewport, theme-color; unique titles (<= 60 chars) and descriptions (140-160 chars)
   structure  well-formed tags, unique ids, heading levels never skip downwards, <img> alt/width/height
   json-ld    every block parses; expected types per page; no ratings or reviews
@@ -24,8 +24,8 @@ from pathlib import Path
 from urllib.parse import unquote, urlparse
 
 ROOT = Path(__file__).resolve().parent.parent
-BASE = "https://blue0orbit.github.io/learners-test-australia/"
-BASE_PATH = "/learners-test-australia/"
+BASE = "https://learnertest.com/"
+BASE_PATH = "/"
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
 STATE_PAGES = (
     "nsw-dkt-practice-test.html", "vic-learner-permit-test-practice.html", "qld-learner-test-practice.html",
@@ -228,8 +228,8 @@ def main() -> int:
         if d in descs:
             err(f"{rel}: duplicate description with {descs[d]}")
         descs[d] = rel
-        if p.html_lang != "en":
-            err(f"{rel}: html lang is {p.html_lang!r}, expected 'en'")
+        if p.html_lang != "en-AU":
+            err(f"{rel}: html lang is {p.html_lang!r}, expected 'en-AU'")
         h1s = [h for h in p.headings if h[0] == 1]
         if len(h1s) != 1:
             err(f"{rel}: expected exactly one <h1>, found {len(h1s)}")

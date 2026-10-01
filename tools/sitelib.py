@@ -17,8 +17,10 @@ APP_NAME = "Learners Test Australia: DKT"
 PACKAGE = "com.blueorbit.learnerstestau"
 DEVELOPER = "BlueOrbit"
 EMAIL = "blue0orbit@gmail.com"
-BASE = "https://blue0orbit.github.io/learners-test-australia/"
-BASE_PATH = "/learners-test-australia/"
+BASE = "https://learnertest.com/"
+BASE_PATH = "/"
+# AdMob publisher id, published in app-ads.txt (it is public by design)
+ADMOB_PUBLISHER = "pub-1798960414758701"
 DATE = "2026-09-30"
 DATE_H = "30 September 2026"
 PRICE = "A$5.99"
@@ -468,7 +470,7 @@ def render(page: Page) -> str:
             f'<meta property="article:author" content="{DEVELOPER}">\n'
         )
     head = f"""<!doctype html>
-<html lang="en">
+<html lang="en-AU">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">

@@ -80,7 +80,7 @@ def privacy() -> Page:
 <p>We aim to reply within 5 business days.</p>
 
 <h2 id="website">This website</h2>
-<p>This section is about the website you are reading now (blue0orbit.github.io/learners-test-australia), not the app.</p>
+<p>This section is about the website you are reading now (learnertest.com), not the app.</p>
 <ul>
   <li><strong>No cookies.</strong> The website sets no cookies and stores nothing in your browser (no local storage or similar).</li>
   <li><strong>No analytics or trackers.</strong> There are no analytics, advertising, tracking pixels or social media widgets.</li>

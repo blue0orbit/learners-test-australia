@@ -19,7 +19,7 @@ import pages_core  # noqa: E402
 import pages_legal  # noqa: E402
 import pages_states  # noqa: E402
 from sitelib import (  # noqa: E402
-    APP_NAME, BASE, DATE, DATE_H, DEVELOPER, DISCLAIMER, EMAIL, PLATE_SVG, PRICE, SITE_NAME, Page, render,
+    ADMOB_PUBLISHER, APP_NAME, BASE, DATE, DATE_H, DEVELOPER, DISCLAIMER, EMAIL, PLATE_SVG, PRICE, SITE_NAME, Page, render,
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -151,8 +151,6 @@ def robots_txt() -> str:
     lines = [
         f"# robots.txt for the {SITE_NAME} website ({BASE})",
         "# All crawlers, including search engines and AI assistants, are welcome to read and cite this site.",
-        "# Note: crawlers only read robots.txt at the root of a host (https://blue0orbit.github.io/robots.txt).",
-        "# This copy documents the intended policy; submit the sitemap below in search consoles as well.",
         "",
         "User-agent: *",
         "Allow: /",
@@ -324,7 +322,7 @@ def seo_md(pages: list[Page]) -> str:
         "## Technical SEO checklist (verified by `tools/check_site.py`)",
         "",
         "- Unique `<title>` (≤ 60 characters) and meta description (140–160 characters) on every page.",
-        "- Canonical URL (absolute), Open Graph and Twitter card tags, `robots` meta, `lang=\"en\"`, viewport, theme colour.",
+        "- Canonical URL (absolute), Open Graph and Twitter card tags, `robots` meta, `lang=\"en-AU\"`, viewport, theme colour.",
         "- Exactly one H1 per page; breadcrumbs (visible and BreadcrumbList JSON-LD) on inner pages.",
         "- JSON-LD: Organization, WebSite and MobileApplication (home; no ratings or reviews), FAQPage (FAQ and state "
         "pages), BlogPosting (guides), Blog (guide index), BreadcrumbList (inner pages).",
@@ -332,13 +330,12 @@ def seo_md(pages: list[Page]) -> str:
         "and points to the sitemap; llms.txt and llms-full.txt for AI assistants.",
         "- No third-party requests; self-hosted fonts with the heading font preloaded; one stylesheet; one tiny script.",
         "",
-        "## Notes for the project-site setup",
+        "## Hosting notes",
         "",
-        "- GitHub Pages serves this site under `/learners-test-australia/`. Crawlers only read `robots.txt` at the host "
-        "root, so to make the robots policy effective, copy `robots.txt` to the root of a `blue0orbit.github.io` user "
-        "site (or move to a custom domain), and submit `sitemap.xml` in Google Search Console and Bing Webmaster Tools.",
-        "- `404.html` uses root-relative links (`/learners-test-australia/...`) because GitHub Pages serves it at any "
-        "missing path.",
+        "- GitHub Pages serves this site at the custom domain learnertest.com (the `CNAME` file); the old address "
+        "blue0orbit.github.io/learners-test-australia/ redirects here. The domain is registered at internet.bs and its DNS runs on Cloudflare (free plan, records set to DNS only).",
+        "- `robots.txt`, `sitemap.xml` and `app-ads.txt` (AdMob) sit at the domain root, where crawlers look for them.",
+        "- `404.html` uses root-relative links because GitHub Pages serves it at any missing path.",
     ]
     return "\n".join(out) + "\n"
 
@@ -355,6 +352,8 @@ def main() -> None:
     (ROOT / "llms-full.txt").write_text(llms_full_txt(pages), encoding="utf-8", newline="\n")
     (ROOT / "site.webmanifest").write_text(manifest(), encoding="utf-8", newline="\n")
     (ROOT / ".nojekyll").write_text("", encoding="utf-8")
+    (ROOT / "CNAME").write_text(BASE.split("//")[1].rstrip("/") + "\n", encoding="utf-8", newline="\n")
+    (ROOT / "app-ads.txt").write_text(f"google.com, {ADMOB_PUBLISHER}, DIRECT, f08c47fec0942fa0\n", encoding="utf-8", newline="\n")
     (ROOT / "assets" / "img" / "favicon.svg").write_text(favicon_svg(), encoding="utf-8", newline="\n")
     (ROOT / "SEO.md").write_text(seo_md(pages), encoding="utf-8", newline="\n")
     print(f"Built {len(pages)} pages into {ROOT}")

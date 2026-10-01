@@ -23,43 +23,43 @@ Key facts (checked 30 September 2026):
 
 ## The app
 
-- [Home](https://blue0orbit.github.io/learners-test-australia/): What the app is, the tests it covers in all eight states and territories, pricing (free practice, one-time A$5.99 Premium) and how questions are written.
-- [Features](https://blue0orbit.github.io/learners-test-australia/features.html): Feature tour: test formats for all eight states and territories, explained answers with sources, daily plan, mock tests, progress, 72 real-time 3D hazard perception clips, languages, offline.
-- [FAQ](https://blue0orbit.github.io/learners-test-australia/faq.html): 24 questions and answers: independence, states, price and Premium, account and deletion, languages, offline, accuracy.
-- [About and content process](https://blue0orbit.github.io/learners-test-australia/about.html): Who makes the app (BlueOrbit), how questions are written and checked, handbook editions used, attribution.
+- [Home](https://learnertest.com/): What the app is, the tests it covers in all eight states and territories, pricing (free practice, one-time A$5.99 Premium) and how questions are written.
+- [Features](https://learnertest.com/features.html): Feature tour: test formats for all eight states and territories, explained answers with sources, daily plan, mock tests, progress, 72 real-time 3D hazard perception clips, languages, offline.
+- [FAQ](https://learnertest.com/faq.html): 24 questions and answers: independence, states, price and Premium, account and deletion, languages, offline, accuracy.
+- [About and content process](https://learnertest.com/about.html): Who makes the app (BlueOrbit), how questions are written and checked, handbook editions used, attribution.
 
 ## Learner tests by state
 
-- [States](https://blue0orbit.github.io/learners-test-australia/states.html): Side-by-side comparison of the learner knowledge tests in all eight states and territories, with links to each state's page.
-- [NSW DKT practice test](https://blue0orbit.github.io/learners-test-australia/nsw-dkt-practice-test.html): NSW Driver Knowledge Test: 45 questions (15 general knowledge, pass 12; 30 road safety, pass 29), online DKT, ages, topics, next steps.
-- [VIC learner permit test practice](https://blue0orbit.github.io/learners-test-australia/vic-learner-permit-test-practice.html): Victorian learner permit test: online course (default) or 32-question in-person test (pass 25), languages, topics, VIC-only rules.
-- [QLD learner test practice](https://blue0orbit.github.io/learners-test-australia/qld-learner-test-practice.html): Queensland written road rules test (10 giving way, pass 9; 20 road rules, pass 18) and PrepL final test (30, pass 27), fees, topics, next steps.
-- [SA learners test practice](https://blue0orbit.github.io/learners-test-australia/sa-learners-test-practice.html): South Australian learner's theory test: in person (8 give-way questions, all correct, then 42, pass 32) or myLs online (30, pass 27), ages, SA rules, next steps.
-- [WA learners test practice](https://blue0orbit.github.io/learners-test-australia/wa-learners-test-practice.html): Western Australian learner's permit: theory test of 30 questions with 24 to pass (per independent guides), sat in person; age 16, supervisor, hours, HPT, red and green P plates, WA road rules.
-- [Tasmania learners test practice](https://blue0orbit.github.io/learners-test-australia/tas-learners-test-practice.html): Tasmanian driver knowledge test: free Plates Plus course and 30-question online test (pass 27, some multi-answer, no compulsory questions), standalone test, ages, TAS rules.
-- [ACT learners test practice](https://blue0orbit.github.io/learners-test-australia/act-learners-test-practice.html): ACT learner licence knowledge test: taken only at the end of an approved course (provider or school), 35 questions from a bank of 300+, at least 31 correct, age 15 years 9 months, ACT rules.
-- [NT learners test practice](https://blue0orbit.github.io/learners-test-australia/nt-learners-test-practice.html): Northern Territory driver knowledge test: 30 questions from a pool of 300+, pass 26, at an MVR office, from 16, no hazard perception test, NT rules and next steps.
+- [States](https://learnertest.com/states.html): Side-by-side comparison of the learner knowledge tests in all eight states and territories, with links to each state's page.
+- [NSW DKT practice test](https://learnertest.com/nsw-dkt-practice-test.html): NSW Driver Knowledge Test: 45 questions (15 general knowledge, pass 12; 30 road safety, pass 29), online DKT, ages, topics, next steps.
+- [VIC learner permit test practice](https://learnertest.com/vic-learner-permit-test-practice.html): Victorian learner permit test: online course (default) or 32-question in-person test (pass 25), languages, topics, VIC-only rules.
+- [QLD learner test practice](https://learnertest.com/qld-learner-test-practice.html): Queensland written road rules test (10 giving way, pass 9; 20 road rules, pass 18) and PrepL final test (30, pass 27), fees, topics, next steps.
+- [SA learners test practice](https://learnertest.com/sa-learners-test-practice.html): South Australian learner's theory test: in person (8 give-way questions, all correct, then 42, pass 32) or myLs online (30, pass 27), ages, SA rules, next steps.
+- [WA learners test practice](https://learnertest.com/wa-learners-test-practice.html): Western Australian learner's permit: theory test of 30 questions with 24 to pass (per independent guides), sat in person; age 16, supervisor, hours, HPT, red and green P plates, WA road rules.
+- [Tasmania learners test practice](https://learnertest.com/tas-learners-test-practice.html): Tasmanian driver knowledge test: free Plates Plus course and 30-question online test (pass 27, some multi-answer, no compulsory questions), standalone test, ages, TAS rules.
+- [ACT learners test practice](https://learnertest.com/act-learners-test-practice.html): ACT learner licence knowledge test: taken only at the end of an approved course (provider or school), 35 questions from a bank of 300+, at least 31 correct, age 15 years 9 months, ACT rules.
+- [NT learners test practice](https://learnertest.com/nt-learners-test-practice.html): Northern Territory driver knowledge test: 30 questions from a pool of 300+, pass 26, at an MVR office, from 16, no hazard perception test, NT rules and next steps.
 
 ## Guides
 
-- [Learner Driver Guides](https://blue0orbit.github.io/learners-test-australia/blog/): Index of the learner driver guides.
-- [Why choose Learners Test Australia for your learner test?](https://blue0orbit.github.io/learners-test-australia/blog/why-choose-learners-test-australia.html): Why choose the app: state profiles, source-linked explanations, daily reviews, free practice and optional one-time Premium; includes availability and feature limits, not a competitor ranking.
-- [How the NSW Driver Knowledge Test works](https://blue0orbit.github.io/learners-test-australia/blog/nsw-driver-knowledge-test-explained.html): Deep guide to the NSW DKT: format and mistake budget, DKT online, the Road User Handbook, common traps, learner licence rules.
-- [The Victorian learner permit test explained](https://blue0orbit.github.io/learners-test-australia/blog/victorian-learner-permit-test-explained.html): Deep guide to the Victorian learner permit test: online course, in-person 32-question test, documents, handbook, VIC-only rules, permit conditions.
-- [QLD written road rules test vs PrepL: which should you do?](https://blue0orbit.github.io/learners-test-australia/blog/qld-written-road-rules-test-vs-prepl.html): Comparison of the Queensland written road rules test and PrepL: format, pass marks, age, cost, retries, what both test.
-- [Give way rules every learner driver must know](https://blue0orbit.github.io/learners-test-australia/blog/give-way-rules-for-learner-drivers.html): Give way rules for NSW, VIC and QLD learners: signs, unsigned intersections, T-intersections, lights, roundabouts, pedestrians, state differences.
-- [How to use mock tests and mistakes to prepare for your learner test](https://blue0orbit.github.io/learners-test-australia/blog/how-to-use-mock-tests-and-mistakes.html): Study method: mistake budgets per test and section, when and how to sit mock tests, reviewing mistakes, reading results.
-- [Hazard perception test: what it is in NSW, VIC and QLD](https://blue0orbit.github.io/learners-test-australia/blog/hazard-perception-test-nsw-vic-qld.html): Hazard perception explained, and the HPT in NSW (after 10 months, valid 15 months), VIC (from 17y11m, 25 clips) and QLD (after 6 months, online).
+- [Learner Driver Guides](https://learnertest.com/blog/): Index of the learner driver guides.
+- [Why choose Learners Test Australia for your learner test?](https://learnertest.com/blog/why-choose-learners-test-australia.html): Why choose the app: state profiles, source-linked explanations, daily reviews, free practice and optional one-time Premium; includes availability and feature limits, not a competitor ranking.
+- [How the NSW Driver Knowledge Test works](https://learnertest.com/blog/nsw-driver-knowledge-test-explained.html): Deep guide to the NSW DKT: format and mistake budget, DKT online, the Road User Handbook, common traps, learner licence rules.
+- [The Victorian learner permit test explained](https://learnertest.com/blog/victorian-learner-permit-test-explained.html): Deep guide to the Victorian learner permit test: online course, in-person 32-question test, documents, handbook, VIC-only rules, permit conditions.
+- [QLD written road rules test vs PrepL: which should you do?](https://learnertest.com/blog/qld-written-road-rules-test-vs-prepl.html): Comparison of the Queensland written road rules test and PrepL: format, pass marks, age, cost, retries, what both test.
+- [Give way rules every learner driver must know](https://learnertest.com/blog/give-way-rules-for-learner-drivers.html): Give way rules for NSW, VIC and QLD learners: signs, unsigned intersections, T-intersections, lights, roundabouts, pedestrians, state differences.
+- [How to use mock tests and mistakes to prepare for your learner test](https://learnertest.com/blog/how-to-use-mock-tests-and-mistakes.html): Study method: mistake budgets per test and section, when and how to sit mock tests, reviewing mistakes, reading results.
+- [Hazard perception test: what it is in NSW, VIC and QLD](https://learnertest.com/blog/hazard-perception-test-nsw-vic-qld.html): Hazard perception explained, and the HPT in NSW (after 10 months, valid 15 months), VIC (from 17y11m, 25 clips) and QLD (after 6 months, online).
 
 ## Policies and support
 
-- [Privacy policy](https://blue0orbit.github.io/learners-test-australia/privacy-policy.html): The app's privacy policy (same text as in the app) plus a section on this website: no cookies, analytics or third-party requests.
-- [Cookie Policy](https://blue0orbit.github.io/learners-test-australia/cookies.html): The website sets no cookies; what the app uses instead and how to change ad choices or reset the advertising ID.
-- [Terms of Service](https://blue0orbit.github.io/learners-test-australia/terms.html): The app's terms of service (same text as in the app), governed by New South Wales law.
-- [Delete your account](https://blue0orbit.github.io/learners-test-australia/account-deletion.html): Steps to delete the account in the app or by email, what is deleted and what is kept.
-- [Contact and Support](https://blue0orbit.github.io/learners-test-australia/contact.html): Support email, what to include when reporting a question error, Premium and privacy help.
+- [Privacy policy](https://learnertest.com/privacy-policy.html): The app's privacy policy (same text as in the app) plus a section on this website: no cookies, analytics or third-party requests.
+- [Cookie Policy](https://learnertest.com/cookies.html): The website sets no cookies; what the app uses instead and how to change ad choices or reset the advertising ID.
+- [Terms of Service](https://learnertest.com/terms.html): The app's terms of service (same text as in the app), governed by New South Wales law.
+- [Delete your account](https://learnertest.com/account-deletion.html): Steps to delete the account in the app or by email, what is deleted and what is kept.
+- [Contact and Support](https://learnertest.com/contact.html): Support email, what to include when reporting a question error, Premium and privacy help.
 
 ## Optional
 
-- [Full text of the main pages](https://blue0orbit.github.io/learners-test-australia/llms-full.txt): plain-text copy of the home, features, states, state, FAQ, guide, privacy and account deletion pages, for quoting accurate facts.
-- [Sitemap](https://blue0orbit.github.io/learners-test-australia/sitemap.xml): every page on the site.
+- [Full text of the main pages](https://learnertest.com/llms-full.txt): plain-text copy of the home, features, states, state, FAQ, guide, privacy and account deletion pages, for quoting accurate facts.
+- [Sitemap](https://learnertest.com/sitemap.xml): every page on the site.
