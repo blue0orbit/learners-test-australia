@@ -34,10 +34,13 @@ DATE_H = "6 October 2026"
 # When the official sources, test formats and legislation behind the content were last checked ("checked on",
 # "sourced on"). Only change it after checking the sources again.
 CHECKED_H = "30 September 2026"
-# Last updated date of the privacy policy and terms, which mirror the in-app text (privacy_last_updated and
-# tos_last_updated in the app's strings.xml), and of the other legal pages.
+# Last updated date of the privacy policy, which mirrors the in-app text (privacy_last_updated in the app's
+# strings.xml), and of the other legal pages.
 LEGAL_DATE = "2026-09-30"
 LEGAL_DATE_H = "30 September 2026"
+# Last updated date of the terms of service, which mirror the in-app text (tos_last_updated in strings.xml).
+TERMS_DATE = "2026-10-06"
+TERMS_DATE_H = "6 October 2026"
 PRICE = "A$5.99"
 DISCLAIMER = (
     "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to "

@@ -4726,9 +4726,9 @@
   "group": "core"
  },
  {
-  "key": "bb4f17630958f3ba",
+  "key": "21924daaa7ffd36e",
   "kind": "run",
-  "src": "Under our Terms of Service you must be at least 16 to use the app and create an account, and if you are under 18 a parent or legal guardian must consent to your use of the app.",
+  "src": "Under our Terms of Service you must be at least 15 to use the app and create an account, and if you are under 18 a parent or legal guardian must consent to your use of the app.",
   "note": "",
   "pages": [
    "faq.html"

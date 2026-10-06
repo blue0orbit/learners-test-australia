@@ -1,11 +1,12 @@
 """Privacy policy, cookie policy, terms of service and account deletion pages.
 
 The privacy policy and terms mirror the in-app text in app/src/main/res/values/strings.xml
-(privacy_* and tos_* strings, last updated 30 September 2026). Keep them word-for-word in sync
-with the app: only headings and HTML structure are added here.
+(privacy_* strings, last updated 30 September 2026; tos_* strings, last updated 6 October 2026). Keep them
+word-for-word in sync with the app: only headings and HTML structure are added here.
 """
 from sitelib import (
-    APP_NAME, BASE, DEVELOPER, EMAIL, LEGAL_DATE, LEGAL_DATE_H, PACKAGE, SITE_NAME, SRC, Page, page_head, updated_line,
+    APP_NAME, BASE, DEVELOPER, EMAIL, LEGAL_DATE, LEGAL_DATE_H, PACKAGE, SITE_NAME, SRC, TERMS_DATE, TERMS_DATE_H, Page,
+    page_head, updated_line,
 )
 
 MAIL = f'<a href="mailto:{EMAIL}">{EMAIL}</a>'
@@ -202,7 +203,7 @@ def terms() -> Page:
         "Terms of Service",
         f"The terms for using the {SITE_NAME} app.",
         crumbs,
-        meta_html=updated_line(LEGAL_DATE, LEGAL_DATE_H),
+        meta_html=updated_line(TERMS_DATE, TERMS_DATE_H),
     ) + f"""
 <div class="content"><div class="container prose">
 {legal_intro("terms of service", "Settings → Terms")}
@@ -215,7 +216,7 @@ def terms() -> Page:
 <p>All practice questions and educational content within the App are for study and preparation purposes only. Completing this App, achieving high scores, or unlocking any in-app achievement does NOT guarantee passing your official learner test. The official test is run by your state or territory's licensing authority. Always refer to its current official handbook and website for authoritative information.</p>
 
 <h2 id="eligibility">3. Eligibility</h2>
-<p>The App is intended for users who are preparing for an Australian learner driver knowledge test. You must be at least 16 years of age to use the App and create an account. If you are under 18, you confirm that a parent or legal guardian has consented to your use of the App. By using the App, you represent and warrant that you meet these eligibility requirements.</p>
+<p>The App is intended for users who are preparing for an Australian learner driver knowledge test. You must be at least 15 years of age to use the App and create an account. If you are under 18, you confirm that a parent or legal guardian has consented to your use of the App. By using the App, you represent and warrant that you meet these eligibility requirements.</p>
 
 <h2 id="accounts">4. User Accounts &amp; Responsibilities</h2>
 <p>You are responsible for maintaining the confidentiality of your account credentials and for all activity that occurs under your account. You agree to provide accurate and complete information when registering and to keep this information up to date. You may not share your account with others, create multiple accounts for abusive purposes, or use another person's account without permission.</p>
@@ -270,7 +271,7 @@ def terms() -> Page:
 </div></div>"""
     return Page(
         path="terms.html",
-        lastmod=LEGAL_DATE,
+        lastmod=TERMS_DATE,
         title="Terms of Service | Learners Test Australia",
         description=("Terms of service for the Learners Test Australia app: independence disclaimer, eligibility, Premium "
                      "billing, acceptable use, liability and NSW governing law."),

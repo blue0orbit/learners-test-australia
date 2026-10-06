@@ -744,7 +744,7 @@ FAQ_GROUPS = [
          'think is wrong and, if you can, a link to the official source. The <a href="@/contact.html">contact page</a> lists '
          "what helps us fix it fastest. We aim to reply within 5 business days.</p>"),
         ("How old do I need to be to use the app?",
-         "<p>Under our Terms of Service you must be at least 16 to use the app and create an account, and if you are under "
+         "<p>Under our Terms of Service you must be at least 15 to use the app and create an account, and if you are under "
          "18 a parent or legal guardian must consent to your use of the app.</p>"),
     ]),
 ]

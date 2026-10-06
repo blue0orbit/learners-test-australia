@@ -1,6 +1,6 @@
 """Static blog localisation. Builds use checked-in catalogs; no network requests."""
 from copy import deepcopy
-from html import escape
+from html import escape, unescape
 from html.parser import HTMLParser
 import json
 from pathlib import Path
@@ -38,6 +38,7 @@ class LocaliseHTML(HTMLParser):
         self.output=[]
         self.skip=[]
         self.json_script=False
+        self.pending=[]  # text and character references of the current run, translated as one piece
 
     def url(self, value):
         from sitelib import BASE
@@ -53,6 +54,7 @@ class LocaliseHTML(HTMLParser):
         return value
 
     def handle_starttag(self, tag, attrs):
+        self.flush()
         attrs=dict(attrs)
         if tag == 'script':
             self.skip.append(tag)
@@ -71,6 +73,7 @@ class LocaliseHTML(HTMLParser):
         self.output.append('<'+tag+''.join(' '+k+('="'+escape(v,quote=True)+'"' if v is not None else '') for k,v in attrs.items())+'>')
 
     def handle_endtag(self,tag):
+        self.flush()
         if self.skip and self.skip[-1] == tag:
             self.skip.pop()
             if tag == 'script': self.json_script=False
@@ -93,17 +96,33 @@ class LocaliseHTML(HTMLParser):
         if self.json_script:
             self.output.append(json.dumps(self.structured(json.loads(data)),ensure_ascii=False,indent=1))
         elif self.skip: self.output.append(data)
-        else: self.output.append(escape(self.translate(data),quote=False))
+        else: self.pending.append((False,data))
 
-    def handle_entityref(self,name): self.output.append('&'+name+';')
-    def handle_charref(self,name): self.output.append('&#'+name+';')
-    def handle_decl(self,decl): self.output.append('<!'+decl+'>')
-    def handle_comment(self,data): self.output.append('<!--'+data+'-->')
+    def reference(self,ref):
+        if self.skip: self.output.append(ref)
+        else: self.pending.append((True,ref))
+
+    def flush(self):
+        """Translate a run of text as one piece, even when entities split it (Queensland&#x27;s, &copy; 2026)."""
+        if not self.pending: return
+        pieces,self.pending=self.pending,[]
+        if not any(ref for ref,_ in pieces):
+            self.output.append(escape(self.translate(''.join(v for _,v in pieces)),quote=False))
+            return
+        text=''.join(unescape(v) if ref else v for ref,v in pieces)
+        if translatable(normalise(text)): self.output.append(escape(self.translate(text),quote=False))
+        else: self.output.append(''.join(v if ref else escape(v,quote=False) for ref,v in pieces))
+
+    def handle_entityref(self,name): self.reference('&'+name+';')
+    def handle_charref(self,name): self.reference('&#'+name+';')
+    def handle_decl(self,decl): self.flush(); self.output.append('<!'+decl+'>')
+    def handle_comment(self,data): self.flush(); self.output.append('<!--'+data+'-->')
 
 
 def transform(html, translate, lang='en', blog_paths=()):
     parser=LocaliseHTML(translate,lang,blog_paths)
     parser.feed(html)
+    parser.flush()
     return ''.join(parser.output)
 
 
