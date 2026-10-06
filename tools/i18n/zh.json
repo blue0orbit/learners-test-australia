@@ -239,13 +239,13 @@
   "src": "Show you know WA's traffic laws and safe driving, normally by a theory test.",
   "t": "证明你了解 WA 的交通法规和安全驾驶知识，通常通过理论考试来证明。"
  },
- "15754d4de1655843": {
-  "src": "Official format",
-  "t": "官方考试形式"
+ "411ea495ff3e9538": {
+  "src": "Test format",
+  "t": "考试形式"
  },
- "88ab00faa148da9c": {
-  "src": "Check the WA transport department's website.",
-  "t": "请查看 WA 交通部门的官方网站。"
+ "77313525e2824f0f": {
+  "src": "30 questions, 24 to pass.",
+  "t": "30 题，答对 24 题及格。"
  },
  "a5c0035892ada588": {
   "src": "A 30-question practice test written from WA legislation.",
@@ -831,9 +831,9 @@
   "src": "A closer look at Learners Test Australia: state-specific mock tests, explained answers, a daily plan, progress tracking, hazard perception practice and more.",
   "t": "深入了解 Learners Test Australia：针对各州的模拟考试、答案解析、每日计划、进度跟踪、危险感知练习等等。"
  },
- "0039d43582eb3a20": {
-  "src": "Last updated: <t0>30 September 2026</t0>",
-  "t": "最后更新：<t0>2026 年 9 月 30 日</t0>"
+ "e9433f152868824b": {
+  "src": "Last updated: <t0>6 October 2026</t0>",
+  "t": "最后更新：<t0>2026 年 10 月 6 日</t0>"
  },
  "e1465535d6f25819": {
   "src": "Pick your state, practise its test",
@@ -887,9 +887,9 @@
   "src": "<t0>NSW</t0> <t1>VIC</t1> <t2>QLD</t2> <t3>SA</t3> <t4>WA</t4> <t5>TAS</t5> <t6>ACT</t6> <t7>NT</t7>",
   "t": "<t0>NSW</t0> <t1>VIC</t1> <t2>QLD</t2> <t3>SA</t3> <t4>WA</t4> <t5>TAS</t5> <t6>ACT</t6> <t7>NT</t7>"
  },
- "2b1a5b9342fdb515": {
-  "src": "DRIVER KNOWLEDGE TEST",
-  "t": "Driver Knowledge Test（交规笔试）"
+ "556487637437c958": {
+  "src": "DRIVER KNOWLEDGE TEST (IN PERSON)",
+  "t": "Driver Knowledge Test（交规笔试，现场考试）"
  },
  "aa25e19093aaaaa9": {
   "src": "<t0></t0>45 questions",
@@ -911,9 +911,9 @@
   "src": "<t0></t0>The test ends early once you can no longer pass",
   "t": "<t0></t0>一旦已无法及格，考试会提前结束"
  },
- "107456e8e3106387": {
-  "src": "Source: nsw.gov.au · checked 30 Sep 2026",
-  "t": "出处：nsw.gov.au · 核对于 2026 年 9 月 30 日"
+ "031ee09231b5f341": {
+  "src": "Source: nsw.gov.au · checked 5 Oct 2026",
+  "t": "出处：nsw.gov.au · 核对于 2026 年 10 月 5 日"
  },
  "ef264f13d2c26701": {
   "src": "Confirm the format with your state's transport authority before your test.",
@@ -939,9 +939,9 @@
   "src": "Questions come in the forms real tests use: single answers, road signs and diagrams, plus select-all-that-apply questions for the South Australian myLs and Tasmanian online tests. A quick \"How sure were you?\" tap (knew it, unsure or guessed) helps the app decide when to show a question again, and you can save or flag any question to come back to.",
   "t": "题目采用真实考试所用的形式：单选题、道路标志题和示意图题，另外还有南澳 myLs 测试和塔斯马尼亚州在线考试所用的“选出所有正确答案”多选题。答题后轻点一下“你有多大把握？”（我会、不确定或猜的），可以帮助 App 决定什么时候再出这道题；你也可以收藏或标记任何题目，方便之后回来查看。"
  },
- "90e16503776986ae": {
-  "src": "Each state's question pack has more than 380 original questions, and hundreds of original sign and diagram illustrations are shared across states.",
-  "t": "每个州的题库都有 380 多道原创题目，另有数百幅原创标志和示意图插图在各州之间共用。"
+ "9f3343bc160df1f9": {
+  "src": "Each state's question pack has from 386 (NT) to 555 (SA) original questions, about 3,770 in all, and hundreds of original sign and diagram illustrations are shared across states.",
+  "t": "每个州的题库有 386 道（NT）到 555 道（SA）原创题目，合计约 3,770 道，另有数百幅原创标志和示意图插图在各州之间共用。"
  },
  "5596607ff7ef5598": {
   "src": "A daily plan paced to your test date",
@@ -971,17 +971,17 @@
   "src": "<t0>Mock test:</t0> the full test, same format as the real one.",
   "t": "<t0>模拟考试：</t0>完整的考试，形式与真实考试相同。"
  },
- "8f5055c307821de1": {
-  "src": "Other ways to practise: mixed practice (20 questions, new ones first), mistakes, saved questions, weak spots and practice by topic. Optional study reminders and a countdown help you keep going, and a study streak counts real study only.",
-  "t": "其他练习方式：综合练习（20 题，新题优先）、错题、收藏的题目、薄弱环节和按主题练习。可选的学习提醒和倒计时帮助你坚持下去，连续打卡也只计算真正的学习。"
+ "139c634a4a09013a": {
+  "src": "Other ways to practise: mixed practice (20 questions, new ones first), mistakes, saved questions, weak spots and practice by topic, with a mastery ring for each topic. Optional study reminders and a countdown help you keep going, and a study streak counts real study only.",
+  "t": "其他练习方式：综合练习（20 题，新题优先）、错题、收藏的题目、薄弱环节和按主题练习，每个主题都有一个掌握度圆环。可选的学习提醒和倒计时帮助你坚持下去，连续打卡也只计算真正的学习。"
  },
  "16d7c809b1629f83": {
   "src": "Mock tests that show the pass line",
   "t": "显示及格线的模拟考试"
  },
- "a16c0ca12d423d70": {
-  "src": "Mock tests have the same sections and number of questions as the real test, and each section is scored against its own pass mark. In the NSW mock, the test ends where the real DKT would, once passing is no longer possible, and you can choose to keep practising the rest.",
-  "t": "模拟考试的部分和题数都与真实考试相同，每个部分按各自的及格线评分。在 NSW 模拟考试中，和真实的 DKT 一样，一旦已不可能及格，考试就会结束，你也可以选择继续练习剩下的题目。"
+ "1e79efe8c6711fde": {
+  "src": "Mock tests have the same sections and number of questions as the real test, and each section is scored against its own pass mark. In the NSW mock, the test ends where the real DKT would, once passing is no longer possible, and you can choose to keep practising the rest. In the South Australian in-person theory test mock, a mistake in Part A (giving way) ends the test after Part A, as it does at Service SA. The other mock tests run to the last question.",
+  "t": "模拟考试的部分和题数都与真实考试相同，每个部分按各自的及格线评分。在 NSW 模拟考试中，和真实的 DKT 一样，一旦已不可能及格，考试就会结束，你也可以选择继续练习剩下的题目。在南澳现场理论考试的模拟考试中，A 部分（让行）只要答错一题，考试就会在 A 部分结束后终止，和在 Service SA 考试时一样。其他模拟考试都会一直做到最后一题。"
  },
  "d520882bb240b744": {
   "src": "Results show your score in each section against its pass line, how long you took and which questions to review, with one tap to practise your mistakes. <t0>How to get the most out of mock tests</t0>.",
@@ -1039,9 +1039,9 @@
   "src": "Progress and an honest pass-chance estimate",
   "t": "学习进度和如实的通过概率估算"
  },
- "3e6640bfab6946ff": {
-  "src": "The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. After enough answers, the Today screen shows an estimated pass chance.",
-  "t": "“进度”标签页会显示你已答过和看过多少题、连续打卡天数、本周学习分钟数以及最近的正确率。答题数量足够后，“今天”页面会显示估算的通过概率。"
+ "710fb0dfd9e7fee7": {
+  "src": "The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. After your first 12 answers (the quick check), the Today screen shows an estimated pass chance.",
+  "t": "“进度”标签页会显示你已答过和看过多少题、连续打卡天数、本周学习分钟数以及最近的正确率。答完前 12 题（快速摸底）后，“今天”页面会显示估算的通过概率。"
  },
  "b5a62b3d2bb61a6d": {
   "src": "With Premium you also get a forecast for each section (your expected score and the chance of passing that section), your weak spots and a planner for upcoming reviews.",
@@ -1075,29 +1075,37 @@
   "src": "Hazard perception is about spotting risks early. The app plays 72 short driving clips in real-time 3D, seen from the driver's seat: you are told what you want to do (turn right, move off, overtake, change lanes or slow down) and tap when it becomes safe, in the same style as the hazard perception tests. Clips cover suburban streets, traffic lights, roundabouts, school zones, country roads with kangaroos and road trains, freeways, level crossings and Melbourne trams, by day, at dusk, at night and in the rain. Afterwards a timeline shows when it was safe and when you tapped, with the road rule explained, and you can watch the clip again.",
   "t": "危险感知的关键在于及早发现风险。App 会播放 72 段以驾驶座视角呈现的实时 3D 驾驶短片：先告诉你要做什么（右转、起步、超车、变道或减速），等到安全时你再点击屏幕，方式与危险感知测试相同。短片涵盖市郊街道、红绿灯、环岛、学校区域、有袋鼠出没和公路列车（road train）行驶的乡村道路、高速公路、铁路道口和墨尔本有轨电车，场景包括白天、黄昏、夜间和雨天。结束后，时间轴会显示什么时候安全、你什么时候点击，并解释相关的交通规则，你还可以重看短片。"
  },
- "8ef8a3c059bd302a": {
-  "src": "There are also illustrated still scenes where you tap the hazard. A few clips and scenes are free, and Premium unlocks them all. Each state's licence guide explains where its hazard perception test fits on the way to your P plates (the Northern Territory has no separate test: hazards are assessed in the practical driving test). The clips and scenes are original practice material, not a copy of any official test. <t0>Read our hazard perception guide</t0>.",
-  "t": "此外还有插图形式的静态场景，你需要点击其中的危险。部分短片和场景免费，Premium 可解锁全部内容。每个州的驾照指南都会说明，在考取 P 牌的过程中，该州的危险感知测试处于哪个环节（北领地没有单独的测试：危险识别会在路考中评估）。这些短片和场景是原创练习材料，并非复制任何官方考试。<t0>阅读我们的危险感知指南</t0>。"
+ "d3a81724616142ba": {
+  "src": "There are also 40 illustrated still scenes where you tap the hazard. 11 clips and 6 scenes are free, and Premium unlocks them all. Every clip and scene can be browsed in picture libraries, and any clip can be replayed. Each state's licence guide explains where its hazard perception test fits on the way to your P plates (the Northern Territory has no separate test: hazards are assessed in the practical driving test). The clips and scenes are original practice material, not a copy of any official test. <t0>Read our hazard perception guide</t0>.",
+  "t": "此外还有 40 幅插图形式的静态场景，你需要点击其中的危险。其中 11 段短片和 6 个场景免费，Premium 可解锁全部内容。所有短片和场景都可以在图片库中浏览，任何短片都可以重播。每个州的驾照指南都会说明，在考取 P 牌的过程中，该州的危险感知测试处于哪个环节（北领地没有单独的测试：危险识别会在路考中评估）。这些短片和场景是原创练习材料，并非复制任何官方考试。<t0>阅读我们的危险感知指南</t0>。"
  },
- "1e3c07fade863262": {
-  "src": "<t0>Hazard perception</t0><t1>Scene 1</t1>",
-  "t": "<t0>危险感知</t0><t1>场景 1</t1>"
+ "815fa273731c50dd": {
+  "src": "<t0>Hazard perception</t0><t1>3D clip</t1>",
+  "t": "<t0>危险感知</t0><t1>3D 短片</t1>"
  },
- "b103fc9138cd6ca9": {
-  "src": "You are driving the red car. Tap the hazard you should be ready for.",
-  "t": "你正在驾驶红色汽车。请点击你应该做好准备应对的危险。"
+ "83cc5a4f7c6fcd21": {
+  "src": "YOUR TASK",
+  "t": "你的任务"
  },
- "3f55aa09280c8cf1": {
-  "src": "Good spot",
-  "t": "发现得好"
+ "501e5224e0a5d82c": {
+  "src": "Turn right",
+  "t": "右转"
  },
- "4544d63687f59537": {
-  "src": "A person is standing in the gap between two parked cars and could step out without looking.",
-  "t": "有人站在两辆停着的车之间的空隙里，可能会不看路就走出来。"
+ "47095f8b958f2275": {
+  "src": "Tap when it is safe to start your turn.",
+  "t": "在可以安全开始转弯时点击。"
  },
- "da76d8048a197032": {
-  "src": "Illustration of a hazard perception scene: a person waiting between parked cars could step into the road.",
-  "t": "危险感知场景示意图：在停放车辆之间等候的行人可能会走上马路。"
+ "613eb4b2c3e8dbbe": {
+  "src": "Tap anywhere on the clip at the moment it becomes safe.",
+  "t": "在变得安全的那一刻点击短片任意位置。"
+ },
+ "9e111948f3cec79b": {
+  "src": "Start clip",
+  "t": "开始"
+ },
+ "3328f2a495b8ead4": {
+  "src": "Illustration of a 3D hazard perception clip: you are told what you want to do, then tap when it becomes safe.",
+  "t": "3D 危险感知短片示意图：先告诉你要做什么，等到安全时再点击。"
  },
  "d719f877034bf97f": {
   "src": "Also included",
@@ -1123,9 +1131,9 @@
   "src": "Streak and badges",
   "t": "连续打卡与徽章"
  },
- "4ce9b6214e5dbfcd": {
-  "src": "A study streak and a few badges for real study. No points to grind.",
-  "t": "连续学习打卡，以及几枚奖励真正学习的徽章。没有需要刷的积分。"
+ "864864c81fed881d": {
+  "src": "A study streak and six badges for real study (your first session, a 7-day streak, 100 answers, every topic tried, a mock test passed, 8 hazard clips passed). No points to grind.",
+  "t": "连续学习打卡，以及六枚奖励真正学习的徽章（完成第一次学习、连续学习 7 天、回答 100 道题、每个主题都做过题、通过一次模拟考试、通过 8 个危险感知短片）。没有需要刷的积分。"
  },
  "346a9101bf0edb8f": {
   "src": "English, <x0/>, <x1/>, <x2/> and <x3/>, including the questions and explanations for every state and territory. Arabic reads right to left.",
@@ -1551,17 +1559,17 @@
   "src": "How does the pass-chance estimate work?",
   "t": "通过概率估算是怎么计算的？"
  },
- "844b3009501395ec": {
-  "src": "After you've answered enough questions, the app estimates your chance of passing from your recent answers. It is an estimate, not a guarantee. Premium adds a forecast for each section of the test.",
-  "t": "在你答了足够多的题目后，App 会根据你最近的答题情况估算你的通过概率。这只是估算，不是保证。Premium 还会增加考试每个部分的预测。"
+ "a91cb3e79f52cdd7": {
+  "src": "After your first 12 answers (the quick check), the app estimates your chance of passing from your recent answers. It is an estimate, not a guarantee. Premium adds a forecast for each section of the test.",
+  "t": "答完前 12 题（快速摸底）后，App 会根据你最近的答题情况估算你的通过概率。这只是估算，不是保证。Premium 还会增加考试每个部分的预测。"
  },
  "0abe3cd09338056d": {
   "src": "Does the app include hazard perception practice?",
   "t": "App 有危险感知练习吗？"
  },
- "6f6fcc1793ab4a2a": {
-  "src": "Yes. There are 72 real-time 3D driving clips where you tap when it is safe to act, in the same style as the hazard perception tests, plus illustrated still scenes and a guide to your state's hazard perception test (the Northern Territory has none; hazards are assessed in its practical driving test). A few clips and scenes are free and Premium unlocks them all. They are original practice material and are not a copy of any official test. See our <t0>hazard perception guide</t0>.",
-  "t": "有。App 中有 72 段实时 3D 驾驶短片，在可以安全行动时点击屏幕，方式与危险感知测试相同；另有插图形式的静态场景，以及你所在州危险感知测试的指南（北领地没有这项测试；危险识别在其路考中评估）。部分短片和场景免费，Premium 可解锁全部内容。它们是原创练习材料，并非复制任何官方考试。请查看我们的<t0>危险感知指南</t0>。"
+ "951188f93e5a5e5d": {
+  "src": "Yes. There are 72 real-time 3D driving clips where you tap when it is safe to act, in the same style as the hazard perception tests, plus 40 illustrated still scenes and a guide to your state's hazard perception test (the Northern Territory has none; hazards are assessed in its practical driving test). 11 clips and 6 scenes are free, and Premium unlocks them all. Every clip and scene can be browsed in picture libraries, and any clip can be replayed. They are original practice material and are not a copy of any official test. See our <t0>hazard perception guide</t0>.",
+  "t": "有。App 中有 72 段实时 3D 驾驶短片，在可以安全行动时点击屏幕，方式与危险感知测试相同；另有 40 幅插图形式的静态场景，以及你所在州危险感知测试的指南（北领地没有这项测试；危险识别在其路考中评估）。其中 11 段短片和 6 个场景免费，Premium 可解锁全部内容。所有短片和场景都可以在图片库中浏览，任何短片都可以重播。它们是原创练习材料，并非复制任何官方考试。请查看我们的<t0>危险感知指南</t0>。"
  },
  "404aad5288122a80": {
   "src": "Questions and accuracy",
@@ -2019,9 +2027,9 @@
   "src": "<t0>An Android phone or tablet</t0> with Android 8.0 or later. There is no iPhone version yet.",
   "t": "<t0>一部 Android 手机或平板电脑</t0>，系统为 Android 8.0 或更高版本。目前还没有 iPhone 版。"
  },
- "871fdd04e660b368": {
-  "src": "<t0>An account</t0>: sign in with Google or with an email address and password. Your progress is saved to it, so it follows you to a new phone.",
-  "t": "<t0>一个账户</t0>：使用 Google 或电子邮件地址加密码登录。你的进度会保存到账户中，换了新手机也能接着用。"
+ "d489f768938f70d2": {
+  "src": "<t0>An account</t0>: sign in with Google, Facebook, or an email address and password. Your progress is saved to it, so it follows you to a new phone.",
+  "t": "<t0>一个账户</t0>：使用 Google、Facebook 或电子邮件地址加密码登录。你的进度会保存到账户中，换了新手机也能接着用。"
  },
  "5c6635622e4f0384": {
   "src": "<t0>A connection to sign in</t0>. After that, the questions are built into the app and you can practise offline.",
@@ -2047,13 +2055,17 @@
   "src": "A daily study plan, progress tracking and an estimated pass chance.",
   "t": "每日学习计划、进度跟踪和估算的通过概率。"
  },
+ "e78e1fc91c9fd954": {
+  "src": "Sample hazard perception practice: 11 of the 72 3D clips and 6 of the 40 still scenes.",
+  "t": "危险感知练习试用：72 段 3D 短片中的 11 段，以及 40 个静态场景中的 6 个。"
+ },
  "10deb8b821486999": {
   "src": "All eight states and territories, in English, Chinese, Arabic, Vietnamese and Spanish.",
   "t": "全部八个州和领地，提供英语、中文、阿拉伯语、越南语和西班牙语版本。"
  },
- "f9a7ed526131c0de": {
-  "src": "Premium is optional: a one-time A$5.99 purchase through Google Play, with no subscription. It removes ads and adds unlimited mock tests, forecasts for each section of the test, your weak spots and all 72 hazard perception clips. See the <t0>features</t0>.",
-  "t": "Premium 是可选的：通过 Google Play 一次性购买，价格为 A$5.99，无需订阅。它会去除广告，并增加无限次模拟考试、考试各部分的预测、你的薄弱环节，以及全部 72 段危险感知短片。请查看<t0>功能介绍</t0>。"
+ "a705ab0c9292b3b7": {
+  "src": "Premium is optional: a one-time A$5.99 purchase through Google Play, with no subscription. It removes ads and adds unlimited mock tests, forecasts for each section of the test, your weak spots, a review planner, and all 72 hazard perception clips and 40 still scenes. See the <t0>features</t0>.",
+  "t": "Premium 是可选的：通过 Google Play 一次性购买，价格为 A$5.99，无需订阅。它会去除广告，并增加无限次模拟考试、考试各部分的预测、你的薄弱环节、复习计划，以及全部 72 段危险感知短片和 40 个静态场景。请查看<t0>功能介绍</t0>。"
  },
  "5a2cf0b481310b0f": {
   "src": "Try the app early",
@@ -3059,10 +3071,6 @@
   "src": "Show reasonable knowledge of WA traffic laws and safe driving techniques, normally by passing a theory test",
   "t": "证明你对 WA 交通法规和安全驾驶技巧有合理的了解，通常通过理论考试来证明"
  },
- "411ea495ff3e9538": {
-  "src": "Test format",
-  "t": "考试形式"
- },
  "6448fdcbd43610ba": {
   "src": "30 multiple-choice questions, at least 24 correct to pass (independent guides)",
   "t": "30 道选择题，至少答对 24 题才能通过（据独立指南）"
@@ -3663,9 +3671,9 @@
   "src": "35-question practice tests scored against a 31-question pass line.",
   "t": "35 题的练习测试，按 31 题的及格线评分。"
  },
- "cf1ef8e8e7c1a4ef": {
-  "src": "More than 440 original ACT questions, written from ACT legislation.",
-  "t": "440 多道原创 ACT 题目，依据 ACT 法规编写。"
+ "90cf8e03a9dac759": {
+  "src": "More than 420 original ACT questions, written from ACT legislation.",
+  "t": "420 多道原创 ACT 题目，依据 ACT 法规编写。"
  },
  "d25f98f1e11d3f7e": {
   "src": "ACT-only rules such as roof-mounted plates, zero alcohol for supervisors and the late-night P1 passenger rule.",

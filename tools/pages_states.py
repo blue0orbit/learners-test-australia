@@ -10,7 +10,7 @@ Rules followed for the newer pages:
   NT   nt.gov.au is all rights reserved: facts only, in our own words.
 """
 from sitelib import (
-    DATE_H, DISCLAIMER, SITE_NAME, SRC, Page, chip, ext, faq_block, faq_ld, icon, page_head, source_box,
+    CHECKED_H, DISCLAIMER, SITE_NAME, SRC, Page, chip, ext, faq_block, faq_ld, icon, page_head, source_box,
 )
 from pages_core import coming_soon
 
@@ -77,7 +77,7 @@ The format published by the NSW Government is 45 questions in two sections: 15 g
 need 12 correct, and 30 road safety questions, where you need 29 correct. There is no time limit, and the test ends as
 soon as passing is no longer possible.</p></div>
 
-{facts_table("NSW DKT at a glance (checked " + DATE_H + ")", [
+{facts_table("NSW DKT at a glance (checked " + CHECKED_H + ")", [
     ("Test", "Driver Knowledge Test (DKT), car (class C)"),
     ("Questions", "45 multiple choice"),
     ("Sections and pass marks", "General knowledge: 12 of 15. Road safety: 29 of 30."),
@@ -217,7 +217,7 @@ and road safety from the Road to Solo Driving handbook, plus an eyesight check. 
 of the learner permit course. The in-person test, for people who need another language or an interpreter or who have no
 internet, has 32 multiple-choice questions and you need 25 correct (78%).</p></div>
 
-{facts_table("Victorian learner permit test at a glance (checked " + DATE_H + ")", [
+{facts_table("Victorian learner permit test at a glance (checked " + CHECKED_H + ")", [
     ("Test", "Learner permit test (LPT), car"),
     ("Default route", "Online learner permit course with a final test: about 4–6 hours, English only, first attempt free, 12 months to finish"),
     ("In person", "32 multiple-choice questions, three options each; pass mark 25 of 32 (78%); allow about 45 minutes; appointment fee"),
@@ -246,7 +246,7 @@ Allow about 45 minutes: the eyesight test and permit application happen at the s
 <p>The test draws on the whole Road to Solo Driving handbook: the licensing section and its four chapters on the
 challenges of driving, learning to drive, managing risk, and rules and responsibilities. In the VicRoads practice test,
 the topics that come up most are giving way, learning to drive and hazard perception, parking, speed limits and
-pedestrians (from our review of the practice test on {DATE_H}). The handbook itself warns that the practice test
+pedestrians (from our review of the practice test on {CHECKED_H}). The handbook itself warns that the practice test
 doesn't cover everything.</p>
 <p>Victoria has some rules you won't find in other states' tests:</p>
 <ul>
@@ -349,7 +349,7 @@ at a licence-issuing centre, or PrepL, an online course with a final test. The w
 questions in two separately scored sections: giving way (10 questions, need 9) and road rules and licence requirements
 (20 questions, need 18). The PrepL final test has 30 questions and you need 27 (90%).</p></div>
 
-{facts_table("Queensland learner tests at a glance (checked " + DATE_H + ")", [
+{facts_table("Queensland learner tests at a glance (checked " + CHECKED_H + ")", [
     ("Written road rules test", "30 multiple-choice questions on paper. Giving way: 9 of 10. Road rules and licence requirements: 18 of 20. Failing either section fails the test."),
     ("Where", "TMR customer service centre, participating QGAP office, or licence-issuing police station in rural and remote areas"),
     ("Written test age and attempts", "From 16. A fee for every attempt, one attempt a day; after a fail, wait until the next working day"),
@@ -482,7 +482,7 @@ online course that finishes with a 30-question test where you need 27 correct, a
 right answer. The in-person test at a Service SA centre has two parts: 8 give-way diagram questions that must all be
 answered correctly, then 42 multiple-choice questions on road rules and safety, where you need 32.</p></div>
 
-{facts_table("SA learner's theory test at a glance (checked " + DATE_H + ")", [
+{facts_table("SA learner's theory test at a glance (checked " + CHECKED_H + ")", [
     ("Test", "Learner's theory test, car: online through myLs, or in person at Service SA"),
     ("In person", "Part A: 8 give-way diagram questions, all must be correct. Part B: 42 multiple-choice questions, pass 32 of 42. On paper or a computer."),
     ("myLs", "Online course of about 4 hours, then a 30-question test in one sitting; pass 27 of 30. Some questions have more than one correct answer."),
@@ -619,7 +619,7 @@ def wa() -> Page:
 permit is issued, normally by passing a theory test. You can hold a car learner's permit from 16, and it lasts 3 years.
 Independent guides describe the theory test as 30 questions with 24 correct needed to pass.</p></div>
 
-{facts_table("WA learner's permit at a glance (checked " + DATE_H + ")", [
+{facts_table("WA learner's permit at a glance (checked " + CHECKED_H + ")", [
     ("Before the permit", "Show reasonable knowledge of WA traffic laws and safe driving techniques, normally by passing a theory test"),
     ("Test format", "30 multiple-choice questions, at least 24 correct to pass (independent guides)"),
     ("Where", "In person at a department centre or regional agent; an online option is being developed"),
@@ -748,7 +748,7 @@ Plates Plus online course first and then a 30-question online test, where you ne
 than one correct answer, and there are no compulsory questions. You can also sit a standalone test at a Service
 Tasmania shop without doing the course, but its format isn't published.</p></div>
 
-{facts_table("Tasmanian driver knowledge test at a glance (checked " + DATE_H + ")", [
+{facts_table("Tasmanian driver knowledge test at a glance (checked " + CHECKED_H + ")", [
     ("Test", "Driver knowledge test (DKT), car"),
     ("Online route", "Free Plates Plus course of about 4 to 6 hours, then a 30-question online test; pass 27 of 30"),
     ("Question style", "Multiple choice; some questions have more than one correct answer, and each question says whether it does. No compulsory questions."),
@@ -885,7 +885,7 @@ students, a participating school, which ends with a supervised knowledge test. T
 questions drawn at random from a bank of more than 300, and you need at least 31 correct. You can apply for your learner
 licence from 15 years and 9 months, and a pass can be used for 2 years.</p></div>
 
-{facts_table("ACT learner licence knowledge test at a glance (checked " + DATE_H + ")", [
+{facts_table("ACT learner licence knowledge test at a glance (checked " + CHECKED_H + ")", [
     ("Test", "ACT learner licence knowledge test, car"),
     ("How you take it", "Only at the end of an approved course with an approved provider or participating school, supervised by the provider"),
     ("Before the test", "Finish the course modules and pass a course quiz with at least 50%"),
@@ -947,7 +947,7 @@ suspension.</p>
 <h2>How to practise for the ACT learners test with Learners Test Australia</h2>
 <ul class="check-list">
   <li>35-question practice tests scored against a 31-question pass line.</li>
-  <li>More than 440 original ACT questions, written from ACT legislation.</li>
+  <li>More than 420 original ACT questions, written from ACT legislation.</li>
   <li>ACT-only rules such as roof-mounted plates, zero alcohol for supervisors and the late-night P1 passenger rule.</li>
   <li>Every answer explained, with the section it comes from.</li>
 </ul>
@@ -1019,7 +1019,7 @@ test, at a Motor Vehicle Registry (MVR) office. It has 30 multiple-choice questi
 from a pool of more than 300, and you need at least 26 correct. You must be at least 16, and a pass stays valid for 12
 months.</p></div>
 
-{facts_table("NT driver knowledge test at a glance (checked " + DATE_H + ")", [
+{facts_table("NT driver knowledge test at a glance (checked " + CHECKED_H + ")", [
     ("Test", "Driver knowledge test (theory test) for a car (class C) learner licence"),
     ("Questions", "30 multiple choice, drawn at random from a pool of more than 300"),
     ("Pass mark", "At least 26 of 30"),

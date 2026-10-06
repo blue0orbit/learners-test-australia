@@ -239,13 +239,13 @@
   "src": "Show you know WA's traffic laws and safe driving, normally by a theory test.",
   "t": "Demuestra que conoces las leyes de tráfico de WA y la conducción segura, normalmente con un examen teórico."
  },
- "15754d4de1655843": {
-  "src": "Official format",
-  "t": "Formato oficial"
+ "411ea495ff3e9538": {
+  "src": "Test format",
+  "t": "Formato del examen"
  },
- "88ab00faa148da9c": {
-  "src": "Check the WA transport department's website.",
-  "t": "Consulta el sitio web del departamento de transporte de WA."
+ "77313525e2824f0f": {
+  "src": "30 questions, 24 to pass.",
+  "t": "30 preguntas; se aprueba con 24."
  },
  "a5c0035892ada588": {
   "src": "A 30-question practice test written from WA legislation.",
@@ -831,9 +831,9 @@
   "src": "A closer look at Learners Test Australia: state-specific mock tests, explained answers, a daily plan, progress tracking, hazard perception practice and more.",
   "t": "Un vistazo más de cerca a Learners Test Australia: simulacros específicos de cada estado, respuestas explicadas, un plan diario, seguimiento del progreso, práctica de percepción de riesgos y más."
  },
- "0039d43582eb3a20": {
-  "src": "Last updated: <t0>30 September 2026</t0>",
-  "t": "Última actualización: <t0>30 de septiembre de 2026</t0>"
+ "e9433f152868824b": {
+  "src": "Last updated: <t0>6 October 2026</t0>",
+  "t": "Última actualización: <t0>6 de octubre de 2026</t0>"
  },
  "e1465535d6f25819": {
   "src": "Pick your state, practise its test",
@@ -887,9 +887,9 @@
   "src": "<t0>NSW</t0> <t1>VIC</t1> <t2>QLD</t2> <t3>SA</t3> <t4>WA</t4> <t5>TAS</t5> <t6>ACT</t6> <t7>NT</t7>",
   "t": "<t0>NSW</t0> <t1>VIC</t1> <t2>QLD</t2> <t3>SA</t3> <t4>WA</t4> <t5>TAS</t5> <t6>ACT</t6> <t7>NT</t7>"
  },
- "2b1a5b9342fdb515": {
-  "src": "DRIVER KNOWLEDGE TEST",
-  "t": "EXAMEN TEÓRICO (DRIVER KNOWLEDGE TEST)"
+ "556487637437c958": {
+  "src": "DRIVER KNOWLEDGE TEST (IN PERSON)",
+  "t": "EXAMEN TEÓRICO PRESENCIAL (DRIVER KNOWLEDGE TEST)"
  },
  "aa25e19093aaaaa9": {
   "src": "<t0></t0>45 questions",
@@ -911,9 +911,9 @@
   "src": "<t0></t0>The test ends early once you can no longer pass",
   "t": "<t0></t0>El examen termina antes si ya no puedes aprobar"
  },
- "107456e8e3106387": {
-  "src": "Source: nsw.gov.au · checked 30 Sep 2026",
-  "t": "Revisado según nsw.gov.au el 30 sep 2026"
+ "031ee09231b5f341": {
+  "src": "Source: nsw.gov.au · checked 5 Oct 2026",
+  "t": "Revisado según nsw.gov.au el 5 oct 2026"
  },
  "ef264f13d2c26701": {
   "src": "Confirm the format with your state's transport authority before your test.",
@@ -939,9 +939,9 @@
   "src": "Questions come in the forms real tests use: single answers, road signs and diagrams, plus select-all-that-apply questions for the South Australian myLs and Tasmanian online tests. A quick \"How sure were you?\" tap (knew it, unsure or guessed) helps the app decide when to show a question again, and you can save or flag any question to come back to.",
   "t": "Las preguntas tienen los formatos que usan los exámenes reales: respuesta única, señales de tráfico y diagramas, además de preguntas de “selecciona todas las correctas” para el examen myLs de Australia Meridional y el examen en línea de Tasmania. Un toque rápido en “¿Cuánta seguridad tenías?” (Lo sabía, Con dudas o Adiviné) ayuda a la app a decidir cuándo volver a mostrarte una pregunta, y puedes guardar o marcar cualquier pregunta para volver a ella."
  },
- "90e16503776986ae": {
-  "src": "Each state's question pack has more than 380 original questions, and hundreds of original sign and diagram illustrations are shared across states.",
-  "t": "El paquete de preguntas de cada estado tiene más de 380 preguntas originales, y cientos de ilustraciones originales de señales y diagramas se comparten entre estados."
+ "9f3343bc160df1f9": {
+  "src": "Each state's question pack has from 386 (NT) to 555 (SA) original questions, about 3,770 in all, and hundreds of original sign and diagram illustrations are shared across states.",
+  "t": "El paquete de preguntas de cada estado tiene entre 386 (NT) y 555 (SA) preguntas originales, unas 3.770 en total, y cientos de ilustraciones originales de señales y diagramas se comparten entre estados."
  },
  "5596607ff7ef5598": {
   "src": "A daily plan paced to your test date",
@@ -971,17 +971,17 @@
   "src": "<t0>Mock test:</t0> the full test, same format as the real one.",
   "t": "<t0>Simulacro de examen:</t0> el examen completo, con el mismo formato que el real."
  },
- "8f5055c307821de1": {
-  "src": "Other ways to practise: mixed practice (20 questions, new ones first), mistakes, saved questions, weak spots and practice by topic. Optional study reminders and a countdown help you keep going, and a study streak counts real study only.",
-  "t": "Otras formas de practicar: práctica mixta (20 preguntas, primero las nuevas), errores, preguntas guardadas, puntos débiles y práctica por tema. Los recordatorios de estudio opcionales y una cuenta regresiva te ayudan a seguir adelante, y la racha de estudio solo cuenta el estudio real."
+ "139c634a4a09013a": {
+  "src": "Other ways to practise: mixed practice (20 questions, new ones first), mistakes, saved questions, weak spots and practice by topic, with a mastery ring for each topic. Optional study reminders and a countdown help you keep going, and a study streak counts real study only.",
+  "t": "Otras formas de practicar: práctica mixta (20 preguntas, primero las nuevas), errores, preguntas guardadas, puntos débiles y práctica por tema, con un anillo de dominio para cada tema. Los recordatorios de estudio opcionales y una cuenta regresiva te ayudan a seguir adelante, y la racha de estudio solo cuenta el estudio real."
  },
  "16d7c809b1629f83": {
   "src": "Mock tests that show the pass line",
   "t": "Simulacros que muestran el mínimo para aprobar"
  },
- "a16c0ca12d423d70": {
-  "src": "Mock tests have the same sections and number of questions as the real test, and each section is scored against its own pass mark. In the NSW mock, the test ends where the real DKT would, once passing is no longer possible, and you can choose to keep practising the rest.",
-  "t": "Los simulacros tienen las mismas secciones y el mismo número de preguntas que el examen real, y cada sección se califica según su propia nota para aprobar. En el simulacro de NSW, el examen termina donde terminaría el DKT real, en cuanto ya no es posible aprobar, y puedes elegir seguir practicando con el resto."
+ "1e79efe8c6711fde": {
+  "src": "Mock tests have the same sections and number of questions as the real test, and each section is scored against its own pass mark. In the NSW mock, the test ends where the real DKT would, once passing is no longer possible, and you can choose to keep practising the rest. In the South Australian in-person theory test mock, a mistake in Part A (giving way) ends the test after Part A, as it does at Service SA. The other mock tests run to the last question.",
+  "t": "Los simulacros tienen las mismas secciones y el mismo número de preguntas que el examen real, y cada sección se califica según su propia nota para aprobar. En el simulacro de NSW, el examen termina donde terminaría el DKT real, en cuanto ya no es posible aprobar, y puedes elegir seguir practicando con el resto. En el simulacro del examen teórico presencial de Australia Meridional, un error en la Parte A (ceder el paso) termina el examen al acabar la Parte A, igual que en Service SA. Los demás simulacros siguen hasta la última pregunta."
  },
  "d520882bb240b744": {
   "src": "Results show your score in each section against its pass line, how long you took and which questions to review, with one tap to practise your mistakes. <t0>How to get the most out of mock tests</t0>.",
@@ -1039,9 +1039,9 @@
   "src": "Progress and an honest pass-chance estimate",
   "t": "Progreso y una estimación honesta de tu probabilidad de aprobar"
  },
- "3e6640bfab6946ff": {
-  "src": "The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. After enough answers, the Today screen shows an estimated pass chance.",
-  "t": "La pestaña Progreso muestra cuántas preguntas has respondido y visto, tu racha de estudio, los minutos de estudio de esta semana y tu porcentaje de aciertos reciente. Cuando hayas respondido suficientes preguntas, la pantalla Hoy muestra una probabilidad estimada de aprobar."
+ "710fb0dfd9e7fee7": {
+  "src": "The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. After your first 12 answers (the quick check), the Today screen shows an estimated pass chance.",
+  "t": "La pestaña Progreso muestra cuántas preguntas has respondido y visto, tu racha de estudio, los minutos de estudio de esta semana y tu porcentaje de aciertos reciente. Después de tus primeras 12 respuestas (la prueba rápida), la pantalla Hoy muestra una probabilidad estimada de aprobar."
  },
  "b5a62b3d2bb61a6d": {
   "src": "With Premium you also get a forecast for each section (your expected score and the chance of passing that section), your weak spots and a planner for upcoming reviews.",
@@ -1075,29 +1075,37 @@
   "src": "Hazard perception is about spotting risks early. The app plays 72 short driving clips in real-time 3D, seen from the driver's seat: you are told what you want to do (turn right, move off, overtake, change lanes or slow down) and tap when it becomes safe, in the same style as the hazard perception tests. Clips cover suburban streets, traffic lights, roundabouts, school zones, country roads with kangaroos and road trains, freeways, level crossings and Melbourne trams, by day, at dusk, at night and in the rain. Afterwards a timeline shows when it was safe and when you tapped, with the road rule explained, and you can watch the clip again.",
   "t": "La percepción de riesgos consiste en detectar los peligros a tiempo. La app reproduce 72 clips cortos de conducción en 3D en tiempo real, vistos desde el asiento del conductor: se te indica qué quieres hacer (girar a la derecha, arrancar, adelantar, cambiar de carril o reducir la velocidad) y tocas la pantalla en cuanto sea seguro hacerlo, con el mismo estilo que las pruebas de percepción de riesgos. Los clips incluyen calles de barrios residenciales, semáforos, rotondas, zonas escolares, carreteras rurales con canguros y road trains (camiones con varios remolques), autopistas, pasos a nivel y los tranvías de Melbourne, de día, al atardecer, de noche y con lluvia. Después, una línea de tiempo muestra cuándo era seguro y cuándo tocaste, con la norma vial explicada, y puedes volver a ver el clip."
  },
- "8ef8a3c059bd302a": {
-  "src": "There are also illustrated still scenes where you tap the hazard. A few clips and scenes are free, and Premium unlocks them all. Each state's licence guide explains where its hazard perception test fits on the way to your P plates (the Northern Territory has no separate test: hazards are assessed in the practical driving test). The clips and scenes are original practice material, not a copy of any official test. <t0>Read our hazard perception guide</t0>.",
-  "t": "También hay escenas fijas ilustradas en las que tocas el riesgo. Algunos clips y escenas son gratis, y Premium los desbloquea todos. La guía de la licencia de cada estado explica en qué punto del camino hacia tus placas P está su prueba de percepción de riesgos (el Territorio del Norte no tiene una prueba aparte: los riesgos se evalúan en el examen práctico de conducción). Los clips y las escenas son material de práctica original, no una copia de ninguna prueba oficial. <t0>Lee nuestra guía de percepción de riesgos</t0>."
+ "d3a81724616142ba": {
+  "src": "There are also 40 illustrated still scenes where you tap the hazard. 11 clips and 6 scenes are free, and Premium unlocks them all. Every clip and scene can be browsed in picture libraries, and any clip can be replayed. Each state's licence guide explains where its hazard perception test fits on the way to your P plates (the Northern Territory has no separate test: hazards are assessed in the practical driving test). The clips and scenes are original practice material, not a copy of any official test. <t0>Read our hazard perception guide</t0>.",
+  "t": "También hay 40 escenas fijas ilustradas en las que tocas el riesgo. Hay 11 clips y 6 escenas gratis, y Premium los desbloquea todos. Todos los clips y escenas se pueden explorar en bibliotecas con imágenes, y cualquier clip se puede volver a reproducir. La guía de la licencia de cada estado explica en qué punto del camino hacia tus placas P está su prueba de percepción de riesgos (el Territorio del Norte no tiene una prueba aparte: los riesgos se evalúan en el examen práctico de conducción). Los clips y las escenas son material de práctica original, no una copia de ninguna prueba oficial. <t0>Lee nuestra guía de percepción de riesgos</t0>."
  },
- "1e3c07fade863262": {
-  "src": "<t0>Hazard perception</t0><t1>Scene 1</t1>",
-  "t": "<t0>Percepción de riesgos</t0><t1>Escena 1</t1>"
+ "815fa273731c50dd": {
+  "src": "<t0>Hazard perception</t0><t1>3D clip</t1>",
+  "t": "<t0>Percepción de riesgos</t0><t1>Clip en 3D</t1>"
  },
- "b103fc9138cd6ca9": {
-  "src": "You are driving the red car. Tap the hazard you should be ready for.",
-  "t": "Conduces el auto rojo. Toca el riesgo para el que deberías estar preparado."
+ "83cc5a4f7c6fcd21": {
+  "src": "YOUR TASK",
+  "t": "TU TAREA"
  },
- "3f55aa09280c8cf1": {
-  "src": "Good spot",
-  "t": "Bien visto"
+ "501e5224e0a5d82c": {
+  "src": "Turn right",
+  "t": "Girar a la derecha"
  },
- "4544d63687f59537": {
-  "src": "A person is standing in the gap between two parked cars and could step out without looking.",
-  "t": "Una persona está de pie en el hueco entre dos autos estacionados y podría salir sin mirar."
+ "47095f8b958f2275": {
+  "src": "Tap when it is safe to start your turn.",
+  "t": "Toca cuando sea seguro empezar el giro."
  },
- "da76d8048a197032": {
-  "src": "Illustration of a hazard perception scene: a person waiting between parked cars could step into the road.",
-  "t": "Ilustración de una escena de percepción de riesgos: una persona que espera entre autos estacionados podría salir a la calzada."
+ "613eb4b2c3e8dbbe": {
+  "src": "Tap anywhere on the clip at the moment it becomes safe.",
+  "t": "Toca cualquier parte del clip en el momento en que sea seguro."
+ },
+ "9e111948f3cec79b": {
+  "src": "Start clip",
+  "t": "Empezar"
+ },
+ "3328f2a495b8ead4": {
+  "src": "Illustration of a 3D hazard perception clip: you are told what you want to do, then tap when it becomes safe.",
+  "t": "Ilustración de un clip de percepción de riesgos en 3D: se te indica qué quieres hacer y tocas cuando sea seguro."
  },
  "d719f877034bf97f": {
   "src": "Also included",
@@ -1123,9 +1131,9 @@
   "src": "Streak and badges",
   "t": "Racha e insignias"
  },
- "4ce9b6214e5dbfcd": {
-  "src": "A study streak and a few badges for real study. No points to grind.",
-  "t": "Una racha de estudio y algunas insignias por estudiar de verdad. Sin puntos que acumular sin sentido."
+ "864864c81fed881d": {
+  "src": "A study streak and six badges for real study (your first session, a 7-day streak, 100 answers, every topic tried, a mock test passed, 8 hazard clips passed). No points to grind.",
+  "t": "Una racha de estudio y seis insignias por estudiar de verdad (tu primera sesión, una racha de 7 días, 100 respuestas, todos los temas probados, un simulacro aprobado y 8 clips de percepción de riesgos superados). Sin puntos que acumular sin sentido."
  },
  "346a9101bf0edb8f": {
   "src": "English, <x0/>, <x1/>, <x2/> and <x3/>, including the questions and explanations for every state and territory. Arabic reads right to left.",
@@ -1551,17 +1559,17 @@
   "src": "How does the pass-chance estimate work?",
   "t": "¿Cómo funciona la estimación de la probabilidad de aprobar?"
  },
- "844b3009501395ec": {
-  "src": "After you've answered enough questions, the app estimates your chance of passing from your recent answers. It is an estimate, not a guarantee. Premium adds a forecast for each section of the test.",
-  "t": "Cuando hayas respondido suficientes preguntas, la app estima tu probabilidad de aprobar a partir de tus respuestas recientes. Es una estimación, no una garantía. Premium agrega una previsión para cada sección del examen."
+ "a91cb3e79f52cdd7": {
+  "src": "After your first 12 answers (the quick check), the app estimates your chance of passing from your recent answers. It is an estimate, not a guarantee. Premium adds a forecast for each section of the test.",
+  "t": "Después de tus primeras 12 respuestas (la prueba rápida), la app estima tu probabilidad de aprobar a partir de tus respuestas recientes. Es una estimación, no una garantía. Premium agrega una previsión para cada sección del examen."
  },
  "0abe3cd09338056d": {
   "src": "Does the app include hazard perception practice?",
   "t": "¿La app incluye práctica de percepción de riesgos?"
  },
- "6f6fcc1793ab4a2a": {
-  "src": "Yes. There are 72 real-time 3D driving clips where you tap when it is safe to act, in the same style as the hazard perception tests, plus illustrated still scenes and a guide to your state's hazard perception test (the Northern Territory has none; hazards are assessed in its practical driving test). A few clips and scenes are free and Premium unlocks them all. They are original practice material and are not a copy of any official test. See our <t0>hazard perception guide</t0>.",
-  "t": "Sí. Hay 72 clips de conducción en 3D en tiempo real en los que tocas cuando es seguro actuar, con el mismo estilo que las pruebas de percepción de riesgos, además de escenas fijas ilustradas y una guía sobre la prueba de percepción de riesgos de tu estado (el Territorio del Norte no tiene; allí los riesgos se evalúan en el examen práctico de conducción). Algunos clips y escenas son gratis y Premium los desbloquea todos. Son material de práctica original y no son una copia de ninguna prueba oficial. Consulta nuestra <t0>guía de percepción de riesgos</t0>."
+ "951188f93e5a5e5d": {
+  "src": "Yes. There are 72 real-time 3D driving clips where you tap when it is safe to act, in the same style as the hazard perception tests, plus 40 illustrated still scenes and a guide to your state's hazard perception test (the Northern Territory has none; hazards are assessed in its practical driving test). 11 clips and 6 scenes are free, and Premium unlocks them all. Every clip and scene can be browsed in picture libraries, and any clip can be replayed. They are original practice material and are not a copy of any official test. See our <t0>hazard perception guide</t0>.",
+  "t": "Sí. Hay 72 clips de conducción en 3D en tiempo real en los que tocas cuando es seguro actuar, con el mismo estilo que las pruebas de percepción de riesgos, además de 40 escenas fijas ilustradas y una guía sobre la prueba de percepción de riesgos de tu estado (el Territorio del Norte no tiene; allí los riesgos se evalúan en el examen práctico de conducción). Hay 11 clips y 6 escenas gratis, y Premium los desbloquea todos. Todos los clips y escenas se pueden explorar en bibliotecas con imágenes, y cualquier clip se puede volver a reproducir. Son material de práctica original y no son una copia de ninguna prueba oficial. Consulta nuestra <t0>guía de percepción de riesgos</t0>."
  },
  "404aad5288122a80": {
   "src": "Questions and accuracy",
@@ -2019,9 +2027,9 @@
   "src": "<t0>An Android phone or tablet</t0> with Android 8.0 or later. There is no iPhone version yet.",
   "t": "<t0>Un teléfono o una tableta Android</t0> con Android 8.0 o posterior. Aún no hay versión para iPhone."
  },
- "871fdd04e660b368": {
-  "src": "<t0>An account</t0>: sign in with Google or with an email address and password. Your progress is saved to it, so it follows you to a new phone.",
-  "t": "<t0>Una cuenta</t0>: inicia sesión con Google o con una dirección de correo electrónico y una contraseña. Tu progreso se guarda en ella, así que te acompaña si cambias de teléfono."
+ "d489f768938f70d2": {
+  "src": "<t0>An account</t0>: sign in with Google, Facebook, or an email address and password. Your progress is saved to it, so it follows you to a new phone.",
+  "t": "<t0>Una cuenta</t0>: inicia sesión con Google, con Facebook o con una dirección de correo electrónico y una contraseña. Tu progreso se guarda en ella, así que te acompaña si cambias de teléfono."
  },
  "5c6635622e4f0384": {
   "src": "<t0>A connection to sign in</t0>. After that, the questions are built into the app and you can practise offline.",
@@ -2047,13 +2055,17 @@
   "src": "A daily study plan, progress tracking and an estimated pass chance.",
   "t": "Un plan de estudio diario, seguimiento del progreso y una probabilidad estimada de aprobar."
  },
+ "e78e1fc91c9fd954": {
+  "src": "Sample hazard perception practice: 11 of the 72 3D clips and 6 of the 40 still scenes.",
+  "t": "Práctica de percepción de riesgos de muestra: 11 de los 72 clips en 3D y 6 de las 40 escenas fijas."
+ },
  "10deb8b821486999": {
   "src": "All eight states and territories, in English, Chinese, Arabic, Vietnamese and Spanish.",
   "t": "Los ocho estados y territorios, en inglés, chino, árabe, vietnamita y español."
  },
- "f9a7ed526131c0de": {
-  "src": "Premium is optional: a one-time A$5.99 purchase through Google Play, with no subscription. It removes ads and adds unlimited mock tests, forecasts for each section of the test, your weak spots and all 72 hazard perception clips. See the <t0>features</t0>.",
-  "t": "Premium es opcional: una compra única de A$5.99 a través de Google Play, sin suscripción. Quita los anuncios y agrega simulacros ilimitados, previsiones para cada sección del examen, tus puntos débiles y los 72 clips de percepción de riesgos. Consulta las <t0>funciones</t0>."
+ "a705ab0c9292b3b7": {
+  "src": "Premium is optional: a one-time A$5.99 purchase through Google Play, with no subscription. It removes ads and adds unlimited mock tests, forecasts for each section of the test, your weak spots, a review planner, and all 72 hazard perception clips and 40 still scenes. See the <t0>features</t0>.",
+  "t": "Premium es opcional: una compra única de A$5.99 a través de Google Play, sin suscripción. Quita los anuncios y agrega simulacros ilimitados, previsiones para cada sección del examen, tus puntos débiles, un planificador de repasos, y los 72 clips de percepción de riesgos y las 40 escenas fijas. Consulta las <t0>funciones</t0>."
  },
  "5a2cf0b481310b0f": {
   "src": "Try the app early",
@@ -3059,10 +3071,6 @@
   "src": "Show reasonable knowledge of WA traffic laws and safe driving techniques, normally by passing a theory test",
   "t": "Demostrar un conocimiento razonable de las leyes de tráfico de WA y de las técnicas de conducción segura, normalmente aprobando un examen teórico"
  },
- "411ea495ff3e9538": {
-  "src": "Test format",
-  "t": "Formato del examen"
- },
  "6448fdcbd43610ba": {
   "src": "30 multiple-choice questions, at least 24 correct to pass (independent guides)",
   "t": "30 preguntas de opción múltiple; al menos 24 correctas para aprobar (guías independientes)"
@@ -3663,9 +3671,9 @@
   "src": "35-question practice tests scored against a 31-question pass line.",
   "t": "Exámenes de práctica de 35 preguntas, corregidos con una nota para aprobar de 31 aciertos."
  },
- "cf1ef8e8e7c1a4ef": {
-  "src": "More than 440 original ACT questions, written from ACT legislation.",
-  "t": "Más de 440 preguntas originales del ACT, escritas a partir de la legislación del ACT."
+ "90cf8e03a9dac759": {
+  "src": "More than 420 original ACT questions, written from ACT legislation.",
+  "t": "Más de 420 preguntas originales del ACT, escritas a partir de la legislación del ACT."
  },
  "d25f98f1e11d3f7e": {
   "src": "ACT-only rules such as roof-mounted plates, zero alcohol for supervisors and the late-night P1 passenger rule.",

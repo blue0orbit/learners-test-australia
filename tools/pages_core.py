@@ -1,6 +1,6 @@
 """Home, features, states hub, FAQ, about, contact and 404 pages."""
 from sitelib import (
-    APP_NAME, DATE, DATE_H, DEVELOPER, DISCLAIMER, DTT_PLAY, DTT_URL, EMAIL, PLAY_URL, PRICE, SITE_ID, SITE_NAME, SRC,
+    APP_NAME, CHECKED_H, DEVELOPER, DISCLAIMER, DTT_PLAY, DTT_URL, EMAIL, PLAY_URL, PRICE, SITE_ID, SITE_NAME, SRC,
     BASE, ORG_ID, Page, chip, coming_soon, dtt_application, ext, faq_block, faq_ld, icon, mobile_application,
     organization, page_head, plate_svg, updated_line,
 )
@@ -81,7 +81,7 @@ def mock_fingerprint() -> str:
 <div class="phone" aria-hidden="true"><div class="screen">
   <div class="scr-q">Where will you take your test?</div>
   <div class="scr-row" style="flex-wrap:wrap;justify-content:flex-start">{chip('NSW')} <span class="scr-muted">VIC</span> <span class="scr-muted">QLD</span> <span class="scr-muted">SA</span> <span class="scr-muted">WA</span> <span class="scr-muted">TAS</span> <span class="scr-muted">ACT</span> <span class="scr-muted">NT</span></div>
-  <div class="scr-card"><div class="scr-label">DRIVER KNOWLEDGE TEST</div>
+  <div class="scr-card"><div class="scr-label">DRIVER KNOWLEDGE TEST (IN PERSON)</div>
   <ul class="scr-plan">
     <li><span class="scr-dot"></span>45 questions</li>
     <li><span class="scr-dot"></span>General knowledge: at least 12 of 15 correct</li>
@@ -89,7 +89,7 @@ def mock_fingerprint() -> str:
     <li><span class="scr-dot"></span>No time limit</li>
     <li><span class="scr-dot"></span>The test ends early once you can no longer pass</li>
   </ul>
-  <div class="scr-src">Source: nsw.gov.au · checked 30 Sep 2026</div></div>
+  <div class="scr-src">Source: nsw.gov.au · checked 5 Oct 2026</div></div>
   <div class="scr-muted scr-src">Confirm the format with your state's transport authority before your test.</div>
   <div class="scr-btn">Continue</div>
 </div></div>
@@ -98,17 +98,18 @@ def mock_fingerprint() -> str:
 
 
 def mock_hazard() -> str:
+    """A 3D hazard clip as it looks before you answer: only the task, never the hazard or the answer."""
     return f"""<figure class="mock-figure">
 <div class="phone" aria-hidden="true"><div class="screen">
-  <div class="scr-top"><span>Hazard perception</span><span class="scr-muted">Scene 1</span></div>
-  <div class="scene"><span class="path l"></span><span class="path r"></span><span class="road"></span>
-  <span class="car p1"></span><span class="car p2"></span><span class="car on"></span><span class="car me"></span>
-  <span class="ped"></span><span class="tap"></span></div>
-  <div class="scr-q">You are driving the red car. Tap the hazard you should be ready for.</div>
-  <div class="scr-card scr-feedback"><div class="t">Good spot</div>
-  <div>A person is standing in the gap between two parked cars and could step out without looking.</div></div>
+  <div class="scr-top"><span>Hazard perception</span><span class="scr-muted">3D clip</span></div>
+  <div class="clip"><span class="xroad"></span><span class="road"></span><span class="ind"></span><span class="bonnet"></span></div>
+  <div class="scr-card"><div class="scr-label">YOUR TASK</div>
+  <div class="scr-q">Turn right</div>
+  <div>Tap when it is safe to start your turn.</div></div>
+  <div class="scr-muted scr-src">Tap anywhere on the clip at the moment it becomes safe.</div>
+  <div class="scr-btn">Start clip</div>
 </div></div>
-<figcaption>Illustration of a hazard perception scene: a person waiting between parked cars could step into the road.</figcaption>
+<figcaption>Illustration of a 3D hazard perception clip: you are told what you want to do, then tap when it becomes safe.</figcaption>
 </figure>"""
 
 
@@ -156,7 +157,7 @@ def state_cards(heading_level: str = "h3") -> str:
   <div class="state-top">{chip('WA')}<{h}>WA learner's permit theory test</{h}></div>
   <dl>
     <dt>Before your permit</dt><dd>Show you know WA's traffic laws and safe driving, normally by a theory test.</dd>
-    <dt>Official format</dt><dd>Check the WA transport department's website.</dd>
+    <dt>Test format</dt><dd>30 questions, 24 to pass.</dd>
     <dt>In the app</dt><dd>A 30-question practice test written from WA legislation.</dd>
   </dl>
   <a class="card-link" href="@/wa-learners-test-practice.html">WA learners test practice {icon('arrow')}</a>
@@ -341,7 +342,7 @@ def home() -> Page:
   <div class="section-head">
     <p class="eyebrow">Guides</p>
     <h2 id="guides-title">Learner test guides</h2>
-    <p>Plain-English guides to learner tests and road rules, written from official sources as checked on {DATE_H}.
+    <p>Plain-English guides to learner tests and road rules, written from official sources as checked on {CHECKED_H}.
     Every state and territory also has its own page: <a href="@/states.html">learner tests by state</a>.</p>
   </div>
   <div class="grid grid-3">
@@ -432,8 +433,8 @@ def features() -> Page:
     select-all-that-apply questions for the South Australian myLs and Tasmanian online tests. A quick
     "How sure were you?" tap (knew it, unsure or guessed) helps the app decide when to show a question again, and you
     can save or flag any question to come back to.</p>
-    <p>Each state's question pack has more than 380 original questions, and hundreds of original sign and diagram
-    illustrations are shared across states.</p>
+    <p>Each state's question pack has from 386 (NT) to 555 (SA) original questions, about 3,770 in all, and hundreds
+    of original sign and diagram illustrations are shared across states.</p>
   </div>
   {mock_question()}
 </div>
@@ -452,7 +453,7 @@ def features() -> Page:
       <li><strong>Mock test:</strong> the full test, same format as the real one.</li>
     </ul>
     <p>Other ways to practise: mixed practice (20 questions, new ones first), mistakes, saved questions, weak spots
-    and practice by topic. Optional study reminders and a countdown help you keep going, and a study streak counts
+    and practice by topic, with a mastery ring for each topic. Optional study reminders and a countdown help you keep going, and a study streak counts
     real study only.</p>
   </div>
   {mock_today()}
@@ -466,7 +467,8 @@ def features() -> Page:
     <p>Mock tests have the same sections and number of questions as the real test, and each section is scored
     against its own pass mark.
     In the NSW mock, the test ends where the real DKT would, once passing is no longer possible, and you can choose
-    to keep practising the rest.</p>
+    to keep practising the rest. In the South Australian in-person theory test mock, a mistake in Part A (giving way)
+    ends the test after Part A, as it does at Service SA. The other mock tests run to the last question.</p>
     <p>Results show your score in each section against its pass line, how long you took and which questions to
     review, with one tap to practise your mistakes. <a href="@/blog/how-to-use-mock-tests-and-mistakes.html">How to get
     the most out of mock tests</a>.</p>
@@ -482,7 +484,8 @@ def features() -> Page:
   <div class="prose">
     <h2 id="f5">Progress and an honest pass-chance estimate</h2>
     <p>The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this
-    week and your recent accuracy. After enough answers, the Today screen shows an estimated pass chance.</p>
+    week and your recent accuracy. After your first 12 answers (the quick check), the Today screen shows an estimated
+    pass chance.</p>
     <p>With Premium you also get a forecast for each section (your expected score and the chance of passing that
     section), your weak spots and a planner for upcoming reviews.</p>
     <p class="note">The pass chance is an estimate from your recent answers, not a guarantee. The official test is set
@@ -510,8 +513,9 @@ def features() -> Page:
     streets, traffic lights, roundabouts, school zones, country roads with kangaroos and road trains, freeways,
     level crossings and Melbourne trams, by day, at dusk, at night and in the rain. Afterwards a timeline shows when
     it was safe and when you tapped, with the road rule explained, and you can watch the clip again.</p>
-    <p>There are also illustrated still scenes where you tap the hazard. A few clips and scenes are free, and Premium
-    unlocks them all. Each state's licence guide explains where its hazard perception test fits on the way to your
+    <p>There are also 40 illustrated still scenes where you tap the hazard. 11 clips and 6 scenes are free, and
+    Premium unlocks them all. Every clip and scene can be browsed in picture libraries, and any clip can be replayed.
+    Each state's licence guide explains where its hazard perception test fits on the way to your
     P plates (the Northern Territory has no separate test: hazards are assessed in the practical driving test).
     The clips and scenes are original practice material, not a copy of any official test.
     <a href="@/blog/hazard-perception-test-nsw-vic-qld.html">Read our hazard perception guide</a>.</p>
@@ -525,7 +529,7 @@ def features() -> Page:
   <div class="grid grid-3">
     <div class="card"><span class="icon-tile">{icon('route')}</span><h3>Licence guide</h3><p>Each step from learner to full licence in your state, with links to the official pages.</p></div>
     <div class="card"><span class="icon-tile">{icon('bell')}</span><h3>Reminders and countdown</h3><p>A daily nudge and a countdown to your test, if you turn them on.</p></div>
-    <div class="card"><span class="icon-tile">{icon('star')}</span><h3>Streak and badges</h3><p>A study streak and a few badges for real study. No points to grind.</p></div>
+    <div class="card"><span class="icon-tile">{icon('star')}</span><h3>Streak and badges</h3><p>A study streak and six badges for real study (your first session, a 7-day streak, 100 answers, every topic tried, a mock test passed, 8 hazard clips passed). No points to grind.</p></div>
     <div class="card"><span class="icon-tile">{icon('globe')}</span><h3>Five languages</h3><p>{LANGS}, including the questions and explanations for every state and territory. Arabic reads right to left.</p></div>
     <div class="card"><span class="icon-tile">{icon('text')}</span><h3>Accessible by design</h3><p>Readable fonts, large-text support, dark mode, TalkBack labels and a spoken timer.</p></div>
     <div class="card"><span class="icon-tile">{icon('offline')}</span><h3>Offline practice, synced progress</h3><p>Practise without a connection after signing in. Your progress is saved to your account and follows you to a new phone.</p></div>
@@ -583,7 +587,7 @@ all eight: {ALL_STATES_TEXT}.</p></div>
 
 <h2>How do the learner tests compare across Australia?</h2>
 <div class="table-wrap"><table>
-<caption>Knowledge test formats, as checked on {DATE_H}</caption>
+<caption>Knowledge test formats, as checked on {CHECKED_H}</caption>
 <thead><tr><th scope="col">State</th><th scope="col">Test</th><th scope="col">Questions</th><th scope="col">Pass mark</th><th scope="col">How you take it</th></tr></thead>
 <tbody>
 <tr><th scope="row"><a href="@/nsw-dkt-practice-test.html">NSW</a></th><td>Driver Knowledge Test (DKT)</td><td>45: 15 general knowledge, 30 road safety</td><td>12 of 15 and 29 of 30</td><td>In person, or the DKT online course and final test from 15 years 11 months</td></tr>
@@ -707,13 +711,15 @@ FAQ_GROUPS = [
          "<p>Soon. It isn't listed yet, so there is no store link on this site. When it goes live, the “Coming soon to Google "
          "Play” button will become a link to the listing.</p>"),
         ("How does the pass-chance estimate work?",
-         "<p>After you've answered enough questions, the app estimates your chance of passing from your recent answers. It "
+         "<p>After your first 12 answers (the quick check), the app estimates your chance of passing from your recent "
+         "answers. It "
          "is an estimate, not a guarantee. Premium adds a forecast for each section of the test.</p>"),
         ("Does the app include hazard perception practice?",
          "<p>Yes. There are 72 real-time 3D driving clips where you tap when it is safe to act, in the same style as the "
-         "hazard perception tests, plus illustrated still scenes and a guide to your state's hazard perception test (the "
-         "Northern Territory has none; hazards are assessed in its practical driving test). A few clips and scenes are "
-         "free and Premium unlocks them all. They are original practice material and "
+         "hazard perception tests, plus 40 illustrated still scenes and a guide to your state's hazard perception test "
+         "(the Northern Territory has none; hazards are assessed in its practical driving test). 11 clips and 6 scenes "
+         "are free, and Premium unlocks them all. Every clip and scene can be browsed in picture libraries, and any clip "
+         "can be replayed. They are original practice material and "
          'are not a copy of any official test. See our <a href="@/blog/hazard-perception-test-nsw-vic-qld.html">hazard '
          "perception guide</a>.</p>"),
     ]),
@@ -726,7 +732,7 @@ FAQ_GROUPS = [
          "(handbook page or road rule) and a review date. Questions are never copied or paraphrased from official question "
          'banks. <a href="@/about.html">More about our content</a>.</p>'),
         ("How accurate are the questions?",
-         f"<p>The questions were checked against the official sources current on {DATE_H}: the NSW Road User "
+         f"<p>The questions were checked against the official sources current on {CHECKED_H}: the NSW Road User "
          "Handbook (edition 02/2026), Victoria's Road to Solo Driving handbook (checked against current Transport Victoria "
          "and VicRoads pages), Your keys to driving in Queensland (checked against current Queensland Government pages "
          "and legislation) and South Australia's Driver's Handbook (February 2026). Western Australian, Tasmanian, ACT "
@@ -810,7 +816,7 @@ and rules.</p>
   wrong options based on common misunderstandings. No official question, answer option, handbook sentence or image is
   reproduced, and we don't paraphrase official question banks.</p></li>
   <li><h3>A source and a review date on every question</h3><p>Each question carries the handbook page or road rule it
-  comes from and the date it was last verified. The launch packs were checked on {DATE_H}.</p></li>
+  comes from and the date it was last verified. The launch packs were checked on {CHECKED_H}.</p></li>
   <li><h3>The current rule wins</h3><p>Where an older official source differs from the current rule, the question
   follows the current rule. Facts we couldn't confirm from a current official source are flagged for manual checking
   rather than turned into questions.</p></li>
@@ -836,17 +842,17 @@ and e-bike changes), the current official pages and legislation decide the answe
 ACT and the Northern Territory we use no handbook at all: the questions are written from legislation.</p>
 
 <h2>Attribution</h2>
-<p>Queensland road rules content is based on content from the Queensland Legislation website at {DATE_H}
+<p>Queensland road rules content is based on content from the Queensland Legislation website at {CHECKED_H}
 (CC BY 4.0). Queensland Government web pages are © The State of Queensland (Department of Transport and Main Roads),
 CC BY 4.0. Transport Victoria web pages are licensed under CC BY 4.0, except images and branding.</p>
 <p>South Australian content draws on The Driver's Handbook (MR200, February 2026), Department of Infrastructure and
-Transport, Government of South Australia, sourced on {DATE_H} from mylicence.sa.gov.au, © Government of South
+Transport, Government of South Australia, sourced on {CHECKED_H} from mylicence.sa.gov.au, © Government of South
 Australia, CC BY 3.0 AU, and on South Australian legislation, based on content from the South Australian Legislation
-website at {DATE_H} (CC BY 4.0). Western Australian content is based on content from the Western Australian Legislation
-website at {DATE_H}, © State of Western Australia, CC BY 4.0. Tasmanian content is based on material from the Tasmanian
-Legislation website at {DATE_H}, © State of Tasmania, CC BY 4.0. ACT facts are restated from ACT legislation on the ACT
-Legislation Register, sourced on {DATE_H}, © Australian Capital Territory. Northern Territory facts are restated from
-Northern Territory legislation published at legislation.nt.gov.au, sourced on {DATE_H}; this is not an official version
+website at {CHECKED_H} (CC BY 4.0). Western Australian content is based on content from the Western Australian Legislation
+website at {CHECKED_H}, © State of Western Australia, CC BY 4.0. Tasmanian content is based on material from the Tasmanian
+Legislation website at {CHECKED_H}, © State of Tasmania, CC BY 4.0. ACT facts are restated from ACT legislation on the ACT
+Legislation Register, sourced on {CHECKED_H}, © Australian Capital Territory. Northern Territory facts are restated from
+Northern Territory legislation published at legislation.nt.gov.au, sourced on {CHECKED_H}; this is not an official version
 of that legislation.</p>
 <p>We restate facts in our own words, reproduce no text, logos or images, and none of these sources endorses the app or
 this website. For the law in force, always go to the official legislation website for your state or territory.</p>
@@ -998,8 +1004,8 @@ def download() -> Page:
 <h2>What you need</h2>
 <ul>
   <li><strong>An Android phone or tablet</strong> with Android 8.0 or later. There is no iPhone version yet.</li>
-  <li><strong>An account</strong>: sign in with Google or with an email address and password. Your progress is saved
-  to it, so it follows you to a new phone.</li>
+  <li><strong>An account</strong>: sign in with Google, Facebook, or an email address and password. Your progress is
+  saved to it, so it follows you to a new phone.</li>
   <li><strong>A connection to sign in</strong>. After that, the questions are built into the app and you can practise
   offline.</li>
 </ul>
@@ -1010,11 +1016,12 @@ def download() -> Page:
   <li>Your state's test format: the same number of questions, sections and pass marks.</li>
   <li>One free mock test a day, and another for each short ad you choose to watch.</li>
   <li>A daily study plan, progress tracking and an estimated pass chance.</li>
+  <li>Sample hazard perception practice: 11 of the 72 3D clips and 6 of the 40 still scenes.</li>
   <li>All eight states and territories, in English, Chinese, Arabic, Vietnamese and Spanish.</li>
 </ul>
 <p>Premium is optional: a one-time {PRICE} purchase through Google Play, with no subscription. It removes ads and adds
-unlimited mock tests, forecasts for each section of the test, your weak spots and all 72 hazard perception clips. See
-the <a href="@/features.html">features</a>.</p>
+unlimited mock tests, forecasts for each section of the test, your weak spots, a review planner, and all 72 hazard
+perception clips and 40 still scenes. See the <a href="@/features.html">features</a>.</p>
 
 <h2 id="early">Try the app early</h2>
 <p>Before the app goes public on Google Play, we are inviting a small group of learners and parents to test it. If you

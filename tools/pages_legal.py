@@ -5,7 +5,7 @@ The privacy policy and terms mirror the in-app text in app/src/main/res/values/s
 with the app: only headings and HTML structure are added here.
 """
 from sitelib import (
-    APP_NAME, BASE, DATE, DATE_H, DEVELOPER, EMAIL, PACKAGE, SITE_NAME, SRC, Page, page_head, updated_line,
+    APP_NAME, BASE, DEVELOPER, EMAIL, LEGAL_DATE, LEGAL_DATE_H, PACKAGE, SITE_NAME, SRC, Page, page_head, updated_line,
 )
 
 MAIL = f'<a href="mailto:{EMAIL}">{EMAIL}</a>'
@@ -26,7 +26,7 @@ def privacy() -> Page:
         "Privacy Policy",
         f"How the {SITE_NAME} app handles your information, and a note on this website.",
         crumbs,
-        meta_html=f'<p class="meta">Last updated: <time datetime="{DATE}">{DATE_H}</time></p>',
+        meta_html=updated_line(LEGAL_DATE, LEGAL_DATE_H),
     ) + f"""
 <div class="content"><div class="container prose">
 {legal_intro("privacy policy", "Settings → Privacy policy")}
@@ -92,6 +92,7 @@ def privacy() -> Page:
 </div></div>"""
     return Page(
         path="privacy-policy.html",
+        lastmod=LEGAL_DATE,
         title="Privacy Policy | Learners Test Australia",
         description=("Privacy policy for the Learners Test Australia app: what we collect, why, third-party services, "
                      "retention, your rights, and why this website uses no cookies."),
@@ -112,6 +113,7 @@ def cookies() -> Page:
         "Cookie policy",
         "This website sets no cookies. Here is what the app uses instead, and how to control it.",
         crumbs,
+        meta_html=updated_line(LEGAL_DATE, LEGAL_DATE_H),
     ) + f"""
 <div class="content"><div class="container prose">
 <div class="answer-box"><p class="answer-label">In short</p>
@@ -181,6 +183,7 @@ sign-in needs.</p>
 </div></div>"""
     return Page(
         path="cookies.html",
+        lastmod=LEGAL_DATE,
         title="Cookie Policy | Learners Test Australia",
         description=("This website sets no cookies. Learn what the Learners Test Australia app uses instead (device storage, "
                      "Firebase, advertising ID) and how to control it."),
@@ -199,6 +202,7 @@ def terms() -> Page:
         "Terms of Service",
         f"The terms for using the {SITE_NAME} app.",
         crumbs,
+        meta_html=updated_line(LEGAL_DATE, LEGAL_DATE_H),
     ) + f"""
 <div class="content"><div class="container prose">
 {legal_intro("terms of service", "Settings → Terms")}
@@ -266,6 +270,7 @@ def terms() -> Page:
 </div></div>"""
     return Page(
         path="terms.html",
+        lastmod=LEGAL_DATE,
         title="Terms of Service | Learners Test Australia",
         description=("Terms of service for the Learners Test Australia app: independence disclaimer, eligibility, Premium "
                      "billing, acceptable use, liability and NSW governing law."),
@@ -284,7 +289,7 @@ def account_deletion() -> Page:
         "Delete your Learners Test Australia account and data",
         None,
         crumbs,
-        meta_html=updated_line(),
+        meta_html=updated_line(LEGAL_DATE, LEGAL_DATE_H),
     ) + f"""
 <div class="content"><div class="container prose">
 <div class="callout">
@@ -336,6 +341,7 @@ within 30 days.</p>
 </div></div>"""
     return Page(
         path="account-deletion.html",
+        lastmod=LEGAL_DATE,
         title="Delete Your Account and Data | Learners Test Australia",
         description=("How to delete your Learners Test Australia account and data: in the app via Settings, Delete account, "
                      "or by email. What is deleted and what is kept."),

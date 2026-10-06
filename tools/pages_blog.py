@@ -2,6 +2,9 @@
 
 Every road-rule or test fact in these posts comes from content-src/coverage/{nsw,vic,qld}.md in the app
 repository, checked on 30 September 2026. Posts are written in our own words; no official wording is copied.
+
+Each post has a publication date and a last-updated date: pass modified=DATE, modified_h=DATE_H when you change a
+post, so only the posts that changed show the new date.
 """
 import json
 from pathlib import Path
@@ -9,18 +12,23 @@ from pathlib import Path
 BLOG_IMAGES = {item['slug']: item for item in json.loads((Path(__file__).parent / 'blog-images.json').read_text(encoding='utf-8'))}
 
 from sitelib import (
-    BASE, DATE, DATE_H, DEVELOPER, SITE_NAME, SRC, Page, chip, esc, organization, page_head, source_box,
+    BASE, CHECKED_H, DATE, DATE_H, DEVELOPER, SITE_NAME, SRC, Page, chip, esc, organization, page_head, source_box,
     strip_tags, words,
 )
 
 BLOG_CRUMB = ("Guides", "blog/")
+# The guides were first published on 30 September 2026.
+PUBLISHED = "2026-09-30"
+PUBLISHED_H = "30 September 2026"
 
 
-def byline(body_html: str, date: str = DATE, date_h: str = DATE_H) -> str:
+def byline(body_html: str, date: str = PUBLISHED, date_h: str = PUBLISHED_H, modified: str | None = None,
+           modified_h: str | None = None) -> str:
     mins = max(1, round(words(body_html) / 220))
+    modified, modified_h = modified or date, modified_h or date_h
     return (
         f'<p class="meta">By <a href="@/about.html">{DEVELOPER}</a> · Published <time datetime="{date}">{date_h}</time> · '
-        f"Last updated: <time datetime=\"{date}\">{date_h}</time> · {mins} min read</p>"
+        f"Last updated: <time datetime=\"{modified}\">{modified_h}</time> · {mins} min read</p>"
     )
 
 
@@ -31,9 +39,10 @@ def toc(items: list[tuple[str, str]]) -> str:
 
 def post(slug: str, title: str, h1: str, description: str, summary: str, sections: list[tuple[str, str, str]],
          sources: list[tuple[str, str]], section_name: str, keywords: list[str], llms_note: str,
-         related: list[tuple[str, str]], date: str = DATE, date_h: str = DATE_H,
-         source_html: str | None = None, image_caption: str = "Illustration for this guide; not an official test image or road-rule diagram.") -> Page:
+         related: list[tuple[str, str]], date: str = PUBLISHED, date_h: str = PUBLISHED_H,
+         modified: str | None = None, modified_h: str | None = None, source_html: str | None = None, image_caption: str = "Illustration for this guide; not an official test image or road-rule diagram.") -> Page:
     path = f"blog/{slug}.html"
+    modified, modified_h = modified or date, modified_h or date_h
     image_path = f"assets/img/blog/{slug}.webp"
     image_alt = BLOG_IMAGES[slug]['alt']
     crumbs = [("Home", ""), BLOG_CRUMB, (h1, path)]
@@ -44,7 +53,7 @@ def post(slug: str, title: str, h1: str, description: str, summary: str, section
         + toc([(sid, t) for sid, t, _ in sections])
         + content
     )
-    body = page_head(h1, None, crumbs, meta_html=byline(article_html, date, date_h), eyebrow=f'<span class="tag">{esc(section_name)}</span>') + f"""
+    body = page_head(h1, None, crumbs, meta_html=byline(article_html, date, date_h, modified, modified_h), eyebrow=f'<span class="tag">{esc(section_name)}</span>') + f"""
 <div class="content"><div class="container two-col">
 <article class="prose">
 <figure class="blog-cover"><img src="@/{image_path}" width="1200" height="630" alt="{esc(image_alt)}" fetchpriority="high" decoding="async"><figcaption>{esc(image_caption)}</figcaption></figure>
@@ -59,7 +68,7 @@ def post(slug: str, title: str, h1: str, description: str, summary: str, section
         "headline": h1,
         "description": description,
         "datePublished": date,
-        "dateModified": date,
+        "dateModified": modified,
         "author": {"@type": "Organization", "name": DEVELOPER, "url": BASE + "about.html"},
         "publisher": organization(full=False),
         "image": {"@type": "ImageObject", "url": BASE + image_path, "width": 1200, "height": 630},
@@ -74,7 +83,7 @@ def post(slug: str, title: str, h1: str, description: str, summary: str, section
     return Page(
         path=path, title=title, description=description, body=body, nav="blog", crumbs=crumbs, jsonld=[ld],
         og_type="article", image_path=image_path, image_alt=image_alt, priority="0.7", llms=True, llms_title=h1, llms_note=llms_note,
-        article={"published": date + "T09:00:00+10:00", "modified": date + "T09:00:00+10:00"},
+        article={"published": date + "T09:00:00+10:00", "modified": modified + "T09:00:00+10:00"},
     )
 
 
@@ -174,7 +183,7 @@ look up the handbook page and come back to the question a few days later.</p>
                  "South Wales. It is built on the Road User Handbook, and the format the NSW Government publishes is 45 "
                  "questions in two parts: general knowledge (15 questions, 12 to pass) and road safety (30 questions, 29 to "
                  "pass). This guide covers the format, the online option, what to study and what comes next, as checked on "
-                 f"{DATE_H}."),
+                 f"{CHECKED_H}."),
         sections=sections,
         sources=[
             ("Driver Knowledge Test (nsw.gov.au)", SRC["nsw_dkt"]),
@@ -228,14 +237,14 @@ card arrives by post in about a week, and a digital permit is accepted too.</p>"
 <p>The whole Road to Solo Driving handbook (April 2023 edition): the licensing section and all four chapters, on the
 challenges of driving, learning to drive, managing risk, and rules and responsibilities. The VicRoads practice test is
 a revision aid, and the handbook points out that it doesn't cover everything.</p>
-<p>That said, the practice test does show where the emphasis is. When we reviewed it on {DATE_H}, the biggest groups of
+<p>That said, the practice test does show where the emphasis is. When we reviewed it on {CHECKED_H}, the biggest groups of
 questions were giving way, learning to drive (including hazard perception), parking, speed limits and pedestrians.</p>
 <p>Don't skip the chapters that sound like background. The handbook's early chapters explain why the rules exist, and
 they are testable. For example, the handbook says new drivers are about three times as likely as experienced drivers to
 be in a casualty crash, that crash risk jumps to its highest point when you first drive solo on P1, and that new solo
 drivers with about 120 hours of supervised practice have roughly 30% lower crash risk than those with about 50 hours.
 It also explains hazard perception: spotting and predicting risks and responding in time, which is different from fast
-reflexes.</p>""".replace("{DATE_H}", DATE_H)),
+reflexes.</p>""".replace("{CHECKED_H}", CHECKED_H)),
         ("unique", "Which Victorian rules are different from other states?", """
 <ul>
   <li><strong>Hook turns.</strong> At traffic-light intersections with a hook turn sign, found mainly in central
@@ -281,7 +290,7 @@ biggest topic in the practice test.</p>"""),
                  "online as part of the learner permit course. The in-person test at VicRoads, for people who need another "
                  "language or an interpreter or have no internet, has 32 multiple-choice questions and a pass mark of 25 "
                  "(78%). Both cover the whole Road to Solo Driving handbook. Facts as checked on "
-                 f"{DATE_H}."),
+                 f"{CHECKED_H}."),
         sections=sections,
         sources=[
             ("Learner permit test (VicRoads)", SRC["vic_lpt"]),
@@ -310,7 +319,7 @@ def post_qld() -> Page:
 <p>Before a car learner licence can be issued in Queensland you must pass one of two knowledge assessments (and be
 medically fit to drive). They cover the same rules but work very differently.</p>
 <div class="table-wrap"><table>
-<caption>Written road rules test and PrepL compared (checked {DATE_H})</caption>
+<caption>Written road rules test and PrepL compared (checked {CHECKED_H})</caption>
 <thead><tr><th scope="col"></th><th scope="col">Written road rules test</th><th scope="col">PrepL</th></tr></thead>
 <tbody>
 <tr><th scope="row">Format</th><td>30 multiple-choice questions on paper</td><td>Online course of about 4–6 hours, then a 30-question final test</td></tr>
@@ -390,7 +399,7 @@ our <a href="@/blog/give-way-rules-for-learner-drivers.html">give way guide</a> 
         summary=("Queensland offers two routes to a car learner licence. The written road rules test is 30 questions on "
                  "paper in two separately scored sections: giving way (need 9 of 10) and road rules and licence requirements "
                  "(need 18 of 20). PrepL is an online course of about 4 to 6 hours with a 30-question final test (need 27). "
-                 f"PrepL isn't compulsory yet, so you can choose. Facts as checked on {DATE_H}."),
+                 f"PrepL isn't compulsory yet, so you can choose. Facts as checked on {CHECKED_H}."),
         sections=sections,
         sources=[
             ("Driver tests, written and online (qld.gov.au)", SRC["qld_tests"]),
@@ -494,10 +503,10 @@ differ:</p>
 </ul>"""),
         ("weight", "How much do give-way questions count in the test?", """
 <p>A lot. In Queensland's written test, giving way is a whole 10-question section and you need 9 right. In Victoria it
-was the biggest single group in the VicRoads practice test when we reviewed it on {DATE_H}. In NSW, intersections and
+was the biggest single group in the VicRoads practice test when we reviewed it on {CHECKED_H}. In NSW, intersections and
 giving way is one of the largest topics in the published question list. Practise with diagrams until each situation
 feels obvious; our <a href="@/blog/how-to-use-mock-tests-and-mistakes.html">mock test guide</a> explains how to turn
-mistakes into reviews.</p>""".replace("{DATE_H}", DATE_H)),
+mistakes into reviews.</p>""".replace("{CHECKED_H}", CHECKED_H)),
     ]
     return post(
         slug="give-way-rules-for-learner-drivers",
@@ -509,7 +518,7 @@ mistakes into reviews.</p>""".replace("{DATE_H}", DATE_H)),
                  "is safe. The core rules are national, so they are the same in NSW, VIC and QLD: stop fully at STOP signs, "
                  "give way to the right at intersections with no signs or lights, the road that ends gives way at a "
                  "T-intersection, right-turners give way to oncoming traffic, and you give way to every vehicle already in a "
-                 f"roundabout. A few details differ by state. As checked on {DATE_H}."),
+                 f"roundabout. A few details differ by state. As checked on {CHECKED_H}."),
         sections=sections,
         sources=[
             ("Road User Handbook (nsw.gov.au)", SRC["nsw_ruh"]),
@@ -537,7 +546,7 @@ def post_mocks() -> Page:
 mistake budget: how many you can get wrong and still pass. Where a test has sections, each section has its own budget,
 and you can't borrow from one to cover another.</p>
 <div class="table-wrap"><table>
-<caption>Mistake budgets by test (formats as published, checked {DATE_H})</caption>
+<caption>Mistake budgets by test (formats as published, checked {CHECKED_H})</caption>
 <thead><tr><th scope="col">Test</th><th scope="col">Section</th><th scope="col">Questions</th><th scope="col">Pass mark</th><th scope="col">Mistakes allowed</th></tr></thead>
 <tbody>
 <tr><th scope="row" rowspan="2">{chip('NSW')} DKT</th><td>General knowledge</td><td>15</td><td>12</td><td>3</td></tr>
@@ -565,7 +574,8 @@ test, fix the mistakes, practise, and mock test again.</p>"""),
 </ul>
 <p>In the NSW mock, the test ends where the real DKT would, as soon as passing is no longer possible, and you can choose
 to keep practising the remaining questions. That early stop is a useful jolt: it shows exactly how little room there is
-in the road safety section.</p>"""),
+in the road safety section. In the South Australian in-person theory test mock, a mistake in Part A (giving way) ends
+the test after Part A, as it does at Service SA. The other mock tests run to the last question.</p>"""),
         ("mistakes", "What should you do with your mistakes?", """
 <p>Your mistakes are the most valuable part of a mock test. For each one:</p>
 <ol>
@@ -629,6 +639,7 @@ a day, plus another each time you choose to watch a short ad. Premium makes them
         section_name="Study tips",
         keywords=["mock test", "learner test practice", "DKT practice test", "study tips", "learners permit test"],
         llms_note="Study method: mistake budgets per test and section, when and how to sit mock tests, reviewing mistakes, reading results.",
+        modified=DATE, modified_h=DATE_H,
         related=[
             ("NSW DKT practice test", "nsw-dkt-practice-test.html"),
             ("VIC learner permit test practice", "vic-learner-permit-test-practice.html"),
@@ -653,7 +664,7 @@ see over.</p>"""),
 <p>In all three states the hazard perception test (HPT) comes during your learner period, after the knowledge test
 and before the practical driving test.</p>
 <div class="table-wrap"><table>
-<caption>Hazard perception test by state (checked {DATE_H})</caption>
+<caption>Hazard perception test by state (checked {CHECKED_H})</caption>
 <thead><tr><th scope="col">State</th><th scope="col">When you can sit it</th><th scope="col">How long a pass lasts</th></tr></thead>
 <tbody>
 <tr><th scope="row">{chip('NSW')}</th><td>If you are under 25, after at least 10 months on your Ls</td><td>15 months, for the driving test</td></tr>
@@ -694,13 +705,14 @@ applies everywhere:</p>
 <p>The supervised hours each state asks for exist partly for this reason: NSW asks under-25s for 120 hours, Victoria
 asks for 120 hours if you'll be under 21 at your licence test, and Queensland asks under-25s for 100 hours.</p>"""),
         ("app", "Can an app help with hazard perception?", f"""
-<p>An app can't replace time behind the wheel, but it can help you practise the thinking. {SITE_NAME} has illustrated
-traffic scenes, drawn from above, where you tap the hazard you should be ready for and then read why it matters: a
-person waiting between parked cars, a ball on the road with a child nearby, a parked car signalling to pull out, or
-a kangaroo beside a country road at dusk. A few sample scenes are free,
-and Premium unlocks the full set. Each state also has a guide to its HPT.</p>
-<p>The scenes are still images for practice. They are not a copy of any official test, which uses video clips. For the
-knowledge test side, see our <a href="@/blog/how-to-use-mock-tests-and-mistakes.html">mock test guide</a> and the
+<p>An app can't replace time behind the wheel, but it can help you practise the thinking. {SITE_NAME} has 72
+real-time 3D driving clips, seen from the driver's seat. Each clip tells you what you want to do (turn, move off,
+overtake, change lanes or slow down), and you tap when it becomes safe, as in the HPT. A timeline then shows when it was
+safe and when you tapped, with the road rule explained.</p>
+<p>There are also 40 illustrated still scenes where you tap the hazard. 11 clips and 6 scenes are free, and Premium
+unlocks them all. Each state also has a guide to its HPT. The clips and scenes are original practice material, not a
+copy of any official test. For the knowledge test side, see our
+<a href="@/blog/how-to-use-mock-tests-and-mistakes.html">mock test guide</a> and the
 <a href="@/features.html">feature tour</a>.</p>"""),
     ]
     return post(
@@ -712,7 +724,7 @@ knowledge test side, see our <a href="@/blog/how-to-use-mock-tests-and-mistakes.
         summary=("Hazard perception is the skill of spotting possible dangers early, judging how risky they are and "
                  "responding in time. In NSW, Victoria and Queensland you sit a hazard perception test (HPT) during your "
                  "learner period, after the knowledge test and before the practical driving test. When you can sit it and "
-                 f"how long a pass lasts differ by state. Facts as checked on {DATE_H}."),
+                 f"how long a pass lasts differ by state. Facts as checked on {CHECKED_H}."),
         sections=sections,
         sources=[
             ("Hazard Perception Test (nsw.gov.au)", SRC["nsw_hpt"]),
@@ -723,6 +735,7 @@ knowledge test side, see our <a href="@/blog/how-to-use-mock-tests-and-mistakes.
         section_name="Hazard perception",
         keywords=["hazard perception test", "HPT NSW", "HPT VIC", "HPT QLD", "hazard perception practice"],
         llms_note="Hazard perception explained, and the HPT in NSW (after 10 months, valid 15 months), VIC (from 17y11m, 25 clips) and QLD (after 6 months, online).",
+        modified=DATE, modified_h=DATE_H,
         related=[
             ("App features", "features.html"),
             ("NSW DKT practice test", "nsw-dkt-practice-test.html"),

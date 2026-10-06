@@ -20,7 +20,7 @@ import pages_core  # noqa: E402
 import pages_legal  # noqa: E402
 import pages_states  # noqa: E402
 from sitelib import (  # noqa: E402
-    ADMOB_PUBLISHER, APP_NAME, BASE, DATE, INDEXNOW_KEY, LOCALES, DATE_H, DEVELOPER, DISCLAIMER, EMAIL, PLATE_SVG, PRICE, SITE_NAME, Page, render,
+    ADMOB_PUBLISHER, APP_NAME, BASE, CHECKED_H, DATE, INDEXNOW_KEY, LOCALES, DATE_H, DEVELOPER, DISCLAIMER, EMAIL, PLATE_SVG, PRICE, SITE_NAME, Page, render,
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -170,7 +170,7 @@ def sitemap_xml(pages: list[Page]) -> str:
         if p.noindex:
             continue
         rows.append(
-            f"  <url>\n    <loc>{p.canonical}</loc>\n    <lastmod>{p.article['modified'][:10] if p.article else ('2026-10-01' if p.path == 'blog/index.html' else DATE)}</lastmod>\n"
+            f"  <url>\n    <loc>{p.canonical}</loc>\n    <lastmod>{p.article['modified'][:10] if p.article else (p.lastmod or DATE)}</lastmod>\n"
             f"    <changefreq>{p.changefreq}</changefreq>\n    <priority>{p.priority}</priority>\n  </url>"
         )
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -196,8 +196,8 @@ KEY_FACTS = [
     "Tasmanian driver knowledge test: free Plates Plus online course, then a 30-question online test (pass 27; some questions with more than one correct answer; no compulsory questions), from 15 years 11 months. The standalone Service Tasmania test format is not published.",
     "ACT learner licence knowledge test: taken only at the end of an approved course (approved provider or participating school); 35 questions from a bank of more than 300; at least 31 correct needed (not every detail of the pass rule is published). Learner licence from 15 years 9 months.",
     "Northern Territory driver knowledge test: 30 questions from a pool of more than 300, pass 26, at an MVR office, from 16. No hazard perception test in the NT.",
-    "Free version: every practice question free; one free mock test per day plus another per rewarded ad; banner ads on results and guide pages.",
-    f"Premium: one-time {PRICE}, no subscription, all states: no ads, unlimited mock tests, section forecasts, weak spots and review planner, all 72 hazard perception clips and every scene.",
+    "Free version: every practice question free; one free mock test per day plus another per rewarded ad; sample hazard perception practice (11 of the 72 3D clips and 6 of the 40 still scenes); banner ads on results and guide pages.",
+    f"Premium: one-time {PRICE}, no subscription, all states: no ads, unlimited mock tests, section forecasts, weak spots and review planner, all 72 hazard perception clips and all 40 still scenes.",
     "Languages: English, Simplified Chinese, Arabic, Vietnamese, Spanish, for the questions and explanations of all eight states and territories. Dark mode. Offline practice after sign-in.",
     "Account required (Google, Facebook or email). Delete in the app via Settings → Delete account, or email with subject “Delete my account”.",
     "Content: original questions checked against official handbooks and legislation as at 30 September 2026; no official questions, text or images reproduced.",
@@ -222,7 +222,7 @@ def llms_txt(pages: list[Page], localized: list[Page] | None = None) -> str:
         ("Guides", ["blog/index.html"] + [p.path for p in pages if p.path.startswith("blog/") and p.path != "blog/index.html"]),
         ("Policies and support", ["privacy-policy.html", "cookies.html", "terms.html", "account-deletion.html", "contact.html"]),
     ]
-    out = [f"# {SITE_NAME}", "", f"> {SUMMARY}", "", "Key facts (checked " + DATE_H + "):", ""]
+    out = [f"# {SITE_NAME}", "", f"> {SUMMARY}", "", "Key facts (updated " + DATE_H + "; test formats and rules as checked on " + CHECKED_H + "):", ""]
     out += [f"- {f}" for f in KEY_FACTS]
     for title, paths in groups:
         out += ["", f"## {title}", ""]

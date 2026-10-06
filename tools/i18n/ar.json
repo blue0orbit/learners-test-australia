@@ -239,13 +239,13 @@
   "src": "Show you know WA's traffic laws and safe driving, normally by a theory test.",
   "t": "أثبت معرفتك بقوانين المرور في WA وبالقيادة الآمنة، ويكون ذلك عادةً عبر اختبار نظري."
  },
- "15754d4de1655843": {
-  "src": "Official format",
-  "t": "الصيغة الرسمية"
+ "411ea495ff3e9538": {
+  "src": "Test format",
+  "t": "صيغة الاختبار"
  },
- "88ab00faa148da9c": {
-  "src": "Check the WA transport department's website.",
-  "t": "راجع الموقع الإلكتروني لإدارة النقل في WA."
+ "77313525e2824f0f": {
+  "src": "30 questions, 24 to pass.",
+  "t": "30 سؤالًا، وتحتاج إلى 24 للنجاح."
  },
  "a5c0035892ada588": {
   "src": "A 30-question practice test written from WA legislation.",
@@ -831,9 +831,9 @@
   "src": "A closer look at Learners Test Australia: state-specific mock tests, explained answers, a daily plan, progress tracking, hazard perception practice and more.",
   "t": "نظرة أقرب إلى Learners Test Australia: اختبارات تجريبية خاصة بكل ولاية، وإجابات مشروحة، وخطة يومية، ومتابعة للتقدّم، وتدريب على إدراك المخاطر، والمزيد."
  },
- "0039d43582eb3a20": {
-  "src": "Last updated: <t0>30 September 2026</t0>",
-  "t": "آخر تحديث: <t0>30 سبتمبر 2026</t0>"
+ "e9433f152868824b": {
+  "src": "Last updated: <t0>6 October 2026</t0>",
+  "t": "آخر تحديث: <t0>6 أكتوبر 2026</t0>"
  },
  "e1465535d6f25819": {
   "src": "Pick your state, practise its test",
@@ -887,9 +887,9 @@
   "src": "<t0>NSW</t0> <t1>VIC</t1> <t2>QLD</t2> <t3>SA</t3> <t4>WA</t4> <t5>TAS</t5> <t6>ACT</t6> <t7>NT</t7>",
   "t": "<t0>NSW</t0> <t1>VIC</t1> <t2>QLD</t2> <t3>SA</t3> <t4>WA</t4> <t5>TAS</t5> <t6>ACT</t6> <t7>NT</t7>"
  },
- "2b1a5b9342fdb515": {
-  "src": "DRIVER KNOWLEDGE TEST",
-  "t": "اختبار Driver Knowledge Test"
+ "556487637437c958": {
+  "src": "DRIVER KNOWLEDGE TEST (IN PERSON)",
+  "t": "اختبار Driver Knowledge Test (حضوريًا)"
  },
  "aa25e19093aaaaa9": {
   "src": "<t0></t0>45 questions",
@@ -911,9 +911,9 @@
   "src": "<t0></t0>The test ends early once you can no longer pass",
   "t": "<t0></t0>ينتهي الاختبار مبكرًا عندما يصبح النجاح غير ممكن"
  },
- "107456e8e3106387": {
-  "src": "Source: nsw.gov.au · checked 30 Sep 2026",
-  "t": "المصدر: nsw.gov.au · تمت المراجعة في 30 سبتمبر 2026"
+ "031ee09231b5f341": {
+  "src": "Source: nsw.gov.au · checked 5 Oct 2026",
+  "t": "المصدر: nsw.gov.au · تمت المراجعة في 5 أكتوبر 2026"
  },
  "ef264f13d2c26701": {
   "src": "Confirm the format with your state's transport authority before your test.",
@@ -939,9 +939,9 @@
   "src": "Questions come in the forms real tests use: single answers, road signs and diagrams, plus select-all-that-apply questions for the South Australian myLs and Tasmanian online tests. A quick \"How sure were you?\" tap (knew it, unsure or guessed) helps the app decide when to show a question again, and you can save or flag any question to come back to.",
   "t": "تأتي الأسئلة بالأشكال التي تستخدمها الاختبارات الحقيقية: أسئلة بإجابة واحدة، وإشارات مرور ومخططات، إضافةً إلى أسئلة «اختر كل ما ينطبق» لاختبار myLs في جنوب أستراليا والاختبار عبر الإنترنت في تسمانيا. وتساعد ضغطة سريعة على «ما مدى ثقتك؟» (كنت أعرفها، أو غير متأكد، أو خمّنت) التطبيقَ على تحديد موعد عرض السؤال مجددًا، ويمكنك حفظ أي سؤال أو وضع علامة عليه للعودة إليه."
  },
- "90e16503776986ae": {
-  "src": "Each state's question pack has more than 380 original questions, and hundreds of original sign and diagram illustrations are shared across states.",
-  "t": "تضم حزمة الأسئلة لكل ولاية أكثر من 380 سؤالًا أصليًا، وتتشارك الولايات مئات الرسوم التوضيحية الأصلية للإشارات والمخططات."
+ "9f3343bc160df1f9": {
+  "src": "Each state's question pack has from 386 (NT) to 555 (SA) original questions, about 3,770 in all, and hundreds of original sign and diagram illustrations are shared across states.",
+  "t": "تضم حزمة الأسئلة لكل ولاية ما بين 386 سؤالًا أصليًا (NT) و555 سؤالًا (SA)، أي نحو 3,770 سؤالًا في المجموع، وتتشارك الولايات مئات الرسوم التوضيحية الأصلية للإشارات والمخططات."
  },
  "5596607ff7ef5598": {
   "src": "A daily plan paced to your test date",
@@ -971,17 +971,17 @@
   "src": "<t0>Mock test:</t0> the full test, same format as the real one.",
   "t": "<t0>اختبار تجريبي:</t0> الاختبار كاملًا، بصيغة الاختبار الحقيقي نفسها."
  },
- "8f5055c307821de1": {
-  "src": "Other ways to practise: mixed practice (20 questions, new ones first), mistakes, saved questions, weak spots and practice by topic. Optional study reminders and a countdown help you keep going, and a study streak counts real study only.",
-  "t": "طرق أخرى للتدريب: تدريب متنوع (20 سؤالًا، الجديدة أولًا)، والأخطاء، والأسئلة المحفوظة، ونقاط الضعف، والتدريب حسب الموضوع. وتساعدك تذكيرات الدراسة الاختيارية والعدّ التنازلي على المواصلة، ولا تُحتسب في سلسلة أيامك المتتالية إلا الدراسة الفعلية."
+ "139c634a4a09013a": {
+  "src": "Other ways to practise: mixed practice (20 questions, new ones first), mistakes, saved questions, weak spots and practice by topic, with a mastery ring for each topic. Optional study reminders and a countdown help you keep going, and a study streak counts real study only.",
+  "t": "طرق أخرى للتدريب: تدريب متنوع (20 سؤالًا، الجديدة أولًا)، والأخطاء، والأسئلة المحفوظة، ونقاط الضعف، والتدريب حسب الموضوع، مع حلقة إتقان لكل موضوع. وتساعدك تذكيرات الدراسة الاختيارية والعدّ التنازلي على المواصلة، ولا تُحتسب في سلسلة أيامك المتتالية إلا الدراسة الفعلية."
  },
  "16d7c809b1629f83": {
   "src": "Mock tests that show the pass line",
   "t": "اختبارات تجريبية تُظهر حد النجاح"
  },
- "a16c0ca12d423d70": {
-  "src": "Mock tests have the same sections and number of questions as the real test, and each section is scored against its own pass mark. In the NSW mock, the test ends where the real DKT would, once passing is no longer possible, and you can choose to keep practising the rest.",
-  "t": "للاختبارات التجريبية الأقسام وعدد الأسئلة نفسها كما في الاختبار الحقيقي، ويُصحَّح كل قسم وفق درجة النجاح الخاصة به. وفي اختبار NSW التجريبي، ينتهي الاختبار حيث كان سينتهي اختبار DKT الحقيقي، أي عندما يصبح النجاح غير ممكن، ويمكنك أن تختار مواصلة التدريب على بقية الأسئلة."
+ "1e79efe8c6711fde": {
+  "src": "Mock tests have the same sections and number of questions as the real test, and each section is scored against its own pass mark. In the NSW mock, the test ends where the real DKT would, once passing is no longer possible, and you can choose to keep practising the rest. In the South Australian in-person theory test mock, a mistake in Part A (giving way) ends the test after Part A, as it does at Service SA. The other mock tests run to the last question.",
+  "t": "للاختبارات التجريبية الأقسام وعدد الأسئلة نفسها كما في الاختبار الحقيقي، ويُصحَّح كل قسم وفق درجة النجاح الخاصة به. وفي اختبار NSW التجريبي، ينتهي الاختبار حيث كان سينتهي اختبار DKT الحقيقي، أي عندما يصبح النجاح غير ممكن، ويمكنك أن تختار مواصلة التدريب على بقية الأسئلة. وفي الاختبار التجريبي للاختبار النظري الحضوري في جنوب أستراليا، يؤدي أي خطأ في الجزء A (إعطاء الأولوية) إلى إنهاء الاختبار بعد الجزء A، كما في Service SA. أما الاختبارات التجريبية الأخرى فتستمر حتى السؤال الأخير."
  },
  "d520882bb240b744": {
   "src": "Results show your score in each section against its pass line, how long you took and which questions to review, with one tap to practise your mistakes. <t0>How to get the most out of mock tests</t0>.",
@@ -1039,9 +1039,9 @@
   "src": "Progress and an honest pass-chance estimate",
   "t": "التقدّم وتقدير صادق لفرصة النجاح"
  },
- "3e6640bfab6946ff": {
-  "src": "The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. After enough answers, the Today screen shows an estimated pass chance.",
-  "t": "يعرض تبويب «التقدّم» عدد الأسئلة التي أجبت عنها والتي اطّلعت عليها، وسلسلة أيامك المتتالية في الدراسة، ودقائق الدراسة هذا الأسبوع، ودقة إجاباتك الأخيرة. وبعد عدد كافٍ من الإجابات، تعرض شاشة «اليوم» فرصة النجاح المقدّرة."
+ "710fb0dfd9e7fee7": {
+  "src": "The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. After your first 12 answers (the quick check), the Today screen shows an estimated pass chance.",
+  "t": "يعرض تبويب «التقدّم» عدد الأسئلة التي أجبت عنها والتي اطّلعت عليها، وسلسلة أيامك المتتالية في الدراسة، ودقائق الدراسة هذا الأسبوع، ودقة إجاباتك الأخيرة. وبعد أول 12 إجابة لك (التقييم السريع)، تعرض شاشة «اليوم» فرصة النجاح المقدّرة."
  },
  "b5a62b3d2bb61a6d": {
   "src": "With Premium you also get a forecast for each section (your expected score and the chance of passing that section), your weak spots and a planner for upcoming reviews.",
@@ -1075,29 +1075,37 @@
   "src": "Hazard perception is about spotting risks early. The app plays 72 short driving clips in real-time 3D, seen from the driver's seat: you are told what you want to do (turn right, move off, overtake, change lanes or slow down) and tap when it becomes safe, in the same style as the hazard perception tests. Clips cover suburban streets, traffic lights, roundabouts, school zones, country roads with kangaroos and road trains, freeways, level crossings and Melbourne trams, by day, at dusk, at night and in the rain. Afterwards a timeline shows when it was safe and when you tapped, with the road rule explained, and you can watch the clip again.",
   "t": "يدور إدراك المخاطر حول رصد المخاطر مبكرًا. يعرض التطبيق 72 مقطع قيادة قصيرًا ثلاثي الأبعاد (3D) يجري في الوقت الفعلي، كما يُرى من مقعد السائق: يُقال لك ما تريد فعله (الانعطاف يمينًا، أو الانطلاق، أو التجاوز، أو تغيير المسار، أو إبطاء السرعة)، وتضغط عندما يصبح ذلك آمنًا، على غرار اختبارات إدراك المخاطر. وتشمل المقاطع شوارع الضواحي، والإشارات الضوئية، والدوّارات، ومناطق المدارس، والطرق الريفية التي تصادف فيها حيوانات الكنغر والشاحنات الطويلة متعددة المقطورات (road trains)، والطرق السريعة، ومعابر السكك الحديدية، وترام ملبورن، نهارًا وعند الغسق وليلًا وتحت المطر. وبعد ذلك يُظهر لك خط زمني متى كان الوضع آمنًا ومتى ضغطت، مع شرح قاعدة المرور، ويمكنك مشاهدة المقطع مرة أخرى."
  },
- "8ef8a3c059bd302a": {
-  "src": "There are also illustrated still scenes where you tap the hazard. A few clips and scenes are free, and Premium unlocks them all. Each state's licence guide explains where its hazard perception test fits on the way to your P plates (the Northern Territory has no separate test: hazards are assessed in the practical driving test). The clips and scenes are original practice material, not a copy of any official test. <t0>Read our hazard perception guide</t0>.",
-  "t": "وهناك أيضًا مشاهد ثابتة مرسومة تضغط فيها على الخطر. بعض المقاطع والمشاهد مجانية، ويفتحها Premium كلها. ويشرح دليل الرخصة لكل ولاية موقع اختبار إدراك المخاطر فيها على طريقك إلى لوحات P (لا يوجد في الإقليم الشمالي اختبار منفصل، إذ تُقيَّم المخاطر ضمن اختبار القيادة العملي). المقاطع والمشاهد مواد تدريبية أصلية، وليست نسخة من أي اختبار رسمي. <t0>اقرأ دليلنا عن إدراك المخاطر</t0>."
+ "d3a81724616142ba": {
+  "src": "There are also 40 illustrated still scenes where you tap the hazard. 11 clips and 6 scenes are free, and Premium unlocks them all. Every clip and scene can be browsed in picture libraries, and any clip can be replayed. Each state's licence guide explains where its hazard perception test fits on the way to your P plates (the Northern Territory has no separate test: hazards are assessed in the practical driving test). The clips and scenes are original practice material, not a copy of any official test. <t0>Read our hazard perception guide</t0>.",
+  "t": "وهناك أيضًا 40 مشهدًا ثابتًا مرسومًا تضغط فيها على الخطر. ويتوفر مجانًا 11 مقطعًا و6 مشاهد، ويفتحها Premium كلها. ويمكنك تصفّح كل المقاطع والمشاهد في مكتبات مصوّرة، وإعادة تشغيل أي مقطع. ويشرح دليل الرخصة لكل ولاية موقع اختبار إدراك المخاطر فيها على طريقك إلى لوحات P (لا يوجد في الإقليم الشمالي اختبار منفصل، إذ تُقيَّم المخاطر ضمن اختبار القيادة العملي). المقاطع والمشاهد مواد تدريبية أصلية، وليست نسخة من أي اختبار رسمي. <t0>اقرأ دليلنا عن إدراك المخاطر</t0>."
  },
- "1e3c07fade863262": {
-  "src": "<t0>Hazard perception</t0><t1>Scene 1</t1>",
-  "t": "<t0>إدراك المخاطر</t0><t1>المشهد 1</t1>"
+ "815fa273731c50dd": {
+  "src": "<t0>Hazard perception</t0><t1>3D clip</t1>",
+  "t": "<t0>إدراك المخاطر</t0><t1>مقطع 3D</t1>"
  },
- "b103fc9138cd6ca9": {
-  "src": "You are driving the red car. Tap the hazard you should be ready for.",
-  "t": "أنت تقود السيارة الحمراء. اضغط على الخطر الذي يجب أن تكون مستعدًا له."
+ "83cc5a4f7c6fcd21": {
+  "src": "YOUR TASK",
+  "t": "مهمتك"
  },
- "3f55aa09280c8cf1": {
-  "src": "Good spot",
-  "t": "أحسنت الملاحظة"
+ "501e5224e0a5d82c": {
+  "src": "Turn right",
+  "t": "الانعطاف يمينًا"
  },
- "4544d63687f59537": {
-  "src": "A person is standing in the gap between two parked cars and could step out without looking.",
-  "t": "يقف شخص في الفراغ بين سيارتين متوقفتين، وقد يخرج إلى الطريق دون أن ينظر."
+ "47095f8b958f2275": {
+  "src": "Tap when it is safe to start your turn.",
+  "t": "اضغط عندما يصبح بدء الانعطاف آمنًا."
  },
- "da76d8048a197032": {
-  "src": "Illustration of a hazard perception scene: a person waiting between parked cars could step into the road.",
-  "t": "رسم توضيحي لمشهد إدراك المخاطر: شخص ينتظر بين سيارات متوقفة وقد يخطو إلى الطريق."
+ "613eb4b2c3e8dbbe": {
+  "src": "Tap anywhere on the clip at the moment it becomes safe.",
+  "t": "اضغط على أي مكان في المقطع في اللحظة التي يصبح فيها الأمر آمنًا."
+ },
+ "9e111948f3cec79b": {
+  "src": "Start clip",
+  "t": "ابدأ"
+ },
+ "3328f2a495b8ead4": {
+  "src": "Illustration of a 3D hazard perception clip: you are told what you want to do, then tap when it becomes safe.",
+  "t": "رسم توضيحي لمقطع إدراك المخاطر ثلاثي الأبعاد (3D): يُقال لك ما تريد فعله، ثم تضغط عندما يصبح ذلك آمنًا."
  },
  "d719f877034bf97f": {
   "src": "Also included",
@@ -1123,9 +1131,9 @@
   "src": "Streak and badges",
   "t": "الأيام المتتالية والشارات"
  },
- "4ce9b6214e5dbfcd": {
-  "src": "A study streak and a few badges for real study. No points to grind.",
-  "t": "سلسلة أيام دراسة متتالية وبعض الشارات مقابل الدراسة الفعلية. بلا نقاط تُجمع لمجرد الجمع."
+ "864864c81fed881d": {
+  "src": "A study streak and six badges for real study (your first session, a 7-day streak, 100 answers, every topic tried, a mock test passed, 8 hazard clips passed). No points to grind.",
+  "t": "سلسلة أيام دراسة متتالية وست شارات مقابل الدراسة الفعلية (أول جلسة دراسة لك، و7 أيام متتالية، و100 إجابة، وتجربة كل الموضوعات، والنجاح في اختبار تجريبي، واجتياز 8 مقاطع لإدراك المخاطر). بلا نقاط تُجمع لمجرد الجمع."
  },
  "346a9101bf0edb8f": {
   "src": "English, <x0/>, <x1/>, <x2/> and <x3/>, including the questions and explanations for every state and territory. Arabic reads right to left.",
@@ -1551,17 +1559,17 @@
   "src": "How does the pass-chance estimate work?",
   "t": "كيف يُحسب تقدير فرصة النجاح؟"
  },
- "844b3009501395ec": {
-  "src": "After you've answered enough questions, the app estimates your chance of passing from your recent answers. It is an estimate, not a guarantee. Premium adds a forecast for each section of the test.",
-  "t": "بعد أن تجيب عن عدد كافٍ من الأسئلة، يقدّر التطبيق فرصة نجاحك بناءً على إجاباتك الأخيرة. إنها تقدير، وليست ضمانًا. ويضيف Premium توقعات لكل قسم من أقسام الاختبار."
+ "a91cb3e79f52cdd7": {
+  "src": "After your first 12 answers (the quick check), the app estimates your chance of passing from your recent answers. It is an estimate, not a guarantee. Premium adds a forecast for each section of the test.",
+  "t": "بعد أول 12 إجابة لك (التقييم السريع)، يقدّر التطبيق فرصة نجاحك بناءً على إجاباتك الأخيرة. إنها تقدير، وليست ضمانًا. ويضيف Premium توقعات لكل قسم من أقسام الاختبار."
  },
  "0abe3cd09338056d": {
   "src": "Does the app include hazard perception practice?",
   "t": "هل يتضمن التطبيق تدريبًا على إدراك المخاطر؟"
  },
- "6f6fcc1793ab4a2a": {
-  "src": "Yes. There are 72 real-time 3D driving clips where you tap when it is safe to act, in the same style as the hazard perception tests, plus illustrated still scenes and a guide to your state's hazard perception test (the Northern Territory has none; hazards are assessed in its practical driving test). A few clips and scenes are free and Premium unlocks them all. They are original practice material and are not a copy of any official test. See our <t0>hazard perception guide</t0>.",
-  "t": "نعم. هناك 72 مقطع قيادة ثلاثي الأبعاد (3D) يجري في الوقت الفعلي، تضغط فيه عندما يصبح التصرف آمنًا، على غرار اختبارات إدراك المخاطر، إضافةً إلى مشاهد ثابتة مرسومة ودليل لاختبار إدراك المخاطر في ولايتك (لا يوجد هذا الاختبار في الإقليم الشمالي، إذ تُقيَّم المخاطر ضمن اختبار القيادة العملي فيه). بعض المقاطع والمشاهد مجانية، ويفتحها Premium كلها. وهي مواد تدريبية أصلية وليست نسخة من أي اختبار رسمي. راجع <t0>دليلنا عن إدراك المخاطر</t0>."
+ "951188f93e5a5e5d": {
+  "src": "Yes. There are 72 real-time 3D driving clips where you tap when it is safe to act, in the same style as the hazard perception tests, plus 40 illustrated still scenes and a guide to your state's hazard perception test (the Northern Territory has none; hazards are assessed in its practical driving test). 11 clips and 6 scenes are free, and Premium unlocks them all. Every clip and scene can be browsed in picture libraries, and any clip can be replayed. They are original practice material and are not a copy of any official test. See our <t0>hazard perception guide</t0>.",
+  "t": "نعم. هناك 72 مقطع قيادة ثلاثي الأبعاد (3D) يجري في الوقت الفعلي، تضغط فيه عندما يصبح التصرف آمنًا، على غرار اختبارات إدراك المخاطر، إضافةً إلى 40 مشهدًا ثابتًا مرسومًا ودليل لاختبار إدراك المخاطر في ولايتك (لا يوجد هذا الاختبار في الإقليم الشمالي، إذ تُقيَّم المخاطر ضمن اختبار القيادة العملي فيه). ويتوفر مجانًا 11 مقطعًا و6 مشاهد، ويفتحها Premium كلها. ويمكنك تصفّح كل المقاطع والمشاهد في مكتبات مصوّرة، وإعادة تشغيل أي مقطع. وهي مواد تدريبية أصلية وليست نسخة من أي اختبار رسمي. راجع <t0>دليلنا عن إدراك المخاطر</t0>."
  },
  "404aad5288122a80": {
   "src": "Questions and accuracy",
@@ -2019,9 +2027,9 @@
   "src": "<t0>An Android phone or tablet</t0> with Android 8.0 or later. There is no iPhone version yet.",
   "t": "<t0>هاتف أو جهاز لوحي بنظام Android</t0> يعمل بإصدار Android 8.0 أو أحدث. لا توجد نسخة لأجهزة iPhone بعد."
  },
- "871fdd04e660b368": {
-  "src": "<t0>An account</t0>: sign in with Google or with an email address and password. Your progress is saved to it, so it follows you to a new phone.",
-  "t": "<t0>حساب</t0>: سجّل الدخول باستخدام Google أو بعنوان بريد إلكتروني وكلمة مرور. يُحفظ تقدّمك فيه، فينتقل معك إلى هاتفك الجديد."
+ "d489f768938f70d2": {
+  "src": "<t0>An account</t0>: sign in with Google, Facebook, or an email address and password. Your progress is saved to it, so it follows you to a new phone.",
+  "t": "<t0>حساب</t0>: سجّل الدخول باستخدام Google أو Facebook أو بعنوان بريد إلكتروني وكلمة مرور. يُحفظ تقدّمك فيه، فينتقل معك إلى هاتفك الجديد."
  },
  "5c6635622e4f0384": {
   "src": "<t0>A connection to sign in</t0>. After that, the questions are built into the app and you can practise offline.",
@@ -2047,13 +2055,17 @@
   "src": "A daily study plan, progress tracking and an estimated pass chance.",
   "t": "خطة دراسة يومية، ومتابعة للتقدّم، وفرصة نجاح مقدّرة."
  },
+ "e78e1fc91c9fd954": {
+  "src": "Sample hazard perception practice: 11 of the 72 3D clips and 6 of the 40 still scenes.",
+  "t": "نماذج من تدريب إدراك المخاطر: 11 من مقاطع 3D الـ72، و6 من المشاهد الثابتة الـ40."
+ },
  "10deb8b821486999": {
   "src": "All eight states and territories, in English, Chinese, Arabic, Vietnamese and Spanish.",
   "t": "الولايات والأقاليم الثمانية كلها، بالإنجليزية والصينية والعربية والفيتنامية والإسبانية."
  },
- "f9a7ed526131c0de": {
-  "src": "Premium is optional: a one-time A$5.99 purchase through Google Play, with no subscription. It removes ads and adds unlimited mock tests, forecasts for each section of the test, your weak spots and all 72 hazard perception clips. See the <t0>features</t0>.",
-  "t": "Premium اختياري: عملية شراء لمرة واحدة بقيمة A$5.99 عبر Google Play، دون اشتراك. يزيل الإعلانات ويضيف اختبارات تجريبية غير محدودة، وتوقعات لكل قسم من أقسام الاختبار، ونقاط ضعفك، وكل مقاطع إدراك المخاطر الـ72. راجع <t0>الميزات</t0>."
+ "a705ab0c9292b3b7": {
+  "src": "Premium is optional: a one-time A$5.99 purchase through Google Play, with no subscription. It removes ads and adds unlimited mock tests, forecasts for each section of the test, your weak spots, a review planner, and all 72 hazard perception clips and 40 still scenes. See the <t0>features</t0>.",
+  "t": "Premium اختياري: عملية شراء لمرة واحدة بقيمة A$5.99 عبر Google Play، دون اشتراك. يزيل الإعلانات ويضيف اختبارات تجريبية غير محدودة، وتوقعات لكل قسم من أقسام الاختبار، ونقاط ضعفك، ومخططًا للمراجعة، وكل مقاطع إدراك المخاطر الـ72 والمشاهد الثابتة الـ40. راجع <t0>الميزات</t0>."
  },
  "5a2cf0b481310b0f": {
   "src": "Try the app early",
@@ -3059,10 +3071,6 @@
   "src": "Show reasonable knowledge of WA traffic laws and safe driving techniques, normally by passing a theory test",
   "t": "إثبات معرفة معقولة بقوانين المرور في WA وبأساليب القيادة الآمنة، وعادةً بالنجاح في اختبار نظري"
  },
- "411ea495ff3e9538": {
-  "src": "Test format",
-  "t": "صيغة الاختبار"
- },
  "6448fdcbd43610ba": {
   "src": "30 multiple-choice questions, at least 24 correct to pass (independent guides)",
   "t": "30 سؤالًا من نوع الاختيار من متعدد، و24 إجابة صحيحة على الأقل للنجاح (بحسب أدلة مستقلة)"
@@ -3663,9 +3671,9 @@
   "src": "35-question practice tests scored against a 31-question pass line.",
   "t": "اختبارات تدريبية من 35 سؤالًا تُصحَّح وفق حد نجاح يبلغ 31 سؤالًا."
  },
- "cf1ef8e8e7c1a4ef": {
-  "src": "More than 440 original ACT questions, written from ACT legislation.",
-  "t": "أكثر من 440 سؤالًا أصليًا خاصًا بإقليم ACT، مكتوبة استنادًا إلى تشريعات ACT."
+ "90cf8e03a9dac759": {
+  "src": "More than 420 original ACT questions, written from ACT legislation.",
+  "t": "أكثر من 420 سؤالًا أصليًا خاصًا بإقليم ACT، مكتوبة استنادًا إلى تشريعات ACT."
  },
  "d25f98f1e11d3f7e": {
   "src": "ACT-only rules such as roof-mounted plates, zero alcohol for supervisors and the late-night P1 passenger rule.",

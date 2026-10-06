@@ -28,8 +28,16 @@ PLAY_URL: str | None = None
 # Our other app (same developer), linked from the footer, about and download pages
 DTT_URL = "https://dttireland.com/"
 DTT_PLAY = "https://play.google.com/store/apps/details?id=com.app.dttireland"
-DATE = "2026-09-30"
-DATE_H = "30 September 2026"
+# When the site was last updated ("Last updated" lines and sitemap lastmod).
+DATE = "2026-10-06"
+DATE_H = "6 October 2026"
+# When the official sources, test formats and legislation behind the content were last checked ("checked on",
+# "sourced on"). Only change it after checking the sources again.
+CHECKED_H = "30 September 2026"
+# Last updated date of the privacy policy and terms, which mirror the in-app text (privacy_last_updated and
+# tos_last_updated in the app's strings.xml), and of the other legal pages.
+LEGAL_DATE = "2026-09-30"
+LEGAL_DATE_H = "30 September 2026"
 PRICE = "A$5.99"
 DISCLAIMER = (
     "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to "
@@ -181,6 +189,7 @@ def mobile_application() -> dict:
             "Explained answers with handbook page or road rule references",
             "Daily study plan with spaced reviews",
             "Progress tracking and an estimated pass chance",
+            "Study streak and six badges",
             "Hazard perception practice: 72 real-time 3D driving clips and still traffic scenes",
             "English, Simplified Chinese, Arabic, Vietnamese and Spanish",
             "Dark mode",
@@ -199,7 +208,7 @@ def mobile_application() -> dict:
                 "name": "Premium (one-time in-app purchase)",
                 "price": "5.99",
                 "priceCurrency": "AUD",
-                "description": "One-time purchase, no subscription: no ads, unlimited mock tests, section forecasts and weak spots, and hazard perception practice, for every state.",
+                "description": "One-time purchase, no subscription: no ads, unlimited mock tests, section forecasts and weak spots, all 72 hazard perception clips and every still scene, for every state.",
             },
         ],
     }
@@ -329,7 +338,7 @@ def source_box(links: list[tuple[str, str]], note: str | None = None, title: str
         f'<aside class="source-box" aria-labelledby="src-title">'
         f'<h2 id="src-title" class="source-title">{icon("flag")}{esc(title)}</h2>'
         f"{note_html}<ul>{items}</ul>"
-        f'<p class="source-small">Rules and test formats change. We checked these pages on {DATE_H}; '
+        f'<p class="source-small">Rules and test formats change. We checked these pages on {CHECKED_H}; '
         f"the official website is always the final word.</p></aside>"
     )
 
@@ -342,8 +351,8 @@ def faq_block(items: list[tuple[str, str]], heading: str = "Frequently asked que
     return "".join(parts)
 
 
-def updated_line() -> str:
-    return f'<p class="meta">Last updated: <time datetime="{DATE}">{DATE_H}</time></p>'
+def updated_line(date: str = DATE, date_h: str = DATE_H) -> str:
+    return f'<p class="meta">Last updated: <time datetime="{date}">{date_h}</time></p>'
 
 
 def breadcrumbs_html(crumbs: list[tuple[str, str]]) -> str:
@@ -388,6 +397,7 @@ class Page:
     llms_title: str | None = None
     llms_note: str | None = None  # one-line description for llms.txt
     article: dict | None = None  # published/modified times for og:article
+    lastmod: str | None = None  # sitemap lastmod when it isn't DATE (or the article's modified date)
 
     @property
     def depth(self) -> int:

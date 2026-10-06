@@ -429,24 +429,22 @@ tbody th { font-weight: 700; }
 .passbar .fill.under { background: #CC3B42; }
 .passbar .line { position: absolute; top: -4px; bottom: -4px; left: var(--p); width: 3px; background: var(--s-text, var(--text)); border-radius: 2px; }
 
-.scene {
-  position: relative; height: 230px; border-radius: 12px; overflow: hidden;
-  background: #6B8F5A;
+/* A 3D hazard clip from the driver's seat, before you answer: an empty crossroad ahead, the right indicator on. */
+.clip {
+  position: relative; height: 230px; border-radius: 12px; overflow: hidden; direction: ltr;
+  background: linear-gradient(180deg, #8FB8DA 0 40%, #6B8F5A 40% 100%);
 }
-.scene .road { position: absolute; top: 0; bottom: 0; left: 30%; width: 40%; background: #3A3F47; }
-.scene .road::after {
+.clip .xroad { position: absolute; left: 0; right: 0; top: 47%; height: 10%; background: #4A5059; }
+.clip .road { position: absolute; left: 0; right: 0; top: 40%; bottom: 0; background: #3A3F47; clip-path: polygon(47% 0, 53% 0, 96% 100%, 4% 100%); }
+.clip .road::after {
   content: ""; position: absolute; top: 0; bottom: 0; left: calc(50% - 2px); width: 4px;
-  background: repeating-linear-gradient(180deg, #F3F4F6 0 18px, transparent 18px 36px);
+  background: repeating-linear-gradient(180deg, #F3F4F6 0 12px, transparent 12px 26px);
 }
-.scene .path { position: absolute; top: 0; bottom: 0; background: #C9CDD3; width: 9%; }
-.scene .path.l { left: 21%; } .scene .path.r { right: 21%; }
-.scene .car { position: absolute; width: 11%; height: 17%; border-radius: 6px; }
-.scene .car.me { left: 37%; bottom: 8%; background: #CC3B42; }
-.scene .car.p1 { left: 31%; top: 22%; background: #4B6CB7; }
-.scene .car.p2 { left: 31%; top: 45%; background: #8A8F98; }
-.scene .car.on { left: 52%; top: 10%; background: #F3F4F6; }
-.scene .ped { position: absolute; left: 25.5%; top: 40%; width: 5%; aspect-ratio: 1; border-radius: 50%; background: #FFC72C; box-shadow: 0 0 0 3px #12161D; }
-.scene .tap { position: absolute; left: 21%; top: 34%; width: 14%; aspect-ratio: 1; border-radius: 50%; border: 3px solid #FFA41B; box-shadow: 0 0 0 4px rgba(255, 164, 27, .35); }
+.clip .bonnet { position: absolute; left: 6%; right: 6%; bottom: -34px; height: 70px; border-radius: 50% 50% 0 0; background: #CC3B42; }
+.clip .ind {
+  position: absolute; top: 10px; right: 12px; width: 26px; height: 20px; background: #1FA45A;
+  clip-path: polygon(0 32%, 55% 32%, 55% 0, 100% 50%, 55% 100%, 55% 68%, 0 68%);
+}
 
 /* ── Footer ───────────────────────────────────────────── */
 .site-footer { background: var(--bitumen); color: #C9CFD8; padding: 3rem 0 2rem; border-top: 4px solid var(--amber); }

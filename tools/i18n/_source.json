@@ -785,20 +785,21 @@
   "group": "core"
  },
  {
-  "key": "15754d4de1655843",
+  "key": "411ea495ff3e9538",
   "kind": "run",
-  "src": "Official format",
+  "src": "Test format",
   "note": "",
   "pages": [
    "index.html",
-   "states.html"
+   "states.html",
+   "wa-learners-test-practice.html"
   ],
   "group": "core"
  },
  {
-  "key": "88ab00faa148da9c",
+  "key": "77313525e2824f0f",
   "kind": "run",
-  "src": "Check the WA transport department's website.",
+  "src": "30 questions, 24 to pass.",
   "note": "",
   "pages": [
    "index.html",
@@ -2753,9 +2754,9 @@
   "group": "core"
  },
  {
-  "key": "0039d43582eb3a20",
+  "key": "e9433f152868824b",
   "kind": "run",
-  "src": "Last updated: <t0>30 September 2026</t0>",
+  "src": "Last updated: <t0>6 October 2026</t0>",
   "note": "",
   "pages": [
    "features.html",
@@ -2906,9 +2907,9 @@
   "group": "core"
  },
  {
-  "key": "2b1a5b9342fdb515",
+  "key": "556487637437c958",
   "kind": "run",
-  "src": "DRIVER KNOWLEDGE TEST",
+  "src": "DRIVER KNOWLEDGE TEST (IN PERSON)",
   "note": "",
   "pages": [
    "features.html"
@@ -2966,9 +2967,9 @@
   "group": "core"
  },
  {
-  "key": "107456e8e3106387",
+  "key": "031ee09231b5f341",
   "kind": "run",
-  "src": "Source: nsw.gov.au · checked 30 Sep 2026",
+  "src": "Source: nsw.gov.au · checked 5 Oct 2026",
   "note": "",
   "pages": [
    "features.html"
@@ -3036,9 +3037,9 @@
   "group": "core"
  },
  {
-  "key": "90e16503776986ae",
+  "key": "9f3343bc160df1f9",
   "kind": "run",
-  "src": "Each state's question pack has more than 380 original questions, and hundreds of original sign and diagram illustrations are shared across states.",
+  "src": "Each state's question pack has from 386 (NT) to 555 (SA) original questions, about 3,770 in all, and hundreds of original sign and diagram illustrations are shared across states.",
   "note": "",
   "pages": [
    "features.html"
@@ -3116,9 +3117,9 @@
   "group": "core"
  },
  {
-  "key": "8f5055c307821de1",
+  "key": "139c634a4a09013a",
   "kind": "run",
-  "src": "Other ways to practise: mixed practice (20 questions, new ones first), mistakes, saved questions, weak spots and practice by topic. Optional study reminders and a countdown help you keep going, and a study streak counts real study only.",
+  "src": "Other ways to practise: mixed practice (20 questions, new ones first), mistakes, saved questions, weak spots and practice by topic, with a mastery ring for each topic. Optional study reminders and a countdown help you keep going, and a study streak counts real study only.",
   "note": "",
   "pages": [
    "features.html"
@@ -3136,9 +3137,9 @@
   "group": "core"
  },
  {
-  "key": "a16c0ca12d423d70",
+  "key": "1e79efe8c6711fde",
   "kind": "run",
-  "src": "Mock tests have the same sections and number of questions as the real test, and each section is scored against its own pass mark. In the NSW mock, the test ends where the real DKT would, once passing is no longer possible, and you can choose to keep practising the rest.",
+  "src": "Mock tests have the same sections and number of questions as the real test, and each section is scored against its own pass mark. In the NSW mock, the test ends where the real DKT would, once passing is no longer possible, and you can choose to keep practising the rest. In the South Australian in-person theory test mock, a mistake in Part A (giving way) ends the test after Part A, as it does at Service SA. The other mock tests run to the last question.",
   "note": "",
   "pages": [
    "features.html"
@@ -3286,9 +3287,9 @@
   "group": "core"
  },
  {
-  "key": "3e6640bfab6946ff",
+  "key": "710fb0dfd9e7fee7",
   "kind": "run",
-  "src": "The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. After enough answers, the Today screen shows an estimated pass chance.",
+  "src": "The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. After your first 12 answers (the quick check), the Today screen shows an estimated pass chance.",
   "note": "",
   "pages": [
    "features.html"
@@ -3376,9 +3377,9 @@
   "group": "core"
  },
  {
-  "key": "8ef8a3c059bd302a",
+  "key": "d3a81724616142ba",
   "kind": "run",
-  "src": "There are also illustrated still scenes where you tap the hazard. A few clips and scenes are free, and Premium unlocks them all. Each state's licence guide explains where its hazard perception test fits on the way to your P plates (the Northern Territory has no separate test: hazards are assessed in the practical driving test). The clips and scenes are original practice material, not a copy of any official test. <t0>Read our hazard perception guide</t0>.",
+  "src": "There are also 40 illustrated still scenes where you tap the hazard. 11 clips and 6 scenes are free, and Premium unlocks them all. Every clip and scene can be browsed in picture libraries, and any clip can be replayed. Each state's licence guide explains where its hazard perception test fits on the way to your P plates (the Northern Territory has no separate test: hazards are assessed in the practical driving test). The clips and scenes are original practice material, not a copy of any official test. <t0>Read our hazard perception guide</t0>.",
   "note": "",
   "pages": [
    "features.html"
@@ -3386,9 +3387,9 @@
   "group": "core"
  },
  {
-  "key": "1e3c07fade863262",
+  "key": "815fa273731c50dd",
   "kind": "run",
-  "src": "<t0>Hazard perception</t0><t1>Scene 1</t1>",
+  "src": "<t0>Hazard perception</t0><t1>3D clip</t1>",
   "note": "",
   "pages": [
    "features.html"
@@ -3396,9 +3397,9 @@
   "group": "core"
  },
  {
-  "key": "b103fc9138cd6ca9",
+  "key": "83cc5a4f7c6fcd21",
   "kind": "run",
-  "src": "You are driving the red car. Tap the hazard you should be ready for.",
+  "src": "YOUR TASK",
   "note": "",
   "pages": [
    "features.html"
@@ -3406,9 +3407,9 @@
   "group": "core"
  },
  {
-  "key": "3f55aa09280c8cf1",
+  "key": "501e5224e0a5d82c",
   "kind": "run",
-  "src": "Good spot",
+  "src": "Turn right",
   "note": "",
   "pages": [
    "features.html"
@@ -3416,9 +3417,9 @@
   "group": "core"
  },
  {
-  "key": "4544d63687f59537",
+  "key": "47095f8b958f2275",
   "kind": "run",
-  "src": "A person is standing in the gap between two parked cars and could step out without looking.",
+  "src": "Tap when it is safe to start your turn.",
   "note": "",
   "pages": [
    "features.html"
@@ -3426,9 +3427,29 @@
   "group": "core"
  },
  {
-  "key": "da76d8048a197032",
+  "key": "613eb4b2c3e8dbbe",
   "kind": "run",
-  "src": "Illustration of a hazard perception scene: a person waiting between parked cars could step into the road.",
+  "src": "Tap anywhere on the clip at the moment it becomes safe.",
+  "note": "",
+  "pages": [
+   "features.html"
+  ],
+  "group": "core"
+ },
+ {
+  "key": "9e111948f3cec79b",
+  "kind": "run",
+  "src": "Start clip",
+  "note": "",
+  "pages": [
+   "features.html"
+  ],
+  "group": "core"
+ },
+ {
+  "key": "3328f2a495b8ead4",
+  "kind": "run",
+  "src": "Illustration of a 3D hazard perception clip: you are told what you want to do, then tap when it becomes safe.",
   "note": "",
   "pages": [
    "features.html"
@@ -3496,9 +3517,9 @@
   "group": "core"
  },
  {
-  "key": "4ce9b6214e5dbfcd",
+  "key": "864864c81fed881d",
   "kind": "run",
-  "src": "A study streak and a few badges for real study. No points to grind.",
+  "src": "A study streak and six badges for real study (your first session, a 7-day streak, 100 answers, every topic tried, a mock test passed, 8 hazard clips passed). No points to grind.",
   "note": "",
   "pages": [
    "features.html"
@@ -4595,9 +4616,9 @@
   "group": "core"
  },
  {
-  "key": "844b3009501395ec",
+  "key": "a91cb3e79f52cdd7",
   "kind": "run",
-  "src": "After you've answered enough questions, the app estimates your chance of passing from your recent answers. It is an estimate, not a guarantee. Premium adds a forecast for each section of the test.",
+  "src": "After your first 12 answers (the quick check), the app estimates your chance of passing from your recent answers. It is an estimate, not a guarantee. Premium adds a forecast for each section of the test.",
   "note": "",
   "pages": [
    "faq.html"
@@ -4615,9 +4636,9 @@
   "group": "core"
  },
  {
-  "key": "6f6fcc1793ab4a2a",
+  "key": "951188f93e5a5e5d",
   "kind": "run",
-  "src": "Yes. There are 72 real-time 3D driving clips where you tap when it is safe to act, in the same style as the hazard perception tests, plus illustrated still scenes and a guide to your state's hazard perception test (the Northern Territory has none; hazards are assessed in its practical driving test). A few clips and scenes are free and Premium unlocks them all. They are original practice material and are not a copy of any official test. See our <t0>hazard perception guide</t0>.",
+  "src": "Yes. There are 72 real-time 3D driving clips where you tap when it is safe to act, in the same style as the hazard perception tests, plus 40 illustrated still scenes and a guide to your state's hazard perception test (the Northern Territory has none; hazards are assessed in its practical driving test). 11 clips and 6 scenes are free, and Premium unlocks them all. Every clip and scene can be browsed in picture libraries, and any clip can be replayed. They are original practice material and are not a copy of any official test. See our <t0>hazard perception guide</t0>.",
   "note": "",
   "pages": [
    "faq.html"
@@ -5773,9 +5794,9 @@
   "group": "core"
  },
  {
-  "key": "871fdd04e660b368",
+  "key": "d489f768938f70d2",
   "kind": "run",
-  "src": "<t0>An account</t0>: sign in with Google or with an email address and password. Your progress is saved to it, so it follows you to a new phone.",
+  "src": "<t0>An account</t0>: sign in with Google, Facebook, or an email address and password. Your progress is saved to it, so it follows you to a new phone.",
   "note": "",
   "pages": [
    "download.html"
@@ -5843,6 +5864,16 @@
   "group": "core"
  },
  {
+  "key": "e78e1fc91c9fd954",
+  "kind": "run",
+  "src": "Sample hazard perception practice: 11 of the 72 3D clips and 6 of the 40 still scenes.",
+  "note": "",
+  "pages": [
+   "download.html"
+  ],
+  "group": "core"
+ },
+ {
   "key": "10deb8b821486999",
   "kind": "run",
   "src": "All eight states and territories, in English, Chinese, Arabic, Vietnamese and Spanish.",
@@ -5853,9 +5884,9 @@
   "group": "core"
  },
  {
-  "key": "f9a7ed526131c0de",
+  "key": "a705ab0c9292b3b7",
   "kind": "run",
-  "src": "Premium is optional: a one-time A$5.99 purchase through Google Play, with no subscription. It removes ads and adds unlimited mock tests, forecasts for each section of the test, your weak spots and all 72 hazard perception clips. See the <t0>features</t0>.",
+  "src": "Premium is optional: a one-time A$5.99 purchase through Google Play, with no subscription. It removes ads and adds unlimited mock tests, forecasts for each section of the test, your weak spots, a review planner, and all 72 hazard perception clips and 40 still scenes. See the <t0>features</t0>.",
   "note": "",
   "pages": [
    "download.html"
@@ -8436,16 +8467,6 @@
   "group": "states"
  },
  {
-  "key": "411ea495ff3e9538",
-  "kind": "run",
-  "src": "Test format",
-  "note": "",
-  "pages": [
-   "wa-learners-test-practice.html"
-  ],
-  "group": "states"
- },
- {
   "key": "6448fdcbd43610ba",
   "kind": "run",
   "src": "30 multiple-choice questions, at least 24 correct to pass (independent guides)",
@@ -9947,9 +9968,9 @@
   "group": "states"
  },
  {
-  "key": "cf1ef8e8e7c1a4ef",
+  "key": "90cf8e03a9dac759",
   "kind": "run",
-  "src": "More than 440 original ACT questions, written from ACT legislation.",
+  "src": "More than 420 original ACT questions, written from ACT legislation.",
   "note": "",
   "pages": [
    "act-learners-test-practice.html"

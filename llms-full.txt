@@ -2,7 +2,7 @@
 
 > Learners Test Australia (Google Play title “Learners Test Australia: DKT”) is an independent Android study app by BlueOrbit for learner drivers in all eight Australian states and territories. It has original practice questions and mock tests in each state's learner knowledge test format, with every answer explained and linked to the handbook page or road rule it comes from. Free to practise, with an optional one-time A$5.99 Premium purchase. Not affiliated with any government agency. The app is not on Google Play yet (coming soon).
 
-Source: https://learnertest.com/ · Content current as of 30 September 2026. Each section below is one page of the website.
+Source: https://learnertest.com/ · Content current as of 6 October 2026. Each section below is one page of the website.
 
 
 ---
@@ -70,7 +70,7 @@ WA
 ### WA learner's permit theory test
 
 - Before your permit: Show you know WA's traffic laws and safe driving, normally by a theory test.
-- Official format: Check the WA transport department's website.
+- Test format: 30 questions, 24 to pass.
 - In the app: A 30-question practice test written from WA legislation.
 
 WA learners test practice (https://learnertest.com/wa-learners-test-practice.html)
@@ -253,7 +253,7 @@ Feature tour
 
 A closer look at Learners Test Australia: state-specific mock tests, explained answers, a daily plan, progress tracking, hazard perception practice and more.
 
-Last updated: 30 September 2026
+Last updated: 6 October 2026
 
 ## Pick your state, practise its test
 
@@ -278,7 +278,7 @@ After each answer you see whether you were right, a short explanation, why the r
 
 Questions come in the forms real tests use: single answers, road signs and diagrams, plus select-all-that-apply questions for the South Australian myLs and Tasmanian online tests. A quick "How sure were you?" tap (knew it, unsure or guessed) helps the app decide when to show a question again, and you can save or flag any question to come back to.
 
-Each state's question pack has more than 380 original questions, and hundreds of original sign and diagram illustrations are shared across states.
+Each state's question pack has from 386 (NT) to 555 (SA) original questions, about 3,770 in all, and hundreds of original sign and diagram illustrations are shared across states.
 
 Illustration of a practice question from the NSW pack: the answer is explained, with the handbook page and road rule it comes from.
 
@@ -292,13 +292,13 @@ Today's plan puts the right things in front of you:
 - Learn new questions: ones you haven't seen yet.
 - Mock test: the full test, same format as the real one.
 
-Other ways to practise: mixed practice (20 questions, new ones first), mistakes, saved questions, weak spots and practice by topic. Optional study reminders and a countdown help you keep going, and a study streak counts real study only.
+Other ways to practise: mixed practice (20 questions, new ones first), mistakes, saved questions, weak spots and practice by topic, with a mastery ring for each topic. Optional study reminders and a countdown help you keep going, and a study streak counts real study only.
 
 Illustration of the Today screen with sample data: a countdown, an estimated pass chance and a short daily plan.
 
 ## Mock tests that show the pass line
 
-Mock tests have the same sections and number of questions as the real test, and each section is scored against its own pass mark. In the NSW mock, the test ends where the real DKT would, once passing is no longer possible, and you can choose to keep practising the rest.
+Mock tests have the same sections and number of questions as the real test, and each section is scored against its own pass mark. In the NSW mock, the test ends where the real DKT would, once passing is no longer possible, and you can choose to keep practising the rest. In the South Australian in-person theory test mock, a mistake in Part A (giving way) ends the test after Part A, as it does at Service SA. The other mock tests run to the last question.
 
 Results show your score in each section against its pass line, how long you took and which questions to review, with one tap to practise your mistakes. How to get the most out of mock tests (https://learnertest.com/blog/how-to-use-mock-tests-and-mistakes.html).
 
@@ -308,7 +308,7 @@ Illustration of mock test results with sample data: each section shows your scor
 
 ## Progress and an honest pass-chance estimate
 
-The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. After enough answers, the Today screen shows an estimated pass chance.
+The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. After your first 12 answers (the quick check), the Today screen shows an estimated pass chance.
 
 With Premium you also get a forecast for each section (your expected score and the chance of passing that section), your weak spots and a planner for upcoming reviews.
 
@@ -328,9 +328,9 @@ Here the road safety forecast sits just under its pass line, so that's where to 
 
 Hazard perception is about spotting risks early. The app plays 72 short driving clips in real-time 3D, seen from the driver's seat: you are told what you want to do (turn right, move off, overtake, change lanes or slow down) and tap when it becomes safe, in the same style as the hazard perception tests. Clips cover suburban streets, traffic lights, roundabouts, school zones, country roads with kangaroos and road trains, freeways, level crossings and Melbourne trams, by day, at dusk, at night and in the rain. Afterwards a timeline shows when it was safe and when you tapped, with the road rule explained, and you can watch the clip again.
 
-There are also illustrated still scenes where you tap the hazard. A few clips and scenes are free, and Premium unlocks them all. Each state's licence guide explains where its hazard perception test fits on the way to your P plates (the Northern Territory has no separate test: hazards are assessed in the practical driving test). The clips and scenes are original practice material, not a copy of any official test. Read our hazard perception guide (https://learnertest.com/blog/hazard-perception-test-nsw-vic-qld.html).
+There are also 40 illustrated still scenes where you tap the hazard. 11 clips and 6 scenes are free, and Premium unlocks them all. Every clip and scene can be browsed in picture libraries, and any clip can be replayed. Each state's licence guide explains where its hazard perception test fits on the way to your P plates (the Northern Territory has no separate test: hazards are assessed in the practical driving test). The clips and scenes are original practice material, not a copy of any official test. Read our hazard perception guide (https://learnertest.com/blog/hazard-perception-test-nsw-vic-qld.html).
 
-Illustration of a hazard perception scene: a person waiting between parked cars could step into the road.
+Illustration of a 3D hazard perception clip: you are told what you want to do, then tap when it becomes safe.
 
 ## Also included
 
@@ -344,7 +344,7 @@ A daily nudge and a countdown to your test, if you turn them on.
 
 ### Streak and badges
 
-A study streak and a few badges for real study. No points to grind.
+A study streak and six badges for real study (your first session, a 7-day streak, 100 answers, every topic tried, a mock test passed, 8 hazard clips passed). No points to grind.
 
 ### Five languages
 
@@ -396,7 +396,7 @@ States and territories
 
 Each Australian state and territory runs its own learner knowledge test. Here is how all eight compare, and where to find the details for yours.
 
-Last updated: 30 September 2026
+Last updated: 6 October 2026
 
 In short
 
@@ -465,7 +465,7 @@ WA
 ### WA learner's permit theory test
 
 - Before your permit: Show you know WA's traffic laws and safe driving, normally by a theory test.
-- Official format: Check the WA transport department's website.
+- Test format: 30 questions, 24 to pass.
 - In the app: A 30-question practice test written from WA legislation.
 
 WA learners test practice (https://learnertest.com/wa-learners-test-practice.html)
@@ -518,7 +518,7 @@ NSW New South Wales
 
 What's in the NSW Driver Knowledge Test, the pass marks for each section, the online option, and how to practise for it.
 
-Last updated: 30 September 2026
+Last updated: 6 October 2026
 
 Quick answer
 
@@ -628,7 +628,7 @@ VIC Victoria
 
 The Victorian learner permit test explained: the online course, the 32-question in-person test, what it covers and how to prepare.
 
-Last updated: 30 September 2026
+Last updated: 6 October 2026
 
 Quick answer
 
@@ -729,7 +729,7 @@ QLD Queensland
 
 Queensland's two routes to a learner licence, the questions and pass marks for each, what they cover and how to prepare.
 
-Last updated: 30 September 2026
+Last updated: 6 October 2026
 
 Quick answer
 
@@ -832,7 +832,7 @@ SA South Australia
 
 South Australia's two routes to a learner's permit, the questions and pass marks for each, the rules you are tested on and how to prepare.
 
-Last updated: 30 September 2026
+Last updated: 6 October 2026
 
 Quick answer
 
@@ -935,7 +935,7 @@ WA Western Australia
 
 What Western Australian law says you need for a learner's permit, the rules the test checks, what comes next and how to practise.
 
-Last updated: 30 September 2026
+Last updated: 6 October 2026
 
 Quick answer
 
@@ -1039,7 +1039,7 @@ TAS Tasmania
 
 Tasmania's two ways to a learner licence, the online test's questions and pass mark, what it covers and how to prepare.
 
-Last updated: 30 September 2026
+Last updated: 6 October 2026
 
 Quick answer
 
@@ -1146,7 +1146,7 @@ ACT Australian Capital Territory
 
 How the ACT's learner licence knowledge test works, who runs it, what it covers and how to prepare for it.
 
-Last updated: 30 September 2026
+Last updated: 6 October 2026
 
 Quick answer
 
@@ -1200,7 +1200,7 @@ The provisional licence lasts 3 years: under 25 at issue, 12 months on P1 (red P
 ## How to practise for the ACT learners test with Learners Test Australia
 
 - 35-question practice tests scored against a 31-question pass line.
-- More than 440 original ACT questions, written from ACT legislation.
+- More than 420 original ACT questions, written from ACT legislation.
 - ACT-only rules such as roof-mounted plates, zero alcohol for supervisors and the late-night P1 passenger rule.
 - Every answer explained, with the section it comes from.
 
@@ -1251,7 +1251,7 @@ NT Northern Territory
 
 The Northern Territory's driver knowledge test for a learner licence: questions, pass mark, where to sit it, the rules it checks and how to prepare.
 
-Last updated: 30 September 2026
+Last updated: 6 October 2026
 
 Quick answer
 
@@ -1361,7 +1361,7 @@ Frequently asked questions
 
 Straight answers about Learners Test Australia: what it is and isn't, states, price, accounts, languages, offline use and how the questions are written.
 
-Last updated: 30 September 2026
+Last updated: 6 October 2026
 
 Can't find your answer? Email blue0orbit@gmail.com or see the contact page (https://learnertest.com/contact.html).
 
@@ -1447,11 +1447,11 @@ Soon. It isn't listed yet, so there is no store link on this site. When it goes 
 
 ### How does the pass-chance estimate work?
 
-After you've answered enough questions, the app estimates your chance of passing from your recent answers. It is an estimate, not a guarantee. Premium adds a forecast for each section of the test.
+After your first 12 answers (the quick check), the app estimates your chance of passing from your recent answers. It is an estimate, not a guarantee. Premium adds a forecast for each section of the test.
 
 ### Does the app include hazard perception practice?
 
-Yes. There are 72 real-time 3D driving clips where you tap when it is safe to act, in the same style as the hazard perception tests, plus illustrated still scenes and a guide to your state's hazard perception test (the Northern Territory has none; hazards are assessed in its practical driving test). A few clips and scenes are free and Premium unlocks them all. They are original practice material and are not a copy of any official test. See our hazard perception guide (https://learnertest.com/blog/hazard-perception-test-nsw-vic-qld.html).
+Yes. There are 72 real-time 3D driving clips where you tap when it is safe to act, in the same style as the hazard perception tests, plus 40 illustrated still scenes and a guide to your state's hazard perception test (the Northern Territory has none; hazards are assessed in its practical driving test). 11 clips and 6 scenes are free, and Premium unlocks them all. Every clip and scene can be browsed in picture libraries, and any clip can be replayed. They are original practice material and are not a copy of any official test. See our hazard perception guide (https://learnertest.com/blog/hazard-perception-test-nsw-vic-qld.html).
 
 ## Questions and accuracy
 
@@ -1479,7 +1479,7 @@ Choosing an app
 
 # Why choose Learners Test Australia for your learner test?
 
-By BlueOrbit (https://learnertest.com/about.html) · Published 1 October 2026 · Last updated: 1 October 2026 · 6 min read
+By BlueOrbit (https://learnertest.com/about.html) · Published 1 October 2026 · Last updated: 6 October 2026 · 6 min read
 
 Editorial illustration of app-based study, not a screenshot of the app.
 
@@ -1557,7 +1557,7 @@ Premium adds section forecasts, weak spots and a review planner. Those tools can
 
 Questions are built into the app, so you can practise offline after signing in. Progress syncs when you are back online. Signing in, watching an ad for another mock test, and buying or restoring Premium need a connection. This makes ordinary question practice useful when your connection is unreliable.
 
-The app supports English, Chinese, Arabic, Vietnamese and Spanish, with right-to-left Arabic, dark mode and large-text support. There is an important coverage detail: questions for Tasmania, the ACT and the Northern Territory are currently in English. App language support also does not mean your official test is offered in the same language. Check the feature guide (https://learnertest.com/features.html) before choosing your study setup.
+The app supports English, Chinese, Arabic, Vietnamese and Spanish, with right-to-left Arabic, dark mode and large-text support. Questions and explanations for all eight states and territories are in all five languages. Note that app language support does not mean your official test is offered in the same language. Check the feature guide (https://learnertest.com/features.html) before choosing your study setup.
 
 ## 6. Keep core practice free, with optional Premium
 
@@ -1625,7 +1625,7 @@ Explore every feature ↗ (https://learnertest.com/features.html)Find your state
 
 ## About this product guide
 
-Written by BlueOrbit, the developer of Learners Test Australia, using our feature guide (https://learnertest.com/features.html), FAQ (https://learnertest.com/faq.html) and content methodology (https://learnertest.com/about.html). Product information reviewed on 1 October 2026. This is a first-party product guide, not an independent store comparison.
+Written by BlueOrbit, the developer of Learners Test Australia, using our feature guide (https://learnertest.com/features.html), FAQ (https://learnertest.com/faq.html) and content methodology (https://learnertest.com/about.html). Product information reviewed on 6 October 2026. This is a first-party product guide, not an independent store comparison.
 
 ## Related
 
@@ -2020,7 +2020,7 @@ Study tips
 
 # How to use mock tests and mistakes to prepare for your learner test
 
-By BlueOrbit (https://learnertest.com/about.html) · Published 30 September 2026 · Last updated: 30 September 2026 · 4 min read
+By BlueOrbit (https://learnertest.com/about.html) · Published 30 September 2026 · Last updated: 6 October 2026 · 4 min read
 
 Illustration for this guide; not an official test image or road-rule diagram.
 
@@ -2057,7 +2057,7 @@ Once you've worked through every topic at least once, start sitting full mock te
 - Answer every question, and flag the ones you're unsure of to review afterwards.
 - Read the whole question and every option before choosing. Many wrong options are tempting because they are almost right.
 
-In the NSW mock, the test ends where the real DKT would, as soon as passing is no longer possible, and you can choose to keep practising the remaining questions. That early stop is a useful jolt: it shows exactly how little room there is in the road safety section.
+In the NSW mock, the test ends where the real DKT would, as soon as passing is no longer possible, and you can choose to keep practising the remaining questions. That early stop is a useful jolt: it shows exactly how little room there is in the road safety section. In the South Australian in-person theory test mock, a mistake in Part A (giving way) ends the test after Part A, as it does at Service SA. The other mock tests run to the last question.
 
 ## What should you do with your mistakes?
 
@@ -2114,7 +2114,7 @@ Hazard perception
 
 # Hazard perception test: what it is in NSW, VIC and QLD
 
-By BlueOrbit (https://learnertest.com/about.html) · Published 30 September 2026 · Last updated: 30 September 2026 · 4 min read
+By BlueOrbit (https://learnertest.com/about.html) · Published 30 September 2026 · Last updated: 6 October 2026 · 4 min read
 
 Illustration for this guide; not an official test image or road-rule diagram.
 
@@ -2164,9 +2164,9 @@ The supervised hours each state asks for exist partly for this reason: NSW asks 
 
 ## Can an app help with hazard perception?
 
-An app can't replace time behind the wheel, but it can help you practise the thinking. Learners Test Australia has illustrated traffic scenes, drawn from above, where you tap the hazard you should be ready for and then read why it matters: a person waiting between parked cars, a ball on the road with a child nearby, a parked car signalling to pull out, or a kangaroo beside a country road at dusk. A few sample scenes are free, and Premium unlocks the full set. Each state also has a guide to its HPT.
+An app can't replace time behind the wheel, but it can help you practise the thinking. Learners Test Australia has 72 real-time 3D driving clips, seen from the driver's seat. Each clip tells you what you want to do (turn, move off, overtake, change lanes or slow down), and you tap when it becomes safe, as in the HPT. A timeline then shows when it was safe and when you tapped, with the road rule explained.
 
-The scenes are still images for practice. They are not a copy of any official test, which uses video clips. For the knowledge test side, see our mock test guide (https://learnertest.com/blog/how-to-use-mock-tests-and-mistakes.html) and the feature tour (https://learnertest.com/features.html).
+There are also 40 illustrated still scenes where you tap the hazard. 11 clips and 6 scenes are free, and Premium unlocks them all. Each state also has a guide to its HPT. The clips and scenes are original practice material, not a copy of any official test. For the knowledge test side, see our mock test guide (https://learnertest.com/blog/how-to-use-mock-tests-and-mistakes.html) and the feature tour (https://learnertest.com/features.html).
 
 ## Check the official source
 
@@ -2194,7 +2194,7 @@ About
 
 Who makes the app, why it exists, and the process behind every question.
 
-Last updated: 30 September 2026
+Last updated: 6 October 2026
 
 ## Who makes Learners Test Australia?
 

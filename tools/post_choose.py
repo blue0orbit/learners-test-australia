@@ -1,5 +1,6 @@
 """Product choice guide. Claims follow the site's feature and FAQ disclosures."""
 from choice_visuals import decorate_sections
+from sitelib import DATE, DATE_H
 
 
 def create_post(post):
@@ -54,8 +55,8 @@ official guidance. No practice score guarantees a result on test day.</p>"""),
 back online. Signing in, watching an ad for another mock test, and buying or restoring Premium need a connection.
 This makes ordinary question practice useful when your connection is unreliable.</p>
 <p>The app supports English, Chinese, Arabic, Vietnamese and Spanish, with right-to-left Arabic, dark mode and
-large-text support. There is an important coverage detail: questions for Tasmania, the ACT and the Northern Territory
-are currently in English. App language support also does not mean your official test is offered in the same language.
+large-text support. Questions and explanations for all eight states and territories are in all five languages.
+Note that app language support does not mean your official test is offered in the same language.
 Check the <a href="@/features.html">feature guide</a> before choosing your study setup.</p>"""),
             ("value", "6. Keep core practice free, with optional Premium", """
 <p>Every practice question and its explanation is available free, along with the daily plan, reviews and progress.
@@ -71,7 +72,7 @@ Choose it for the extra tools and convenience if they suit your routine.</p>""")
 <tr><th scope="row">Learning from mistakes</th><td>Explained answers, source references and review practice.</td></tr>
 <tr><th scope="row">Study structure</th><td>A daily plan, mock tests and progress feedback.</td></tr>
 <tr><th scope="row">Cost and limits</th><td>Free questions; daily free mock allowance; optional one-time Premium.</td></tr>
-<tr><th scope="row">Practical fit</th><td>Android, offline question practice after sign-in, and language coverage with stated exceptions.</td></tr></tbody></table></div>
+<tr><th scope="row">Practical fit</th><td>Android, offline question practice after sign-in, and five languages for every state and territory.</td></tr></tbody></table></div>
 <p>Ask these same questions of any app you are considering. We have not tested every competing product, so this
 table describes our offering without assigning features, prices or weaknesses to other developers.</p>"""),
             ("next", "Is Learners Test Australia right for you?", """
@@ -86,12 +87,12 @@ match what you need before deciding to use the app.</p>"""),
         keywords=["learner test app", "compare learner test apps", "Learners Test Australia", "Android learner test practice"],
         llms_note="Why choose the app: state profiles, source-linked explanations, daily reviews, free practice and optional one-time Premium; includes availability and feature limits, not a competitor ranking.",
         related=[("Full feature tour", "features.html"), ("Free and Premium FAQ", "faq.html"), ("Choose your state", "states.html"), ("How our questions are checked", "about.html")],
-        date="2026-10-01", date_h="1 October 2026",
+        date="2026-10-01", date_h="1 October 2026", modified=DATE, modified_h=DATE_H,
         image_caption="Editorial illustration of app-based study, not a screenshot of the app.",
-        source_html='''<aside class="source-box" aria-labelledby="src-title"><h2 id="src-title">About this product guide</h2>
+        source_html=f'''<aside class="source-box" aria-labelledby="src-title"><h2 id="src-title">About this product guide</h2>
 <p>Written by BlueOrbit, the developer of Learners Test Australia, using our <a href="@/features.html">feature guide</a>,
 <a href="@/faq.html">FAQ</a> and <a href="@/about.html">content methodology</a>. Product information reviewed on
-1 October 2026. This is a first-party product guide, not an independent store comparison.</p></aside>''',
+{DATE_H}. This is a first-party product guide, not an independent store comparison.</p></aside>''',
     )
     page.body = page.body.replace('class="content"><div class="container two-col"', 'class="content choice-story"><div class="container choice-layout"')
     return page
