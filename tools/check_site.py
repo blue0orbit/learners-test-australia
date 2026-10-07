@@ -37,7 +37,7 @@ def lang_of(rel: str) -> str:
     return first if first in LANG_DIRS and "/" in rel else "en"
 
 ROOT = Path(__file__).resolve().parent.parent
-BASE = "https://learnertest.com/"
+BASE = "https://au.learnertest.com/"
 BASE_PATH = "/"
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
 STATE_PAGES = (

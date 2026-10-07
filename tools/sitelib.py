@@ -17,7 +17,7 @@ APP_NAME = "Learners Test Australia: DKT"
 PACKAGE = "com.blueorbit.learnerstestau"
 DEVELOPER = "BlueOrbit"
 EMAIL = "blue0orbit@gmail.com"
-BASE = "https://learnertest.com/"
+BASE = "https://au.learnertest.com/"
 BASE_PATH = "/"
 # AdMob publisher id, published in app-ads.txt (it is public by design)
 ADMOB_PUBLISHER = "pub-1798960414758701"

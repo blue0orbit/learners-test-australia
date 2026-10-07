@@ -1,4 +1,4 @@
-# robots.txt for the Learners Test Australia website (https://learnertest.com/)
+# robots.txt for the Learners Test Australia website (https://au.learnertest.com/)
 # All crawlers, including search engines and AI assistants, are welcome to read and cite this site.
 
 User-agent: *
@@ -43,4 +43,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://learnertest.com/sitemap.xml
+Sitemap: https://au.learnertest.com/sitemap.xml
