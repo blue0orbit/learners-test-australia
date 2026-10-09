@@ -5,8 +5,8 @@ The privacy policy and terms mirror the in-app text in app/src/main/res/values/s
 word-for-word in sync with the app: only headings and HTML structure are added here.
 """
 from sitelib import (
-    APP_NAME, BASE, DEVELOPER, EMAIL, LEGAL_DATE, LEGAL_DATE_H, PACKAGE, SITE_NAME, SRC, TERMS_DATE, TERMS_DATE_H, Page,
-    page_head, updated_line,
+    APP_NAME, BASE, DELETION_DATE, DELETION_DATE_H, DEVELOPER, EMAIL, LEGAL_DATE, LEGAL_DATE_H, PACKAGE, SITE_NAME, SRC,
+    TERMS_DATE, TERMS_DATE_H, Page, page_head, updated_line,
 )
 
 MAIL = f'<a href="mailto:{EMAIL}">{EMAIL}</a>'
@@ -86,7 +86,7 @@ def privacy() -> Page:
   <li><strong>No cookies.</strong> The website sets no cookies and stores nothing in your browser (no local storage or similar).</li>
   <li><strong>No analytics or trackers.</strong> There are no analytics, advertising, tracking pixels or social media widgets.</li>
   <li><strong>Nothing loaded from third parties.</strong> Fonts, images, styles and the one small script (it opens and closes the menu on small screens) are all served from this website itself.</li>
-  <li><strong>Hosting.</strong> The site is hosted on GitHub Pages. GitHub says it logs the IP address of visitors to GitHub Pages sites for security purposes (see <a href="{SRC['gh_pages_data']}" rel="noopener">About GitHub Pages</a>). We don't use those logs, and the site has no analytics of its own.</li>
+  <li><strong>Hosting.</strong> The site is delivered by Cloudflare, Inc. (domain name service, content delivery and hosting) and GitHub, Inc. (GitHub Pages). They process technical data such as your IP address and browser details to deliver the pages securely (see <a href="{SRC['cloudflare_privacy']}" rel="noopener">Cloudflare's privacy policy</a>). GitHub says it logs the IP address of visitors to GitHub Pages sites for security purposes (see <a href="{SRC['gh_pages_data']}" rel="noopener">About GitHub Pages</a>). Both are US companies, so this may happen outside Australia. We don't use those logs, and the site has no analytics of its own.</li>
   <li><strong>Email.</strong> If you email us, we use your message and email address to reply to you. If you ask to try the app early, we also use your email address to invite you to the test on Google Play, and remove it from the test list when you ask or when testing ends.</li>
 </ul>
 <p>See also the <a href="@/cookies.html">cookie policy</a> and how to <a href="@/account-deletion.html">delete your account</a>.</p>
@@ -125,8 +125,8 @@ subject to consent where the law requires it.</p></div>
 
 <h2>Does this website use cookies?</h2>
 <p>No. This website sets no cookies and uses no local storage, analytics, advertising or tracking of any kind. Every
-file (pages, fonts, images, styles and the small menu script) comes from this site. The site is hosted on GitHub Pages;
-see the <a href="@/privacy-policy.html#website">privacy policy</a> for what GitHub logs.</p>
+file (pages, fonts, images, styles and the small menu script) comes from this site. The site is delivered by Cloudflare
+and GitHub Pages; see the <a href="@/privacy-policy.html#website">privacy policy</a> for what they process.</p>
 
 <h2>What does the app use instead of cookies?</h2>
 <p>Apps don't rely on browser cookies the way websites do. The {SITE_NAME} app uses the following, as described in
@@ -290,7 +290,7 @@ def account_deletion() -> Page:
         "Delete your Learners Test Australia account and data",
         None,
         crumbs,
-        meta_html=updated_line(LEGAL_DATE, LEGAL_DATE_H),
+        meta_html=updated_line(DELETION_DATE, DELETION_DATE_H),
     ) + f"""
 <div class="content"><div class="container prose">
 <div class="callout">
@@ -342,7 +342,7 @@ within 30 days.</p>
 </div></div>"""
     return Page(
         path="account-deletion.html",
-        lastmod=LEGAL_DATE,
+        lastmod=DELETION_DATE,
         title="Delete Your Account and Data | Learners Test Australia",
         description=("How to delete your Learners Test Australia account and data: in the app via Settings, Delete account, "
                      "or by email. What is deleted and what is kept."),

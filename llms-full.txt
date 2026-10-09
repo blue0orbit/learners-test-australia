@@ -2288,7 +2288,7 @@ URL: https://au.learnertest.com/privacy-policy.html
 
 How the Learners Test Australia app handles your information, and a note on this website.
 
-Last updated: 30 September 2026
+Last updated: 9 October 2026
 
 App: Learners Test Australia: DKT (Android) · Developer: BlueOrbit · Contact: blue0orbit@gmail.com
 
@@ -2365,7 +2365,7 @@ This section is about the website you are reading now (au.learnertest.com), not 
 - No cookies. The website sets no cookies and stores nothing in your browser (no local storage or similar).
 - No analytics or trackers. There are no analytics, advertising, tracking pixels or social media widgets.
 - Nothing loaded from third parties. Fonts, images, styles and the one small script (it opens and closes the menu on small screens) are all served from this website itself.
-- Hosting. The site is hosted on GitHub Pages. GitHub says it logs the IP address of visitors to GitHub Pages sites for security purposes (see About GitHub Pages (https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)). We don't use those logs, and the site has no analytics of its own.
+- Hosting. The site is delivered by Cloudflare, Inc. (domain name service, content delivery and hosting) and GitHub, Inc. (GitHub Pages). They process technical data such as your IP address and browser details to deliver the pages securely (see Cloudflare's privacy policy (https://www.cloudflare.com/privacypolicy/)). GitHub says it logs the IP address of visitors to GitHub Pages sites for security purposes (see About GitHub Pages (https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)). Both are US companies, so this may happen outside Australia. We don't use those logs, and the site has no analytics of its own.
 - Email. If you email us, we use your message and email address to reply to you. If you ask to try the app early, we also use your email address to invite you to the test on Google Play, and remove it from the test list when you ask or when testing ends.
 
 See also the cookie policy (https://au.learnertest.com/cookies.html) and how to delete your account (https://au.learnertest.com/account-deletion.html).

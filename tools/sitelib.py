@@ -34,10 +34,15 @@ DATE_H = "6 October 2026"
 # When the official sources, test formats and legislation behind the content were last checked ("checked on",
 # "sourced on"). Only change it after checking the sources again.
 CHECKED_H = "30 September 2026"
-# Last updated date of the privacy policy, which mirrors the in-app text (privacy_last_updated in the app's
-# strings.xml), and of the other legal pages.
-LEGAL_DATE = "2026-09-30"
-LEGAL_DATE_H = "30 September 2026"
+# Last updated date of the privacy policy and the cookie policy. The privacy policy mirrors the in-app text
+# (privacy_last_updated in the app's strings.xml, 30 September 2026) and adds website-only sections at the end, so
+# this date is later than the app's when only a website section changed (9 October 2026: the hosting text names
+# Cloudflare and GitHub Pages).
+LEGAL_DATE = "2026-10-09"
+LEGAL_DATE_H = "9 October 2026"
+# Last updated date of the account deletion page.
+DELETION_DATE = "2026-09-30"
+DELETION_DATE_H = "30 September 2026"
 # Last updated date of the terms of service, which mirror the in-app text (tos_last_updated in strings.xml).
 TERMS_DATE = "2026-10-06"
 TERMS_DATE_H = "6 October 2026"
@@ -105,6 +110,7 @@ SRC = {
     "nt_mva": "https://legislation.nt.gov.au/Legislation/MOTOR-VEHICLES-ACT-1949",
     "nt_tr": "https://legislation.nt.gov.au/Legislation/TRAFFIC-REGULATIONS-1999",
     "gh_pages_data": "https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages",
+    "cloudflare_privacy": "https://www.cloudflare.com/privacypolicy/",
 }
 
 # Website languages: the app's five. The key is the URL folder (English lives at the root). Every translated page is
