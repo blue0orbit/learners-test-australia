@@ -98,8 +98,8 @@ cover its information pages; the web study app at au.learnertest.com/app/ works 
 </ul>
 
 <h2 id="web-app">The web app</h2>
-<p>This section is about the web study app at {WEB_APP_LINK}. It is an invite-only private beta for now: anyone can
-sign in, but only invited accounts can study there. The web app shows no ads and uses no analytics.</p>
+<p>This section is about the web study app at {WEB_APP_LINK}. It started as an invite-only beta and is now open to
+everyone: anyone with an account can sign in and study there. The web app shows no ads and uses no analytics.</p>
 
 <h3 id="web-app-sign-in">Signing in</h3>
 <p>You sign in with the same account as the Android app, with Google or with an email address and password, or you can create an account there. Sign-in uses Google Firebase Authentication, in the same Firebase project as the app. If you use an email address and password, you must confirm your email address with the link Firebase sends you. Firebase keeps you signed in with a token stored in your browser. Facebook sign-in, which the app offers, is not available in the web app.</p>
@@ -113,7 +113,7 @@ sign in, but only invited accounts can study there. The web app shows no ads and
   <li>Which questions it has given your account, and the day each one was first given, to limit copying of the question bank. These are deleted once your account has gone a year without new questions and 35 days without getting any questions or mock exams.</li>
   <li>Daily counts of the questions, new questions and mock exams it has given your account, for the daily fair-use limits. These are deleted after about 35 days.</li>
   <li>The mock exams it put together for you: the questions, their order, the language, the start time, the time limit and the time you handed the exam in. These are deleted after about 90 days.</li>
-  <li>While the web app is an invite-only beta: the list of invited accounts (the user ID, the date it was added and a short note). An entry is not deleted automatically; we remove it when you ask.</li>
+  <li>While the web app is invite-only: the list of invited accounts (the user ID, the date it was added and a short note), so that only those accounts can study there. The web app is open to everyone now and does not use the list, but the list from the beta is kept: an entry is not deleted automatically; we remove it when you ask.</li>
 </ul>
 <p>To apply the right limits, the question service checks, using your own sign-in, whether our Firebase project holds a Premium record for your account. It keeps the answer in memory for up to five minutes and does not store it.</p>
 <p>Your practice answers are checked in your browser and never sent to us. When you hand in a mock exam, your answers are sent only so it can be marked: the question service sends back your result and does not keep your answers. Your IP address is used to limit the number of requests from each address; it is not stored in the question service’s database.</p>
@@ -339,8 +339,8 @@ def terms() -> Page:
 <p>We aim to respond to all enquiries within 5 business days.</p>
 
 <h2 id="web-app">Web study app</h2>
-<p>The web study app at {WEB_APP_LINK} uses the same account as the Android app, and these Terms apply to it. It is
-an invite-only private beta for now. In addition:</p>
+<p>The web study app at {WEB_APP_LINK} uses the same account as the Android app, and these Terms apply to it. Anyone
+with an account can use it. In addition:</p>
 <ul>
   <li><strong>Fair use.</strong> To keep the service fair and protect the question bank, each account has daily limits on the number of questions, new questions and mock exams it can get in the web app. Our server applies these limits, and we may adjust them.</li>
   <li><strong>Practice only.</strong> Mock exam results in the web app are for practice only. They are not an official test result and do not count towards any official test.</li>

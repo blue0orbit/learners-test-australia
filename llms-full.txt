@@ -2370,7 +2370,7 @@ This section is about the website you are reading now (au.learnertest.com), not 
 
 ## The web app
 
-This section is about the web study app at au.learnertest.com/app/ (https://au.learnertest.com/app/). It is an invite-only private beta for now: anyone can sign in, but only invited accounts can study there. The web app shows no ads and uses no analytics.
+This section is about the web study app at au.learnertest.com/app/ (https://au.learnertest.com/app/). It started as an invite-only beta and is now open to everyone: anyone with an account can sign in and study there. The web app shows no ads and uses no analytics.
 
 ### Signing in
 
@@ -2387,7 +2387,7 @@ The web app’s pages and its question service are hosted by Cloudflare (Cloudfl
 - Which questions it has given your account, and the day each one was first given, to limit copying of the question bank. These are deleted once your account has gone a year without new questions and 35 days without getting any questions or mock exams.
 - Daily counts of the questions, new questions and mock exams it has given your account, for the daily fair-use limits. These are deleted after about 35 days.
 - The mock exams it put together for you: the questions, their order, the language, the start time, the time limit and the time you handed the exam in. These are deleted after about 90 days.
-- While the web app is an invite-only beta: the list of invited accounts (the user ID, the date it was added and a short note). An entry is not deleted automatically; we remove it when you ask.
+- While the web app is invite-only: the list of invited accounts (the user ID, the date it was added and a short note), so that only those accounts can study there. The web app is open to everyone now and does not use the list, but the list from the beta is kept: an entry is not deleted automatically; we remove it when you ask.
 
 To apply the right limits, the question service checks, using your own sign-in, whether our Firebase project holds a Premium record for your account. It keeps the answer in memory for up to five minutes and does not store it.
 
