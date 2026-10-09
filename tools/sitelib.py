@@ -38,16 +38,23 @@ CHECKED_H = "30 September 2026"
 # (privacy_last_updated in the app's strings.xml, 9 October 2026 from app build 16, 0.16.0) and adds website-only
 # sections at the end (9 October 2026: the hosting text names Cloudflare and GitHub Pages, and the web study app
 # sections were added). 9 October 2026: app sections match app build 16 (purchase checks, App Check, ads and
-# consent, retention).
-LEGAL_DATE = "2026-10-09"
-LEGAL_DATE_H = "9 October 2026"
-# Last updated date of the account deletion page (9 October 2026: web app records; Premium, backups, crash reports).
-DELETION_DATE = "2026-10-09"
-DELETION_DATE_H = "9 October 2026"
+# consent, retention). 10 October 2026: app sections match app build 17 (0.17.0): the purchase-checking service is
+# being switched on in stages; Belgium (europe-west1), purchase records up to 6 years, the Premium record in Sydney
+# and deleted about a day after the account, request logs for a limited time; Google Cloud in the providers.
+LEGAL_DATE = "2026-10-10"
+LEGAL_DATE_H = "10 October 2026"
+# Last updated date of the cookie policy (unchanged on 10 October 2026).
+COOKIES_DATE = "2026-10-09"
+COOKIES_DATE_H = "9 October 2026"
+# Last updated date of the account deletion page (9 October 2026: web app records; Premium, backups, crash reports;
+# 10 October 2026: the Premium record is deleted about a day after the account; purchase records and logs kept).
+DELETION_DATE = "2026-10-10"
+DELETION_DATE_H = "10 October 2026"
 # Last updated date of the terms of service, which mirror the in-app text (tos_last_updated in strings.xml, 9 October
-# 2026 from app build 16) plus a website-only web app section at the end (9 October 2026).
-TERMS_DATE = "2026-10-09"
-TERMS_DATE_H = "9 October 2026"
+# 2026 from app build 16; 10 October 2026 from app build 17: Premium and the purchase-checking service's stages)
+# plus a website-only web app section at the end (9 October 2026).
+TERMS_DATE = "2026-10-10"
+TERMS_DATE_H = "10 October 2026"
 PRICE = "A$5.99"
 DISCLAIMER = (
     "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to "

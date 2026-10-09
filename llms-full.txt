@@ -2288,7 +2288,7 @@ URL: https://au.learnertest.com/privacy-policy.html
 
 How the Learners Test Australia app and web app handle your information, and a note on this website.
 
-Last updated: 9 October 2026
+Last updated: 10 October 2026
 
 App: Learners Test Australia: DKT (Android) · Developer: BlueOrbit · Contact: blue0orbit@gmail.com
 
@@ -2308,7 +2308,9 @@ Study data: your answers, completed practice sessions and mock tests, saved ques
 
 Premium purchases: Google Play handles the payment, and we never see your card or payment details. When you buy Premium, the app adds a one-way hash of your account’s user ID to the purchase, and Google Play keeps it with its record of the purchase. This ties the purchase to your learner account. The app checks your purchases with Google Play on your phone.
 
-Purchase checks on our server (being introduced, not switched on yet): we are introducing a purchase-checking service that we run, planned on Google Cloud. The app already contains the code for it, but it is switched off. Once we switch it on, after a purchase and when the app starts, the app will send your Google Play purchase tokens and product IDs to this service, with a sign-in token that identifies your account and an App Check token. The service checks each purchase with Google Play, links it to the first account that verified it, receives refund notices from Google Play, and keeps your Premium record in your account in our Firebase project: the features unlocked, a revision number, an end time for any time-limited pass, and when the record was worked out. The app reads this record, and only the service can change it. Premium bought with the same account on another of our services is then honoured in the app too. Until then, purchases are checked on your phone only. Extra mock tests earned by watching an ad always stay on your phone and are never sent to this service.
+Purchase checks on our server (being switched on in stages): blue0orbit runs a purchase-checking service on Google Cloud in Belgium (europe-west1). We are switching it on in stages. In the first stage, the app sends your purchases to the service, which checks and records them, but Premium is still decided on your phone. In the next stage, the service’s record decides Premium. Until the service is switched on for your app, the app sends nothing to it. While it is on and you are signed in, each time Google Play tells the app which purchases you have (when the app starts, and after a purchase, a restore or a sign-in), the app sends the service the Google Play purchase token and product of each Premium purchase on your phone that was made with your learner account or with no account attached, together with a Firebase ID token, which identifies your account, and an App Check token. Purchases tied to another learner account are not sent, and nothing is sent while you are signed out. Extra mock tests earned by watching an ad always stay on your phone and are never sent to this service.
+
+The service checks each purchase with Google Play, links it to the first account that verified it (another account can’t then use it) and receives refund notices from Google Play. It keeps its purchase records (your account’s user ID, each purchase token, the product, the purchase’s status and when it was checked) in Belgium for up to 6 years, so a purchase can be restored and can’t be claimed twice, and to meet our legal and accounting obligations. It writes your Premium record in your account in our Firebase project, stored in Sydney (australia-southeast1): the features unlocked, a revision number, an end time for any time-limited pass, and when the record was worked out. The app reads this record, and only the service can change it. The app also keeps the service’s latest answer for your account on your phone. Once the record decides Premium, Premium bought with the same account on another of our services is honoured in the app too. About a day after you delete your account, the service deletes your Premium record. Google Cloud logs technical details of each request to the service, such as your IP address, and keeps these logs for a limited time.
 
 App protection: to keep our cloud database for the genuine app, the app uses Firebase App Check with Google Play Integrity. Google checks that the app and your device are genuine, and the app sends the resulting token with its requests to Firebase.
 
@@ -2339,18 +2341,19 @@ The app uses these services, each with its own privacy policy:
 
 - Google Firebase — sign-in, cloud storage of progress, analytics, crash and performance reports, push messages, remote settings and app protection (App Check)
 - Google Play — Premium purchases and purchase checks, Play Integrity checks and in-app ratings (we never see your payment details)
+- Google Cloud — runs our purchase-checking service, in Belgium
 - Google AdMob — banner ads (free version)
 - Unity Ads — optional rewarded video ads (free version)
 - Google User Messaging Platform — ad consent where required
 - Facebook Login — optional sign-in, where the app offers it
 
-Some of these providers store or process data outside Australia, for example in the United States.
+Some of these providers store or process data outside Australia, for example in the United States. Our purchase-checking service runs on Google Cloud in Belgium and keeps its purchase records there, outside Australia.
 
 ## Data protection & retention
 
-We share your data only with the providers above, for the purposes in this policy. Data is sent over encrypted connections, and your cloud progress and profile can only be read by your own account. Once our purchase service is switched on, your Premium record can be read only by your account and changed only by the service.
+We share your data only with the providers above, for the purposes in this policy. Data is sent over encrypted connections, and your cloud progress and profile can only be read by your own account. Your Premium record can be read only by your account and changed only by our purchase-checking service.
 
-We keep your data while your account exists. Delete your account in Settings and your cloud progress, profile and sign-in are deleted straight away; Google then removes them from its backup systems, which Google says can take up to 180 days. Once our purchase service is switched on, deleting your account also deletes your Premium record. Firebase keeps crash reports for 90 days. Google Play keeps its own record of your purchases under its own policies. You can also email us to ask for deletion.
+We keep your data while your account exists. Delete your account in Settings and your cloud progress, profile and sign-in are deleted straight away; Google then removes them from its backup systems, which Google says can take up to 180 days. About a day after you delete your account, our purchase-checking service deletes your Premium record, if you have one. The service keeps its purchase records for up to 6 years, and Google Cloud keeps its request logs for a limited time (see “Purchase checks on our server”). Firebase keeps crash reports for 90 days. Google Play keeps its own record of your purchases under its own policies. You can also email us to ask for deletion.
 
 ## Your rights
 
@@ -2427,7 +2430,7 @@ URL: https://au.learnertest.com/account-deletion.html
 
 # Delete your Learners Test Australia account and data
 
-Last updated: 9 October 2026
+Last updated: 10 October 2026
 
 App: Learners Test Australia: DKT (Android, package com.blueorbit.learnerstestau)
 Developer: BlueOrbit
@@ -2457,13 +2460,13 @@ You can also email us if you want particular data deleted without deleting your 
 - Your profile: your name and email address.
 - Your progress in every state: answers, completed practice sessions and mock tests, and saved questions.
 - Your email preferences.
-- Your Premium record, once our purchase-checking service is switched on (it is not yet; see the privacy policy (https://au.learnertest.com/privacy-policy.html#purchase-checks)).
+- Your Premium record, if you have one: our purchase-checking service deletes it about a day after your account is deleted (see the privacy policy (https://au.learnertest.com/privacy-policy.html#purchase-checks)).
 
 Your cloud progress, profile and sign-in are deleted straight away. Google then removes them from its backup systems, which Google says can take up to 180 days.
 
 ## What is kept
 
-- Premium purchases. Premium belongs to the learner account that bought it, so after you delete that account it can't be moved to a new account automatically; email us if you need help. Google Play keeps its own record of the purchase under its own policies, including the one-way hash of your user ID that the app added to it. We never see or store your payment details. Deleting your account does not refund a purchase, except where required by law.
+- Premium purchases. Premium belongs to the learner account that bought it, so after you delete that account it can't be moved to a new account automatically; email us if you need help. Google Play keeps its own record of the purchase under its own policies, including the one-way hash of your user ID that the app added to it. Our purchase-checking service keeps its purchase records (your user ID, each purchase token, the product, the purchase’s status and when it was checked) for up to 6 years, to meet our legal and accounting obligations, and Google Cloud keeps its request logs for a limited time. We never see or store your payment details. Deleting your account does not refund a purchase, except where required by law.
 - Usage statistics and crash reports. If you allowed “Help improve the app”, these are not linked to your account, so deleting it does not remove them. Firebase deletes crash reports after 90 days.
 - Settings stored only on your phone. Your test date and reminder settings stay on your device. They are removed when you uninstall the app or clear its storage in Android settings.
 - Web app records. If you used the web study app, its question service is not told when your account is deleted. You can delete its record of which questions it gave you, and your mock exams, at any time in the web app (Account → Delete what our server keeps) or by email; daily counts stay until they expire, and a beta invite-list entry is removed when you email us. Otherwise its record of which questions it gave you is deleted once your account has gone a year without new questions and 35 days without getting any questions or mock exams; daily counts are deleted after about 35 days and mock exams after about 90 days. Progress, saved questions and settings the web app stores in your browser stay on that device until you delete them in the web app (Progress → Delete progress on this device) or clear this site’s data. See the privacy policy (https://au.learnertest.com/privacy-policy.html#web-app).

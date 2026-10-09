@@ -7,7 +7,7 @@ the end (privacy: "This website" and "The web app"; terms: "Web study app"), whi
 mentions. The web app sections describe the web study app at au.learnertest.com/app/, which is not part of this repo.
 """
 from sitelib import (
-    APP_NAME, BASE, DELETION_DATE, DELETION_DATE_H, DEVELOPER, EMAIL, LEGAL_DATE, LEGAL_DATE_H, PACKAGE, SITE_NAME, SRC,
+    APP_NAME, BASE, COOKIES_DATE, COOKIES_DATE_H, DELETION_DATE, DELETION_DATE_H, DEVELOPER, EMAIL, LEGAL_DATE, LEGAL_DATE_H, PACKAGE, SITE_NAME, SRC,
     TERMS_DATE, TERMS_DATE_H, Page, page_head, updated_line,
 )
 
@@ -45,7 +45,8 @@ def privacy() -> Page:
 <p><strong>Account:</strong> when you sign in, we receive your name, your email address and a user ID from Google Firebase Authentication. You can sign in with Google, or with an email address and password (Firebase handles your password; we never see it). Where the app offers it, you can also sign in with Facebook. If you agree to tips and offers by email, we store that choice and when you made it.</p>
 <p><strong>Study data:</strong> your answers, completed practice sessions and mock tests, saved questions and the state you study for. This is stored on your device and in your account so it follows you to a new phone. Your test date and reminder settings stay on your device.</p>
 <p id="premium-purchases"><strong>Premium purchases:</strong> Google Play handles the payment, and we never see your card or payment details. When you buy Premium, the app adds a one-way hash of your account’s user ID to the purchase, and Google Play keeps it with its record of the purchase. This ties the purchase to your learner account. The app checks your purchases with Google Play on your phone.</p>
-<p id="purchase-checks"><strong>Purchase checks on our server (being introduced, not switched on yet):</strong> we are introducing a purchase-checking service that we run, planned on Google Cloud. The app already contains the code for it, but it is switched off. Once we switch it on, after a purchase and when the app starts, the app will send your Google Play purchase tokens and product IDs to this service, with a sign-in token that identifies your account and an App Check token. The service checks each purchase with Google Play, links it to the first account that verified it, receives refund notices from Google Play, and keeps your Premium record in your account in our Firebase project: the features unlocked, a revision number, an end time for any time-limited pass, and when the record was worked out. The app reads this record, and only the service can change it. Premium bought with the same account on another of our services is then honoured in the app too. Until then, purchases are checked on your phone only. Extra mock tests earned by watching an ad always stay on your phone and are never sent to this service.</p>
+<p id="purchase-checks"><strong>Purchase checks on our server (being switched on in stages):</strong> blue0orbit runs a purchase-checking service on Google Cloud in Belgium (europe-west1). We are switching it on in stages. In the first stage, the app sends your purchases to the service, which checks and records them, but Premium is still decided on your phone. In the next stage, the service’s record decides Premium. Until the service is switched on for your app, the app sends nothing to it. While it is on and you are signed in, each time Google Play tells the app which purchases you have (when the app starts, and after a purchase, a restore or a sign-in), the app sends the service the Google Play purchase token and product of each Premium purchase on your phone that was made with your learner account or with no account attached, together with a Firebase ID token, which identifies your account, and an App Check token. Purchases tied to another learner account are not sent, and nothing is sent while you are signed out. Extra mock tests earned by watching an ad always stay on your phone and are never sent to this service.</p>
+<p>The service checks each purchase with Google Play, links it to the first account that verified it (another account can’t then use it) and receives refund notices from Google Play. It keeps its purchase records (your account’s user ID, each purchase token, the product, the purchase’s status and when it was checked) in Belgium for up to 6 years, so a purchase can be restored and can’t be claimed twice, and to meet our legal and accounting obligations. It writes your Premium record in your account in our Firebase project, stored in Sydney (australia-southeast1): the features unlocked, a revision number, an end time for any time-limited pass, and when the record was worked out. The app reads this record, and only the service can change it. The app also keeps the service’s latest answer for your account on your phone. Once the record decides Premium, Premium bought with the same account on another of our services is honoured in the app too. About a day after you delete your account, the service deletes your Premium record. Google Cloud logs technical details of each request to the service, such as your IP address, and keeps these logs for a limited time.</p>
 <p><strong>App protection:</strong> to keep our cloud database for the genuine app, the app uses Firebase App Check with Google Play Integrity. Google checks that the app and your device are genuine, and the app sends the resulting token with its requests to Firebase.</p>
 <p><strong>Push messages:</strong> Firebase Cloud Messaging gives the app a push token, so we can send announcements to all learners or to learners in one state. You receive them only if notifications are on.</p>
 <p><strong>If you allow “Help improve the app”:</strong> usage statistics (screens viewed, features used, the state you study for, test results and the app language) with an app instance ID, your device model, Android version, app version and approximate location (country, region or city), plus crash reports and performance data (such as app start time and how long network requests take). They are not linked to your name, email address or user ID, and analytics never collects your advertising ID.</p>
@@ -70,16 +71,17 @@ def privacy() -> Page:
 <ul>
   <li>Google Firebase — sign-in, cloud storage of progress, analytics, crash and performance reports, push messages, remote settings and app protection (App Check)</li>
   <li>Google Play — Premium purchases and purchase checks, Play Integrity checks and in-app ratings (we never see your payment details)</li>
+  <li>Google Cloud — runs our purchase-checking service, in Belgium</li>
   <li>Google AdMob — banner ads (free version)</li>
   <li>Unity Ads — optional rewarded video ads (free version)</li>
   <li>Google User Messaging Platform — ad consent where required</li>
   <li>Facebook Login — optional sign-in, where the app offers it</li>
 </ul>
-<p>Some of these providers store or process data outside Australia, for example in the United States.</p>
+<p>Some of these providers store or process data outside Australia, for example in the United States. Our purchase-checking service runs on Google Cloud in Belgium and keeps its purchase records there, outside Australia.</p>
 
 <h2 id="data-protection-and-retention">Data protection &amp; retention</h2>
-<p>We share your data only with the providers above, for the purposes in this policy. Data is sent over encrypted connections, and your cloud progress and profile can only be read by your own account. Once our purchase service is switched on, your Premium record can be read only by your account and changed only by the service.</p>
-<p>We keep your data while your account exists. Delete your account in Settings and your cloud progress, profile and sign-in are deleted straight away; Google then removes them from its backup systems, which Google says can take up to 180 days. Once our purchase service is switched on, deleting your account also deletes your Premium record. Firebase keeps crash reports for 90 days. Google Play keeps its own record of your purchases under its own policies. You can also email us to ask for deletion.</p>
+<p>We share your data only with the providers above, for the purposes in this policy. Data is sent over encrypted connections, and your cloud progress and profile can only be read by your own account. Your Premium record can be read only by your account and changed only by our purchase-checking service.</p>
+<p>We keep your data while your account exists. Delete your account in Settings and your cloud progress, profile and sign-in are deleted straight away; Google then removes them from its backup systems, which Google says can take up to 180 days. About a day after you delete your account, our purchase-checking service deletes your Premium record, if you have one. The service keeps its purchase records for up to 6 years, and Google Cloud keeps its request logs for a limited time (see <a href="#purchase-checks">“Purchase checks on our server”</a>). Firebase keeps crash reports for 90 days. Google Play keeps its own record of your purchases under its own policies. You can also email us to ask for deletion.</p>
 
 <h2 id="your-rights">Your rights</h2>
 <p><strong>Australia:</strong> we handle personal information under the Australian Privacy Principles (Privacy Act 1988). You can ask to access or correct your information, or complain, by emailing us. If you are not satisfied with our response you can contact the Office of the Australian Information Commissioner (<a href="https://www.oaic.gov.au/" rel="noopener">oaic.gov.au</a>).</p>
@@ -162,7 +164,7 @@ def cookies() -> Page:
         "Cookie policy",
         "Our information pages set no cookies. Here is what the web app and the Android app use, and how to control it.",
         crumbs,
-        meta_html=updated_line(LEGAL_DATE, LEGAL_DATE_H),
+        meta_html=updated_line(COOKIES_DATE, COOKIES_DATE_H),
     ) + f"""
 <div class="content"><div class="container prose">
 <div class="answer-box"><p class="answer-label">In short</p>
@@ -261,7 +263,7 @@ sign-in needs.</p>
 </div></div>"""
     return Page(
         path="cookies.html",
-        lastmod=LEGAL_DATE,
+        lastmod=COOKIES_DATE,
         title="Cookie Policy | Learners Test Australia",
         description=("Our info pages set no cookies. See what the Learners Test Australia web app and Android app use "
                      "(browser storage, reCAPTCHA, ad ID) and how to control it."),
@@ -303,7 +305,7 @@ def terms() -> Page:
 <h2 id="billing">5. Premium &amp; Billing</h2>
 <p>Some features are available through a one-time purchase (“Premium”). Premium is a lifetime purchase: there are no subscriptions or renewals.</p>
 <p>Purchases are processed by Google Play under its terms of sale. We never see or store your payment details.</p>
-<p>Premium belongs to the learner account you were signed in with when you bought it, so other accounts on the same phone don’t get it. At present the app checks it with Google Play on your phone, so the Google Play account that paid must be on that phone too.</p>
+<p>Premium belongs to the learner account you were signed in with when you bought it, so other accounts on the same phone don’t get it. We are switching on our purchase-checking service in stages (see the Privacy Policy). Until its record decides Premium, the app checks Premium with Google Play on your phone, so the Google Play account that paid must be on that phone too. Once the record decides, Premium follows your learner account: sign in with it to use Premium on another phone.</p>
 <p>Refunds follow Google Play’s refund policy and your rights under the Australian Consumer Law. A refunded purchase no longer unlocks Premium.</p>
 <p>If Premium is not showing after you bought it, open Settings → Premium → Restore purchase, or email {MAIL}.</p>
 
@@ -415,8 +417,8 @@ before deleting. We aim to reply within 5 business days.</p>
   <li>Your profile: your name and email address.</li>
   <li>Your progress in every state: answers, completed practice sessions and mock tests, and saved questions.</li>
   <li>Your email preferences.</li>
-  <li>Your Premium record, once our purchase-checking service is switched on (it is not yet; see the
-  <a href="@/privacy-policy.html#purchase-checks">privacy policy</a>).</li>
+  <li>Your Premium record, if you have one: our purchase-checking service deletes it about a day after your
+  account is deleted (see the <a href="@/privacy-policy.html#purchase-checks">privacy policy</a>).</li>
 </ul>
 <p>Your cloud progress, profile and sign-in are deleted straight away. Google then removes them from its backup
 systems, which Google says can take up to 180 days.</p>
@@ -426,6 +428,9 @@ systems, which Google says can take up to 180 days.</p>
   <li><strong>Premium purchases.</strong> Premium belongs to the learner account that bought it, so after you delete
   that account it can't be moved to a new account automatically; email us if you need help. Google Play keeps its own
   record of the purchase under its own policies, including the one-way hash of your user ID that the app added to it.
+  Our purchase-checking service keeps its purchase records (your user ID, each purchase token, the product, the
+  purchase’s status and when it was checked) for up to 6 years, to meet our legal and accounting obligations, and
+  Google Cloud keeps its request logs for a limited time.
   We never see or store your payment details. Deleting your account does not refund a purchase, except where required
   by law.</li>
   <li><strong>Usage statistics and crash reports.</strong> If you allowed “Help improve the app”, these are not
