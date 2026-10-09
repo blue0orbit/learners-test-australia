@@ -5228,9 +5228,9 @@
   "group": "core"
  },
  {
-  "key": "fe67c9b2f6e36e8e",
+  "key": "82645f60c48d3c5f",
   "kind": "run",
-  "src": "This site uses no cookies, analytics or trackers and loads nothing from third parties. See the <t0>privacy policy</t0>.",
+  "src": "Apart from the web study app, this site uses no cookies, analytics or trackers and loads nothing from third parties. See the <t0>privacy policy</t0>.",
   "note": "",
   "pages": [
    "about.html"

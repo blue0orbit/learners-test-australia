@@ -866,8 +866,8 @@ the same approach: practice in the real test's format, with every answer explain
 <p>{DISCLAIMER}</p>
 
 <h2>About this website</h2>
-<p>This site uses no cookies, analytics or trackers and loads nothing from third parties. See the
-<a href="@/privacy-policy.html#website">privacy policy</a>.</p>
+<p>Apart from the web study app, this site uses no cookies, analytics or trackers and loads nothing from third
+parties. See the <a href="@/privacy-policy.html#website">privacy policy</a>.</p>
 </div>
 <aside><div class="card aside-card">
   <img src="@/assets/img/icon-512.png" width="96" height="96" loading="lazy" decoding="async"

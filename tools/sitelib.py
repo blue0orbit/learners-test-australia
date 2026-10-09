@@ -37,15 +37,16 @@ CHECKED_H = "30 September 2026"
 # Last updated date of the privacy policy and the cookie policy. The privacy policy mirrors the in-app text
 # (privacy_last_updated in the app's strings.xml, 30 September 2026) and adds website-only sections at the end, so
 # this date is later than the app's when only a website section changed (9 October 2026: the hosting text names
-# Cloudflare and GitHub Pages).
+# Cloudflare and GitHub Pages, and the web study app sections were added).
 LEGAL_DATE = "2026-10-09"
 LEGAL_DATE_H = "9 October 2026"
-# Last updated date of the account deletion page.
-DELETION_DATE = "2026-09-30"
-DELETION_DATE_H = "30 September 2026"
-# Last updated date of the terms of service, which mirror the in-app text (tos_last_updated in strings.xml).
-TERMS_DATE = "2026-10-06"
-TERMS_DATE_H = "6 October 2026"
+# Last updated date of the account deletion page (9 October 2026: web app records).
+DELETION_DATE = "2026-10-09"
+DELETION_DATE_H = "9 October 2026"
+# Last updated date of the terms of service, which mirror the in-app text (tos_last_updated in strings.xml, 6 October
+# 2026) plus a website-only web app section at the end (9 October 2026).
+TERMS_DATE = "2026-10-09"
+TERMS_DATE_H = "9 October 2026"
 PRICE = "A$5.99"
 DISCLAIMER = (
     "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to "

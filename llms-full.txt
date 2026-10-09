@@ -2268,7 +2268,7 @@ Learners Test Australia is an independent study app. It is not affiliated with, 
 
 ## About this website
 
-This site uses no cookies, analytics or trackers and loads nothing from third parties. See the privacy policy (https://au.learnertest.com/privacy-policy.html#website).
+Apart from the web study app, this site uses no cookies, analytics or trackers and loads nothing from third parties. See the privacy policy (https://au.learnertest.com/privacy-policy.html#website).
 
 ## At a glance
 
@@ -2286,13 +2286,13 @@ URL: https://au.learnertest.com/privacy-policy.html
 
 # Privacy Policy
 
-How the Learners Test Australia app handles your information, and a note on this website.
+How the Learners Test Australia app and web app handle your information, and a note on this website.
 
 Last updated: 9 October 2026
 
 App: Learners Test Australia: DKT (Android) · Developer: BlueOrbit · Contact: blue0orbit@gmail.com
 
-This is the same privacy policy shown in the app (Settings → Privacy policy).
+This is the same privacy policy shown in the app (Settings → Privacy policy), plus sections on this website and the web app at the end.
 
 ## Overview
 
@@ -2360,13 +2360,52 @@ We aim to reply within 5 business days.
 
 ## This website
 
-This section is about the website you are reading now (au.learnertest.com), not the app.
+This section is about the website you are reading now (au.learnertest.com), not the Android app. The points below cover its information pages; the web study app at au.learnertest.com/app/ works differently and is covered in The web app below.
 
-- No cookies. The website sets no cookies and stores nothing in your browser (no local storage or similar).
+- No cookies. These pages set no cookies and store nothing in your browser (no local storage or similar).
 - No analytics or trackers. There are no analytics, advertising, tracking pixels or social media widgets.
 - Nothing loaded from third parties. Fonts, images, styles and the one small script (it opens and closes the menu on small screens) are all served from this website itself.
 - Hosting. The site is delivered by Cloudflare, Inc. (domain name service, content delivery and hosting) and GitHub, Inc. (GitHub Pages). They process technical data such as your IP address and browser details to deliver the pages securely (see Cloudflare's privacy policy (https://www.cloudflare.com/privacypolicy/)). GitHub says it logs the IP address of visitors to GitHub Pages sites for security purposes (see About GitHub Pages (https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)). Both are US companies, so this may happen outside Australia. We don't use those logs, and the site has no analytics of its own.
 - Email. If you email us, we use your message and email address to reply to you. If you ask to try the app early, we also use your email address to invite you to the test on Google Play, and remove it from the test list when you ask or when testing ends.
+
+## The web app
+
+This section is about the web study app at au.learnertest.com/app/ (https://au.learnertest.com/app/). It is an invite-only private beta for now: anyone can sign in, but only invited accounts can study there. The web app shows no ads and uses no analytics.
+
+### Signing in
+
+You sign in with the same account as the Android app, with Google or with an email address and password, or you can create an account there. Sign-in uses Google Firebase Authentication, in the same Firebase project as the app. If you use an email address and password, you must confirm your email address with the link Firebase sends you. Firebase keeps you signed in with a token stored in your browser. Facebook sign-in, which the app offers, is not available in the web app.
+
+### Protection against abuse
+
+Inside the web app only, we use Firebase App Check with Google reCAPTCHA Enterprise to stop automated copying of our questions and other abuse. While you use the web app, reCAPTCHA assesses your browser to tell genuine use from automated scripts. To do this, Google may set cookies and collect information about your device and browser and how you interact with the page, under Google’s Privacy Policy (https://policies.google.com/privacy) and Terms of Service (https://policies.google.com/terms). The web app shows the notice “This site uses reCAPTCHA to stop automated abuse.” reCAPTCHA does not run on the rest of this website.
+
+### What the question service keeps
+
+The web app’s pages and its question service are hosted by Cloudflare (Cloudflare Workers and a Cloudflare D1 database), which processes your IP address and technical details of each request to deliver them and to protect them from attacks. The question service gives the web app its questions, puts together mock exams and marks them. It keeps the following, linked only to your account’s user ID (not your name or email address):
+
+- Which questions it has given your account, and the day each one was first given, to limit copying of the question bank. These are deleted once your account has gone a year without new questions and 35 days without getting any questions or mock exams.
+- Daily counts of the questions, new questions and mock exams it has given your account, for the daily fair-use limits. These are deleted after about 35 days.
+- The mock exams it put together for you: the questions, their order, the language, the start time, the time limit and the time you handed the exam in. These are deleted after about 90 days.
+- While the web app is an invite-only beta: the list of invited accounts (the user ID, the date it was added and a short note). An entry is not deleted automatically; we remove it when you ask.
+
+To apply the right limits, the question service checks, using your own sign-in, whether our Firebase project holds a Premium record for your account. It keeps the answer in memory for up to five minutes and does not store it.
+
+Your practice answers are checked in your browser and never sent to us. When you hand in a mock exam, your answers are sent only so it can be marked: the question service sends back your result and does not keep your answers. Your IP address is used to limit the number of requests from each address; it is not stored in the question service’s database.
+
+### Where web app data is stored
+
+The question service’s database is stored by Cloudflare in data centres in Western Europe, so the records listed above are held outside Australia. Cloudflare, which delivers the web app, and Google, which provides Firebase Authentication and reCAPTCHA, are US companies and may also process data from the web app in the United States and other countries where they operate. We use them only to run the web app.
+
+### Progress stored in your browser
+
+The progress the web app shows (your answers and mock exam results), your saved questions and your settings in it (state, test date, daily goal and question language) are stored only in your browser’s local storage on that device, separately for each account. They are not synced with the Android app yet. To delete your answers and mock exam results for the test you are studying, open Progress → Delete progress on this device in the web app; to delete everything, clear this site’s data in your browser.
+
+### Deleting what the question service keeps
+
+You can delete the question service’s record of which questions it gave your account, and your mock exams, at any time: in the web app, open Account → Delete what our server keeps, or email blue0orbit@gmail.com. Daily counts stay until they expire after about 35 days, because deleting them early would reset the daily limits. To be removed from the beta invite list, email us.
+
+The web app has no Delete account option of its own yet: delete your account in the Android app or by email (see delete your account (https://au.learnertest.com/account-deletion.html)). The question service is not told when your account is deleted, so delete its records first in the web app, or email us. Otherwise they are deleted only as described above: the record of which questions it gave you once your account has gone a year without new questions and 35 days without getting any questions or mock exams, daily counts after about 35 days and mock exams after about 90 days.
 
 See also the cookie policy (https://au.learnertest.com/cookies.html) and how to delete your account (https://au.learnertest.com/account-deletion.html).
 
@@ -2376,7 +2415,7 @@ URL: https://au.learnertest.com/account-deletion.html
 
 # Delete your Learners Test Australia account and data
 
-Last updated: 30 September 2026
+Last updated: 9 October 2026
 
 App: Learners Test Australia: DKT (Android, package com.blueorbit.learnerstestau)
 Developer: BlueOrbit
@@ -2413,5 +2452,6 @@ Your cloud progress and profile are deleted straight away. Copies in our service
 
 - Premium purchases. A Premium purchase belongs to the Google account that bought it, and purchase records are kept by Google Play under its own policies, not by us. We never see or store your payment details. If you later sign in again with the same Google account, Premium is still available. Deleting your account does not refund a purchase, except where required by law.
 - Settings stored only on your phone. Your test date and reminder settings stay on your device. They are removed when you uninstall the app or clear its storage in Android settings.
+- Web app records. If you used the web study app, its question service is not told when your account is deleted. You can delete its record of which questions it gave you, and your mock exams, at any time in the web app (Account → Delete what our server keeps) or by email; daily counts stay until they expire, and a beta invite-list entry is removed when you email us. Otherwise its record of which questions it gave you is deleted once your account has gone a year without new questions and 35 days without getting any questions or mock exams; daily counts are deleted after about 35 days and mock exams after about 90 days. Progress, saved questions and settings the web app stores in your browser stay on that device until you delete them in the web app (Progress → Delete progress on this device) or clear this site’s data. See the privacy policy (https://au.learnertest.com/privacy-policy.html#web-app).
 
 More detail is in the privacy policy (https://au.learnertest.com/privacy-policy.html#data-protection-and-retention).

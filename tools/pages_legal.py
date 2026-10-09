@@ -2,7 +2,9 @@
 
 The privacy policy and terms mirror the in-app text in app/src/main/res/values/strings.xml
 (privacy_* strings, last updated 30 September 2026; tos_* strings, last updated 6 October 2026). Keep them
-word-for-word in sync with the app: only headings and HTML structure are added here.
+word-for-word in sync with the app: only headings and HTML structure are added here, plus website-only sections at
+the end (privacy: "This website" and "The web app"; terms: "Web study app"), which the callout above each page
+mentions. The web app sections describe the web study app at au.learnertest.com/app/, which is not part of this repo.
 """
 from sitelib import (
     APP_NAME, BASE, DELETION_DATE, DELETION_DATE_H, DEVELOPER, EMAIL, LEGAL_DATE, LEGAL_DATE_H, PACKAGE, SITE_NAME, SRC,
@@ -10,13 +12,16 @@ from sitelib import (
 )
 
 MAIL = f'<a href="mailto:{EMAIL}">{EMAIL}</a>'
+# The web study app (served by Cloudflare, not built from this repo)
+WEB_APP = f"{BASE}app/"
+WEB_APP_LINK = f'<a href="{WEB_APP}">au.learnertest.com/app/</a>'
 
 
-def legal_intro(kind: str, in_app_path: str) -> str:
+def legal_intro(kind: str, in_app_path: str, extra: str) -> str:
     return (
         f'<div class="callout"><p><strong>App:</strong> {APP_NAME} (Android) · <strong>Developer:</strong> {DEVELOPER} · '
         f"<strong>Contact:</strong> {MAIL}</p>"
-        f"<p>This is the same {kind} shown in the app ({in_app_path}).</p></div>"
+        f"<p>This is the same {kind} shown in the app ({in_app_path}), plus {extra} at the end.</p></div>"
     )
 
 
@@ -25,12 +30,12 @@ def privacy() -> Page:
     crumbs = [("Home", ""), ("Privacy policy", "privacy-policy.html")]
     body = page_head(
         "Privacy Policy",
-        f"How the {SITE_NAME} app handles your information, and a note on this website.",
+        f"How the {SITE_NAME} app and web app handle your information, and a note on this website.",
         crumbs,
         meta_html=updated_line(LEGAL_DATE, LEGAL_DATE_H),
     ) + f"""
 <div class="content"><div class="container prose">
-{legal_intro("privacy policy", "Settings → Privacy policy")}
+{legal_intro("privacy policy", "Settings → Privacy policy", "sections on this website and the web app")}
 
 <h2 id="overview">Overview</h2>
 <p>Learners Test Australia is an independent study app that helps you prepare for an Australian learner driver knowledge test. It is not affiliated with any government, transport or licensing agency.</p>
@@ -81,29 +86,65 @@ def privacy() -> Page:
 <p>We aim to reply within 5 business days.</p>
 
 <h2 id="website">This website</h2>
-<p>This section is about the website you are reading now (au.learnertest.com), not the app.</p>
+<p>This section is about the website you are reading now (au.learnertest.com), not the Android app. The points below
+cover its information pages; the web study app at au.learnertest.com/app/ works differently and is covered in
+<a href="#web-app">The web app</a> below.</p>
 <ul>
-  <li><strong>No cookies.</strong> The website sets no cookies and stores nothing in your browser (no local storage or similar).</li>
+  <li><strong>No cookies.</strong> These pages set no cookies and store nothing in your browser (no local storage or similar).</li>
   <li><strong>No analytics or trackers.</strong> There are no analytics, advertising, tracking pixels or social media widgets.</li>
   <li><strong>Nothing loaded from third parties.</strong> Fonts, images, styles and the one small script (it opens and closes the menu on small screens) are all served from this website itself.</li>
   <li><strong>Hosting.</strong> The site is delivered by Cloudflare, Inc. (domain name service, content delivery and hosting) and GitHub, Inc. (GitHub Pages). They process technical data such as your IP address and browser details to deliver the pages securely (see <a href="{SRC['cloudflare_privacy']}" rel="noopener">Cloudflare's privacy policy</a>). GitHub says it logs the IP address of visitors to GitHub Pages sites for security purposes (see <a href="{SRC['gh_pages_data']}" rel="noopener">About GitHub Pages</a>). Both are US companies, so this may happen outside Australia. We don't use those logs, and the site has no analytics of its own.</li>
   <li><strong>Email.</strong> If you email us, we use your message and email address to reply to you. If you ask to try the app early, we also use your email address to invite you to the test on Google Play, and remove it from the test list when you ask or when testing ends.</li>
 </ul>
+
+<h2 id="web-app">The web app</h2>
+<p>This section is about the web study app at {WEB_APP_LINK}. It is an invite-only private beta for now: anyone can
+sign in, but only invited accounts can study there. The web app shows no ads and uses no analytics.</p>
+
+<h3 id="web-app-sign-in">Signing in</h3>
+<p>You sign in with the same account as the Android app, with Google or with an email address and password, or you can create an account there. Sign-in uses Google Firebase Authentication, in the same Firebase project as the app. If you use an email address and password, you must confirm your email address with the link Firebase sends you. Firebase keeps you signed in with a token stored in your browser. Facebook sign-in, which the app offers, is not available in the web app.</p>
+
+<h3 id="web-app-recaptcha">Protection against abuse</h3>
+<p>Inside the web app only, we use Firebase App Check with Google reCAPTCHA Enterprise to stop automated copying of our questions and other abuse. While you use the web app, reCAPTCHA assesses your browser to tell genuine use from automated scripts. To do this, Google may set cookies and collect information about your device and browser and how you interact with the page, under Google’s <a href="https://policies.google.com/privacy" rel="noopener">Privacy Policy</a> and <a href="https://policies.google.com/terms" rel="noopener">Terms of Service</a>. The web app shows the notice “This site uses reCAPTCHA to stop automated abuse.” reCAPTCHA does not run on the rest of this website.</p>
+
+<h3 id="web-app-question-service">What the question service keeps</h3>
+<p>The web app’s pages and its question service are hosted by Cloudflare (Cloudflare Workers and a Cloudflare D1 database), which processes your IP address and technical details of each request to deliver them and to protect them from attacks. The question service gives the web app its questions, puts together mock exams and marks them. It keeps the following, linked only to your account’s user ID (not your name or email address):</p>
+<ul>
+  <li>Which questions it has given your account, and the day each one was first given, to limit copying of the question bank. These are deleted once your account has gone a year without new questions and 35 days without getting any questions or mock exams.</li>
+  <li>Daily counts of the questions, new questions and mock exams it has given your account, for the daily fair-use limits. These are deleted after about 35 days.</li>
+  <li>The mock exams it put together for you: the questions, their order, the language, the start time, the time limit and the time you handed the exam in. These are deleted after about 90 days.</li>
+  <li>While the web app is an invite-only beta: the list of invited accounts (the user ID, the date it was added and a short note). An entry is not deleted automatically; we remove it when you ask.</li>
+</ul>
+<p>To apply the right limits, the question service checks, using your own sign-in, whether our Firebase project holds a Premium record for your account. It keeps the answer in memory for up to five minutes and does not store it.</p>
+<p>Your practice answers are checked in your browser and never sent to us. When you hand in a mock exam, your answers are sent only so it can be marked: the question service sends back your result and does not keep your answers. Your IP address is used to limit the number of requests from each address; it is not stored in the question service’s database.</p>
+
+<h3 id="web-app-overseas">Where web app data is stored</h3>
+<p>The question service’s database is stored by Cloudflare in data centres in Western Europe, so the records listed above are held outside Australia. Cloudflare, which delivers the web app, and Google, which provides Firebase Authentication and reCAPTCHA, are US companies and may also process data from the web app in the United States and other countries where they operate. We use them only to run the web app.</p>
+
+<h3 id="web-app-progress">Progress stored in your browser</h3>
+<p>The progress the web app shows (your answers and mock exam results), your saved questions and your settings in it (state, test date, daily goal and question language) are stored only in your browser’s local storage on that device, separately for each account. They are not synced with the Android app yet. To delete your answers and mock exam results for the test you are studying, open Progress → Delete progress on this device in the web app; to delete everything, clear this site’s data in your browser.</p>
+
+<h3 id="web-app-deletion">Deleting what the question service keeps</h3>
+<p>You can delete the question service’s record of which questions it gave your account, and your mock exams, at any time: in the web app, open Account → Delete what our server keeps, or email {MAIL}. Daily counts stay until they expire after about 35 days, because deleting them early would reset the daily limits. To be removed from the beta invite list, email us.</p>
+<p>The web app has no Delete account option of its own yet: delete your account in the Android app or by email (see <a href="@/account-deletion.html">delete your account</a>). The question service is not told when your account is deleted, so delete its records first in the web app, or email us. Otherwise they are deleted only as described above: the record of which questions it gave you once your account has gone a year without new questions and 35 days without getting any questions or mock exams, daily counts after about 35 days and mock exams after about 90 days.</p>
+
 <p>See also the <a href="@/cookies.html">cookie policy</a> and how to <a href="@/account-deletion.html">delete your account</a>.</p>
 </div></div>"""
     return Page(
         path="privacy-policy.html",
         lastmod=LEGAL_DATE,
         title="Privacy Policy | Learners Test Australia",
-        description=("Privacy policy for the Learners Test Australia app: what we collect, why, third-party services, "
-                     "retention, your rights, and why this website uses no cookies."),
+        description=("Privacy policy for the Learners Test Australia app and web app: what we collect, why, third-party "
+                     "services, retention, your rights, and this website."),
         body=body,
         crumbs=crumbs,
         priority="0.4",
         changefreq="yearly",
         llms=True,
         llms_title="Privacy policy",
-        llms_note="The app's privacy policy (same text as in the app) plus a section on this website: no cookies, analytics or third-party requests.",
+        llms_note=("The app's privacy policy (same text as in the app) plus sections on this website (no cookies, analytics "
+                   "or third-party requests outside the web app) and on the web study app (sign-in, reCAPTCHA, what the "
+                   "question service keeps, storage in Western Europe, progress stored in the browser, deletion)."),
     )
 
 
@@ -112,23 +153,47 @@ def cookies() -> Page:
     crumbs = [("Home", ""), ("Cookie policy", "cookies.html")]
     body = page_head(
         "Cookie policy",
-        "This website sets no cookies. Here is what the app uses instead, and how to control it.",
+        "Our information pages set no cookies. Here is what the web app and the Android app use, and how to control it.",
         crumbs,
         meta_html=updated_line(LEGAL_DATE, LEGAL_DATE_H),
     ) + f"""
 <div class="content"><div class="container prose">
 <div class="answer-box"><p class="answer-label">In short</p>
-<p>The {SITE_NAME} website sets no cookies, stores nothing in your browser and loads nothing from third parties, so
-there is no cookie banner to accept. The app works differently from a website: it keeps data on your phone, uses
-Google Firebase for your account and progress, and in the free version lets ad providers use your advertising ID,
-subject to consent where the law requires it.</p></div>
+<p>Apart from the web study app at au.learnertest.com/app/, the {SITE_NAME} website sets no cookies, stores nothing
+in your browser and loads nothing from third parties, so there is no cookie banner to accept. The web app keeps your
+progress in your browser's local storage, keeps you signed in with a Firebase token in your browser, and uses Google
+reCAPTCHA, which may set cookies, to stop automated abuse. The Android app works differently from a website: it keeps
+data on your phone, uses Google Firebase for your account and progress, and in the free version lets ad providers use
+your advertising ID, subject to consent where the law requires it.</p></div>
 
 <h2>Does this website use cookies?</h2>
-<p>No. This website sets no cookies and uses no local storage, analytics, advertising or tracking of any kind. Every
-file (pages, fonts, images, styles and the small menu script) comes from this site. The site is delivered by Cloudflare
-and GitHub Pages; see the <a href="@/privacy-policy.html#website">privacy policy</a> for what they process.</p>
+<p>Not outside the web app. The information pages set no cookies and use no local storage, analytics, advertising or
+tracking of any kind. Every file they use (pages, fonts, images, styles and the small menu script) comes from this
+site. The site is delivered by Cloudflare and GitHub Pages; see the <a href="@/privacy-policy.html#website">privacy
+policy</a> for what they process. The web app is covered in the next section.</p>
 
-<h2>What does the app use instead of cookies?</h2>
+<h2 id="web-app">What does the web app use?</h2>
+<p>The web study app at {WEB_APP_LINK} uses the following, as described in the
+<a href="@/privacy-policy.html#web-app">privacy policy</a>.</p>
+
+<h3>Local storage in your browser</h3>
+<p>The progress the web app shows (answers and mock exam results), your saved questions and your settings in it
+(state, test date, daily goal and question language) are stored only in your browser's local storage on that device,
+separately for each account. They are not synced with the Android app yet. To delete your answers and mock exam
+results for the test you are studying, open Progress → Delete progress on this device in the web app; to delete
+everything, clear this site's data in your browser.</p>
+
+<h3>Firebase sign-in</h3>
+<p>Firebase Authentication keeps you signed in to the web app with a token stored in your browser.</p>
+
+<h3>Google reCAPTCHA</h3>
+<p>Inside the web app only, Firebase App Check uses Google reCAPTCHA Enterprise to stop automated abuse. Google may set
+cookies and collect information about your device and browser and how you interact with the page, under Google's
+<a href="https://policies.google.com/privacy" rel="noopener">Privacy Policy</a> and
+<a href="https://policies.google.com/terms" rel="noopener">Terms of Service</a>. The web app shows the notice “This site
+uses reCAPTCHA to stop automated abuse.”</p>
+
+<h2>What does the Android app use instead of cookies?</h2>
 <p>Apps don't rely on browser cookies the way websites do. The {SITE_NAME} app uses the following, as described in
 its <a href="@/privacy-policy.html">privacy policy</a>.</p>
 
@@ -172,7 +237,10 @@ sign-in needs.</p>
 <div class="table-wrap"><table>
 <thead><tr><th scope="col">What</th><th scope="col">Where</th><th scope="col">Why</th><th scope="col">Your choice</th></tr></thead>
 <tbody>
-<tr><th scope="row">Cookies</th><td>This website</td><td>None used</td><td>Nothing to set</td></tr>
+<tr><th scope="row">Cookies</th><td>This website, outside the web app</td><td>None used</td><td>Nothing to set</td></tr>
+<tr><th scope="row">Browser local storage</th><td>Web app</td><td>Progress, saved questions and settings in the web app</td><td>Progress → Delete progress on this device, or clear this site's data</td></tr>
+<tr><th scope="row">Firebase sign-in token</th><td>Web app</td><td>Keeps you signed in</td><td>Clear this site's data</td></tr>
+<tr><th scope="row">reCAPTCHA cookies (Google)</th><td>Web app</td><td>Stop automated abuse</td><td>Used only inside the web app</td></tr>
 <tr><th scope="row">Phone storage</th><td>App</td><td>Progress, settings, offline practice</td><td>Uninstall or clear storage</td></tr>
 <tr><th scope="row">Firebase sign-in and sync</th><td>App</td><td>Your account and progress</td><td>Delete your account</td></tr>
 <tr><th scope="row">Analytics and crash reports</th><td>App</td><td>Fix crashes, improve the app</td><td>Settings → Help improve the app</td></tr>
@@ -186,13 +254,14 @@ sign-in needs.</p>
         path="cookies.html",
         lastmod=LEGAL_DATE,
         title="Cookie Policy | Learners Test Australia",
-        description=("This website sets no cookies. Learn what the Learners Test Australia app uses instead (device storage, "
-                     "Firebase, advertising ID) and how to control it."),
+        description=("Our info pages set no cookies. See what the Learners Test Australia web app and Android app use "
+                     "(browser storage, reCAPTCHA, ad ID) and how to control it."),
         body=body,
         crumbs=crumbs,
         priority="0.3",
         changefreq="yearly",
-        llms_note="The website sets no cookies; what the app uses instead and how to change ad choices or reset the advertising ID.",
+        llms_note=("The website sets no cookies outside the web study app; what the web app (browser storage, Firebase "
+                   "sign-in, reCAPTCHA) and the Android app use, and how to change ad choices or reset the advertising ID."),
     )
 
 
@@ -201,12 +270,12 @@ def terms() -> Page:
     crumbs = [("Home", ""), ("Terms of service", "terms.html")]
     body = page_head(
         "Terms of Service",
-        f"The terms for using the {SITE_NAME} app.",
+        f"The terms for using the {SITE_NAME} app and web app.",
         crumbs,
         meta_html=updated_line(TERMS_DATE, TERMS_DATE_H),
     ) + f"""
 <div class="content"><div class="container prose">
-{legal_intro("terms of service", "Settings → Terms")}
+{legal_intro("terms of service", "Settings → Terms", "a section on the web app")}
 
 <h2 id="acceptance">1. Acceptance of Terms</h2>
 <p>By downloading, installing, or using Learners Test Australia ("the App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the App. These Terms form a legally binding agreement between you and the developer of Learners Test Australia. Your continued use of the App after any changes to these Terms constitutes acceptance of the updated Terms.</p>
@@ -268,6 +337,16 @@ def terms() -> Page:
 <p>If you have any questions about these Terms, please contact us at:</p>
 <p>Email: {MAIL}</p>
 <p>We aim to respond to all enquiries within 5 business days.</p>
+
+<h2 id="web-app">Web study app</h2>
+<p>The web study app at {WEB_APP_LINK} uses the same account as the Android app, and these Terms apply to it. It is
+an invite-only private beta for now. In addition:</p>
+<ul>
+  <li><strong>Fair use.</strong> To keep the service fair and protect the question bank, each account has daily limits on the number of questions, new questions and mock exams it can get in the web app. Our server applies these limits, and we may adjust them.</li>
+  <li><strong>Practice only.</strong> Mock exam results in the web app are for practice only. They are not an official test result and do not count towards any official test.</li>
+  <li><strong>No scraping or automated access.</strong> You must not scrape or copy the questions from the web app, access it with bots, scripts or other automated tools, or use several accounts to get around the daily limits.</li>
+  <li><strong>Limits and suspension.</strong> We may limit or suspend an account that breaks these rules.</li>
+</ul>
 </div></div>"""
     return Page(
         path="terms.html",
@@ -279,7 +358,8 @@ def terms() -> Page:
         crumbs=crumbs,
         priority="0.3",
         changefreq="yearly",
-        llms_note="The app's terms of service (same text as in the app), governed by New South Wales law.",
+        llms_note=("The app's terms of service (same text as in the app, plus a section on the web study app), governed "
+                   "by New South Wales law."),
     )
 
 
@@ -337,6 +417,15 @@ within 30 days.</p>
   account does not refund a purchase, except where required by law.</li>
   <li><strong>Settings stored only on your phone.</strong> Your test date and reminder settings stay on your device.
   They are removed when you uninstall the app or clear its storage in Android settings.</li>
+  <li><strong>Web app records.</strong> If you used the web study app, its question service is not told when your
+  account is deleted. You can delete its record of which questions it gave you, and your mock exams, at any time in
+  the web app (Account → Delete what our server keeps) or by email; daily counts stay until they expire, and a beta
+  invite-list entry is removed when you email us. Otherwise its record of which questions it gave you is deleted once
+  your account has gone a year without new questions and 35 days without getting any questions or mock exams; daily
+  counts are deleted after about 35 days and mock exams after about 90 days. Progress, saved questions and settings
+  the web app stores in your browser stay on that device until you delete them in the web app (Progress → Delete
+  progress on this device) or clear this site’s data. See the <a href="@/privacy-policy.html#web-app">privacy
+  policy</a>.</li>
 </ul>
 <p>More detail is in the <a href="@/privacy-policy.html#data-protection-and-retention">privacy policy</a>.</p>
 </div></div>"""

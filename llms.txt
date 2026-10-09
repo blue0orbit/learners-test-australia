@@ -54,9 +54,9 @@ Key facts (updated 6 October 2026; test formats and rules as checked on 30 Septe
 
 ## Policies and support
 
-- [Privacy policy](https://au.learnertest.com/privacy-policy.html): The app's privacy policy (same text as in the app) plus a section on this website: no cookies, analytics or third-party requests.
-- [Cookie Policy](https://au.learnertest.com/cookies.html): The website sets no cookies; what the app uses instead and how to change ad choices or reset the advertising ID.
-- [Terms of Service](https://au.learnertest.com/terms.html): The app's terms of service (same text as in the app), governed by New South Wales law.
+- [Privacy policy](https://au.learnertest.com/privacy-policy.html): The app's privacy policy (same text as in the app) plus sections on this website (no cookies, analytics or third-party requests outside the web app) and on the web study app (sign-in, reCAPTCHA, what the question service keeps, storage in Western Europe, progress stored in the browser, deletion).
+- [Cookie Policy](https://au.learnertest.com/cookies.html): The website sets no cookies outside the web study app; what the web app (browser storage, Firebase sign-in, reCAPTCHA) and the Android app use, and how to change ad choices or reset the advertising ID.
+- [Terms of Service](https://au.learnertest.com/terms.html): The app's terms of service (same text as in the app, plus a section on the web study app), governed by New South Wales law.
 - [Delete your account](https://au.learnertest.com/account-deletion.html): Steps to delete the account in the app or by email, what is deleted and what is kept.
 - [Contact and Support](https://au.learnertest.com/contact.html): Support email, what to include when reporting a question error, Premium and privacy help.
 
