@@ -151,6 +151,25 @@ main:focus { outline: none; }
 .site-nav a:hover { background: #1F2530; color: var(--amber); }
 .site-nav a[aria-current="page"] { color: var(--amber); box-shadow: inset 0 -3px 0 var(--amber); border-radius: 8px 8px 0 0; }
 .nav-toggle { display: none; }
+/* "Study online": the web study app (/app/), last in the header on every page */
+.site-header .header-cta {
+  order: 4; min-height: 44px; padding: .45rem .85rem; font-size: .98rem; border-radius: 10px; white-space: nowrap;
+}
+@media (min-width: 860px) {
+  /* Room for "Study online" beside the menu */
+  .header-inner { gap: .75rem; }
+  .site-nav ul { gap: .15rem 0; }
+  .site-nav a { padding: .55rem .55rem; }
+  html[lang^="vi"] .site-nav a { font-size: .95rem; }
+}
+@media (min-width: 1024px) {
+  /* One row. If a language's menu labels are too long, the menu wraps within itself; the language menu and
+     "Study online" never drop to a second row. */
+  .header-inner { flex-wrap: nowrap; }
+  .header-inner > * { flex-shrink: 0; }
+  .header-inner > .site-nav { flex-shrink: 1; min-width: 0; }
+  .site-nav ul { justify-content: flex-end; }
+}
 
 @media (max-width: 859px) {
   .js .nav-toggle {
@@ -174,7 +193,29 @@ main:focus { outline: none; }
   .js .site-nav a { padding: .8rem .6rem; border-top: 1px solid #242B36; border-radius: 0; }
   .js .site-nav a[aria-current="page"] { box-shadow: inset 4px 0 0 var(--amber); }
   html.js[dir="rtl"] .site-nav a[aria-current="page"] { box-shadow: inset -4px 0 0 var(--amber); }
-  .lang-switch { order: 1; margin-inline-start: auto; }
+  /* One row: brand, "Study online", menu button. The language menu sits at the end of the opened menu (below). */
+  .header-inner { padding-block: .7rem; }
+  .site-header .header-cta { order: 1; margin-inline-start: auto; }
+  .js .site-nav.open { padding-bottom: 0; }
+}
+@media (max-width: 599px) {
+  .header-inner { gap: .6rem; }
+  .site-header .brand { gap: .5rem; }
+  .site-header .brand-text { display: flex; flex-direction: column; font-size: .98rem; line-height: 1.05; }
+  .js .nav-toggle { margin-inline-start: 0; padding: .55rem .7rem; }
+  .js .nav-toggle-label {
+    position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+  }
+}
+@media (max-width: 389px) {
+  .header-inner { gap: .5rem; }
+  .site-header .brand { gap: .4rem; }
+  .site-header .brand-text { font-size: .9rem; }
+  .site-header .header-cta { padding: .45rem .6rem; font-size: .92rem; }
+}
+@media (max-width: 359px) {
+  /* Very narrow phones: if the row wraps, the menu button stays at the end */
+  .js .nav-toggle { margin-inline-start: auto; }
 }
 
 /* ── Buttons ──────────────────────────────────────────── */
@@ -188,19 +229,18 @@ main:focus { outline: none; }
 .btn-primary:hover { background: var(--plate); }
 .btn-ghost { background: transparent; color: inherit; border-color: currentColor; }
 .btn-ghost:hover { background: rgba(255, 164, 27, .12); }
-.btn-soon {
-  background: rgba(255, 199, 44, .10); color: var(--paper); border: 2px dashed var(--plate);
-  cursor: not-allowed; opacity: 1;
-}
-.btn-soon svg { color: var(--plate); }
 .store-soon-note { font-size: .95rem; color: #C3CAD4; margin: .6rem 0 0; }
-.light-cta .btn-soon { color: var(--text); background: var(--accent-bg); border-color: var(--amber-ink); }
-.light-cta .btn-soon svg { color: var(--link); }
 .light-cta .store-soon-note { color: var(--muted); }
-@media (prefers-color-scheme: dark) {
-  .light-cta .btn-soon { border-color: var(--plate); }
+/* "Android app: coming soon to Google Play." A plain line of text (no button, no link) until the listing is public. */
+.soon-line { display: flex; align-items: flex-start; gap: .55rem; font-size: .98rem; color: var(--muted); margin: .9rem 0 1rem; }
+.soon-line::before {
+  content: ""; flex: none; width: 8px; height: 8px; margin-top: .6em; border-radius: 50%; background: var(--link);
 }
+.hero .soon-line { color: #C3CAD4; }
+.hero .soon-line::before { background: var(--plate); }
 .btn-row { display: flex; flex-wrap: wrap; gap: .8rem 1rem; align-items: flex-start; }
+.cta-row { margin: 1.2rem 0 0; }
+[dir="rtl"] svg.icon-go { transform: scaleX(-1); }
 
 /* ── Hero ─────────────────────────────────────────────── */
 .hero {
@@ -218,6 +258,7 @@ main:focus { outline: none; }
 .hero .lead { color: #D2D7DF; font-size: clamp(1.1rem, 1rem + .5vw, 1.3rem); max-width: 56ch; }
 .hero a:not(.btn) { color: var(--amber); }
 .hero .fine { color: #B9C0CB; font-size: 1rem; margin-top: 1.1rem; }
+.hero .fine strong { color: #FFFFFF; }
 .eyebrow {
   font-family: var(--font-head); font-weight: 700; text-transform: uppercase; letter-spacing: .08em;
   font-size: .9rem; color: var(--link); margin-bottom: .8rem;
@@ -468,7 +509,7 @@ tbody th { font-weight: 700; }
 }
 
 @media print {
-  .site-header, .site-footer, .skip-link, .btn-row, .store-soon { display: none !important; }
+  .site-header, .site-footer, .skip-link, .btn-row, .cta-row, .store-soon { display: none !important; }
   body { background: #FFFFFF; color: #000000; }
   a { color: #000000; }
 }
@@ -561,7 +602,7 @@ html[lang^="zh"] body, html[lang^="ar"] body { line-height: 1.8; }
 /* Mirrored arrows on right-to-left pages */
 [dir="rtl"] .card-link svg.icon { transform: scaleX(-1); }
 
-.lang-switch { position: relative; order: 3; margin-inline-start: .25rem; }
+.lang-switch { position: relative; order: 3; }
 .lang-switch summary {
   list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: .4rem; min-height: 44px;
   padding: .45rem .7rem; border: 1px solid #3A4250; border-radius: 10px; color: var(--paper);
@@ -582,7 +623,10 @@ html[lang^="zh"] body, html[lang^="ar"] body { line-height: 1.8; }
 .footer-langs li + li { margin: 0; }
 .footer-sister { font-size: .95rem; }
 @media (max-width: 859px) {
-  .lang-switch { order: 1; margin-inline-start: auto; }
+  /* Phones: the language menu is the last row of the opened menu (always shown without JavaScript). */
+  .lang-switch { order: 4; width: 100%; margin-inline-start: 0; padding: .6rem 0 .9rem; border-top: 1px solid #242B36; }
+  .lang-switch ul { position: static; margin-top: .4rem; box-shadow: none; }
+  .js .site-nav:not(.open) ~ .lang-switch { display: none; }
 }
 /* Static blog language navigation and Arabic reading direction. */
 .language-tools { padding-top:1rem; padding-bottom:1rem; }

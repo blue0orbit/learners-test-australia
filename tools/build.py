@@ -58,7 +58,7 @@ def all_pages() -> list[Page]:
 class TextExtractor(HTMLParser):
     BLOCK = {"p", "div", "section", "article", "aside", "figure", "figcaption", "details", "summary", "dl", "ul", "ol",
              "table", "caption", "blockquote", "main", "header", "footer"}
-    SKIP_CLASSES = ("phone", "breadcrumbs", "toc", "store-soon", "light-cta", "nav-toggle")
+    SKIP_CLASSES = ("phone", "breadcrumbs", "toc", "store-soon", "light-cta", "nav-toggle", "btn-row")
 
     def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
@@ -118,6 +118,8 @@ class TextExtractor(HTMLParser):
             h = self.href
             if h.startswith("@/"):
                 self.out.append(f" ({BASE}{h[2:]})")
+            elif h.startswith("/"):  # root-absolute, e.g. the web study app at /app/
+                self.out.append(f" ({BASE}{h[1:]})")
             elif h.startswith("http"):
                 self.out.append(f" ({h})")
             self.href = None
@@ -198,6 +200,7 @@ KEY_FACTS = [
     "Northern Territory driver knowledge test: 30 questions from a pool of more than 300, pass 26, at an MVR office, from 16. No hazard perception test in the NT.",
     "Free version: every practice question free; one free mock test per day plus another per rewarded ad; sample hazard perception practice (11 of the 72 3D clips and 6 of the 40 still scenes); banner ads on results and guide pages.",
     f"Premium: one-time {PRICE}, no subscription, all states: no ads, unlimited mock tests, section forecasts, weak spots and review planner, all 72 hazard perception clips and all 40 still scenes.",
+    f"Web study app: open to everyone at {BASE}app/ with a free account (Google, or email and password; Facebook sign-in is not available on the web). Free there: practice questions with every answer explained (with a daily allowance), one mock test a day, mistakes to review and readiness against the pass marks. Premium is not on sale on the web yet (its web extras: accuracy trend and weak areas), and Premium bought in the Android app does not unlock the web yet. Practice progress is saved in the browser used (not synced with the Android app); mock test results are kept on our server.",
     "Languages: English, Simplified Chinese, Arabic, Vietnamese, Spanish, for the questions and explanations of all eight states and territories. Dark mode. Offline practice after sign-in.",
     "Account required (Google, Facebook or email). Delete in the app via Settings → Delete account, or email with subject “Delete my account”.",
     "Content: original questions checked against official handbooks and legislation as at 30 September 2026; no official questions, text or images reproduced.",

@@ -19,9 +19,9 @@
   "src": "<t0>Skip to main content</t0>",
   "t": "<t0>انتقل إلى المحتوى الرئيسي</t0>"
  },
- "11c74ea12f47ccae": {
-  "src": "<x0/><x1/><t2><t3></t3><t4>Menu</t4></t2>",
-  "t": "<x0/><x1/><t2><t3></t3><t4>القائمة</t4></t2>"
+ "5ed4261e34dc4dea": {
+  "src": "<x0/><t1><t2></t2><t3>Menu</t3></t1>",
+  "t": "<x0/><t1><t2></t2><t3>القائمة</t3></t1>"
  },
  "b9ced53398a50db8": {
   "src": "<t0>Features</t0>",
@@ -47,6 +47,10 @@
   "src": "<t0>Download</t0>",
   "t": "<t0>التنزيل</t0>"
  },
+ "1fe3ed4047a8e3f2": {
+  "src": "<t0>Study online</t0>",
+  "t": "<t0>ادرس عبر الإنترنت</t0>"
+ },
  "ac272d7ea5f15ae4": {
   "src": "Learner driver app for every state and territory",
   "t": "تطبيق للسائقين المتعلمين في كل ولاية وإقليم"
@@ -59,17 +63,17 @@
   "src": "Learners Test Australia is an Android app by BlueOrbit for learner drivers in all eight Australian states and territories. Choose your state and practise its knowledge test the way it is really set: original questions checked against official sources, every answer explained, and mock tests that show exactly where the pass line is.",
   "t": "Learners Test Australia تطبيق لأجهزة Android من BlueOrbit، مخصّص للسائقين المتعلمين في ولايات أستراليا وأقاليمها الثمانية كلها. اختر ولايتك وتدرّب على اختبارها النظري كما يُجرى فعلًا: أسئلة أصلية تمت مراجعتها وفق المصادر الرسمية، وشرح لكل إجابة، واختبارات تجريبية تُريك بدقة أين يقع حد النجاح."
  },
- "a37fe8c9d81cd44f": {
-  "src": "<t0><x1/><t2>Coming soon to Google Play</t2></t0><t3>See the features</t3>",
-  "t": "<t0><x1/><t2>قريبًا على Google Play</t2></t0><t3>اطّلع على الميزات</t3>"
+ "ed6913f8f18a63a7": {
+  "src": "<t0>Study free in your browser<x1/></t0><t2>Pick your state</t2>",
+  "t": "<t0>ادرس مجانًا في متصفحك<x1/></t0><t2>اختر ولايتك</t2>"
  },
- "83fe70998390a2c5": {
-  "src": "Android app. Not on Google Play yet: we will add the link here when it is.",
-  "t": "تطبيق لأجهزة Android. لم يصل إلى Google Play بعد، وسنضيف الرابط هنا عندما يتوفر."
+ "ac31e0c8b0bb69ba": {
+  "src": "<t0>Free:</t0> practice questions and one mock test a day, with a free account. Works on any phone or computer.",
+  "t": "<t0>مجانًا:</t0> أسئلة التدريب واختبار تجريبي واحد يوميًا، بحساب مجاني. يعمل على أي هاتف أو كمبيوتر."
  },
- "23624278f31593eb": {
-  "src": "Free to practise. One free mock test a day. Optional one-time Premium for A$5.99.",
-  "t": "التدريب مجاني. اختبار تجريبي مجاني واحد يوميًا. ونسخة Premium اختيارية بدفعة واحدة مقابل A$5.99."
+ "9fa1d0642fa61d33": {
+  "src": "Android app: coming soon to Google Play.",
+  "t": "تطبيق Android: قريبًا على Google Play."
  },
  "af5e8986927205d5": {
   "src": "<t0><t1>NSW</t1> Practice</t0><t2>3 of 20</t2>",
@@ -359,13 +363,13 @@
   "src": "A quick check, reviews due, mistakes to fix and new questions, paced to your test date. Spaced repetition brings questions back just before you'd forget them.",
   "t": "تقييم سريع، ومراجعات مستحقة، وأخطاء لتصحيحها، وأسئلة جديدة، بوتيرة تناسب موعد اختبارك. ويعيد التكرار المتباعد الأسئلة إليك قُبيل أن تنساها."
  },
- "1b88097e9659eb60": {
-  "src": "Progress and pass chance",
-  "t": "التقدّم وفرصة النجاح"
+ "b67720ec296c5e4a": {
+  "src": "Progress and readiness",
+  "t": "التقدّم ومدى الجاهزية"
  },
- "65faa56b9d990cff": {
-  "src": "See how much you've covered, your weakest topic and an estimated pass chance based on your recent answers. It is an estimate, not a guarantee.",
-  "t": "اطّلع على مقدار ما غطّيته، وأضعف موضوع لديك، وفرصة النجاح المقدّرة بناءً على إجاباتك الأخيرة. إنها تقدير، وليست ضمانًا."
+ "da06ab9a0542faf8": {
+  "src": "See how much you've covered, your weakest topic, your recent accuracy and how your mock tests compare with the pass marks.",
+  "t": "اطّلع على مقدار ما غطّيته، وأضعف موضوع لديك، ودقة إجاباتك الأخيرة، وكيف تقارن نتائج اختباراتك التجريبية بدرجات النجاح."
  },
  "2b8eb801ce2d0a49": {
   "src": "Hazard perception clips",
@@ -435,13 +439,13 @@
   "src": "Same number of questions and pass marks as the real test, with results shown section by section.",
   "t": "عدد الأسئلة ودرجات النجاح نفسها كما في الاختبار الحقيقي، مع عرض النتائج قسمًا قسمًا."
  },
- "6f6e21dc2b39e832": {
-  "src": "Watch your pass chance",
-  "t": "تابع فرصة نجاحك"
+ "581028ff497b26df": {
+  "src": "Check your readiness",
+  "t": "تحقّق من مدى جاهزيتك"
  },
- "542fa96cc251a783": {
-  "src": "An estimate from your recent answers shows when you're getting close. Then check the official website and book.",
-  "t": "يُظهر لك تقدير مبني على إجاباتك الأخيرة متى تقترب من الجاهزية. بعدها راجع الموقع الرسمي واحجز موعد اختبارك."
+ "9dde5771d714c836": {
+  "src": "The questions you've seen, your recent accuracy and your mock test results against the pass marks show when you're getting close. Then check the official website and book.",
+  "t": "تُظهر لك الأسئلة التي شاهدتها، ودقة إجاباتك الأخيرة، ونتائج اختباراتك التجريبية مقارنةً بدرجات النجاح، متى تقترب من الجاهزية. بعدها راجع الموقع الرسمي واحجز موعد اختبارك."
  },
  "dfb17c9154143c44": {
   "src": "<t0>Today</t0><t1>VIC</t1>",
@@ -451,9 +455,9 @@
   "src": "days until your test",
   "t": "يومًا حتى اختبارك"
  },
- "3291df378598bb8b": {
-  "src": "pass chance",
-  "t": "فرصة النجاح"
+ "fec2e3f1bd153ab7": {
+  "src": "of questions seen",
+  "t": "من الأسئلة تمّت مشاهدتها"
  },
  "987fb2c84141e24d": {
   "src": "TODAY'S PLAN",
@@ -479,9 +483,9 @@
   "src": "<t0><t1>4-day streak</t1></t0><t2>Keep it going</t2>",
   "t": "<t0><t1>4 أيام على التوالي</t1></t0><t2>حافظ على سلسلتك</t2>"
  },
- "e74a5b45ac560618": {
-  "src": "Illustration of the Today screen with sample data: a countdown, an estimated pass chance and a short daily plan.",
-  "t": "رسم توضيحي لشاشة «اليوم» ببيانات نموذجية: عدّ تنازلي، وفرصة نجاح مقدّرة، وخطة يومية قصيرة."
+ "e321940086248dbf": {
+  "src": "Illustration of the Today screen with sample data: a countdown, how much of the question pack you've seen and a short daily plan.",
+  "t": "رسم توضيحي لشاشة «اليوم» ببيانات نموذجية: عدّ تنازلي، ومقدار ما شاهدته من حزمة الأسئلة، وخطة يومية قصيرة."
  },
  "0a70242c48ec679c": {
   "src": "Pricing, plainly",
@@ -495,9 +499,9 @@
   "src": "Every practice question is free for everyone. Free learners get one mock test a day, and another each time they choose to watch a short ad. Premium is a one-time purchase of A$5.99 through Google Play: no subscription, and it covers every state.",
   "t": "كل أسئلة التدريب مجانية للجميع. يحصل مستخدمو النسخة المجانية على اختبار تجريبي واحد يوميًا، واختبار آخر في كل مرة يختارون فيها مشاهدة إعلان قصير. أما Premium فهو عملية شراء لمرة واحدة بقيمة A$5.99 عبر Google Play: بلا اشتراك، ويشمل كل الولايات."
  },
- "1d3169bdd2d53606": {
-  "src": "What is free and what Premium adds",
-  "t": "ما المجاني، وما الذي يضيفه Premium"
+ "6f10b223b9fc4553": {
+  "src": "In the Android app: what is free and what Premium adds",
+  "t": "في تطبيق Android: ما المجاني، وما الذي يضيفه Premium"
  },
  "297f982dc0de75d4": {
   "src": "Feature",
@@ -523,9 +527,9 @@
   "src": "Daily plan, reviews and progress",
   "t": "الخطة اليومية والمراجعات والتقدّم"
  },
- "1bdacd9b175b87c8": {
-  "src": "Estimated pass chance",
-  "t": "فرصة النجاح المقدّرة"
+ "e41915828241557a": {
+  "src": "Readiness: questions seen and recent accuracy",
+  "t": "الجاهزية: الأسئلة التي شاهدتها ودقة إجاباتك الأخيرة"
  },
  "972bd2d9392b8273": {
   "src": "Mock tests",
@@ -578,6 +582,10 @@
  "c627a45e2511fda6": {
   "src": "A$5.99 once. No subscription.",
   "t": "A$5.99 لمرة واحدة. بلا اشتراك."
+ },
+ "b34e8d5304c49db6": {
+  "src": "<t0>Studying in your browser?</t0> The <t1>web app</t1> is open now and free with an account. It has practice questions with every answer explained (with a daily allowance), one mock test a day, your mistakes to review and your readiness against the pass marks. Premium isn't on sale on the web yet, so the web app's Premium extras (accuracy trend and weak areas) aren't available for now.",
+  "t": "<t0>هل تدرس في متصفحك؟</t0> <t1>تطبيق الويب</t1> متاح الآن ومجاني مع حساب. يقدّم أسئلة تدريب (ضمن حد يومي) مع شرح لكل إجابة، واختبارًا تجريبيًا واحدًا يوميًا، وأخطاءك لتراجعها، ومدى جاهزيتك مقارنةً بدرجات النجاح. لا يُباع Premium على الويب بعد، لذا فإن ميزات Premium الإضافية في تطبيق الويب (اتجاه دقة إجاباتك ونقاط الضعف) غير متاحة حاليًا."
  },
  "1c3f4ae7a68aea91": {
   "src": "Refunds follow Google Play's refund policy and your rights under the Australian Consumer Law. See the <t0>FAQ</t0> for more.",
@@ -683,13 +691,9 @@
   "src": "Get the app",
   "t": "احصل على التطبيق"
  },
- "046baf6a847ade4e": {
-  "src": "Learners Test Australia: DKT is an Android app. It isn't on Google Play yet. When it is, this button will link straight to the listing. The <t0>download page</t0> has the details, and how to try the app early.",
-  "t": "Learners Test Australia: DKT تطبيق لأجهزة Android، وهو غير متوفر على Google Play بعد. وعندما يتوفر، سينقلك هذا الزر مباشرةً إلى صفحته في المتجر. تجد التفاصيل في <t0>صفحة التنزيل</t0>، وكذلك طريقة تجربة التطبيق مبكرًا."
- },
- "7b99c0077e7c4d50": {
-  "src": "<t0><x1/><t2>Coming soon to Google Play</t2></t0>",
-  "t": "<t0><x1/><t2>قريبًا على Google Play</t2></t0>"
+ "5779f02061fc5954": {
+  "src": "Learners Test Australia: DKT is an Android app. It isn't on Google Play yet. When it is, we'll link to the listing here. The <t0>download page</t0> has the details, and how to try the app early.",
+  "t": "Learners Test Australia: DKT تطبيق لأجهزة Android، وهو غير متوفر على Google Play بعد. وعندما يتوفر، سنضع هنا رابطًا إلى صفحته في المتجر. تجد التفاصيل في <t0>صفحة التنزيل</t0>، وكذلك طريقة تجربة التطبيق مبكرًا."
  },
  "5dc0f541e53a43ed": {
   "src": "Learner test practice for every Australian state and territory. An Android app by BlueOrbit.",
@@ -803,9 +807,9 @@
   "src": "Learner Driver App Features | Learners Test Australia",
   "t": "ميزات تطبيق الاختبار النظري للقيادة | Learners Test Australia"
  },
- "f1212ae39558473f": {
-  "src": "Tour the Learners Test Australia app: mock tests for all 8 states, explained answers with sources, a daily plan, pass-chance estimate and 3D hazard clips.",
-  "t": "تعرّف على تطبيق Learners Test Australia: اختبارات تجريبية لجميع الولايات الـ8، وإجابات مشروحة مع مصادرها، وخطة يومية، وتقدير لفرصة النجاح، ومقاطع 3D لإدراك المخاطر."
+ "f0e65cf2870e5cfe": {
+  "src": "Tour the Learners Test Australia app: mock tests for all 8 states, explained answers with sources, a daily plan, readiness tracking and 3D hazard clips.",
+  "t": "تعرّف على تطبيق Learners Test Australia: اختبارات تجريبية لجميع الولايات الـ8، وإجابات مشروحة مع مصادرها، وخطة يومية، ومتابعة لمدى جاهزيتك، ومقاطع 3D لإدراك المخاطر."
  },
  "4b7c2ac399640a33": {
   "src": "Home",
@@ -1035,21 +1039,21 @@
   "src": "Illustration of mock test results with sample data: each section shows your score against its pass line.",
   "t": "رسم توضيحي لنتائج اختبار تجريبي ببيانات نموذجية: يعرض كل قسم درجتك مقارنةً بحد النجاح فيه."
  },
- "338222c0c9d31518": {
-  "src": "Progress and an honest pass-chance estimate",
-  "t": "التقدّم وتقدير صادق لفرصة النجاح"
+ "a908efbc30918021": {
+  "src": "Progress and readiness, shown as evidence",
+  "t": "التقدّم ومدى الجاهزية كما تُظهرها نتائجك"
  },
- "710fb0dfd9e7fee7": {
-  "src": "The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. After your first 12 answers (the quick check), the Today screen shows an estimated pass chance.",
-  "t": "يعرض تبويب «التقدّم» عدد الأسئلة التي أجبت عنها والتي اطّلعت عليها، وسلسلة أيامك المتتالية في الدراسة، ودقائق الدراسة هذا الأسبوع، ودقة إجاباتك الأخيرة. وبعد أول 12 إجابة لك (التقييم السريع)، تعرض شاشة «اليوم» فرصة النجاح المقدّرة."
+ "d5803efbe6d8ee11": {
+  "src": "The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. The Today screen shows how much of the question pack you've seen, and mock test results show your score in each section against its pass mark.",
+  "t": "يعرض تبويب «التقدّم» عدد الأسئلة التي أجبت عنها والتي اطّلعت عليها، وسلسلة أيامك المتتالية في الدراسة، ودقائق الدراسة هذا الأسبوع، ودقة إجاباتك الأخيرة. وتعرض شاشة «اليوم» مقدار ما شاهدته من حزمة الأسئلة، وتعرض نتائج الاختبارات التجريبية درجتك في كل قسم مقارنةً بدرجة النجاح فيه."
  },
- "b5a62b3d2bb61a6d": {
-  "src": "With Premium you also get a forecast for each section (your expected score and the chance of passing that section), your weak spots and a planner for upcoming reviews.",
-  "t": "ومع Premium تحصل أيضًا على توقعات لكل قسم (درجتك المتوقعة وفرصة اجتياز ذلك القسم)، ونقاط ضعفك، ومخطط للمراجعات القادمة."
+ "7b83a4ab52899f61": {
+  "src": "With Premium you also get a forecast for each section (your expected score against its pass mark), your weak spots and a planner for upcoming reviews.",
+  "t": "ومع Premium تحصل أيضًا على توقعات لكل قسم (درجتك المتوقعة مقارنةً بدرجة النجاح فيه)، ونقاط ضعفك، ومخطط للمراجعات القادمة."
  },
- "4937d85cc1ed672f": {
-  "src": "The pass chance is an estimate from your recent answers, not a guarantee. The official test is set by your state's licensing authority.",
-  "t": "فرصة النجاح تقدير مبني على إجاباتك الأخيرة، وليست ضمانًا. أما الاختبار الرسمي فتضعه هيئة الترخيص في ولايتك."
+ "157a9cdd7fcda409": {
+  "src": "These are signs of how ready you are, from your own answers, not a guarantee. The official test is set by your state's licensing authority.",
+  "t": "هذه مؤشرات على مدى جاهزيتك مستمدة من إجاباتك أنت، وليست ضمانًا. أما الاختبار الرسمي فتضعه هيئة الترخيص في ولايتك."
  },
  "b01da568cbde2fc5": {
   "src": "Section forecast (Premium)",
@@ -1551,17 +1555,17 @@
   "src": "When will the app be on Google Play?",
   "t": "متى سيتوفر التطبيق على Google Play؟"
  },
- "7c4f0b3ce45981d8": {
-  "src": "Soon. It isn't listed yet, so there is no store link on this site. When it goes live, the “Coming soon to Google Play” button will become a link to the listing.",
-  "t": "قريبًا. لم يُدرَج بعد، لذا لا يوجد رابط للمتجر على هذا الموقع. وعندما يُطلَق، سيتحول زر «قريبًا على Google Play» إلى رابط لصفحته في المتجر."
+ "b4730901f31c33e3": {
+  "src": "Soon. It isn't listed yet, so there is no store link on this site. When it goes live, this site will link to the listing. Until then, you can study in the <t0>web app</t0> in your browser.",
+  "t": "قريبًا. لم يُدرَج بعد، لذا لا يوجد رابط للمتجر على هذا الموقع. وعندما يُطلَق، سيضع هذا الموقع رابطًا إلى صفحته في المتجر. وحتى ذلك الحين، يمكنك الدراسة في <t0>تطبيق الويب</t0> عبر متصفحك."
  },
- "a54fc71e2aa02494": {
-  "src": "How does the pass-chance estimate work?",
-  "t": "كيف يُحسب تقدير فرصة النجاح؟"
+ "d9f0a07ff61fcade": {
+  "src": "How do I know when I'm ready for the test?",
+  "t": "كيف أعرف أنني مستعد للاختبار؟"
  },
- "a91cb3e79f52cdd7": {
-  "src": "After your first 12 answers (the quick check), the app estimates your chance of passing from your recent answers. It is an estimate, not a guarantee. Premium adds a forecast for each section of the test.",
-  "t": "بعد أول 12 إجابة لك (التقييم السريع)، يقدّر التطبيق فرصة نجاحك بناءً على إجاباتك الأخيرة. إنها تقدير، وليست ضمانًا. ويضيف Premium توقعات لكل قسم من أقسام الاختبار."
+ "71f253f7d9df51a6": {
+  "src": "Look at the evidence: how many of your state's questions you've seen, your recent accuracy and your mock test results against the pass marks. They are a guide, not a guarantee. Premium adds a forecast for each section of the test.",
+  "t": "انظر إلى الأدلة: كم شاهدت من أسئلة ولايتك، ودقة إجاباتك الأخيرة، ونتائج اختباراتك التجريبية مقارنةً بدرجات النجاح. إنها مؤشر، وليست ضمانًا. ويضيف Premium توقعات لكل قسم من أقسام الاختبار."
  },
  "0abe3cd09338056d": {
   "src": "Does the app include hazard perception practice?",
@@ -2015,9 +2019,13 @@
   "src": "Get it on Android",
   "t": "احصل عليه على Android"
  },
- "fdcd3df8a61c9a09": {
-  "src": "The app isn't on Google Play yet. When it is, the button below will open the listing, and this page will say so. You can try it before then: see <t0>try the app early</t0>.",
-  "t": "التطبيق غير متوفر على Google Play بعد. وعندما يتوفر، سيفتح الزر أدناه صفحته في المتجر، وستذكر هذه الصفحة ذلك. ويمكنك تجربته قبل ذلك: راجع <t0>جرّب التطبيق مبكرًا</t0>."
+ "57f81920b5dfa47f": {
+  "src": "The app isn't on Google Play yet. When it is, this page will link to the listing. You can try it before then: see <t0>try the app early</t0>.",
+  "t": "التطبيق غير متوفر على Google Play بعد. وعندما يتوفر، ستضع هذه الصفحة رابطًا إلى صفحته في المتجر. ويمكنك تجربته قبل ذلك: راجع <t0>جرّب التطبيق مبكرًا</t0>."
+ },
+ "03a7a08908dfeb60": {
+  "src": "You don't have to wait to start: the <t0>web app</t0> is open now in your browser, free with an account.",
+  "t": "لا داعي للانتظار لتبدأ: <t0>تطبيق الويب</t0> متاح الآن في متصفحك، ومجاني مع حساب."
  },
  "720cf8462e35baed": {
   "src": "What you need",
@@ -2051,9 +2059,9 @@
   "src": "One free mock test a day, and another for each short ad you choose to watch.",
   "t": "اختبار تجريبي مجاني واحد يوميًا، واختبار آخر عن كل إعلان قصير تختار مشاهدته."
  },
- "c9acc6cc6f73b590": {
-  "src": "A daily study plan, progress tracking and an estimated pass chance.",
-  "t": "خطة دراسة يومية، ومتابعة للتقدّم، وفرصة نجاح مقدّرة."
+ "c39c3b665987d10d": {
+  "src": "A daily study plan, progress tracking and your readiness against the pass marks.",
+  "t": "خطة دراسة يومية، ومتابعة للتقدّم، ومدى جاهزيتك مقارنةً بدرجات النجاح."
  },
  "e78e1fc91c9fd954": {
   "src": "Sample hazard perception practice: 11 of the 72 3D clips and 6 of the 40 still scenes.",
@@ -2355,6 +2363,10 @@
   "src": "Practise with Learners Test Australia",
   "t": "تدرّب مع Learners Test Australia"
  },
+ "0c22277c6954e0ab": {
+  "src": "<t0>Practise NSW in the web app</t0>",
+  "t": "<t0>تدرّب على اختبار NSW في تطبيق الويب</t0>"
+ },
  "3abbb8544d07bc84": {
   "src": "Related guides",
   "t": "أدلة ذات صلة"
@@ -2578,6 +2590,10 @@
  "fd5cecd2c0b20484": {
   "src": "<t0>Learner and probationary driver road rules (Transport Victoria)<t1> (official website)</t1></t0>",
   "t": "<t0>قواعد المرور لسائقي رخصة المتعلم والرخصة المؤقتة (Transport Victoria)<t1> (الموقع الرسمي)</t1></t0>"
+ },
+ "3f0598e0fd442408": {
+  "src": "<t0>Practise VIC in the web app</t0>",
+  "t": "<t0>تدرّب على اختبار VIC في تطبيق الويب</t0>"
  },
  "0c0096856147bb22": {
   "src": "QLD Learner Test & PrepL Practice | Learners Test Australia",
@@ -2815,6 +2831,10 @@
   "src": "<t0>Your keys to driving in Queensland (Queensland Government publications)<t1> (official website)</t1></t0>",
   "t": "<t0>Your keys to driving in Queensland – دليل القيادة في كوينزلاند (منشورات حكومة كوينزلاند)<t1> (الموقع الرسمي)</t1></t0>"
  },
+ "5306d92ddfdae0e1": {
+  "src": "<t0>Practise QLD in the web app</t0>",
+  "t": "<t0>تدرّب على اختبار QLD في تطبيق الويب</t0>"
+ },
  "d3cf65ffa8c878fd": {
   "src": "SA Learners Test & myLs Practice | Learners Test Australia",
   "t": "تدريب على اختبار رخصة المتعلم وmyLs في SA | Learners Test Australia"
@@ -3022,6 +3042,10 @@
  "a190431399474464": {
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the Government of South Australia, the Department for Infrastructure and Transport or Service SA.",
   "t": "Learners Test Australia تطبيق دراسي مستقل. لا يتبع أي حكومة ولاية أو إقليم في أستراليا، ولا أي هيئة ترخيص أو جهة حكومية أخرى، ولا تعتمده أي منها، ولا تربطه بها أي صلة. ولا صلة له بحكومة جنوب أستراليا، ولا بإدارة البنية التحتية والنقل (Department for Infrastructure and Transport)، ولا بمراكز Service SA."
+ },
+ "976ae01f2c6959f3": {
+  "src": "<t0>Practise SA in the web app</t0>",
+  "t": "<t0>تدرّب على اختبار SA في تطبيق الويب</t0>"
  },
  "a0ff025a03634fc0": {
   "src": "<t0>App features</t0>",
@@ -3262,6 +3286,10 @@
  "fc38f6bea25d5312": {
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the Government of Western Australia or the Department of Transport and Major Infrastructure.",
   "t": "Learners Test Australia تطبيق دراسي مستقل. لا يتبع أي حكومة ولاية أو إقليم في أستراليا، ولا أي هيئة ترخيص أو جهة حكومية أخرى، ولا تعتمده أي منها، ولا تربطه بها أي صلة. ولا صلة له بحكومة غرب أستراليا ولا بإدارة النقل والبنية التحتية الكبرى (Department of Transport and Major Infrastructure)."
+ },
+ "82adbe11b9442966": {
+  "src": "<t0>Practise WA in the web app</t0>",
+  "t": "<t0>تدرّب على اختبار WA في تطبيق الويب</t0>"
  },
  "64e12656bb56f4ca": {
   "src": "Tasmania Learners Test Practice | Learners Test Australia",
@@ -3515,6 +3543,10 @@
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the Tasmanian Government, Plates Plus, Service Tasmania or Transport Tasmania.",
   "t": "Learners Test Australia تطبيق دراسي مستقل. لا يتبع أي حكومة ولاية أو إقليم في أستراليا، ولا أي هيئة ترخيص أو جهة حكومية أخرى، ولا تعتمده أي منها، ولا تربطه بها أي صلة. ولا صلة له بحكومة تسمانيا أو Plates Plus أو Service Tasmania أو Transport Tasmania."
  },
+ "1c8c400dd85f7929": {
+  "src": "<t0>Practise TAS in the web app</t0>",
+  "t": "<t0>تدرّب على اختبار TAS في تطبيق الويب</t0>"
+ },
  "c6229f93cd7d7100": {
   "src": "ACT Learners Test Practice | Learners Test Australia",
   "t": "تدريب على اختبار رخصة المتعلم في ACT | Learners Test Australia"
@@ -3742,6 +3774,10 @@
  "1dbe4dfa3b669f10": {
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the ACT Government, Access Canberra, the Road Transport Authority or any approved course provider, and it is not the ACT course or a replacement for it.",
   "t": "Learners Test Australia تطبيق دراسي مستقل. لا يتبع أي حكومة ولاية أو إقليم في أستراليا، ولا أي هيئة ترخيص أو جهة حكومية أخرى، ولا تعتمده أي منها، ولا تربطه بها أي صلة. ولا صلة له بحكومة ACT أو Access Canberra أو Road Transport Authority (هيئة النقل البري) أو أي جهة معتمدة تقدّم الدورة، وهو ليس دورة ACT ولا بديلًا عنها."
+ },
+ "503d0f2d848fd007": {
+  "src": "<t0>Practise ACT in the web app</t0>",
+  "t": "<t0>تدرّب على اختبار ACT في تطبيق الويب</t0>"
  },
  "27a78441a22812df": {
   "src": "NT Learners Test Practice | Learners Test Australia",
@@ -3978,5 +4014,9 @@
  "c1a1db34962fede4": {
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the Northern Territory Government, the Motor Vehicle Registry (MVR) or the Registrar of Motor Vehicles.",
   "t": "Learners Test Australia تطبيق دراسي مستقل. لا يتبع أي حكومة ولاية أو إقليم في أستراليا، ولا أي هيئة ترخيص أو جهة حكومية أخرى، ولا تعتمده أي منها، ولا تربطه بها أي صلة. ولا صلة له بحكومة الإقليم الشمالي أو Motor Vehicle Registry (MVR، دائرة تسجيل المركبات) أو Registrar of Motor Vehicles (مسجّل المركبات الآلية)."
+ },
+ "3d12aba8bbd568c0": {
+  "src": "<t0>Practise NT in the web app</t0>",
+  "t": "<t0>تدرّب على اختبار NT في تطبيق الويب</t0>"
  }
 }

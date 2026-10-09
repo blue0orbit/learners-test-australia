@@ -10,7 +10,7 @@ Rules followed for the newer pages:
   NT   nt.gov.au is all rights reserved: facts only, in our own words.
 """
 from sitelib import (
-    CHECKED_H, DISCLAIMER, SITE_NAME, SRC, Page, chip, ext, faq_block, faq_ld, icon, page_head, source_box,
+    CHECKED_H, DISCLAIMER, SITE_NAME, SRC, WEB_APP, Page, chip, ext, faq_block, faq_ld, icon, page_head, source_box,
 )
 from pages_core import coming_soon
 
@@ -26,11 +26,14 @@ def related(links: list[tuple[str, str]]) -> str:
 
 
 def app_cta(state: str, extra: str = "") -> str:
-    """App call to action with the shared DISCLAIMER; `extra` names the state bodies the app is not connected to."""
+    """App call to action with the shared DISCLAIMER; `extra` names the state bodies the app is not connected to.
+    The button opens the web study app (no state deep link yet); the Android app is a line of text until it is public."""
     note = f" {extra}" if extra else ""
     return (f'<section class="callout light-cta" aria-labelledby="cta-{state}"><h2 id="cta-{state}" style="margin-top:0">'
             f"Practise with {SITE_NAME}</h2>"
-            f"<p>{DISCLAIMER}{note}</p>{coming_soon('light')}</section>")
+            f"<p>{DISCLAIMER}{note}</p>"
+            f'<p class="cta-row"><a class="btn btn-primary" href="{WEB_APP}">Practise {state.upper()} in the web app</a></p>'
+            f"{coming_soon('light')}</section>")
 
 
 RELATED_NEW = [

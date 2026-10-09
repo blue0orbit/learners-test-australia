@@ -79,9 +79,9 @@
   "group": "core"
  },
  {
-  "key": "11c74ea12f47ccae",
+  "key": "5ed4261e34dc4dea",
   "kind": "run",
-  "src": "<x0/><x1/><t2><t3></t3><t4>Menu</t4></t2>",
+  "src": "<x0/><t1><t2></t2><t3>Menu</t3></t1>",
   "note": "",
   "pages": [
    "index.html",
@@ -247,6 +247,30 @@
   "group": "core"
  },
  {
+  "key": "1fe3ed4047a8e3f2",
+  "kind": "run",
+  "src": "<t0>Study online</t0>",
+  "note": "",
+  "pages": [
+   "index.html",
+   "features.html",
+   "states.html",
+   "faq.html",
+   "about.html",
+   "contact.html",
+   "download.html",
+   "nsw-dkt-practice-test.html",
+   "vic-learner-permit-test-practice.html",
+   "qld-learner-test-practice.html",
+   "sa-learners-test-practice.html",
+   "wa-learners-test-practice.html",
+   "tas-learners-test-practice.html",
+   "act-learners-test-practice.html",
+   "nt-learners-test-practice.html"
+  ],
+  "group": "core"
+ },
+ {
   "key": "ac272d7ea5f15ae4",
   "kind": "run",
   "src": "Learner driver app for every state and territory",
@@ -277,9 +301,9 @@
   "group": "core"
  },
  {
-  "key": "a37fe8c9d81cd44f",
+  "key": "ed6913f8f18a63a7",
   "kind": "run",
-  "src": "<t0><x1/><t2>Coming soon to Google Play</t2></t0><t3>See the features</t3>",
+  "src": "<t0>Study free in your browser<x1/></t0><t2>Pick your state</t2>",
   "note": "",
   "pages": [
    "index.html"
@@ -287,9 +311,19 @@
   "group": "core"
  },
  {
-  "key": "83fe70998390a2c5",
+  "key": "ac31e0c8b0bb69ba",
   "kind": "run",
-  "src": "Android app. Not on Google Play yet: we will add the link here when it is.",
+  "src": "<t0>Free:</t0> practice questions and one mock test a day, with a free account. Works on any phone or computer.",
+  "note": "",
+  "pages": [
+   "index.html"
+  ],
+  "group": "core"
+ },
+ {
+  "key": "9fa1d0642fa61d33",
+  "kind": "run",
+  "src": "Android app: coming soon to Google Play.",
   "note": "",
   "pages": [
    "index.html",
@@ -303,16 +337,6 @@
    "tas-learners-test-practice.html",
    "act-learners-test-practice.html",
    "nt-learners-test-practice.html"
-  ],
-  "group": "core"
- },
- {
-  "key": "23624278f31593eb",
-  "kind": "run",
-  "src": "Free to practise. One free mock test a day. Optional one-time Premium for A$5.99.",
-  "note": "",
-  "pages": [
-   "index.html"
   ],
   "group": "core"
  },
@@ -1106,9 +1130,9 @@
   "group": "core"
  },
  {
-  "key": "1b88097e9659eb60",
+  "key": "b67720ec296c5e4a",
   "kind": "run",
-  "src": "Progress and pass chance",
+  "src": "Progress and readiness",
   "note": "",
   "pages": [
    "index.html"
@@ -1116,9 +1140,9 @@
   "group": "core"
  },
  {
-  "key": "65faa56b9d990cff",
+  "key": "da06ab9a0542faf8",
   "kind": "run",
-  "src": "See how much you've covered, your weakest topic and an estimated pass chance based on your recent answers. It is an estimate, not a guarantee.",
+  "src": "See how much you've covered, your weakest topic, your recent accuracy and how your mock tests compare with the pass marks.",
   "note": "",
   "pages": [
    "index.html"
@@ -1297,9 +1321,9 @@
   "group": "core"
  },
  {
-  "key": "6f6e21dc2b39e832",
+  "key": "581028ff497b26df",
   "kind": "run",
-  "src": "Watch your pass chance",
+  "src": "Check your readiness",
   "note": "",
   "pages": [
    "index.html"
@@ -1307,9 +1331,9 @@
   "group": "core"
  },
  {
-  "key": "542fa96cc251a783",
+  "key": "9dde5771d714c836",
   "kind": "run",
-  "src": "An estimate from your recent answers shows when you're getting close. Then check the official website and book.",
+  "src": "The questions you've seen, your recent accuracy and your mock test results against the pass marks show when you're getting close. Then check the official website and book.",
   "note": "",
   "pages": [
    "index.html"
@@ -1339,9 +1363,9 @@
   "group": "core"
  },
  {
-  "key": "3291df378598bb8b",
+  "key": "fec2e3f1bd153ab7",
   "kind": "run",
-  "src": "pass chance",
+  "src": "of questions seen",
   "note": "",
   "pages": [
    "index.html",
@@ -1416,9 +1440,9 @@
   "group": "core"
  },
  {
-  "key": "e74a5b45ac560618",
+  "key": "e321940086248dbf",
   "kind": "run",
-  "src": "Illustration of the Today screen with sample data: a countdown, an estimated pass chance and a short daily plan.",
+  "src": "Illustration of the Today screen with sample data: a countdown, how much of the question pack you've seen and a short daily plan.",
   "note": "",
   "pages": [
    "index.html",
@@ -1457,9 +1481,9 @@
   "group": "core"
  },
  {
-  "key": "1d3169bdd2d53606",
+  "key": "6f10b223b9fc4553",
   "kind": "run",
-  "src": "What is free and what Premium adds",
+  "src": "In the Android app: what is free and what Premium adds",
   "note": "",
   "pages": [
    "index.html",
@@ -1534,9 +1558,9 @@
   "group": "core"
  },
  {
-  "key": "1bdacd9b175b87c8",
+  "key": "e41915828241557a",
   "kind": "run",
-  "src": "Estimated pass chance",
+  "src": "Readiness: questions seen and recent accuracy",
   "note": "",
   "pages": [
    "index.html",
@@ -1680,6 +1704,17 @@
   "key": "c627a45e2511fda6",
   "kind": "run",
   "src": "A$5.99 once. No subscription.",
+  "note": "",
+  "pages": [
+   "index.html",
+   "features.html"
+  ],
+  "group": "core"
+ },
+ {
+  "key": "b34e8d5304c49db6",
+  "kind": "run",
+  "src": "<t0>Studying in your browser?</t0> The <t1>web app</t1> is open now and free with an account. It has practice questions with every answer explained (with a daily allowance), one mock test a day, your mistakes to review and your readiness against the pass marks. Premium isn't on sale on the web yet, so the web app's Premium extras (accuracy trend and weak areas) aren't available for now.",
   "note": "",
   "pages": [
    "index.html",
@@ -1970,32 +2005,12 @@
   "group": "core"
  },
  {
-  "key": "046baf6a847ade4e",
+  "key": "5779f02061fc5954",
   "kind": "run",
-  "src": "Learners Test Australia: DKT is an Android app. It isn't on Google Play yet. When it is, this button will link straight to the listing. The <t0>download page</t0> has the details, and how to try the app early.",
+  "src": "Learners Test Australia: DKT is an Android app. It isn't on Google Play yet. When it is, we'll link to the listing here. The <t0>download page</t0> has the details, and how to try the app early.",
   "note": "",
   "pages": [
    "index.html"
-  ],
-  "group": "core"
- },
- {
-  "key": "7b99c0077e7c4d50",
-  "kind": "run",
-  "src": "<t0><x1/><t2>Coming soon to Google Play</t2></t0>",
-  "note": "",
-  "pages": [
-   "index.html",
-   "features.html",
-   "download.html",
-   "nsw-dkt-practice-test.html",
-   "vic-learner-permit-test-practice.html",
-   "qld-learner-test-practice.html",
-   "sa-learners-test-practice.html",
-   "wa-learners-test-practice.html",
-   "tas-learners-test-practice.html",
-   "act-learners-test-practice.html",
-   "nt-learners-test-practice.html"
   ],
   "group": "core"
  },
@@ -2658,9 +2673,9 @@
   "group": "core"
  },
  {
-  "key": "f1212ae39558473f",
+  "key": "f0e65cf2870e5cfe",
   "kind": "description",
-  "src": "Tour the Learners Test Australia app: mock tests for all 8 states, explained answers with sources, a daily plan, pass-chance estimate and 3D hazard clips.",
+  "src": "Tour the Learners Test Australia app: mock tests for all 8 states, explained answers with sources, a daily plan, readiness tracking and 3D hazard clips.",
   "note": "meta description: the snippet under the title in search results",
   "pages": [
    "features.html"
@@ -3277,9 +3292,9 @@
   "group": "core"
  },
  {
-  "key": "338222c0c9d31518",
+  "key": "a908efbc30918021",
   "kind": "run",
-  "src": "Progress and an honest pass-chance estimate",
+  "src": "Progress and readiness, shown as evidence",
   "note": "",
   "pages": [
    "features.html"
@@ -3287,9 +3302,9 @@
   "group": "core"
  },
  {
-  "key": "710fb0dfd9e7fee7",
+  "key": "d5803efbe6d8ee11",
   "kind": "run",
-  "src": "The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. After your first 12 answers (the quick check), the Today screen shows an estimated pass chance.",
+  "src": "The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. The Today screen shows how much of the question pack you've seen, and mock test results show your score in each section against its pass mark.",
   "note": "",
   "pages": [
    "features.html"
@@ -3297,9 +3312,9 @@
   "group": "core"
  },
  {
-  "key": "b5a62b3d2bb61a6d",
+  "key": "7b83a4ab52899f61",
   "kind": "run",
-  "src": "With Premium you also get a forecast for each section (your expected score and the chance of passing that section), your weak spots and a planner for upcoming reviews.",
+  "src": "With Premium you also get a forecast for each section (your expected score against its pass mark), your weak spots and a planner for upcoming reviews.",
   "note": "",
   "pages": [
    "features.html"
@@ -3307,9 +3322,9 @@
   "group": "core"
  },
  {
-  "key": "4937d85cc1ed672f",
+  "key": "157a9cdd7fcda409",
   "kind": "run",
-  "src": "The pass chance is an estimate from your recent answers, not a guarantee. The official test is set by your state's licensing authority.",
+  "src": "These are signs of how ready you are, from your own answers, not a guarantee. The official test is set by your state's licensing authority.",
   "note": "",
   "pages": [
    "features.html"
@@ -4596,9 +4611,9 @@
   "group": "core"
  },
  {
-  "key": "7c4f0b3ce45981d8",
+  "key": "b4730901f31c33e3",
   "kind": "run",
-  "src": "Soon. It isn't listed yet, so there is no store link on this site. When it goes live, the “Coming soon to Google Play” button will become a link to the listing.",
+  "src": "Soon. It isn't listed yet, so there is no store link on this site. When it goes live, this site will link to the listing. Until then, you can study in the <t0>web app</t0> in your browser.",
   "note": "",
   "pages": [
    "faq.html"
@@ -4606,9 +4621,9 @@
   "group": "core"
  },
  {
-  "key": "a54fc71e2aa02494",
+  "key": "d9f0a07ff61fcade",
   "kind": "run",
-  "src": "How does the pass-chance estimate work?",
+  "src": "How do I know when I'm ready for the test?",
   "note": "",
   "pages": [
    "faq.html"
@@ -4616,9 +4631,9 @@
   "group": "core"
  },
  {
-  "key": "a91cb3e79f52cdd7",
+  "key": "71f253f7d9df51a6",
   "kind": "run",
-  "src": "After your first 12 answers (the quick check), the app estimates your chance of passing from your recent answers. It is an estimate, not a guarantee. Premium adds a forecast for each section of the test.",
+  "src": "Look at the evidence: how many of your state's questions you've seen, your recent accuracy and your mock test results against the pass marks. They are a guide, not a guarantee. Premium adds a forecast for each section of the test.",
   "note": "",
   "pages": [
    "faq.html"
@@ -5764,9 +5779,19 @@
   "group": "core"
  },
  {
-  "key": "fdcd3df8a61c9a09",
+  "key": "57f81920b5dfa47f",
   "kind": "run",
-  "src": "The app isn't on Google Play yet. When it is, the button below will open the listing, and this page will say so. You can try it before then: see <t0>try the app early</t0>.",
+  "src": "The app isn't on Google Play yet. When it is, this page will link to the listing. You can try it before then: see <t0>try the app early</t0>.",
+  "note": "",
+  "pages": [
+   "download.html"
+  ],
+  "group": "core"
+ },
+ {
+  "key": "03a7a08908dfeb60",
+  "kind": "run",
+  "src": "You don't have to wait to start: the <t0>web app</t0> is open now in your browser, free with an account.",
   "note": "",
   "pages": [
    "download.html"
@@ -5854,9 +5879,9 @@
   "group": "core"
  },
  {
-  "key": "c9acc6cc6f73b590",
+  "key": "c39c3b665987d10d",
   "kind": "run",
-  "src": "A daily study plan, progress tracking and an estimated pass chance.",
+  "src": "A daily study plan, progress tracking and your readiness against the pass marks.",
   "note": "",
   "pages": [
    "download.html"
@@ -6650,6 +6675,16 @@
   "group": "states"
  },
  {
+  "key": "0c22277c6954e0ab",
+  "kind": "run",
+  "src": "<t0>Practise NSW in the web app</t0>",
+  "note": "",
+  "pages": [
+   "nsw-dkt-practice-test.html"
+  ],
+  "group": "states"
+ },
+ {
   "key": "3abbb8544d07bc84",
   "kind": "run",
   "src": "Related guides",
@@ -7217,6 +7252,16 @@
   "key": "fd5cecd2c0b20484",
   "kind": "run",
   "src": "<t0>Learner and probationary driver road rules (Transport Victoria)<t1> (official website)</t1></t0>",
+  "note": "",
+  "pages": [
+   "vic-learner-permit-test-practice.html"
+  ],
+  "group": "states"
+ },
+ {
+  "key": "3f0598e0fd442408",
+  "kind": "run",
+  "src": "<t0>Practise VIC in the web app</t0>",
   "note": "",
   "pages": [
    "vic-learner-permit-test-practice.html"
@@ -7821,6 +7866,16 @@
   "group": "states"
  },
  {
+  "key": "5306d92ddfdae0e1",
+  "kind": "run",
+  "src": "<t0>Practise QLD in the web app</t0>",
+  "note": "",
+  "pages": [
+   "qld-learner-test-practice.html"
+  ],
+  "group": "states"
+ },
+ {
   "key": "d3cf65ffa8c878fd",
   "kind": "title",
   "src": "SA Learners Test & myLs Practice | Learners Test Australia",
@@ -8336,6 +8391,16 @@
   "key": "a190431399474464",
   "kind": "run",
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the Government of South Australia, the Department for Infrastructure and Transport or Service SA.",
+  "note": "",
+  "pages": [
+   "sa-learners-test-practice.html"
+  ],
+  "group": "states"
+ },
+ {
+  "key": "976ae01f2c6959f3",
+  "kind": "run",
+  "src": "<t0>Practise SA in the web app</t0>",
   "note": "",
   "pages": [
    "sa-learners-test-practice.html"
@@ -8940,6 +9005,16 @@
   "key": "fc38f6bea25d5312",
   "kind": "run",
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the Government of Western Australia or the Department of Transport and Major Infrastructure.",
+  "note": "",
+  "pages": [
+   "wa-learners-test-practice.html"
+  ],
+  "group": "states"
+ },
+ {
+  "key": "82adbe11b9442966",
+  "kind": "run",
+  "src": "<t0>Practise WA in the web app</t0>",
   "note": "",
   "pages": [
    "wa-learners-test-practice.html"
@@ -9578,6 +9653,16 @@
   "group": "states"
  },
  {
+  "key": "1c8c400dd85f7929",
+  "kind": "run",
+  "src": "<t0>Practise TAS in the web app</t0>",
+  "note": "",
+  "pages": [
+   "tas-learners-test-practice.html"
+  ],
+  "group": "states"
+ },
+ {
   "key": "c6229f93cd7d7100",
   "kind": "title",
   "src": "ACT Learners Test Practice | Learners Test Australia",
@@ -10141,6 +10226,16 @@
   "key": "1dbe4dfa3b669f10",
   "kind": "run",
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the ACT Government, Access Canberra, the Road Transport Authority or any approved course provider, and it is not the ACT course or a replacement for it.",
+  "note": "",
+  "pages": [
+   "act-learners-test-practice.html"
+  ],
+  "group": "states"
+ },
+ {
+  "key": "503d0f2d848fd007",
+  "kind": "run",
+  "src": "<t0>Practise ACT in the web app</t0>",
   "note": "",
   "pages": [
    "act-learners-test-practice.html"
@@ -10731,6 +10826,16 @@
   "key": "c1a1db34962fede4",
   "kind": "run",
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the Northern Territory Government, the Motor Vehicle Registry (MVR) or the Registrar of Motor Vehicles.",
+  "note": "",
+  "pages": [
+   "nt-learners-test-practice.html"
+  ],
+  "group": "states"
+ },
+ {
+  "key": "3d12aba8bbd568c0",
+  "kind": "run",
+  "src": "<t0>Practise NT in the web app</t0>",
   "note": "",
   "pages": [
    "nt-learners-test-practice.html"

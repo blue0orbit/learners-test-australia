@@ -1,7 +1,7 @@
 """Home, features, states hub, FAQ, about, contact and 404 pages."""
 from sitelib import (
     APP_NAME, CHECKED_H, DEVELOPER, DISCLAIMER, DTT_PLAY, DTT_URL, EMAIL, PLAY_URL, PRICE, SITE_ID, SITE_NAME, SRC,
-    BASE, ORG_ID, Page, chip, coming_soon, dtt_application, ext, faq_block, faq_ld, icon, mobile_application,
+    BASE, ORG_ID, WEB_APP, Page, chip, coming_soon, dtt_application, ext, faq_block, faq_ld, icon, mobile_application,
     organization, page_head, plate_svg, updated_line,
 )
 
@@ -41,7 +41,7 @@ def mock_today() -> str:
 <div class="phone" aria-hidden="true"><div class="screen">
   <div class="scr-top"><span>Today</span>{chip('VIC')}</div>
   <div class="scr-card scr-row"><div><div class="scr-big">24</div><div class="scr-muted">days until your test</div></div>
-  <div style="text-align:right"><div class="scr-big">72%</div><div class="scr-muted">pass chance</div></div></div>
+  <div style="text-align:right"><div class="scr-big">78%</div><div class="scr-muted">of questions seen</div></div></div>
   <div class="scr-card"><div class="scr-label">TODAY'S PLAN</div>
   <ul class="scr-plan">
     <li><span class="scr-dot done"></span><span><b>Quick check</b><br><span class="scr-muted">12 questions to find your starting point</span></span></li>
@@ -51,7 +51,7 @@ def mock_today() -> str:
   </ul></div>
   <div class="scr-card scr-row"><span><b>4-day streak</b></span><span class="scr-muted">Keep it going</span></div>
 </div></div>
-<figcaption>Illustration of the Today screen with sample data: a countdown, an estimated pass chance and a short daily plan.</figcaption>
+<figcaption>Illustration of the Today screen with sample data: a countdown, how much of the question pack you've seen and a short daily plan.</figcaption>
 </figure>"""
 
 
@@ -198,18 +198,28 @@ ALL_STATES_TEXT = ("New South Wales, Victoria, Queensland, South Australia, West
 
 def price_table() -> str:
     return f"""<div class="table-wrap"><table class="price-table">
-<caption>What is free and what Premium adds</caption>
+<caption>In the Android app: what is free and what Premium adds</caption>
 <thead><tr><th scope="col">Feature</th><th scope="col">Free</th><th scope="col">Premium</th></tr></thead>
 <tbody>
 <tr><th scope="row">Every practice question, with explanations</th><td class="yes">Yes</td><td class="yes">Yes</td></tr>
 <tr><th scope="row">Daily plan, reviews and progress</th><td class="yes">Yes</td><td class="yes">Yes</td></tr>
-<tr><th scope="row">Estimated pass chance</th><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+<tr><th scope="row">Readiness: questions seen and recent accuracy</th><td class="yes">Yes</td><td class="yes">Yes</td></tr>
 <tr><th scope="row">Mock tests</th><td>1 a day, plus another for each short ad you choose to watch</td><td class="yes">Unlimited</td></tr>
 <tr><th scope="row">Ads</th><td>Banner ads on results and guide pages</td><td class="yes">No ads</td></tr>
 <tr><th scope="row">Section forecasts, weak spots and review planner</th><td class="no">No</td><td class="yes">Yes</td></tr>
 <tr><th scope="row">Hazard perception practice</th><td>Sample 3D clips and scenes</td><td class="yes">All 72 clips and every scene</td></tr>
 <tr><th scope="row">Price</th><td>Free</td><td>{PRICE} once. No subscription.</td></tr>
 </tbody></table></div>"""
+
+
+def web_app_note() -> str:
+    """The web study app next to the Android pricing. Facts as of 10 October 2026: open to everyone, free with an
+    account; readiness is free there; Premium is not on sale on the web yet (its web extras: accuracy trend and weak
+    areas)."""
+    return (f'<p><strong>Studying in your browser?</strong> The <a href="{WEB_APP}">web app</a> is open now and free '
+            "with an account. It has practice questions with every answer explained (with a daily allowance), one mock "
+            "test a day, your mistakes to review and your readiness against the pass marks. Premium isn't on sale on "
+            "the web yet, so the web app's Premium extras (accuracy trend and weak areas) aren't available for now.</p>")
 
 
 FEATURES_GRID = [
@@ -219,8 +229,8 @@ FEATURES_GRID = [
      "Each question tells you why the answer is right and shows the handbook page or road rule it comes from."),
     ("calendar", "A plan for every day",
      "A quick check, reviews due, mistakes to fix and new questions, paced to your test date. Spaced repetition brings questions back just before you'd forget them."),
-    ("chart", "Progress and pass chance",
-     "See how much you've covered, your weakest topic and an estimated pass chance based on your recent answers. It is an estimate, not a guarantee."),
+    ("chart", "Progress and readiness",
+     "See how much you've covered, your weakest topic, your recent accuracy and how your mock tests compare with the pass marks."),
     ("eye", "Hazard perception clips",
      "Real-time 3D driving clips from the driver's seat: tap when it is safe to turn, move off, overtake or change lanes. Plus still scenes and a guide to your state's test."),
     ("globe", "Five languages",
@@ -254,14 +264,15 @@ def home() -> Page:
     <p class="lead">{SITE_NAME} is an Android app by {DEVELOPER} for learner drivers in all eight Australian states and
     territories. Choose your state and practise its knowledge test the way it is really set: original questions checked
     against official sources, every answer explained, and mock tests that show exactly where the pass line is.</p>
-    {coming_soon(beside='<a class="btn btn-ghost" href="@/features.html">See the features</a>')}
-    <p class="fine">Free to practise. One free mock test a day. Optional one-time Premium for {PRICE}.</p>
+    <div class="btn-row"><a class="btn btn-primary" href="{WEB_APP}">Study free in your browser{icon('arrow', 'icon icon-go')}</a><a class="btn btn-ghost" href="#states">Pick your state</a></div>
+    <p class="fine"><strong>Free:</strong> practice questions and one mock test a day, with a free account. Works on any phone or computer.</p>
+    {coming_soon()}
   </div>
   {mock_question()}
 </div>
 </section>
 
-<section class="section" aria-labelledby="states-title">
+<section class="section" id="states" aria-labelledby="states-title">
 <div class="container">
   <div class="section-head">
     <p class="eyebrow">Pick your state</p>
@@ -296,7 +307,7 @@ def home() -> Page:
       <li><h3>Choose your state and test date</h3><p>The app shows your test's format and paces a daily plan to your date. No date yet? That's fine too.</p></li>
       <li><h3>Practise a little every day</h3><p>Start with a 12-question quick check, then work through reviews, mistakes and new questions.</p></li>
       <li><h3>Sit mock tests</h3><p>Same number of questions and pass marks as the real test, with results shown section by section.</p></li>
-      <li><h3>Watch your pass chance</h3><p>An estimate from your recent answers shows when you're getting close. Then check the official website and book.</p></li>
+      <li><h3>Check your readiness</h3><p>The questions you've seen, your recent accuracy and your mock test results against the pass marks show when you're getting close. Then check the official website and book.</p></li>
     </ol>
   </div>
   {mock_today()}
@@ -313,6 +324,7 @@ def home() -> Page:
     and it covers every state.</p>
   </div>
   {price_table()}
+  {web_app_note()}
   <p class="meta">Refunds follow Google Play's refund policy and your rights under the Australian Consumer Law.
   See the <a href="@/faq.html">FAQ</a> for more.</p>
 </div>
@@ -359,8 +371,8 @@ def home() -> Page:
 <section class="section light-cta" aria-labelledby="get-title">
 <div class="container"><div class="prose">
   <h2 id="get-title">Get the app</h2>
-  <p>{APP_NAME} is an Android app. It isn't on Google Play yet. When it is, this button will link straight to the
-  listing. The <a href="@/download.html">download page</a> has the details, and how to try the app early.</p>
+  <p>{APP_NAME} is an Android app. It isn't on Google Play yet. When it is, we'll link to the listing here. The
+  <a href="@/download.html">download page</a> has the details, and how to try the app early.</p>
   {coming_soon('light')}
 </div></div>
 </section>"""
@@ -482,14 +494,14 @@ def features() -> Page:
 <section class="feature-row" aria-labelledby="f5">
 <div class="two-col" style="align-items:center">
   <div class="prose">
-    <h2 id="f5">Progress and an honest pass-chance estimate</h2>
+    <h2 id="f5">Progress and readiness, shown as evidence</h2>
     <p>The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this
-    week and your recent accuracy. After your first 12 answers (the quick check), the Today screen shows an estimated
-    pass chance.</p>
-    <p>With Premium you also get a forecast for each section (your expected score and the chance of passing that
-    section), your weak spots and a planner for upcoming reviews.</p>
-    <p class="note">The pass chance is an estimate from your recent answers, not a guarantee. The official test is set
-    by your state's licensing authority.</p>
+    week and your recent accuracy. The Today screen shows how much of the question pack you've seen, and mock test
+    results show your score in each section against its pass mark.</p>
+    <p>With Premium you also get a forecast for each section (your expected score against its pass mark), your weak
+    spots and a planner for upcoming reviews.</p>
+    <p class="note">These are signs of how ready you are, from your own answers, not a guarantee. The official test is
+    set by your state's licensing authority.</p>
   </div>
   <div class="card">
     <h3>Section forecast (Premium)</h3>
@@ -542,6 +554,7 @@ def features() -> Page:
 <section class="feature-row" aria-labelledby="f8">
   <h2 id="f8">Free and Premium</h2>
   {price_table()}
+  {web_app_note()}
   <p>Questions about paying, restoring a purchase or refunds? See the <a href="@/faq.html">FAQ</a>.</p>
 </section>
 
@@ -556,7 +569,7 @@ def features() -> Page:
         path="features.html",
         title="Learner Driver App Features | Learners Test Australia",
         description=("Tour the Learners Test Australia app: mock tests for all 8 states, explained answers with sources, a "
-                     "daily plan, pass-chance estimate and 3D hazard clips."),
+                     "daily plan, readiness tracking and 3D hazard clips."),
         body=body,
         nav="features",
         crumbs=crumbs,
@@ -709,12 +722,12 @@ FAQ_GROUPS = [
         ("Which phones does it run on? Is there an iPhone version?",
          "<p>The app runs on Android phones and tablets with Android 8.0 or later. It is Android only for now.</p>"),
         ("When will the app be on Google Play?",
-         "<p>Soon. It isn't listed yet, so there is no store link on this site. When it goes live, the “Coming soon to Google "
-         "Play” button will become a link to the listing.</p>"),
-        ("How does the pass-chance estimate work?",
-         "<p>After your first 12 answers (the quick check), the app estimates your chance of passing from your recent "
-         "answers. It "
-         "is an estimate, not a guarantee. Premium adds a forecast for each section of the test.</p>"),
+         "<p>Soon. It isn't listed yet, so there is no store link on this site. When it goes live, this site will link "
+         f'to the listing. Until then, you can study in the <a href="{WEB_APP}">web app</a> in your browser.</p>'),
+        ("How do I know when I'm ready for the test?",
+         "<p>Look at the evidence: how many of your state's questions you've seen, your recent accuracy and your mock "
+         "test results against the pass marks. They are a guide, not a guarantee. Premium adds a forecast for each "
+         "section of the test.</p>"),
         ("Does the app include hazard perception practice?",
          "<p>Yes. There are 72 real-time 3D driving clips where you tap when it is safe to act, in the same style as the "
          "hazard perception tests, plus 40 illustrated still scenes and a guide to your state's hazard perception test "
@@ -988,8 +1001,8 @@ def download() -> Page:
         status = ("<p>Learners Test Australia is free on Google Play. Tap the button to open the listing, then tap "
                   "Install.</p>")
     else:
-        status = ("<p>The app isn't on Google Play yet. When it is, the button below will open the listing, and this page "
-                  "will say so. You can try it before then: see <a href=\"#early\">try the app early</a>.</p>")
+        status = ("<p>The app isn't on Google Play yet. When it is, this page will link to the listing. You can try it "
+                  "before then: see <a href=\"#early\">try the app early</a>.</p>")
     body = page_head(
         "Download the Learners Test Australia app",
         "The learner test practice app for all eight Australian states and territories, for Android phones and tablets.",
@@ -1001,6 +1014,8 @@ def download() -> Page:
 <h2>Get it on Android</h2>
 {status}
 {coming_soon('light')}
+<p>You don't have to wait to start: the <a href="{WEB_APP}">web app</a> is open now in your browser, free with an
+account.</p>
 
 <h2>What you need</h2>
 <ul>
@@ -1016,7 +1031,7 @@ def download() -> Page:
   <li>Every practice question for your state, with every answer explained.</li>
   <li>Your state's test format: the same number of questions, sections and pass marks.</li>
   <li>One free mock test a day, and another for each short ad you choose to watch.</li>
-  <li>A daily study plan, progress tracking and an estimated pass chance.</li>
+  <li>A daily study plan, progress tracking and your readiness against the pass marks.</li>
   <li>Sample hazard perception practice: 11 of the 72 3D clips and 6 of the 40 still scenes.</li>
   <li>All eight states and territories, in English, Chinese, Arabic, Vietnamese and Spanish.</li>
 </ul>

@@ -19,9 +19,9 @@
   "src": "<t0>Skip to main content</t0>",
   "t": "<t0>跳到主要内容</t0>"
  },
- "11c74ea12f47ccae": {
-  "src": "<x0/><x1/><t2><t3></t3><t4>Menu</t4></t2>",
-  "t": "<x0/><x1/><t2><t3></t3><t4>菜单</t4></t2>"
+ "5ed4261e34dc4dea": {
+  "src": "<x0/><t1><t2></t2><t3>Menu</t3></t1>",
+  "t": "<x0/><t1><t2></t2><t3>菜单</t3></t1>"
  },
  "b9ced53398a50db8": {
   "src": "<t0>Features</t0>",
@@ -47,6 +47,10 @@
   "src": "<t0>Download</t0>",
   "t": "<t0>下载</t0>"
  },
+ "1fe3ed4047a8e3f2": {
+  "src": "<t0>Study online</t0>",
+  "t": "<t0>在线学习</t0>"
+ },
  "ac272d7ea5f15ae4": {
   "src": "Learner driver app for every state and territory",
   "t": "适用于每个州和领地的学车 App"
@@ -59,17 +63,17 @@
   "src": "Learners Test Australia is an Android app by BlueOrbit for learner drivers in all eight Australian states and territories. Choose your state and practise its knowledge test the way it is really set: original questions checked against official sources, every answer explained, and mock tests that show exactly where the pass line is.",
   "t": "Learners Test Australia 是 BlueOrbit 为澳大利亚全部八个州和领地的学车者开发的 Android App。选择你所在的州，按该州交规笔试的真实出题方式来练习：原创题目均对照官方资料核实，每道题都有答案解析，模拟考试会清楚显示及格线在哪里。"
  },
- "a37fe8c9d81cd44f": {
-  "src": "<t0><x1/><t2>Coming soon to Google Play</t2></t0><t3>See the features</t3>",
-  "t": "<t0><x1/><t2>即将登陆 Google Play</t2></t0><t3>查看功能</t3>"
+ "ed6913f8f18a63a7": {
+  "src": "<t0>Study free in your browser<x1/></t0><t2>Pick your state</t2>",
+  "t": "<t0>在浏览器中免费学习<x1/></t0><t2>选择你所在的州</t2>"
  },
- "83fe70998390a2c5": {
-  "src": "Android app. Not on Google Play yet: we will add the link here when it is.",
-  "t": "Android App。目前尚未上架 Google Play：上架后我们会在这里添加链接。"
+ "ac31e0c8b0bb69ba": {
+  "src": "<t0>Free:</t0> practice questions and one mock test a day, with a free account. Works on any phone or computer.",
+  "t": "<t0>免费：</t0>练习题和每天一次模拟考试，只需一个免费账户。手机、电脑都能用。"
  },
- "23624278f31593eb": {
-  "src": "Free to practise. One free mock test a day. Optional one-time Premium for A$5.99.",
-  "t": "免费练习。每天可免费做一次模拟考试。可选一次性购买 Premium，价格为 A$5.99。"
+ "9fa1d0642fa61d33": {
+  "src": "Android app: coming soon to Google Play.",
+  "t": "Android App：即将登陆 Google Play。"
  },
  "af5e8986927205d5": {
   "src": "<t0><t1>NSW</t1> Practice</t0><t2>3 of 20</t2>",
@@ -359,13 +363,13 @@
   "src": "A quick check, reviews due, mistakes to fix and new questions, paced to your test date. Spaced repetition brings questions back just before you'd forget them.",
   "t": "快速摸底、待复习的题、待纠正的错题和新题，按你的考试日期安排进度。间隔重复会在你快要忘记之前，让题目再次出现。"
  },
- "1b88097e9659eb60": {
-  "src": "Progress and pass chance",
-  "t": "学习进度与通过概率"
+ "b67720ec296c5e4a": {
+  "src": "Progress and readiness",
+  "t": "学习进度与准备程度"
  },
- "65faa56b9d990cff": {
-  "src": "See how much you've covered, your weakest topic and an estimated pass chance based on your recent answers. It is an estimate, not a guarantee.",
-  "t": "查看你已经学了多少、最薄弱的主题，以及根据你最近的答题情况估算的通过概率。这只是估算，不是保证。"
+ "da06ab9a0542faf8": {
+  "src": "See how much you've covered, your weakest topic, your recent accuracy and how your mock tests compare with the pass marks.",
+  "t": "查看你已经学了多少、最薄弱的主题、最近的正确率，以及模拟考试成绩与及格线的对比。"
  },
  "2b8eb801ce2d0a49": {
   "src": "Hazard perception clips",
@@ -435,13 +439,13 @@
   "src": "Same number of questions and pass marks as the real test, with results shown section by section.",
   "t": "题数和及格线都与真实考试相同，成绩按部分逐一显示。"
  },
- "6f6e21dc2b39e832": {
-  "src": "Watch your pass chance",
-  "t": "关注你的通过概率"
+ "581028ff497b26df": {
+  "src": "Check your readiness",
+  "t": "看看你准备得怎么样"
  },
- "542fa96cc251a783": {
-  "src": "An estimate from your recent answers shows when you're getting close. Then check the official website and book.",
-  "t": "根据你最近的答题情况得出的估算，会显示你什么时候已接近通过。然后查看官方网站并预约考试。"
+ "9dde5771d714c836": {
+  "src": "The questions you've seen, your recent accuracy and your mock test results against the pass marks show when you're getting close. Then check the official website and book.",
+  "t": "你看过的题目、最近的正确率，以及模拟考试成绩与及格线的对比，会显示你什么时候已接近通过。然后查看官方网站并预约考试。"
  },
  "dfb17c9154143c44": {
   "src": "<t0>Today</t0><t1>VIC</t1>",
@@ -451,9 +455,9 @@
   "src": "days until your test",
   "t": "天后考试"
  },
- "3291df378598bb8b": {
-  "src": "pass chance",
-  "t": "通过概率"
+ "fec2e3f1bd153ab7": {
+  "src": "of questions seen",
+  "t": "已看过的题目"
  },
  "987fb2c84141e24d": {
   "src": "TODAY'S PLAN",
@@ -479,9 +483,9 @@
   "src": "<t0><t1>4-day streak</t1></t0><t2>Keep it going</t2>",
   "t": "<t0><t1>连续 4 天</t1></t0><t2>继续保持</t2>"
  },
- "e74a5b45ac560618": {
-  "src": "Illustration of the Today screen with sample data: a countdown, an estimated pass chance and a short daily plan.",
-  "t": "“今天”页面示意图（示例数据）：倒计时、估算的通过概率和简短的每日计划。"
+ "e321940086248dbf": {
+  "src": "Illustration of the Today screen with sample data: a countdown, how much of the question pack you've seen and a short daily plan.",
+  "t": "“今天”页面示意图（示例数据）：倒计时、你已看过题库中多少题目，以及简短的每日计划。"
  },
  "0a70242c48ec679c": {
   "src": "Pricing, plainly",
@@ -495,9 +499,9 @@
   "src": "Every practice question is free for everyone. Free learners get one mock test a day, and another each time they choose to watch a short ad. Premium is a one-time purchase of A$5.99 through Google Play: no subscription, and it covers every state.",
   "t": "所有练习题对所有人免费。免费用户每天可做一次模拟考试，每次自愿观看一段短广告，还可以再做一次。Premium 通过 Google Play 一次性购买，价格为 A$5.99：不是订阅，并且适用于所有州。"
  },
- "1d3169bdd2d53606": {
-  "src": "What is free and what Premium adds",
-  "t": "哪些免费，Premium 又增加了什么"
+ "6f10b223b9fc4553": {
+  "src": "In the Android app: what is free and what Premium adds",
+  "t": "Android App 中：哪些免费，Premium 又增加了什么"
  },
  "297f982dc0de75d4": {
   "src": "Feature",
@@ -523,9 +527,9 @@
   "src": "Daily plan, reviews and progress",
   "t": "每日计划、复习和学习进度"
  },
- "1bdacd9b175b87c8": {
-  "src": "Estimated pass chance",
-  "t": "估算通过概率"
+ "e41915828241557a": {
+  "src": "Readiness: questions seen and recent accuracy",
+  "t": "准备程度：已看过的题目和最近的正确率"
  },
  "972bd2d9392b8273": {
   "src": "Mock tests",
@@ -578,6 +582,10 @@
  "c627a45e2511fda6": {
   "src": "A$5.99 once. No subscription.",
   "t": "A$5.99，一次付清。无需订阅。"
+ },
+ "b34e8d5304c49db6": {
+  "src": "<t0>Studying in your browser?</t0> The <t1>web app</t1> is open now and free with an account. It has practice questions with every answer explained (with a daily allowance), one mock test a day, your mistakes to review and your readiness against the pass marks. Premium isn't on sale on the web yet, so the web app's Premium extras (accuracy trend and weak areas) aren't available for now.",
+  "t": "<t0>想在浏览器里学习？</t0><t1>网页版</t1>现已开放，有免费账户就能使用。它提供练习题（每天有一定额度），每道题的答案都有解析，还有每天一次模拟考试、错题复习，以及对照及格线的准备程度。Premium 目前还不能在网页上购买，因此网页版的 Premium 附加功能（正确率趋势和薄弱环节）暂时无法使用。"
  },
  "1c3f4ae7a68aea91": {
   "src": "Refunds follow Google Play's refund policy and your rights under the Australian Consumer Law. See the <t0>FAQ</t0> for more.",
@@ -683,13 +691,9 @@
   "src": "Get the app",
   "t": "获取 App"
  },
- "046baf6a847ade4e": {
-  "src": "Learners Test Australia: DKT is an Android app. It isn't on Google Play yet. When it is, this button will link straight to the listing. The <t0>download page</t0> has the details, and how to try the app early.",
-  "t": "Learners Test Australia: DKT 是一款 Android App，目前尚未上架 Google Play。上架后，这个按钮会直接链接到应用页面。<t0>下载页面</t0>有详细信息，并介绍如何提前试用这款 App。"
- },
- "7b99c0077e7c4d50": {
-  "src": "<t0><x1/><t2>Coming soon to Google Play</t2></t0>",
-  "t": "<t0><x1/><t2>即将登陆 Google Play</t2></t0>"
+ "5779f02061fc5954": {
+  "src": "Learners Test Australia: DKT is an Android app. It isn't on Google Play yet. When it is, we'll link to the listing here. The <t0>download page</t0> has the details, and how to try the app early.",
+  "t": "Learners Test Australia: DKT 是一款 Android App，目前尚未上架 Google Play。上架后，我们会在这里放上应用页面的链接。<t0>下载页面</t0>有详细信息，并介绍如何提前试用这款 App。"
  },
  "5dc0f541e53a43ed": {
   "src": "Learner test practice for every Australian state and territory. An Android app by BlueOrbit.",
@@ -803,9 +807,9 @@
   "src": "Learner Driver App Features | Learners Test Australia",
   "t": "学车 App 功能介绍｜Learners Test Australia"
  },
- "f1212ae39558473f": {
-  "src": "Tour the Learners Test Australia app: mock tests for all 8 states, explained answers with sources, a daily plan, pass-chance estimate and 3D hazard clips.",
-  "t": "了解 Learners Test Australia App：覆盖全部 8 个州和领地的模拟考试、附出处的答案解析、每日计划、通过概率估算和 3D 危险感知短片。"
+ "f0e65cf2870e5cfe": {
+  "src": "Tour the Learners Test Australia app: mock tests for all 8 states, explained answers with sources, a daily plan, readiness tracking and 3D hazard clips.",
+  "t": "了解 Learners Test Australia App：覆盖全部 8 个州和领地的模拟考试、附出处的答案解析、每日计划、准备程度跟踪和 3D 危险感知短片。"
  },
  "4b7c2ac399640a33": {
   "src": "Home",
@@ -1035,21 +1039,21 @@
   "src": "Illustration of mock test results with sample data: each section shows your score against its pass line.",
   "t": "模拟考试成绩示意图（示例数据）：每个部分都会显示你的得分与及格线的对比。"
  },
- "338222c0c9d31518": {
-  "src": "Progress and an honest pass-chance estimate",
-  "t": "学习进度和如实的通过概率估算"
+ "a908efbc30918021": {
+  "src": "Progress and readiness, shown as evidence",
+  "t": "学习进度与准备程度，以实际表现为依据"
  },
- "710fb0dfd9e7fee7": {
-  "src": "The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. After your first 12 answers (the quick check), the Today screen shows an estimated pass chance.",
-  "t": "“进度”标签页会显示你已答过和看过多少题、连续打卡天数、本周学习分钟数以及最近的正确率。答完前 12 题（快速摸底）后，“今天”页面会显示估算的通过概率。"
+ "d5803efbe6d8ee11": {
+  "src": "The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. The Today screen shows how much of the question pack you've seen, and mock test results show your score in each section against its pass mark.",
+  "t": "“进度”标签页会显示你已答过和看过多少题、连续打卡天数、本周学习分钟数以及最近的正确率。“今天”页面会显示你已看过题库中多少题目，模拟考试成绩会显示你在每个部分的得分与该部分及格线的对比。"
  },
- "b5a62b3d2bb61a6d": {
-  "src": "With Premium you also get a forecast for each section (your expected score and the chance of passing that section), your weak spots and a planner for upcoming reviews.",
-  "t": "使用 Premium，你还能看到每个部分的预测（预计得分和该部分的通过概率）、你的薄弱环节，以及即将到来的复习计划。"
+ "7b83a4ab52899f61": {
+  "src": "With Premium you also get a forecast for each section (your expected score against its pass mark), your weak spots and a planner for upcoming reviews.",
+  "t": "使用 Premium，你还能看到每个部分的预测（预计得分与该部分及格线的对比）、你的薄弱环节，以及即将到来的复习计划。"
  },
- "4937d85cc1ed672f": {
-  "src": "The pass chance is an estimate from your recent answers, not a guarantee. The official test is set by your state's licensing authority.",
-  "t": "通过概率是根据你最近的答题情况得出的估算，不是保证。正式考试由你所在州的驾照管理机构出题。"
+ "157a9cdd7fcda409": {
+  "src": "These are signs of how ready you are, from your own answers, not a guarantee. The official test is set by your state's licensing authority.",
+  "t": "这些都是根据你自己的答题情况得出的准备程度参考，不是保证。正式考试由你所在州的驾照管理机构出题。"
  },
  "b01da568cbde2fc5": {
   "src": "Section forecast (Premium)",
@@ -1551,17 +1555,17 @@
   "src": "When will the app be on Google Play?",
   "t": "App 什么时候上架 Google Play？"
  },
- "7c4f0b3ce45981d8": {
-  "src": "Soon. It isn't listed yet, so there is no store link on this site. When it goes live, the “Coming soon to Google Play” button will become a link to the listing.",
-  "t": "很快。App 目前尚未上架，所以本网站上还没有商店链接。上架后，“即将登陆 Google Play”按钮会变成指向应用页面的链接。"
+ "b4730901f31c33e3": {
+  "src": "Soon. It isn't listed yet, so there is no store link on this site. When it goes live, this site will link to the listing. Until then, you can study in the <t0>web app</t0> in your browser.",
+  "t": "很快。App 目前尚未上架，所以本网站上还没有商店链接。上架后，本网站会链接到应用页面。在此之前，你可以在浏览器中使用<t0>网页版</t0>学习。"
  },
- "a54fc71e2aa02494": {
-  "src": "How does the pass-chance estimate work?",
-  "t": "通过概率估算是怎么计算的？"
+ "d9f0a07ff61fcade": {
+  "src": "How do I know when I'm ready for the test?",
+  "t": "我怎么知道自己准备好参加考试了？"
  },
- "a91cb3e79f52cdd7": {
-  "src": "After your first 12 answers (the quick check), the app estimates your chance of passing from your recent answers. It is an estimate, not a guarantee. Premium adds a forecast for each section of the test.",
-  "t": "答完前 12 题（快速摸底）后，App 会根据你最近的答题情况估算你的通过概率。这只是估算，不是保证。Premium 还会增加考试每个部分的预测。"
+ "71f253f7d9df51a6": {
+  "src": "Look at the evidence: how many of your state's questions you've seen, your recent accuracy and your mock test results against the pass marks. They are a guide, not a guarantee. Premium adds a forecast for each section of the test.",
+  "t": "看实际表现：你已看过本州多少题目、最近的正确率，以及模拟考试成绩与及格线的对比。这些只是参考，不是保证。Premium 还会增加考试每个部分的预测。"
  },
  "0abe3cd09338056d": {
   "src": "Does the app include hazard perception practice?",
@@ -2015,9 +2019,13 @@
   "src": "Get it on Android",
   "t": "在 Android 上获取"
  },
- "fdcd3df8a61c9a09": {
-  "src": "The app isn't on Google Play yet. When it is, the button below will open the listing, and this page will say so. You can try it before then: see <t0>try the app early</t0>.",
-  "t": "App 目前尚未上架 Google Play。上架后，下面的按钮会打开应用页面，本页面也会注明。在此之前你也可以试用：请见<t0>提前试用 App</t0>。"
+ "57f81920b5dfa47f": {
+  "src": "The app isn't on Google Play yet. When it is, this page will link to the listing. You can try it before then: see <t0>try the app early</t0>.",
+  "t": "App 目前尚未上架 Google Play。上架后，本页面会链接到应用页面。在此之前你也可以试用：请见<t0>提前试用 App</t0>。"
+ },
+ "03a7a08908dfeb60": {
+  "src": "You don't have to wait to start: the <t0>web app</t0> is open now in your browser, free with an account.",
+  "t": "不用等也能开始：<t0>网页版</t0>现已开放，在浏览器中就能使用，有免费账户即可。"
  },
  "720cf8462e35baed": {
   "src": "What you need",
@@ -2051,9 +2059,9 @@
   "src": "One free mock test a day, and another for each short ad you choose to watch.",
   "t": "每天一次免费模拟考试，每自愿观看一段短广告还可再做一次。"
  },
- "c9acc6cc6f73b590": {
-  "src": "A daily study plan, progress tracking and an estimated pass chance.",
-  "t": "每日学习计划、进度跟踪和估算的通过概率。"
+ "c39c3b665987d10d": {
+  "src": "A daily study plan, progress tracking and your readiness against the pass marks.",
+  "t": "每日学习计划、进度跟踪，以及对照及格线的准备程度。"
  },
  "e78e1fc91c9fd954": {
   "src": "Sample hazard perception practice: 11 of the 72 3D clips and 6 of the 40 still scenes.",
@@ -2355,6 +2363,10 @@
   "src": "Practise with Learners Test Australia",
   "t": "用 Learners Test Australia 练习"
  },
+ "0c22277c6954e0ab": {
+  "src": "<t0>Practise NSW in the web app</t0>",
+  "t": "<t0>在网页版练习 NSW 题目</t0>"
+ },
  "3abbb8544d07bc84": {
   "src": "Related guides",
   "t": "相关指南"
@@ -2578,6 +2590,10 @@
  "fd5cecd2c0b20484": {
   "src": "<t0>Learner and probationary driver road rules (Transport Victoria)<t1> (official website)</t1></t0>",
   "t": "<t0>L 牌和 P 牌司机的道路规则（Transport Victoria）<t1>（官方网站）</t1></t0>"
+ },
+ "3f0598e0fd442408": {
+  "src": "<t0>Practise VIC in the web app</t0>",
+  "t": "<t0>在网页版练习 VIC 题目</t0>"
  },
  "0c0096856147bb22": {
   "src": "QLD Learner Test & PrepL Practice | Learners Test Australia",
@@ -2815,6 +2831,10 @@
   "src": "<t0>Your keys to driving in Queensland (Queensland Government publications)<t1> (official website)</t1></t0>",
   "t": "<t0>Your keys to driving in Queensland（昆士兰州政府出版物）<t1>（官方网站）</t1></t0>"
  },
+ "5306d92ddfdae0e1": {
+  "src": "<t0>Practise QLD in the web app</t0>",
+  "t": "<t0>在网页版练习 QLD 题目</t0>"
+ },
  "d3cf65ffa8c878fd": {
   "src": "SA Learners Test & myLs Practice | Learners Test Australia",
   "t": "SA交规笔试与myLs练习｜Learners Test Australia"
@@ -3022,6 +3042,10 @@
  "a190431399474464": {
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the Government of South Australia, the Department for Infrastructure and Transport or Service SA.",
   "t": "Learners Test Australia 是一款独立的学习应用，不隶属于澳大利亚任何州或领地政府、驾照管理机构或其他政府机构，未获得其认可，也与其没有任何关联。本应用与南澳州政府、Department for Infrastructure and Transport（南澳基础设施与交通部）或 Service SA 均无关联。"
+ },
+ "976ae01f2c6959f3": {
+  "src": "<t0>Practise SA in the web app</t0>",
+  "t": "<t0>在网页版练习 SA 题目</t0>"
  },
  "a0ff025a03634fc0": {
   "src": "<t0>App features</t0>",
@@ -3262,6 +3286,10 @@
  "fc38f6bea25d5312": {
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the Government of Western Australia or the Department of Transport and Major Infrastructure.",
   "t": "Learners Test Australia 是一款独立的学习应用，不隶属于澳大利亚任何州或领地政府、驾照管理机构或其他政府机构，未获得其认可，也与其没有任何关联。本应用与西澳州政府或 Department of Transport and Major Infrastructure 均无关联。"
+ },
+ "82adbe11b9442966": {
+  "src": "<t0>Practise WA in the web app</t0>",
+  "t": "<t0>在网页版练习 WA 题目</t0>"
  },
  "64e12656bb56f4ca": {
   "src": "Tasmania Learners Test Practice | Learners Test Australia",
@@ -3515,6 +3543,10 @@
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the Tasmanian Government, Plates Plus, Service Tasmania or Transport Tasmania.",
   "t": "Learners Test Australia 是一款独立的学习应用，不隶属于澳大利亚任何州或领地政府、驾照管理机构或其他政府机构，未获得其认可，也与其没有任何关联。本应用与塔斯马尼亚州政府、Plates Plus、Service Tasmania 或 Transport Tasmania 均无关联。"
  },
+ "1c8c400dd85f7929": {
+  "src": "<t0>Practise TAS in the web app</t0>",
+  "t": "<t0>在网页版练习 TAS 题目</t0>"
+ },
  "c6229f93cd7d7100": {
   "src": "ACT Learners Test Practice | Learners Test Australia",
   "t": "ACT 学习驾照笔试练习｜Learners Test Australia"
@@ -3742,6 +3774,10 @@
  "1dbe4dfa3b669f10": {
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the ACT Government, Access Canberra, the Road Transport Authority or any approved course provider, and it is not the ACT course or a replacement for it.",
   "t": "Learners Test Australia 是一款独立的学习应用，不隶属于澳大利亚任何州或领地政府、驾照管理机构或其他政府机构，未获得其认可，也与其没有任何关联。本应用与 ACT 政府、Access Canberra、Road Transport Authority 或任何认可的课程提供方均无关联，也不是 ACT 课程，不能替代该课程。"
+ },
+ "503d0f2d848fd007": {
+  "src": "<t0>Practise ACT in the web app</t0>",
+  "t": "<t0>在网页版练习 ACT 题目</t0>"
  },
  "27a78441a22812df": {
   "src": "NT Learners Test Practice | Learners Test Australia",
@@ -3978,5 +4014,9 @@
  "c1a1db34962fede4": {
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the Northern Territory Government, the Motor Vehicle Registry (MVR) or the Registrar of Motor Vehicles.",
   "t": "Learners Test Australia 是一款独立的学习应用，不隶属于澳大利亚任何州或领地政府、驾照管理机构或其他政府机构，未获得其认可，也与其没有任何关联。本应用与北领地政府、Motor Vehicle Registry（MVR）或 Registrar of Motor Vehicles（机动车登记官）均无关联。"
+ },
+ "3d12aba8bbd568c0": {
+  "src": "<t0>Practise NT in the web app</t0>",
+  "t": "<t0>在网页版练习 NT 题目</t0>"
  }
 }

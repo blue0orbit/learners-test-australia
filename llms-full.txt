@@ -15,7 +15,7 @@ Learner driver app for every state and territory
 
 Learners Test Australia is an Android app by BlueOrbit for learner drivers in all eight Australian states and territories. Choose your state and practise its knowledge test the way it is really set: original questions checked against official sources, every answer explained, and mock tests that show exactly where the pass line is.
 
-Free to practise. One free mock test a day. Optional one-time Premium for A$5.99.
+Free: practice questions and one mock test a day, with a free account. Works on any phone or computer.
 
 Illustration of a practice question from the NSW pack: the answer is explained, with the handbook page and road rule it comes from.
 
@@ -125,9 +125,9 @@ Each question tells you why the answer is right and shows the handbook page or r
 
 A quick check, reviews due, mistakes to fix and new questions, paced to your test date. Spaced repetition brings questions back just before you'd forget them.
 
-### Progress and pass chance
+### Progress and readiness
 
-See how much you've covered, your weakest topic and an estimated pass chance based on your recent answers. It is an estimate, not a guarantee.
+See how much you've covered, your weakest topic, your recent accuracy and how your mock tests compare with the pass marks.
 
 ### Hazard perception clips
 
@@ -171,11 +171,11 @@ Same number of questions and pass marks as the real test, with results shown sec
 
 -
 
-### Watch your pass chance
+### Check your readiness
 
-An estimate from your recent answers shows when you're getting close. Then check the official website and book.
+The questions you've seen, your recent accuracy and your mock test results against the pass marks show when you're getting close. Then check the official website and book.
 
-Illustration of the Today screen with sample data: a countdown, an estimated pass chance and a short daily plan.
+Illustration of the Today screen with sample data: a countdown, how much of the question pack you've seen and a short daily plan.
 
 Pricing, plainly
 
@@ -183,17 +183,19 @@ Pricing, plainly
 
 Every practice question is free for everyone. Free learners get one mock test a day, and another each time they choose to watch a short ad. Premium is a one-time purchase of A$5.99 through Google Play: no subscription, and it covers every state.
 
-What is free and what Premium adds
+In the Android app: what is free and what Premium adds
 
 | Feature | Free | Premium |
 | Every practice question, with explanations | Yes | Yes |
 | Daily plan, reviews and progress | Yes | Yes |
-| Estimated pass chance | Yes | Yes |
+| Readiness: questions seen and recent accuracy | Yes | Yes |
 | Mock tests | 1 a day, plus another for each short ad you choose to watch | Unlimited |
 | Ads | Banner ads on results and guide pages | No ads |
 | Section forecasts, weak spots and review planner | No | Yes |
 | Hazard perception practice | Sample 3D clips and scenes | All 72 clips and every scene |
 | Price | Free | A$5.99 once. No subscription. |
+
+Studying in your browser? The web app (https://au.learnertest.com/app/) is open now and free with an account. It has practice questions with every answer explained (with a daily allowance), one mock test a day, your mistakes to review and your readiness against the pass marks. Premium isn't on sale on the web yet, so the web app's Premium extras (accuracy trend and weak areas) aren't available for now.
 
 Refunds follow Google Play's refund policy and your rights under the Australian Consumer Law. See the FAQ (https://au.learnertest.com/faq.html) for more.
 
@@ -294,7 +296,7 @@ Today's plan puts the right things in front of you:
 
 Other ways to practise: mixed practice (20 questions, new ones first), mistakes, saved questions, weak spots and practice by topic, with a mastery ring for each topic. Optional study reminders and a countdown help you keep going, and a study streak counts real study only.
 
-Illustration of the Today screen with sample data: a countdown, an estimated pass chance and a short daily plan.
+Illustration of the Today screen with sample data: a countdown, how much of the question pack you've seen and a short daily plan.
 
 ## Mock tests that show the pass line
 
@@ -306,13 +308,13 @@ Free learners get one mock test a day, plus another each time they choose to wat
 
 Illustration of mock test results with sample data: each section shows your score against its pass line.
 
-## Progress and an honest pass-chance estimate
+## Progress and readiness, shown as evidence
 
-The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. After your first 12 answers (the quick check), the Today screen shows an estimated pass chance.
+The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. The Today screen shows how much of the question pack you've seen, and mock test results show your score in each section against its pass mark.
 
-With Premium you also get a forecast for each section (your expected score and the chance of passing that section), your weak spots and a planner for upcoming reviews.
+With Premium you also get a forecast for each section (your expected score against its pass mark), your weak spots and a planner for upcoming reviews.
 
-The pass chance is an estimate from your recent answers, not a guarantee. The official test is set by your state's licensing authority.
+These are signs of how ready you are, from your own answers, not a guarantee. The official test is set by your state's licensing authority.
 
 ### Section forecast (Premium)
 
@@ -372,17 +374,19 @@ Runs on Android 8.0 or later, with a layout that adapts to larger screens.
 
 ## Free and Premium
 
-What is free and what Premium adds
+In the Android app: what is free and what Premium adds
 
 | Feature | Free | Premium |
 | Every practice question, with explanations | Yes | Yes |
 | Daily plan, reviews and progress | Yes | Yes |
-| Estimated pass chance | Yes | Yes |
+| Readiness: questions seen and recent accuracy | Yes | Yes |
 | Mock tests | 1 a day, plus another for each short ad you choose to watch | Unlimited |
 | Ads | Banner ads on results and guide pages | No ads |
 | Section forecasts, weak spots and review planner | No | Yes |
 | Hazard perception practice | Sample 3D clips and scenes | All 72 clips and every scene |
 | Price | Free | A$5.99 once. No subscription. |
+
+Studying in your browser? The web app (https://au.learnertest.com/app/) is open now and free with an account. It has practice questions with every answer explained (with a daily allowance), one mock test a day, your mistakes to review and your readiness against the pass marks. Premium isn't on sale on the web yet, so the web app's Premium extras (accuracy trend and weak areas) aren't available for now.
 
 Questions about paying, restoring a purchase or refunds? See the FAQ (https://au.learnertest.com/faq.html).
 
@@ -1443,11 +1447,11 @@ The app runs on Android phones and tablets with Android 8.0 or later. It is Andr
 
 ### When will the app be on Google Play?
 
-Soon. It isn't listed yet, so there is no store link on this site. When it goes live, the “Coming soon to Google Play” button will become a link to the listing.
+Soon. It isn't listed yet, so there is no store link on this site. When it goes live, this site will link to the listing. Until then, you can study in the web app (https://au.learnertest.com/app/) in your browser.
 
-### How does the pass-chance estimate work?
+### How do I know when I'm ready for the test?
 
-After your first 12 answers (the quick check), the app estimates your chance of passing from your recent answers. It is an estimate, not a guarantee. Premium adds a forecast for each section of the test.
+Look at the evidence: how many of your state's questions you've seen, your recent accuracy and your mock test results against the pass marks. They are a guide, not a guarantee. Premium adds a forecast for each section of the test.
 
 ### Does the app include hazard perception practice?
 

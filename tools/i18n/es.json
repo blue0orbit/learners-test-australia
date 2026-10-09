@@ -19,9 +19,9 @@
   "src": "<t0>Skip to main content</t0>",
   "t": "<t0>Saltar al contenido principal</t0>"
  },
- "11c74ea12f47ccae": {
-  "src": "<x0/><x1/><t2><t3></t3><t4>Menu</t4></t2>",
-  "t": "<x0/><x1/><t2><t3></t3><t4>Menú</t4></t2>"
+ "5ed4261e34dc4dea": {
+  "src": "<x0/><t1><t2></t2><t3>Menu</t3></t1>",
+  "t": "<x0/><t1><t2></t2><t3>Menú</t3></t1>"
  },
  "b9ced53398a50db8": {
   "src": "<t0>Features</t0>",
@@ -47,6 +47,10 @@
   "src": "<t0>Download</t0>",
   "t": "<t0>Descargar</t0>"
  },
+ "1fe3ed4047a8e3f2": {
+  "src": "<t0>Study online</t0>",
+  "t": "<t0>Estudia en línea</t0>"
+ },
  "ac272d7ea5f15ae4": {
   "src": "Learner driver app for every state and territory",
   "t": "App para conductores aprendices de todos los estados y territorios"
@@ -59,17 +63,17 @@
   "src": "Learners Test Australia is an Android app by BlueOrbit for learner drivers in all eight Australian states and territories. Choose your state and practise its knowledge test the way it is really set: original questions checked against official sources, every answer explained, and mock tests that show exactly where the pass line is.",
   "t": "Learners Test Australia es una app para Android de BlueOrbit para conductores aprendices de los ocho estados y territorios de Australia. Elige tu estado y practica su examen teórico tal como se hace en realidad: preguntas originales verificadas con fuentes oficiales, cada respuesta explicada y simulacros que muestran exactamente cuál es el mínimo para aprobar."
  },
- "a37fe8c9d81cd44f": {
-  "src": "<t0><x1/><t2>Coming soon to Google Play</t2></t0><t3>See the features</t3>",
-  "t": "<t0><x1/><t2>Próximamente en Google Play</t2></t0><t3>Ver las funciones</t3>"
+ "ed6913f8f18a63a7": {
+  "src": "<t0>Study free in your browser<x1/></t0><t2>Pick your state</t2>",
+  "t": "<t0>Estudia gratis en tu navegador<x1/></t0><t2>Elige tu estado</t2>"
  },
- "83fe70998390a2c5": {
-  "src": "Android app. Not on Google Play yet: we will add the link here when it is.",
-  "t": "App para Android. Aún no está en Google Play: agregaremos el enlace aquí cuando lo esté."
+ "ac31e0c8b0bb69ba": {
+  "src": "<t0>Free:</t0> practice questions and one mock test a day, with a free account. Works on any phone or computer.",
+  "t": "<t0>Gratis:</t0> preguntas de práctica y un simulacro al día, con una cuenta gratuita. Funciona en cualquier teléfono o computadora."
  },
- "23624278f31593eb": {
-  "src": "Free to practise. One free mock test a day. Optional one-time Premium for A$5.99.",
-  "t": "Practicar es gratis. Un simulacro gratis al día. Premium opcional, con un solo pago de A$5.99."
+ "9fa1d0642fa61d33": {
+  "src": "Android app: coming soon to Google Play.",
+  "t": "App para Android: próximamente en Google Play."
  },
  "af5e8986927205d5": {
   "src": "<t0><t1>NSW</t1> Practice</t0><t2>3 of 20</t2>",
@@ -359,13 +363,13 @@
   "src": "A quick check, reviews due, mistakes to fix and new questions, paced to your test date. Spaced repetition brings questions back just before you'd forget them.",
   "t": "Una prueba rápida, repasos pendientes, errores por corregir y preguntas nuevas, al ritmo de tu fecha de examen. La repetición espaciada te vuelve a mostrar las preguntas justo antes de que las olvides."
  },
- "1b88097e9659eb60": {
-  "src": "Progress and pass chance",
-  "t": "Progreso y probabilidad de aprobar"
+ "b67720ec296c5e4a": {
+  "src": "Progress and readiness",
+  "t": "Progreso y nivel de preparación"
  },
- "65faa56b9d990cff": {
-  "src": "See how much you've covered, your weakest topic and an estimated pass chance based on your recent answers. It is an estimate, not a guarantee.",
-  "t": "Mira cuánto has avanzado, tu tema más débil y una probabilidad estimada de aprobar basada en tus respuestas recientes. Es una estimación, no una garantía."
+ "da06ab9a0542faf8": {
+  "src": "See how much you've covered, your weakest topic, your recent accuracy and how your mock tests compare with the pass marks.",
+  "t": "Mira cuánto has avanzado, tu tema más débil, tu porcentaje de aciertos reciente y cómo se comparan tus simulacros con el mínimo para aprobar."
  },
  "2b8eb801ce2d0a49": {
   "src": "Hazard perception clips",
@@ -435,13 +439,13 @@
   "src": "Same number of questions and pass marks as the real test, with results shown section by section.",
   "t": "El mismo número de preguntas y las mismas notas para aprobar que el examen real, con los resultados sección por sección."
  },
- "6f6e21dc2b39e832": {
-  "src": "Watch your pass chance",
-  "t": "Sigue tu probabilidad de aprobar"
+ "581028ff497b26df": {
+  "src": "Check your readiness",
+  "t": "Comprueba tu nivel de preparación"
  },
- "542fa96cc251a783": {
-  "src": "An estimate from your recent answers shows when you're getting close. Then check the official website and book.",
-  "t": "Una estimación basada en tus respuestas recientes te muestra cuándo te estás acercando. Después, consulta el sitio web oficial y reserva tu examen."
+ "9dde5771d714c836": {
+  "src": "The questions you've seen, your recent accuracy and your mock test results against the pass marks show when you're getting close. Then check the official website and book.",
+  "t": "Las preguntas que has visto, tu porcentaje de aciertos reciente y tus resultados en los simulacros frente al mínimo para aprobar te muestran cuándo te estás acercando. Después, consulta el sitio web oficial y reserva tu examen."
  },
  "dfb17c9154143c44": {
   "src": "<t0>Today</t0><t1>VIC</t1>",
@@ -451,9 +455,9 @@
   "src": "days until your test",
   "t": "días para tu examen"
  },
- "3291df378598bb8b": {
-  "src": "pass chance",
-  "t": "probabilidad de aprobar"
+ "fec2e3f1bd153ab7": {
+  "src": "of questions seen",
+  "t": "de las preguntas vistas"
  },
  "987fb2c84141e24d": {
   "src": "TODAY'S PLAN",
@@ -479,9 +483,9 @@
   "src": "<t0><t1>4-day streak</t1></t0><t2>Keep it going</t2>",
   "t": "<t0><t1>Racha de 4 días</t1></t0><t2>Mantenla</t2>"
  },
- "e74a5b45ac560618": {
-  "src": "Illustration of the Today screen with sample data: a countdown, an estimated pass chance and a short daily plan.",
-  "t": "Ilustración de la pantalla Hoy con datos de ejemplo: una cuenta regresiva, una probabilidad estimada de aprobar y un plan diario breve."
+ "e321940086248dbf": {
+  "src": "Illustration of the Today screen with sample data: a countdown, how much of the question pack you've seen and a short daily plan.",
+  "t": "Ilustración de la pantalla Hoy con datos de ejemplo: una cuenta regresiva, cuánto del paquete de preguntas has visto y un plan diario breve."
  },
  "0a70242c48ec679c": {
   "src": "Pricing, plainly",
@@ -495,9 +499,9 @@
   "src": "Every practice question is free for everyone. Free learners get one mock test a day, and another each time they choose to watch a short ad. Premium is a one-time purchase of A$5.99 through Google Play: no subscription, and it covers every state.",
   "t": "Todas las preguntas de práctica son gratis para todos. Con la versión gratuita tienes un simulacro al día, y otro más cada vez que decides ver un anuncio corto. Premium es una compra única de A$5.99 a través de Google Play: sin suscripción, y sirve para todos los estados."
  },
- "1d3169bdd2d53606": {
-  "src": "What is free and what Premium adds",
-  "t": "Qué es gratis y qué agrega Premium"
+ "6f10b223b9fc4553": {
+  "src": "In the Android app: what is free and what Premium adds",
+  "t": "En la app para Android: qué es gratis y qué agrega Premium"
  },
  "297f982dc0de75d4": {
   "src": "Feature",
@@ -523,9 +527,9 @@
   "src": "Daily plan, reviews and progress",
   "t": "Plan diario, repasos y progreso"
  },
- "1bdacd9b175b87c8": {
-  "src": "Estimated pass chance",
-  "t": "Probabilidad estimada de aprobar"
+ "e41915828241557a": {
+  "src": "Readiness: questions seen and recent accuracy",
+  "t": "Nivel de preparación: preguntas vistas y porcentaje de aciertos reciente"
  },
  "972bd2d9392b8273": {
   "src": "Mock tests",
@@ -578,6 +582,10 @@
  "c627a45e2511fda6": {
   "src": "A$5.99 once. No subscription.",
   "t": "A$5.99, un solo pago. Sin suscripción."
+ },
+ "b34e8d5304c49db6": {
+  "src": "<t0>Studying in your browser?</t0> The <t1>web app</t1> is open now and free with an account. It has practice questions with every answer explained (with a daily allowance), one mock test a day, your mistakes to review and your readiness against the pass marks. Premium isn't on sale on the web yet, so the web app's Premium extras (accuracy trend and weak areas) aren't available for now.",
+  "t": "<t0>¿Estudias en tu navegador?</t0> La <t1>app web</t1> ya está abierta y es gratis con una cuenta. Tiene preguntas de práctica (con un límite diario) con cada respuesta explicada, un simulacro al día, tus errores para repasar y tu nivel de preparación frente al mínimo para aprobar. Premium aún no está a la venta en la web, así que los extras de Premium de la app web (tendencia de aciertos y puntos débiles) no están disponibles por ahora."
  },
  "1c3f4ae7a68aea91": {
   "src": "Refunds follow Google Play's refund policy and your rights under the Australian Consumer Law. See the <t0>FAQ</t0> for more.",
@@ -683,13 +691,9 @@
   "src": "Get the app",
   "t": "Consigue la app"
  },
- "046baf6a847ade4e": {
-  "src": "Learners Test Australia: DKT is an Android app. It isn't on Google Play yet. When it is, this button will link straight to the listing. The <t0>download page</t0> has the details, and how to try the app early.",
-  "t": "Learners Test Australia: DKT es una app para Android. Todavía no está en Google Play. Cuando lo esté, este botón llevará directamente a su ficha en la tienda. En la <t0>página de descarga</t0> encontrarás los detalles y cómo probar la app antes de su lanzamiento."
- },
- "7b99c0077e7c4d50": {
-  "src": "<t0><x1/><t2>Coming soon to Google Play</t2></t0>",
-  "t": "<t0><x1/><t2>Próximamente en Google Play</t2></t0>"
+ "5779f02061fc5954": {
+  "src": "Learners Test Australia: DKT is an Android app. It isn't on Google Play yet. When it is, we'll link to the listing here. The <t0>download page</t0> has the details, and how to try the app early.",
+  "t": "Learners Test Australia: DKT es una app para Android. Todavía no está en Google Play. Cuando lo esté, pondremos aquí el enlace a su ficha en la tienda. En la <t0>página de descarga</t0> encontrarás los detalles y cómo probar la app antes de su lanzamiento."
  },
  "5dc0f541e53a43ed": {
   "src": "Learner test practice for every Australian state and territory. An Android app by BlueOrbit.",
@@ -803,9 +807,9 @@
   "src": "Learner Driver App Features | Learners Test Australia",
   "t": "Funciones de la app para aprendices | Learners Test Australia"
  },
- "f1212ae39558473f": {
-  "src": "Tour the Learners Test Australia app: mock tests for all 8 states, explained answers with sources, a daily plan, pass-chance estimate and 3D hazard clips.",
-  "t": "Recorre la app Learners Test Australia: simulacros para los 8 estados, respuestas explicadas con sus fuentes, un plan diario, probabilidad estimada de aprobar y clips de riesgos en 3D."
+ "f0e65cf2870e5cfe": {
+  "src": "Tour the Learners Test Australia app: mock tests for all 8 states, explained answers with sources, a daily plan, readiness tracking and 3D hazard clips.",
+  "t": "Recorre la app Learners Test Australia: simulacros para los 8 estados, respuestas explicadas con sus fuentes, un plan diario, seguimiento de tu preparación y clips de riesgos en 3D."
  },
  "4b7c2ac399640a33": {
   "src": "Home",
@@ -1035,21 +1039,21 @@
   "src": "Illustration of mock test results with sample data: each section shows your score against its pass line.",
   "t": "Ilustración de los resultados de un simulacro con datos de ejemplo: cada sección muestra tu puntuación comparada con su mínimo para aprobar."
  },
- "338222c0c9d31518": {
-  "src": "Progress and an honest pass-chance estimate",
-  "t": "Progreso y una estimación honesta de tu probabilidad de aprobar"
+ "a908efbc30918021": {
+  "src": "Progress and readiness, shown as evidence",
+  "t": "Progreso y nivel de preparación, según tus resultados"
  },
- "710fb0dfd9e7fee7": {
-  "src": "The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. After your first 12 answers (the quick check), the Today screen shows an estimated pass chance.",
-  "t": "La pestaña Progreso muestra cuántas preguntas has respondido y visto, tu racha de estudio, los minutos de estudio de esta semana y tu porcentaje de aciertos reciente. Después de tus primeras 12 respuestas (la prueba rápida), la pantalla Hoy muestra una probabilidad estimada de aprobar."
+ "d5803efbe6d8ee11": {
+  "src": "The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. The Today screen shows how much of the question pack you've seen, and mock test results show your score in each section against its pass mark.",
+  "t": "La pestaña Progreso muestra cuántas preguntas has respondido y visto, tu racha de estudio, los minutos de estudio de esta semana y tu porcentaje de aciertos reciente. La pantalla Hoy muestra cuánto del paquete de preguntas has visto, y los resultados de los simulacros muestran tu puntuación en cada sección frente a su mínimo para aprobar."
  },
- "b5a62b3d2bb61a6d": {
-  "src": "With Premium you also get a forecast for each section (your expected score and the chance of passing that section), your weak spots and a planner for upcoming reviews.",
-  "t": "Con Premium también obtienes una previsión para cada sección (tu puntuación prevista y la probabilidad de aprobar esa sección), tus puntos débiles y un planificador de próximos repasos."
+ "7b83a4ab52899f61": {
+  "src": "With Premium you also get a forecast for each section (your expected score against its pass mark), your weak spots and a planner for upcoming reviews.",
+  "t": "Con Premium también obtienes una previsión para cada sección (tu puntuación prevista frente a su mínimo para aprobar), tus puntos débiles y un planificador de próximos repasos."
  },
- "4937d85cc1ed672f": {
-  "src": "The pass chance is an estimate from your recent answers, not a guarantee. The official test is set by your state's licensing authority.",
-  "t": "La probabilidad de aprobar es una estimación basada en tus respuestas recientes, no una garantía. El examen oficial lo establece la autoridad de licencias de conducir de tu estado."
+ "157a9cdd7fcda409": {
+  "src": "These are signs of how ready you are, from your own answers, not a guarantee. The official test is set by your state's licensing authority.",
+  "t": "Son señales de lo preparado que estás, a partir de tus propias respuestas, no una garantía. El examen oficial lo establece la autoridad de licencias de conducir de tu estado."
  },
  "b01da568cbde2fc5": {
   "src": "Section forecast (Premium)",
@@ -1551,17 +1555,17 @@
   "src": "When will the app be on Google Play?",
   "t": "¿Cuándo estará la app en Google Play?"
  },
- "7c4f0b3ce45981d8": {
-  "src": "Soon. It isn't listed yet, so there is no store link on this site. When it goes live, the “Coming soon to Google Play” button will become a link to the listing.",
-  "t": "Pronto. Todavía no está publicada, así que este sitio no tiene enlace a la tienda. Cuando se publique, el botón “Próximamente en Google Play” se convertirá en un enlace a su ficha."
+ "b4730901f31c33e3": {
+  "src": "Soon. It isn't listed yet, so there is no store link on this site. When it goes live, this site will link to the listing. Until then, you can study in the <t0>web app</t0> in your browser.",
+  "t": "Pronto. Todavía no está publicada, así que este sitio no tiene enlace a la tienda. Cuando se publique, este sitio enlazará a su ficha. Mientras tanto, puedes estudiar en la <t0>app web</t0> desde tu navegador."
  },
- "a54fc71e2aa02494": {
-  "src": "How does the pass-chance estimate work?",
-  "t": "¿Cómo funciona la estimación de la probabilidad de aprobar?"
+ "d9f0a07ff61fcade": {
+  "src": "How do I know when I'm ready for the test?",
+  "t": "¿Cómo sé si ya puedo presentarme al examen?"
  },
- "a91cb3e79f52cdd7": {
-  "src": "After your first 12 answers (the quick check), the app estimates your chance of passing from your recent answers. It is an estimate, not a guarantee. Premium adds a forecast for each section of the test.",
-  "t": "Después de tus primeras 12 respuestas (la prueba rápida), la app estima tu probabilidad de aprobar a partir de tus respuestas recientes. Es una estimación, no una garantía. Premium agrega una previsión para cada sección del examen."
+ "71f253f7d9df51a6": {
+  "src": "Look at the evidence: how many of your state's questions you've seen, your recent accuracy and your mock test results against the pass marks. They are a guide, not a guarantee. Premium adds a forecast for each section of the test.",
+  "t": "Fíjate en los datos: cuántas preguntas de tu estado has visto, tu porcentaje de aciertos reciente y tus resultados en los simulacros frente al mínimo para aprobar. Son una guía, no una garantía. Premium agrega una previsión para cada sección del examen."
  },
  "0abe3cd09338056d": {
   "src": "Does the app include hazard perception practice?",
@@ -2015,9 +2019,13 @@
   "src": "Get it on Android",
   "t": "Consíguela en Android"
  },
- "fdcd3df8a61c9a09": {
-  "src": "The app isn't on Google Play yet. When it is, the button below will open the listing, and this page will say so. You can try it before then: see <t0>try the app early</t0>.",
-  "t": "La app aún no está en Google Play. Cuando lo esté, el botón de abajo abrirá su ficha y esta página lo indicará. Puedes probarla antes: consulta <t0>Prueba la app antes de su lanzamiento</t0>."
+ "57f81920b5dfa47f": {
+  "src": "The app isn't on Google Play yet. When it is, this page will link to the listing. You can try it before then: see <t0>try the app early</t0>.",
+  "t": "La app aún no está en Google Play. Cuando lo esté, esta página enlazará a su ficha. Puedes probarla antes: consulta <t0>Prueba la app antes de su lanzamiento</t0>."
+ },
+ "03a7a08908dfeb60": {
+  "src": "You don't have to wait to start: the <t0>web app</t0> is open now in your browser, free with an account.",
+  "t": "No tienes que esperar para empezar: la <t0>app web</t0> ya está abierta en tu navegador, gratis con una cuenta."
  },
  "720cf8462e35baed": {
   "src": "What you need",
@@ -2051,9 +2059,9 @@
   "src": "One free mock test a day, and another for each short ad you choose to watch.",
   "t": "Un simulacro gratis al día, y otro por cada anuncio corto que decidas ver."
  },
- "c9acc6cc6f73b590": {
-  "src": "A daily study plan, progress tracking and an estimated pass chance.",
-  "t": "Un plan de estudio diario, seguimiento del progreso y una probabilidad estimada de aprobar."
+ "c39c3b665987d10d": {
+  "src": "A daily study plan, progress tracking and your readiness against the pass marks.",
+  "t": "Un plan de estudio diario, seguimiento del progreso y tu nivel de preparación frente al mínimo para aprobar."
  },
  "e78e1fc91c9fd954": {
   "src": "Sample hazard perception practice: 11 of the 72 3D clips and 6 of the 40 still scenes.",
@@ -2355,6 +2363,10 @@
   "src": "Practise with Learners Test Australia",
   "t": "Practica con Learners Test Australia"
  },
+ "0c22277c6954e0ab": {
+  "src": "<t0>Practise NSW in the web app</t0>",
+  "t": "<t0>Practica el examen de NSW en la app web</t0>"
+ },
  "3abbb8544d07bc84": {
   "src": "Related guides",
   "t": "Guías relacionadas"
@@ -2578,6 +2590,10 @@
  "fd5cecd2c0b20484": {
   "src": "<t0>Learner and probationary driver road rules (Transport Victoria)<t1> (official website)</t1></t0>",
   "t": "<t0>Normas de tráfico para conductores aprendices y probatorios (Transport Victoria)<t1> (sitio web oficial)</t1></t0>"
+ },
+ "3f0598e0fd442408": {
+  "src": "<t0>Practise VIC in the web app</t0>",
+  "t": "<t0>Practica el examen de VIC en la app web</t0>"
  },
  "0c0096856147bb22": {
   "src": "QLD Learner Test & PrepL Practice | Learners Test Australia",
@@ -2815,6 +2831,10 @@
   "src": "<t0>Your keys to driving in Queensland (Queensland Government publications)<t1> (official website)</t1></t0>",
   "t": "<t0>Your keys to driving in Queensland (publicaciones del Gobierno de Queensland)<t1> (sitio web oficial)</t1></t0>"
  },
+ "5306d92ddfdae0e1": {
+  "src": "<t0>Practise QLD in the web app</t0>",
+  "t": "<t0>Practica el examen de QLD en la app web</t0>"
+ },
  "d3cf65ffa8c878fd": {
   "src": "SA Learners Test & myLs Practice | Learners Test Australia",
   "t": "Práctica del examen teórico de SA y myLs | Learners Test Australia"
@@ -3022,6 +3042,10 @@
  "a190431399474464": {
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the Government of South Australia, the Department for Infrastructure and Transport or Service SA.",
   "t": "Learners Test Australia es una app de estudio independiente. No está afiliada a ningún gobierno estatal o territorial de Australia, autoridad de licencias ni otro organismo gubernamental, ni cuenta con su respaldo ni tiene relación con ellos. No tiene relación con el Gobierno de Australia Meridional, el Department for Infrastructure and Transport ni Service SA."
+ },
+ "976ae01f2c6959f3": {
+  "src": "<t0>Practise SA in the web app</t0>",
+  "t": "<t0>Practica el examen de SA en la app web</t0>"
  },
  "a0ff025a03634fc0": {
   "src": "<t0>App features</t0>",
@@ -3262,6 +3286,10 @@
  "fc38f6bea25d5312": {
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the Government of Western Australia or the Department of Transport and Major Infrastructure.",
   "t": "Learners Test Australia es una app de estudio independiente. No está afiliada a ningún gobierno estatal o territorial de Australia, autoridad de licencias ni otro organismo gubernamental, ni cuenta con su respaldo ni tiene relación con ellos. No tiene relación con el Gobierno de Australia Occidental ni con el Department of Transport and Major Infrastructure."
+ },
+ "82adbe11b9442966": {
+  "src": "<t0>Practise WA in the web app</t0>",
+  "t": "<t0>Practica el examen de WA en la app web</t0>"
  },
  "64e12656bb56f4ca": {
   "src": "Tasmania Learners Test Practice | Learners Test Australia",
@@ -3515,6 +3543,10 @@
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the Tasmanian Government, Plates Plus, Service Tasmania or Transport Tasmania.",
   "t": "Learners Test Australia es una app de estudio independiente. No está afiliada a ningún gobierno estatal o territorial de Australia, autoridad de licencias ni otro organismo gubernamental, ni cuenta con su respaldo ni tiene relación con ellos. No tiene relación con el Gobierno de Tasmania, Plates Plus, Service Tasmania ni Transport Tasmania."
  },
+ "1c8c400dd85f7929": {
+  "src": "<t0>Practise TAS in the web app</t0>",
+  "t": "<t0>Practica el examen de TAS en la app web</t0>"
+ },
  "c6229f93cd7d7100": {
   "src": "ACT Learners Test Practice | Learners Test Australia",
   "t": "Práctica del examen teórico del ACT | Learners Test Australia"
@@ -3742,6 +3774,10 @@
  "1dbe4dfa3b669f10": {
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the ACT Government, Access Canberra, the Road Transport Authority or any approved course provider, and it is not the ACT course or a replacement for it.",
   "t": "Learners Test Australia es una app de estudio independiente. No está afiliada a ningún gobierno estatal o territorial de Australia, autoridad de licencias ni otro organismo gubernamental, ni cuenta con su respaldo ni tiene relación con ellos. No tiene relación con el Gobierno del ACT, Access Canberra, la Road Transport Authority ni ningún proveedor de cursos aprobado, y no es el curso del ACT ni lo sustituye."
+ },
+ "503d0f2d848fd007": {
+  "src": "<t0>Practise ACT in the web app</t0>",
+  "t": "<t0>Practica el examen de ACT en la app web</t0>"
  },
  "27a78441a22812df": {
   "src": "NT Learners Test Practice | Learners Test Australia",
@@ -3978,5 +4014,9 @@
  "c1a1db34962fede4": {
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the Northern Territory Government, the Motor Vehicle Registry (MVR) or the Registrar of Motor Vehicles.",
   "t": "Learners Test Australia es una app de estudio independiente. No está afiliada a ningún gobierno estatal o territorial de Australia, autoridad de licencias ni otro organismo gubernamental, ni cuenta con su respaldo ni tiene relación con ellos. No tiene relación con el Gobierno del Territorio del Norte, el Motor Vehicle Registry (MVR) ni el Registrar of Motor Vehicles."
+ },
+ "3d12aba8bbd568c0": {
+  "src": "<t0>Practise NT in the web app</t0>",
+  "t": "<t0>Practica el examen de NT en la app web</t0>"
  }
 }

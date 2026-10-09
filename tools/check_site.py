@@ -39,6 +39,9 @@ def lang_of(rel: str) -> str:
 ROOT = Path(__file__).resolve().parent.parent
 BASE = "https://au.learnertest.com/"
 BASE_PATH = "/"
+# The web study app: served at /app/ on this same host by the platform (learnertest-platform), not a file in this repo.
+# The only root-absolute link allowed on every page (sitelib.WEB_APP).
+WEB_APP = "/app/"
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
 STATE_PAGES = (
     "nsw-dkt-practice-test.html", "vic-learner-permit-test-practice.html", "qld-learner-test-practice.html",
@@ -209,6 +212,8 @@ def main() -> int:
             if url.startswith("#"):
                 if url[1:] and url[1:] not in p.ids:
                     err(f"{rel}: missing anchor {url}")
+                continue
+            if url == WEB_APP and tag == "a":
                 continue
             if url.startswith("/") and not (rel == "404.html" and url.startswith(BASE_PATH)):
                 err(f"{rel}: root-relative link {url} (use relative links)")

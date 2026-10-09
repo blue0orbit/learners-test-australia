@@ -19,9 +19,9 @@
   "src": "<t0>Skip to main content</t0>",
   "t": "<t0>Chuyển đến nội dung chính</t0>"
  },
- "11c74ea12f47ccae": {
-  "src": "<x0/><x1/><t2><t3></t3><t4>Menu</t4></t2>",
-  "t": "<x0/><x1/><t2><t3></t3><t4>Menu</t4></t2>"
+ "5ed4261e34dc4dea": {
+  "src": "<x0/><t1><t2></t2><t3>Menu</t3></t1>",
+  "t": "<x0/><t1><t2></t2><t3>Menu</t3></t1>"
  },
  "b9ced53398a50db8": {
   "src": "<t0>Features</t0>",
@@ -47,6 +47,10 @@
   "src": "<t0>Download</t0>",
   "t": "<t0>Tải về</t0>"
  },
+ "1fe3ed4047a8e3f2": {
+  "src": "<t0>Study online</t0>",
+  "t": "<t0>Học trực tuyến</t0>"
+ },
  "ac272d7ea5f15ae4": {
   "src": "Learner driver app for every state and territory",
   "t": "Ứng dụng cho người tập lái ở mọi bang và lãnh thổ"
@@ -59,17 +63,17 @@
   "src": "Learners Test Australia is an Android app by BlueOrbit for learner drivers in all eight Australian states and territories. Choose your state and practise its knowledge test the way it is really set: original questions checked against official sources, every answer explained, and mock tests that show exactly where the pass line is.",
   "t": "Learners Test Australia là ứng dụng Android của BlueOrbit dành cho người tập lái ở cả tám bang và lãnh thổ của Úc. Hãy chọn bang của bạn và luyện bài thi lý thuyết của bang đó đúng như cách thi thật: câu hỏi tự biên soạn và được đối chiếu với các nguồn chính thức, mọi đáp án đều có giải thích, và bài thi thử cho bạn thấy rõ ngưỡng đậu nằm ở đâu."
  },
- "a37fe8c9d81cd44f": {
-  "src": "<t0><x1/><t2>Coming soon to Google Play</t2></t0><t3>See the features</t3>",
-  "t": "<t0><x1/><t2>Sắp có trên Google Play</t2></t0><t3>Xem các tính năng</t3>"
+ "ed6913f8f18a63a7": {
+  "src": "<t0>Study free in your browser<x1/></t0><t2>Pick your state</t2>",
+  "t": "<t0>Học miễn phí trên trình duyệt<x1/></t0><t2>Chọn bang của bạn</t2>"
  },
- "83fe70998390a2c5": {
-  "src": "Android app. Not on Google Play yet: we will add the link here when it is.",
-  "t": "Ứng dụng Android. Hiện chưa có trên Google Play: khi có, chúng tôi sẽ thêm đường dẫn vào đây."
+ "ac31e0c8b0bb69ba": {
+  "src": "<t0>Free:</t0> practice questions and one mock test a day, with a free account. Works on any phone or computer.",
+  "t": "<t0>Miễn phí:</t0> câu hỏi luyện tập và một bài thi thử mỗi ngày, chỉ cần một tài khoản miễn phí. Dùng được trên mọi điện thoại hoặc máy tính."
  },
- "23624278f31593eb": {
-  "src": "Free to practise. One free mock test a day. Optional one-time Premium for A$5.99.",
-  "t": "Luyện tập miễn phí. Mỗi ngày một bài thi thử miễn phí. Premium không bắt buộc, trả một lần A$5.99."
+ "9fa1d0642fa61d33": {
+  "src": "Android app: coming soon to Google Play.",
+  "t": "Ứng dụng Android: sắp có trên Google Play."
  },
  "af5e8986927205d5": {
   "src": "<t0><t1>NSW</t1> Practice</t0><t2>3 of 20</t2>",
@@ -359,13 +363,13 @@
   "src": "A quick check, reviews due, mistakes to fix and new questions, paced to your test date. Spaced repetition brings questions back just before you'd forget them.",
   "t": "Kiểm tra nhanh, các câu cần ôn lại, câu sai cần sửa và câu hỏi mới, được chia nhịp theo ngày thi của bạn. Phương pháp lặp lại ngắt quãng đưa câu hỏi trở lại ngay trước lúc bạn sắp quên."
  },
- "1b88097e9659eb60": {
-  "src": "Progress and pass chance",
-  "t": "Tiến độ và khả năng đậu"
+ "b67720ec296c5e4a": {
+  "src": "Progress and readiness",
+  "t": "Tiến độ và mức độ sẵn sàng"
  },
- "65faa56b9d990cff": {
-  "src": "See how much you've covered, your weakest topic and an estimated pass chance based on your recent answers. It is an estimate, not a guarantee.",
-  "t": "Xem bạn đã học được bao nhiêu, chủ đề bạn yếu nhất và khả năng đậu ước tính dựa trên các câu trả lời gần đây. Đây chỉ là ước tính, không phải sự bảo đảm."
+ "da06ab9a0542faf8": {
+  "src": "See how much you've covered, your weakest topic, your recent accuracy and how your mock tests compare with the pass marks.",
+  "t": "Xem bạn đã học được bao nhiêu, chủ đề bạn yếu nhất, độ chính xác gần đây và kết quả thi thử so với ngưỡng đậu."
  },
  "2b8eb801ce2d0a49": {
   "src": "Hazard perception clips",
@@ -435,13 +439,13 @@
   "src": "Same number of questions and pass marks as the real test, with results shown section by section.",
   "t": "Cùng số câu và điểm đậu như bài thi thật, kết quả được hiển thị theo từng phần."
  },
- "6f6e21dc2b39e832": {
-  "src": "Watch your pass chance",
-  "t": "Theo dõi khả năng đậu"
+ "581028ff497b26df": {
+  "src": "Check your readiness",
+  "t": "Kiểm tra mức độ sẵn sàng"
  },
- "542fa96cc251a783": {
-  "src": "An estimate from your recent answers shows when you're getting close. Then check the official website and book.",
-  "t": "Ước tính dựa trên các câu trả lời gần đây cho bạn biết khi nào bạn đã gần sẵn sàng. Khi đó, hãy xem trang web chính thức và đặt lịch thi."
+ "9dde5771d714c836": {
+  "src": "The questions you've seen, your recent accuracy and your mock test results against the pass marks show when you're getting close. Then check the official website and book.",
+  "t": "Số câu bạn đã xem, độ chính xác gần đây và kết quả thi thử so với ngưỡng đậu cho bạn biết khi nào bạn đã gần sẵn sàng. Khi đó, hãy xem trang web chính thức và đặt lịch thi."
  },
  "dfb17c9154143c44": {
   "src": "<t0>Today</t0><t1>VIC</t1>",
@@ -451,9 +455,9 @@
   "src": "days until your test",
   "t": "ngày nữa là đến ngày thi"
  },
- "3291df378598bb8b": {
-  "src": "pass chance",
-  "t": "khả năng đậu"
+ "fec2e3f1bd153ab7": {
+  "src": "of questions seen",
+  "t": "câu hỏi đã xem"
  },
  "987fb2c84141e24d": {
   "src": "TODAY'S PLAN",
@@ -479,9 +483,9 @@
   "src": "<t0><t1>4-day streak</t1></t0><t2>Keep it going</t2>",
   "t": "<t0><t1>Chuỗi 4 ngày học</t1></t0><t2>Tiếp tục nhé</t2>"
  },
- "e74a5b45ac560618": {
-  "src": "Illustration of the Today screen with sample data: a countdown, an estimated pass chance and a short daily plan.",
-  "t": "Minh họa màn hình Hôm nay với dữ liệu mẫu: đếm ngược đến ngày thi, khả năng đậu ước tính và một kế hoạch học ngắn trong ngày."
+ "e321940086248dbf": {
+  "src": "Illustration of the Today screen with sample data: a countdown, how much of the question pack you've seen and a short daily plan.",
+  "t": "Minh họa màn hình Hôm nay với dữ liệu mẫu: đếm ngược đến ngày thi, bạn đã xem được bao nhiêu phần trong bộ câu hỏi và một kế hoạch học ngắn trong ngày."
  },
  "0a70242c48ec679c": {
   "src": "Pricing, plainly",
@@ -495,9 +499,9 @@
   "src": "Every practice question is free for everyone. Free learners get one mock test a day, and another each time they choose to watch a short ad. Premium is a one-time purchase of A$5.99 through Google Play: no subscription, and it covers every state.",
   "t": "Mọi câu hỏi luyện tập đều miễn phí cho tất cả mọi người. Người dùng miễn phí được làm một bài thi thử mỗi ngày, và thêm một bài nữa mỗi lần chọn xem một quảng cáo ngắn. Premium là gói mua một lần A$5.99 qua Google Play: không phải đăng ký trả phí định kỳ, và áp dụng cho mọi bang."
  },
- "1d3169bdd2d53606": {
-  "src": "What is free and what Premium adds",
-  "t": "Những gì miễn phí và những gì Premium có thêm"
+ "6f10b223b9fc4553": {
+  "src": "In the Android app: what is free and what Premium adds",
+  "t": "Trong ứng dụng Android: những gì miễn phí và những gì Premium có thêm"
  },
  "297f982dc0de75d4": {
   "src": "Feature",
@@ -523,9 +527,9 @@
   "src": "Daily plan, reviews and progress",
   "t": "Kế hoạch hằng ngày, ôn tập và tiến độ"
  },
- "1bdacd9b175b87c8": {
-  "src": "Estimated pass chance",
-  "t": "Khả năng đậu ước tính"
+ "e41915828241557a": {
+  "src": "Readiness: questions seen and recent accuracy",
+  "t": "Mức độ sẵn sàng: số câu đã xem và độ chính xác gần đây"
  },
  "972bd2d9392b8273": {
   "src": "Mock tests",
@@ -578,6 +582,10 @@
  "c627a45e2511fda6": {
   "src": "A$5.99 once. No subscription.",
   "t": "A$5.99, trả một lần. Không đăng ký định kỳ."
+ },
+ "b34e8d5304c49db6": {
+  "src": "<t0>Studying in your browser?</t0> The <t1>web app</t1> is open now and free with an account. It has practice questions with every answer explained (with a daily allowance), one mock test a day, your mistakes to review and your readiness against the pass marks. Premium isn't on sale on the web yet, so the web app's Premium extras (accuracy trend and weak areas) aren't available for now.",
+  "t": "<t0>Bạn muốn học trên trình duyệt?</t0> <t1>Ứng dụng web</t1> đã mở và miễn phí khi có tài khoản. Ứng dụng có câu hỏi luyện tập (có giới hạn mỗi ngày) với lời giải thích cho mọi đáp án, một bài thi thử mỗi ngày, các câu sai để ôn lại và mức độ sẵn sàng của bạn so với ngưỡng đậu. Premium chưa được bán trên web, nên các tính năng Premium của ứng dụng web (xu hướng độ chính xác và điểm yếu) tạm thời chưa dùng được."
  },
  "1c3f4ae7a68aea91": {
   "src": "Refunds follow Google Play's refund policy and your rights under the Australian Consumer Law. See the <t0>FAQ</t0> for more.",
@@ -683,13 +691,9 @@
   "src": "Get the app",
   "t": "Tải ứng dụng"
  },
- "046baf6a847ade4e": {
-  "src": "Learners Test Australia: DKT is an Android app. It isn't on Google Play yet. When it is, this button will link straight to the listing. The <t0>download page</t0> has the details, and how to try the app early.",
-  "t": "Learners Test Australia: DKT là ứng dụng Android. Ứng dụng hiện chưa có trên Google Play. Khi có, nút này sẽ dẫn thẳng đến trang của ứng dụng trên đó. <t0>Trang tải về</t0> có thông tin chi tiết, và cách dùng thử ứng dụng sớm."
- },
- "7b99c0077e7c4d50": {
-  "src": "<t0><x1/><t2>Coming soon to Google Play</t2></t0>",
-  "t": "<t0><x1/><t2>Sắp có trên Google Play</t2></t0>"
+ "5779f02061fc5954": {
+  "src": "Learners Test Australia: DKT is an Android app. It isn't on Google Play yet. When it is, we'll link to the listing here. The <t0>download page</t0> has the details, and how to try the app early.",
+  "t": "Learners Test Australia: DKT là ứng dụng Android. Ứng dụng hiện chưa có trên Google Play. Khi có, chúng tôi sẽ đặt liên kết đến trang của ứng dụng tại đây. <t0>Trang tải về</t0> có thông tin chi tiết, và cách dùng thử ứng dụng sớm."
  },
  "5dc0f541e53a43ed": {
   "src": "Learner test practice for every Australian state and territory. An Android app by BlueOrbit.",
@@ -803,9 +807,9 @@
   "src": "Learner Driver App Features | Learners Test Australia",
   "t": "Tính năng ứng dụng luyện thi bằng lái | Learners Test Australia"
  },
- "f1212ae39558473f": {
-  "src": "Tour the Learners Test Australia app: mock tests for all 8 states, explained answers with sources, a daily plan, pass-chance estimate and 3D hazard clips.",
-  "t": "Tìm hiểu ứng dụng Learners Test Australia: thi thử cho cả 8 bang và lãnh thổ, đáp án giải thích kèm nguồn, kế hoạch học mỗi ngày, ước tính khả năng đậu và đoạn phim nhận biết nguy hiểm 3D."
+ "f0e65cf2870e5cfe": {
+  "src": "Tour the Learners Test Australia app: mock tests for all 8 states, explained answers with sources, a daily plan, readiness tracking and 3D hazard clips.",
+  "t": "Tìm hiểu ứng dụng Learners Test Australia: thi thử cho cả 8 bang và lãnh thổ, đáp án giải thích kèm nguồn, kế hoạch học mỗi ngày, theo dõi mức sẵn sàng và đoạn phim nhận biết nguy hiểm 3D."
  },
  "4b7c2ac399640a33": {
   "src": "Home",
@@ -1035,21 +1039,21 @@
   "src": "Illustration of mock test results with sample data: each section shows your score against its pass line.",
   "t": "Minh họa kết quả thi thử với dữ liệu mẫu: mỗi phần hiển thị điểm của bạn so với ngưỡng đậu."
  },
- "338222c0c9d31518": {
-  "src": "Progress and an honest pass-chance estimate",
-  "t": "Tiến độ và ước tính khả năng đậu trung thực"
+ "a908efbc30918021": {
+  "src": "Progress and readiness, shown as evidence",
+  "t": "Tiến độ và mức độ sẵn sàng, dựa trên kết quả thực tế"
  },
- "710fb0dfd9e7fee7": {
-  "src": "The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. After your first 12 answers (the quick check), the Today screen shows an estimated pass chance.",
-  "t": "Thẻ Tiến độ cho thấy bạn đã trả lời và đã xem bao nhiêu câu, chuỗi ngày học, số phút đã học trong tuần này và độ chính xác gần đây. Sau 12 câu trả lời đầu tiên (bài kiểm tra nhanh), màn hình Hôm nay sẽ hiển thị khả năng đậu ước tính."
+ "d5803efbe6d8ee11": {
+  "src": "The Progress tab shows how many questions you've answered and seen, your study streak, minutes studied this week and your recent accuracy. The Today screen shows how much of the question pack you've seen, and mock test results show your score in each section against its pass mark.",
+  "t": "Thẻ Tiến độ cho thấy bạn đã trả lời và đã xem bao nhiêu câu, chuỗi ngày học, số phút đã học trong tuần này và độ chính xác gần đây. Màn hình Hôm nay cho thấy bạn đã xem được bao nhiêu phần trong bộ câu hỏi, và kết quả thi thử cho thấy điểm của bạn ở từng phần so với ngưỡng đậu của phần đó."
  },
- "b5a62b3d2bb61a6d": {
-  "src": "With Premium you also get a forecast for each section (your expected score and the chance of passing that section), your weak spots and a planner for upcoming reviews.",
-  "t": "Với Premium, bạn còn có dự báo cho từng phần (điểm dự kiến và khả năng đạt phần đó), điểm yếu của bạn và lịch cho các lượt ôn tập sắp tới."
+ "7b83a4ab52899f61": {
+  "src": "With Premium you also get a forecast for each section (your expected score against its pass mark), your weak spots and a planner for upcoming reviews.",
+  "t": "Với Premium, bạn còn có dự báo cho từng phần (điểm dự kiến so với ngưỡng đậu của phần đó), điểm yếu của bạn và lịch cho các lượt ôn tập sắp tới."
  },
- "4937d85cc1ed672f": {
-  "src": "The pass chance is an estimate from your recent answers, not a guarantee. The official test is set by your state's licensing authority.",
-  "t": "Khả năng đậu là ước tính dựa trên các câu trả lời gần đây, không phải sự bảo đảm. Bài thi chính thức do cơ quan cấp bằng lái của bang bạn ra đề."
+ "157a9cdd7fcda409": {
+  "src": "These are signs of how ready you are, from your own answers, not a guarantee. The official test is set by your state's licensing authority.",
+  "t": "Đây là những dấu hiệu cho thấy bạn đã sẵn sàng đến đâu, dựa trên chính các câu trả lời của bạn, không phải sự bảo đảm. Bài thi chính thức do cơ quan cấp bằng lái của bang bạn ra đề."
  },
  "b01da568cbde2fc5": {
   "src": "Section forecast (Premium)",
@@ -1551,17 +1555,17 @@
   "src": "When will the app be on Google Play?",
   "t": "Khi nào ứng dụng có trên Google Play?"
  },
- "7c4f0b3ce45981d8": {
-  "src": "Soon. It isn't listed yet, so there is no store link on this site. When it goes live, the “Coming soon to Google Play” button will become a link to the listing.",
-  "t": "Sắp có. Ứng dụng chưa được đăng lên cửa hàng, nên trang web này chưa có liên kết đến cửa hàng. Khi ứng dụng ra mắt, nút “Sắp có trên Google Play” sẽ trở thành liên kết đến trang của ứng dụng."
+ "b4730901f31c33e3": {
+  "src": "Soon. It isn't listed yet, so there is no store link on this site. When it goes live, this site will link to the listing. Until then, you can study in the <t0>web app</t0> in your browser.",
+  "t": "Sắp có. Ứng dụng chưa được đăng lên cửa hàng, nên trang web này chưa có liên kết đến cửa hàng. Khi ứng dụng ra mắt, trang web này sẽ liên kết đến trang của ứng dụng. Trong lúc chờ, bạn có thể học trên <t0>ứng dụng web</t0> ngay trong trình duyệt."
  },
- "a54fc71e2aa02494": {
-  "src": "How does the pass-chance estimate work?",
-  "t": "Ước tính khả năng đậu hoạt động thế nào?"
+ "d9f0a07ff61fcade": {
+  "src": "How do I know when I'm ready for the test?",
+  "t": "Làm sao để biết tôi đã sẵn sàng đi thi?"
  },
- "a91cb3e79f52cdd7": {
-  "src": "After your first 12 answers (the quick check), the app estimates your chance of passing from your recent answers. It is an estimate, not a guarantee. Premium adds a forecast for each section of the test.",
-  "t": "Sau 12 câu trả lời đầu tiên (bài kiểm tra nhanh), ứng dụng sẽ ước tính khả năng đậu dựa trên các câu trả lời gần đây. Đây chỉ là ước tính, không phải sự bảo đảm. Premium có thêm dự báo cho từng phần của bài thi."
+ "71f253f7d9df51a6": {
+  "src": "Look at the evidence: how many of your state's questions you've seen, your recent accuracy and your mock test results against the pass marks. They are a guide, not a guarantee. Premium adds a forecast for each section of the test.",
+  "t": "Hãy nhìn vào kết quả thực tế: bạn đã xem bao nhiêu câu hỏi của bang mình, độ chính xác gần đây và kết quả thi thử so với ngưỡng đậu. Đây là chỉ dẫn tham khảo, không phải sự bảo đảm. Premium có thêm dự báo cho từng phần của bài thi."
  },
  "0abe3cd09338056d": {
   "src": "Does the app include hazard perception practice?",
@@ -2015,9 +2019,13 @@
   "src": "Get it on Android",
   "t": "Tải trên Android"
  },
- "fdcd3df8a61c9a09": {
-  "src": "The app isn't on Google Play yet. When it is, the button below will open the listing, and this page will say so. You can try it before then: see <t0>try the app early</t0>.",
-  "t": "Ứng dụng hiện chưa có trên Google Play. Khi có, nút bên dưới sẽ mở trang của ứng dụng, và trang này sẽ thông báo. Bạn có thể dùng thử trước đó: xem <t0>dùng thử ứng dụng sớm</t0>."
+ "57f81920b5dfa47f": {
+  "src": "The app isn't on Google Play yet. When it is, this page will link to the listing. You can try it before then: see <t0>try the app early</t0>.",
+  "t": "Ứng dụng hiện chưa có trên Google Play. Khi có, trang này sẽ liên kết đến trang của ứng dụng. Bạn có thể dùng thử trước đó: xem <t0>dùng thử ứng dụng sớm</t0>."
+ },
+ "03a7a08908dfeb60": {
+  "src": "You don't have to wait to start: the <t0>web app</t0> is open now in your browser, free with an account.",
+  "t": "Bạn không cần chờ mới bắt đầu được: <t0>ứng dụng web</t0> đã mở ngay trên trình duyệt, miễn phí khi có tài khoản."
  },
  "720cf8462e35baed": {
   "src": "What you need",
@@ -2051,9 +2059,9 @@
   "src": "One free mock test a day, and another for each short ad you choose to watch.",
   "t": "Mỗi ngày một bài thi thử miễn phí, và thêm một bài cho mỗi quảng cáo ngắn bạn chọn xem."
  },
- "c9acc6cc6f73b590": {
-  "src": "A daily study plan, progress tracking and an estimated pass chance.",
-  "t": "Kế hoạch học hằng ngày, theo dõi tiến độ và khả năng đậu ước tính."
+ "c39c3b665987d10d": {
+  "src": "A daily study plan, progress tracking and your readiness against the pass marks.",
+  "t": "Kế hoạch học hằng ngày, theo dõi tiến độ và mức độ sẵn sàng của bạn so với ngưỡng đậu."
  },
  "e78e1fc91c9fd954": {
   "src": "Sample hazard perception practice: 11 of the 72 3D clips and 6 of the 40 still scenes.",
@@ -2355,6 +2363,10 @@
   "src": "Practise with Learners Test Australia",
   "t": "Luyện thi với Learners Test Australia"
  },
+ "0c22277c6954e0ab": {
+  "src": "<t0>Practise NSW in the web app</t0>",
+  "t": "<t0>Luyện thi NSW trên ứng dụng web</t0>"
+ },
  "3abbb8544d07bc84": {
   "src": "Related guides",
   "t": "Hướng dẫn liên quan"
@@ -2578,6 +2590,10 @@
  "fd5cecd2c0b20484": {
   "src": "<t0>Learner and probationary driver road rules (Transport Victoria)<t1> (official website)</t1></t0>",
   "t": "<t0>Learner and probationary driver road rules (luật giao thông cho người có bằng L và P, Transport Victoria)<t1> (trang web chính thức)</t1></t0>"
+ },
+ "3f0598e0fd442408": {
+  "src": "<t0>Practise VIC in the web app</t0>",
+  "t": "<t0>Luyện thi VIC trên ứng dụng web</t0>"
  },
  "0c0096856147bb22": {
   "src": "QLD Learner Test & PrepL Practice | Learners Test Australia",
@@ -2815,6 +2831,10 @@
   "src": "<t0>Your keys to driving in Queensland (Queensland Government publications)<t1> (official website)</t1></t0>",
   "t": "<t0>Your keys to driving in Queensland (sổ tay lái xe, trang ấn phẩm của Chính phủ Queensland)<t1> (trang web chính thức)</t1></t0>"
  },
+ "5306d92ddfdae0e1": {
+  "src": "<t0>Practise QLD in the web app</t0>",
+  "t": "<t0>Luyện thi QLD trên ứng dụng web</t0>"
+ },
  "d3cf65ffa8c878fd": {
   "src": "SA Learners Test & myLs Practice | Learners Test Australia",
   "t": "Luyện thi lý thuyết bằng L SA và myLs | Learners Test Australia"
@@ -3022,6 +3042,10 @@
  "a190431399474464": {
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the Government of South Australia, the Department for Infrastructure and Transport or Service SA.",
   "t": "Learners Test Australia là ứng dụng học tập độc lập. Ứng dụng không trực thuộc, không được xác nhận bởi và không có liên hệ với bất kỳ chính quyền tiểu bang hay vùng lãnh thổ nào của Úc, cơ quan cấp bằng lái hay cơ quan nhà nước nào khác. Ứng dụng không liên quan đến Chính phủ Nam Úc, Department for Infrastructure and Transport (Bộ Hạ tầng và Giao thông) hay Service SA."
+ },
+ "976ae01f2c6959f3": {
+  "src": "<t0>Practise SA in the web app</t0>",
+  "t": "<t0>Luyện thi SA trên ứng dụng web</t0>"
  },
  "a0ff025a03634fc0": {
   "src": "<t0>App features</t0>",
@@ -3262,6 +3286,10 @@
  "fc38f6bea25d5312": {
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the Government of Western Australia or the Department of Transport and Major Infrastructure.",
   "t": "Learners Test Australia là ứng dụng học tập độc lập. Ứng dụng không trực thuộc, không được xác nhận bởi và không có liên hệ với bất kỳ chính quyền tiểu bang hay vùng lãnh thổ nào của Úc, cơ quan cấp bằng lái hay cơ quan nhà nước nào khác. Ứng dụng không liên quan đến Chính phủ Tây Úc hay Department of Transport and Major Infrastructure."
+ },
+ "82adbe11b9442966": {
+  "src": "<t0>Practise WA in the web app</t0>",
+  "t": "<t0>Luyện thi WA trên ứng dụng web</t0>"
  },
  "64e12656bb56f4ca": {
   "src": "Tasmania Learners Test Practice | Learners Test Australia",
@@ -3515,6 +3543,10 @@
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the Tasmanian Government, Plates Plus, Service Tasmania or Transport Tasmania.",
   "t": "Learners Test Australia là ứng dụng học tập độc lập. Ứng dụng không trực thuộc, không được xác nhận bởi và không có liên hệ với bất kỳ chính quyền tiểu bang hay vùng lãnh thổ nào của Úc, cơ quan cấp bằng lái hay cơ quan nhà nước nào khác. Ứng dụng không liên quan đến Chính phủ Tasmania, Plates Plus, Service Tasmania hay Transport Tasmania."
  },
+ "1c8c400dd85f7929": {
+  "src": "<t0>Practise TAS in the web app</t0>",
+  "t": "<t0>Luyện thi TAS trên ứng dụng web</t0>"
+ },
  "c6229f93cd7d7100": {
   "src": "ACT Learners Test Practice | Learners Test Australia",
   "t": "Luyện thi lý thuyết bằng L ACT (Canberra) | Learners Test Australia"
@@ -3742,6 +3774,10 @@
  "1dbe4dfa3b669f10": {
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the ACT Government, Access Canberra, the Road Transport Authority or any approved course provider, and it is not the ACT course or a replacement for it.",
   "t": "Learners Test Australia là ứng dụng học tập độc lập. Ứng dụng không trực thuộc, không được xác nhận bởi và không có liên hệ với bất kỳ chính quyền tiểu bang hay vùng lãnh thổ nào của Úc, cơ quan cấp bằng lái hay cơ quan nhà nước nào khác. Ứng dụng không liên quan đến Chính phủ ACT, Access Canberra, Road Transport Authority (Cơ quan Giao thông Đường bộ) hay bất kỳ đơn vị đào tạo được phê duyệt nào, và không phải là khóa học của ACT hay thứ thay thế cho khóa học đó."
+ },
+ "503d0f2d848fd007": {
+  "src": "<t0>Practise ACT in the web app</t0>",
+  "t": "<t0>Luyện thi ACT trên ứng dụng web</t0>"
  },
  "27a78441a22812df": {
   "src": "NT Learners Test Practice | Learners Test Australia",
@@ -3978,5 +4014,9 @@
  "c1a1db34962fede4": {
   "src": "Learners Test Australia is an independent study app. It is not affiliated with, endorsed by or connected to any Australian state or territory government, licensing authority or other government agency. It is not connected to the Northern Territory Government, the Motor Vehicle Registry (MVR) or the Registrar of Motor Vehicles.",
   "t": "Learners Test Australia là ứng dụng học tập độc lập. Ứng dụng không trực thuộc, không được xác nhận bởi và không có liên hệ với bất kỳ chính quyền tiểu bang hay vùng lãnh thổ nào của Úc, cơ quan cấp bằng lái hay cơ quan nhà nước nào khác. Ứng dụng không liên quan đến Chính phủ Lãnh thổ Bắc Úc, Motor Vehicle Registry (MVR) hay Registrar of Motor Vehicles (cơ quan quản lý đăng ký xe cơ giới)."
+ },
+ "3d12aba8bbd568c0": {
+  "src": "<t0>Practise NT in the web app</t0>",
+  "t": "<t0>Luyện thi NT trên ứng dụng web</t0>"
  }
 }

@@ -23,8 +23,12 @@ BASE_PATH = "/"
 ADMOB_PUBLISHER = "pub-1798960414758701"
 # IndexNow key (public by design): the key file at the site root proves we own the URLs we submit
 INDEXNOW_KEY = "02adf338491ab11d8179dbdec8da3278"
-# Google Play listing. None until the app is public: then store buttons show "Coming soon" with no link.
+# Google Play listing. None until the app is public: then the store button is a plain line of text, "Android app: coming
+# soon to Google Play." (no button, no link).
 PLAY_URL: str | None = None
+# The web study app. The platform (learnertest-platform) serves it at /app/ on this same host; it is not a file in this
+# repo. Root-absolute on purpose (the site is served at the host root); tools/check_site.py accepts exactly this path.
+WEB_APP = "/app/"
 # Our other app (same developer), linked from the footer, about and download pages
 DTT_URL = "https://dttireland.com/"
 DTT_PLAY = "https://play.google.com/store/apps/details?id=com.app.dttireland"
@@ -206,7 +210,7 @@ def mobile_application() -> dict:
             "Northern Territory driver knowledge test practice (30 questions)",
             "Explained answers with handbook page or road rule references",
             "Daily study plan with spaced reviews",
-            "Progress tracking and an estimated pass chance",
+            "Progress tracking and readiness against the pass marks",
             "Study streak and six badges",
             "Hazard perception practice: 72 real-time 3D driving clips and still traffic scenes",
             "English, Simplified Chinese, Arabic, Vietnamese and Spanish",
@@ -327,26 +331,21 @@ def ext(url: str, text: str) -> str:
 _soon_count = [0]
 
 
-def coming_soon(extra_cls: str = "", beside: str = "") -> str:
-    """A disabled, non-link 'Coming soon' control. There is deliberately no store link or Play badge.
-    `beside` is optional HTML (e.g. a secondary button) shown next to it."""
-    _soon_count[0] += 1
-    nid = f"soon-note-{_soon_count[0]}"
+def coming_soon(extra_cls: str = "") -> str:
+    """Where the Android app's store button goes. Until the app is public on Google Play (PLAY_URL is None) this is a
+    plain line of text, not a button, a disabled button or a link: there is deliberately no store link or Play badge."""
     if PLAY_URL:
+        _soon_count[0] += 1
+        nid = f"soon-note-{_soon_count[0]}"
         return (
             f'<div class="store-soon {extra_cls}"><div class="btn-row">'
             f'<a class="btn btn-primary" href="{esc(PLAY_URL)}" rel="noopener" aria-describedby="{nid}">'
-            f'{icon("phone")}<span>Get it on Google Play</span></a>{beside}</div>'
+            f'{icon("phone")}<span>Get it on Google Play</span></a></div>'
             f'<p id="{nid}" class="store-soon-note">Free Android app, for Android 8.0 or later.</p>'
             f"</div>"
         )
-    return (
-        f'<div class="store-soon {extra_cls}"><div class="btn-row">'
-        f'<button type="button" class="btn btn-soon" disabled aria-describedby="{nid}">'
-        f'{icon("phone")}<span>Coming soon to Google Play</span></button>{beside}</div>'
-        f'<p id="{nid}" class="store-soon-note">Android app. Not on Google Play yet: we will add the link here when it is.</p>'
-        f"</div>"
-    )
+    cls = f"store-soon soon-line {extra_cls}".strip()
+    return f'<p class="{cls}">Android app: coming soon to Google Play.</p>'
 
 
 def source_box(links: list[tuple[str, str]], note: str | None = None, title: str = "Check the official source") -> str:
@@ -452,14 +451,17 @@ def header_html(page: Page) -> str:
     for key, label, path in NAV:
         cur = ' aria-current="page"' if page.nav == key else ""
         items.append(f'<li><a href="@/{path}"{cur}>{label}</a></li>')
+    # Source order = desktop reading order (brand, menu, language, "Study online"). On phones the CSS shows the brand,
+    # "Study online" and the menu button on one row, and the language menu inside the opened menu.
     return (
         '<header class="site-header on-dark"><div class="container header-inner">'
         f'<a class="brand" href="@/" translate="no">{plate_svg(34)}<span class="brand-text">Learners Test '
         '<span class="brand-accent">Australia</span></span></a>'
-        "<!--LANG-SWITCH-->"
         '<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">'
         '<span class="nav-toggle-bars" aria-hidden="true"></span><span class="nav-toggle-label">Menu</span></button>'
         f'<nav id="site-nav" class="site-nav" aria-label="Main"><ul>{"".join(items)}</ul></nav>'
+        "<!--LANG-SWITCH-->"
+        f'<a class="btn btn-primary header-cta" href="{WEB_APP}">Study online</a>'
         "</div></header>"
     )
 
