@@ -1,7 +1,7 @@
 """Privacy policy, cookie policy, terms of service and account deletion pages.
 
 The privacy policy and terms mirror the in-app text in app/src/main/res/values/strings.xml
-(privacy_* strings, last updated 30 September 2026; tos_* strings, last updated 6 October 2026). Keep them
+(privacy_* and tos_* strings, both last updated 9 October 2026, app build 16, 0.16.0). Keep them
 word-for-word in sync with the app: only headings and HTML structure are added here, plus website-only sections at
 the end (privacy: "This website" and "The web app"; terms: "Web study app"), which the callout above each page
 mentions. The web app sections describe the web study app at au.learnertest.com/app/, which is not part of this repo.
@@ -38,45 +38,52 @@ def privacy() -> Page:
 {legal_intro("privacy policy", "Settings → Privacy policy", "sections on this website and the web app")}
 
 <h2 id="overview">Overview</h2>
-<p>Learners Test Australia is an independent study app that helps you prepare for an Australian learner driver knowledge test. It is not affiliated with any government, transport or licensing agency.</p>
+<p>Learners Test Australia is an independent study app by blue0orbit, a sole trader (“we”, “us”), that helps you prepare for an Australian learner driver knowledge test. It is not affiliated with any government, transport or licensing agency.</p>
 <p>This policy explains what the app collects, why, and the choices you have. Questions: {MAIL}.</p>
 
 <h2 id="information-we-collect">Information we collect</h2>
-<p><strong>Account:</strong> when you sign in with Google, Facebook or email, we receive your name and email address.</p>
+<p><strong>Account:</strong> when you sign in, we receive your name, your email address and a user ID from Google Firebase Authentication. You can sign in with Google, or with an email address and password (Firebase handles your password; we never see it). Where the app offers it, you can also sign in with Facebook. If you agree to tips and offers by email, we store that choice and when you made it.</p>
 <p><strong>Study data:</strong> your answers, completed practice sessions and mock tests, saved questions and the state you study for. This is stored on your device and in your account so it follows you to a new phone. Your test date and reminder settings stay on your device.</p>
-<p><strong>If you allow “Help improve the app”:</strong> anonymous usage statistics and crash reports (device model, Android version, app version, screens used).</p>
-<p><strong>Ads:</strong> the free version shows ads. Ad providers may use your device’s advertising ID. Where the law requires it (for example in the EEA and UK), Google asks for your consent first, and you can change it in Settings.</p>
+<p id="premium-purchases"><strong>Premium purchases:</strong> Google Play handles the payment, and we never see your card or payment details. When you buy Premium, the app adds a one-way hash of your account’s user ID to the purchase, and Google Play keeps it with its record of the purchase. This ties the purchase to your learner account. The app checks your purchases with Google Play on your phone.</p>
+<p id="purchase-checks"><strong>Purchase checks on our server (being introduced, not switched on yet):</strong> we are introducing a purchase-checking service that we run, planned on Google Cloud. The app already contains the code for it, but it is switched off. Once we switch it on, after a purchase and when the app starts, the app will send your Google Play purchase tokens and product IDs to this service, with a sign-in token that identifies your account and an App Check token. The service checks each purchase with Google Play, links it to the first account that verified it, receives refund notices from Google Play, and keeps your Premium record in your account in our Firebase project: the features unlocked, a revision number, an end time for any time-limited pass, and when the record was worked out. The app reads this record, and only the service can change it. Premium bought with the same account on another of our services is then honoured in the app too. Until then, purchases are checked on your phone only. Extra mock tests earned by watching an ad always stay on your phone and are never sent to this service.</p>
+<p><strong>App protection:</strong> to keep our cloud database for the genuine app, the app uses Firebase App Check with Google Play Integrity. Google checks that the app and your device are genuine, and the app sends the resulting token with its requests to Firebase.</p>
+<p><strong>Push messages:</strong> Firebase Cloud Messaging gives the app a push token, so we can send announcements to all learners or to learners in one state. You receive them only if notifications are on.</p>
+<p><strong>If you allow “Help improve the app”:</strong> usage statistics (screens viewed, features used, the state you study for, test results and the app language) with an app instance ID, your device model, Android version, app version and approximate location (country, region or city), plus crash reports and performance data (such as app start time and how long network requests take). They are not linked to your name, email address or user ID, and analytics never collects your advertising ID.</p>
+<p id="ads"><strong>Ads:</strong> the free version shows banner ads from Google AdMob on results and guide pages, and you can choose to watch a rewarded video from Unity Ads to get an extra mock test. Ad providers receive your device’s advertising ID, IP address (from which they estimate your general location), device information and how you interact with ads. Ads are requested only after Google’s consent tool has checked whether consent is needed where you are. Where the law requires it (for example in the EEA, the UK and Switzerland), Google asks you first: ads are personalised only if you agree. You can change your choice in Settings → Ad privacy choices, which appears where it applies to you. Elsewhere, ads may be personalised. You can reset or delete your advertising ID in your phone’s settings at any time.</p>
 
 <h2 id="how-we-use-your-data">How we use your data</h2>
 <p>We use your data to:</p>
 <ul>
   <li>Create your account and keep your progress in sync</li>
   <li>Build your daily plan, reviews and pass-chance estimate</li>
+  <li>Check and restore your Premium purchase, and stop one purchase being used by several accounts</li>
+  <li>Protect the app and our cloud database from abuse</li>
   <li>Send study reminders and announcements, if you turn them on</li>
   <li>Send tips and offers by email, only if you opt in (unsubscribe any time)</li>
   <li>Show ads in the free version</li>
   <li>Fix crashes and improve the app, if you allow it</li>
 </ul>
-<p>We never sell your personal information.</p>
+<p>We don’t sell your name, email address or study data. Ad providers may use your advertising ID as described above.</p>
 
 <h2 id="third-party-services">Third-party services</h2>
 <p>The app uses these services, each with its own privacy policy:</p>
 <ul>
-  <li>Google Firebase — sign-in, cloud storage of progress, analytics, crash reports, push messages and remote settings</li>
+  <li>Google Firebase — sign-in, cloud storage of progress, analytics, crash and performance reports, push messages, remote settings and app protection (App Check)</li>
+  <li>Google Play — Premium purchases and purchase checks, Play Integrity checks and in-app ratings (we never see your payment details)</li>
   <li>Google AdMob — banner ads (free version)</li>
   <li>Unity Ads — optional rewarded video ads (free version)</li>
   <li>Google User Messaging Platform — ad consent where required</li>
-  <li>Google Play Billing — the Premium purchase (we never see your payment details)</li>
-  <li>Facebook Login — optional sign-in</li>
+  <li>Facebook Login — optional sign-in, where the app offers it</li>
 </ul>
+<p>Some of these providers store or process data outside Australia, for example in the United States.</p>
 
 <h2 id="data-protection-and-retention">Data protection &amp; retention</h2>
-<p>Your data is shared only with the providers above, and only as needed to run the app. Data is sent over encrypted connections, and your cloud data can only be read by your own account.</p>
-<p>We keep your data while your account exists. Delete your account in Settings and your cloud progress and profile are deleted straight away; copies in the providers’ backups are removed within 30 days. You can also email us to ask for deletion.</p>
+<p>We share your data only with the providers above, for the purposes in this policy. Data is sent over encrypted connections, and your cloud progress and profile can only be read by your own account. Once our purchase service is switched on, your Premium record can be read only by your account and changed only by the service.</p>
+<p>We keep your data while your account exists. Delete your account in Settings and your cloud progress, profile and sign-in are deleted straight away; Google then removes them from its backup systems, which Google says can take up to 180 days. Once our purchase service is switched on, deleting your account also deletes your Premium record. Firebase keeps crash reports for 90 days. Google Play keeps its own record of your purchases under its own policies. You can also email us to ask for deletion.</p>
 
 <h2 id="your-rights">Your rights</h2>
 <p><strong>Australia:</strong> we handle personal information under the Australian Privacy Principles (Privacy Act 1988). You can ask to access or correct your information, or complain, by emailing us. If you are not satisfied with our response you can contact the Office of the Australian Information Commissioner (<a href="https://www.oaic.gov.au/" rel="noopener">oaic.gov.au</a>).</p>
-<p><strong>EEA and UK:</strong> you have rights to access, correct, delete, restrict and port your data and to object to processing. We rely on your consent for analytics, marketing email and personalised ads, and on our contract with you to run your account.</p>
+<p><strong>EEA and UK:</strong> you have rights to access, correct, delete, restrict and port your data, to object to processing, and to withdraw your consent at any time (in Settings or by emailing us). We rely on your consent for analytics, marketing email and personalised ads, and on our contract with you to run your account and check your purchases.</p>
 <p><strong>Children:</strong> the app is for people preparing for a learner licence, usually 15 and over. It is not directed at children under 13, and we do not knowingly collect their data.</p>
 <p><strong>Changes:</strong> if we change this policy in an important way, we will tell you in the app first.</p>
 
@@ -207,15 +214,17 @@ signs you out but doesn't delete the progress saved to your account; to delete t
 <h3>Google Firebase</h3>
 <ul>
   <li><strong>Sign-in and cloud storage of progress:</strong> needed for your account and to keep your progress in sync.</li>
-  <li><strong>Analytics and crash reports:</strong> anonymous usage statistics and crash reports, only if you allow “Help improve the app”. You can switch this on or off in the app's Settings, under Privacy.</li>
+  <li><strong>Analytics and crash reports:</strong> usage statistics and crash reports with an app instance ID, not linked to your name, email address or user ID, only if you allow “Help improve the app”. You can switch this on or off in the app's Settings, under Privacy.</li>
   <li><strong>Push messages:</strong> Firebase Cloud Messaging gives your phone a push token so the app can receive announcements. You can turn notifications off in Android settings at any time.</li>
   <li><strong>Remote settings:</strong> lets us adjust some app settings without an update.</li>
+  <li><strong>App protection:</strong> Firebase App Check with Google Play Integrity checks that requests to our cloud database come from the genuine app on a genuine device.</li>
 </ul>
 
 <h3>Advertising identifiers (free version)</h3>
 <p>The free version shows banner ads from Google AdMob and optional rewarded video ads from Unity Ads. These ad
-providers may use your device's advertising ID. Where the law requires it (for example in the EEA and UK), Google's
-User Messaging Platform asks for your consent first. Premium removes ads.</p>
+providers may use your device's advertising ID. Ads are requested only after Google's User Messaging Platform has
+checked whether consent is needed where you are. Where the law requires it (for example in the EEA, the UK and
+Switzerland), it asks for your consent first: ads are personalised only if you agree. Premium removes ads.</p>
 <p><strong>To change your ad choices in the app:</strong> open Settings → Ad privacy choices. This option appears
 where a consent choice applies to you.</p>
 
@@ -294,7 +303,8 @@ def terms() -> Page:
 <h2 id="billing">5. Premium &amp; Billing</h2>
 <p>Some features are available through a one-time purchase (“Premium”). Premium is a lifetime purchase: there are no subscriptions or renewals.</p>
 <p>Purchases are processed by Google Play under its terms of sale. We never see or store your payment details.</p>
-<p>Refunds follow Google Play’s refund policy and your rights under the Australian Consumer Law.</p>
+<p>Premium belongs to the learner account you were signed in with when you bought it, so other accounts on the same phone don’t get it. At present the app checks it with Google Play on your phone, so the Google Play account that paid must be on that phone too.</p>
+<p>Refunds follow Google Play’s refund policy and your rights under the Australian Consumer Law. A refunded purchase no longer unlocks Premium.</p>
 <p>If Premium is not showing after you bought it, open Settings → Premium → Restore purchase, or email {MAIL}.</p>
 
 <h2 id="acceptable-use">6. Acceptable Use</h2>
@@ -310,7 +320,7 @@ def terms() -> Page:
 <p>We reserve the right to suspend or terminate your account if we determine, in our sole discretion, that you have violated these Terms.</p>
 
 <h2 id="intellectual-property">7. Intellectual Property</h2>
-<p>All content in the App — including practice questions, explanations, illustrations, icons, text and software — is owned by or licensed to the developer and protected by intellectual property laws. Questions are written for the App and checked against official handbooks; official material is referenced, not reproduced.</p>
+<p>All content in the App — including practice questions, explanations, illustrations, icons, text and software — is owned by or licensed to the developer and protected by intellectual property laws. Questions are written for the App and checked against official sources (handbooks, legislation and government pages, listed under Settings, Official sources and licences); official material is referenced, not reproduced.</p>
 <p>You may use the App for your own personal, non-commercial study. You may not copy, sell or distribute its content.</p>
 <p>The Learners Test Australia name and logo belong to the developer.</p>
 
@@ -326,7 +336,7 @@ def terms() -> Page:
 <h2 id="termination">10. Termination</h2>
 <p>We may suspend or end access to the App if you seriously breach these Terms.</p>
 <p>You can delete your account at any time in Settings. Deleting it erases your progress in every state and your profile, as described in our <a href="@/privacy-policy.html">Privacy Policy</a>. Deleting your account does not refund a purchase, except where required by law.</p>
-<p>A Premium purchase belongs to the Google account that bought it, not to your Learners Test Australia account, so it stays available if you sign in again on the same Google account.</p>
+<p>Premium belongs to the learner account that bought it, so if you delete that account, Premium can't be moved to a new account automatically. Email us if you need help.</p>
 
 <h2 id="changes">11. Changes to These Terms</h2>
 <p>We may update these Terms from time to time to reflect changes to the App, our practices, or applicable law. When we make material changes, we will update the "Last updated" date shown on this page and may notify you within the App.</p>
@@ -405,16 +415,21 @@ before deleting. We aim to reply within 5 business days.</p>
   <li>Your profile: your name and email address.</li>
   <li>Your progress in every state: answers, completed practice sessions and mock tests, and saved questions.</li>
   <li>Your email preferences.</li>
+  <li>Your Premium record, once our purchase-checking service is switched on (it is not yet; see the
+  <a href="@/privacy-policy.html#purchase-checks">privacy policy</a>).</li>
 </ul>
-<p>Your cloud progress and profile are deleted straight away. Copies in our service providers’ backups are removed
-within 30 days.</p>
+<p>Your cloud progress, profile and sign-in are deleted straight away. Google then removes them from its backup
+systems, which Google says can take up to 180 days.</p>
 
 <h2 id="what-is-kept">What is kept</h2>
 <ul>
-  <li><strong>Premium purchases.</strong> A Premium purchase belongs to the Google account that bought it, and
-  purchase records are kept by Google Play under its own policies, not by us. We never see or store your payment
-  details. If you later sign in again with the same Google account, Premium is still available. Deleting your
-  account does not refund a purchase, except where required by law.</li>
+  <li><strong>Premium purchases.</strong> Premium belongs to the learner account that bought it, so after you delete
+  that account it can't be moved to a new account automatically; email us if you need help. Google Play keeps its own
+  record of the purchase under its own policies, including the one-way hash of your user ID that the app added to it.
+  We never see or store your payment details. Deleting your account does not refund a purchase, except where required
+  by law.</li>
+  <li><strong>Usage statistics and crash reports.</strong> If you allowed “Help improve the app”, these are not
+  linked to your account, so deleting it does not remove them. Firebase deletes crash reports after 90 days.</li>
   <li><strong>Settings stored only on your phone.</strong> Your test date and reminder settings stay on your device.
   They are removed when you uninstall the app or clear its storage in Android settings.</li>
   <li><strong>Web app records.</strong> If you used the web study app, its question service is not told when your

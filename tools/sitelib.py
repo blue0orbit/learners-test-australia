@@ -35,16 +35,17 @@ DATE_H = "6 October 2026"
 # "sourced on"). Only change it after checking the sources again.
 CHECKED_H = "30 September 2026"
 # Last updated date of the privacy policy and the cookie policy. The privacy policy mirrors the in-app text
-# (privacy_last_updated in the app's strings.xml, 30 September 2026) and adds website-only sections at the end, so
-# this date is later than the app's when only a website section changed (9 October 2026: the hosting text names
-# Cloudflare and GitHub Pages, and the web study app sections were added).
+# (privacy_last_updated in the app's strings.xml, 9 October 2026 from app build 16, 0.16.0) and adds website-only
+# sections at the end (9 October 2026: the hosting text names Cloudflare and GitHub Pages, and the web study app
+# sections were added). 9 October 2026: app sections match app build 16 (purchase checks, App Check, ads and
+# consent, retention).
 LEGAL_DATE = "2026-10-09"
 LEGAL_DATE_H = "9 October 2026"
-# Last updated date of the account deletion page (9 October 2026: web app records).
+# Last updated date of the account deletion page (9 October 2026: web app records; Premium, backups, crash reports).
 DELETION_DATE = "2026-10-09"
 DELETION_DATE_H = "9 October 2026"
-# Last updated date of the terms of service, which mirror the in-app text (tos_last_updated in strings.xml, 6 October
-# 2026) plus a website-only web app section at the end (9 October 2026).
+# Last updated date of the terms of service, which mirror the in-app text (tos_last_updated in strings.xml, 9 October
+# 2026 from app build 16) plus a website-only web app section at the end (9 October 2026).
 TERMS_DATE = "2026-10-09"
 TERMS_DATE_H = "9 October 2026"
 PRICE = "A$5.99"

@@ -1463,9 +1463,9 @@
   "src": "Is Premium a subscription?",
   "t": "¿Premium es una suscripción?"
  },
- "9fe10f351a308265": {
-  "src": "No. Premium is a lifetime purchase: there are no subscriptions or renewals. It belongs to the Google account that bought it, so it stays available if you sign in again on the same Google account.",
-  "t": "No. Premium es una compra de por vida: no hay suscripciones ni renovaciones. Pertenece a la cuenta de Google con la que se compró, así que sigue disponible si vuelves a iniciar sesión con la misma cuenta de Google."
+ "5259ddd26013e160": {
+  "src": "No. Premium is a lifetime purchase: there are no subscriptions or renewals. It belongs to the learner account you were signed in with when you bought it.",
+  "t": "No. Premium es una compra de por vida: no hay suscripciones ni renovaciones. Pertenece a la cuenta de estudiante con la que habías iniciado sesión al comprarlo."
  },
  "7cba960d67cc2af9": {
   "src": "I bought Premium but it isn't showing. What should I do?",
@@ -1507,9 +1507,9 @@
   "src": "What data does the app collect?",
   "t": "¿Qué datos recopila la app?"
  },
- "626c568229f0ed8b": {
-  "src": "Your name and email address when you sign in, your study data (answers, sessions, saved questions and chosen state), anonymous usage statistics and crash reports only if you allow them, and, in the free version, your device's advertising ID for ads. We never sell your personal information. Details are in the <t0>privacy policy</t0>.",
-  "t": "Tu nombre y tu dirección de correo electrónico cuando inicias sesión, tus datos de estudio (respuestas, sesiones, preguntas guardadas y estado elegido), estadísticas de uso anónimas e informes de fallos solo si lo permites y, en la versión gratuita, el ID de publicidad de tu dispositivo para los anuncios. Nunca vendemos tu información personal. Encontrarás los detalles en la <t0>política de privacidad</t0>."
+ "88383706917e5043": {
+  "src": "Your name and email address when you sign in, your study data (answers, sessions, saved questions and chosen state), usage statistics and crash reports only if you allow them (not linked to your name or email), and, in the free version, your device's advertising ID for ads. We don't sell your name, email address or study data. Details are in the <t0>privacy policy</t0>.",
+  "t": "Tu nombre y tu dirección de correo electrónico cuando inicias sesión, tus datos de estudio (respuestas, sesiones, preguntas guardadas y estado elegido), estadísticas de uso e informes de fallos solo si lo permites (sin vincularlos a tu nombre ni a tu correo) y, en la versión gratuita, el ID de publicidad de tu dispositivo para los anuncios. No vendemos tu nombre, tu correo ni tus datos de estudio. Encontrarás los detalles en la <t0>política de privacidad</t0>."
  },
  "f876181843d02e45": {
   "src": "Why are there ads, and can I control ad personalisation?",

@@ -1463,9 +1463,9 @@
   "src": "Is Premium a subscription?",
   "t": "Premium 是订阅吗？"
  },
- "9fe10f351a308265": {
-  "src": "No. Premium is a lifetime purchase: there are no subscriptions or renewals. It belongs to the Google account that bought it, so it stays available if you sign in again on the same Google account.",
-  "t": "不是。Premium 是终身购买：没有订阅，也不需要续费。它归属于购买时使用的 Google 账户，所以只要你用同一个 Google 账户重新登录，就仍然可以使用。"
+ "5259ddd26013e160": {
+  "src": "No. Premium is a lifetime purchase: there are no subscriptions or renewals. It belongs to the learner account you were signed in with when you bought it.",
+  "t": "不是。Premium 是终身购买：没有订阅，也不需要续费。它归属于你购买时登录的学习账户。"
  },
  "7cba960d67cc2af9": {
   "src": "I bought Premium but it isn't showing. What should I do?",
@@ -1507,9 +1507,9 @@
   "src": "What data does the app collect?",
   "t": "App 会收集哪些数据？"
  },
- "626c568229f0ed8b": {
-  "src": "Your name and email address when you sign in, your study data (answers, sessions, saved questions and chosen state), anonymous usage statistics and crash reports only if you allow them, and, in the free version, your device's advertising ID for ads. We never sell your personal information. Details are in the <t0>privacy policy</t0>.",
-  "t": "登录时提供的姓名和电子邮件地址；你的学习数据（答题记录、学习时段、收藏的题目和所选的州）；只有在你允许的情况下才会收集的匿名使用统计和崩溃报告；以及在免费版中用于广告的设备广告 ID。我们绝不出售你的个人信息。详情请见<t0>隐私政策</t0>。"
+ "88383706917e5043": {
+  "src": "Your name and email address when you sign in, your study data (answers, sessions, saved questions and chosen state), usage statistics and crash reports only if you allow them (not linked to your name or email), and, in the free version, your device's advertising ID for ads. We don't sell your name, email address or study data. Details are in the <t0>privacy policy</t0>.",
+  "t": "登录时提供的姓名和电子邮件地址；你的学习数据（答题记录、学习时段、收藏的题目和所选的州）；只有在你允许的情况下才会收集的使用统计和崩溃报告（不与你的姓名或电子邮件关联）；以及在免费版中用于广告的设备广告 ID。我们不会出售你的姓名、电子邮件地址或学习数据。详情请见<t0>隐私政策</t0>。"
  },
  "f876181843d02e45": {
   "src": "Why are there ads, and can I control ad personalisation?",

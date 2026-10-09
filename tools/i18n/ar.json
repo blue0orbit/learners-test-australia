@@ -1463,9 +1463,9 @@
   "src": "Is Premium a subscription?",
   "t": "هل Premium اشتراك؟"
  },
- "9fe10f351a308265": {
-  "src": "No. Premium is a lifetime purchase: there are no subscriptions or renewals. It belongs to the Google account that bought it, so it stays available if you sign in again on the same Google account.",
-  "t": "لا. Premium عملية شراء مدى الحياة: لا اشتراكات ولا تجديدات. وهو مرتبط بحساب Google الذي اشتراه، لذا يبقى متاحًا إذا سجّلت الدخول مرة أخرى بحساب Google نفسه."
+ "5259ddd26013e160": {
+  "src": "No. Premium is a lifetime purchase: there are no subscriptions or renewals. It belongs to the learner account you were signed in with when you bought it.",
+  "t": "لا. Premium عملية شراء مدى الحياة: لا اشتراكات ولا تجديدات. وهو مرتبط بحساب المتعلّم الذي كنت مسجّلًا الدخول به عند الشراء."
  },
  "7cba960d67cc2af9": {
   "src": "I bought Premium but it isn't showing. What should I do?",
@@ -1507,9 +1507,9 @@
   "src": "What data does the app collect?",
   "t": "ما البيانات التي يجمعها التطبيق؟"
  },
- "626c568229f0ed8b": {
-  "src": "Your name and email address when you sign in, your study data (answers, sessions, saved questions and chosen state), anonymous usage statistics and crash reports only if you allow them, and, in the free version, your device's advertising ID for ads. We never sell your personal information. Details are in the <t0>privacy policy</t0>.",
-  "t": "اسمك وعنوان بريدك الإلكتروني عند تسجيل الدخول، وبيانات دراستك (الإجابات، والجلسات، والأسئلة المحفوظة، والولاية المختارة)، وإحصاءات استخدام مجهولة الهوية وتقارير الأعطال فقط إذا سمحت بذلك، وفي النسخة المجانية، المعرّف الإعلاني لجهازك لأغراض الإعلانات. نحن لا نبيع معلوماتك الشخصية أبدًا. وتجد التفاصيل في <t0>سياسة الخصوصية</t0>."
+ "88383706917e5043": {
+  "src": "Your name and email address when you sign in, your study data (answers, sessions, saved questions and chosen state), usage statistics and crash reports only if you allow them (not linked to your name or email), and, in the free version, your device's advertising ID for ads. We don't sell your name, email address or study data. Details are in the <t0>privacy policy</t0>.",
+  "t": "اسمك وعنوان بريدك الإلكتروني عند تسجيل الدخول، وبيانات دراستك (الإجابات، والجلسات، والأسئلة المحفوظة، والولاية المختارة)، وإحصاءات الاستخدام وتقارير الأعطال فقط إذا سمحت بذلك (دون ربطها باسمك أو بريدك الإلكتروني)، وفي النسخة المجانية، المعرّف الإعلاني لجهازك لأغراض الإعلانات. لا نبيع اسمك أو بريدك الإلكتروني أو بيانات دراستك. وتجد التفاصيل في <t0>سياسة الخصوصية</t0>."
  },
  "f876181843d02e45": {
   "src": "Why are there ads, and can I control ad personalisation?",

@@ -111,15 +111,17 @@ signs you out but doesn't delete the progress saved to your account; to delete t
 <h3>Google Firebase</h3>
 <ul>
   <li><strong>Sign-in and cloud storage of progress:</strong> needed for your account and to keep your progress in sync.</li>
-  <li><strong>Analytics and crash reports:</strong> anonymous usage statistics and crash reports, only if you allow “Help improve the app”. You can switch this on or off in the app's Settings, under Privacy.</li>
+  <li><strong>Analytics and crash reports:</strong> usage statistics and crash reports with an app instance ID, not linked to your name, email address or user ID, only if you allow “Help improve the app”. You can switch this on or off in the app's Settings, under Privacy.</li>
   <li><strong>Push messages:</strong> Firebase Cloud Messaging gives your phone a push token so the app can receive announcements. You can turn notifications off in Android settings at any time.</li>
   <li><strong>Remote settings:</strong> lets us adjust some app settings without an update.</li>
+  <li><strong>App protection:</strong> Firebase App Check with Google Play Integrity checks that requests to our cloud database come from the genuine app on a genuine device.</li>
 </ul>
 
 <h3>Advertising identifiers (free version)</h3>
 <p>The free version shows banner ads from Google AdMob and optional rewarded video ads from Unity Ads. These ad
-providers may use your device's advertising ID. Where the law requires it (for example in the EEA and UK), Google's
-User Messaging Platform asks for your consent first. Premium removes ads.</p>
+providers may use your device's advertising ID. Ads are requested only after Google's User Messaging Platform has
+checked whether consent is needed where you are. Where the law requires it (for example in the EEA, the UK and
+Switzerland), it asks for your consent first: ads are personalised only if you agree. Premium removes ads.</p>
 <p><strong>To change your ad choices in the app:</strong> open Settings → Ad privacy choices. This option appears
 where a consent choice applies to you.</p>
 

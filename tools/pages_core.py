@@ -669,8 +669,8 @@ FAQ_GROUPS = [
          "weak spots and a review planner, and all the hazard perception clips and scenes. It covers every state. Every practice "
          "question stays free for everyone.</p>"),
         ("Is Premium a subscription?",
-         "<p>No. Premium is a lifetime purchase: there are no subscriptions or renewals. It belongs to the Google account "
-         "that bought it, so it stays available if you sign in again on the same Google account.</p>"),
+         "<p>No. Premium is a lifetime purchase: there are no subscriptions or renewals. It belongs to the learner account "
+         "you were signed in with when you bought it.</p>"),
         ("I bought Premium but it isn't showing. What should I do?",
          f'<p>Open Settings → Premium → Restore purchase. If that doesn\'t fix it, email <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>'),
         ("Can I get a refund?",
@@ -688,8 +688,9 @@ FAQ_GROUPS = [
          'Full steps are on the <a href="@/account-deletion.html">account deletion page</a>.</p>'),
         ("What data does the app collect?",
          "<p>Your name and email address when you sign in, your study data (answers, sessions, saved questions and chosen "
-         "state), anonymous usage statistics and crash reports only if you allow them, and, in the free version, your "
-         "device's advertising ID for ads. We never sell your personal information. Details are in the "
+         "state), usage statistics and crash reports only if you allow them (not linked to your name or email), and, in "
+         "the free version, your device's advertising ID for ads. We don't sell your name, email address or study data. "
+         "Details are in the "
          '<a href="@/privacy-policy.html">privacy policy</a>.</p>'),
         ("Why are there ads, and can I control ad personalisation?",
          "<p>Ads keep practice free. Where the law requires it (for example in the EEA and UK), Google asks for your consent "

@@ -4376,9 +4376,9 @@
   "group": "core"
  },
  {
-  "key": "9fe10f351a308265",
+  "key": "5259ddd26013e160",
   "kind": "run",
-  "src": "No. Premium is a lifetime purchase: there are no subscriptions or renewals. It belongs to the Google account that bought it, so it stays available if you sign in again on the same Google account.",
+  "src": "No. Premium is a lifetime purchase: there are no subscriptions or renewals. It belongs to the learner account you were signed in with when you bought it.",
   "note": "",
   "pages": [
    "faq.html"
@@ -4486,9 +4486,9 @@
   "group": "core"
  },
  {
-  "key": "626c568229f0ed8b",
+  "key": "88383706917e5043",
   "kind": "run",
-  "src": "Your name and email address when you sign in, your study data (answers, sessions, saved questions and chosen state), anonymous usage statistics and crash reports only if you allow them, and, in the free version, your device's advertising ID for ads. We never sell your personal information. Details are in the <t0>privacy policy</t0>.",
+  "src": "Your name and email address when you sign in, your study data (answers, sessions, saved questions and chosen state), usage statistics and crash reports only if you allow them (not linked to your name or email), and, in the free version, your device's advertising ID for ads. We don't sell your name, email address or study data. Details are in the <t0>privacy policy</t0>.",
   "note": "",
   "pages": [
    "faq.html"
