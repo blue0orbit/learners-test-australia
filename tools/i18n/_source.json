@@ -1712,9 +1712,9 @@
   "group": "core"
  },
  {
-  "key": "90592c6f68df461d",
+  "key": "6c5b5a12b126a2ca",
   "kind": "run",
-  "src": "<t0>Studying in your browser?</t0> The <t1>web app</t1> is open now and free with an account. It has practice questions with every answer explained (with a daily allowance), one mock test a day, your mistakes to review and your readiness against the pass marks. You can also buy Premium there for A$5.99 once, through Paddle, for the account you're signed in to. It adds the web app's Premium extras (accuracy trend and weak areas) and more mock tests a day. For now it works in the web app only, not in the Android app.",
+  "src": "<t0>Studying in your browser?</t0> The <t1>web app</t1> is open now and free with an account. It has practice questions with every answer explained (with a daily allowance), one mock test a day, your mistakes to review and your readiness against the pass marks. If you buy Premium there (A$5.99 once, through Paddle, for the account you're signed in to), it adds the web app's Premium extras (accuracy trend and weak areas) and more mock tests a day. For now, Premium bought there works in the web app only, not in the Android app.",
   "note": "",
   "pages": [
    "index.html",

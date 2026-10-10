@@ -583,9 +583,9 @@
   "src": "A$5.99 once. No subscription.",
   "t": "A$5.99，一次付清。无需订阅。"
  },
- "90592c6f68df461d": {
-  "src": "<t0>Studying in your browser?</t0> The <t1>web app</t1> is open now and free with an account. It has practice questions with every answer explained (with a daily allowance), one mock test a day, your mistakes to review and your readiness against the pass marks. You can also buy Premium there for A$5.99 once, through Paddle, for the account you're signed in to. It adds the web app's Premium extras (accuracy trend and weak areas) and more mock tests a day. For now it works in the web app only, not in the Android app.",
-  "t": "<t0>想在浏览器里学习？</t0><t1>网页版</t1>现已开放，有免费账户就能使用。它提供练习题（每天有一定额度），每道题的答案都有解析，还有每天一次模拟考试、错题复习，以及对照及格线的准备程度。你也可以在网页版通过 Paddle 购买 Premium，一次付清 A$5.99，归你当前登录的账户所有。它会增加网页版的 Premium 附加功能（正确率趋势和薄弱环节），并让你每天可以做更多模拟考试。目前它只能在网页版中使用，不适用于 Android 应用。"
+ "6c5b5a12b126a2ca": {
+  "src": "<t0>Studying in your browser?</t0> The <t1>web app</t1> is open now and free with an account. It has practice questions with every answer explained (with a daily allowance), one mock test a day, your mistakes to review and your readiness against the pass marks. If you buy Premium there (A$5.99 once, through Paddle, for the account you're signed in to), it adds the web app's Premium extras (accuracy trend and weak areas) and more mock tests a day. For now, Premium bought there works in the web app only, not in the Android app.",
+  "t": "<t0>想在浏览器里学习？</t0><t1>网页版</t1>现已开放，有免费账户就能使用。它提供练习题（每天有一定额度），每道题的答案都有解析，还有每天一次模拟考试、错题复习，以及对照及格线的准备程度。如果你在网页版购买 Premium（通过 Paddle 一次付清 A$5.99，归你当前登录的账户所有），它会增加网页版的 Premium 附加功能（正确率趋势和薄弱环节），并让你每天可以做更多模拟考试。目前，在网页版购买的 Premium 只能在网页版中使用，不适用于 Android 应用。"
  },
  "e6353cdd13b7b3cc": {
   "src": "Refunds follow Google Play's refund policy for purchases in the app and Paddle's for purchases on the website, and your rights under the Australian Consumer Law. See the <t0>FAQ</t0> for more.",

@@ -583,9 +583,9 @@
   "src": "A$5.99 once. No subscription.",
   "t": "A$5.99 لمرة واحدة. بلا اشتراك."
  },
- "90592c6f68df461d": {
-  "src": "<t0>Studying in your browser?</t0> The <t1>web app</t1> is open now and free with an account. It has practice questions with every answer explained (with a daily allowance), one mock test a day, your mistakes to review and your readiness against the pass marks. You can also buy Premium there for A$5.99 once, through Paddle, for the account you're signed in to. It adds the web app's Premium extras (accuracy trend and weak areas) and more mock tests a day. For now it works in the web app only, not in the Android app.",
-  "t": "<t0>هل تدرس في متصفحك؟</t0> <t1>تطبيق الويب</t1> متاح الآن ومجاني مع حساب. يقدّم أسئلة تدريب (ضمن حد يومي) مع شرح لكل إجابة، واختبارًا تجريبيًا واحدًا يوميًا، وأخطاءك لتراجعها، ومدى جاهزيتك مقارنةً بدرجات النجاح. ويمكنك أيضًا شراء Premium فيه بقيمة A$5.99 لمرة واحدة، عبر Paddle، للحساب الذي سجّلت الدخول به. يضيف Premium ميزات تطبيق الويب الإضافية (اتجاه دقة إجاباتك ونقاط الضعف) ومزيدًا من الاختبارات التجريبية يوميًا. ويعمل حاليًا في تطبيق الويب فقط، وليس في تطبيق Android."
+ "6c5b5a12b126a2ca": {
+  "src": "<t0>Studying in your browser?</t0> The <t1>web app</t1> is open now and free with an account. It has practice questions with every answer explained (with a daily allowance), one mock test a day, your mistakes to review and your readiness against the pass marks. If you buy Premium there (A$5.99 once, through Paddle, for the account you're signed in to), it adds the web app's Premium extras (accuracy trend and weak areas) and more mock tests a day. For now, Premium bought there works in the web app only, not in the Android app.",
+  "t": "<t0>هل تدرس في متصفحك؟</t0> <t1>تطبيق الويب</t1> متاح الآن ومجاني مع حساب. يقدّم أسئلة تدريب (ضمن حد يومي) مع شرح لكل إجابة، واختبارًا تجريبيًا واحدًا يوميًا، وأخطاءك لتراجعها، ومدى جاهزيتك مقارنةً بدرجات النجاح. وإذا اشتريت Premium فيه (بقيمة A$5.99 لمرة واحدة، عبر Paddle، للحساب الذي سجّلت الدخول به)، فإنه يضيف ميزات تطبيق الويب الإضافية (اتجاه دقة إجاباتك ونقاط الضعف) ومزيدًا من الاختبارات التجريبية يوميًا. ويعمل Premium الذي تشتريه فيه حاليًا في تطبيق الويب فقط، وليس في تطبيق Android."
  },
  "e6353cdd13b7b3cc": {
   "src": "Refunds follow Google Play's refund policy for purchases in the app and Paddle's for purchases on the website, and your rights under the Australian Consumer Law. See the <t0>FAQ</t0> for more.",

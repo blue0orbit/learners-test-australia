@@ -213,16 +213,17 @@ def price_table() -> str:
 
 
 def web_app_note() -> str:
-    """The web study app next to the Android pricing. Facts at the Paddle LIVE switch (DRAFT, 10 October 2026): open to
-    everyone, free with an account; readiness is free there; Premium is on sale in the web app through Paddle, for the
-    signed-in account, and works in the web app only for now (its web extras: accuracy trend and weak areas, and more
-    mock tests a day)."""
+    """The web study app next to the Android pricing. Facts as of 10 October 2026: open to everyone, free with an
+    account; readiness is free there. Premium bought in the web app (through Paddle, once Paddle has approved this
+    domain and the web app shows its Buy button) belongs to the signed-in account and works in the web app only for now
+    (its web extras: accuracy trend and weak areas, and more mock tests a day). Worded conditionally ("If you buy...")
+    so it stays true before and after the Buy button appears."""
     return (f'<p><strong>Studying in your browser?</strong> The <a href="{WEB_APP}">web app</a> is open now and free '
             "with an account. It has practice questions with every answer explained (with a daily allowance), one mock "
-            f"test a day, your mistakes to review and your readiness against the pass marks. You can also buy Premium "
-            f"there for {PRICE} once, through Paddle, for the account you're signed in to. It adds the web app's Premium "
-            "extras (accuracy trend and weak areas) and more mock tests a day. For now it works in the web app only, not "
-            "in the Android app.</p>")
+            f"test a day, your mistakes to review and your readiness against the pass marks. If you buy Premium there "
+            f"({PRICE} once, through Paddle, for the account you're signed in to), it adds the web app's Premium extras "
+            "(accuracy trend and weak areas) and more mock tests a day. For now, Premium bought there works in the web "
+            "app only, not in the Android app.</p>")
 
 
 FEATURES_GRID = [
