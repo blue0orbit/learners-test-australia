@@ -12,6 +12,8 @@ import json
 import re
 from dataclasses import dataclass, field
 
+import try_question
+
 SITE_NAME = "Learners Test Australia"
 APP_NAME = "Learners Test Australia: DKT"
 PACKAGE = "com.blueorbit.learnerstestau"
@@ -634,6 +636,8 @@ def render(page: Page, *, lang: str = "en", body_html: str | None = None, title:
 <body>
 """
     body = page_html(p) if body_html is None else body_html
+    if try_question.MARKER in body:  # the home page's "Try a question" block, in this page's language
+        body = body.replace(try_question.MARKER, try_question.section(lang, rtl=loc["dir"] == "rtl"))
     switch, footer_langs = lang_menus(lang, menu_links or {})
     body = body.replace("<!--LANG-SWITCH-->", switch).replace("<!--LANG-LIST-->", footer_langs)
     out = head + body + "\n</body>\n</html>\n"

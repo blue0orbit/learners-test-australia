@@ -131,6 +131,64 @@
 </div>
 </section>
 
+<section class="section section-alt tq" id="try" aria-labelledby="tq-title">
+<div class="container">
+<div class="section-head">
+<p class="eyebrow">Thử ngay</p>
+<h2 id="tq-title">Thử một câu hỏi</h2>
+<p>Ba câu hỏi trong ứng dụng web, lấy từ bộ câu hỏi NSW, VIC và QLD. Chọn một đáp án để xem bạn đúng hay sai, và vì sao.</p>
+</div>
+<div class="tq-box">
+<input class="tq-step" type="radio" name="tq-step" id="tq-s1" checked autocomplete="off" aria-label="Câu 1 trên 3" hidden>
+<input class="tq-step" type="radio" name="tq-step" id="tq-s2" autocomplete="off" aria-label="Câu 2 trên 3" hidden>
+<input class="tq-step" type="radio" name="tq-step" id="tq-s3" autocomplete="off" aria-label="Câu 3 trên 3" hidden>
+<div class="tq-tabs" aria-hidden="true" hidden><label for="tq-s1">1</label><label for="tq-s2">2</label><label for="tq-s3">3</label></div>
+<fieldset class="tq-q" id="tq-q1">
+<legend class="tq-legend"><span class="tq-src">New South Wales (NSW)</span><span class="tq-stem">Bạn đến biển báo này và đường hoàn toàn trống ở cả hai phía. Bạn phải làm gì?</span></legend>
+<img class="tq-img" src="../assets/img/try/au-nsw-car-S01.svg" width="120" height="120" alt="Một biển báo hình bát giác màu đỏ có chữ màu trắng" loading="lazy" decoding="async">
+<input class="tq-in tq-in-no" type="radio" name="tq1" id="tq1-a" autocomplete="off">
+<input class="tq-in tq-in-no" type="radio" name="tq1" id="tq1-b" autocomplete="off">
+<input class="tq-in tq-in-no" type="radio" name="tq1" id="tq1-c" autocomplete="off">
+<input class="tq-in tq-in-ok" type="radio" name="tq1" id="tq1-d" autocomplete="off">
+<label class="tq-opt" for="tq1-a"><span class="tq-key" aria-hidden="true">A</span><span class="tq-txt">Chỉ dừng nếu có người đi bộ ở gần</span><span class="tq-tag tq-tag-no" aria-hidden="true" hidden>Đáp án của bạn</span></label>
+<label class="tq-opt" for="tq1-b"><span class="tq-key" aria-hidden="true">B</span><span class="tq-txt">Giảm tốc và cho xe lăn bánh chậm qua, vì đường đang trống</span><span class="tq-tag tq-tag-no" aria-hidden="true" hidden>Đáp án của bạn</span></label>
+<label class="tq-opt" for="tq1-c"><span class="tq-key" aria-hidden="true">C</span><span class="tq-txt">Dừng nếu có xe khác đang tới; nếu không thì cứ lăn bánh tiếp</span><span class="tq-tag tq-tag-no" aria-hidden="true" hidden>Đáp án của bạn</span></label>
+<label class="tq-opt tq-ok" for="tq1-d"><span class="tq-key" aria-hidden="true">D</span><span class="tq-txt">Dừng hẳn tại vạch, rồi đi khi an toàn</span><span class="tq-tag tq-tag-ok" aria-hidden="true" hidden>Đáp án đúng</span></label>
+<p class="tq-say" role="status"><span class="tq-say-ok" hidden><strong>Đúng rồi.</strong></span><span class="tq-say-no" hidden><strong>Chưa đúng.</strong> Đáp án đúng là: Dừng hẳn tại vạch, rồi đi khi an toàn</span></p>
+<div class="tq-fb" hidden><p class="tq-expl">Ở biển “STOP”, lần nào bạn cũng phải dừng hẳn sau vạch, kể cả khi không có xe, và đứng yên cho đến khi an toàn mới đi.</p><p class="tq-more"><label class="tq-next" for="tq-s2">Câu tiếp theo <span aria-hidden="true">→</span></label></p></div>
+</fieldset>
+<fieldset class="tq-q" id="tq-q2" hidden>
+<legend class="tq-legend"><span class="tq-src">Victoria (VIC)</span><span class="tq-stem">Tại một giao lộ có đèn giao thông trong thành phố Melbourne, bạn thấy biển này. Bạn phải rẽ phải như thế nào?</span></legend>
+<img class="tq-img" src="../assets/img/try/au-vic-car-S19.svg" width="132" height="132" alt="Biển hình chữ nhật màu trắng có mũi tên hình móc câu màu đen và chữ" loading="lazy" decoding="async">
+<input class="tq-in tq-in-no" type="radio" name="tq2" id="tq2-a" autocomplete="off">
+<input class="tq-in tq-in-ok" type="radio" name="tq2" id="tq2-b" autocomplete="off">
+<input class="tq-in tq-in-no" type="radio" name="tq2" id="tq2-c" autocomplete="off">
+<label class="tq-opt" for="tq2-a"><span class="tq-key" aria-hidden="true">A</span><span class="tq-txt">Từ làn bên phải, như ở các giao lộ khác</span><span class="tq-tag tq-tag-no" aria-hidden="true" hidden>Đáp án của bạn</span></label>
+<label class="tq-opt tq-ok" for="tq2-b"><span class="tq-key" aria-hidden="true">B</span><span class="tq-txt">Từ làn ngoài cùng bên trái, kiểu rẽ móc</span><span class="tq-tag tq-tag-ok" aria-hidden="true" hidden>Đáp án đúng</span></label>
+<label class="tq-opt" for="tq2-c"><span class="tq-key" aria-hidden="true">C</span><span class="tq-txt">Từ làn nào cũng được, làn nào thông thoáng hơn</span><span class="tq-tag tq-tag-no" aria-hidden="true" hidden>Đáp án của bạn</span></label>
+<p class="tq-say" role="status"><span class="tq-say-ok" hidden><strong>Đúng rồi.</strong></span><span class="tq-say-no" hidden><strong>Chưa đúng.</strong> Đáp án đúng là: Từ làn ngoài cùng bên trái, kiểu rẽ móc</span></p>
+<div class="tq-fb" hidden><p class="tq-expl">Ở giao lộ có biển rẽ móc (hook turn), bạn phải rẽ phải từ làn ngoài cùng bên trái. Những giao lộ này chủ yếu ở trung tâm Melbourne và các vùng ngoại ô gần trung tâm, nhằm giữ cho đường ray xe điện (tram) thông thoáng.</p><p class="tq-more"><label class="tq-next" for="tq-s3">Câu tiếp theo <span aria-hidden="true">→</span></label></p></div>
+</fieldset>
+<fieldset class="tq-q" id="tq-q3" hidden>
+<legend class="tq-legend"><span class="tq-src">Queensland (QLD)</span><span class="tq-stem">Trong sơ đồ không có biển báo, vạch kẻ hay đèn. Bạn là xe A và cả hai xe đều đi thẳng. Ai phải nhường đường?</span></legend>
+<img class="tq-img" src="../assets/img/try/au-qld-car-qld-gw-010a.svg" width="232" height="232" alt="Một ngã tư không có biển báo hay đèn tín hiệu. Xe A đi tới từ phía nam, hướng về phía bắc. Xe B đi tới từ phía đông, hướng về phía tây. Cả hai đều đi thẳng." loading="lazy" decoding="async">
+<input class="tq-in tq-in-no" type="radio" name="tq3" id="tq3-a" autocomplete="off">
+<input class="tq-in tq-in-no" type="radio" name="tq3" id="tq3-b" autocomplete="off">
+<input class="tq-in tq-in-no" type="radio" name="tq3" id="tq3-c" autocomplete="off">
+<input class="tq-in tq-in-ok" type="radio" name="tq3" id="tq3-d" autocomplete="off">
+<label class="tq-opt" for="tq3-a"><span class="tq-key" aria-hidden="true">A</span><span class="tq-txt">Xe B nhường đường cho xe A</span><span class="tq-tag tq-tag-no" aria-hidden="true" hidden>Đáp án của bạn</span></label>
+<label class="tq-opt" for="tq3-b"><span class="tq-key" aria-hidden="true">B</span><span class="tq-txt">Xe đến giao lộ trước thì đi trước</span><span class="tq-tag tq-tag-no" aria-hidden="true" hidden>Đáp án của bạn</span></label>
+<label class="tq-opt" for="tq3-c"><span class="tq-key" aria-hidden="true">C</span><span class="tq-txt">Xe chạy nhanh hơn thì đi trước</span><span class="tq-tag tq-tag-no" aria-hidden="true" hidden>Đáp án của bạn</span></label>
+<label class="tq-opt tq-ok" for="tq3-d"><span class="tq-key" aria-hidden="true">D</span><span class="tq-txt">Xe A nhường đường cho xe B</span><span class="tq-tag tq-tag-ok" aria-hidden="true" hidden>Đáp án đúng</span></label>
+<p class="tq-say" role="status"><span class="tq-say-ok" hidden><strong>Đúng rồi.</strong></span><span class="tq-say-no" hidden><strong>Chưa đúng.</strong> Đáp án đúng là: Xe A nhường đường cho xe B</span></p>
+<div class="tq-fb" hidden><p class="tq-expl">Tại ngã tư không có biển báo hay đèn tín hiệu, người lái đi thẳng nhường đường cho xe đến từ bên phải. Xe B ở bên phải xe A, nên xe A chờ.</p></div>
+</fieldset>
+</div>
+<p class="tq-cta"><a class="btn btn-primary" href="/app/">Luyện miễn phí cả 3.770 câu hỏi trong ứng dụng web<svg class="icon icon-go" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+<p class="tq-note">Miễn phí với một tài khoản, trên mọi điện thoại hoặc máy tính. Có đủ mọi bang và lãnh thổ, mỗi nơi theo đúng hình thức thi của mình.</p>
+</div>
+</section>
+
 <section class="section" id="states" aria-labelledby="states-title">
 <div class="container">
   <div class="section-head">

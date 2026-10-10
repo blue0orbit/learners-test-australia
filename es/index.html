@@ -131,6 +131,64 @@
 </div>
 </section>
 
+<section class="section section-alt tq" id="try" aria-labelledby="tq-title">
+<div class="container">
+<div class="section-head">
+<p class="eyebrow">Pruébalo ahora</p>
+<h2 id="tq-title">Prueba una pregunta</h2>
+<p>Tres preguntas de la aplicación web, de los paquetes de NSW, VIC y QLD. Elige una respuesta para ver si aciertas y por qué.</p>
+</div>
+<div class="tq-box">
+<input class="tq-step" type="radio" name="tq-step" id="tq-s1" checked autocomplete="off" aria-label="Pregunta 1 de 3" hidden>
+<input class="tq-step" type="radio" name="tq-step" id="tq-s2" autocomplete="off" aria-label="Pregunta 2 de 3" hidden>
+<input class="tq-step" type="radio" name="tq-step" id="tq-s3" autocomplete="off" aria-label="Pregunta 3 de 3" hidden>
+<div class="tq-tabs" aria-hidden="true" hidden><label for="tq-s1">1</label><label for="tq-s2">2</label><label for="tq-s3">3</label></div>
+<fieldset class="tq-q" id="tq-q1">
+<legend class="tq-legend"><span class="tq-src">Nueva Gales del Sur (NSW)</span><span class="tq-stem">Llegas a esta señal y la calle está totalmente libre en ambas direcciones. ¿Qué debes hacer?</span></legend>
+<img class="tq-img" src="../assets/img/try/au-nsw-car-S01.svg" width="120" height="120" alt="Una señal roja de ocho lados con letras blancas" loading="lazy" decoding="async">
+<input class="tq-in tq-in-no" type="radio" name="tq1" id="tq1-a" autocomplete="off">
+<input class="tq-in tq-in-no" type="radio" name="tq1" id="tq1-b" autocomplete="off">
+<input class="tq-in tq-in-no" type="radio" name="tq1" id="tq1-c" autocomplete="off">
+<input class="tq-in tq-in-ok" type="radio" name="tq1" id="tq1-d" autocomplete="off">
+<label class="tq-opt" for="tq1-a"><span class="tq-key" aria-hidden="true">A</span><span class="tq-txt">Detenerte solo si hay alguien a pie cerca</span><span class="tq-tag tq-tag-no" aria-hidden="true" hidden>Tu respuesta</span></label>
+<label class="tq-opt" for="tq1-b"><span class="tq-key" aria-hidden="true">B</span><span class="tq-txt">Reducir la velocidad y pasar despacio, porque la calle está libre</span><span class="tq-tag tq-tag-no" aria-hidden="true" hidden>Tu respuesta</span></label>
+<label class="tq-opt" for="tq1-c"><span class="tq-key" aria-hidden="true">C</span><span class="tq-txt">Detenerte si viene otro vehículo; si no, seguir despacio</span><span class="tq-tag tq-tag-no" aria-hidden="true" hidden>Tu respuesta</span></label>
+<label class="tq-opt tq-ok" for="tq1-d"><span class="tq-key" aria-hidden="true">D</span><span class="tq-txt">Detenerte por completo en la línea y seguir cuando sea seguro</span><span class="tq-tag tq-tag-ok" aria-hidden="true" hidden>Respuesta correcta</span></label>
+<p class="tq-say" role="status"><span class="tq-say-ok" hidden><strong>Correcto.</strong></span><span class="tq-say-no" hidden><strong>No exactamente.</strong> La respuesta correcta es: Detenerte por completo en la línea y seguir cuando sea seguro</span></p>
+<div class="tq-fb" hidden><p class="tq-expl">En una señal “STOP” debes detenerte por completo detrás de la línea cada vez, aunque no haya tráfico, y quedarte detenido hasta que sea seguro seguir.</p><p class="tq-more"><label class="tq-next" for="tq-s2">Siguiente pregunta <span aria-hidden="true">→</span></label></p></div>
+</fieldset>
+<fieldset class="tq-q" id="tq-q2" hidden>
+<legend class="tq-legend"><span class="tq-src">Victoria (VIC)</span><span class="tq-stem">En una intersección con semáforo del centro de Melbourne ves esta señal. ¿Cómo debes girar a la derecha?</span></legend>
+<img class="tq-img" src="../assets/img/try/au-vic-car-S19.svg" width="132" height="132" alt="Una señal rectangular blanca con una flecha negra en forma de gancho y letras" loading="lazy" decoding="async">
+<input class="tq-in tq-in-no" type="radio" name="tq2" id="tq2-a" autocomplete="off">
+<input class="tq-in tq-in-ok" type="radio" name="tq2" id="tq2-b" autocomplete="off">
+<input class="tq-in tq-in-no" type="radio" name="tq2" id="tq2-c" autocomplete="off">
+<label class="tq-opt" for="tq2-a"><span class="tq-key" aria-hidden="true">A</span><span class="tq-txt">Desde el carril derecho, como en otras intersecciones</span><span class="tq-tag tq-tag-no" aria-hidden="true" hidden>Tu respuesta</span></label>
+<label class="tq-opt tq-ok" for="tq2-b"><span class="tq-key" aria-hidden="true">B</span><span class="tq-txt">Desde el carril de más a la izquierda, con un giro en gancho</span><span class="tq-tag tq-tag-ok" aria-hidden="true" hidden>Respuesta correcta</span></label>
+<label class="tq-opt" for="tq2-c"><span class="tq-key" aria-hidden="true">C</span><span class="tq-txt">Desde cualquier carril, el que esté más libre</span><span class="tq-tag tq-tag-no" aria-hidden="true" hidden>Tu respuesta</span></label>
+<p class="tq-say" role="status"><span class="tq-say-ok" hidden><strong>Correcto.</strong></span><span class="tq-say-no" hidden><strong>No exactamente.</strong> La respuesta correcta es: Desde el carril de más a la izquierda, con un giro en gancho</span></p>
+<div class="tq-fb" hidden><p class="tq-expl">En las intersecciones con señal de giro en gancho (hook turn), el giro a la derecha debe hacerse desde el carril de más a la izquierda. Están sobre todo en el centro de Melbourne y los suburbios cercanos, para mantener libres las vías del tranvía.</p><p class="tq-more"><label class="tq-next" for="tq-s3">Siguiente pregunta <span aria-hidden="true">→</span></label></p></div>
+</fieldset>
+<fieldset class="tq-q" id="tq-q3" hidden>
+<legend class="tq-legend"><span class="tq-src">Queensland (QLD)</span><span class="tq-stem">En el diagrama no hay señales, líneas ni semáforos. Eres el auto A y los dos autos siguen de frente. ¿Quién debe ceder el paso?</span></legend>
+<img class="tq-img" src="../assets/img/try/au-qld-car-qld-gw-010a.svg" width="232" height="232" alt="Un cruce sin señales ni semáforos. El auto A se acerca desde el sur en dirección norte. El auto B se acerca desde el este en dirección oeste. Los dos siguen de frente." loading="lazy" decoding="async">
+<input class="tq-in tq-in-no" type="radio" name="tq3" id="tq3-a" autocomplete="off">
+<input class="tq-in tq-in-no" type="radio" name="tq3" id="tq3-b" autocomplete="off">
+<input class="tq-in tq-in-no" type="radio" name="tq3" id="tq3-c" autocomplete="off">
+<input class="tq-in tq-in-ok" type="radio" name="tq3" id="tq3-d" autocomplete="off">
+<label class="tq-opt" for="tq3-a"><span class="tq-key" aria-hidden="true">A</span><span class="tq-txt">El auto B le cede el paso al auto A</span><span class="tq-tag tq-tag-no" aria-hidden="true" hidden>Tu respuesta</span></label>
+<label class="tq-opt" for="tq3-b"><span class="tq-key" aria-hidden="true">B</span><span class="tq-txt">Pasa primero el auto que llega primero a la intersección</span><span class="tq-tag tq-tag-no" aria-hidden="true" hidden>Tu respuesta</span></label>
+<label class="tq-opt" for="tq3-c"><span class="tq-key" aria-hidden="true">C</span><span class="tq-txt">Pasa primero el auto que va más rápido</span><span class="tq-tag tq-tag-no" aria-hidden="true" hidden>Tu respuesta</span></label>
+<label class="tq-opt tq-ok" for="tq3-d"><span class="tq-key" aria-hidden="true">D</span><span class="tq-txt">El auto A le cede el paso al auto B</span><span class="tq-tag tq-tag-ok" aria-hidden="true" hidden>Respuesta correcta</span></label>
+<p class="tq-say" role="status"><span class="tq-say-ok" hidden><strong>Correcto.</strong></span><span class="tq-say-no" hidden><strong>No exactamente.</strong> La respuesta correcta es: El auto A le cede el paso al auto B</span></p>
+<div class="tq-fb" hidden><p class="tq-expl">En un cruce sin señales ni semáforos, un conductor que sigue de frente cede el paso a los vehículos que se acercan por la derecha. El auto B está a la derecha del auto A, así que el auto A espera.</p></div>
+</fieldset>
+</div>
+<p class="tq-cta"><a class="btn btn-primary" href="/app/">Practica gratis las 3.770 preguntas en la aplicación web<svg class="icon icon-go" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+<p class="tq-note">Gratis con una cuenta, en cualquier teléfono o computadora. Todos los estados y territorios, cada uno con el formato de su examen.</p>
+</div>
+</section>
+
 <section class="section" id="states" aria-labelledby="states-title">
 <div class="container">
   <div class="section-head">

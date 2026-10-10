@@ -4,6 +4,7 @@ from sitelib import (
     BASE, ORG_ID, WEB_APP, Page, chip, coming_soon, dtt_application, ext, faq_block, faq_ld, icon, mobile_application,
     organization, page_head, plate_svg, updated_line,
 )
+from try_question import MARKER as TRY_MARKER
 
 LANGS = ('English, <span class="nw" lang="zh-Hans">中文</span>, <span class="nw" lang="ar" dir="rtl">العربية</span>, '
          '<span class="nw" lang="vi">Tiếng Việt</span> and <span class="nw" lang="es">Español</span>')
@@ -275,6 +276,8 @@ def home() -> Page:
   {mock_question()}
 </div>
 </section>
+
+{TRY_MARKER}
 
 <section class="section" id="states" aria-labelledby="states-title">
 <div class="container">
