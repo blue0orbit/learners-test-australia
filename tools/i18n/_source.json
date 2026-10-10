@@ -1712,9 +1712,9 @@
   "group": "core"
  },
  {
-  "key": "b34e8d5304c49db6",
+  "key": "90592c6f68df461d",
   "kind": "run",
-  "src": "<t0>Studying in your browser?</t0> The <t1>web app</t1> is open now and free with an account. It has practice questions with every answer explained (with a daily allowance), one mock test a day, your mistakes to review and your readiness against the pass marks. Premium isn't on sale on the web yet, so the web app's Premium extras (accuracy trend and weak areas) aren't available for now.",
+  "src": "<t0>Studying in your browser?</t0> The <t1>web app</t1> is open now and free with an account. It has practice questions with every answer explained (with a daily allowance), one mock test a day, your mistakes to review and your readiness against the pass marks. You can also buy Premium there for A$5.99 once, through Paddle, for the account you're signed in to. It adds the web app's Premium extras (accuracy trend and weak areas) and more mock tests a day. For now it works in the web app only, not in the Android app.",
   "note": "",
   "pages": [
    "index.html",
@@ -1723,9 +1723,9 @@
   "group": "core"
  },
  {
-  "key": "1c3f4ae7a68aea91",
+  "key": "e6353cdd13b7b3cc",
   "kind": "run",
-  "src": "Refunds follow Google Play's refund policy and your rights under the Australian Consumer Law. See the <t0>FAQ</t0> for more.",
+  "src": "Refunds follow Google Play's refund policy for purchases in the app and Paddle's for purchases on the website, and your rights under the Australian Consumer Law. See the <t0>FAQ</t0> for more.",
   "note": "",
   "pages": [
    "index.html"
@@ -4431,9 +4431,9 @@
   "group": "core"
  },
  {
-  "key": "fd08e6c33d546571",
+  "key": "45e97cac1080881e",
   "kind": "run",
-  "src": "Purchases are processed by Google Play, so refunds follow Google Play's refund policy and your rights under the Australian Consumer Law. Deleting your account does not refund a purchase, except where the law requires it.",
+  "src": "Premium bought in the app is processed by Google Play, so refunds follow Google Play's refund policy. Premium bought on the website is sold through Paddle: ask for a refund at <t0>paddle.net</t0>, under Paddle's refund policy. Either way, your rights under the Australian Consumer Law apply. Deleting your account does not refund a purchase, except where the law requires it.",
   "note": "",
   "pages": [
    "faq.html"
@@ -5529,9 +5529,9 @@
   "group": "core"
  },
  {
-  "key": "40ab4091936aee1f",
+  "key": "4eeec05f37cd65ea",
   "kind": "run",
-  "src": "If Premium isn't showing after you bought it, open Settings → Premium → Restore purchase first. If it still isn't there, email us. Refunds follow Google Play's refund policy and your rights under the Australian Consumer Law.",
+  "src": "If Premium isn't showing after you bought it in the app, open Settings → Premium → Restore purchase first. Premium bought on the website usually appears in the web app within about 10 minutes. If it still isn't there, email us. Refunds follow Google Play's refund policy for purchases in the app and Paddle's for purchases on the website (ask at <t0>paddle.net</t0>), and your rights under the Australian Consumer Law.",
   "note": "",
   "pages": [
    "contact.html"

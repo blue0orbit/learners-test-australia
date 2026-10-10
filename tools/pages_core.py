@@ -213,13 +213,16 @@ def price_table() -> str:
 
 
 def web_app_note() -> str:
-    """The web study app next to the Android pricing. Facts as of 10 October 2026: open to everyone, free with an
-    account; readiness is free there; Premium is not on sale on the web yet (its web extras: accuracy trend and weak
-    areas)."""
+    """The web study app next to the Android pricing. Facts at the Paddle LIVE switch (DRAFT, 10 October 2026): open to
+    everyone, free with an account; readiness is free there; Premium is on sale in the web app through Paddle, for the
+    signed-in account, and works in the web app only for now (its web extras: accuracy trend and weak areas, and more
+    mock tests a day)."""
     return (f'<p><strong>Studying in your browser?</strong> The <a href="{WEB_APP}">web app</a> is open now and free '
             "with an account. It has practice questions with every answer explained (with a daily allowance), one mock "
-            "test a day, your mistakes to review and your readiness against the pass marks. Premium isn't on sale on "
-            "the web yet, so the web app's Premium extras (accuracy trend and weak areas) aren't available for now.</p>")
+            f"test a day, your mistakes to review and your readiness against the pass marks. You can also buy Premium "
+            f"there for {PRICE} once, through Paddle, for the account you're signed in to. It adds the web app's Premium "
+            "extras (accuracy trend and weak areas) and more mock tests a day. For now it works in the web app only, not "
+            "in the Android app.</p>")
 
 
 FEATURES_GRID = [
@@ -325,8 +328,8 @@ def home() -> Page:
   </div>
   {price_table()}
   {web_app_note()}
-  <p class="meta">Refunds follow Google Play's refund policy and your rights under the Australian Consumer Law.
-  See the <a href="@/faq.html">FAQ</a> for more.</p>
+  <p class="meta">Refunds follow Google Play's refund policy for purchases in the app and Paddle's for purchases on
+  the website, and your rights under the Australian Consumer Law. See the <a href="@/faq.html">FAQ</a> for more.</p>
 </div>
 </section>
 
@@ -687,8 +690,12 @@ FAQ_GROUPS = [
         ("I bought Premium but it isn't showing. What should I do?",
          f'<p>Open Settings → Premium → Restore purchase. If that doesn\'t fix it, email <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>'),
         ("Can I get a refund?",
-         "<p>Purchases are processed by Google Play, so refunds follow Google Play's refund policy and your rights under the "
-         "Australian Consumer Law. Deleting your account does not refund a purchase, except where the law requires it.</p>"),
+         "<p>Premium bought in the app is processed by Google Play, so refunds follow Google Play's refund policy. Premium "
+         "bought on the website is sold through Paddle: ask for a refund at "
+         '<a href="https://paddle.net" rel="noopener">paddle.net</a>'
+         ", under Paddle's refund policy. Either way, your "
+         "rights under the Australian Consumer Law apply. Deleting your account does not refund a purchase, except where "
+         "the law requires it.</p>"),
     ]),
     ("Account and privacy", [
         ("Do I need an account, and why?",
@@ -947,8 +954,10 @@ please tell us. These details help us find and fix it quickly:</p>
 <p>A subject line like “Question error: VIC” helps us sort your email.</p>
 
 <h2>Premium help</h2>
-<p>If Premium isn't showing after you bought it, open Settings → Premium → Restore purchase first. If it still isn't
-there, email us. Refunds follow Google Play's refund policy and your rights under the Australian Consumer Law.</p>
+<p>If Premium isn't showing after you bought it in the app, open Settings → Premium → Restore purchase first. Premium
+bought on the website usually appears in the web app within about 10 minutes. If it still isn't there, email us.
+Refunds follow Google Play's refund policy for purchases in the app and Paddle's for purchases on the website (ask at
+<a href="https://paddle.net" rel="noopener">paddle.net</a>), and your rights under the Australian Consumer Law.</p>
 
 <h2>Account and privacy requests</h2>
 <p>To delete your account, use Settings → Delete account in the app, or follow the steps on the

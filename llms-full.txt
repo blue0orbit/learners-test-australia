@@ -195,9 +195,9 @@ In the Android app: what is free and what Premium adds
 | Hazard perception practice | Sample 3D clips and scenes | All 72 clips and every scene |
 | Price | Free | A$5.99 once. No subscription. |
 
-Studying in your browser? The web app (https://au.learnertest.com/app/) is open now and free with an account. It has practice questions with every answer explained (with a daily allowance), one mock test a day, your mistakes to review and your readiness against the pass marks. Premium isn't on sale on the web yet, so the web app's Premium extras (accuracy trend and weak areas) aren't available for now.
+Studying in your browser? The web app (https://au.learnertest.com/app/) is open now and free with an account. It has practice questions with every answer explained (with a daily allowance), one mock test a day, your mistakes to review and your readiness against the pass marks. You can also buy Premium there for A$5.99 once, through Paddle, for the account you're signed in to. It adds the web app's Premium extras (accuracy trend and weak areas) and more mock tests a day. For now it works in the web app only, not in the Android app.
 
-Refunds follow Google Play's refund policy and your rights under the Australian Consumer Law. See the FAQ (https://au.learnertest.com/faq.html) for more.
+Refunds follow Google Play's refund policy for purchases in the app and Paddle's for purchases on the website, and your rights under the Australian Consumer Law. See the FAQ (https://au.learnertest.com/faq.html) for more.
 
 How the questions are made
 
@@ -386,7 +386,7 @@ In the Android app: what is free and what Premium adds
 | Hazard perception practice | Sample 3D clips and scenes | All 72 clips and every scene |
 | Price | Free | A$5.99 once. No subscription. |
 
-Studying in your browser? The web app (https://au.learnertest.com/app/) is open now and free with an account. It has practice questions with every answer explained (with a daily allowance), one mock test a day, your mistakes to review and your readiness against the pass marks. Premium isn't on sale on the web yet, so the web app's Premium extras (accuracy trend and weak areas) aren't available for now.
+Studying in your browser? The web app (https://au.learnertest.com/app/) is open now and free with an account. It has practice questions with every answer explained (with a daily allowance), one mock test a day, your mistakes to review and your readiness against the pass marks. You can also buy Premium there for A$5.99 once, through Paddle, for the account you're signed in to. It adds the web app's Premium extras (accuracy trend and weak areas) and more mock tests a day. For now it works in the web app only, not in the Android app.
 
 Questions about paying, restoring a purchase or refunds? See the FAQ (https://au.learnertest.com/faq.html).
 
@@ -1411,7 +1411,7 @@ Open Settings → Premium → Restore purchase. If that doesn't fix it, email bl
 
 ### Can I get a refund?
 
-Purchases are processed by Google Play, so refunds follow Google Play's refund policy and your rights under the Australian Consumer Law. Deleting your account does not refund a purchase, except where the law requires it.
+Premium bought in the app is processed by Google Play, so refunds follow Google Play's refund policy. Premium bought on the website is sold through Paddle: ask for a refund at paddle.net (https://paddle.net), under Paddle's refund policy. Either way, your rights under the Australian Consumer Law apply. Deleting your account does not refund a purchase, except where the law requires it.
 
 ## Account and privacy
 

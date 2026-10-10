@@ -583,13 +583,13 @@
   "src": "A$5.99 once. No subscription.",
   "t": "A$5.99，一次付清。无需订阅。"
  },
- "b34e8d5304c49db6": {
-  "src": "<t0>Studying in your browser?</t0> The <t1>web app</t1> is open now and free with an account. It has practice questions with every answer explained (with a daily allowance), one mock test a day, your mistakes to review and your readiness against the pass marks. Premium isn't on sale on the web yet, so the web app's Premium extras (accuracy trend and weak areas) aren't available for now.",
-  "t": "<t0>想在浏览器里学习？</t0><t1>网页版</t1>现已开放，有免费账户就能使用。它提供练习题（每天有一定额度），每道题的答案都有解析，还有每天一次模拟考试、错题复习，以及对照及格线的准备程度。Premium 目前还不能在网页上购买，因此网页版的 Premium 附加功能（正确率趋势和薄弱环节）暂时无法使用。"
+ "90592c6f68df461d": {
+  "src": "<t0>Studying in your browser?</t0> The <t1>web app</t1> is open now and free with an account. It has practice questions with every answer explained (with a daily allowance), one mock test a day, your mistakes to review and your readiness against the pass marks. You can also buy Premium there for A$5.99 once, through Paddle, for the account you're signed in to. It adds the web app's Premium extras (accuracy trend and weak areas) and more mock tests a day. For now it works in the web app only, not in the Android app.",
+  "t": "<t0>想在浏览器里学习？</t0><t1>网页版</t1>现已开放，有免费账户就能使用。它提供练习题（每天有一定额度），每道题的答案都有解析，还有每天一次模拟考试、错题复习，以及对照及格线的准备程度。你也可以在网页版通过 Paddle 购买 Premium，一次付清 A$5.99，归你当前登录的账户所有。它会增加网页版的 Premium 附加功能（正确率趋势和薄弱环节），并让你每天可以做更多模拟考试。目前它只能在网页版中使用，不适用于 Android 应用。"
  },
- "1c3f4ae7a68aea91": {
-  "src": "Refunds follow Google Play's refund policy and your rights under the Australian Consumer Law. See the <t0>FAQ</t0> for more.",
-  "t": "退款按照 Google Play 的退款政策，以及你依据 Australian Consumer Law（澳大利亚消费者法）享有的权利处理。详情请见<t0>常见问题</t0>。"
+ "e6353cdd13b7b3cc": {
+  "src": "Refunds follow Google Play's refund policy for purchases in the app and Paddle's for purchases on the website, and your rights under the Australian Consumer Law. See the <t0>FAQ</t0> for more.",
+  "t": "在应用内购买的退款按照 Google Play 的退款政策处理，在网站上购买的退款按照 Paddle 的退款政策处理，同时适用你依据 Australian Consumer Law（澳大利亚消费者法）享有的权利。详情请见<t0>常见问题</t0>。"
  },
  "bca51a88cc563431": {
   "src": "How the questions are made",
@@ -1483,9 +1483,9 @@
   "src": "Can I get a refund?",
   "t": "可以退款吗？"
  },
- "fd08e6c33d546571": {
-  "src": "Purchases are processed by Google Play, so refunds follow Google Play's refund policy and your rights under the Australian Consumer Law. Deleting your account does not refund a purchase, except where the law requires it.",
-  "t": "购买由 Google Play 处理，因此退款按照 Google Play 的退款政策，以及你依据 Australian Consumer Law（澳大利亚消费者法）享有的权利处理。删除账户不会退还购买款项，法律另有规定的除外。"
+ "45e97cac1080881e": {
+  "src": "Premium bought in the app is processed by Google Play, so refunds follow Google Play's refund policy. Premium bought on the website is sold through Paddle: ask for a refund at <t0>paddle.net</t0>, under Paddle's refund policy. Either way, your rights under the Australian Consumer Law apply. Deleting your account does not refund a purchase, except where the law requires it.",
+  "t": "在应用内购买的 Premium 由 Google Play 处理，因此退款按照 Google Play 的退款政策处理。在网站上购买的 Premium 通过 Paddle 销售：请在 <t0>paddle.net</t0> 申请退款，按照 Paddle 的退款政策处理。无论哪种情况，你依据 Australian Consumer Law（澳大利亚消费者法）享有的权利都适用。删除账户不会退还购买款项，法律另有规定的除外。"
  },
  "4b7c6fedc07252e6": {
   "src": "Account and privacy",
@@ -1919,9 +1919,9 @@
   "src": "Premium help",
   "t": "Premium 帮助"
  },
- "40ab4091936aee1f": {
-  "src": "If Premium isn't showing after you bought it, open Settings → Premium → Restore purchase first. If it still isn't there, email us. Refunds follow Google Play's refund policy and your rights under the Australian Consumer Law.",
-  "t": "如果购买 Premium 后没有显示，请先打开“设置 → Premium → 恢复购买”。如果仍然没有，请给我们发邮件。退款按照 Google Play 的退款政策，以及你依据 Australian Consumer Law（澳大利亚消费者法）享有的权利处理。"
+ "4eeec05f37cd65ea": {
+  "src": "If Premium isn't showing after you bought it in the app, open Settings → Premium → Restore purchase first. Premium bought on the website usually appears in the web app within about 10 minutes. If it still isn't there, email us. Refunds follow Google Play's refund policy for purchases in the app and Paddle's for purchases on the website (ask at <t0>paddle.net</t0>), and your rights under the Australian Consumer Law.",
+  "t": "如果在应用内购买 Premium 后没有显示，请先打开“设置 → Premium → 恢复购买”。在网站上购买的 Premium 通常会在大约 10 分钟内出现在网页版中。如果仍然没有，请给我们发邮件。在应用内购买的退款按照 Google Play 的退款政策处理，在网站上购买的退款按照 Paddle 的退款政策处理（请在 <t0>paddle.net</t0> 申请），同时适用你依据 Australian Consumer Law（澳大利亚消费者法）享有的权利。"
  },
  "6b87c217af9f8e79": {
   "src": "Account and privacy requests",
