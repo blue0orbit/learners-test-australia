@@ -31,6 +31,13 @@ PLAY_URL: str | None = None
 # The web study app. The platform (learnertest-platform) serves it at /app/ on this same host; it is not a file in this
 # repo. Root-absolute on purpose (the site is served at the host root); tools/check_site.py accepts exactly this path.
 WEB_APP = "/app/"
+
+
+def web_app(lang: str = "en") -> str:
+    """The web app's address from a page in `lang`: a language page opens the app in its language (/app/?lang=zh; the
+    app takes the hint, remembers it and removes it from the address). English pages link plain /app/. The URL folders
+    are the app's own language codes (zh, ar, vi, es)."""
+    return WEB_APP if lang == "en" else f"{WEB_APP}?lang={lang}"
 # Our other app (same developer), linked from the footer, about and download pages
 DTT_URL = "https://dttireland.com/"
 DTT_PLAY = "https://play.google.com/store/apps/details?id=com.app.dttireland"
@@ -641,6 +648,8 @@ def render(page: Page, *, lang: str = "en", body_html: str | None = None, title:
     switch, footer_langs = lang_menus(lang, menu_links or {})
     body = body.replace("<!--LANG-SWITCH-->", switch).replace("<!--LANG-LIST-->", footer_langs)
     out = head + body + "\n</body>\n</html>\n"
+    if lang != "en":  # every link to the web app ("Study online", the buttons, links in the text) opens it in this language
+        out = out.replace(f'href="{WEB_APP}"', f'href="{web_app(lang)}"')
     return relink(out, p)
 
 

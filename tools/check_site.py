@@ -213,7 +213,12 @@ def main() -> int:
                 if url[1:] and url[1:] not in p.ids:
                     err(f"{rel}: missing anchor {url}")
                 continue
-            if url == WEB_APP and tag == "a":
+            if url.startswith(WEB_APP) and tag == "a":
+                # English pages link plain /app/; a language page opens the app in its language (sitelib.web_app).
+                lang = lang_of(rel)
+                want = WEB_APP if lang == "en" else f"{WEB_APP}?lang={lang}"
+                if url != want:
+                    err(f"{rel}: web app link {url} (want {want})")
                 continue
             if url.startswith("/") and not (rel == "404.html" and url.startswith(BASE_PATH)):
                 err(f"{rel}: root-relative link {url} (use relative links)")
