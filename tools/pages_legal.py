@@ -5,9 +5,12 @@ The privacy policy and terms mirror the in-app text in app/src/main/res/values/s
 word-for-word in sync with the app: only headings and HTML structure are added here, plus website-only sections at
 the end (privacy: "This website" and "The web app"; terms: "Web study app"), which the callout above each page
 mentions. The web app sections describe the web study app at au.learnertest.com/app/, which is not part of this repo.
+Premium bought on the website (Paddle, merchant of record) is described only in those website-only sections (privacy
+"Buying Premium on the website", terms "Buying Premium on the website") and on the cookie and deletion pages: the
+in-app text is about Google Play and must stay word-for-word the app's.
 """
 from sitelib import (
-    APP_NAME, BASE, COOKIES_DATE, COOKIES_DATE_H, DELETION_DATE, DELETION_DATE_H, DEVELOPER, EMAIL, LEGAL_DATE, LEGAL_DATE_H, PACKAGE, SITE_NAME, SRC,
+    APP_NAME, BASE, COOKIES_DATE, COOKIES_DATE_H, DELETION_DATE, DELETION_DATE_H, DEVELOPER, EMAIL, LEGAL_DATE, LEGAL_DATE_H, PACKAGE, PRICE, SITE_NAME, SRC,
     TERMS_DATE, TERMS_DATE_H, Page, page_head, updated_line,
 )
 
@@ -15,6 +18,11 @@ MAIL = f'<a href="mailto:{EMAIL}">{EMAIL}</a>'
 # The web study app (served by Cloudflare, not built from this repo)
 WEB_APP = f"{BASE}app/"
 WEB_APP_LINK = f'<a href="{WEB_APP}">au.learnertest.com/app/</a>'
+# Paddle, the merchant of record for Premium bought on the website (Paddle Buyer Terms, last updated 31 March 2026)
+PADDLE_BUYER_TERMS = "https://www.paddle.com/legal/checkout-buyer-terms"
+PADDLE_REFUNDS = "https://www.paddle.com/legal/refund-policy"
+PADDLE_PRIVACY = "https://www.paddle.com/legal/privacy"
+PADDLE_NET = "https://paddle.net"
 
 
 def legal_intro(kind: str, in_app_path: str, extra: str) -> str:
@@ -127,8 +135,22 @@ everyone: anyone with an account can sign in and study there. The web app shows 
 <p>To apply the right limits, the question service checks, using your own sign-in, whether our Firebase project holds a Premium record for your account. It keeps the answer in memory for up to five minutes and does not store it.</p>
 <p>Your practice answers are checked in your browser and never sent to us. When you hand in a mock exam, your answers are sent only so it can be marked: the question service sends back your result and does not keep your answers. Your IP address is used to limit the number of requests from each address; it is not stored in the question service’s database.</p>
 
+<h3 id="web-app-purchases">Buying Premium on the website</h3>
+<p>You can buy Premium in the web app. On the website, Premium is sold through Paddle, our reseller and the merchant of record for these purchases: Paddle.com Market Limited, or the Paddle company named in <a href="{PADDLE_BUYER_TERMS}" rel="noopener">Paddle’s buyer terms</a> for where you buy. Paddle runs the checkout, takes the payment, handles sales tax, sends your receipt and handles refunds and chargebacks. Premium bought in the Android app through Google Play is covered under <a href="#premium-purchases">Premium purchases</a> above.</p>
+<ul>
+  <li><strong>What you give Paddle.</strong> Only when you choose to buy, the web app loads Paddle’s checkout from Paddle and opens it over the page. In the checkout you give Paddle your email address, your country (and postcode where tax needs it), your payment details and anything else the checkout asks for. Paddle is responsible for this information itself and handles it under its own <a href="{PADDLE_PRIVACY}" rel="noopener">privacy notice</a>, which also covers anything Paddle’s checkout collects about your device or browser. We never see your card details.</li>
+  <li><strong>What the web app and our server send.</strong> When you choose to buy, the web app sends our purchase-checking service (see <a href="#purchase-checks">Purchase checks on our server</a>) the product, a Firebase ID token, which identifies your account, and an App Check token. The service then asks Paddle for a checkout with Premium’s price and a random reference that lets us match the payment to your account. We don’t send Paddle your name, email address or user ID. As with the app’s requests, Google Cloud logs technical details of each request to the service, such as your IP address, and keeps these logs for a limited time.</li>
+  <li><strong>What we keep.</strong> Our service checks each payment with Paddle and keeps a purchase record: your account’s user ID, the product, the price and currency, Paddle’s transaction ID, our checkout reference, the payment’s status (completed, refunded, charged back or reversed) and the IDs of any refunds, with the times. We don’t keep your name, email address, postal address, billing country or payment details. Paddle’s notifications to our service are checked to make sure they come from Paddle, and the service keeps only the details listed here, never the notification itself.</li>
+  <li><strong>Your Premium.</strong> You must be signed in to buy, and Premium belongs to the account you were signed in to when you bought it. Once Paddle confirms the payment and our service has checked it with Paddle, usually within about 10 minutes, the service adds Premium to your Premium record in our Firebase project in Sydney, which the web app uses. The Android app does not use Premium bought on the website yet. If Paddle makes a full refund, or the payment is charged back, the service removes Premium from your Premium record.</li>
+  <li><strong>Why we use it.</strong> To give you the Premium you paid for and keep it on your account, to deal with refunds and chargebacks, to stop one payment being used twice or by another account, to prevent fraud and handle disputes, and to keep the records the law requires for tax and accounting. If you are in the EEA or the UK, we rely on our contract with you (giving you what you paid for, and refunds), our legal obligations (tax and accounting) and our legitimate interests (preventing fraud and handling disputes and chargebacks).</li>
+  <li><strong>Who else sees what.</strong> Paddle sees what you give it at checkout, plus the product and price. Paddle’s payment processors and banks handle your payment details. Google hosts our purchase records and your Premium record for us. We don’t sell this information.</li>
+  <li><strong>How long we keep it.</strong> We keep purchase records for up to 6 years, also after you delete your account, to meet our legal and accounting obligations. About a day after you delete your account, the service deletes your Premium record. Paddle keeps its own records of your purchase under its own privacy notice.</li>
+</ul>
+<p>For receipts, refunds and help with a payment, go to <a href="{PADDLE_NET}" rel="noopener">paddle.net</a> or use the link in Paddle’s receipt email.</p>
+
 <h3 id="web-app-overseas">Where web app data is stored</h3>
 <p>The question service’s database is stored by Cloudflare in data centres in Western Europe, so the records listed above are held outside Australia. Cloudflare, which delivers the web app, and Google, which provides Firebase Authentication and reCAPTCHA, are US companies and may also process data from the web app in the United States and other countries where they operate. We use them only to run the web app.</p>
+<p>If you buy Premium on the website, Paddle handles the purchase: Paddle.com Market Limited is in the United Kingdom, and Paddle and its payment processors may also handle your information in other countries. Our purchase records are stored on Google Cloud in Belgium (europe-west1), outside Australia, and your Premium record in our Firebase project in Sydney.</p>
 
 <h3 id="web-app-progress">Progress stored in your browser</h3>
 <p>The progress the web app shows (your answers and mock exam results), your saved questions and your settings in it (state, test date, daily goal and question language) are stored only in your browser’s local storage on that device, separately for each account. They are not synced with the Android app yet. To delete your answers and mock exam results for the test you are studying, open Progress → Delete progress on this device in the web app; to delete everything, clear this site’s data in your browser.</p>
@@ -136,6 +158,7 @@ everyone: anyone with an account can sign in and study there. The web app shows 
 <h3 id="web-app-deletion">Deleting what the question service keeps</h3>
 <p>You can delete the question service’s record of which questions it gave your account, and your mock exams, at any time: in the web app, open Account → Delete what our server keeps, or email {MAIL}. Daily counts stay until they expire after about 35 days, because deleting them early would reset the daily limits. To be removed from the beta invite list, email us.</p>
 <p>The web app has no Delete account option of its own yet: delete your account in the Android app or by email (see <a href="@/account-deletion.html">delete your account</a>). The question service is not told when your account is deleted, so delete its records first in the web app, or email us. Otherwise they are deleted only as described above: the record of which questions it gave you once your account has gone a year without new questions and 35 days without getting any questions or mock exams, daily counts after about 35 days and mock exams after about 90 days.</p>
+<p>If you bought Premium on the website, our purchase-checking service deletes your Premium record about a day after your account is deleted, and keeps its purchase records for up to 6 years (see <a href="#web-app-purchases">Buying Premium on the website</a>).</p>
 
 <p>See also the <a href="@/cookies.html">cookie policy</a> and how to <a href="@/account-deletion.html">delete your account</a>.</p>
 </div></div>"""
@@ -153,7 +176,8 @@ everyone: anyone with an account can sign in and study there. The web app shows 
         llms_title="Privacy policy",
         llms_note=("The app's privacy policy (same text as in the app) plus sections on this website (no cookies, analytics "
                    "or third-party requests outside the web app) and on the web study app (sign-in, reCAPTCHA, what the "
-                   "question service keeps, storage in Western Europe, progress stored in the browser, deletion)."),
+                   "question service keeps, Premium bought on the website through Paddle as merchant of record and the "
+                   "purchase records we keep, storage outside Australia, progress stored in the browser, deletion)."),
     )
 
 
@@ -171,7 +195,8 @@ def cookies() -> Page:
 <p>Apart from the web study app at au.learnertest.com/app/, the {SITE_NAME} website sets no cookies, stores nothing
 in your browser and loads nothing from third parties, so there is no cookie banner to accept. The web app keeps your
 progress in your browser's local storage, keeps you signed in with a Firebase token in your browser, and uses Google
-reCAPTCHA, which may set cookies, to stop automated abuse. The Android app works differently from a website: it keeps
+reCAPTCHA, which may set cookies, to stop automated abuse. Only if you choose to buy Premium there does it load
+Paddle's checkout. The Android app works differently from a website: it keeps
 data on your phone, uses Google Firebase for your account and progress, and in the free version lets ad providers use
 your advertising ID, subject to consent where the law requires it.</p></div>
 
@@ -201,6 +226,12 @@ cookies and collect information about your device and browser and how you intera
 <a href="https://policies.google.com/privacy" rel="noopener">Privacy Policy</a> and
 <a href="https://policies.google.com/terms" rel="noopener">Terms of Service</a>. The web app shows the notice “This site
 uses reCAPTCHA to stop automated abuse.”</p>
+
+<h3>Paddle checkout (only if you buy Premium)</h3>
+<p>Premium on the website is sold through Paddle. Only when you choose to buy, the web app loads Paddle's checkout
+script from Paddle and opens Paddle's checkout over the page, in Paddle's own frame. What Paddle's checkout collects,
+including any cookies it uses, is covered by <a href="{PADDLE_PRIVACY}" rel="noopener">Paddle's privacy notice</a>.
+See <a href="@/privacy-policy.html#web-app-purchases">Buying Premium on the website</a> in the privacy policy.</p>
 
 <h2>What does the Android app use instead of cookies?</h2>
 <p>Apps don't rely on browser cookies the way websites do. The {SITE_NAME} app uses the following, as described in
@@ -252,6 +283,7 @@ sign-in needs.</p>
 <tr><th scope="row">Browser local storage</th><td>Web app</td><td>Progress, saved questions and settings in the web app</td><td>Progress → Delete progress on this device, or clear this site's data</td></tr>
 <tr><th scope="row">Firebase sign-in token</th><td>Web app</td><td>Keeps you signed in</td><td>Clear this site's data</td></tr>
 <tr><th scope="row">reCAPTCHA cookies (Google)</th><td>Web app</td><td>Stop automated abuse</td><td>Used only inside the web app</td></tr>
+<tr><th scope="row">Paddle checkout</th><td>Web app, when you buy Premium</td><td>Payment, tax and receipt, by Paddle</td><td>Loaded only if you choose to buy</td></tr>
 <tr><th scope="row">Phone storage</th><td>App</td><td>Progress, settings, offline practice</td><td>Uninstall or clear storage</td></tr>
 <tr><th scope="row">Firebase sign-in and sync</th><td>App</td><td>Your account and progress</td><td>Delete your account</td></tr>
 <tr><th scope="row">Analytics and crash reports</th><td>App</td><td>Fix crashes, improve the app</td><td>Settings → Help improve the app</td></tr>
@@ -272,7 +304,8 @@ sign-in needs.</p>
         priority="0.3",
         changefreq="yearly",
         llms_note=("The website sets no cookies outside the web study app; what the web app (browser storage, Firebase "
-                   "sign-in, reCAPTCHA) and the Android app use, and how to change ad choices or reset the advertising ID."),
+                   "sign-in, reCAPTCHA, Paddle's checkout if you buy Premium) and the Android app use, and how to change ad "
+                   "choices or reset the advertising ID."),
     )
 
 
@@ -359,6 +392,19 @@ with an account can use it. In addition:</p>
   <li><strong>No scraping or automated access.</strong> You must not scrape or copy the questions from the web app, access it with bots, scripts or other automated tools, or use several accounts to get around the daily limits.</li>
   <li><strong>Limits and suspension.</strong> We may limit or suspend an account that breaks these rules.</li>
 </ul>
+
+<h3 id="web-purchase">Buying Premium on the website</h3>
+<p>You can buy Premium in the web app. Section 5 is about Premium bought in the Android app through Google Play; the points below are about Premium bought on the website.</p>
+<ul>
+  <li><strong>Who sells it.</strong> Premium on the website is sold through Paddle, our reseller and the merchant of record for these purchases: Paddle.com Market Limited, or the Paddle company named in Paddle’s buyer terms for where you buy. Paddle runs the checkout, takes the payment, handles sales tax and sends your receipt. <a href="{PADDLE_BUYER_TERMS}" rel="noopener">Paddle’s Buyer Terms</a> apply to the purchase; these Terms cover the Premium access we provide. We never see or store your payment details.</li>
+  <li><strong>Price.</strong> Premium costs {PRICE}, tax included, charged in Australian dollars (your bank may convert it). It is a one-time payment: there are no subscriptions or renewals.</li>
+  <li><strong>Your account.</strong> You must be signed in to buy. Premium belongs to the account you were signed in to when you bought it and can’t be moved to another account. An account that already has Premium can’t buy it again.</li>
+  <li><strong>What it unlocks.</strong> Premium is a lifetime purchase: it unlocks the web app’s Premium features on that account for as long as we provide the web app. These are higher daily limits, including more than one mock test a day (the fair-use limits above still apply), and the accuracy trend and weak areas. Premium bought on the website does not unlock Premium in the Android app yet.</li>
+  <li><strong>When it arrives.</strong> Premium is added to your account after Paddle confirms the payment and our server has checked it with Paddle, usually within about 10 minutes. If it doesn’t appear, email {MAIL}.</li>
+  <li><strong>Refunds.</strong> Refunds for purchases on the website follow <a href="{PADDLE_REFUNDS}" rel="noopener">Paddle’s Refund Policy</a> and your rights under the Australian Consumer Law. Ask Paddle for a refund at <a href="{PADDLE_NET}" rel="noopener">paddle.net</a> or through the link in Paddle’s receipt email; we can’t refund a website purchase ourselves. A full refund or a chargeback removes Premium from your account.</li>
+  <li><strong>EU, EEA and UK consumers.</strong> If you are a consumer in the European Union, the wider EEA or the UK, Paddle’s Buyer Terms and Refund Policy let you withdraw from the purchase within 14 days for a full refund, unless you started using Premium within those 14 days after agreeing, during the purchase, that it could be made available straight away.</li>
+  <li><strong>Your rights.</strong> Nothing in these Terms excludes, restricts or modifies the consumer guarantees you have under the Australian Consumer Law. Nothing in these Terms affects your statutory rights.</li>
+</ul>
 </div></div>"""
     return Page(
         path="terms.html",
@@ -370,8 +416,9 @@ with an account can use it. In addition:</p>
         crumbs=crumbs,
         priority="0.3",
         changefreq="yearly",
-        llms_note=("The app's terms of service (same text as in the app, plus a section on the web study app), governed "
-                   "by New South Wales law."),
+        llms_note=("The app's terms of service (same text as in the app, plus a section on the web study app, including "
+                   "Premium bought on the website through Paddle: A$5.99 once, refunds through Paddle), governed by New "
+                   "South Wales law."),
     )
 
 
@@ -431,6 +478,11 @@ systems, which Google says can take up to 180 days.</p>
   Our purchase-checking service keeps its purchase records (your user ID, each purchase token, the product, the
   purchase’s status and when it was checked) for up to 6 years, to meet our legal and accounting obligations, and
   Google Cloud keeps its request logs for a limited time.
+  If you bought Premium on the website, Paddle keeps its own record of the purchase under its own privacy notice, and
+  our purchase-checking service keeps its purchase record (your user ID, the product, the price, Paddle’s transaction
+  ID and the payment’s status, including any refund) for up to 6 years, also after your account is deleted; your
+  Premium record is deleted as described above (see <a href="@/privacy-policy.html#web-app-purchases">Buying Premium
+  on the website</a>).
   We never see or store your payment details. Deleting your account does not refund a purchase, except where required
   by law.</li>
   <li><strong>Usage statistics and crash reports.</strong> If you allowed “Help improve the app”, these are not
